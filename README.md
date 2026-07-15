@@ -35,11 +35,11 @@
 
 完整产品与技术架构：
 
-`docs/Frontline_Language_Platform_总体架构_V1.1_AI原生版.md`
+`docs/architecture-v1.1-ai.md`
 
 ## Codex规则
 
 Codex开始工作前必须先阅读：
 
 1. `AGENTS.md`
-2. `docs/Frontline_Language_Platform_总体架构_V1.1_AI原生版.md`
+2. `docs/architecture-v1.1-ai.md`

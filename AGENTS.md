@@ -5,7 +5,7 @@
 Before analyzing or modifying this repository, read:
 
 1. `README.md`
-2. `docs/Frontline_Language_Platform_总体架构_V1.1_AI原生版.md`
+2. `docs/architecture-v1.1-ai.md`
 
 The architecture document is the approved project baseline.
 
