@@ -10416,9 +10416,9 @@ export const kitchenSurvivalCourse = {
           {
             term: "weigh each piece",
             chinese: "每块称重",
-            pronunciation: "waych PEE-siz",
-            note: "备菜时用秤确认每份大小一致。",
-            example: "Weigh each piece first."
+            pronunciation: "way eech pees",
+            note: "备菜时用秤确认每一块的重量符合标准。",
+            example: "Weigh each piece before cooking."
           }
         ],
         listenRepeatCount: 3,
