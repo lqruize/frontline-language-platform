@@ -15580,66 +15580,74 @@ export const kitchenSurvivalCourse = {
         speakRepeatCount: 5
       },
     {
-      id: "front_counter_001",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_greeting_order",
-      scenarioTitle: "前台迎客",
-      sequence: 3,
-      english: "What can I get for you?",
-      chinese: "您想点些什么？",
-      scenario: "顾客进店时欢迎、开始点餐。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/front_counter_001-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_001-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Staff",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "What would you like to order?"
-      ],
-      recommendedResponses: [
-        "Sure. I will confirm the order.",
-        "Please check the screen."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "What can I get for you?",
-          chinese: "您想点些什么？"
-        },
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "Can I get a chicken combo?",
-          chinese: "我可以要一个鸡肉套餐吗？"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "What",
-          chinese: "前台收银表达",
-          pronunciation: "frunt-KOWN-ter",
-          note: "用于点餐、收银、收据和顾客服务。 这里重点看 “What” 在句子里的用法。",
-          example: "Help the customer."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_001",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_greeting_order",
+        scenarioTitle: "前台迎客",
+        sequence: 3,
+        english: "Hi, what can I get for you?",
+        chinese: "您好，您想点些什么？",
+        scenario: "顾客进店时欢迎、开始点餐和说明套餐。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/front_counter_001-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_001-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Staff",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "Hi, what would you like to order?",
+          "What can I get started for you?"
+        ],
+        recommendedResponses: [
+          "Can I get a chicken combo?",
+          "I need a minute, please.",
+          "What do you recommend?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Hi, what can I get for you?",
+            chinese: "您好，您想点些什么？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I get a chicken combo?",
+            chinese: "我可以要一个鸡肉套餐吗？"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Sure. What drink would you like?",
+            chinese: "好的。您想要什么饮料？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "what can I get for you",
+            chinese: "您想点些什么",
+            pronunciation: "wuht-kan-ai-get-for-yoo",
+            note: "前台开始帮顾客点餐时最常用的问法。",
+            example: "What can I get for you today?"
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "front_counter_002",
       moduleId: "front_counter",
@@ -15773,128 +15781,131 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "front_counter_004",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_combo_sauce_drink",
-      scenarioTitle: "套餐、饮料和酱料",
-      sequence: 9,
-      english: "Tossed or on the side?",
-      chinese: "您想拌酱，还是把酱放在旁边？",
-      scenario: "确认套餐、口味、饮料和酱料放旁边。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/front_counter_004-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_004-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Staff",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Tossed or on the side, please?"
-      ],
-      recommendedResponses: [
-        "I will confirm the on the side.",
-        "Let me enter the on the side correctly.",
-        "Please check the screen for on the side."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "Tossed or on the side?",
-          chinese: "您想拌酱，还是把酱放在旁边？"
-        },
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "On the side, please.",
-          chinese: "请放旁边。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "on the side",
-          chinese: "放旁边；另放",
-          pronunciation: "on-the-side",
-          note: "酱料不拌进去，单独放。",
-          example: "Sauce on the side."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_004",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_combo_sauce_drink",
+        scenarioTitle: "套餐、饮料和酱料",
+        sequence: 9,
+        english: "Tossed or on the side?",
+        chinese: "您想拌酱，还是把酱放在旁边？",
+        scenario: "确认套餐、数量、口味、饮料和酱料放旁边。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/front_counter_004-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_004-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Staff",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "Would you like the sauce tossed or on the side?",
+          "Sauce tossed in or on the side?"
+        ],
+        recommendedResponses: [
+          "Tossed, please.",
+          "On the side, please.",
+          "Half tossed and half on the side."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Tossed or on the side?",
+            chinese: "您想拌酱，还是把酱放在旁边？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "On the side, please.",
+            chinese: "请放旁边。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "on the side",
+            chinese: "放旁边；另放",
+            pronunciation: "on-the-side",
+            note: "酱料不拌进去，单独放在小杯里。",
+            example: "Sauce on the side."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "front_counter_005",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_combo_sauce_drink",
-      scenarioTitle: "套餐、饮料和酱料",
-      sequence: 10,
-      english: "What drink would you like?",
-      chinese: "您想要什么饮料？",
-      scenario: "确认套餐、口味、饮料和酱料放旁边。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/front_counter_005-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_005-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Staff",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Which drink would you like?"
-      ],
-      recommendedResponses: [
-        "Sure. I will confirm the order.",
-        "Please check the screen."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "What drink would you like?",
-          chinese: "您想要什么饮料？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Yes, please.",
-          chinese: "好的，谢谢。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "What drink",
-          chinese: "前台收银表达",
-          pronunciation: "frunt-KOWN-ter",
-          note: "用于点餐、收银、收据和顾客服务。 这里重点看 “What drink” 在句子里的用法。",
-          example: "Help the customer."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_005",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_combo_sauce_drink",
+        scenarioTitle: "套餐、饮料和酱料",
+        sequence: 10,
+        english: "What would you like to drink?",
+        chinese: "您想喝什么？",
+        scenario: "确认套餐、数量、口味、饮料和酱料放旁边。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/front_counter_005-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_005-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Staff",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "What drink would you like?",
+          "Which drink would you like?"
+        ],
+        recommendedResponses: [
+          "A Coke, please.",
+          "Water, please.",
+          "No drink, thank you."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "What would you like to drink?",
+            chinese: "您想喝什么？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "A Coke, please.",
+            chinese: "请给我可乐。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "what would you like to drink",
+            chinese: "您想喝什么",
+            pronunciation: "wuht-wood-yoo-like-tuh-drink",
+            note: "套餐或点餐时询问顾客饮料选择。",
+            example: "What would you like with that?"
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "front_counter_006",
       moduleId: "front_counter",
@@ -15966,129 +15977,131 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "front_counter_007",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_general",
-      scenarioTitle: "点餐",
-      sequence: 5,
-      english: "Anything else?",
-      chinese: "还需要别的吗？",
-      scenario: "顾客点餐、确认订单、等待取餐。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/front_counter_007-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_007-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Staff",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Anything else, please?"
-      ],
-      recommendedResponses: [
-        "One, please.",
-        "That’s all, thank you.",
-        "Can I have a minute?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "Anything else?",
-          chinese: "还需要别的吗？"
-        },
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "No, that’s all.",
-          chinese: "不用，就这些。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "Anything else",
-          chinese: "前台收银表达",
-          pronunciation: "frunt-KOWN-ter",
-          note: "用于点餐、收银、收据和顾客服务。 这里重点看 “Anything else” 在句子里的用法。",
-          example: "Help the customer."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_007",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_general",
+        scenarioTitle: "点餐",
+        sequence: 5,
+        english: "Anything else?",
+        chinese: "还需要别的吗？",
+        scenario: "确认订单、等待时间、叫号取餐、外卖取餐和顾客问题处理。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/front_counter_007-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_007-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Staff",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "Would you like anything else?",
+          "Anything else for you today?"
+        ],
+        recommendedResponses: [
+          "That’s all, thank you.",
+          "Can I add fries?",
+          "One more drink, please."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Anything else?",
+            chinese: "还需要别的吗？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "No, that’s all.",
+            chinese: "不用，就这些。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "anything else",
+            chinese: "还要别的吗",
+            pronunciation: "EN-ee-thing els",
+            note: "点餐快结束时确认顾客是否还要加东西。",
+            example: "Anything else today?"
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "front_counter_008",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_general",
-      scenarioTitle: "点餐",
-      sequence: 7,
-      english: "Is that correct?",
-      chinese: "这样对吗？",
-      scenario: "顾客点餐、确认订单、等待取餐。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/front_counter_008-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_008-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Staff",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Is this that correct?"
-      ],
-      recommendedResponses: [
-        "I will confirm the correct.",
-        "Let me enter the correct correctly.",
-        "Please check the screen for correct."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Is that correct?",
-          chinese: "这样对吗？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "correct",
-          chinese: "前台收银表达",
-          pronunciation: "frunt-KOWN-ter",
-          note: "用于点餐、收银、收据和顾客服务。 这里重点看 “correct” 在句子里的用法。",
-          example: "Help the customer."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_008",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_general",
+        scenarioTitle: "点餐",
+        sequence: 7,
+        english: "Is that correct?",
+        chinese: "这样对吗？",
+        scenario: "确认订单、等待时间、叫号取餐、外卖取餐和顾客问题处理。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/front_counter_008-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_008-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Staff",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "Does that look correct?",
+          "Is everything correct on the screen?"
+        ],
+        recommendedResponses: [
+          "Yes, that’s correct.",
+          "No, I wanted ten wings.",
+          "Can you change the drink?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Is that correct?",
+            chinese: "这样对吗？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Yes, that’s correct.",
+            chinese: "是的，没错。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "correct",
+            chinese: "正确的；没错的",
+            pronunciation: "kuh-REKT",
+            note: "确认屏幕上的订单是否正确。",
+            example: "The order is correct."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "front_counter_009",
       moduleId: "front_counter",
@@ -16214,129 +16227,131 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "front_counter_011",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_combo_sauce_drink",
-      scenarioTitle: "套餐、饮料和酱料",
-      sequence: 6,
-      english: "Combo or chicken only?",
-      chinese: "套餐还是只要鸡肉单点？",
-      scenario: "确认套餐、口味、饮料和酱料放旁边。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/front_counter_011-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_011-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Staff",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Combo or chicken only, please?"
-      ],
-      recommendedResponses: [
-        "I will confirm the combo.",
-        "Let me enter the combo correctly.",
-        "Please check the screen for combo."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Combo or chicken only?",
-          chinese: "套餐还是只要鸡肉单点？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Yes, please.",
-          chinese: "好的，谢谢。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "combo",
-          chinese: "套餐",
-          pronunciation: "KOM-boh",
-          note: "主食、配菜和饮料组合。",
-          example: "Order a combo."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_011",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_combo_sauce_drink",
+        scenarioTitle: "套餐、饮料和酱料",
+        sequence: 6,
+        english: "Combo or chicken only?",
+        chinese: "套餐还是只要鸡肉单点？",
+        scenario: "确认套餐、数量、口味、饮料和酱料放旁边。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/front_counter_011-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_011-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Staff",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "Would you like the combo or just chicken?",
+          "Combo meal or chicken only?"
+        ],
+        recommendedResponses: [
+          "Combo, please.",
+          "Chicken only.",
+          "What comes with the combo?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Combo or chicken only?",
+            chinese: "套餐还是只要鸡肉单点？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Chicken only, please.",
+            chinese: "只要鸡肉单点。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "combo",
+            chinese: "套餐",
+            pronunciation: "KOM-boh",
+            note: "通常包含主食、配菜和饮料。",
+            example: "I want the combo."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "front_counter_012",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_combo_sauce_drink",
-      scenarioTitle: "套餐、饮料和酱料",
-      sequence: 7,
-      english: "Combo or wings only?",
-      chinese: "套餐还是只要鸡翅单点？",
-      scenario: "确认套餐、口味、饮料和酱料放旁边。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/front_counter_012-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_012-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Staff",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Combo or wings only, please?"
-      ],
-      recommendedResponses: [
-        "I will confirm the combo.",
-        "Let me enter the combo correctly.",
-        "Please check the screen for combo."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Combo or wings only?",
-          chinese: "套餐还是只要鸡翅单点？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Yes, please.",
-          chinese: "好的，谢谢。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "combo",
-          chinese: "套餐",
-          pronunciation: "KOM-boh",
-          note: "主食、配菜和饮料组合。",
-          example: "Order a combo."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_012",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_combo_sauce_drink",
+        scenarioTitle: "套餐、饮料和酱料",
+        sequence: 7,
+        english: "Combo or wings only?",
+        chinese: "套餐还是只要鸡翅单点？",
+        scenario: "确认套餐、数量、口味、饮料和酱料放旁边。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/front_counter_012-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_012-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Staff",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "Would you like the combo or just wings?",
+          "Combo meal or wings only?"
+        ],
+        recommendedResponses: [
+          "Wings only, please.",
+          "The combo, please.",
+          "Does the combo come with fries?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Combo or wings only?",
+            chinese: "套餐还是只要鸡翅单点？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Wings only, please.",
+            chinese: "只要鸡翅单点。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "wings only",
+            chinese: "只要鸡翅单点",
+            pronunciation: "wingz-OHN-lee",
+            note: "顾客不要套餐，只点鸡翅本身。",
+            example: "Wings only, please."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "front_counter_013",
       moduleId: "front_counter",
@@ -16537,194 +16552,194 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "front_counter_016",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_combo_sauce_drink",
-      scenarioTitle: "套餐、饮料和酱料",
-      sequence: 1,
-      english: "Chicken only.",
-      chinese: "只要鸡肉单点。",
-      scenario: "确认套餐、口味、饮料和酱料放旁边。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/front_counter_016-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_016-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      variants: [
-        "Just chicken, please.",
-        "Only the chicken."
-      ],
-      recommendedResponses: [
-        "Sure, I can help with that.",
-        "Let me enter that for you.",
-        "I will confirm the order first."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客",
-          english: "Chicken only.",
-          chinese: "只要鸡肉单点。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Sure, I can help.",
-          chinese: "可以，我来帮你。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "Chicken only",
-          chinese: "前台收银表达",
-          pronunciation: "frunt-KOWN-ter",
-          note: "用于点餐、收银、收据和顾客服务。 这里重点看 “Chicken only” 在句子里的用法。",
-          example: "Help the customer."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_016",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_combo_sauce_drink",
+        scenarioTitle: "套餐、饮料和酱料",
+        sequence: 1,
+        english: "Chicken only.",
+        chinese: "只要鸡肉单点。",
+        scenario: "确认套餐、数量、口味、饮料和酱料放旁边。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/front_counter_016-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_016-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Just chicken, please.",
+          "Only the chicken."
+        ],
+        recommendedResponses: [
+          "Sure. Chicken only.",
+          "Okay, no combo.",
+          "How many pieces would you like?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Chicken only.",
+            chinese: "只要鸡肉单点。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Sure. How many pieces would you like?",
+            chinese: "好的。您要几块？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "chicken only",
+            chinese: "只要鸡肉单点",
+            pronunciation: "CHIK-in-OHN-lee",
+            note: "表示不要套餐、不要配菜，只要鸡肉。",
+            example: "Chicken only, please."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "front_counter_017",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_combo_sauce_drink",
-      scenarioTitle: "套餐、饮料和酱料",
-      sequence: 2,
-      english: "Wings only.",
-      chinese: "只要鸡翅单点。",
-      scenario: "确认套餐、口味、饮料和酱料放旁边。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/front_counter_017-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_017-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      variants: [
-        "Just wings, please.",
-        "Only wings."
-      ],
-      recommendedResponses: [
-        "Sure, I can help with that.",
-        "Let me enter that for you.",
-        "I will confirm the order first."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客",
-          english: "Wings only.",
-          chinese: "只要鸡翅单点。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Yes, please.",
-          chinese: "好的，谢谢。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "Wings only",
-          chinese: "前台收银表达",
-          pronunciation: "frunt-KOWN-ter",
-          note: "用于点餐、收银、收据和顾客服务。 这里重点看 “Wings only” 在句子里的用法。",
-          example: "Help the customer."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_017",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_combo_sauce_drink",
+        scenarioTitle: "套餐、饮料和酱料",
+        sequence: 2,
+        english: "Wings only.",
+        chinese: "只要鸡翅单点。",
+        scenario: "确认套餐、数量、口味、饮料和酱料放旁边。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/front_counter_017-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_017-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Just wings, please.",
+          "Only wings."
+        ],
+        recommendedResponses: [
+          "Sure. Wings only.",
+          "How many wings would you like?",
+          "What flavor would you like?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Wings only.",
+            chinese: "只要鸡翅单点。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Sure. What flavor would you like?",
+            chinese: "好的。您想要什么口味？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "wings only",
+            chinese: "只要鸡翅单点",
+            pronunciation: "wingz-OHN-lee",
+            note: "表示只点鸡翅，不要套餐。",
+            example: "I want wings only."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "front_counter_018",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_combo_sauce_drink",
-      scenarioTitle: "套餐、饮料和酱料",
-      sequence: 3,
-      english: "No combo.",
-      chinese: "不要套餐。",
-      scenario: "确认套餐、口味、饮料和酱料放旁边。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/front_counter_018-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_018-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      variants: [
-        "No meal combo, please.",
-        "I do not want the combo."
-      ],
-      recommendedResponses: [
-        "Sure, I can help with that.",
-        "Let me enter that for you.",
-        "I will confirm the order first."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客",
-          english: "No combo.",
-          chinese: "不要套餐。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Yes, please.",
-          chinese: "好的，谢谢。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "combo",
-          chinese: "套餐",
-          pronunciation: "KOM-boh",
-          note: "主食、配菜和饮料组合。",
-          example: "Order a combo."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_018",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_combo_sauce_drink",
+        scenarioTitle: "套餐、饮料和酱料",
+        sequence: 3,
+        english: "No combo.",
+        chinese: "不要套餐。",
+        scenario: "确认套餐、数量、口味、饮料和酱料放旁边。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/front_counter_018-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_018-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "No meal combo, please.",
+          "I do not want the combo."
+        ],
+        recommendedResponses: [
+          "Okay, no combo.",
+          "Sure, just the chicken.",
+          "Got it. No fries or drink."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "No combo.",
+            chinese: "不要套餐。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Okay, no combo. Just the chicken?",
+            chinese: "好的，不要套餐。只要鸡肉吗？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "no combo",
+            chinese: "不要套餐",
+            pronunciation: "noh-KOM-boh",
+            note: "顾客不想要包含配菜和饮料的套餐。",
+            example: "No combo today."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "front_counter_019",
       moduleId: "front_counter",
@@ -16981,68 +16996,68 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "front_counter_023",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_combo_sauce_drink",
-      scenarioTitle: "套餐、饮料和酱料",
-      sequence: 4,
-      english: "Tossed, please.",
-      chinese: "请帮我拌酱。",
-      scenario: "确认套餐、口味、饮料和酱料放旁边。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/front_counter_023-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_023-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      variants: [
-        "Mix it with the sauce, please.",
-        "Toss it in the sauce."
-      ],
-      recommendedResponses: [
-        "Sure, I can help with that.",
-        "Let me enter that for you.",
-        "I will confirm the order first."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客",
-          english: "Tossed, please.",
-          chinese: "请帮我拌酱。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Sure, I can help.",
-          chinese: "可以，我来帮你。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "Tossed",
-          chinese: "前台收银表达",
-          pronunciation: "frunt-KOWN-ter",
-          note: "用于点餐、收银、收据和顾客服务。 这里重点看 “Tossed” 在句子里的用法。",
-          example: "Help the customer."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_023",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_combo_sauce_drink",
+        scenarioTitle: "套餐、饮料和酱料",
+        sequence: 4,
+        english: "Tossed, please.",
+        chinese: "请帮我拌酱。",
+        scenario: "确认套餐、数量、口味、饮料和酱料放旁边。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/front_counter_023-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_023-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Mix it with the sauce, please.",
+          "Toss it in the sauce."
+        ],
+        recommendedResponses: [
+          "Sure, tossed.",
+          "What flavor would you like?",
+          "Okay, sauce mixed in."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Tossed, please.",
+            chinese: "请帮我拌酱。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Sure, tossed. What flavor?",
+            chinese: "好的，拌酱。什么口味？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "tossed",
+            chinese: "拌酱",
+            pronunciation: "tawst",
+            note: "鸡翅或鸡柳和酱料拌在一起。",
+            example: "Make it tossed."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "front_counter_024",
       moduleId: "front_counter",
@@ -17106,68 +17121,68 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "front_counter_025",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_combo_sauce_drink",
-      scenarioTitle: "套餐、饮料和酱料",
-      sequence: 5,
-      english: "Keep them plain.",
-      chinese: "保持原味，不要拌酱。",
-      scenario: "确认套餐、口味、饮料和酱料放旁边。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/front_counter_025-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_025-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      variants: [
-        "No sauce, please.",
-        "Leave them plain."
-      ],
-      recommendedResponses: [
-        "Sure, I can help with that.",
-        "Let me enter that for you.",
-        "I will confirm the order first."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客",
-          english: "Keep them plain.",
-          chinese: "保持原味，不要拌酱。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Sure, I can help.",
-          chinese: "可以，我来帮你。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "Keep plain",
-          chinese: "前台收银表达",
-          pronunciation: "frunt-KOWN-ter",
-          note: "用于点餐、收银、收据和顾客服务。 这里重点看 “Keep plain” 在句子里的用法。",
-          example: "Help the customer."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_025",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_combo_sauce_drink",
+        scenarioTitle: "套餐、饮料和酱料",
+        sequence: 5,
+        english: "Keep them plain.",
+        chinese: "保持原味，不要拌酱。",
+        scenario: "确认套餐、数量、口味、饮料和酱料放旁边。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/front_counter_025-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_025-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "No sauce, please.",
+          "Leave them plain."
+        ],
+        recommendedResponses: [
+          "Sure, plain.",
+          "Okay, no sauce.",
+          "Do you want sauce on the side?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Keep them plain.",
+            chinese: "保持原味，不要拌酱。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Sure, plain. Would you like sauce on the side?",
+            chinese: "好的，原味。您要酱料放旁边吗？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "plain",
+            chinese: "原味；不加酱",
+            pronunciation: "playn",
+            note: "表示不要额外酱料或调味。",
+            example: "Keep it plain."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "front_counter_026",
       moduleId: "front_counter",
@@ -17498,67 +17513,68 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "front_counter_031",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_combo_sauce_drink",
-      scenarioTitle: "套餐、饮料和酱料",
-      sequence: 8,
-      english: "Is the drink included?",
-      chinese: "饮料包括在套餐里吗？",
-      scenario: "确认套餐、口味、饮料和酱料放旁边。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/front_counter_031-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_031-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      variants: [
-        "Is this the drink included?"
-      ],
-      recommendedResponses: [
-        "Sure, I can help with that.",
-        "Let me enter that for you.",
-        "I will confirm the order first."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客",
-          english: "Is the drink included?",
-          chinese: "饮料包括在套餐里吗？"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Yes, please.",
-          chinese: "好的，谢谢。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "drink included",
-          chinese: "前台收银表达",
-          pronunciation: "frunt-KOWN-ter",
-          note: "用于点餐、收银、收据和顾客服务。 这里重点看 “drink included” 在句子里的用法。",
-          example: "Help the customer."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_031",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_combo_sauce_drink",
+        scenarioTitle: "套餐、饮料和酱料",
+        sequence: 8,
+        english: "Is the drink included?",
+        chinese: "饮料包括在套餐里吗？",
+        scenario: "确认套餐、数量、口味、饮料和酱料放旁边。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/front_counter_031-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_031-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Does the combo include a drink?",
+          "Does it come with a drink?"
+        ],
+        recommendedResponses: [
+          "Yes, it comes with a drink.",
+          "No, the drink is extra.",
+          "You can choose any fountain drink."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Is the drink included?",
+            chinese: "饮料包括在套餐里吗？"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Yes, it comes with a drink.",
+            chinese: "是的，套餐包括一杯饮料。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "included",
+            chinese: "包括在内",
+            pronunciation: "in-KLOO-did",
+            note: "说明某样东西已经包含在价格或套餐里。",
+            example: "Fries are included."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "front_counter_032",
       moduleId: "front_counter",
@@ -17622,194 +17638,194 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "front_counter_033",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_payment_card_cash",
-      scenarioTitle: "收银和付款",
-      sequence: 1,
-      english: "You can tap your card here.",
-      chinese: "您可以在这里感应付款。",
-      scenario: "现金、刷卡、付款失败和收据。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/front_counter_033-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_033-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Staff",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Tap your card on this reader.",
-        "Use your card here."
-      ],
-      recommendedResponses: [
-        "I will confirm the card here.",
-        "Let me enter the card here correctly.",
-        "Please check the screen for card here."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "You can tap your card here.",
-          chinese: "您可以在这里感应银行卡。"
-        },
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "Okay, I’ll tap it now.",
-          chinese: "好的，我现在感应。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "card here",
-          chinese: "前台收银表达",
-          pronunciation: "frunt-KOWN-ter",
-          note: "用于点餐、收银、收据和顾客服务。 这里重点看 “card here” 在句子里的用法。",
-          example: "Help the customer."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_033",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_payment_card_cash",
+        scenarioTitle: "收银和付款",
+        sequence: 1,
+        english: "You can tap your card here.",
+        chinese: "您可以在这里感应付款。",
+        scenario: "现金、刷卡、感应付款、找零、付款失败和收据。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/front_counter_033-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_033-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Staff",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "Tap your card on this reader.",
+          "You can tap to pay here."
+        ],
+        recommendedResponses: [
+          "Okay, I’ll tap it now.",
+          "Should I tap here?",
+          "It went through."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "You can tap your card here.",
+            chinese: "您可以在这里感应付款。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Okay, I’ll tap it now.",
+            chinese: "好的，我现在感应。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "tap your card",
+            chinese: "感应银行卡",
+            pronunciation: "tap-yer-kard",
+            note: "用银行卡或手机靠近机器付款。",
+            example: "Tap your card here."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "front_counter_034",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_payment_card_cash",
-      scenarioTitle: "收银和付款",
-      sequence: 4,
-      english: "Please follow the screen.",
-      chinese: "请按照屏幕提示操作。",
-      scenario: "现金、刷卡、付款失败和收据。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/front_counter_034-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_034-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Staff",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Look at the screen and follow the steps.",
-        "Use the prompts on the screen."
-      ],
-      recommendedResponses: [
-        "I will confirm the follow screen.",
-        "Let me enter the follow screen correctly.",
-        "Please check the screen for follow screen."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Please follow the screen.",
-          chinese: "请按照屏幕提示操作。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "screen",
-          chinese: "屏幕",
-          pronunciation: "skreen",
-          note: "收银机或刷卡机上的提示界面。",
-          example: "Check the screen."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_034",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_payment_card_cash",
+        scenarioTitle: "收银和付款",
+        sequence: 4,
+        english: "Please follow the screen.",
+        chinese: "请按照屏幕提示操作。",
+        scenario: "现金、刷卡、感应付款、找零、付款失败和收据。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/front_counter_034-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_034-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Staff",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "Follow the prompts on the screen.",
+          "Look at the screen and follow the steps."
+        ],
+        recommendedResponses: [
+          "Okay, I see it.",
+          "Do I tap here?",
+          "It is asking for a tip."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Please follow the screen.",
+            chinese: "请按照屏幕提示操作。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Okay, it is asking for a tip.",
+            chinese: "好的，屏幕在问小费。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "follow the screen",
+            chinese: "按照屏幕提示操作",
+            pronunciation: "FAH-loh-thuh-skreen",
+            note: "刷卡机上会提示小费、付款方式或确认步骤。",
+            example: "Follow the screen."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "front_counter_035",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_payment_card_cash",
-      scenarioTitle: "收银和付款",
-      sequence: 6,
-      english: "Would you like a receipt?",
-      chinese: "您需要小票吗？",
-      scenario: "现金、刷卡、付款失败和收据。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/front_counter_035-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_035-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Staff",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Do you need a receipt?",
-        "Would you like your receipt printed?"
-      ],
-      recommendedResponses: [
-        "I will confirm the receipt.",
-        "Let me enter the receipt correctly.",
-        "Please check the screen for receipt."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Would you like a receipt?",
-          chinese: "您需要小票吗？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Yes, please.",
-          chinese: "好的，谢谢。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "receipt",
-          chinese: "小票；收据",
-          pronunciation: "ri-SEET",
-          note: "付款后的凭证，p 不发音。",
-          example: "Print the receipt."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_035",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_payment_card_cash",
+        scenarioTitle: "收银和付款",
+        sequence: 6,
+        english: "Would you like a receipt?",
+        chinese: "您需要小票吗？",
+        scenario: "现金、刷卡、感应付款、找零、付款失败和收据。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/front_counter_035-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_035-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Staff",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "Do you need a receipt?",
+          "Would you like your receipt printed?"
+        ],
+        recommendedResponses: [
+          "Yes, please.",
+          "No, thank you.",
+          "Can you email it to me?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Would you like a receipt?",
+            chinese: "您需要小票吗？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Yes, please.",
+            chinese: "是的，请给我。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "receipt",
+            chinese: "小票；收据",
+            pronunciation: "ri-SEET",
+            note: "付款后的凭证，p 不发音。",
+            example: "Print the receipt."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "front_counter_036",
       moduleId: "front_counter",
@@ -17995,67 +18011,68 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "front_counter_039",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_general",
-      scenarioTitle: "点餐",
-      sequence: 8,
-      english: "Can I get your name for the order?",
-      chinese: "请问订单姓名是什么？",
-      scenario: "顾客点餐、确认订单、等待取餐。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/front_counter_039-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_039-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Staff",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Can I get your name for the order, please?"
-      ],
-      recommendedResponses: [
-        "I will confirm the name order.",
-        "Let me enter the name order correctly.",
-        "Please check the screen for name order."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Can I get your name for the order?",
-          chinese: "请问订单姓名是什么？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check your order.",
-          chinese: "我帮你查一下订单。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "order",
-          chinese: "订单",
-          pronunciation: "OR-der",
-          note: "顾客点的餐或外卖单。",
-          example: "Check the order."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_039",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_general",
+        scenarioTitle: "点餐",
+        sequence: 8,
+        english: "Can I get your name for the order?",
+        chinese: "请问订单姓名是什么？",
+        scenario: "确认订单、等待时间、叫号取餐、外卖取餐和顾客问题处理。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/front_counter_039-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_039-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Staff",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "What name should I put on the order?",
+          "May I have a name for the order?"
+        ],
+        recommendedResponses: [
+          "Maria.",
+          "Put it under Kevin.",
+          "It is for John."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Can I get your name for the order?",
+            chinese: "请问订单姓名是什么？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Maria.",
+            chinese: "Maria。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "name for the order",
+            chinese: "订单姓名",
+            pronunciation: "naym-for-the-OR-der",
+            note: "前台用名字叫号或查找订单。",
+            example: "What name for the order?"
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "front_counter_040",
       moduleId: "front_counter",
@@ -18249,68 +18266,74 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "front_counter_043",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_general",
-      scenarioTitle: "点餐",
-      sequence: 9,
-      english: "Let me read the order back to you.",
-      chinese: "我给您把订单复述一遍。",
-      scenario: "顾客点餐、确认订单、等待取餐。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/front_counter_043-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_043-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Staff",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "I will repeat your order back.",
-        "Let me confirm the order out loud."
-      ],
-      recommendedResponses: [
-        "I will confirm the read order.",
-        "Let me enter the read order correctly.",
-        "Please check the screen for read order."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Let me read the order back to you.",
-          chinese: "我给您把订单复述一遍。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check your order.",
-          chinese: "我帮你查一下订单。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "order",
-          chinese: "订单",
-          pronunciation: "OR-der",
-          note: "顾客点的餐或外卖单。",
-          example: "Check the order."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_043",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_general",
+        scenarioTitle: "点餐",
+        sequence: 9,
+        english: "Let me repeat your order.",
+        chinese: "我给您重复确认一下订单。",
+        scenario: "确认订单、等待时间、叫号取餐、外卖取餐和顾客问题处理。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/front_counter_043-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_043-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Staff",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "Let me read your order back.",
+          "I’ll repeat the order for you."
+        ],
+        recommendedResponses: [
+          "Okay.",
+          "Yes, that is correct.",
+          "Can you change the drink?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Let me repeat your order.",
+            chinese: "我给您重复确认一下订单。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Okay.",
+            chinese: "好的。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Ten wings, fries, and a Coke. Is that correct?",
+            chinese: "十个鸡翅、薯条和一杯可乐。对吗？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "repeat your order",
+            chinese: "重复确认您的订单",
+            pronunciation: "ri-PEET-yer-OR-der",
+            note: "收银员把订单读一遍，避免点错。",
+            example: "I will repeat it for you."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "front_counter_044",
       moduleId: "front_counter",
@@ -18564,68 +18587,68 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "front_counter_048",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_general",
-      scenarioTitle: "点餐",
-      sequence: 3,
-      english: "The order is still being prepared.",
-      chinese: "订单还在准备中。",
-      scenario: "顾客点餐、确认订单、等待取餐。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/front_counter_048-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_048-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Staff",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "This order is still being prepared.",
-        "There is a problem with this."
-      ],
-      recommendedResponses: [
-        "I will confirm the order still.",
-        "Let me enter the order still correctly.",
-        "Please check the screen for order still."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "The order is still being prepared.",
-          chinese: "订单还在准备中。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check your order.",
-          chinese: "我帮你查一下订单。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "order",
-          chinese: "订单",
-          pronunciation: "OR-der",
-          note: "顾客点的餐或外卖单。",
-          example: "Check the order."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_048",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_general",
+        scenarioTitle: "点餐",
+        sequence: 3,
+        english: "Your order is almost ready.",
+        chinese: "您的订单快好了。",
+        scenario: "确认订单、等待时间、叫号取餐、外卖取餐和顾客问题处理。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/front_counter_048-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_048-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Staff",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "Your order is nearly ready.",
+          "It is almost ready."
+        ],
+        recommendedResponses: [
+          "Okay, thank you.",
+          "How much longer?",
+          "I’ll wait here."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Your order is almost ready.",
+            chinese: "您的订单快好了。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Okay, thank you.",
+            chinese: "好的，谢谢。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "almost ready",
+            chinese: "快好了",
+            pronunciation: "AWL-mohst RED-ee",
+            note: "告诉顾客订单马上可以取。",
+            example: "The food is almost ready."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "front_counter_049",
       moduleId: "front_counter",
@@ -18955,68 +18978,68 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "front_counter_054",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_tips_receipts",
-      scenarioTitle: "小费",
-      sequence: 4,
-      english: "Let me check the receipt and packing record.",
-      chinese: "我核对一下小票和打包记录。",
-      scenario: "解释小费屏幕和收据。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/front_counter_054-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_054-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Staff",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "I will check the receipt and packing record.",
-        "Let me compare the receipt with the packing record."
-      ],
-      recommendedResponses: [
-        "I will confirm the receipt.",
-        "Let me enter the receipt correctly.",
-        "Please check the screen for receipt."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "Let me check the receipt and packing record.",
-          chinese: "我核对一下小票和打包记录。"
-        },
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "Okay, thank you.",
-          chinese: "好的，谢谢。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "receipt",
-          chinese: "收据",
-          pronunciation: "re-CEIPT",
-          note: "付款后的小票。",
-          example: "Would you like a receipt?"
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_054",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_tips_receipts",
+        scenarioTitle: "小费",
+        sequence: 4,
+        english: "Let me check your order.",
+        chinese: "我帮您查一下订单。",
+        scenario: "解释小费屏幕、查看小票和处理订单确认。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/front_counter_054-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_054-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Staff",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "I’ll check your order for you.",
+          "Let me look up your order."
+        ],
+        recommendedResponses: [
+          "Thank you.",
+          "Here is my receipt.",
+          "The order is under Maria."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Let me check your order.",
+            chinese: "我帮您查一下订单。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Thank you. Here is my receipt.",
+            chinese: "谢谢。这是我的小票。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "check your order",
+            chinese: "查您的订单",
+            pronunciation: "chek-yer-OR-der",
+            note: "顾客有问题或取餐时，前台查看订单信息。",
+            example: "I will check it now."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "front_counter_055",
       moduleId: "front_counter",
@@ -19204,129 +19227,131 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "front_counter_058",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_tips_receipts",
-      scenarioTitle: "小费",
-      sequence: 1,
-      english: "Can you show me the receipt?",
-      chinese: "您能给我看一下小票吗？",
-      scenario: "解释小费屏幕和收据。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/front_counter_058-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_058-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Staff",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Could you show me the receipt?",
-        "Can you please show me the receipt?"
-      ],
-      recommendedResponses: [
-        "You can pay here.",
-        "I can print the receipt for you."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "Can you show me the receipt?",
-          chinese: "可以让我看一下小票吗？"
-        },
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "Sure, here it is.",
-          chinese: "可以，在这里。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "receipt",
-          chinese: "收据",
-          pronunciation: "re-CEIPT",
-          note: "付款后的小票。",
-          example: "Would you like a receipt?"
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_058",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_tips_receipts",
+        scenarioTitle: "小费",
+        sequence: 1,
+        english: "Can you show me the receipt?",
+        chinese: "您能给我看一下小票吗？",
+        scenario: "解释小费屏幕、查看小票和处理订单确认。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/front_counter_058-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_058-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Staff",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "May I see your receipt?",
+          "Could you show me your receipt?"
+        ],
+        recommendedResponses: [
+          "Sure, here it is.",
+          "I do not have the receipt.",
+          "I have the order confirmation on my phone."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Can you show me the receipt?",
+            chinese: "您能给我看一下小票吗？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Sure, here it is.",
+            chinese: "可以，在这里。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "show me the receipt",
+            chinese: "给我看一下小票",
+            pronunciation: "show-mee-thuh-ri-SEET",
+            note: "处理订单问题时请顾客出示购买凭证。",
+            example: "Show me the receipt."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "front_counter_059",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_general",
-      scenarioTitle: "点餐",
-      sequence: 10,
-      english: "Was this order placed in store or online?",
-      chinese: "这个订单是在店里下的，还是网上下的？",
-      scenario: "顾客点餐、确认订单、等待取餐。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/front_counter_059-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_059-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Staff",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Was this order placed in store or online, please?"
-      ],
-      recommendedResponses: [
-        "I will confirm the order placed.",
-        "Let me enter the order placed correctly.",
-        "Please check the screen for order placed."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Was this order placed in store or online?",
-          chinese: "这个订单是在店里下的，还是网上下的？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check your order.",
-          chinese: "我帮你查一下订单。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "order placed",
-          chinese: "订单下单",
-          pronunciation: "OR-der placed",
-          note: "说明订单是在哪里、通过什么方式下的。",
-          example: "The order was placed online."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_059",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_general",
+        scenarioTitle: "点餐",
+        sequence: 10,
+        english: "Was this order placed in store or online?",
+        chinese: "这个订单是在店里下的，还是网上下的？",
+        scenario: "确认订单、等待时间、叫号取餐、外卖取餐和顾客问题处理。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/front_counter_059-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_059-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Staff",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "Did you order in store or online?",
+          "Was this an online order?"
+        ],
+        recommendedResponses: [
+          "I ordered online.",
+          "I placed it in the store.",
+          "It was through DoorDash."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Was this order placed in store or online?",
+            chinese: "这个订单是在店里下的，还是网上下的？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I ordered online.",
+            chinese: "我是网上下的单。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "placed online",
+            chinese: "网上下单",
+            pronunciation: "playst-on-LINE",
+            note: "订单是通过网站或外卖平台下的。",
+            example: "The order was placed online."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "front_counter_060",
       moduleId: "front_counter",
@@ -19576,68 +19601,68 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "front_counter_064",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_general",
-      scenarioTitle: "点餐",
-      sequence: 4,
-      english: "Let me check with my manager.",
-      chinese: "我去和经理确认一下。",
-      scenario: "顾客点餐、确认订单、等待取餐。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/front_counter_064-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_064-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 3",
-      speakerRole: "Staff",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "I need to ask my manager.",
-        "Let me get my manager to check."
-      ],
-      recommendedResponses: [
-        "I will confirm the manager.",
-        "Let me enter the manager correctly.",
-        "Please check the screen for manager."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Let me check with my manager.",
-          chinese: "我去和经理确认一下。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "manager",
-          chinese: "经理",
-          pronunciation: "MAN-uh-jer",
-          note: "处理投诉、退款或复杂问题的人。",
-          example: "Call the manager."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_064",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_general",
+        scenarioTitle: "点餐",
+        sequence: 4,
+        english: "Let me get the manager.",
+        chinese: "我去请经理过来。",
+        scenario: "确认订单、等待时间、叫号取餐、外卖取餐和顾客问题处理。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/front_counter_064-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_064-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 3",
+        speakerRole: "Staff",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "I will get the manager for you.",
+          "Let me ask the manager to help."
+        ],
+        recommendedResponses: [
+          "Okay, thank you.",
+          "Yes, please.",
+          "I would like to speak with the manager."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "Let me get the manager.",
+            chinese: "我去请经理过来。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Okay, thank you.",
+            chinese: "好的，谢谢。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "get the manager",
+            chinese: "请经理过来",
+            pronunciation: "get-thuh-MAN-uh-jer",
+            note: "遇到投诉、退款或复杂问题时请经理处理。",
+            example: "Please get the manager."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "front_counter_065",
       moduleId: "front_counter",
@@ -19701,322 +19726,326 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "front_counter_066",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_general",
-      scenarioTitle: "点餐",
-      sequence: 1,
-      english: "My order is missing fries.",
-      chinese: "我的订单里少了薯条。",
-      scenario: "顾客点餐、确认订单、等待取餐。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/front_counter_066-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_066-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      variants: [
-        "My order does not have fries.",
-        "The fries are missing from my order."
-      ],
-      recommendedResponses: [
-        "Sure, I can help with that.",
-        "Let me enter that for you.",
-        "I will confirm the order first."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客",
-          english: "My order is missing fries.",
-          chinese: "我的订单里少了薯条。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Sure, I can help.",
-          chinese: "可以，我来帮你。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "order",
-          chinese: "订单",
-          pronunciation: "OR-der",
-          note: "顾客点的餐或外卖单。",
-          example: "Check the order."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_066",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_general",
+        scenarioTitle: "点餐",
+        sequence: 1,
+        english: "My order is missing fries.",
+        chinese: "我的订单里少了薯条。",
+        scenario: "确认订单、等待时间、叫号取餐、外卖取餐和顾客问题处理。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/front_counter_066-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_066-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "My order does not have fries.",
+          "The fries are missing from my order."
+        ],
+        recommendedResponses: [
+          "I’m sorry. Let me check your order.",
+          "I’ll get the fries for you now.",
+          "We’ll fix that right away."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "My order is missing fries.",
+            chinese: "我的订单里少了薯条。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "I’m sorry. I’ll get the fries for you now.",
+            chinese: "很抱歉。我现在给您拿薯条。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "missing fries",
+            chinese: "少了薯条",
+            pronunciation: "MIS-ing fryz",
+            note: "订单里应该有薯条但没有放进去。",
+            example: "The drink is missing."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "front_counter_067",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_general",
-      scenarioTitle: "点餐",
-      sequence: 2,
-      english: "This isn't what I ordered.",
-      chinese: "这不是我点的。",
-      scenario: "顾客点餐、确认订单、等待取餐。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/front_counter_067-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_067-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "customer_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      variants: [
-        "This is not the item I ordered.",
-        "This order is different from what I asked for."
-      ],
-      recommendedResponses: [
-        "Sure, I can help with that.",
-        "Let me enter that for you.",
-        "I will confirm the order first."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客",
-          english: "This isn't what I ordered.",
-          chinese: "这不是我点的。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Sure, I can help.",
-          chinese: "可以，我来帮你。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "order",
-          chinese: "订单",
-          pronunciation: "OR-der",
-          note: "顾客点的餐或外卖单。",
-          example: "Check the order."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_067",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_general",
+        scenarioTitle: "点餐",
+        sequence: 2,
+        english: "This isn't what I ordered.",
+        chinese: "这不是我点的。",
+        scenario: "确认订单、等待时间、叫号取餐、外卖取餐和顾客问题处理。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/front_counter_067-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_067-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "customer_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "This is not what I ordered.",
+          "This order is different from what I asked for."
+        ],
+        recommendedResponses: [
+          "I’m sorry. Let me check your order.",
+          "We will remake it for you.",
+          "Let me fix that right away."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "This isn't what I ordered.",
+            chinese: "这不是我点的。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "I’m sorry. Let me check your order and fix it.",
+            chinese: "很抱歉。我帮您查一下订单并处理。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "what I ordered",
+            chinese: "我点的东西",
+            pronunciation: "wuht-ai-OR-derd",
+            note: "顾客说明拿到的餐品和自己点的不一样。",
+            example: "This is what I ordered."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "front_counter_068",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_greeting_order",
-      scenarioTitle: "前台迎客",
-      sequence: 1,
-      english: "Hi! Are you ready to order?",
-      chinese: "您好！现在可以点餐了吗？",
-      scenario: "顾客进店时欢迎、开始点餐。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "前台员工要说",
-      audioNormal: "/audio/en-US/front_counter_068-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_068-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Staff",
-      speakerRoleZh: "前台员工要说",
-      variants: [
-        "Hi! Are you ready to order, please?"
-      ],
-      recommendedResponses: [
-        "I will confirm the ready order.",
-        "Let me enter the ready order correctly.",
-        "Please check the screen for ready order."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "前台员工",
-          english: "Hi! Are you ready to order?",
-          chinese: "您好！现在可以点餐了吗？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check your order.",
-          chinese: "我帮你查一下订单。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "order",
-          chinese: "订单",
-          pronunciation: "OR-der",
-          note: "顾客点的餐或外卖单。",
-          example: "Check the order."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_068",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_greeting_order",
+        scenarioTitle: "前台迎客",
+        sequence: 1,
+        english: "Hi! Are you ready to order?",
+        chinese: "您好！现在可以点餐了吗？",
+        scenario: "顾客进店时欢迎、开始点餐和说明套餐。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "前台员工要说",
+        audioNormal: "/audio/en-US/front_counter_068-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_068-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Staff",
+        speakerRoleZh: "前台员工要说",
+        variants: [
+          "Are you ready to order?",
+          "Are you ready to order now?"
+        ],
+        recommendedResponses: [
+          "Yes, I’m ready.",
+          "I need a minute, please.",
+          "Can I ask a question first?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "前台员工要说",
+            english: "Hi! Are you ready to order?",
+            chinese: "您好！现在可以点餐了吗？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Yes, I’m ready.",
+            chinese: "是的，我准备好了。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "ready to order",
+            chinese: "准备好点餐",
+            pronunciation: "RED-ee-toh-OR-der",
+            note: "前台询问顾客是否已经决定要点什么。",
+            example: "Are you ready to order?"
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "front_counter_069",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_greeting_order",
-      scenarioTitle: "前台迎客",
-      sequence: 4,
-      english: "It comes with fries and a drink.",
-      chinese: "套餐包括薯条和一杯饮料。",
-      scenario: "顾客进店时欢迎、开始点餐。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "前台员工要说",
-      audioNormal: "/audio/en-US/front_counter_069-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_069-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Staff",
-      speakerRoleZh: "前台员工要说",
-      variants: [
-        "The combo includes fries and a drink."
-      ],
-      recommendedResponses: [
-        "Great, I’ll take the combo.",
-        "Can I change the drink?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "It comes with fries and a drink.",
-          chinese: "套餐包括薯条和一杯饮料。"
-        },
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "Okay, I’ll take the combo.",
-          chinese: "好的，我要套餐。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "comes with",
-          chinese: "包括；附带",
-          pronunciation: "kumz-with",
-          note: "说明套餐里包含哪些东西。",
-          example: "It comes with rice."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_069",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_greeting_order",
+        scenarioTitle: "前台迎客",
+        sequence: 4,
+        english: "It comes with fries and a drink.",
+        chinese: "套餐包括薯条和一杯饮料。",
+        scenario: "顾客进店时欢迎、开始点餐和说明套餐。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "前台员工要说",
+        audioNormal: "/audio/en-US/front_counter_069-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_069-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Staff",
+        speakerRoleZh: "前台员工要说",
+        variants: [
+          "The combo includes fries and a drink.",
+          "Fries and a drink come with it."
+        ],
+        recommendedResponses: [
+          "Great, I’ll take the combo.",
+          "Can I change the drink?",
+          "Can I get no fries?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "前台员工要说",
+            english: "It comes with fries and a drink.",
+            chinese: "套餐包括薯条和一杯饮料。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Okay, I’ll take the combo.",
+            chinese: "好的，我要套餐。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "comes with",
+            chinese: "包括；附带",
+            pronunciation: "kumz-with",
+            note: "说明套餐里包含哪些东西。",
+            example: "It comes with rice."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "front_counter_070",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_greeting_order",
-      scenarioTitle: "前台迎客",
-      sequence: 2,
-      english: "Okay, I'll take the combo.",
-      chinese: "好的，我要套餐。",
-      scenario: "顾客进店时欢迎、开始点餐。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/front_counter_070-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_070-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      variants: [
-        "I’ll get the combo, please."
-      ],
-      recommendedResponses: [
-        "Sure, I can help with that.",
-        "Let me enter that for you.",
-        "I will confirm the order first."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客",
-          english: "Okay, I'll take the combo.",
-          chinese: "好的，我要套餐。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Yes, please.",
-          chinese: "好的，谢谢。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "combo",
-          chinese: "套餐",
-          pronunciation: "KOM-boh",
-          note: "主食、配菜和饮料组合。",
-          example: "Order a combo."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_070",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_greeting_order",
+        scenarioTitle: "前台迎客",
+        sequence: 2,
+        english: "Okay, I'll take the combo.",
+        chinese: "好的，我要套餐。",
+        scenario: "顾客进店时欢迎、开始点餐和说明套餐。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/front_counter_070-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_070-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "I’ll get the combo, please.",
+          "I’ll take the meal combo."
+        ],
+        recommendedResponses: [
+          "Sure. What drink would you like?",
+          "Okay, the combo.",
+          "What flavor would you like?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Okay, I'll take the combo.",
+            chinese: "好的，我要套餐。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "前台员工要说",
+            english: "Sure. What drink would you like?",
+            chinese: "好的。您想要什么饮料？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "take the combo",
+            chinese: "要套餐",
+            pronunciation: "tayk-thuh-KOM-boh",
+            note: "顾客决定选择套餐时这样说。",
+            example: "I’ll take the combo."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "front_counter_071",
       moduleId: "front_counter",
@@ -20467,57 +20496,70 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "front_counter_079",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_tips_receipts",
-      scenarioTitle: "小费",
-      sequence: 2,
-      english: "I'm sorry. Can I see your receipt or order confirmation?",
-      chinese: "很抱歉。可以让我看一下您的小票或订单确认吗？",
-      scenario: "解释小费屏幕和收据。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "前台员工要说",
-      audioNormal: "/audio/en-US/front_counter_079-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_079-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Staff",
-      speakerRoleZh: "前台员工要说",
-      difficulty: "Level 1",
-      variants: [
-        "Sorry, may I see your receipt?",
-        "Can I check your order confirmation?"
-      ],
-      recommendedResponses: [
-        "Here is my receipt.",
-        "I ordered online.",
-        "I do not have the receipt."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "order confirmation",
-          chinese: "订单确认信息",
-          pronunciation: "OR-der kon-fer-MAY-shun",
-          note: "手机或邮件里的订单证明。",
-          example: "Show the order confirmation."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_079",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_tips_receipts",
+        scenarioTitle: "小费",
+        sequence: 2,
+        english: "I'm sorry. Can I see your receipt or order confirmation?",
+        chinese: "很抱歉。可以让我看一下您的小票或订单确认吗？",
+        scenario: "解释小费屏幕、查看小票和处理订单确认。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "前台员工要说",
+        audioNormal: "/audio/en-US/front_counter_079-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_079-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Staff",
+        speakerRoleZh: "前台员工要说",
+        difficulty: "Level 1",
+        variants: [
+          "Sorry, may I see your receipt?",
+          "Can I check your order confirmation?"
+        ],
+        recommendedResponses: [
+          "Here is my receipt.",
+          "I ordered online.",
+          "I do not have the receipt."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "前台员工要说",
+            english: "I'm sorry. Can I see your receipt or order confirmation?",
+            chinese: "很抱歉。可以让我看一下您的小票或订单确认吗？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Here is my receipt.",
+            chinese: "这是我的小票。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "order confirmation",
+            chinese: "订单确认信息",
+            pronunciation: "OR-der kon-fer-MAY-shun",
+            note: "手机或邮件里的订单证明。",
+            example: "Show the order confirmation."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "front_counter_080",
       moduleId: "front_counter",
@@ -20920,265 +20962,330 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "front_counter_091",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_payment_card_cash",
-      scenarioTitle: "收银和付款",
-      sequence: 3,
-      english: "It looks like the card didn't go through.",
-      chinese: "看起来这张卡没有支付成功。",
-      scenario: "现金、刷卡、付款失败和收据。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "前台员工要说",
-      audioNormal: "/audio/en-US/front_counter_091-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_091-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Staff",
-      speakerRoleZh: "前台员工要说",
-      difficulty: "Level 1",
-      variants: [
-        "The card did not go through.",
-        "The payment did not work."
-      ],
-      recommendedResponses: [
-        "Can I try again?",
-        "I can use another card.",
-        "I will pay cash."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "go through",
-          chinese: "支付成功/通过",
-          pronunciation: "goh throo",
-          note: "付款场景里 did not go through 表示没有扣款成功。",
-          example: "The payment went through."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_091",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_payment_card_cash",
+        scenarioTitle: "收银和付款",
+        sequence: 3,
+        english: "It looks like the card didn't go through.",
+        chinese: "看起来这张卡没有支付成功。",
+        scenario: "现金、刷卡、感应付款、找零、付款失败和收据。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "前台员工要说",
+        audioNormal: "/audio/en-US/front_counter_091-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_091-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Staff",
+        speakerRoleZh: "前台员工要说",
+        difficulty: "Level 1",
+        variants: [
+          "The card did not go through.",
+          "The payment did not work."
+        ],
+        recommendedResponses: [
+          "Can I try again?",
+          "I can use another card.",
+          "I will pay cash."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "前台员工要说",
+            english: "It looks like the card didn't go through.",
+            chinese: "看起来这张卡没有支付成功。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I try again?",
+            chinese: "我可以再试一次吗？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "go through",
+            chinese: "支付成功；通过",
+            pronunciation: "goh-throo",
+            note: "付款场景里 did not go through 表示没有扣款成功。",
+            example: "The payment went through."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "front_counter_092",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_payment_card_cash",
-      scenarioTitle: "收银和付款",
-      sequence: 2,
-      english: "Can I try the card again?",
-      chinese: "我可以再试一次这张卡吗？",
-      scenario: "现金、刷卡、付款失败和收据。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/front_counter_092-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_092-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      difficulty: "Level 1",
-      variants: [
-        "Can I try again?",
-        "May I run the card again?"
-      ],
-      recommendedResponses: [
-        "Yes, please try again.",
-        "Please wait for the screen.",
-        "You can use another card too."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "try the card again",
-          chinese: "再刷/再试这张卡",
-          pronunciation: "try thuh kard uh-GEN",
-          note: "付款失败后请求再试一次。",
-          example: "Try the card again."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_092",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_payment_card_cash",
+        scenarioTitle: "收银和付款",
+        sequence: 2,
+        english: "Can I try the card again?",
+        chinese: "我可以再试一次这张卡吗？",
+        scenario: "现金、刷卡、感应付款、找零、付款失败和收据。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/front_counter_092-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_092-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "Can I try again?",
+          "May I run the card again?"
+        ],
+        recommendedResponses: [
+          "Yes, please try again.",
+          "Please wait for the screen.",
+          "You can use another card too."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I try the card again?",
+            chinese: "我可以再试一次这张卡吗？"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "前台员工要说",
+            english: "Yes. Please wait for the screen first.",
+            chinese: "可以。请先等屏幕提示。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "try the card again",
+            chinese: "再试一次这张卡",
+            pronunciation: "try-thuh-kard-uh-GEN",
+            note: "付款失败后请求再刷或再感应一次。",
+            example: "Try the card again."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "front_counter_093",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_payment_card_cash",
-      scenarioTitle: "收银和付款",
-      sequence: 7,
-      english: "Yes. Please wait for the screen, then tap or insert the card again.",
-      chinese: "可以。请等屏幕提示后，再次感应或插入银行卡。",
-      scenario: "现金、刷卡、付款失败和收据。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "前台员工要说",
-      audioNormal: "/audio/en-US/front_counter_093-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_093-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Staff",
-      speakerRoleZh: "前台员工要说",
-      difficulty: "Level 2",
-      variants: [
-        "Wait for the screen, then tap again.",
-        "Please tap or insert the card again."
-      ],
-      recommendedResponses: [
-        "Okay, I will wait.",
-        "Should I tap here?",
-        "It went through now."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "tap or insert",
-          chinese: "感应或插卡",
-          pronunciation: "tap or in-SERT",
-          note: "tap 是手机或卡感应；insert 是插入芯片卡。",
-          example: "Tap your card."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_093",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_payment_card_cash",
+        scenarioTitle: "收银和付款",
+        sequence: 7,
+        english: "Yes. Please wait for the screen, then tap or insert the card again.",
+        chinese: "可以。请等屏幕提示后，再次感应或插入银行卡。",
+        scenario: "现金、刷卡、感应付款、找零、付款失败和收据。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "前台员工要说",
+        audioNormal: "/audio/en-US/front_counter_093-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_093-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Staff",
+        speakerRoleZh: "前台员工要说",
+        difficulty: "Level 2",
+        variants: [
+          "Wait for the screen, then tap again.",
+          "Please tap or insert the card again."
+        ],
+        recommendedResponses: [
+          "Okay, I will wait.",
+          "Should I tap here?",
+          "It went through now."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "前台员工要说",
+            english: "Yes. Please wait for the screen, then tap or insert the card again.",
+            chinese: "可以。请等屏幕提示后，再次感应或插入银行卡。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Okay, I will wait.",
+            chinese: "好的，我等一下。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "tap or insert",
+            chinese: "感应或插卡",
+            pronunciation: "tap-or-in-SERT",
+            note: "tap 是感应；insert 是插入芯片卡。",
+            example: "Tap or insert the card."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "front_counter_094",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_payment_card_cash",
-      scenarioTitle: "收银和付款",
-      sequence: 9,
-      english: "Your total is twelve forty-five.",
-      chinese: "总共是12.45美元。",
-      scenario: "现金、刷卡、付款失败和收据。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "前台员工要说",
-      audioNormal: "/audio/en-US/front_counter_094-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_094-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Staff",
-      speakerRoleZh: "前台员工要说",
-      difficulty: "Level 1",
-      variants: [
-        "That will be twelve forty-five.",
-        "Your total comes to twelve forty-five."
-      ],
-      recommendedResponses: [
-        "Here you go.",
-        "Can I pay by card?",
-        "Can I get a receipt?"
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "twelve forty-five",
-          chinese: "12.45美元",
-          pronunciation: "twelv FOR-dee five",
-          note: "收银时金额常这样读。",
-          example: "Your total is ten fifty."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_094",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_payment_card_cash",
+        scenarioTitle: "收银和付款",
+        sequence: 9,
+        english: "Your total is twelve forty-five.",
+        chinese: "总共是12.45美元。",
+        scenario: "现金、刷卡、感应付款、找零、付款失败和收据。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "前台员工要说",
+        audioNormal: "/audio/en-US/front_counter_094-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_094-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Staff",
+        speakerRoleZh: "前台员工要说",
+        difficulty: "Level 1",
+        variants: [
+          "That will be twelve forty-five.",
+          "Your total comes to twelve forty-five."
+        ],
+        recommendedResponses: [
+          "Here you go.",
+          "Can I pay by card?",
+          "Can I get a receipt?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "前台员工要说",
+            english: "Your total is twelve forty-five.",
+            chinese: "总共是12.45美元。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I pay by card?",
+            chinese: "我可以刷卡吗？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "your total",
+            chinese: "您的总价",
+            pronunciation: "yer-TOH-tul",
+            note: "收银时报出顾客需要支付的总金额。",
+            example: "Your total is ten fifty."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "front_counter_095",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_payment_card_cash",
-      scenarioTitle: "收银和付款",
-      sequence: 8,
-      english: "Here's twenty dollars.",
-      chinese: "给您二十美元。",
-      scenario: "现金、刷卡、付款失败和收据。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/front_counter_095-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_095-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      difficulty: "Level 1",
-      variants: [
-        "Here is twenty.",
-        "I have twenty dollars."
-      ],
-      recommendedResponses: [
-        "Thank you. I will get your change.",
-        "Your change is seven fifty-five.",
-        "Do you need a receipt?"
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "twenty dollars",
-          chinese: "二十美元",
-          pronunciation: "TWEN-tee DOL-erz",
-          note: "现金付款时递给收银员的钱。",
-          example: "Here is ten dollars."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_095",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_payment_card_cash",
+        scenarioTitle: "收银和付款",
+        sequence: 8,
+        english: "Here's twenty dollars.",
+        chinese: "给您二十美元。",
+        scenario: "现金、刷卡、感应付款、找零、付款失败和收据。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/front_counter_095-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_095-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "Here is twenty.",
+          "I have twenty dollars."
+        ],
+        recommendedResponses: [
+          "Thank you. I will get your change.",
+          "Your change is seven fifty-five.",
+          "Do you need a receipt?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Here's twenty dollars.",
+            chinese: "给您二十美元。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "前台员工要说",
+            english: "Thank you. Your change is seven fifty-five.",
+            chinese: "谢谢。找您七块五毛五。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "twenty dollars",
+            chinese: "二十美元",
+            pronunciation: "TWEN-tee DOL-erz",
+            note: "现金付款时递给收银员的钱。",
+            example: "Here is ten dollars."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "front_counter_096",
       moduleId: "front_counter",
@@ -21217,216 +21324,274 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "front_counter_097",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_payment_card_cash",
-      scenarioTitle: "收银和付款",
-      sequence: 10,
-      english: "Can I get a receipt, please?",
-      chinese: "可以给我一张小票吗？",
-      scenario: "现金、刷卡、付款失败和收据。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/front_counter_097-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_097-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      difficulty: "Level 2",
-      variants: [
-        "May I have a receipt?",
-        "Can you print a receipt?"
-      ],
-      recommendedResponses: [
-        "Sure, here you go.",
-        "Would you like it printed or emailed?",
-        "The receipt is in the bag."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "receipt",
-          chinese: "小票/收据",
-          pronunciation: "ri-SEET",
-          note: "付款后的凭证，p 不发音。",
-          example: "Do you need a receipt?"
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_097",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_payment_card_cash",
+        scenarioTitle: "收银和付款",
+        sequence: 10,
+        english: "Can I get a receipt, please?",
+        chinese: "可以给我一张小票吗？",
+        scenario: "现金、刷卡、感应付款、找零、付款失败和收据。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/front_counter_097-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_097-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        difficulty: "Level 2",
+        variants: [
+          "May I have a receipt?",
+          "Can you print a receipt?"
+        ],
+        recommendedResponses: [
+          "Sure, here you go.",
+          "Would you like it printed or emailed?",
+          "The receipt is in the bag."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I get a receipt, please?",
+            chinese: "可以给我一张小票吗？"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "前台员工要说",
+            english: "Sure, here you go.",
+            chinese: "当然，给您。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "get a receipt",
+            chinese: "拿一张小票",
+            pronunciation: "get-uh-ri-SEET",
+            note: "顾客付款后请求小票。",
+            example: "Can I get a receipt?"
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "front_counter_098",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_general",
-      scenarioTitle: "点餐",
-      sequence: 6,
-      english: "I made a mistake on this order.",
-      chinese: "这份订单我做错了。",
-      scenario: "顾客点餐、确认订单、等待取餐。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/front_counter_098-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_098-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "workplace",
-        "supervisor",
-        "communication",
-        "employee",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      difficulty: "Level 2",
-      variants: [
-        "I made this order wrong.",
-        "I entered the order wrong."
-      ],
-      recommendedResponses: [
-        "Tell the supervisor.",
-        "Can it be fixed?",
-        "Let me help you correct it."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "made a mistake",
-          chinese: "犯了错误/做错了",
-          pronunciation: "mayd uh mis-TAYK",
-          note: "工作中承认错误的自然说法。",
-          example: "I made a mistake."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_098",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_general",
+        scenarioTitle: "点餐",
+        sequence: 6,
+        english: "I made a mistake on this order.",
+        chinese: "这份订单我输错了。",
+        scenario: "确认订单、等待时间、叫号取餐、外卖取餐和顾客问题处理。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/front_counter_098-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_098-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "workplace",
+          "supervisor",
+          "communication",
+          "employee",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Staff",
+        speakerRoleZh: "员工要说",
+        difficulty: "Level 2",
+        variants: [
+          "I entered this order wrong.",
+          "I made an error on this order."
+        ],
+        recommendedResponses: [
+          "Ask the supervisor to fix it.",
+          "Can you correct it before payment?",
+          "Void it and enter it again."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "员工要说",
+            english: "I made a mistake on this order.",
+            chinese: "这份订单我输错了。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Void it and enter it again before payment.",
+            chinese: "付款前取消并重新输入。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "made a mistake",
+            chinese: "犯了错误；弄错了",
+            pronunciation: "mayd-uh-mis-TAYK",
+            note: "前台发现订单输入错误时这样说明。",
+            example: "I made a mistake."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "front_counter_099",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_tips_receipts",
-      scenarioTitle: "小费",
-      sequence: 3,
-      english: "Signing confirms receipt, not necessarily agreement.",
-      chinese: "签字表示已收到文件，不一定代表你同意内容。",
-      scenario: "解释小费屏幕和收据。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/front_counter_099-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_099-slow.mp3",
-      isFree: false,
-      safetyLevel: "caution",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "workplace",
-        "supervisor",
-        "communication",
-        "employee",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      difficulty: "Level 1",
-      variants: [
-        "Signing only means you received it.",
-        "Your signature confirms receipt only."
-      ],
-      recommendedResponses: [
-        "Can I get a copy?",
-        "I need time to read it.",
-        "Who can explain this to me?"
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "confirms receipt",
-          chinese: "确认收到",
-          pronunciation: "kun-FURMZ ri-SEET",
-          note: "表示确认你收到文件，不一定表示同意内容。",
-          example: "This confirms receipt."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_099",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_tips_receipts",
+        scenarioTitle: "小费",
+        sequence: 3,
+        english: "Please confirm the pickup on your phone.",
+        chinese: "请在手机上确认取餐。",
+        scenario: "解释小费屏幕、查看小票和处理订单确认。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Staff",
+        roleZh: "前台员工要说",
+        audioNormal: "/audio/en-US/front_counter_099-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_099-slow.mp3",
+        isFree: false,
+        safetyLevel: "caution",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "workplace",
+          "supervisor",
+          "communication",
+          "employee",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Staff",
+        speakerRoleZh: "前台员工要说",
+        difficulty: "Level 1",
+        variants: [
+          "Please mark the order as picked up.",
+          "Confirm the pickup in the app, please."
+        ],
+        recommendedResponses: [
+          "Okay, I’ll confirm it now.",
+          "It is confirmed.",
+          "My phone is loading."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "前台员工要说",
+            english: "Please confirm the pickup on your phone.",
+            chinese: "请在手机上确认取餐。"
+          },
+          {
+            speakerRole: "Delivery Driver",
+            speakerRoleZh: "外卖司机可能会说",
+            english: "Okay, I’ll confirm it now.",
+            chinese: "好的，我现在确认。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "confirm the pickup",
+            chinese: "确认已经取餐",
+            pronunciation: "kun-FURM-thuh-PIK-up",
+            note: "外卖司机拿到订单后，在平台手机上确认取餐。",
+            example: "Please confirm the pickup."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "front_counter_100",
-      moduleId: "front_counter",
-      moduleTitle: "前台、点餐、收银和小费",
-      scenarioId: "front_counter_payment_card_cash",
-      scenarioTitle: "收银和付款",
-      sequence: 5,
-      english: "Hi, let me know if you need any help.",
-      chinese: "您好，需要帮助的话请告诉我。",
-      scenario: "现金、刷卡、付款失败和收据。",
-      importance: "前台表达直接影响顾客体验、订单准确和收银速度。",
-      role: "Staff",
-      roleZh: "店员要说",
-      audioNormal: "/audio/en-US/front_counter_100-normal.mp3",
-      audioSlow: "/audio/en-US/front_counter_100-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "front_counter",
-        "retail",
-        "cashier",
-        "customer_service",
-        "safety",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Staff",
-      speakerRoleZh: "店员要说",
-      difficulty: "Level 2",
-      variants: [
-        "Hi, tell me if you need help.",
-        "Let me know if you have questions."
-      ],
-      recommendedResponses: [
-        "Thank you.",
-        "I need a minute.",
-        "Can I ask about this item?"
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "let me know",
-          chinese: "告诉我/让我知道",
-          pronunciation: "let mee noh",
-          note: "服务场景里很常用，语气礼貌。",
-          example: "Let me know if you need help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "front_counter_100",
+        moduleId: "front_counter",
+        moduleTitle: "前台、点餐、收银和小费",
+        scenarioId: "front_counter_payment_card_cash",
+        scenarioTitle: "收银和付款",
+        sequence: 5,
+        english: "I'm picking up an Uber Eats order for Maria.",
+        chinese: "我来取 Maria 的 Uber Eats 订单。",
+        scenario: "现金、刷卡、感应付款、找零、付款失败和收据。",
+        importance: "前台要快速听懂顾客需求、正确点单收款，并礼貌处理取餐和订单问题。",
+        role: "Delivery Driver",
+        roleZh: "外卖司机可能会说",
+        audioNormal: "/audio/en-US/front_counter_100-normal.mp3",
+        audioSlow: "/audio/en-US/front_counter_100-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "front_counter",
+          "retail",
+          "cashier",
+          "customer_service",
+          "safety",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Delivery Driver",
+        speakerRoleZh: "外卖司机可能会说",
+        difficulty: "Level 2",
+        variants: [
+          "I have an Uber Eats pickup for Maria.",
+          "I’m here for Maria’s Uber Eats order."
+        ],
+        recommendedResponses: [
+          "Let me check the order.",
+          "It will be ready in five minutes.",
+          "Please confirm the pickup on your phone."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Delivery Driver",
+            speakerRoleZh: "外卖司机可能会说",
+            english: "I'm picking up an Uber Eats order for Maria.",
+            chinese: "我来取 Maria 的 Uber Eats 订单。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "前台员工要说",
+            english: "Let me check. It will be ready in three minutes.",
+            chinese: "我查一下。三分钟后好。"
+          },
+          {
+            speakerRole: "Delivery Driver",
+            speakerRoleZh: "外卖司机可能会说",
+            english: "Okay, thank you.",
+            chinese: "好的，谢谢。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "Uber Eats order",
+            chinese: "Uber Eats 外卖订单",
+            pronunciation: "OO-ber-eets OR-der",
+            note: "外卖司机取餐时说明平台和顾客姓名。",
+            example: "Uber Eats order for Sam."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "delivery_complaints_001",
       moduleId: "delivery_complaints",
