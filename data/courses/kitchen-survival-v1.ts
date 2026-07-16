@@ -9373,81 +9373,70 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "kitchen_cleaning_011",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_trash_recycling",
-      scenarioTitle: "垃圾和回收",
-      sequence: 3,
-      english: "Double-check the bag before you seal it.",
-      chinese: "封袋前再核对一遍。",
-      scenario: "换垃圾袋、扎紧、纸箱回收。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_011-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_011-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "kitchen",
-        "teamwork",
-        "food_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      variants: [
-        "Check the bag again before sealing it."
-      ],
-      recommendedResponses: [
-        "I will check the seal first.",
-        "Which supply is for seal?",
-        "I will finish the seal before moving on."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Double-check the bag before you seal it.",
-          chinese: "封袋前再核对一遍。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Okay. Which supplies should I use?",
-          chinese: "好的。我应该用哪些用品？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Use the supplies by the sink.",
-          chinese: "用水槽旁边的用品。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Got it. I will do it now.",
-          chinese: "明白。我现在就做。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "seal",
-          chinese: "封口",
-          pronunciation: "seel",
-          note: "把袋子或包装封好。",
-          example: "Seal the bag."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_011",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_trash_recycling",
+        scenarioTitle: "垃圾和回收",
+        sequence: 3,
+        english: "Double-check the bag before you seal it.",
+        chinese: "封袋前再核对一遍。",
+        scenario: "扫地、倒垃圾、换垃圾袋和纸箱回收。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_011-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_011-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "kitchen",
+          "teamwork",
+          "food_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        variants: [
+          "Check the bag again before sealing it.",
+          "Look in the bag one more time before you close it."
+        ],
+        recommendedResponses: [
+          "Okay, I’ll check it again.",
+          "I’ll make sure everything is inside.",
+          "Should I staple the receipt on it?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Double-check the bag before you seal it.",
+            chinese: "封袋前再核对一遍。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay, I’ll make sure everything is inside.",
+            chinese: "好的，我确认所有东西都在里面。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "double-check",
+            chinese: "再检查一遍",
+            pronunciation: "DUH-bul-chek",
+            note: "出餐或打包前再确认一次，避免少放东西。",
+            example: "Double-check the order."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "kitchen_cleaning_012",
       moduleId: "kitchen_cleaning",
@@ -9512,82 +9501,70 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "kitchen_cleaning_013",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_prep_work",
-      scenarioTitle: "备菜",
-      sequence: 3,
-      english: "Label the bag with the customer's name.",
-      chinese: "在袋子上写上顾客的名字。",
-      scenario: "切菜、称重、准备食材和确认数量。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_013-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_013-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "kitchen",
-        "teamwork",
-        "food_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      variants: [
-        "Write the customer name on the bag.",
-        "Put the customer name on the bag."
-      ],
-      recommendedResponses: [
-        "I will check the label first.",
-        "Which supply is for label?",
-        "I will finish the label before moving on."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Label the bag with the customer's name.",
-          chinese: "在袋子上写上顾客的名字。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Okay. Which supplies should I use?",
-          chinese: "好的。我应该用哪些用品？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Use the supplies by the sink.",
-          chinese: "用水槽旁边的用品。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Got it. I will do it now.",
-          chinese: "明白。我现在就做。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "label",
-          chinese: "贴标签；标签",
-          pronunciation: "LAY-bul",
-          note: "写上名字、日期或订单信息。",
-          example: "Label the box."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_013",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_prep_work",
+        scenarioTitle: "备菜",
+        sequence: 3,
+        english: "Cut the chicken into even pieces.",
+        chinese: "把鸡肉切成大小均匀的块。",
+        scenario: "备菜、切配、称重、份量和食材标签。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_013-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_013-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "kitchen",
+          "teamwork",
+          "food_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        variants: [
+          "Cut the chicken into the same size pieces.",
+          "Make the chicken pieces even."
+        ],
+        recommendedResponses: [
+          "Okay, I’ll cut them evenly.",
+          "Should I cut them smaller?",
+          "Can you show me the right size?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Cut the chicken into even pieces.",
+            chinese: "把鸡肉切成大小均匀的块。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay. Can you show me the right size?",
+            chinese: "好的。你可以给我看正确大小吗？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "even pieces",
+            chinese: "大小均匀的块",
+            pronunciation: "EE-vin PEE-siz",
+            note: "备菜时每块大小接近，方便熟得一致。",
+            example: "Cut them into even pieces."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "kitchen_cleaning_014",
       moduleId: "kitchen_cleaning",
@@ -10113,140 +10090,141 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "kitchen_cleaning_022",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_trash_recycling",
-      scenarioTitle: "垃圾和回收",
-      sequence: 1,
-      english: "Sweep the dining area.",
-      chinese: "把用餐区扫一下。",
-      scenario: "换垃圾袋、扎紧、纸箱回收。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_022-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_022-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "kitchen",
-        "teamwork",
-        "food_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      variants: [
-        "Sweep the customer seating area.",
-        "Clean the dining room floor."
-      ],
-      recommendedResponses: [
-        "Okay. Which supplies should I use?",
-        "I will tell you when it is done."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Sweep the dining area.",
-          chinese: "把用餐区扫一下。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "dining area",
-          chinese: "用餐区",
-          pronunciation: "DY-ning AIR-ee-uh",
-          note: "顾客坐下吃饭的区域。",
-          example: "Sweep the floor."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_022",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_trash_recycling",
+        scenarioTitle: "垃圾和回收",
+        sequence: 1,
+        english: "Sweep under the fryer.",
+        chinese: "把炸炉下面扫一下。",
+        scenario: "扫地、倒垃圾、换垃圾袋和纸箱回收。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_022-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_022-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "kitchen",
+          "teamwork",
+          "food_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        variants: [
+          "Sweep the floor under the fryer.",
+          "Clean under the fryer with the broom."
+        ],
+        recommendedResponses: [
+          "Okay, I’ll sweep under it.",
+          "Should I move the mats first?",
+          "I’ll put the wet floor sign out if needed."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Sweep under the fryer.",
+            chinese: "把炸炉下面扫一下。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay, I’ll move the mat and sweep under it.",
+            chinese: "好的，我会移开地垫并扫下面。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "under the fryer",
+            chinese: "炸炉下面",
+            pronunciation: "UN-der thuh FRY-er",
+            note: "清洁炸炉下方容易积油和食物残渣的区域。",
+            example: "Clean under the fryer."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_023",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_trash_recycling",
-      scenarioTitle: "垃圾和回收",
-      sequence: 2,
-      english: "Take out the trash before closing.",
-      chinese: "关店前把垃圾倒掉。",
-      scenario: "换垃圾袋、扎紧、纸箱回收。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_023-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_023-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "kitchen",
-        "teamwork",
-        "food_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      variants: [
-        "Empty the trash before we close.",
-        "Take the garbage out before closing."
-      ],
-      recommendedResponses: [
-        "I will clean the trash now.",
-        "Which cleaner should I use?",
-        "I will put the sign out first."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Take out the trash before closing.",
-          chinese: "关店前把垃圾倒掉。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "trash",
-          chinese: "垃圾",
-          pronunciation: "trash-sound",
-          note: "餐厅垃圾桶或垃圾袋里的废弃物。",
-          example: "Take out the trash."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_023",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_trash_recycling",
+        scenarioTitle: "垃圾和回收",
+        sequence: 2,
+        english: "Take out the trash before closing.",
+        chinese: "关店前把垃圾倒掉。",
+        scenario: "扫地、倒垃圾、换垃圾袋和纸箱回收。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_023-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_023-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "kitchen",
+          "teamwork",
+          "food_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        variants: [
+          "Empty the trash before we close.",
+          "Take the garbage out before closing."
+        ],
+        recommendedResponses: [
+          "Okay, I’ll take it out now.",
+          "Should I replace the liner too?",
+          "I’ll tie the bag tightly."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Take out the trash before closing.",
+            chinese: "关店前把垃圾倒掉。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay, I’ll tie the bag and replace the liner.",
+            chinese: "好的，我会扎紧垃圾袋并换新的内衬。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Thank you. Break down the boxes after that.",
+            chinese: "谢谢。之后把纸箱压平。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "take out the trash",
+            chinese: "倒垃圾；把垃圾拿出去",
+            pronunciation: "tayk-out-thuh-trash",
+            note: "把垃圾袋拿到外面的垃圾区或垃圾箱。",
+            example: "Take out the trash now."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "kitchen_cleaning_024",
       moduleId: "kitchen_cleaning",
@@ -10311,223 +10289,206 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "kitchen_cleaning_025",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_table_counter_cleaning",
-      scenarioTitle: "清洁桌面和设备",
-      sequence: 1,
-      english: "Clean the drink station.",
-      chinese: "清洁饮料区。",
-      scenario: "擦桌子、柜台、饮料台和设备表面。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_025-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_025-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "kitchen",
-        "teamwork",
-        "food_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      variants: [
-        "Wipe down the drink station.",
-        "Clean the soda area."
-      ],
-      recommendedResponses: [
-        "Okay. Which supplies should I use?",
-        "I will tell you when it is done."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Clean the drink station.",
-          chinese: "清洁饮料区。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Okay. Which supplies should I use?",
-          chinese: "好的。我应该用哪些用品？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Use the supplies by the sink.",
-          chinese: "用水槽旁边的用品。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Got it. I will do it now.",
-          chinese: "明白。我现在就做。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "drink station",
-          chinese: "饮料区",
-          pronunciation: "drink-STAY-shun",
-          note: "顾客或员工取饮料的区域。",
-          example: "Wipe the drink station."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_025",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_table_counter_cleaning",
+        scenarioTitle: "清洁桌面和设备",
+        sequence: 1,
+        english: "Clean the drink station.",
+        chinese: "清洁饮料区。",
+        scenario: "擦桌子、柜台、备餐台和食品接触表面。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_025-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_025-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "kitchen",
+          "teamwork",
+          "food_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        variants: [
+          "Wipe down the drink station.",
+          "Clean the soda area."
+        ],
+        recommendedResponses: [
+          "Okay, I’ll wipe it down.",
+          "Should I refill the lids too?",
+          "I’ll clean the spills first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Clean the drink station.",
+            chinese: "清洁饮料区。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay, I’ll wipe it down and check the lids.",
+            chinese: "好的，我会擦干净并检查杯盖。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "drink station",
+            chinese: "饮料区",
+            pronunciation: "drink-STAY-shun",
+            note: "顾客或员工取饮料、杯子、吸管和杯盖的区域。",
+            example: "Restock the drink station."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_026",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_prep_work",
-      scenarioTitle: "备菜",
-      sequence: 2,
-      english: "Turn off the open sign.",
-      chinese: "把营业灯关掉。",
-      scenario: "切菜、称重、准备食材和确认数量。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_026-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_026-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "kitchen",
-        "teamwork",
-        "food_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      variants: [
-        "Switch off the open sign.",
-        "Turn the open light off."
-      ],
-      recommendedResponses: [
-        "I will check the open sign first.",
-        "Which supply is for open sign?",
-        "I will finish the open sign before moving on."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Turn off the open sign.",
-          chinese: "把营业灯关掉。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "open sign",
-          chinese: "营业灯牌",
-          pronunciation: "OH-pen sign",
-          note: "显示店铺正在营业的标志。",
-          example: "Turn off the sign."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_026",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_prep_work",
+        scenarioTitle: "备菜",
+        sequence: 2,
+        english: "Weigh each piece.",
+        chinese: "每一块都称一下重量。",
+        scenario: "备菜、切配、称重、份量和食材标签。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_026-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_026-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "kitchen",
+          "teamwork",
+          "food_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        variants: [
+          "Check the weight of each piece.",
+          "Put each piece on the scale."
+        ],
+        recommendedResponses: [
+          "Okay, I’ll weigh each piece.",
+          "What weight should it be?",
+          "This piece is too big."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Weigh each piece.",
+            chinese: "每一块都称一下重量。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay. What weight should it be?",
+            chinese: "好的。应该是多少重量？"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "About four ounces each.",
+            chinese: "每块大约四盎司。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "weigh each piece",
+            chinese: "每块称重",
+            pronunciation: "waych PEE-siz",
+            note: "备菜时用秤确认每份大小一致。",
+            example: "Weigh each piece first."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_027",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_floor_mopping",
-      scenarioTitle: "扫地和拖地",
-      sequence: 6,
-      english: "Follow the closing procedure for the front door.",
-      chinese: "按照关店流程处理前门。",
-      scenario: "扫地、拖地、地垫和小心地滑标志。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_027-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_027-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "kitchen",
-        "teamwork",
-        "food_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      variants: [
-        "Use the closing steps for the front door.",
-        "Follow the front-door closing steps."
-      ],
-      recommendedResponses: [
-        "I will check the procedure first.",
-        "Which supply is for procedure?",
-        "I will finish the procedure before moving on."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Follow the closing procedure for the front door.",
-          chinese: "按照关店流程处理前门。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Okay. Which supplies should I use?",
-          chinese: "好的。我应该用哪些用品？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Use the supplies by the sink.",
-          chinese: "用水槽旁边的用品。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Got it. I will do it now.",
-          chinese: "明白。我现在就做。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "procedure",
-          chinese: "流程；规定步骤",
-          pronunciation: "proh-SEE-jer",
-          note: "餐厅工作中必须按步骤做的流程。",
-          example: "Follow the procedure."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_027",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_floor_mopping",
+        scenarioTitle: "扫地和拖地",
+        sequence: 6,
+        english: "Mop the floor after closing.",
+        chinese: "关店后拖地。",
+        scenario: "扫地、拖地、地面湿滑和关店地面清洁。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_027-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_027-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "kitchen",
+          "teamwork",
+          "food_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        variants: [
+          "Mop after we close.",
+          "Mop the floor at closing."
+        ],
+        recommendedResponses: [
+          "Okay, I’ll mop after closing.",
+          "Should I sweep first?",
+          "I’ll put out the wet floor sign."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Mop the floor after closing.",
+            chinese: "关店后拖地。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay, I’ll sweep first and then mop.",
+            chinese: "好的，我会先扫地再拖地。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "mop the floor",
+            chinese: "拖地",
+            pronunciation: "mahp-thuh-flor",
+            note: "用拖把清洁地面，通常在扫地之后做。",
+            example: "Mop the floor tonight."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "kitchen_cleaning_028",
       moduleId: "kitchen_cleaning",
@@ -10598,140 +10559,135 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "kitchen_cleaning_029",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_floor_mopping",
-      scenarioTitle: "扫地和拖地",
-      sequence: 1,
-      english: "The floor is still wet.",
-      chinese: "地面还是湿的。",
-      scenario: "扫地、拖地、地垫和小心地滑标志。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Worker",
-      roleZh: "后厨员工要说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_029-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_029-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "kitchen",
-        "teamwork",
-        "food_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "后厨员工要说",
-      variants: [
-        "This floor is still wet.",
-        "There is a problem with this."
-      ],
-      recommendedResponses: [
-        "Okay. Which supplies should I use?",
-        "I will tell you when it is done."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "后厨员工",
-          english: "The floor is still wet.",
-          chinese: "地面还是湿的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Okay, I’ll be careful.",
-          chinese: "好的。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "floor",
-          chinese: "地面",
-          pronunciation: "flor",
-          note: "餐厅地面，湿滑时要放警示牌。",
-          example: "The floor is wet."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_029",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_floor_mopping",
+        scenarioTitle: "扫地和拖地",
+        sequence: 1,
+        english: "The floor is still wet.",
+        chinese: "地面还是湿的。",
+        scenario: "扫地、拖地、地面湿滑和关店地面清洁。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Worker",
+        roleZh: "后厨员工要说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_029-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_029-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "kitchen",
+          "teamwork",
+          "food_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Worker",
+        speakerRoleZh: "后厨员工要说",
+        variants: [
+          "The floor has not dried yet.",
+          "This area is still wet."
+        ],
+        recommendedResponses: [
+          "Put out the wet floor sign.",
+          "Let it dry before moving the mats back.",
+          "Tell people to walk carefully."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "The floor is still wet.",
+            chinese: "地面还是湿的。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Keep the wet floor sign out until it dries.",
+            chinese: "地面干之前把小心地滑标志继续放着。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "still wet",
+            chinese: "还是湿的",
+            pronunciation: "stil-wet",
+            note: "提醒别人地面还没干，走路要小心。",
+            example: "The mat is still wet."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_030",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_floor_mopping",
-      scenarioTitle: "扫地和拖地",
-      sequence: 2,
-      english: "Put up the wet floor sign.",
-      chinese: "放上小心地滑警示牌。",
-      scenario: "扫地、拖地、地垫和小心地滑标志。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_030-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_030-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "kitchen",
-        "teamwork",
-        "food_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      variants: [
-        "Set out the wet floor sign.",
-        "Place the wet floor sign out."
-      ],
-      recommendedResponses: [
-        "Walk carefully.",
-        "Put out the wet floor sign.",
-        "Tell a supervisor."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Put up the wet floor sign.",
-          chinese: "放上小心地滑警示牌。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Walk carefully.",
-          chinese: "小心走。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Put out the wet floor sign.",
-          chinese: "放出“小心地滑”标志。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "wet floor sign",
-          chinese: "小心地滑标志",
-          pronunciation: "wet-floor-sign",
-          note: "拖地或地面湿时放出来提醒别人。",
-          example: "Use the wet floor sign."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_030",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_floor_mopping",
+        scenarioTitle: "扫地和拖地",
+        sequence: 2,
+        english: "Put up the wet floor sign.",
+        chinese: "放上小心地滑警示牌。",
+        scenario: "扫地、拖地、地面湿滑和关店地面清洁。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_030-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_030-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "kitchen",
+          "teamwork",
+          "food_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        variants: [
+          "Set out the wet floor sign.",
+          "Place the wet floor sign out."
+        ],
+        recommendedResponses: [
+          "Okay, I’ll put it out now.",
+          "I’ll leave it there until the floor dries.",
+          "Should I block this area too?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Put up the wet floor sign.",
+            chinese: "放上小心地滑警示牌。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay, I’ll put it by the wet area.",
+            chinese: "好的，我把它放在湿的地方旁边。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "wet floor sign",
+            chinese: "小心地滑标志",
+            pronunciation: "wet-floor-sign",
+            note: "拖地或地面湿时放出来提醒别人。",
+            example: "Use the wet floor sign."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "kitchen_cleaning_031",
       moduleId: "kitchen_cleaning",
@@ -11537,70 +11493,70 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "kitchen_cleaning_043",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_prep_work",
-      scenarioTitle: "备菜",
-      sequence: 1,
-      english: "Prep more sauce cups.",
-      chinese: "再准备一些酱料杯。",
-      scenario: "切菜、称重、准备食材和确认数量。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_043-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_043-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "kitchen",
-        "teamwork",
-        "food_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      variants: [
-        "Get more sauce cups ready.",
-        "Prepare extra sauce cups."
-      ],
-      recommendedResponses: [
-        "I will check the sauce first.",
-        "Which supply is for sauce?",
-        "I will finish the sauce before moving on."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Prep more sauce cups.",
-          chinese: "再准备一些酱料杯。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "sauce",
-          chinese: "酱料",
-          pronunciation: "saws",
-          note: "鸡翅、鸡柳或蘸料的口味。",
-          example: "Add the sauce."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_043",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_prep_work",
+        scenarioTitle: "备菜",
+        sequence: 1,
+        english: "Prep more sauce cups.",
+        chinese: "再准备一些酱料杯。",
+        scenario: "备菜、切配、称重、份量和食材标签。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_043-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_043-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "kitchen",
+          "teamwork",
+          "food_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        variants: [
+          "Get more sauce cups ready.",
+          "Prepare extra sauce cups."
+        ],
+        recommendedResponses: [
+          "Okay, I’ll prep more now.",
+          "How many do we need?",
+          "Which sauce should I fill first?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Prep more sauce cups.",
+            chinese: "再准备一些酱料杯。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay. How many do we need?",
+            chinese: "好的。需要多少个？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "sauce cups",
+            chinese: "酱料杯",
+            pronunciation: "saws-kups",
+            note: "装蘸酱或调味酱的小杯子。",
+            example: "Fill the sauce cups."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "kitchen_cleaning_044",
       moduleId: "kitchen_cleaning",
@@ -11803,229 +11759,206 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "kitchen_cleaning_047",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_closing_cleaning",
-      scenarioTitle: "下班关店",
-      sequence: 1,
-      english: "Add gloves to the supply list.",
-      chinese: "把手套加到物料清单上。",
-      scenario: "关店前清洁、补货、收好清洁用品。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_047-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_047-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "kitchen",
-        "teamwork",
-        "food_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      variants: [
-        "Put gloves on the supply list.",
-        "Add gloves to the order list."
-      ],
-      recommendedResponses: [
-        "I will check the gloves first.",
-        "Which supply is for gloves?",
-        "I will finish the gloves before moving on."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Add gloves to the supply list.",
-          chinese: "把手套加到物料清单上。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Okay. Which supplies should I use?",
-          chinese: "好的。我应该用哪些用品？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Use the supplies by the sink.",
-          chinese: "用水槽旁边的用品。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Got it. I will do it now.",
-          chinese: "明白。我现在就做。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "gloves",
-          chinese: "手套",
-          pronunciation: "gluvz",
-          note: "食品操作时戴的手套。",
-          example: "Put on your gloves."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_047",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_closing_cleaning",
+        scenarioTitle: "下班关店",
+        sequence: 1,
+        english: "Finish the closing checklist.",
+        chinese: "完成关店检查清单。",
+        scenario: "关店清洁、补货、盘点和未完成工作交接。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_047-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_047-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "kitchen",
+          "teamwork",
+          "food_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        variants: [
+          "Complete the closing checklist.",
+          "Go through the closing checklist."
+        ],
+        recommendedResponses: [
+          "Okay, I’ll finish the checklist.",
+          "Should I check the cooler too?",
+          "I’ll tell you if anything is missing."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Finish the closing checklist.",
+            chinese: "完成关店检查清单。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay, I’ll check each item and tell you when it is done.",
+            chinese: "好的，我会逐项检查，完成后告诉你。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Good. Leave a note if anything is not finished.",
+            chinese: "好。如果有没完成的事，留个说明。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "closing checklist",
+            chinese: "关店检查清单",
+            pronunciation: "KLOH-zing CHEK-list",
+            note: "关店前要确认清洁、补货、设备和垃圾等项目。",
+            example: "Check the closing checklist."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_048",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_closing_cleaning",
-      scenarioTitle: "下班关店",
-      sequence: 2,
-      english: "Count the inventory before we close.",
-      chinese: "关店前盘点库存。",
-      scenario: "关店前清洁、补货、收好清洁用品。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_048-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_048-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "kitchen",
-        "teamwork",
-        "food_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      variants: [
-        "Count inventory before closing.",
-        "Check the stock before we close."
-      ],
-      recommendedResponses: [
-        "I will check the Count inventory first.",
-        "Which supply is for Count inventory?",
-        "I will finish the Count inventory before moving on."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Count the inventory before we close.",
-          chinese: "关店前盘点库存。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "Count inventory",
-          chinese: "后厨清洁表达",
-          pronunciation: "KITCH-en KLEE-ning",
-          note: "用于洗碗、清洁、拖地和关店流程。 这里重点看 “Count inventory” 在句子里的用法。",
-          example: "Clean the station."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_048",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_closing_cleaning",
+        scenarioTitle: "下班关店",
+        sequence: 2,
+        english: "Count the inventory before we close.",
+        chinese: "关店前盘点库存。",
+        scenario: "关店清洁、补货、盘点和未完成工作交接。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_048-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_048-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "kitchen",
+          "teamwork",
+          "food_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        variants: [
+          "Count inventory before closing.",
+          "Check the stock before we close."
+        ],
+        recommendedResponses: [
+          "Okay, I’ll count it now.",
+          "Which items should I count first?",
+          "I’ll write down what is low."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Count the inventory before we close.",
+            chinese: "关店前盘点库存。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay, I’ll write down what we need.",
+            chinese: "好的，我会写下我们缺什么。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "count the inventory",
+            chinese: "盘点库存",
+            pronunciation: "kownt-the-IN-ven-tor-ee",
+            note: "关店前检查食材或用品还剩多少。",
+            example: "Count the inventory tonight."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_049",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_fryer_oven_equipment",
-      scenarioTitle: "炸炉和烤箱",
-      sequence: 1,
-      english: "This box needs to stay refrigerated.",
-      chinese: "这一箱需要一直冷藏。",
-      scenario: "使用炸炉、烤箱和厨房设备时听懂指令。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_049-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_049-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "kitchen",
-        "teamwork",
-        "food_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      variants: [
-        "This box must stay cold.",
-        "Keep this box in the refrigerator."
-      ],
-      recommendedResponses: [
-        "Okay. Which supplies should I use?",
-        "I will tell you when it is done."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "This box needs to stay refrigerated.",
-          chinese: "这一箱需要一直冷藏。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Okay. Which supplies should I use?",
-          chinese: "好的。我应该用哪些用品？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Use the supplies by the sink.",
-          chinese: "用水槽旁边的用品。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Got it. I will do it now.",
-          chinese: "明白。我现在就做。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "needs stay",
-          chinese: "后厨清洁表达",
-          pronunciation: "KITCH-en KLEE-ning",
-          note: "用于洗碗、清洁、拖地和关店流程。 这里重点看 “needs stay” 在句子里的用法。",
-          example: "Clean the station."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_049",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_fryer_oven_equipment",
+        scenarioTitle: "炸炉和烤箱",
+        sequence: 1,
+        english: "Check the oil temperature.",
+        chinese: "检查油温。",
+        scenario: "炸炉、油温、炸制时间、设备状态和出餐进度。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_049-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_049-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "kitchen",
+          "teamwork",
+          "food_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        variants: [
+          "Check how hot the oil is.",
+          "Look at the fryer temperature."
+        ],
+        recommendedResponses: [
+          "Okay, I’ll check it now.",
+          "The oil is not hot enough yet.",
+          "The oil is too hot."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Check the oil temperature.",
+            chinese: "检查油温。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay. It is not hot enough yet.",
+            chinese: "好的。现在还不够热。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "oil temperature",
+            chinese: "油温",
+            pronunciation: "oyl TEM-pruh-cher",
+            note: "炸炉里的油当前有多热，影响炸制时间和出餐质量。",
+            example: "The oil temperature is low."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "kitchen_cleaning_050",
       moduleId: "kitchen_cleaning",
@@ -12293,76 +12226,70 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "kitchen_cleaning_054",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_fryer_oven_equipment",
-      scenarioTitle: "炸炉和烤箱",
-      sequence: 4,
-      english: "We cannot guarantee that there will be no cross-contact.",
-      chinese: "我们无法保证完全不会发生过敏原交叉接触。",
-      scenario: "使用炸炉、烤箱和厨房设备时听懂指令。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Staff",
-      roleZh: "前台员工要说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_054-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_054-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "kitchen",
-        "teamwork",
-        "food_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 3",
-      speakerRole: "Staff",
-      speakerRoleZh: "前台员工要说",
-      variants: [
-        "We cannot promise zero cross-contact.",
-        "There may still be cross-contact."
-      ],
-      recommendedResponses: [
-        "I will check the cannot guarantee first.",
-        "Which supply is for cannot guarantee?",
-        "I will finish the cannot guarantee before moving on."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "前台员工",
-          english: "We cannot guarantee that there will be no cross-contact.",
-          chinese: "我们无法保证完全不会发生过敏原交叉接触。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Okay, I’ll be careful.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "cannot guarantee",
-          chinese: "后厨清洁表达",
-          pronunciation: "KITCH-en KLEE-ning",
-          note: "用于洗碗、清洁、拖地和关店流程。 这里重点看 “cannot guarantee” 在句子里的用法。",
-          example: "Clean the station."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_054",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_fryer_oven_equipment",
+        scenarioTitle: "炸炉和烤箱",
+        sequence: 4,
+        english: "How long on the tenders?",
+        chinese: "鸡柳还要多久？",
+        scenario: "炸炉、油温、炸制时间、设备状态和出餐进度。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Coworker",
+        roleZh: "同事可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_054-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_054-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "kitchen",
+          "teamwork",
+          "food_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 3",
+        speakerRole: "Coworker",
+        speakerRoleZh: "同事可能会说",
+        variants: [
+          "How much longer for the tenders?",
+          "When will the tenders be ready?"
+        ],
+        recommendedResponses: [
+          "About three more minutes.",
+          "They are almost ready.",
+          "I just dropped them."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Coworker",
+            speakerRoleZh: "同事可能会说",
+            english: "How long on the tenders?",
+            chinese: "鸡柳还要多久？"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "About three more minutes.",
+            chinese: "大约还要三分钟。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "how long on",
+            chinese: "还要多久",
+            pronunciation: "how-long-on",
+            note: "出餐时询问某个餐品还需要多久。",
+            example: "How long on the fries?"
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "kitchen_cleaning_055",
       moduleId: "kitchen_cleaning",
@@ -12571,75 +12498,70 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "kitchen_cleaning_058",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_floor_mopping",
-      scenarioTitle: "扫地和拖地",
-      sequence: 4,
-      english: "Do not serve food that fell on the floor.",
-      chinese: "掉到地上的食物不能提供给顾客。",
-      scenario: "扫地、拖地、地垫和小心地滑标志。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_058-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_058-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "kitchen",
-        "teamwork",
-        "food_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      variants: [
-        "Please don’t serve food that fell on the floor."
-      ],
-      recommendedResponses: [
-        "I will clean the serve food now.",
-        "Which cleaner should I use?",
-        "I will put the sign out first."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Do not serve food that fell on the floor.",
-          chinese: "掉到地上的食物不能提供给顾客。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Okay, I’ll be careful.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "floor",
-          chinese: "地面",
-          pronunciation: "flor",
-          note: "餐厅地面，湿滑时要放警示牌。",
-          example: "The floor is wet."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_058",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_floor_mopping",
+        scenarioTitle: "扫地和拖地",
+        sequence: 4,
+        english: "Do not serve food that fell on the floor.",
+        chinese: "掉到地上的食物不能提供给顾客。",
+        scenario: "扫地、拖地、地面湿滑和关店地面清洁。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_058-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_058-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "kitchen",
+          "teamwork",
+          "food_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        variants: [
+          "Do not serve food from the floor.",
+          "Throw away food that fell on the floor."
+        ],
+        recommendedResponses: [
+          "Okay, I’ll throw it away.",
+          "I’ll remake it fresh.",
+          "Should I start a new one?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Do not serve food that fell on the floor.",
+            chinese: "掉到地上的食物不能提供给顾客。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay, I’ll throw it away and remake it.",
+            chinese: "好的，我会丢掉并重新做。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "fell on the floor",
+            chinese: "掉到地上",
+            pronunciation: "fel-on-the-flor",
+            note: "食物掉到地上后不能再出餐。",
+            example: "The bread fell on the floor."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "kitchen_cleaning_059",
       moduleId: "kitchen_cleaning",
@@ -12905,283 +12827,271 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "kitchen_cleaning_063",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_prep_work",
-      scenarioTitle: "备菜",
-      sequence: 4,
-      english: "Keep cleaning chemicals away from food and prep areas.",
-      chinese: "清洁化学品要远离食品和备餐区域。",
-      scenario: "切菜、称重、准备食材和确认数量。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_063-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_063-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "kitchen",
-        "teamwork",
-        "food_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      variants: [
-        "Keep cleaning chemicals away from prep areas.",
-        "Store chemicals away from food."
-      ],
-      recommendedResponses: [
-        "I will clean the Keep cleaning now.",
-        "Which cleaner should I use?",
-        "I will put the sign out first."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Keep cleaning chemicals away from food and prep areas.",
-          chinese: "清洁化学品要远离食品和备餐区域。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Okay, I’ll be careful.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "Keep cleaning",
-          chinese: "后厨清洁表达",
-          pronunciation: "KITCH-en KLEE-ning",
-          note: "用于洗碗、清洁、拖地和关店流程。 这里重点看 “Keep cleaning” 在句子里的用法。",
-          example: "Clean the station."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_063",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_prep_work",
+        scenarioTitle: "备菜",
+        sequence: 4,
+        english: "Keep cleaning chemicals away from food and prep areas.",
+        chinese: "清洁化学品要远离食品和备餐区域。",
+        scenario: "备菜、切配、称重、份量和食材标签。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_063-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_063-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "kitchen",
+          "teamwork",
+          "food_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        variants: [
+          "Store chemicals away from food.",
+          "Do not keep chemicals near prep areas."
+        ],
+        recommendedResponses: [
+          "Okay, I’ll move them away.",
+          "Where should I store them?",
+          "I’ll keep chemicals off the prep table."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Keep cleaning chemicals away from food and prep areas.",
+            chinese: "清洁化学品要远离食品和备餐区域。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay, I’ll store them in the chemical area.",
+            chinese: "好的，我会放到化学品存放区。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "cleaning chemicals",
+            chinese: "清洁化学品",
+            pronunciation: "KLEE-ning KEM-i-kulz",
+            note: "清洁剂、消毒剂等，不能放在食物或备餐台附近。",
+            example: "Store cleaning chemicals away."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_064",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_table_counter_cleaning",
-      scenarioTitle: "清洁桌面和设备",
-      sequence: 6,
-      english: "Do not thaw meat on the counter. Follow the procedure.",
-      chinese: "不要把肉放在台面上解冻。按流程操作。",
-      scenario: "擦桌子、柜台、饮料台和设备表面。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_064-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_064-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "kitchen",
-        "teamwork",
-        "food_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      variants: [
-        "Do not thaw meat on the counter.",
-        "Use the approved thawing procedure."
-      ],
-      recommendedResponses: [
-        "Okay, I won’t thaw it there.",
-        "Where should I thaw it?",
-        "I’ll follow the procedure."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Do not thaw meat on the counter. Follow the procedure.",
-          chinese: "不要把肉放在台面上解冻。按流程操作。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Okay, I won’t thaw it there.",
-          chinese: "好的。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "procedure",
-          chinese: "流程；规定步骤",
-          pronunciation: "proh-SEE-jer",
-          note: "餐厅工作中必须按步骤做的流程。",
-          example: "Follow the procedure."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_064",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_table_counter_cleaning",
+        scenarioTitle: "清洁桌面和设备",
+        sequence: 6,
+        english: "Do not thaw meat on the counter. Follow the procedure.",
+        chinese: "不要把肉放在台面上解冻。按流程操作。",
+        scenario: "擦桌子、柜台、备餐台和食品接触表面。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_064-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_064-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "kitchen",
+          "teamwork",
+          "food_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        variants: [
+          "Do not thaw meat on the counter.",
+          "Use the approved thawing procedure."
+        ],
+        recommendedResponses: [
+          "Okay, I won’t thaw it there.",
+          "Where should I thaw it?",
+          "I’ll follow the procedure."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Do not thaw meat on the counter. Follow the procedure.",
+            chinese: "不要把肉放在台面上解冻。按流程操作。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay. Where should I thaw it?",
+            chinese: "好的。我应该在哪里解冻？"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Use the cooler or the approved method.",
+            chinese: "用冷藏柜或批准的方法。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "thaw meat",
+            chinese: "解冻肉类",
+            pronunciation: "thaw-meet",
+            note: "把冷冻肉恢复到可处理状态，不能随便放在台面上。",
+            example: "Thaw meat in the cooler."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_065",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_prep_work",
-      scenarioTitle: "备菜",
-      sequence: 5,
-      english: "Label and date the prep container before putting it away.",
-      chinese: "把备料盒收起来之前，要贴标签并写上日期。",
-      scenario: "切菜、称重、准备食材和确认数量。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_065-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_065-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "kitchen",
-        "teamwork",
-        "food_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      variants: [
-        "Date and label the prep container first.",
-        "Put the label and date on the container."
-      ],
-      recommendedResponses: [
-        "I will check the label first.",
-        "Which supply is for label?",
-        "I will finish the label before moving on."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Label and date the prep container before putting it away.",
-          chinese: "把备料盒收起来之前，要贴标签并写上日期。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "label",
-          chinese: "贴标签；标签",
-          pronunciation: "LAY-bul",
-          note: "写上名字、日期或订单信息。",
-          example: "Label the box."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_065",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_prep_work",
+        scenarioTitle: "备菜",
+        sequence: 5,
+        english: "Label and date the prep container before putting it away.",
+        chinese: "把备料盒收起来之前，要贴标签并写上日期。",
+        scenario: "备菜、切配、称重、份量和食材标签。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_065-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_065-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "kitchen",
+          "teamwork",
+          "food_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        variants: [
+          "Date and label the prep container first.",
+          "Put the label and date on the container."
+        ],
+        recommendedResponses: [
+          "Okay, I’ll label and date it.",
+          "Where are the labels?",
+          "Should I write today’s date?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Label and date the prep container before putting it away.",
+            chinese: "把备料盒收起来之前，要贴标签并写上日期。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay, I’ll write today’s date on it.",
+            chinese: "好的，我会写上今天的日期。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "label and date",
+            chinese: "贴标签并写日期",
+            pronunciation: "LAY-bul-and-date",
+            note: "备料容器收起来前写清内容和日期。",
+            example: "Label and date the sauce."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_066",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_floor_mopping",
-      scenarioTitle: "扫地和拖地",
-      sequence: 3,
-      english: "Check and record the holding temperature.",
-      chinese: "检查并记录食品的保温或冷藏温度。",
-      scenario: "扫地、拖地、地垫和小心地滑标志。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_066-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_066-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "kitchen",
-        "teamwork",
-        "food_service",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      variants: [
-        "Write down the holding temperature.",
-        "Check and record the food temperature."
-      ],
-      recommendedResponses: [
-        "I will check the Check record first.",
-        "Which supply is for Check record?",
-        "I will finish the Check record before moving on."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Check and record the holding temperature.",
-          chinese: "检查并记录食品的保温或冷藏温度。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Okay, I’ll be careful.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "Check record",
-          chinese: "后厨清洁表达",
-          pronunciation: "KITCH-en KLEE-ning",
-          note: "用于洗碗、清洁、拖地和关店流程。 这里重点看 “Check record” 在句子里的用法。",
-          example: "Clean the station."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_066",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_floor_mopping",
+        scenarioTitle: "扫地和拖地",
+        sequence: 3,
+        english: "Check and record the holding temperature.",
+        chinese: "检查并记录食品的保温或冷藏温度。",
+        scenario: "扫地、拖地、地面湿滑和关店地面清洁。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_066-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_066-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "kitchen",
+          "teamwork",
+          "food_service",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        variants: [
+          "Write down the holding temperature.",
+          "Check and record the food temperature."
+        ],
+        recommendedResponses: [
+          "Okay, I’ll write it down.",
+          "What temperature should it be?",
+          "The temperature looks too low."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Check and record the holding temperature.",
+            chinese: "检查并记录食品的保温或冷藏温度。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay. What temperature should it be?",
+            chinese: "好的。应该是多少温度？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "holding temperature",
+            chinese: "保温或冷藏温度",
+            pronunciation: "HOHL-ding TEM-pruh-cher",
+            note: "食品存放时必须保持的安全温度。",
+            example: "Record the holding temperature."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "kitchen_cleaning_067",
       moduleId: "kitchen_cleaning",
@@ -13316,211 +13226,212 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "kitchen_cleaning_069",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_floor_mopping",
-      scenarioTitle: "扫地和拖地",
-      sequence: 5,
-      english: "Let me check the ingredient information and ask the kitchen.",
-      chinese: "我核对一下配料信息，并向厨房确认。",
-      scenario: "扫地、拖地、地垫和小心地滑标志。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Staff",
-      roleZh: "前台员工要说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_069-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_069-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Staff",
-      speakerRoleZh: "前台员工要说",
-      variants: [
-        "I will ask the kitchen about the ingredients.",
-        "Let me check the ingredient information."
-      ],
-      recommendedResponses: [
-        "I will check the form first.",
-        "Which supply is for form?",
-        "I will finish the form before moving on."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "前台员工",
-          english: "Let me check the ingredient information and ask the kitchen.",
-          chinese: "我核对一下配料信息，并向厨房确认。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Okay, I’ll be careful.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "form",
-          chinese: "表格",
-          pronunciation: "form-sound",
-          note: "需要填写个人信息的纸或网页。",
-          example: "Fill out the form."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_069",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_floor_mopping",
+        scenarioTitle: "扫地和拖地",
+        sequence: 5,
+        english: "We are waiting on the wings.",
+        chinese: "我们还在等鸡翅。",
+        scenario: "扫地、拖地、地面湿滑和关店地面清洁。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Worker",
+        roleZh: "后厨员工要说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_069-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_069-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Worker",
+        speakerRoleZh: "后厨员工要说",
+        variants: [
+          "The wings are not ready yet.",
+          "The order is waiting on wings."
+        ],
+        recommendedResponses: [
+          "Okay, I’ll tell the front.",
+          "How much longer on the wings?",
+          "Let me know when they are ready."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "We are waiting on the wings.",
+            chinese: "我们还在等鸡翅。"
+          },
+          {
+            speakerRole: "Coworker",
+            speakerRoleZh: "同事可能会说",
+            english: "Okay, I’ll tell the front.",
+            chinese: "好的，我告诉前台。"
+          },
+          {
+            speakerRole: "Coworker",
+            speakerRoleZh: "同事可能会说",
+            english: "How much longer?",
+            chinese: "还要多久？"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "About two more minutes.",
+            chinese: "大约还要两分钟。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "waiting on",
+            chinese: "还在等；还差",
+            pronunciation: "WAY-ting-on",
+            note: "出餐时表示整份订单还差某一样餐品。",
+            example: "We are waiting on fries."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_070",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_fryer_oven_equipment",
-      scenarioTitle: "炸炉和烤箱",
-      sequence: 2,
-      english: "Is the same fryer used for other foods?",
-      chinese: "这些食物是不是共用同一个炸炉？",
-      scenario: "使用炸炉、烤箱和厨房设备时听懂指令。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_070-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_070-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      variants: [
-        "Is this the same fryer used for other foods?"
-      ],
-      recommendedResponses: [
-        "I will check the fryer first.",
-        "Which supply is for fryer?",
-        "I will finish the fryer before moving on."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客",
-          english: "Is the same fryer used for other foods?",
-          chinese: "这些食物是不是共用同一个炸炉？"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Okay, I’ll be careful.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "fryer",
-          chinese: "炸炉",
-          pronunciation: "FRY-er",
-          note: "炸薯条、鸡翅等使用的机器。",
-          example: "Check the fryer."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_070",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_fryer_oven_equipment",
+        scenarioTitle: "炸炉和烤箱",
+        sequence: 2,
+        english: "The oil is too hot.",
+        chinese: "油温太高了。",
+        scenario: "炸炉、油温、炸制时间、设备状态和出餐进度。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Worker",
+        roleZh: "后厨员工要说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_070-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_070-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Worker",
+        speakerRoleZh: "后厨员工要说",
+        variants: [
+          "The fryer oil is too hot.",
+          "The oil temperature is too high."
+        ],
+        recommendedResponses: [
+          "Turn it down a little.",
+          "Wait before dropping more food.",
+          "Tell the supervisor."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "The oil is too hot.",
+            chinese: "油温太高了。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Turn it down and wait a minute.",
+            chinese: "调低一点，等一分钟。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "too hot",
+            chinese: "太热；温度太高",
+            pronunciation: "too-hot",
+            note: "油温过高可能把食物炸焦或造成危险。",
+            example: "The pan is too hot."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_071",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_fryer_oven_equipment",
-      scenarioTitle: "炸炉和烤箱",
-      sequence: 3,
-      english: "We cannot guarantee no cross-contact.",
-      chinese: "我们不能保证完全没有交叉接触。",
-      scenario: "使用炸炉、烤箱和厨房设备时听懂指令。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Staff",
-      roleZh: "前台员工要说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_071-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_071-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 3",
-      speakerRole: "Staff",
-      speakerRoleZh: "前台员工要说",
-      variants: [
-        "We can’t promise there is no cross-contact.",
-        "There may be cross-contact."
-      ],
-      recommendedResponses: [
-        "I will check the cross-contact first.",
-        "Which supply is for cross-contact?",
-        "I will finish the cross-contact before moving on."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "前台员工",
-          english: "We cannot guarantee no cross-contact.",
-          chinese: "我们不能保证完全没有交叉接触。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "I’ll wash my hands now.",
-          chinese: "我现在去洗手。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "cross-contact",
-          chinese: "交叉接触",
-          pronunciation: "cross contact",
-          note: "食物接触到过敏原或其他食物。",
-          example: "There may be cross-contact."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_071",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_fryer_oven_equipment",
+        scenarioTitle: "炸炉和烤箱",
+        sequence: 3,
+        english: "The oil is not hot enough.",
+        chinese: "油温不够高。",
+        scenario: "炸炉、油温、炸制时间、设备状态和出餐进度。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Worker",
+        roleZh: "后厨员工要说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_071-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_071-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 3",
+        speakerRole: "Worker",
+        speakerRoleZh: "后厨员工要说",
+        variants: [
+          "The fryer is not hot enough yet.",
+          "The oil temperature is too low."
+        ],
+        recommendedResponses: [
+          "Wait before dropping the fries.",
+          "Check the fryer setting.",
+          "Tell me when it is ready."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "The oil is not hot enough.",
+            chinese: "油温不够高。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Wait before dropping the fries.",
+            chinese: "先等一下，不要下薯条。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "not hot enough",
+            chinese: "不够热；温度不够高",
+            pronunciation: "not-hot-ee-NUF",
+            note: "油温还没达到可以炸食物的温度。",
+            example: "The oven is not hot enough."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "kitchen_cleaning_072",
       moduleId: "kitchen_cleaning",
@@ -14103,83 +14014,71 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "kitchen_cleaning_081",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_dishwashing",
-      scenarioTitle: "洗碗",
-      sequence: 9,
-      english: "Use the dish detergent.",
-      chinese: "使用洗碗清洁剂。",
-      scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_081-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_081-slow.mp3",
-      isFree: false,
-      safetyLevel: "caution",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "dishwashing",
-        "three_compartment_sink",
-        "cleaning",
-        "release_v1",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      difficulty: "Level 1",
-      variants: [
-        "Use the dish soap.",
-        "Use the soap for dishes."
-      ],
-      recommendedResponses: [
-        "Okay, I will use the dish detergent.",
-        "How much should I add?",
-        "Where is the dish detergent?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Use the dish detergent.",
-          chinese: "使用洗碗清洁剂。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Okay. Which supplies should I use?",
-          chinese: "好的。我应该用哪些用品？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Use the supplies by the sink.",
-          chinese: "用水槽旁边的用品。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Got it. I will do it now.",
-          chinese: "明白。我现在就做。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "dish detergent",
-          chinese: "洗碗清洁剂",
-          pronunciation: "dish dee-TUR-jent",
-          note: "专门用来洗餐具，不等于桌面清洁剂。",
-          example: "Use dish detergent."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_081",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_dishwashing",
+        scenarioTitle: "洗碗",
+        sequence: 9,
+        english: "Use the dish detergent.",
+        chinese: "使用洗碗清洁剂。",
+        scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_081-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_081-slow.mp3",
+        isFree: false,
+        safetyLevel: "caution",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "dishwashing",
+          "three_compartment_sink",
+          "cleaning",
+          "release_v1",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "Use the dish soap.",
+          "Use the soap for dishes."
+        ],
+        recommendedResponses: [
+          "Okay, I will use the dish detergent.",
+          "How much should I add?",
+          "Where is the dish detergent?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Use the dish detergent.",
+            chinese: "使用洗碗清洁剂。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay. How much should I add?",
+            chinese: "好的。我要加多少？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "dish detergent",
+            chinese: "洗碗清洁剂",
+            pronunciation: "dish dee-TUR-jent",
+            note: "专门用来洗餐具，不等于桌面清洁剂。",
+            example: "Add dish detergent."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "kitchen_cleaning_082",
       moduleId: "kitchen_cleaning",
@@ -14257,111 +14156,137 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "kitchen_cleaning_084",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_dishwashing",
-      scenarioTitle: "洗碗",
-      sequence: 10,
-      english: "Rinse the dishes first.",
-      chinese: "先把盘子冲洗一下。",
-      scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_084-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_084-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "dishwashing",
-        "three_compartment_sink",
-        "cleaning",
-        "release_v1",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      difficulty: "Level 1",
-      variants: [
-        "Rinse the plates first.",
-        "Give the dishes a quick rinse first."
-      ],
-      recommendedResponses: [
-        "Okay, I will rinse them first.",
-        "Should I scrape them first?",
-        "I will rinse them before washing."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "rinse",
-          chinese: "冲洗",
-          pronunciation: "rins",
-          note: "用水冲一下，不一定是完整清洗。",
-          example: "Rinse the cup."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_084",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_dishwashing",
+        scenarioTitle: "洗碗",
+        sequence: 10,
+        english: "Rinse the dishes first.",
+        chinese: "先把盘子冲洗一下。",
+        scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_084-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_084-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "dishwashing",
+          "three_compartment_sink",
+          "cleaning",
+          "release_v1",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "Rinse the plates first.",
+          "Give the dishes a quick rinse first."
+        ],
+        recommendedResponses: [
+          "Okay, I will rinse them first.",
+          "Should I scrape them first?",
+          "I will rinse them before sanitizing."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Rinse the dishes first.",
+            chinese: "先把盘子冲洗一下。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay, I’ll rinse them before sanitizing.",
+            chinese: "好的，我消毒前先冲洗。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "rinse",
+            chinese: "冲洗",
+            pronunciation: "rins",
+            note: "用水冲一下，通常在清洗后、消毒前做。",
+            example: "Rinse the cup."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_085",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_dishwashing",
-      scenarioTitle: "洗碗",
-      sequence: 6,
-      english: "Wash the dishes in the first sink.",
-      chinese: "在第一个水槽里清洗餐具。",
-      scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_085-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_085-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "dishwashing",
-        "three_compartment_sink",
-        "cleaning",
-        "release_v1",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      difficulty: "Level 2",
-      variants: [
-        "Wash them in the first sink.",
-        "The first sink is for washing."
-      ],
-      recommendedResponses: [
-        "Okay, first sink for washing.",
-        "Do I add detergent here?",
-        "I will wash them first."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "first sink",
-          chinese: "第一个水槽",
-          pronunciation: "furst sink",
-          note: "三槽水池流程里，第一个通常用于清洗。",
-          example: "Wash in the first sink."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_085",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_dishwashing",
+        scenarioTitle: "洗碗",
+        sequence: 6,
+        english: "Wash the dishes in the first sink.",
+        chinese: "在第一个水槽里清洗餐具。",
+        scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_085-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_085-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "dishwashing",
+          "three_compartment_sink",
+          "cleaning",
+          "release_v1",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        difficulty: "Level 2",
+        variants: [
+          "Wash them in the first sink.",
+          "The first sink is for washing."
+        ],
+        recommendedResponses: [
+          "Okay, first sink for washing.",
+          "Do I add detergent here?",
+          "I will wash them first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Wash the dishes in the first sink.",
+            chinese: "在第一个水槽里清洗餐具。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay, first sink for washing. Do I add detergent here?",
+            chinese: "好的，第一个水槽清洗。这里要加洗洁精吗？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "first sink",
+            chinese: "第一个水槽",
+            pronunciation: "furst-sink",
+            note: "三槽水池流程里，第一个通常用于清洗。",
+            example: "Wash in the first sink."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "kitchen_cleaning_086",
       moduleId: "kitchen_cleaning",
@@ -14819,535 +14744,665 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "kitchen_cleaning_098",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_dishwashing",
-      scenarioTitle: "洗碗",
-      sequence: 1,
-      english: "Wash them again.",
-      chinese: "再洗一遍。",
-      scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_098-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_098-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "dishwashing",
-        "three_compartment_sink",
-        "cleaning",
-        "release_v1",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      difficulty: "Level 1",
-      variants: [
-        "Clean them again.",
-        "Run them through again."
-      ],
-      recommendedResponses: [
-        "Okay, I will wash them again.",
-        "They are still greasy.",
-        "Should I use more detergent?"
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "again",
-          chinese: "再一次",
-          pronunciation: "uh-GEN",
-          note: "表示重复做同一个动作。",
-          example: "Try again."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_098",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_dishwashing",
+        scenarioTitle: "洗碗",
+        sequence: 1,
+        english: "Wash them again.",
+        chinese: "再洗一遍。",
+        scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_098-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_098-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "dishwashing",
+          "three_compartment_sink",
+          "cleaning",
+          "release_v1",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "Clean them again.",
+          "Run them through again."
+        ],
+        recommendedResponses: [
+          "Okay, I will wash them again.",
+          "They are still greasy.",
+          "Should I use more detergent?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Wash them again.",
+            chinese: "再洗一遍。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay, I’ll wash them again with detergent.",
+            chinese: "好的，我用洗洁精再洗一遍。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "wash them again",
+            chinese: "再洗一遍",
+            pronunciation: "wash-them-uh-GEN",
+            note: "餐具还有油或脏东西时，需要重新清洗。",
+            example: "Wash the pans again."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_099",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_dishwashing",
-      scenarioTitle: "洗碗",
-      sequence: 3,
-      english: "The dishwasher is full.",
-      chinese: "洗碗机满了。",
-      scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_099-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_099-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "dishwashing",
-        "three_compartment_sink",
-        "cleaning",
-        "release_v1",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      difficulty: "Level 1",
-      variants: [
-        "The dish machine is full.",
-        "There is no room in the dishwasher."
-      ],
-      recommendedResponses: [
-        "Start the dishwasher.",
-        "Unload the clean dishes first.",
-        "Wait until this load is done."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "dishwasher is full",
-          chinese: "洗碗机满了",
-          pronunciation: "DISH-wash-er iz ful",
-          note: "表示洗碗机里已经放满，不能再加。",
-          example: "The trash can is full."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_099",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_dishwashing",
+        scenarioTitle: "洗碗",
+        sequence: 3,
+        english: "The dishwasher is full.",
+        chinese: "洗碗机满了。",
+        scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Worker",
+        roleZh: "后厨员工要说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_099-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_099-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "dishwashing",
+          "three_compartment_sink",
+          "cleaning",
+          "release_v1",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Worker",
+        speakerRoleZh: "后厨员工要说",
+        difficulty: "Level 1",
+        variants: [
+          "The dish machine is full.",
+          "There is no room in the dishwasher."
+        ],
+        recommendedResponses: [
+          "Start the dishwasher.",
+          "Unload the clean dishes first.",
+          "Wait until this load is done."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "The dishwasher is full.",
+            chinese: "洗碗机满了。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Start it now, then unload it when it is done.",
+            chinese: "现在启动，完成后把餐具拿出来。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "dishwasher is full",
+            chinese: "洗碗机满了",
+            pronunciation: "DISH-wash-er-iz-ful",
+            note: "表示洗碗机里已经放满，不能再加。",
+            example: "The trash can is full."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_100",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_dishwashing",
-      scenarioTitle: "洗碗",
-      sequence: 2,
-      english: "Start the dishwasher.",
-      chinese: "启动洗碗机。",
-      scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_100-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_100-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "dishwashing",
-        "three_compartment_sink",
-        "cleaning",
-        "release_v1",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      difficulty: "Level 1",
-      variants: [
-        "Turn on the dishwasher.",
-        "Run the dishwasher."
-      ],
-      recommendedResponses: [
-        "Okay, I will start it.",
-        "Is it loaded correctly?",
-        "Which button do I press?"
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "start the dishwasher",
-          chinese: "启动洗碗机",
-          pronunciation: "start thuh DISH-wash-er",
-          note: "start 在这里表示让机器开始运行。",
-          example: "Start the machine."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_100",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_dishwashing",
+        scenarioTitle: "洗碗",
+        sequence: 2,
+        english: "Start the dishwasher.",
+        chinese: "启动洗碗机。",
+        scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_100-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_100-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "dishwashing",
+          "three_compartment_sink",
+          "cleaning",
+          "release_v1",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "Turn on the dishwasher.",
+          "Run the dishwasher."
+        ],
+        recommendedResponses: [
+          "Okay, I will start it.",
+          "Is it loaded correctly?",
+          "Which button do I press?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Start the dishwasher.",
+            chinese: "启动洗碗机。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay. Which button do I press?",
+            chinese: "好的。按哪个按钮？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "start the dishwasher",
+            chinese: "启动洗碗机",
+            pronunciation: "start-thuh-DISH-wash-er",
+            note: "start 在这里表示让机器开始运行。",
+            example: "Start the machine."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_101",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_dishwashing",
-      scenarioTitle: "洗碗",
-      sequence: 5,
-      english: "The dishwasher is not draining.",
-      chinese: "洗碗机不排水。",
-      scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_101-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_101-slow.mp3",
-      isFree: false,
-      safetyLevel: "caution",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "dishwashing",
-        "three_compartment_sink",
-        "cleaning",
-        "release_v1",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      difficulty: "Level 1",
-      variants: [
-        "The dish machine is not draining.",
-        "Water is not draining from the dishwasher."
-      ],
-      recommendedResponses: [
-        "Tell the manager.",
-        "Check the filter first.",
-        "Do not keep running it."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "not draining",
-          chinese: "不排水",
-          pronunciation: "not DRAY-ning",
-          note: "机器里的水排不出去。",
-          example: "The sink is not draining."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_101",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_dishwashing",
+        scenarioTitle: "洗碗",
+        sequence: 5,
+        english: "The dishwasher is not draining.",
+        chinese: "洗碗机不排水。",
+        scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Worker",
+        roleZh: "后厨员工要说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_101-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_101-slow.mp3",
+        isFree: false,
+        safetyLevel: "caution",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "dishwashing",
+          "three_compartment_sink",
+          "cleaning",
+          "release_v1",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Worker",
+        speakerRoleZh: "后厨员工要说",
+        difficulty: "Level 1",
+        variants: [
+          "The dish machine is not draining.",
+          "Water is not draining from the dishwasher."
+        ],
+        recommendedResponses: [
+          "Tell the manager.",
+          "Check the filter first.",
+          "Do not keep running it."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "The dishwasher is not draining.",
+            chinese: "洗碗机不排水。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Do not keep running it. Check the filter first.",
+            chinese: "不要继续运行。先检查过滤器。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "not draining",
+            chinese: "不排水",
+            pronunciation: "not-DRAY-ning",
+            note: "机器里的水排不出去。",
+            example: "The sink is not draining."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_102",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_dishwashing",
-      scenarioTitle: "洗碗",
-      sequence: 7,
-      english: "The dishwasher is not getting hot enough.",
-      chinese: "洗碗机温度不够高。",
-      scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_102-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_102-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "dishwashing",
-        "three_compartment_sink",
-        "cleaning",
-        "release_v1",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      difficulty: "Level 2",
-      variants: [
-        "The dishwasher is not hot enough.",
-        "The water is not getting hot enough."
-      ],
-      recommendedResponses: [
-        "Tell the supervisor.",
-        "Do not use those dishes yet.",
-        "Check the temperature."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "hot enough",
-          chinese: "温度够高",
-          pronunciation: "hot ee-NUF",
-          note: "enough 表示达到需要的程度。",
-          example: "Is it hot enough?"
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_102",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_dishwashing",
+        scenarioTitle: "洗碗",
+        sequence: 7,
+        english: "The dishwasher is not getting hot enough.",
+        chinese: "洗碗机温度不够高。",
+        scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Worker",
+        roleZh: "后厨员工要说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_102-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_102-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "dishwashing",
+          "three_compartment_sink",
+          "cleaning",
+          "release_v1",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Worker",
+        speakerRoleZh: "后厨员工要说",
+        difficulty: "Level 2",
+        variants: [
+          "The dishwasher is not hot enough.",
+          "The water is not getting hot enough."
+        ],
+        recommendedResponses: [
+          "Tell the supervisor.",
+          "Do not use those dishes yet.",
+          "Check the temperature."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "The dishwasher is not getting hot enough.",
+            chinese: "洗碗机温度不够高。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Do not use those dishes yet. I’ll check the temperature.",
+            chinese: "先不要用那些餐具。我来检查温度。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "hot enough",
+            chinese: "温度够高",
+            pronunciation: "hot-ee-NUF",
+            note: "enough 表示达到需要的程度。",
+            example: "Is it hot enough?"
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_103",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_dishwashing",
-      scenarioTitle: "洗碗",
-      sequence: 4,
-      english: "Clean the dishwasher filter.",
-      chinese: "清洗洗碗机过滤器。",
-      scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_103-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_103-slow.mp3",
-      isFree: false,
-      safetyLevel: "caution",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "dishwashing",
-        "three_compartment_sink",
-        "cleaning",
-        "release_v1",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      difficulty: "Level 1",
-      variants: [
-        "Clean the filter in the dishwasher.",
-        "Take out and clean the dishwasher filter."
-      ],
-      recommendedResponses: [
-        "Okay, I will clean the filter.",
-        "Can you show me how to remove it?",
-        "Should I turn it off first?"
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "filter",
-          chinese: "过滤器",
-          pronunciation: "FIL-ter",
-          note: "用来挡住食物残渣或脏东西的部件。",
-          example: "Clean the filter."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_103",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_dishwashing",
+        scenarioTitle: "洗碗",
+        sequence: 4,
+        english: "Clean the dishwasher filter.",
+        chinese: "清洗洗碗机过滤器。",
+        scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_103-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_103-slow.mp3",
+        isFree: false,
+        safetyLevel: "caution",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "dishwashing",
+          "three_compartment_sink",
+          "cleaning",
+          "release_v1",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "Clean the filter in the dishwasher.",
+          "Take out and clean the dishwasher filter."
+        ],
+        recommendedResponses: [
+          "Okay, I will clean the filter.",
+          "Can you show me how to remove it?",
+          "Should I turn it off first?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Clean the dishwasher filter.",
+            chinese: "清洗洗碗机过滤器。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay. Should I turn it off first?",
+            chinese: "好的。我要先关掉吗？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "dishwasher filter",
+            chinese: "洗碗机过滤器",
+            pronunciation: "DISH-wash-er FIL-ter",
+            note: "用来挡住食物残渣或脏东西的部件。",
+            example: "Remove the dishwasher filter."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_104",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_dishwashing",
-      scenarioTitle: "洗碗",
-      sequence: 8,
-      english: "Don’t mix chemicals.",
-      chinese: "不要混合清洁化学品。",
-      scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_104-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_104-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "dishwashing",
-        "three_compartment_sink",
-        "cleaning",
-        "release_v1",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      difficulty: "Level 1",
-      variants: [
-        "Never mix chemicals.",
-        "Do not put chemicals together."
-      ],
-      recommendedResponses: [
-        "I will check the mix chemicals first.",
-        "Which supply is for mix chemicals?",
-        "I will finish the mix chemicals before moving on."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "mix chemicals",
-          chinese: "混合化学品",
-          pronunciation: "miks KEM-i-kulz",
-          note: "清洁剂混合可能产生危险气体，听到后要停止并询问。",
-          example: "Do not mix chemicals."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_104",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_dishwashing",
+        scenarioTitle: "洗碗",
+        sequence: 8,
+        english: "Don’t mix chemicals.",
+        chinese: "不要混合清洁化学品。",
+        scenario: "洗碗机、洗洁精、餐具清洗和摆放。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_104-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_104-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "dishwashing",
+          "three_compartment_sink",
+          "cleaning",
+          "release_v1",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "Never mix chemicals.",
+          "Do not put chemicals together."
+        ],
+        recommendedResponses: [
+          "Okay, I will keep them separate.",
+          "Which cleaner should I use?",
+          "I will ask before using chemicals."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Don’t mix chemicals.",
+            chinese: "不要混合清洁化学品。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay, I will keep them separate and ask first.",
+            chinese: "好的，我会分开放，有问题先问。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "mix chemicals",
+            chinese: "混合化学品",
+            pronunciation: "miks-KEM-i-kulz",
+            note: "清洁剂混合可能产生危险气体，听到后要停止并询问。",
+            example: "Never mix chemicals."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_105",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_table_counter_cleaning",
-      scenarioTitle: "清洁桌面和设备",
-      sequence: 2,
-      english: "Wipe the table.",
-      chinese: "把桌子擦干净。",
-      scenario: "擦桌子、柜台、饮料台和设备表面。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_105-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_105-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "front_of_house",
-        "table_cleaning",
-        "sanitizing",
-        "release_v1",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      difficulty: "Level 1",
-      variants: [
-        "Wipe down the table.",
-        "Clean off the table."
-      ],
-      recommendedResponses: [
-        "Okay, I will wipe it now.",
-        "Should I use sanitizer after?",
-        "Where is the clean cloth?"
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "Wipe table",
-          chinese: "后厨清洁表达",
-          pronunciation: "KITCH-en KLEE-ning",
-          note: "用于洗碗、清洁、拖地和关店流程。 这里重点看 “Wipe table” 在句子里的用法。",
-          example: "Clean the station."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_105",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_table_counter_cleaning",
+        scenarioTitle: "清洁桌面和设备",
+        sequence: 2,
+        english: "Wipe the table.",
+        chinese: "把桌子擦干净。",
+        scenario: "擦桌子、柜台、备餐台和食品接触表面。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_105-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_105-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "front_of_house",
+          "table_cleaning",
+          "sanitizing",
+          "release_v1",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "Wipe down the table.",
+          "Clean off the table."
+        ],
+        recommendedResponses: [
+          "Okay, I will wipe it now.",
+          "Should I use sanitizer after?",
+          "Where is the clean cloth?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Wipe the table.",
+            chinese: "把桌子擦干净。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay, I’ll use a clean cloth.",
+            chinese: "好的，我用干净抹布。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "wipe the table",
+            chinese: "擦桌子",
+            pronunciation: "wipe-thuh-TAY-bul",
+            note: "用干净抹布擦掉桌面上的食物残渣或污渍。",
+            example: "Wipe the counter."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_106",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_table_counter_cleaning",
-      scenarioTitle: "清洁桌面和设备",
-      sequence: 3,
-      english: "Clean the table.",
-      chinese: "清洁桌面。",
-      scenario: "擦桌子、柜台、饮料台和设备表面。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_106-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_106-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "front_of_house",
-        "table_cleaning",
-        "sanitizing",
-        "release_v1",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      difficulty: "Level 1",
-      variants: [
-        "Clean this table.",
-        "Make sure the table is clean."
-      ],
-      recommendedResponses: [
-        "Okay, I will clean it.",
-        "Should I sanitize it too?",
-        "I will use a clean cloth."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "clean the table",
-          chinese: "清洁桌面",
-          pronunciation: "kleen thuh TAY-bul",
-          note: "可以指擦掉脏东西、食物残渣等。",
-          example: "Clean the table first."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_106",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_table_counter_cleaning",
+        scenarioTitle: "清洁桌面和设备",
+        sequence: 3,
+        english: "Clean the table.",
+        chinese: "清洁桌面。",
+        scenario: "擦桌子、柜台、备餐台和食品接触表面。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_106-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_106-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "front_of_house",
+          "table_cleaning",
+          "sanitizing",
+          "release_v1",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "Clean this table.",
+          "Make sure the table is clean."
+        ],
+        recommendedResponses: [
+          "Okay, I will clean it.",
+          "Should I sanitize it too?",
+          "I will use a clean cloth."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Clean the table.",
+            chinese: "清洁桌面。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay. Should I sanitize it after cleaning?",
+            chinese: "好的。清洁后要消毒吗？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "clean the table",
+            chinese: "清洁桌面",
+            pronunciation: "kleen-thuh-TAY-bul",
+            note: "可以指擦掉脏东西、食物残渣等。",
+            example: "Clean the table first."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_107",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_table_counter_cleaning",
-      scenarioTitle: "清洁桌面和设备",
-      sequence: 5,
-      english: "Spray the cleaner on the cloth.",
-      chinese: "把清洁剂喷在抹布上。",
-      scenario: "擦桌子、柜台、饮料台和设备表面。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_107-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_107-slow.mp3",
-      isFree: false,
-      safetyLevel: "caution",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "front_of_house",
-        "table_cleaning",
-        "sanitizing",
-        "release_v1",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      difficulty: "Level 2",
-      variants: [
-        "Spray the cloth, not the food area.",
-        "Put cleaner on the cloth first."
-      ],
-      recommendedResponses: [
-        "Okay, I will spray the cloth.",
-        "I will not spray near food.",
-        "Which cleaner should I use?"
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "on the cloth",
-          chinese: "喷在抹布上",
-          pronunciation: "on thuh klawth",
-          note: "不是直接喷到食物或桌面附近。",
-          example: "Spray it on the cloth."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_107",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_table_counter_cleaning",
+        scenarioTitle: "清洁桌面和设备",
+        sequence: 5,
+        english: "Spray the cleaner on the cloth.",
+        chinese: "把清洁剂喷在抹布上。",
+        scenario: "擦桌子、柜台、备餐台和食品接触表面。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_107-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_107-slow.mp3",
+        isFree: false,
+        safetyLevel: "caution",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "front_of_house",
+          "table_cleaning",
+          "sanitizing",
+          "release_v1",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        difficulty: "Level 2",
+        variants: [
+          "Spray the cloth, not the food area.",
+          "Put cleaner on the cloth first."
+        ],
+        recommendedResponses: [
+          "Okay, I will spray the cloth.",
+          "I will not spray near food.",
+          "Which cleaner should I use?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Spray the cleaner on the cloth.",
+            chinese: "把清洁剂喷在抹布上。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay, I will not spray near food.",
+            chinese: "好的，我不会在食物旁边喷。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "on the cloth",
+            chinese: "在抹布上",
+            pronunciation: "on-thuh-klawth",
+            note: "不是直接喷到食物或桌面附近。",
+            example: "Spray it on the cloth."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "kitchen_cleaning_108",
       moduleId: "kitchen_cleaning",
@@ -15387,136 +15442,143 @@ export const kitchenSurvivalCourse = {
       speakRepeatCount: 5
     },
     {
-      id: "kitchen_cleaning_109",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_table_counter_cleaning",
-      scenarioTitle: "清洁桌面和设备",
-      sequence: 4,
-      english: "Use the table cleaner.",
-      chinese: "使用桌面清洁剂。",
-      scenario: "擦桌子、柜台、饮料台和设备表面。",
-      importance: "后厨工作靠短指令推进，听懂流程能更快上手。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_109-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_109-slow.mp3",
-      isFree: false,
-      safetyLevel: "caution",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "front_of_house",
-        "table_cleaning",
-        "sanitizing",
-        "release_v1",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      difficulty: "Level 1",
-      variants: [
-        "Use the cleaner for tables.",
-        "Use the table cleaning spray."
-      ],
-      recommendedResponses: [
-        "Okay, I will use the table cleaner.",
-        "Where is the table cleaner?",
-        "Should I sanitize after cleaning?"
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "table cleaner",
-          chinese: "桌面清洁剂",
-          pronunciation: "TAY-bul KLEE-ner",
-          note: "用于桌面，不要和洗碗剂或食品消毒剂混用。",
-          example: "Use table cleaner."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_109",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_table_counter_cleaning",
+        scenarioTitle: "清洁桌面和设备",
+        sequence: 4,
+        english: "Use the table cleaner.",
+        chinese: "使用桌面清洁剂。",
+        scenario: "擦桌子、柜台、备餐台和食品接触表面。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_109-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_109-slow.mp3",
+        isFree: false,
+        safetyLevel: "caution",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "front_of_house",
+          "table_cleaning",
+          "sanitizing",
+          "release_v1",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "Use the cleaner for tables.",
+          "Use the table cleaning spray."
+        ],
+        recommendedResponses: [
+          "Okay, I will use the table cleaner.",
+          "Where is the table cleaner?",
+          "Should I sanitize after cleaning?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Use the table cleaner.",
+            chinese: "使用桌面清洁剂。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay. Should I sanitize after cleaning?",
+            chinese: "好的。清洁后要消毒吗？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "table cleaner",
+            chinese: "桌面清洁剂",
+            pronunciation: "TAY-bul KLEE-ner",
+            note: "用于桌面，不要和洗碗剂或食品消毒剂混用。",
+            example: "Use table cleaner."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
-      id: "kitchen_cleaning_110",
-      moduleId: "kitchen_cleaning",
-      moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
-      scenarioId: "kitchen_cleaning_three_sink",
-      scenarioTitle: "三槽水池",
-      sequence: 1,
-      english: "Sanitize the table after cleaning it.",
-      chinese: "清洁以后给桌面消毒。",
-      scenario: "清洗、冲洗、消毒三槽流程。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Supervisor",
-      roleZh: "主管可能会说",
-      audioNormal: "/audio/en-US/kitchen_cleaning_110-normal.mp3",
-      audioSlow: "/audio/en-US/kitchen_cleaning_110-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "kitchen_cleaning",
-        "front_of_house",
-        "table_cleaning",
-        "sanitizing",
-        "release_v1",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Supervisor",
-      speakerRoleZh: "主管可能会说",
-      difficulty: "Level 1",
-      variants: [
-        "Clean it first, then sanitize it.",
-        "Sanitize the table after you wipe it."
-      ],
-      recommendedResponses: [
-        "Okay, clean first, then sanitize.",
-        "Which sanitizer should I use?",
-        "I will let it air-dry."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Sanitize the table after cleaning it.",
-          chinese: "清洁以后给桌面消毒。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Okay. Which supplies should I use?",
-          chinese: "好的。我应该用哪些用品？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Use the supplies by the sink.",
-          chinese: "用水槽旁边的用品。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Got it. I will do it now.",
-          chinese: "明白。我现在就做。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "sanitize",
-          chinese: "消毒",
-          pronunciation: "SAN-i-tize",
-          note: "餐厅里常用于食品接触表面或餐具消毒。",
-          example: "Sanitize the table."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+        id: "kitchen_cleaning_110",
+        moduleId: "kitchen_cleaning",
+        moduleTitle: "后厨备菜、炸炉、洗碗和清洁",
+        scenarioId: "kitchen_cleaning_three_sink",
+        scenarioTitle: "三槽水池",
+        sequence: 1,
+        english: "Sanitize the table after cleaning it.",
+        chinese: "清洁以后给桌面消毒。",
+        scenario: "清洗、冲洗、消毒和自然晾干的三槽水池流程。",
+        importance: "后厨工作节奏快，听懂这些短句可以避免出餐延误、清洁错误和安全问题。",
+        role: "Supervisor",
+        roleZh: "主管可能会说",
+        audioNormal: "/audio/en-US/kitchen_cleaning_110-normal.mp3",
+        audioSlow: "/audio/en-US/kitchen_cleaning_110-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "kitchen_cleaning",
+          "front_of_house",
+          "table_cleaning",
+          "sanitizing",
+          "release_v1",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Supervisor",
+        speakerRoleZh: "主管可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "Clean it first, then sanitize it.",
+          "Sanitize the table after you wipe it."
+        ],
+        recommendedResponses: [
+          "Okay, clean first, then sanitize.",
+          "Which sanitizer should I use?",
+          "I will let it air-dry."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Sanitize the table after cleaning it.",
+            chinese: "清洁以后给桌面消毒。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "后厨员工要说",
+            english: "Okay, clean first, then sanitize.",
+            chinese: "好的，先清洁，再消毒。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Right. Let it air-dry after sanitizing.",
+            chinese: "对。消毒后让它自然晾干。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "sanitize",
+            chinese: "消毒",
+            pronunciation: "SAN-i-tize",
+            note: "餐厅里常用于食品接触表面或餐具消毒。",
+            example: "Sanitize the prep table."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "front_counter_001",
       moduleId: "front_counter",
