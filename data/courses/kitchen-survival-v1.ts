@@ -3026,8 +3026,8 @@ export const kitchenSurvivalCourse = {
       scenarioId: "shift_pay_pay_overtime",
       scenarioTitle: "打卡、工资和加班",
       sequence: 1,
-      english: "Let me confirm the quantity, pickup time, and payment requirements with you.",
-      chinese: "我和您确认一下数量、取餐时间和付款要求。",
+      english: "Let me confirm your hours for this week.",
+      chinese: "我确认一下你这周的工时。",
       scenario: "确认打卡、工时、加班和工资到账。",
       importance: "排班和工资说不清，会直接影响收入和工作安排。",
       role: "Supervisor",
@@ -3050,34 +3050,41 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Let me confirm the order details with you."
+        "Let me check your hours for this week.",
+        "I want to confirm your weekly hours."
       ],
       recommendedResponses: [
-        "I will confirm my shift.",
-        "I will tell you before I leave.",
-        "I will ask for approval first."
+        "Okay, thank you.",
+        "I worked thirty-two hours this week.",
+        "I think two hours are missing."
       ],
       dialogue: [
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管可能会说",
-          english: "Let me confirm the quantity, pickup time, and payment requirements with you.",
-          chinese: "我和您确认一下数量、取餐时间和付款要求。"
+          english: "Let me confirm your hours for this week.",
+          chinese: "我确认一下你这周的工时。"
         },
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Sure. The pickup time is six o’clock.",
-          chinese: "好的。取餐时间是六点。"
+          english: "Okay. I worked thirty-two hours.",
+          chinese: "好的。我工作了三十二个小时。"
+        },
+        {
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
+          english: "Thanks. I will check the time sheet.",
+          chinese: "谢谢。我会查看工时表。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "quantity",
-          chinese: "数量",
-          pronunciation: "KWON-ti-tee",
-          note: "点餐、备菜和盘点时确认多少个。",
-          example: "Check the quantity."
+          term: "hours",
+          chinese: "工时；工作小时数",
+          pronunciation: "OW-erz",
+          note: "这里指员工这一周实际工作的小时数。",
+          example: "My hours are wrong."
         }
       ],
       listenRepeatCount: 3,
@@ -3183,9 +3190,9 @@ export const kitchenSurvivalCourse = {
         "Let me know before you step away."
       ],
       recommendedResponses: [
-        "I will confirm my shift.",
-        "I will tell you before I leave.",
-        "I will ask for approval first."
+        "Okay, I will tell you before I leave.",
+        "Got it. I will ask first.",
+        "I will notify you before I step away."
       ],
       dialogue: [
         {
@@ -3316,11 +3323,13 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "I am sick and cannot work today."
+        "I am sick and cannot work today.",
+        "I am sick and cannot come in today."
       ],
       recommendedResponses: [
-        "I will check with the manager.",
-        "Please write the time down for me."
+        "Thanks for letting me know.",
+        "Please rest and keep me updated.",
+        "Do you think you can work tomorrow?"
       ],
       dialogue: [
         {
@@ -3332,29 +3341,23 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Manager",
           speakerRoleZh: "经理可能会说",
-          english: "Sure. What is the problem?",
-          chinese: "可以。有什么问题？"
+          english: "Thanks for letting me know. Please rest today.",
+          chinese: "谢谢你告诉我。今天好好休息。"
         },
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "This shift looks wrong.",
-          chinese: "这个班次看起来不对。"
-        },
-        {
-          speakerRole: "Manager",
-          speakerRoleZh: "经理可能会说",
-          english: "Let me check it now.",
-          chinese: "我现在查一下。"
+          english: "Thank you. I will update you tomorrow.",
+          chinese: "谢谢。我明天再跟你更新。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "sick",
-          chinese: "生病",
-          pronunciation: "sik",
-          note: "请假或说明不能上班时使用。",
-          example: "I am sick today."
+          term: "come to work",
+          chinese: "来上班",
+          pronunciation: "kum-toh-work",
+          note: "员工说明自己今天不能到店上班时使用。",
+          example: "I can come to work tomorrow."
         }
       ],
       listenRepeatCount: 3,
@@ -3392,12 +3395,13 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "My shift looks wrong on the schedule."
+        "My shift looks wrong on the schedule.",
+        "The schedule has the wrong shift for me."
       ],
       recommendedResponses: [
-        "I will check the schedule.",
-        "Please note the schedule.",
-        "I will ask the manager about schedule."
+        "Let me check the schedule.",
+        "Which shift looks wrong?",
+        "Please show me the schedule."
       ],
       dialogue: [
         {
@@ -3409,14 +3413,14 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Manager",
           speakerRoleZh: "经理可能会说",
-          english: "Sure. What is the problem?",
-          chinese: "可以。有什么问题？"
+          english: "Which shift looks wrong?",
+          chinese: "哪个班次看起来不对？"
         },
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "This shift looks wrong.",
-          chinese: "这个班次看起来不对。"
+          english: "It says I work Friday, but I asked for Friday off.",
+          chinese: "上面写我周五上班，但我申请了周五休息。"
         },
         {
           speakerRole: "Manager",
@@ -3469,12 +3473,13 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Please don’t swap shifts without approval."
+        "You need approval before swapping shifts.",
+        "Do not switch shifts unless a manager approves it."
       ],
       recommendedResponses: [
-        "I will confirm my shift.",
-        "I will tell you before I leave.",
-        "I will ask for approval first."
+        "Okay, I will ask first.",
+        "Got it. I will not switch without approval.",
+        "Who should approve the switch?"
       ],
       dialogue: [
         {
@@ -3486,8 +3491,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工",
-          english: "Thanks for checking.",
-          chinese: "谢谢你帮我查。"
+          english: "Okay, I will ask for approval first.",
+          chinese: "好的，我会先申请批准。"
         }
       ],
       vocabularyNotes: [
@@ -3603,9 +3608,9 @@ export const kitchenSurvivalCourse = {
         "Complete the shift handoff first."
       ],
       recommendedResponses: [
-        "I will confirm my shift.",
-        "I will tell you before I leave.",
-        "I will ask for approval first."
+        "Okay, I’ll finish the handoff now.",
+        "Who should I give the handoff note to?",
+        "I’ll tell the next person what is left."
       ],
       dialogue: [
         {
@@ -3617,17 +3622,17 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
+          english: "Okay, I’ll tell the next person what is left.",
+          chinese: "好的，我会告诉下一班还剩什么没做。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "complete handoff",
-          chinese: "排班工资表达",
-          pronunciation: "SKE-jool pay",
-          note: "用于请假、换班、打卡或工资问题。 这里重点看 “complete handoff” 在句子里的用法。",
-          example: "Check the schedule."
+          term: "handoff",
+          chinese: "交接班；交接说明",
+          pronunciation: "HAND-off",
+          note: "下班前把未完成的工作告诉下一班或主管。",
+          example: "Write a handoff note."
         }
       ],
       listenRepeatCount: 3,
@@ -3669,8 +3674,9 @@ export const kitchenSurvivalCourse = {
         "This task still needs work."
       ],
       recommendedResponses: [
-        "I will check with the manager.",
-        "Please write the time down for me."
+        "Thanks for telling me.",
+        "Please tell the next shift.",
+        "Write it in the handoff note."
       ],
       dialogue: [
         {
@@ -3682,17 +3688,17 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "Thanks. Please write it in the handoff note.",
+          chinese: "谢谢。请把它写在交接说明里。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "task",
-          chinese: "任务",
-          pronunciation: "task-word",
-          note: "主管安排给你的工作。",
-          example: "Finish the task."
+          term: "not finished yet",
+          chinese: "还没有完成",
+          pronunciation: "not-FIN-isht-yet",
+          note: "交接班时说明某项工作还没有做完。",
+          example: "The prep is not finished yet."
         }
       ],
       listenRepeatCount: 3,
@@ -3792,12 +3798,13 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Who is closing tonight, please?"
+        "Who closes tonight?",
+        "Who is on closing tonight?"
       ],
       recommendedResponses: [
-        "I will check the closing.",
-        "Please note the closing.",
-        "I will ask the manager about closing."
+        "Maria is closing tonight.",
+        "You are closing with Kevin.",
+        "Let me check the schedule."
       ],
       dialogue: [
         {
@@ -3809,8 +3816,14 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "You are closing with Kevin tonight.",
+          chinese: "今晚你和 Kevin 一起关店。"
+        },
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工",
+          english: "Okay. What time do we finish?",
+          chinese: "好的。我们几点结束？"
         }
       ],
       vocabularyNotes: [
@@ -3854,11 +3867,13 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Who is opening tomorrow, please?"
+        "Who opens tomorrow?",
+        "Who is on opening tomorrow?"
       ],
       recommendedResponses: [
-        "I will check with the manager.",
-        "Please write the time down for me."
+        "You open tomorrow at nine.",
+        "Kevin is opening tomorrow.",
+        "Let me check the schedule."
       ],
       dialogue: [
         {
@@ -3870,17 +3885,23 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "You open tomorrow at nine.",
+          chinese: "你明天九点开店。"
+        },
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工",
+          english: "Okay, I will be here at nine.",
+          chinese: "好的，我九点到。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "opening tomorrow",
-          chinese: "排班工资表达",
-          pronunciation: "SKE-jool pay",
-          note: "用于请假、换班、打卡或工资问题。 这里重点看 “opening tomorrow” 在句子里的用法。",
-          example: "Check the schedule."
+          term: "opening",
+          chinese: "开店班；开店工作",
+          pronunciation: "OH-pen-ing",
+          note: "餐厅早上开始营业前的班次或准备工作。",
+          example: "I am opening tomorrow."
         }
       ],
       listenRepeatCount: 3,
@@ -3915,11 +3936,13 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Can I switch shifts with Kevin, please?"
+        "Can Kevin and I switch shifts?",
+        "Can I trade shifts with Kevin?"
       ],
       recommendedResponses: [
-        "I will check with the manager.",
-        "Please write the time down for me."
+        "Let me check with the manager.",
+        "Does Kevin agree to switch?",
+        "Please write the request down."
       ],
       dialogue: [
         {
@@ -3931,17 +3954,23 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Thanks for checking.",
-          chinese: "谢谢你帮我查。"
+          english: "Does Kevin agree to switch?",
+          chinese: "Kevin 同意换班吗？"
+        },
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工",
+          english: "Yes, he said it is okay.",
+          chinese: "是的，他说可以。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "shift",
-          chinese: "班次",
-          pronunciation: "shift-word",
-          note: "你被安排上班的时间段。",
-          example: "Check your shift."
+          term: "switch shifts",
+          chinese: "换班",
+          pronunciation: "switch-shifts",
+          note: "两个员工互相交换上班时间，通常需要主管批准。",
+          example: "Can we switch shifts?"
         }
       ],
       listenRepeatCount: 3,
@@ -4101,12 +4130,13 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Was my break recorded, please?"
+        "Did my break get recorded?",
+        "Is my break on the time sheet?"
       ],
       recommendedResponses: [
-        "I will check the break recorded.",
-        "Please note the break recorded.",
-        "I will ask the manager about break recorded."
+        "Let me check your time sheet.",
+        "Yes, your break is recorded.",
+        "No, I will fix it."
       ],
       dialogue: [
         {
@@ -4118,17 +4148,23 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "Let me check your time sheet.",
+          chinese: "我来查一下你的工时表。"
+        },
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工",
+          english: "Thank you. I took my break at two.",
+          chinese: "谢谢。我两点休息的。"
         }
       ],
       vocabularyNotes: [
         {
           term: "break recorded",
-          chinese: "排班工资表达",
-          pronunciation: "SKE-jool pay",
-          note: "用于请假、换班、打卡或工资问题。 这里重点看 “break recorded” 在句子里的用法。",
-          example: "Check the schedule."
+          chinese: "休息时间被记录",
+          pronunciation: "brayk-ri-KOR-did",
+          note: "询问系统或工时表里是否记录了你的休息时间。",
+          example: "My break was recorded."
         }
       ],
       listenRepeatCount: 3,
@@ -4849,12 +4885,13 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "I am not available that day."
+        "I am not available that day.",
+        "I cannot take that shift."
       ],
       recommendedResponses: [
-        "I will check the cannot work.",
-        "Please note the cannot work.",
-        "I will ask the manager about cannot work."
+        "Thanks for telling me early.",
+        "Please request that day off.",
+        "Can you work a different day?"
       ],
       dialogue: [
         {
@@ -4866,17 +4903,23 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "Thanks for telling me early. Please request that day off.",
+          chinese: "谢谢你提前告诉我。请申请那天休假。"
+        },
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工",
+          english: "Okay, I will put in the request today.",
+          chinese: "好的，我今天提交申请。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "cannot work",
-          chinese: "排班工资表达",
-          pronunciation: "SKE-jool pay",
-          note: "用于请假、换班、打卡或工资问题。 这里重点看 “cannot work” 在句子里的用法。",
-          example: "Check the schedule."
+          term: "not available",
+          chinese: "没有空；不能上班",
+          pronunciation: "not-uh-VAY-luh-bul",
+          note: "告诉主管某一天不能被安排上班。",
+          example: "I am not available Sunday."
         }
       ],
       listenRepeatCount: 3,
@@ -4911,12 +4954,13 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Can I update my availability, please?"
+        "Can I change my availability?",
+        "Can I update the days I can work?"
       ],
       recommendedResponses: [
-        "I will check the update availability.",
-        "Please note the update availability.",
-        "I will ask the manager about update availability."
+        "Yes, send me your new availability.",
+        "Please update it before Friday.",
+        "Which days can you work?"
       ],
       dialogue: [
         {
@@ -4928,17 +4972,23 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "I’ll wash my hands now.",
-          chinese: "我现在去洗手。"
+          english: "Yes, send me your new availability by Friday.",
+          chinese: "可以，周五前把新的可上班时间发给我。"
+        },
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工",
+          english: "Okay, I will send it today.",
+          chinese: "好的，我今天发给你。"
         }
       ],
       vocabularyNotes: [
         {
           term: "update availability",
-          chinese: "排班工资表达",
-          pronunciation: "SKE-jool pay",
-          note: "用于请假、换班、打卡或工资问题。 这里重点看 “update availability” 在句子里的用法。",
-          example: "Check the schedule."
+          chinese: "更新可上班时间",
+          pronunciation: "up-DAYT uh-vay-luh-BIL-i-tee",
+          note: "告诉主管你哪些天、哪些时间可以上班。",
+          example: "Update your availability online."
         }
       ],
       listenRepeatCount: 3,
@@ -5160,12 +5210,13 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Who approves time-off requests, please?"
+        "Who approves requests for time off?",
+        "Who should I ask for time off?"
       ],
       recommendedResponses: [
-        "I will check the approves time-off.",
-        "Please note the approves time-off.",
-        "I will ask the manager about approves time-off."
+        "The manager approves time-off requests.",
+        "Please ask Maria.",
+        "Submit the request in the schedule app."
       ],
       dialogue: [
         {
@@ -5177,17 +5228,23 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Let me check your order.",
-          chinese: "我帮你查一下订单。"
+          english: "The manager approves time-off requests.",
+          chinese: "经理批准请假申请。"
+        },
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工",
+          english: "Okay, I will ask the manager.",
+          chinese: "好的，我会问经理。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "approves time-off",
-          chinese: "排班工资表达",
-          pronunciation: "SKE-jool pay",
-          note: "用于请假、换班、打卡或工资问题。 这里重点看 “approves time-off” 在句子里的用法。",
-          example: "Check the schedule."
+          term: "time-off requests",
+          chinese: "请假申请",
+          pronunciation: "time-off ri-KWESTS",
+          note: "员工想请假时提交给主管或经理的申请。",
+          example: "Submit a time-off request."
         }
       ],
       listenRepeatCount: 3,
@@ -5393,11 +5450,30 @@ export const kitchenSurvivalCourse = {
         "I picked up a shift yesterday."
       ],
       recommendedResponses: [
-        "I will check the covered a shift.",
-        "Please note the covered a shift.",
-        "I will ask the manager about covered a shift."
+        "Thanks. I will check the time sheet.",
+        "Who did you cover for?",
+        "Please make sure the hours are recorded."
       ],
-      dialogue: [],
+      dialogue: [
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工",
+          english: "I covered a shift yesterday.",
+          chinese: "我昨天帮别人顶班了。"
+        },
+        {
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管",
+          english: "Who did you cover for?",
+          chinese: "你帮谁顶班了？"
+        },
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工",
+          english: "I covered Kevin’s evening shift.",
+          chinese: "我帮 Kevin 顶了晚班。"
+        }
+      ],
       vocabularyNotes: [
         {
           term: "covered a shift",
