@@ -241,8 +241,8 @@ export const kitchenSurvivalCourse = {
       id: "communication_002",
       moduleId: "communication",
       moduleTitle: "听不懂、确认和同事沟通",
-      scenarioId: "communication_repeat_confirm",
-      scenarioTitle: "听不懂和请对方重复",
+      scenarioId: "communication_first_day",
+      scenarioTitle: "第一天报到和找主管",
       sequence: 5,
       english: "Which task should I do first?",
       chinese: "我应该先做哪项工作？",
@@ -458,8 +458,8 @@ export const kitchenSurvivalCourse = {
       scenarioId: "communication_repeat_confirm",
       scenarioTitle: "听不懂和请对方重复",
       sequence: 9,
-      english: "Please repeat the instructions back to me.",
-      chinese: "请把指令复述一遍。",
+      english: "Can you repeat the instructions?",
+      chinese: "你可以把指令再说一遍吗？",
       scenario: "没听清时请对方再说一遍、写下来或示范。",
       importance: "避免装懂和误做任务，是上班第一天最重要的工作表达。",
       role: "Worker",
@@ -482,35 +482,41 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Say the instructions back to me.",
-        "Tell me the steps again."
+        "Could you say the instructions again?",
+        "I did not understand the instructions."
       ],
       recommendedResponses: [
-        "Sure. First I wash, then I label it.",
-        "Okay. I’ll repeat the steps.",
-        "Let me make sure I understand."
+        "Sure. First, wash the container.",
+        "Of course. I will say it more slowly.",
+        "Yes. Clean it first, then label it."
       ],
       dialogue: [
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Please repeat the instructions back to me.",
-          chinese: "请把指令复述一遍。"
+          english: "Can you repeat the instructions?",
+          chinese: "你可以把指令再说一遍吗？"
         },
         {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
-          english: "Sure. First I wash, then I label it.",
-          chinese: "好的。先清洗，然后贴标签。"
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
+          english: "Sure. Clean the container first, then label it.",
+          chinese: "可以。先清洁容器，然后贴标签。"
+        },
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Okay, thank you.",
+          chinese: "好的，谢谢。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "repeat",
-          chinese: "重复；再说一遍",
-          pronunciation: "ri-PEET",
-          note: "没听清时请对方再说一次。",
-          example: "Please repeat that."
+          term: "repeat the instructions",
+          chinese: "把指令再说一遍",
+          pronunciation: "ri-PEET-the-in-STRUK-shuns",
+          note: "员工没有听清工作要求时，请主管重新说明。",
+          example: "Please repeat the instructions."
         }
       ],
       listenRepeatCount: 3,
