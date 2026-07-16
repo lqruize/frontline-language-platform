@@ -38,6 +38,15 @@ export type KitchenCourseItem = {
   reviewRequired: boolean;
   tags: string[];
   active: boolean;
+  speakerRole: string;
+  speakerRoleZh: string;
+  difficulty: "Level 1" | "Level 2" | "Level 3";
+  variants: string[];
+  recommendedResponses: string[];
+  dialogue: Array<{ speakerRole: string; speakerRoleZh: string; english: string; chinese: string; }>;
+  vocabularyNotes: Array<{ term: string; chinese: string; pronunciation: string; note: string; example: string; }>;
+  listenRepeatCount: number;
+  speakRepeatCount: number;
 };
 
 export type KitchenCourseStats = {
@@ -49,6 +58,14 @@ export type KitchenCourseStats = {
   reusedFromPreviousCourses: number;
   newlyAdded: number;
   dedupedOrPolished: number;
+  enrichedPublishedCount: number;
+  level1Count: number;
+  level2Count: number;
+  level3Count: number;
+  variantsCount: number;
+  recommendedResponsesCount: number;
+  dialogueScenarioCount: number;
+  vocabularyNotesCount: number;
 };
 
 export const kitchenSurvivalCourse = {
@@ -136,7 +153,15 @@ export const kitchenSurvivalCourse = {
   "freeScenarioCount": 10,
   "reusedFromPreviousCourses": 350,
   "newlyAdded": 170,
-  "dedupedOrPolished": 11
+  "dedupedOrPolished": 11,
+  "enrichedPublishedCount": 390,
+  "level1Count": 192,
+  "level2Count": 135,
+  "level3Count": 63,
+  "variantsCount": 390,
+  "recommendedResponsesCount": 390,
+  "dialogueScenarioCount": 50,
+  "vocabularyNotesCount": 390
 },
   items: [
   {
@@ -164,7 +189,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Please start with this task.",
+        "chinese": "请先做这项工作。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Please",
+        "chinese": "本句关键词",
+        "pronunciation": "Please",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Please start with this task."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_002",
@@ -191,7 +260,45 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Which task should I do first?",
+        "chinese": "我应该先做哪项工作？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Which",
+        "chinese": "本句关键词",
+        "pronunciation": "Which",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Which task should I do first?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_003",
@@ -218,7 +325,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "This needs to be done by noon.",
+        "chinese": "这项工作需要在中午之前完成。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "This",
+        "chinese": "本句关键词",
+        "pronunciation": "This",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "This needs to be done by noon."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_004",
@@ -245,7 +396,45 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I understand the task.",
+        "chinese": "我明白这项工作。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "understand",
+        "chinese": "本句关键词",
+        "pronunciation": "understand",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I understand the task."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_005",
@@ -272,7 +461,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Sorry, I didn’t catch that.",
+      "Can you repeat that?",
+      "One more time, please."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Please repeat the instructions back to me.",
+        "chinese": "请把指令复述一遍。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Please",
+        "chinese": "本句关键词",
+        "pronunciation": "Please",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Please repeat the instructions back to me."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_006",
@@ -299,7 +532,45 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can you show me an example?",
+        "chinese": "可以给我看一个示例吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "show",
+        "chinese": "本句关键词",
+        "pronunciation": "show",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can you show me an example?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_007",
@@ -326,7 +597,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Trainer",
+    "speakerRoleZh": "培训人员可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Watch me first, then you can try.",
+        "chinese": "先看我操作，然后你再试。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Watch",
+        "chinese": "本句关键词",
+        "pronunciation": "Watch",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Watch me first, then you can try."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_008",
@@ -353,7 +668,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Stop and ask if anything is unclear.",
+        "chinese": "有任何不清楚的地方就停下来问。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Stop",
+        "chinese": "本句关键词",
+        "pronunciation": "Stop",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Stop and ask if anything is unclear."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_009",
@@ -380,7 +739,45 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I have not been trained for this task.",
+        "chinese": "我没有接受过这项工作的培训。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "have",
+        "chinese": "本句关键词",
+        "pronunciation": "have",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I have not been trained for this task."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_010",
@@ -407,7 +804,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Do not perform a task you are not trained or authorized to do.",
+        "chinese": "没有接受培训或获得授权的工作不要做。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "perform",
+        "chinese": "本句关键词",
+        "pronunciation": "perform",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Do not perform a task you are not trained or authorized to do."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_011",
@@ -434,7 +875,45 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I need help with this task.",
+        "chinese": "这项工作我需要帮助。"
+      },
+      {
+        "speakerRole": "Coworker",
+        "speakerRoleZh": "同事",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need",
+        "chinese": "本句关键词",
+        "pronunciation": "need",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I need help with this task."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_012",
@@ -461,7 +940,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Tell me as soon as you know there will be a delay.",
+        "chinese": "一发现可能延误就马上告诉我。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Tell",
+        "chinese": "本句关键词",
+        "pronunciation": "Tell",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Tell me as soon as you know there will be a delay."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_013",
@@ -488,7 +1011,45 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The equipment problem is slowing us down.",
+        "chinese": "设备问题正在影响工作进度。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "equipment",
+        "chinese": "本句关键词",
+        "pronunciation": "equipment",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The equipment problem is slowing us down."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_014",
@@ -515,7 +1076,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Do not keep using damaged equipment.",
+        "chinese": "不要继续使用损坏的设备。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "keep",
+        "chinese": "本句关键词",
+        "pronunciation": "keep",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Do not keep using damaged equipment."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_015",
@@ -542,7 +1147,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Use only the approved tools for this job.",
+        "chinese": "这项工作只能使用批准的工具。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "only",
+        "chinese": "本句关键词",
+        "pronunciation": "only",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Use only the approved tools for this job."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_016",
@@ -569,7 +1218,45 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The approved tool is not available.",
+        "chinese": "批准使用的工具现在没有。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "approved",
+        "chinese": "本句关键词",
+        "pronunciation": "approved",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The approved tool is not available."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_017",
@@ -596,7 +1283,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Please correct this before continuing.",
+        "chinese": "继续之前请先把这个问题改正。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Please",
+        "chinese": "本句关键词",
+        "pronunciation": "Please",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Please correct this before continuing."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_018",
@@ -623,7 +1354,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Please redo this part.",
+        "chinese": "请把这一部分重做。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Please",
+        "chinese": "本句关键词",
+        "pronunciation": "Please",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Please redo this part."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_019",
@@ -650,7 +1425,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Please slow down and focus on accuracy.",
+        "chinese": "请放慢速度，注意准确性。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Please",
+        "chinese": "本句关键词",
+        "pronunciation": "Please",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Please slow down and focus on accuracy."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_020",
@@ -677,7 +1496,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Stop work if there is an immediate danger.",
+        "chinese": "如果存在即时危险，立即停止工作。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Stop",
+        "chinese": "本句关键词",
+        "pronunciation": "Stop",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Stop work if there is an immediate danger."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_021",
@@ -704,7 +1567,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Report mistakes immediately so we can correct them.",
+        "chinese": "发现错误要立即报告，以便及时纠正。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Report",
+        "chinese": "本句关键词",
+        "pronunciation": "Report",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Report mistakes immediately so we can correct them."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_022",
@@ -731,7 +1638,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Follow the attendance policy when reporting an absence.",
+        "chinese": "请按照公司的出勤政策报告缺勤。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Follow",
+        "chinese": "本句关键词",
+        "pronunciation": "Follow",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Follow the attendance policy when reporting an absence."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_023",
@@ -758,7 +1709,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "You were absent without notifying anyone.",
+        "chinese": "你缺勤但没有通知任何人。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "were",
+        "chinese": "本句关键词",
+        "pronunciation": "were",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "You were absent without notifying anyone."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_024",
@@ -785,7 +1780,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "HR",
+    "speakerRoleZh": "人事人员可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Please review the attendance policy.",
+        "chinese": "请查看公司的出勤政策。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Please",
+        "chinese": "本句关键词",
+        "pronunciation": "Please",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Please review the attendance policy."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_025",
@@ -812,7 +1851,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "I need to speak with you privately.",
+        "chinese": "我需要单独和你谈一下。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need",
+        "chinese": "本句关键词",
+        "pronunciation": "need",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I need to speak with you privately."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_026",
@@ -839,7 +1922,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "This is a documented coaching conversation.",
+        "chinese": "这是一次有记录的辅导谈话。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "This",
+        "chinese": "本句关键词",
+        "pronunciation": "This",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "This is a documented coaching conversation."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_027",
@@ -866,7 +1993,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "These are the expectations for the next two weeks.",
+        "chinese": "这是未来两周的工作要求。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "These",
+        "chinese": "本句关键词",
+        "pronunciation": "These",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "These are the expectations for the next two weeks."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_028",
@@ -893,7 +2064,45 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can I have a copy of the written expectations?",
+        "chinese": "我可以拿一份书面要求吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "have",
+        "chinese": "本句关键词",
+        "pronunciation": "have",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can I have a copy of the written expectations?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_029",
@@ -920,7 +2129,45 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I would like time to review this document.",
+        "chinese": "我想花一点时间看一下这份文件。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "would",
+        "chinese": "本句关键词",
+        "pronunciation": "would",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I would like time to review this document."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_030",
@@ -947,7 +2194,45 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The next worker has not arrived yet.",
+        "chinese": "接班员工还没有到。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "next",
+        "chinese": "本句关键词",
+        "pronunciation": "next",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The next worker has not arrived yet."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_031",
@@ -974,7 +2259,45 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can you check my work before I leave?",
+        "chinese": "我离开前可以帮我检查一下工作吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "check",
+        "chinese": "本句关键词",
+        "pronunciation": "check",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can you check my work before I leave?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_032",
@@ -1001,7 +2324,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you for reporting the problem early.",
+        "chinese": "谢谢你及时报告这个问题。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Thank",
+        "chinese": "本句关键词",
+        "pronunciation": "Thank",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Thank you for reporting the problem early."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_033",
@@ -1028,7 +2395,51 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Good job following the procedure.",
+        "chinese": "你按照流程完成得很好。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Good",
+        "chinese": "本句关键词",
+        "pronunciation": "Good",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Good job following the procedure."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_034",
@@ -1055,7 +2466,45 @@ export const kitchenSurvivalCourse = {
       "supervisor",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Is there anything I can improve?",
+        "chinese": "我还有什么可以改进的吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "there",
+        "chinese": "本句关键词",
+        "pronunciation": "there",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Is there anything I can improve?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_035",
@@ -1080,7 +2529,45 @@ export const kitchenSurvivalCourse = {
       "communication",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Sorry, I didn’t catch that.",
+      "Can you repeat that?",
+      "One more time, please."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can you repeat the last part?",
+        "chinese": "你可以重复最后一部分吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "repeat",
+        "chinese": "本句关键词",
+        "pronunciation": "repeat",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can you repeat the last part?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_036",
@@ -1105,7 +2592,16 @@ export const kitchenSurvivalCourse = {
       "communication",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_037",
@@ -1130,7 +2626,16 @@ export const kitchenSurvivalCourse = {
       "communication",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_038",
@@ -1155,7 +2660,16 @@ export const kitchenSurvivalCourse = {
       "communication",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_039",
@@ -1180,7 +2694,16 @@ export const kitchenSurvivalCourse = {
       "communication",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_040",
@@ -1205,7 +2728,16 @@ export const kitchenSurvivalCourse = {
       "communication",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_041",
@@ -1230,7 +2762,16 @@ export const kitchenSurvivalCourse = {
       "communication",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_042",
@@ -1255,7 +2796,16 @@ export const kitchenSurvivalCourse = {
       "communication",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_043",
@@ -1280,7 +2830,16 @@ export const kitchenSurvivalCourse = {
       "communication",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_044",
@@ -1305,7 +2864,16 @@ export const kitchenSurvivalCourse = {
       "communication",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_045",
@@ -1330,7 +2898,16 @@ export const kitchenSurvivalCourse = {
       "communication",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_046",
@@ -1355,7 +2932,16 @@ export const kitchenSurvivalCourse = {
       "communication",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_047",
@@ -1380,7 +2966,16 @@ export const kitchenSurvivalCourse = {
       "communication",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_048",
@@ -1405,7 +3000,16 @@ export const kitchenSurvivalCourse = {
       "communication",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_049",
@@ -1430,7 +3034,16 @@ export const kitchenSurvivalCourse = {
       "communication",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "communication_050",
@@ -1455,7 +3068,16 @@ export const kitchenSurvivalCourse = {
       "communication",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_001",
@@ -1482,7 +3104,51 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Cash or card?",
+      "You can pay by card.",
+      "The card did not go through."
+    ],
+    "recommendedResponses": [
+      "Card, please.",
+      "Cash, please.",
+      "Can I try another card?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Let me confirm the quantity, pickup time, and payment requirements with you.",
+        "chinese": "我和您确认一下数量、取餐时间和付款要求。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Card, please.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "pickup",
+        "chinese": "取餐",
+        "pronunciation": "PIK-up",
+        "note": "外卖或已下单的人来拿餐。",
+        "example": "Pickup order for Sarah?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_002",
@@ -1510,7 +3176,51 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Finish this before your break.",
+        "chinese": "休息前把这项工作完成。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Finish",
+        "chinese": "本句关键词",
+        "pronunciation": "Finish",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Finish this before your break."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_003",
@@ -1538,7 +3248,51 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Please notify me before leaving your work area.",
+        "chinese": "离开工作区域前请先通知我。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Please",
+        "chinese": "本句关键词",
+        "pronunciation": "Please",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Please notify me before leaving your work area."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_004",
@@ -1566,7 +3320,45 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What time is my shift?",
+      "My hours are incorrect.",
+      "Can I request a day off?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I am going to be late for my shift.",
+        "chinese": "我上班会迟到。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "shift",
+        "chinese": "班次",
+        "pronunciation": "shift",
+        "note": "上班的一段时间。",
+        "example": "What time is my shift?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_005",
@@ -1594,7 +3386,45 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What time is my shift?",
+      "My hours are incorrect.",
+      "Can I request a day off?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I am sick and cannot come to work today.",
+        "chinese": "我生病了，今天不能来上班。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "sick",
+        "chinese": "本句关键词",
+        "pronunciation": "sick",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I am sick and cannot come to work today."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_006",
@@ -1622,7 +3452,45 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What time is my shift?",
+      "My hours are incorrect.",
+      "Can I request a day off?"
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "My schedule shows the wrong shift.",
+        "chinese": "我的排班显示错了。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "shift",
+        "chinese": "班次",
+        "pronunciation": "shift",
+        "note": "上班的一段时间。",
+        "example": "What time is my shift?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_007",
@@ -1650,7 +3518,51 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "What time is my shift?",
+      "My hours are incorrect.",
+      "Can I request a day off?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Do not swap shifts without approval.",
+        "chinese": "未经批准不要私自换班。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "shift",
+        "chinese": "班次",
+        "pronunciation": "shift",
+        "note": "上班的一段时间。",
+        "example": "What time is my shift?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_008",
@@ -1678,7 +3590,45 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What time is my shift?",
+      "My hours are incorrect.",
+      "Can I request a day off?"
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can I switch shifts with my coworker?",
+        "chinese": "我可以和同事换班吗？"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "shift",
+        "chinese": "班次",
+        "pronunciation": "shift",
+        "note": "上班的一段时间。",
+        "example": "What time is my shift?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_009",
@@ -1706,7 +3656,51 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Please complete the handoff before you leave.",
+        "chinese": "离开前请完成交接。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Please",
+        "chinese": "本句关键词",
+        "pronunciation": "Please",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Please complete the handoff before you leave."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_010",
@@ -1734,7 +3728,45 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "This task is not finished yet.",
+        "chinese": "这项工作还没有完成。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "This",
+        "chinese": "本句关键词",
+        "pronunciation": "This",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "This task is not finished yet."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_011",
@@ -1762,7 +3794,51 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "What time is my shift?",
+      "My hours are incorrect.",
+      "Can I request a day off?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Record the issue in the shift log.",
+        "chinese": "把这个问题记录在班次日志里。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "shift",
+        "chinese": "班次",
+        "pronunciation": "shift",
+        "note": "上班的一段时间。",
+        "example": "What time is my shift?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_012",
@@ -1787,7 +3863,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Who is closing tonight?",
+        "chinese": "今晚谁关店？"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "closing",
+        "chinese": "本句关键词",
+        "pronunciation": "closing",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Who is closing tonight?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_013",
@@ -1812,7 +3926,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Who is opening tomorrow?",
+        "chinese": "明天谁开店？"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "opening",
+        "chinese": "本句关键词",
+        "pronunciation": "opening",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Who is opening tomorrow?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_014",
@@ -1837,7 +3989,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What time is my shift?",
+      "My hours are incorrect.",
+      "Can I request a day off?"
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can I switch shifts with Kevin?",
+        "chinese": "我可以和 Kevin 换班吗？"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "shift",
+        "chinese": "班次",
+        "pronunciation": "shift",
+        "note": "上班的一段时间。",
+        "example": "What time is my shift?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_015",
@@ -1862,7 +4052,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I can stay thirty minutes longer.",
+        "chinese": "我可以多留三十分钟。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "stay",
+        "chinese": "本句关键词",
+        "pronunciation": "stay",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I can stay thirty minutes longer."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_016",
@@ -1887,7 +4115,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I need to leave on time today.",
+        "chinese": "我今天需要准时下班。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need",
+        "chinese": "本句关键词",
+        "pronunciation": "need",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I need to leave on time today."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_017",
@@ -1912,7 +4178,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Was my break recorded?",
+        "chinese": "我的休息时间记录了吗？"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "break",
+        "chinese": "本句关键词",
+        "pronunciation": "break",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Was my break recorded?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_018",
@@ -1937,7 +4241,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I worked from ten to four.",
+        "chinese": "我是从十点工作到四点。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "worked",
+        "chinese": "本句关键词",
+        "pronunciation": "worked",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I worked from ten to four."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_019",
@@ -1962,7 +4304,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "My direct deposit has not arrived yet.",
+        "chinese": "我的工资直接存款还没到账。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "direct deposit",
+        "chinese": "工资直接存款",
+        "pronunciation": "di-REKT de-POZ-it",
+        "note": "工资直接进银行账户。",
+        "example": "My direct deposit has not arrived."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_020",
@@ -1987,7 +4367,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can you check my time sheet?",
+        "chinese": "你可以帮我查一下工时表吗？"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "check",
+        "chinese": "本句关键词",
+        "pronunciation": "check",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can you check my time sheet?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_021",
@@ -2012,7 +4430,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What time is my shift?",
+      "My hours are incorrect.",
+      "Can I request a day off?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I need to call in sick today.",
+        "chinese": "我今天需要请病假。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need",
+        "chinese": "本句关键词",
+        "pronunciation": "need",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I need to call in sick today."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_022",
@@ -2037,7 +4493,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can I take my break now?",
+        "chinese": "我现在可以休息吗？"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "take",
+        "chinese": "本句关键词",
+        "pronunciation": "take",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can I take my break now?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_023",
@@ -2062,7 +4556,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "What time should I come in tomorrow?",
+        "chinese": "我明天几点来上班？"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "What",
+        "chinese": "本句关键词",
+        "pronunciation": "What",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "What time should I come in tomorrow?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_024",
@@ -2087,7 +4619,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What time is my shift?",
+      "My hours are incorrect.",
+      "Can I request a day off?"
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can you send me the new schedule?",
+        "chinese": "你可以把新排班发给我吗？"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "send",
+        "chinese": "本句关键词",
+        "pronunciation": "send",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can you send me the new schedule?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_025",
@@ -2112,7 +4682,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What time is my shift?",
+      "My hours are incorrect.",
+      "Can I request a day off?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I think my overtime is missing.",
+        "chinese": "我觉得我的加班时间少算了。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "overtime",
+        "chinese": "加班",
+        "pronunciation": "OH-ver-time",
+        "note": "超过正常工时的工作时间。",
+        "example": "Was overtime included?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_026",
@@ -2137,7 +4745,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Who should I give the handoff note to?",
+        "chinese": "我应该把交接说明给谁？"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "should",
+        "chinese": "本句关键词",
+        "pronunciation": "should",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Who should I give the handoff note to?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_027",
@@ -2162,7 +4808,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What time is my shift?",
+      "My hours are incorrect.",
+      "Can I request a day off?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The next shift is not here yet.",
+        "chinese": "下一班的人还没来。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "shift",
+        "chinese": "班次",
+        "pronunciation": "shift",
+        "note": "上班的一段时间。",
+        "example": "What time is my shift?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_028",
@@ -2187,7 +4871,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I can cover the first hour.",
+        "chinese": "我可以先顶第一个小时。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "cover",
+        "chinese": "本句关键词",
+        "pronunciation": "cover",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I can cover the first hour."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_029",
@@ -2212,7 +4934,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I cannot work that day.",
+        "chinese": "那天我不能上班。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "cannot",
+        "chinese": "本句关键词",
+        "pronunciation": "cannot",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I cannot work that day."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_030",
@@ -2237,7 +4997,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can I update my availability?",
+        "chinese": "我可以更新我的可上班时间吗？"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "update",
+        "chinese": "本句关键词",
+        "pronunciation": "update",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can I update my availability?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_031",
@@ -2262,7 +5060,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What time is my shift?",
+      "My hours are incorrect.",
+      "Can I request a day off?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I need this day off for an appointment.",
+        "chinese": "我这天需要请假去预约。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need",
+        "chinese": "本句关键词",
+        "pronunciation": "need",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I need this day off for an appointment."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_032",
@@ -2287,7 +5123,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can I come in earlier tomorrow?",
+        "chinese": "我明天可以早点来上班吗？"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "come",
+        "chinese": "本句关键词",
+        "pronunciation": "come",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can I come in earlier tomorrow?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_033",
@@ -2312,7 +5186,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can I leave early if it is slow?",
+        "chinese": "如果不忙，我可以早点走吗？"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "leave",
+        "chinese": "本句关键词",
+        "pronunciation": "leave",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can I leave early if it is slow?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_034",
@@ -2337,7 +5249,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Who approves time-off requests?",
+        "chinese": "谁批准请假申请？"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "approves",
+        "chinese": "本句关键词",
+        "pronunciation": "approves",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Who approves time-off requests?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_035",
@@ -2362,7 +5312,45 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I submitted my availability last week.",
+        "chinese": "我上周已经提交了可上班时间。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "submitted",
+        "chinese": "本句关键词",
+        "pronunciation": "submitted",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I submitted my availability last week."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_036",
@@ -2387,7 +5375,16 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_037",
@@ -2412,7 +5409,16 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_038",
@@ -2437,7 +5443,16 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_039",
@@ -2462,7 +5477,16 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "shift_pay_040",
@@ -2487,7 +5511,16 @@ export const kitchenSurvivalCourse = {
       "shift_pay",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_001",
@@ -2514,7 +5547,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "What comes with the combo?",
+        "chinese": "套餐里包括什么？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "combo",
+        "chinese": "套餐",
+        "pronunciation": "KOM-bo",
+        "note": "主餐加配菜和饮料。",
+        "example": "Would you like the combo?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_002",
@@ -2541,7 +5612,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Sorry, I didn’t catch that.",
+      "Can you repeat that?",
+      "One more time, please."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Sorry, could you repeat that a little more slowly?",
+        "chinese": "不好意思，您可以说慢一点再重复一遍吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Sorry",
+        "chinese": "本句关键词",
+        "pronunciation": "Sorry",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Sorry, could you repeat that a little more slowly?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_003",
@@ -2568,7 +5677,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Can I get that without onions?",
+        "chinese": "这个可以不要洋葱吗？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "that",
+        "chinese": "本句关键词",
+        "pronunciation": "that",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can I get that without onions?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_004",
@@ -2595,7 +5742,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I'm sorry, we're sold out of that today.",
+        "chinese": "很抱歉，这款今天已经卖完了。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "sorry",
+        "chinese": "本句关键词",
+        "pronunciation": "sorry",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I'm sorry, we're sold out of that today."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_005",
@@ -2622,7 +5807,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "What do you recommend instead?",
+        "chinese": "那您建议我换成什么？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "What",
+        "chinese": "本句关键词",
+        "pronunciation": "What",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "What do you recommend instead?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_006",
@@ -2649,7 +5872,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "What milder flavors do you have?",
+        "chinese": "你们有什么不太辣的口味？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "What",
+        "chinese": "本句关键词",
+        "pronunciation": "What",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "What milder flavors do you have?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_007",
@@ -2676,7 +5937,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "What's the name on the order?",
+        "chinese": "订单上的姓名是什么？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "What's",
+        "chinese": "本句关键词",
+        "pronunciation": "What's",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "What's the name on the order?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_008",
@@ -2703,7 +6002,51 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "I'll send help and tell the front counter to update the wait time.",
+        "chinese": "我会安排人支援，并让前台更新等待时间。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "I'll",
+        "chinese": "本句关键词",
+        "pronunciation": "I'll",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I'll send help and tell the front counter to update the wait time."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_009",
@@ -2730,7 +6073,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "What is still available?",
+        "chinese": "现在还有什么可以点？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "What",
+        "chinese": "本句关键词",
+        "pronunciation": "What",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "What is still available?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_010",
@@ -2757,7 +6138,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "That's correct. Please label the cup and check the bag before sealing it.",
+        "chinese": "对，请给酱杯做标记，封袋前再核对一次。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "label",
+        "chinese": "标签",
+        "pronunciation": "LAY-bel",
+        "note": "写日期或名称的贴纸。",
+        "example": "Label it with today’s date."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_011",
@@ -2785,7 +6204,45 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Sorry, I didn’t catch that.",
+      "Can you repeat that?",
+      "One more time, please."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Let me repeat what I understood.",
+        "chinese": "我把我理解的内容复述一遍。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "repeat",
+        "chinese": "本句关键词",
+        "pronunciation": "repeat",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Let me repeat what I understood."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_012",
@@ -2813,7 +6270,45 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Could you explain that again more slowly?",
+        "chinese": "可以再慢一点解释一遍吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Could",
+        "chinese": "本句关键词",
+        "pronunciation": "Could",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Could you explain that again more slowly?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_013",
@@ -2841,7 +6336,45 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "What exactly needs to be corrected?",
+        "chinese": "具体需要改正什么？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "What",
+        "chinese": "本句关键词",
+        "pronunciation": "What",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "What exactly needs to be corrected?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_014",
@@ -2869,7 +6402,45 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "What is the expected production rate?",
+        "chinese": "规定的生产速度是多少？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "What",
+        "chinese": "本句关键词",
+        "pronunciation": "What",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "What is the expected production rate?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_015",
@@ -2897,7 +6468,45 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can you explain what improvement is expected?",
+        "chinese": "可以说明具体需要改进什么吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "explain",
+        "chinese": "本句关键词",
+        "pronunciation": "explain",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can you explain what improvement is expected?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_016",
@@ -2922,7 +6531,45 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Keep raw chicken below cooked food.",
+        "chinese": "把生鸡肉放在熟食下面。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Keep",
+        "chinese": "本句关键词",
+        "pronunciation": "Keep",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Keep raw chicken below cooked food."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_017",
@@ -2947,7 +6594,45 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Cut this first.",
+      "Prep this next.",
+      "How much do you need?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "How much do you need?",
+      "Can you show me first?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Do not use the same cutting board for raw meat and vegetables.",
+        "chinese": "不要用同一块砧板切生肉和蔬菜。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "same",
+        "chinese": "本句关键词",
+        "pronunciation": "same",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Do not use the same cutting board for raw meat and vegetables."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_018",
@@ -2972,7 +6657,45 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Check the expiration date first.",
+        "chinese": "先检查保质期。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Check",
+        "chinese": "本句关键词",
+        "pronunciation": "Check",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Check the expiration date first."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_019",
@@ -2997,7 +6720,45 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "This container needs a date label.",
+        "chinese": "这个容器需要日期标签。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "label",
+        "chinese": "标签",
+        "pronunciation": "LAY-bel",
+        "note": "写日期或名称的贴纸。",
+        "example": "Label it with today’s date."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_020",
@@ -3022,7 +6783,45 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Put the lid on before you store it.",
+        "chinese": "存放前把盖子盖上。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "before",
+        "chinese": "本句关键词",
+        "pronunciation": "before",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Put the lid on before you store it."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_021",
@@ -3047,7 +6846,45 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Do not leave food out too long.",
+        "chinese": "不要把食物放在外面太久。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "leave",
+        "chinese": "本句关键词",
+        "pronunciation": "leave",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Do not leave food out too long."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_022",
@@ -3072,7 +6909,52 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Dine in or takeout?",
+      "Is it for here or to go?",
+      "Will that be dine-in or takeout?"
+    ],
+    "recommendedResponses": [
+      "For here, please.",
+      "To go, please.",
+      "It’s for pickup."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "This needs to go back in the cooler.",
+        "chinese": "这个需要放回冷藏柜。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "For here, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "to go",
+        "chinese": "外带",
+        "pronunciation": "too go",
+        "note": "不是在店里吃，而是带走。",
+        "example": "Is that to go?"
+      },
+      {
+        "term": "cooler",
+        "chinese": "冷藏柜",
+        "pronunciation": "KOO-ler",
+        "note": "厨房里放冷藏食品的地方。",
+        "example": "Put it in the cooler."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_023",
@@ -3097,7 +6979,45 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Wipe it down.",
+      "Clean this area.",
+      "Take out the trash."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "How much do you need?",
+      "Can you show me first?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Use clean tongs for ready-to-eat food.",
+        "chinese": "给即食食品使用干净夹子。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "clean",
+        "chinese": "本句关键词",
+        "pronunciation": "clean",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Use clean tongs for ready-to-eat food."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_024",
@@ -3122,7 +7042,45 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Put on clean gloves.",
+      "Please change your gloves.",
+      "Use a new pair of gloves."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Change the gloves before making the salad.",
+        "chinese": "做沙拉前换手套。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "gloves",
+        "chinese": "手套",
+        "pronunciation": "gluvz",
+        "note": "厨房接触食物前常要戴。",
+        "example": "Put on your gloves."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_025",
@@ -3147,7 +7105,52 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Use the dish detergent.",
+      "Rinse it first.",
+      "Put it in the sanitizer sink."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The sanitizer bucket needs to be changed.",
+        "chinese": "消毒桶需要更换。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "sanitize",
+        "chinese": "消毒",
+        "pronunciation": "SAN-i-tize",
+        "note": "用于餐具或食品接触表面，表示处理到安全标准。",
+        "example": "Sanitize the table."
+      },
+      {
+        "term": "sanitizer",
+        "chinese": "消毒剂",
+        "pronunciation": "SAN-i-tizer",
+        "note": "餐具或食品接触表面用的消毒液。",
+        "example": "Change the sanitizer water."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_026",
@@ -3172,7 +7175,45 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Check the cooler temperature.",
+        "chinese": "检查冷藏柜温度。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "cooler",
+        "chinese": "冷藏柜",
+        "pronunciation": "KOO-ler",
+        "note": "厨房里放冷藏食品的地方。",
+        "example": "Put it in the cooler."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_027",
@@ -3197,7 +7238,45 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Check the freezer temperature.",
+        "chinese": "检查冷冻柜温度。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "freezer",
+        "chinese": "冷冻柜",
+        "pronunciation": "FREE-zer",
+        "note": "放冷冻食品的地方。",
+        "example": "Check the freezer temperature."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_028",
@@ -3222,7 +7301,45 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "This food is past the use-by date.",
+        "chinese": "这个食物已经过了使用日期。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "This",
+        "chinese": "本句关键词",
+        "pronunciation": "This",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "This food is past the use-by date."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_029",
@@ -3247,7 +7364,45 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Throw this away if it is expired.",
+        "chinese": "如果过期了就扔掉。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Throw",
+        "chinese": "本句关键词",
+        "pronunciation": "Throw",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Throw this away if it is expired."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_030",
@@ -3272,7 +7427,45 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Go ahead.",
+      "I’ll move."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Do not put hot food straight into the cooler.",
+        "chinese": "不要把热食物直接放进冷藏柜。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "cooler",
+        "chinese": "冷藏柜",
+        "pronunciation": "KOO-ler",
+        "note": "厨房里放冷藏食品的地方。",
+        "example": "Put it in the cooler."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_031",
@@ -3297,7 +7490,45 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Let it cool before you cover it.",
+        "chinese": "盖起来之前先让它冷却。"
+      },
+      {
+        "speakerRole": "Coworker",
+        "speakerRoleZh": "同事",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "cool",
+        "chinese": "本句关键词",
+        "pronunciation": "cool",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Let it cool before you cover it."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_032",
@@ -3322,7 +7553,45 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Use the first-in, first-out rule.",
+        "chinese": "使用先进先出的规则。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "firstin",
+        "chinese": "本句关键词",
+        "pronunciation": "firstin",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Use the first-in, first-out rule."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_033",
@@ -3347,7 +7616,45 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Do not touch ready-to-eat food with bare hands.",
+        "chinese": "不要徒手接触即食食品。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "touch",
+        "chinese": "本句关键词",
+        "pronunciation": "touch",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Do not touch ready-to-eat food with bare hands."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_034",
@@ -3372,7 +7679,45 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Wipe it down.",
+      "Clean this area.",
+      "Take out the trash."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "How much do you need?",
+      "Can you show me first?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Use a clean spoon every time.",
+        "chinese": "每次都用干净勺子。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "clean",
+        "chinese": "本句关键词",
+        "pronunciation": "clean",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Use a clean spoon every time."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_035",
@@ -3397,7 +7742,45 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "This needs to be covered in the fridge.",
+        "chinese": "这个放冰箱里需要盖好。"
+      },
+      {
+        "speakerRole": "Coworker",
+        "speakerRoleZh": "同事",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "This",
+        "chinese": "本句关键词",
+        "pronunciation": "This",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "This needs to be covered in the fridge."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_036",
@@ -3422,7 +7805,16 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_037",
@@ -3447,7 +7839,16 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_038",
@@ -3472,7 +7873,16 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_039",
@@ -3497,7 +7907,16 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_040",
@@ -3522,7 +7941,16 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_041",
@@ -3547,7 +7975,16 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_042",
@@ -3572,7 +8009,16 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_043",
@@ -3597,7 +8043,16 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_044",
@@ -3622,7 +8077,16 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_045",
@@ -3647,7 +8111,16 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_046",
@@ -3672,7 +8145,16 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_047",
@@ -3697,7 +8179,16 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_048",
@@ -3722,7 +8213,16 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_049",
@@ -3747,7 +8247,16 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "food_safety_050",
@@ -3772,7 +8281,16 @@ export const kitchenSurvivalCourse = {
       "food_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_001",
@@ -3799,7 +8317,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Coworker",
+    "speakerRoleZh": "同事可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "We need one more combo for table two.",
+        "chinese": "二号桌还需要一份套餐。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "combo",
+        "chinese": "套餐",
+        "pronunciation": "KOM-bo",
+        "note": "主餐加配菜和饮料。",
+        "example": "Would you like the combo?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_002",
@@ -3826,7 +8388,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Coworker",
+    "speakerRoleZh": "同事可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "No sauce on this order.",
+        "chinese": "这份订单不要放酱。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "sauce",
+        "chinese": "本句关键词",
+        "pronunciation": "sauce",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "No sauce on this order."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_003",
@@ -3853,7 +8459,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Coworker",
+    "speakerRoleZh": "同事可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Make this one with light sauce.",
+        "chinese": "这一份少放一点酱。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Make",
+        "chinese": "本句关键词",
+        "pronunciation": "Make",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Make this one with light sauce."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_004",
@@ -3880,7 +8530,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Coworker",
+    "speakerRoleZh": "同事可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "The customer wants the sauce on the side.",
+        "chinese": "顾客要把酱放在旁边。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "customer",
+        "chinese": "本句关键词",
+        "pronunciation": "customer",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The customer wants the sauce on the side."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_005",
@@ -3907,7 +8601,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Coworker",
+    "speakerRoleZh": "同事可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "How long on the tenders?",
+        "chinese": "鸡柳还要多久？"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Yes, please.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "long",
+        "chinese": "本句关键词",
+        "pronunciation": "long",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "How long on the tenders?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_006",
@@ -3934,7 +8672,45 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "后厨员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Two more minutes on the fries.",
+        "chinese": "薯条还要两分钟。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "more",
+        "chinese": "本句关键词",
+        "pronunciation": "more",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Two more minutes on the fries."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_007",
@@ -3961,7 +8737,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Please remake this sandwich.",
+        "chinese": "请重做这个三明治。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Please",
+        "chinese": "本句关键词",
+        "pronunciation": "Please",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Please remake this sandwich."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_008",
@@ -3988,7 +8808,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Coworker",
+    "speakerRoleZh": "同事可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "For here, please.",
+      "To go, please.",
+      "It’s for pickup."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "This order is for dine-in.",
+        "chinese": "这份订单是堂食。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "For here, please.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "This",
+        "chinese": "本句关键词",
+        "pronunciation": "This",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "This order is for dine-in."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_009",
@@ -4015,7 +8879,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Coworker",
+    "speakerRoleZh": "同事可能会说",
+    "variants": [
+      "Dine in or takeout?",
+      "Is it for here or to go?",
+      "Will that be dine-in or takeout?"
+    ],
+    "recommendedResponses": [
+      "For here, please.",
+      "To go, please.",
+      "It’s for pickup."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "This order is to go.",
+        "chinese": "这份订单是外带。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "For here, please.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "to go",
+        "chinese": "外带",
+        "pronunciation": "too go",
+        "note": "不是在店里吃，而是带走。",
+        "example": "Is that to go?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_010",
@@ -4042,7 +8950,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Coworker",
+    "speakerRoleZh": "同事可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "We're waiting on the wings.",
+        "chinese": "我们还在等鸡翅。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "We're",
+        "chinese": "本句关键词",
+        "pronunciation": "We're",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "We're waiting on the wings."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_011",
@@ -4069,7 +9021,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Double-check the bag before you seal it.",
+        "chinese": "封袋前再核对一遍。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Doublecheck",
+        "chinese": "本句关键词",
+        "pronunciation": "Doublecheck",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Double-check the bag before you seal it."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_012",
@@ -4096,7 +9092,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Put the sauce in a separate cup.",
+        "chinese": "把酱装在单独的小杯里。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "sauce",
+        "chinese": "本句关键词",
+        "pronunciation": "sauce",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Put the sauce in a separate cup."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_013",
@@ -4123,7 +9163,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Label the bag with the customer's name.",
+        "chinese": "在袋子上写上顾客的名字。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "label",
+        "chinese": "标签",
+        "pronunciation": "LAY-bel",
+        "note": "写日期或名称的贴纸。",
+        "example": "Label it with today’s date."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_014",
@@ -4150,7 +9234,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Make sure the drink goes with the order.",
+        "chinese": "确认饮料要和订单一起交付。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Make",
+        "chinese": "本句关键词",
+        "pronunciation": "Make",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Make sure the drink goes with the order."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_015",
@@ -4177,7 +9305,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Don't forget the napkins.",
+        "chinese": "别忘了放餐巾纸。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Don't",
+        "chinese": "本句关键词",
+        "pronunciation": "Don't",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Don't forget the napkins."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_016",
@@ -4204,7 +9376,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Coworker",
+    "speakerRoleZh": "同事可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "This bag is for pickup.",
+        "chinese": "这袋是顾客自取订单。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "pickup",
+        "chinese": "取餐",
+        "pronunciation": "PIK-up",
+        "note": "外卖或已下单的人来拿餐。",
+        "example": "Pickup order for Sarah?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_017",
@@ -4231,7 +9447,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Coworker",
+    "speakerRoleZh": "同事可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Driver",
+        "speakerRoleZh": "外卖员",
+        "english": "This bag is for delivery.",
+        "chinese": "这袋是外卖配送订单。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Driver",
+        "speakerRoleZh": "外卖员",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "This",
+        "chinese": "本句关键词",
+        "pronunciation": "This",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "This bag is for delivery."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_018",
@@ -4258,7 +9518,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Go ahead.",
+      "I’ll move."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Keep hot food and cold drinks separate.",
+        "chinese": "热食和冷饮要分开放。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Keep",
+        "chinese": "本句关键词",
+        "pronunciation": "Keep",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Keep hot food and cold drinks separate."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_019",
@@ -4285,7 +9589,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Call the customer's name when the order is ready.",
+        "chinese": "餐好后叫顾客的名字。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Call",
+        "chinese": "本句关键词",
+        "pronunciation": "Call",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Call the customer's name when the order is ready."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_020",
@@ -4312,7 +9660,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Check the order number before handing it out.",
+        "chinese": "把餐交出去前先核对订单号。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Check",
+        "chinese": "本句关键词",
+        "pronunciation": "Check",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Check the order number before handing it out."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_021",
@@ -4339,7 +9731,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Wipe it down.",
+      "Clean this area.",
+      "Take out the trash."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Wipe down the front counter.",
+        "chinese": "把前台台面擦干净。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Wipe",
+        "chinese": "本句关键词",
+        "pronunciation": "Wipe",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Wipe down the front counter."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_022",
@@ -4366,7 +9802,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Sweep the dining area.",
+        "chinese": "把用餐区扫一下。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Sweep",
+        "chinese": "本句关键词",
+        "pronunciation": "Sweep",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Sweep the dining area."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_023",
@@ -4393,7 +9873,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Wipe it down.",
+      "Clean this area.",
+      "Take out the trash."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "How much do you need?",
+      "Can you show me first?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Take out the trash before closing.",
+        "chinese": "关店前把垃圾倒掉。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Take",
+        "chinese": "本句关键词",
+        "pronunciation": "Take",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Take out the trash before closing."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_024",
@@ -4420,7 +9944,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Restock the sauce cups.",
+        "chinese": "把酱料杯补满。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Restock",
+        "chinese": "本句关键词",
+        "pronunciation": "Restock",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Restock the sauce cups."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_025",
@@ -4447,7 +10015,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Wipe it down.",
+      "Clean this area.",
+      "Take out the trash."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "How much do you need?",
+      "Can you show me first?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Clean the drink station.",
+        "chinese": "清洁饮料区。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Clean",
+        "chinese": "本句关键词",
+        "pronunciation": "Clean",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Clean the drink station."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_026",
@@ -4474,7 +10086,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Turn off the open sign.",
+        "chinese": "把营业灯关掉。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Turn",
+        "chinese": "本句关键词",
+        "pronunciation": "Turn",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Turn off the open sign."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_027",
@@ -4501,7 +10157,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Follow the closing procedure for the front door.",
+        "chinese": "按照关店流程处理前门。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Follow",
+        "chinese": "本句关键词",
+        "pronunciation": "Follow",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Follow the closing procedure for the front door."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_028",
@@ -4528,7 +10228,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "What time is my shift?",
+      "My hours are incorrect.",
+      "Can I request a day off?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Write down anything the next shift needs to know.",
+        "chinese": "把下个班次需要知道的事情写下来。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "shift",
+        "chinese": "班次",
+        "pronunciation": "shift",
+        "note": "上班的一段时间。",
+        "example": "What time is my shift?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_029",
@@ -4555,7 +10299,45 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "后厨员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The floor is still wet.",
+        "chinese": "地面还是湿的。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "floor",
+        "chinese": "本句关键词",
+        "pronunciation": "floor",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The floor is still wet."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_030",
@@ -4582,7 +10364,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Put up the wet floor sign.",
+        "chinese": "放上小心地滑警示牌。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "floor",
+        "chinese": "本句关键词",
+        "pronunciation": "floor",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Put up the wet floor sign."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_031",
@@ -4609,7 +10435,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Greet every customer when they walk in.",
+        "chinese": "每位顾客进门时都要主动打招呼。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Greet",
+        "chinese": "本句关键词",
+        "pronunciation": "Greet",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Greet every customer when they walk in."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_032",
@@ -4636,7 +10506,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Sorry, I didn’t catch that.",
+      "Can you repeat that?",
+      "One more time, please."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Repeat the order before you charge the customer.",
+        "chinese": "收款前先复述并确认订单。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Repeat",
+        "chinese": "本句关键词",
+        "pronunciation": "Repeat",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Repeat the order before you charge the customer."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_033",
@@ -4663,7 +10577,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Use simpler words if the customer looks confused.",
+        "chinese": "顾客看起来没听懂时，用更简单的话说明。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "simpler",
+        "chinese": "本句关键词",
+        "pronunciation": "simpler",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Use simpler words if the customer looks confused."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_034",
@@ -4690,7 +10648,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Don't argue with the customer.",
+        "chinese": "不要和顾客争辩。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Don't",
+        "chinese": "本句关键词",
+        "pronunciation": "Don't",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Don't argue with the customer."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_035",
@@ -4717,7 +10719,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Coworker",
+        "speakerRoleZh": "同事",
+        "english": "Ask for help if you're not sure.",
+        "chinese": "如果不确定，就请人帮忙。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Coworker",
+        "speakerRoleZh": "同事",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "help",
+        "chinese": "本句关键词",
+        "pronunciation": "help",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Ask for help if you're not sure."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_036",
@@ -4744,7 +10790,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Keep your voice calm and clear.",
+        "chinese": "说话要冷静、清楚。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Keep",
+        "chinese": "本句关键词",
+        "pronunciation": "Keep",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Keep your voice calm and clear."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_037",
@@ -4771,7 +10861,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Do you need a receipt?",
+      "Would you like your receipt?",
+      "Do you want it printed?"
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "No, thank you.",
+      "Can you email it?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Check the receipt before handing out the food.",
+        "chinese": "把餐交出去前先核对小票。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Yes, please.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "receipt",
+        "chinese": "收据",
+        "pronunciation": "ri-SEET",
+        "note": "付款后给顾客的凭证。",
+        "example": "Would you like a receipt?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_038",
@@ -4798,7 +10932,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "If you make a mistake, tell me right away.",
+        "chinese": "如果出了错，马上告诉我。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "make",
+        "chinese": "本句关键词",
+        "pronunciation": "make",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "If you make a mistake, tell me right away."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_039",
@@ -4825,7 +11003,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Good service means clear communication.",
+        "chinese": "好的服务离不开清楚的沟通。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Good",
+        "chinese": "本句关键词",
+        "pronunciation": "Good",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Good service means clear communication."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_040",
@@ -4852,7 +11074,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Stay focused during the rush.",
+        "chinese": "高峰期要保持专注。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Stay",
+        "chinese": "本句关键词",
+        "pronunciation": "Stay",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Stay focused during the rush."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_041",
@@ -4879,7 +11145,45 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "后厨员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "We're running low on chicken.",
+        "chinese": "鸡肉库存快不够了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "We're",
+        "chinese": "本句关键词",
+        "pronunciation": "We're",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "We're running low on chicken."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_042",
@@ -4906,7 +11210,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Bring more fries from the freezer.",
+        "chinese": "从冷冻库再拿一些薯条。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "freezer",
+        "chinese": "冷冻柜",
+        "pronunciation": "FREE-zer",
+        "note": "放冷冻食品的地方。",
+        "example": "Check the freezer temperature."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_043",
@@ -4933,7 +11281,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Cut this first.",
+      "Prep this next.",
+      "How much do you need?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Prep more sauce cups.",
+        "chinese": "再准备一些酱料杯。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Prep",
+        "chinese": "本句关键词",
+        "pronunciation": "Prep",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Prep more sauce cups."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_044",
@@ -4960,7 +11352,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Check the expiration date before you use it.",
+        "chinese": "使用前先检查有效期。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Check",
+        "chinese": "本句关键词",
+        "pronunciation": "Check",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Check the expiration date before you use it."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_045",
@@ -4987,7 +11423,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Put the older product in front.",
+        "chinese": "把日期较早的产品放在前面。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "older",
+        "chinese": "本句关键词",
+        "pronunciation": "older",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Put the older product in front."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_046",
@@ -5014,7 +11494,45 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "后厨员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "We're out of large cups.",
+        "chinese": "大杯已经用完了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "We're",
+        "chinese": "本句关键词",
+        "pronunciation": "We're",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "We're out of large cups."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_047",
@@ -5041,7 +11559,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Put on clean gloves.",
+      "Please change your gloves.",
+      "Use a new pair of gloves."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Add gloves to the supply list.",
+        "chinese": "把手套加到物料清单上。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "gloves",
+        "chinese": "手套",
+        "pronunciation": "gluvz",
+        "note": "厨房接触食物前常要戴。",
+        "example": "Put on your gloves."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_048",
@@ -5068,7 +11630,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Count the inventory before we close.",
+        "chinese": "关店前盘点库存。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Count",
+        "chinese": "本句关键词",
+        "pronunciation": "Count",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Count the inventory before we close."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_049",
@@ -5095,7 +11701,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "This box needs to stay refrigerated.",
+        "chinese": "这一箱需要一直冷藏。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "This",
+        "chinese": "本句关键词",
+        "pronunciation": "This",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "This box needs to stay refrigerated."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_050",
@@ -5122,7 +11772,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Don't open a new case yet.",
+        "chinese": "先不要开新箱。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Don't",
+        "chinese": "本句关键词",
+        "pronunciation": "Don't",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Don't open a new case yet."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_051",
@@ -5149,7 +11843,45 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Does this contain peanuts?",
+        "chinese": "这个含花生吗？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Yes, please.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Does",
+        "chinese": "本句关键词",
+        "pronunciation": "Does",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Does this contain peanuts?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_052",
@@ -5176,7 +11908,45 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Please tell us if you have any food allergies.",
+        "chinese": "如果您有食物过敏，请告诉我们。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Please",
+        "chinese": "本句关键词",
+        "pronunciation": "Please",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Please tell us if you have any food allergies."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_053",
@@ -5203,7 +11973,45 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "This item may contain dairy.",
+        "chinese": "这款餐品可能含有乳制品。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "This",
+        "chinese": "本句关键词",
+        "pronunciation": "This",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "This item may contain dairy."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_054",
@@ -5230,7 +12038,45 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "We cannot guarantee that there will be no cross-contact.",
+        "chinese": "我们无法保证完全不会发生过敏原交叉接触。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "cannot",
+        "chinese": "本句关键词",
+        "pronunciation": "cannot",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "We cannot guarantee that there will be no cross-contact."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_055",
@@ -5257,7 +12103,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Put on clean gloves.",
+      "Please change your gloves.",
+      "Use a new pair of gloves."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Use fresh gloves for this order.",
+        "chinese": "这份订单要换一副新手套。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "gloves",
+        "chinese": "手套",
+        "pronunciation": "gluvz",
+        "note": "厨房接触食物前常要戴。",
+        "example": "Put on your gloves."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_056",
@@ -5284,7 +12174,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Keep raw chicken away from ready-to-eat food.",
+        "chinese": "生鸡肉要和即食食品分开。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Keep",
+        "chinese": "本句关键词",
+        "pronunciation": "Keep",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Keep raw chicken away from ready-to-eat food."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_057",
@@ -5311,7 +12245,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Wash your hands first.",
+      "Clean your hands before you start.",
+      "Please wash your hands."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Wash your hands before returning to the line.",
+        "chinese": "回到岗位前先洗手。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Wash",
+        "chinese": "本句关键词",
+        "pronunciation": "Wash",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Wash your hands before returning to the line."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_058",
@@ -5338,7 +12316,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Do not serve food that fell on the floor.",
+        "chinese": "掉到地上的食物不能提供给顾客。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "serve",
+        "chinese": "本句关键词",
+        "pronunciation": "serve",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Do not serve food that fell on the floor."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_059",
@@ -5365,7 +12387,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Check the food temperature before serving it.",
+        "chinese": "出餐前检查食品温度。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Check",
+        "chinese": "本句关键词",
+        "pronunciation": "Check",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Check the food temperature before serving it."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_060",
@@ -5392,7 +12458,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "When in doubt, throw it out.",
+        "chinese": "不确定食品是否安全时，就把它丢掉。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "When",
+        "chinese": "本句关键词",
+        "pronunciation": "When",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "When in doubt, throw it out."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_061",
@@ -5419,7 +12529,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Coworker",
+    "speakerRoleZh": "同事可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "We're out of chicken breasts. Please mark the item as sold out.",
+        "chinese": "鸡胸肉卖完了，请把这个餐品标记为售罄。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "We're",
+        "chinese": "本句关键词",
+        "pronunciation": "We're",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "We're out of chicken breasts. Please mark the item as sold out."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_062",
@@ -5446,7 +12600,45 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "后厨员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "We're backed up in the kitchen. We need help with the orders.",
+        "chinese": "厨房订单积压了，我们需要支援。"
+      },
+      {
+        "speakerRole": "Coworker",
+        "speakerRoleZh": "同事",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "We're",
+        "chinese": "本句关键词",
+        "pronunciation": "We're",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "We're backed up in the kitchen. We need help with the orders."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_063",
@@ -5473,7 +12665,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Wipe it down.",
+      "Clean this area.",
+      "Take out the trash."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "How much do you need?",
+      "Can you show me first?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Keep cleaning chemicals away from food and prep areas.",
+        "chinese": "清洁化学品要远离食品和备餐区域。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Keep",
+        "chinese": "本句关键词",
+        "pronunciation": "Keep",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Keep cleaning chemicals away from food and prep areas."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_064",
@@ -5500,7 +12736,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Do not thaw frozen meat on the counter. Follow the approved thawing procedure.",
+        "chinese": "不要把冷冻肉放在台面上解冻，要按照批准的解冻流程操作。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "thaw",
+        "chinese": "本句关键词",
+        "pronunciation": "thaw",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Do not thaw frozen meat on the counter. Follow the approved thawing procedure."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_065",
@@ -5527,7 +12807,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Cut this first.",
+      "Prep this next.",
+      "How much do you need?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Label and date the prep container before putting it away.",
+        "chinese": "把备料盒收起来之前，要贴标签并写上日期。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "label",
+        "chinese": "标签",
+        "pronunciation": "LAY-bel",
+        "note": "写日期或名称的贴纸。",
+        "example": "Label it with today’s date."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_066",
@@ -5554,7 +12878,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Check and record the holding temperature.",
+        "chinese": "检查并记录食品的保温或冷藏温度。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Check",
+        "chinese": "本句关键词",
+        "pronunciation": "Check",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Check and record the holding temperature."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_067",
@@ -5581,7 +12949,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "How much do you need?",
+      "Can you show me first?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Follow the fryer safety procedure when filtering or changing the oil.",
+        "chinese": "过滤或更换炸油时，要按照炸炉安全流程操作。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Follow",
+        "chinese": "本句关键词",
+        "pronunciation": "Follow",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Follow the fryer safety procedure when filtering or changing the oil."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_068",
@@ -5608,7 +13020,51 @@ export const kitchenSurvivalCourse = {
       "teamwork",
       "food_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Coworker",
+    "speakerRoleZh": "同事可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "The order is missing fries. Can you make them right away?",
+        "chinese": "这份订单少了薯条，可以马上补做吗？"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "order",
+        "chinese": "本句关键词",
+        "pronunciation": "order",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The order is missing fries. Can you make them right away?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_069",
@@ -5635,7 +13091,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Let me check the ingredient information and ask the kitchen.",
+        "chinese": "我核对一下配料信息，并向厨房确认。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "check",
+        "chinese": "本句关键词",
+        "pronunciation": "check",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Let me check the ingredient information and ask the kitchen."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_070",
@@ -5662,7 +13156,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "How much do you need?",
+      "Can you show me first?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Is the same fryer used for other foods?",
+        "chinese": "这些食物是不是共用同一个炸炉？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "same",
+        "chinese": "本句关键词",
+        "pronunciation": "same",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Is the same fryer used for other foods?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_071",
@@ -5689,7 +13221,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "How much do you need?",
+      "Can you show me first?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The fryers are shared, so we cannot guarantee there will be no cross-contact.",
+        "chinese": "炸炉是共用的，因此我们无法保证完全不会发生过敏原交叉接触。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "fryers",
+        "chinese": "本句关键词",
+        "pronunciation": "fryers",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The fryers are shared, so we cannot guarantee there will be no cross-contact."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_072",
@@ -5716,7 +13286,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "I'm here to pick up an online order.",
+        "chinese": "我是来取网上订单的。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "here",
+        "chinese": "本句关键词",
+        "pronunciation": "here",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I'm here to pick up an online order."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_073",
@@ -5743,7 +13351,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Thank you. The kitchen says it needs about five more minutes.",
+        "chinese": "谢谢。厨房说大约还需要五分钟。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Thank",
+        "chinese": "本句关键词",
+        "pronunciation": "Thank",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Thank you. The kitchen says it needs about five more minutes."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_074",
@@ -5770,7 +13416,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "后厨员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "We're backed up. We need help on the fry station.",
+        "chinese": "订单积压了，炸台需要人支援。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "We're",
+        "chinese": "本句关键词",
+        "pronunciation": "We're",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "We're backed up. We need help on the fry station."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_075",
@@ -5797,7 +13481,51 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "How many orders are waiting?",
+        "chinese": "现在有多少份订单在等？"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "many",
+        "chinese": "本句关键词",
+        "pronunciation": "many",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "How many orders are waiting?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_076",
@@ -5824,7 +13552,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "后厨员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Go ahead.",
+      "I’ll move."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "We're about fifteen minutes behind.",
+        "chinese": "我们现在大约晚了十五分钟。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "We're",
+        "chinese": "本句关键词",
+        "pronunciation": "We're",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "We're about fifteen minutes behind."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_077",
@@ -5851,7 +13617,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Order 84 needs light sauce, with one extra sauce on the side.",
+        "chinese": "84号订单要少酱，另外加一杯酱放旁边。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Order",
+        "chinese": "本句关键词",
+        "pronunciation": "Order",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Order 84 needs light sauce, with one extra sauce on the side."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_078",
@@ -5878,7 +13682,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "后厨员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it. Light sauce and one extra cup on the side.",
+        "chinese": "知道了，少酱，另外一杯酱单独装。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Light",
+        "chinese": "本句关键词",
+        "pronunciation": "Light",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Got it. Light sauce and one extra cup on the side."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_079",
@@ -5905,7 +13747,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "后厨员工要说",
+    "variants": [
+      "Do you need a receipt?",
+      "Would you like your receipt?",
+      "Do you want it printed?"
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "No, thank you.",
+      "Can you email it?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay. I'll check the receipt before sealing the bag.",
+        "chinese": "好的，我会在封袋前核对小票。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "receipt",
+        "chinese": "收据",
+        "pronunciation": "ri-SEET",
+        "note": "付款后给顾客的凭证。",
+        "example": "Would you like a receipt?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_080",
@@ -5933,7 +13813,51 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Use the dish detergent.",
+      "Rinse it first.",
+      "Put it in the sanitizer sink."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "How much do you need?",
+      "Can you show me first?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Add dish soap to the sink.",
+        "chinese": "往水槽里加洗洁精。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "dish",
+        "chinese": "本句关键词",
+        "pronunciation": "dish",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Add dish soap to the sink."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_081",
@@ -5961,7 +13885,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_082",
@@ -5989,7 +13922,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_083",
@@ -6017,7 +13959,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_084",
@@ -6045,7 +13996,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_085",
@@ -6073,7 +14033,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_086",
@@ -6101,7 +14070,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_087",
@@ -6129,7 +14107,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_088",
@@ -6157,7 +14144,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_089",
@@ -6185,7 +14181,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_090",
@@ -6213,7 +14218,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_091",
@@ -6241,7 +14255,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_092",
@@ -6269,7 +14292,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_093",
@@ -6297,7 +14329,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_094",
@@ -6325,7 +14366,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_095",
@@ -6353,7 +14403,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_096",
@@ -6381,7 +14440,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_097",
@@ -6409,7 +14477,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_098",
@@ -6437,7 +14514,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_099",
@@ -6465,7 +14551,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_100",
@@ -6493,7 +14588,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_101",
@@ -6521,7 +14625,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_102",
@@ -6549,7 +14662,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_103",
@@ -6577,7 +14699,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_104",
@@ -6605,7 +14736,16 @@ export const kitchenSurvivalCourse = {
       "cleaning",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_105",
@@ -6633,7 +14773,16 @@ export const kitchenSurvivalCourse = {
       "sanitizing",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_106",
@@ -6661,7 +14810,16 @@ export const kitchenSurvivalCourse = {
       "sanitizing",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_107",
@@ -6689,7 +14847,16 @@ export const kitchenSurvivalCourse = {
       "sanitizing",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_108",
@@ -6717,7 +14884,16 @@ export const kitchenSurvivalCourse = {
       "sanitizing",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_109",
@@ -6745,7 +14921,16 @@ export const kitchenSurvivalCourse = {
       "sanitizing",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "kitchen_cleaning_110",
@@ -6773,7 +14958,16 @@ export const kitchenSurvivalCourse = {
       "sanitizing",
       "release_v1"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_001",
@@ -6798,7 +14992,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "What can I get for you?",
+        "chinese": "您想点些什么？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "What",
+        "chinese": "本句关键词",
+        "pronunciation": "What",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "What can I get for you?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_002",
@@ -6823,7 +15055,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Would you like the combo or just the chicken?",
+        "chinese": "您想要套餐，还是只要鸡肉单点？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "combo",
+        "chinese": "套餐",
+        "pronunciation": "KOM-bo",
+        "note": "主餐加配菜和饮料。",
+        "example": "Would you like the combo?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_003",
@@ -6848,7 +15118,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "What flavor would you like?",
+        "chinese": "您想要什么口味？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "What",
+        "chinese": "本句关键词",
+        "pronunciation": "What",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "What flavor would you like?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_004",
@@ -6873,7 +15181,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Tossed or on the side?",
+        "chinese": "您想拌酱，还是把酱放在旁边？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Tossed",
+        "chinese": "本句关键词",
+        "pronunciation": "Tossed",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Tossed or on the side?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_005",
@@ -6898,7 +15244,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "What drink would you like?",
+        "chinese": "您想要什么饮料？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "What",
+        "chinese": "本句关键词",
+        "pronunciation": "What",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "What drink would you like?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_006",
@@ -6923,7 +15307,52 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Dine in or takeout?",
+      "Is it for here or to go?",
+      "Will that be dine-in or takeout?"
+    ],
+    "recommendedResponses": [
+      "For here, please.",
+      "To go, please.",
+      "It’s for pickup."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "For here or to go?",
+        "chinese": "堂食还是外带？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "For here, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "to go",
+        "chinese": "外带",
+        "pronunciation": "too go",
+        "note": "不是在店里吃，而是带走。",
+        "example": "Is that to go?"
+      },
+      {
+        "term": "for here",
+        "chinese": "堂食",
+        "pronunciation": "for heer",
+        "note": "在店里吃。",
+        "example": "For here or to go?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_007",
@@ -6948,7 +15377,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Anything else?",
+        "chinese": "还需要别的吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Anything",
+        "chinese": "本句关键词",
+        "pronunciation": "Anything",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Anything else?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_008",
@@ -6973,7 +15440,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Is that correct?",
+        "chinese": "这样对吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "that",
+        "chinese": "本句关键词",
+        "pronunciation": "that",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Is that correct?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_009",
@@ -6998,7 +15503,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Your total is sixteen ninety-nine.",
+        "chinese": "总共是16.99美元。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Your",
+        "chinese": "本句关键词",
+        "pronunciation": "Your",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Your total is sixteen ninety-nine."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_010",
@@ -7023,7 +15566,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "It'll be ready in about ten minutes.",
+        "chinese": "大约十分钟可以做好。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "It'll",
+        "chinese": "本句关键词",
+        "pronunciation": "It'll",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "It'll be ready in about ten minutes."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_011",
@@ -7048,7 +15629,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Combo or chicken only?",
+        "chinese": "套餐还是只要鸡肉单点？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "combo",
+        "chinese": "套餐",
+        "pronunciation": "KOM-bo",
+        "note": "主餐加配菜和饮料。",
+        "example": "Would you like the combo?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_012",
@@ -7073,7 +15692,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Combo or wings only?",
+        "chinese": "套餐还是只要鸡翅单点？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "combo",
+        "chinese": "套餐",
+        "pronunciation": "KOM-bo",
+        "note": "主餐加配菜和饮料。",
+        "example": "Would you like the combo?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_013",
@@ -7098,7 +15755,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Would you like to make it a combo?",
+        "chinese": "您想升级成套餐吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "combo",
+        "chinese": "套餐",
+        "pronunciation": "KOM-bo",
+        "note": "主餐加配菜和饮料。",
+        "example": "Would you like the combo?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_014",
@@ -7123,7 +15818,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The combo comes with fries, toast, and a drink.",
+        "chinese": "套餐包括薯条、吐司和一杯饮料。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "combo",
+        "chinese": "套餐",
+        "pronunciation": "KOM-bo",
+        "note": "主餐加配菜和饮料。",
+        "example": "Would you like the combo?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_015",
@@ -7148,7 +15881,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Just the chicken, no combo?",
+        "chinese": "只要鸡肉单点，不要套餐，对吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "combo",
+        "chinese": "套餐",
+        "pronunciation": "KOM-bo",
+        "note": "主餐加配菜和饮料。",
+        "example": "Would you like the combo?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_016",
@@ -7173,7 +15944,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Chicken only.",
+        "chinese": "只要鸡肉单点。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Chicken",
+        "chinese": "本句关键词",
+        "pronunciation": "Chicken",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Chicken only."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_017",
@@ -7198,7 +16007,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Wings only.",
+        "chinese": "只要鸡翅单点。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Wings",
+        "chinese": "本句关键词",
+        "pronunciation": "Wings",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Wings only."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_018",
@@ -7223,7 +16070,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "No combo.",
+        "chinese": "不要套餐。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "combo",
+        "chinese": "套餐",
+        "pronunciation": "KOM-bo",
+        "note": "主餐加配菜和饮料。",
+        "example": "Would you like the combo?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_019",
@@ -7248,7 +16133,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "I don't need fries or a drink.",
+        "chinese": "我不需要薯条和饮料。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "don't",
+        "chinese": "本句关键词",
+        "pronunciation": "don't",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I don't need fries or a drink."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_020",
@@ -7273,7 +16196,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "You can choose two flavors.",
+        "chinese": "您可以选择两种口味。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "choose",
+        "chinese": "本句关键词",
+        "pronunciation": "choose",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "You can choose two flavors."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_021",
@@ -7298,7 +16259,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Light sauce or regular sauce?",
+        "chinese": "少酱还是正常酱量？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Light",
+        "chinese": "本句关键词",
+        "pronunciation": "Light",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Light sauce or regular sauce?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_022",
@@ -7323,7 +16322,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Would you like extra sauce?",
+        "chinese": "您需要额外加酱吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Would",
+        "chinese": "本句关键词",
+        "pronunciation": "Would",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Would you like extra sauce?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_023",
@@ -7348,7 +16385,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Tossed, please.",
+        "chinese": "请帮我拌酱。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Tossed",
+        "chinese": "本句关键词",
+        "pronunciation": "Tossed",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Tossed, please."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_024",
@@ -7373,7 +16448,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Sauce on the side, please.",
+        "chinese": "请把酱放旁边。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Sauce",
+        "chinese": "本句关键词",
+        "pronunciation": "Sauce",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Sauce on the side, please."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_025",
@@ -7398,7 +16511,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Keep them plain.",
+        "chinese": "保持原味，不要拌酱。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Keep",
+        "chinese": "本句关键词",
+        "pronunciation": "Keep",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Keep them plain."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_026",
@@ -7423,7 +16574,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "What would you like to drink?",
+        "chinese": "您想喝什么？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "What",
+        "chinese": "本句关键词",
+        "pronunciation": "What",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "What would you like to drink?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_027",
@@ -7448,7 +16637,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Which drink would you like with your combo?",
+        "chinese": "您的套餐想配哪种饮料？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "combo",
+        "chinese": "套餐",
+        "pronunciation": "KOM-bo",
+        "note": "主餐加配菜和饮料。",
+        "example": "Would you like the combo?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_028",
@@ -7473,7 +16700,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The drink is included with the combo.",
+        "chinese": "套餐已经包括饮料。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "combo",
+        "chinese": "套餐",
+        "pronunciation": "KOM-bo",
+        "note": "主餐加配菜和饮料。",
+        "example": "Would you like the combo?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_029",
@@ -7498,7 +16763,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Fruit tea or milk tea?",
+        "chinese": "水果茶还是奶茶？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Fruit",
+        "chinese": "本句关键词",
+        "pronunciation": "Fruit",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Fruit tea or milk tea?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_030",
@@ -7523,7 +16826,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Regular ice or less ice?",
+        "chinese": "正常冰还是少冰？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Regular",
+        "chinese": "本句关键词",
+        "pronunciation": "Regular",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Regular ice or less ice?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_031",
@@ -7548,7 +16889,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Is the drink included?",
+        "chinese": "饮料包括在套餐里吗？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "drink",
+        "chinese": "本句关键词",
+        "pronunciation": "drink",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Is the drink included?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_032",
@@ -7573,7 +16952,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Can I choose any drink?",
+        "chinese": "我可以任选饮料吗？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "choose",
+        "chinese": "本句关键词",
+        "pronunciation": "choose",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can I choose any drink?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_033",
@@ -7598,7 +17015,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Cash or card?",
+      "You can pay by card.",
+      "The card did not go through."
+    ],
+    "recommendedResponses": [
+      "Card, please.",
+      "Cash, please.",
+      "Can I try another card?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "You can tap your card here.",
+        "chinese": "您可以在这里感应付款。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Card, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "your",
+        "chinese": "本句关键词",
+        "pronunciation": "your",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "You can tap your card here."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_034",
@@ -7623,7 +17078,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Please follow the screen.",
+        "chinese": "请按照屏幕提示操作。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Please",
+        "chinese": "本句关键词",
+        "pronunciation": "Please",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Please follow the screen."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_035",
@@ -7648,7 +17141,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Do you need a receipt?",
+      "Would you like your receipt?",
+      "Do you want it printed?"
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "No, thank you.",
+      "Can you email it?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Would you like a receipt?",
+        "chinese": "您需要小票吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "receipt",
+        "chinese": "收据",
+        "pronunciation": "ri-SEET",
+        "note": "付款后给顾客的凭证。",
+        "example": "Would you like a receipt?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_036",
@@ -7673,7 +17204,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Your order is ready.",
+        "chinese": "您的订单好了。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Your",
+        "chinese": "本句关键词",
+        "pronunciation": "Your",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Your order is ready."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_037",
@@ -7698,7 +17267,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Thank you for calling. How can I help you?",
+        "chinese": "感谢来电。请问有什么可以帮您？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Thank",
+        "chinese": "本句关键词",
+        "pronunciation": "Thank",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Thank you for calling. How can I help you?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_038",
@@ -7723,7 +17330,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Are you placing an order for pickup?",
+        "chinese": "您是要下一个自取订单吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "pickup",
+        "chinese": "取餐",
+        "pronunciation": "PIK-up",
+        "note": "外卖或已下单的人来拿餐。",
+        "example": "Pickup order for Sarah?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_039",
@@ -7748,7 +17393,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can I get your name for the order?",
+        "chinese": "请问订单姓名是什么？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "your",
+        "chinese": "本句关键词",
+        "pronunciation": "your",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can I get your name for the order?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_040",
@@ -7773,7 +17456,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Sorry, I didn’t catch that.",
+      "Can you repeat that?",
+      "One more time, please."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can you repeat your phone number?",
+        "chinese": "您可以再说一遍电话号码吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "repeat",
+        "chinese": "本句关键词",
+        "pronunciation": "repeat",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can you repeat your phone number?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_041",
@@ -7798,7 +17519,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "What time would you like to pick it up?",
+        "chinese": "您想几点来取餐？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "What",
+        "chinese": "本句关键词",
+        "pronunciation": "What",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "What time would you like to pick it up?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_042",
@@ -7823,7 +17582,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Your pickup time is about twenty minutes from now.",
+        "chinese": "大约二十分钟后可以取餐。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "pickup",
+        "chinese": "取餐",
+        "pronunciation": "PIK-up",
+        "note": "外卖或已下单的人来拿餐。",
+        "example": "Pickup order for Sarah?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_043",
@@ -7848,7 +17645,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Let me read the order back to you.",
+        "chinese": "我给您把订单复述一遍。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "read",
+        "chinese": "本句关键词",
+        "pronunciation": "read",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Let me read the order back to you."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_044",
@@ -7873,7 +17708,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The total before tax is twenty-four ninety-nine.",
+        "chinese": "税前总额是24.99美元。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "total",
+        "chinese": "本句关键词",
+        "pronunciation": "total",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The total before tax is twenty-four ninety-nine."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_045",
@@ -7898,7 +17771,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "We'll have it ready at the front counter.",
+        "chinese": "我们会把订单准备好，您到前台取餐即可。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "We'll",
+        "chinese": "本句关键词",
+        "pronunciation": "We'll",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "We'll have it ready at the front counter."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_046",
@@ -7923,7 +17834,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Can I change my pickup time?",
+        "chinese": "我可以更改取餐时间吗？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Yes, please.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "pickup",
+        "chinese": "取餐",
+        "pronunciation": "PIK-up",
+        "note": "外卖或已下单的人来拿餐。",
+        "example": "Pickup order for Sarah?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_047",
@@ -7948,7 +17897,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can you confirm the pickup number?",
+        "chinese": "您能确认一下取餐号码吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "pickup",
+        "chinese": "取餐",
+        "pronunciation": "PIK-up",
+        "note": "外卖或已下单的人来拿餐。",
+        "example": "Pickup order for Sarah?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_048",
@@ -7973,7 +17960,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Cut this first.",
+      "Prep this next.",
+      "How much do you need?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The order is still being prepared.",
+        "chinese": "订单还在准备中。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "order",
+        "chinese": "本句关键词",
+        "pronunciation": "order",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The order is still being prepared."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_049",
@@ -7998,7 +18023,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "It should be ready in five more minutes.",
+        "chinese": "大概还需要五分钟。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "should",
+        "chinese": "本句关键词",
+        "pronunciation": "should",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "It should be ready in five more minutes."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_050",
@@ -8023,7 +18086,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Please mark the order as picked up.",
+        "chinese": "请在平台上把订单标记为已取走。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Please",
+        "chinese": "本句关键词",
+        "pronunciation": "Please",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Please mark the order as picked up."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_051",
@@ -8048,7 +18149,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The driver hasn't arrived yet.",
+        "chinese": "司机还没有到。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "driver",
+        "chinese": "本句关键词",
+        "pronunciation": "driver",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The driver hasn't arrived yet."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_052",
@@ -8073,7 +18212,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Please contact the delivery platform for driver updates.",
+        "chinese": "关于司机进度，请联系外卖平台。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Please",
+        "chinese": "本句关键词",
+        "pronunciation": "Please",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Please contact the delivery platform for driver updates."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_053",
@@ -8098,7 +18275,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "One of my items is missing from my order.",
+        "chinese": "我的订单里少了一样东西。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "items",
+        "chinese": "本句关键词",
+        "pronunciation": "items",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "One of my items is missing from my order."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_054",
@@ -8123,7 +18338,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Do you need a receipt?",
+      "Would you like your receipt?",
+      "Do you want it printed?"
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "No, thank you.",
+      "Can you email it?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Let me check the receipt and packing record.",
+        "chinese": "我核对一下小票和打包记录。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "receipt",
+        "chinese": "收据",
+        "pronunciation": "ri-SEET",
+        "note": "付款后给顾客的凭证。",
+        "example": "Would you like a receipt?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_055",
@@ -8148,7 +18401,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "If the platform approves it, we can remake the missing item.",
+        "chinese": "如果平台批准，我们可以重做缺少的餐品。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "platform",
+        "chinese": "本句关键词",
+        "pronunciation": "platform",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "If the platform approves it, we can remake the missing item."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_056",
@@ -8173,7 +18464,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "It looks like there may be an issue with the delivery platform.",
+        "chinese": "看起来可能是外卖平台方面出现了问题。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "looks",
+        "chinese": "本句关键词",
+        "pronunciation": "looks",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "It looks like there may be an issue with the delivery platform."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_057",
@@ -8198,7 +18527,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I'm sorry about that. Let me fix it for you.",
+        "chinese": "很抱歉。我来帮您处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "sorry",
+        "chinese": "本句关键词",
+        "pronunciation": "sorry",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I'm sorry about that. Let me fix it for you."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_058",
@@ -8223,7 +18590,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Do you need a receipt?",
+      "Would you like your receipt?",
+      "Do you want it printed?"
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "No, thank you.",
+      "Can you email it?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can you show me the receipt?",
+        "chinese": "您能给我看一下小票吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "receipt",
+        "chinese": "收据",
+        "pronunciation": "ri-SEET",
+        "note": "付款后给顾客的凭证。",
+        "example": "Would you like a receipt?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_059",
@@ -8248,7 +18653,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Was this order placed in store or online?",
+        "chinese": "这个订单是在店里下的，还是网上下的？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "this",
+        "chinese": "本句关键词",
+        "pronunciation": "this",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Was this order placed in store or online?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_060",
@@ -8273,7 +18716,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "We can remake it right away.",
+        "chinese": "我们可以马上给您重做。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "remake",
+        "chinese": "本句关键词",
+        "pronunciation": "remake",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "We can remake it right away."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_061",
@@ -8298,7 +18779,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Let me check whether we can issue a refund.",
+        "chinese": "我确认一下我们是否可以办理退款。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "refund",
+        "chinese": "退款",
+        "pronunciation": "REE-fund",
+        "note": "把钱退给顾客。",
+        "example": "I need manager approval for a refund."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_062",
@@ -8323,7 +18842,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you help me with this?",
+      "Can you say that slowly?",
+      "Can I make an appointment?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "If approved, the refund may take a few business days.",
+        "chinese": "如果退款获批，可能需要几个工作日到账。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "refund",
+        "chinese": "退款",
+        "pronunciation": "REE-fund",
+        "note": "把钱退给顾客。",
+        "example": "I need manager approval for a refund."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_063",
@@ -8348,7 +18905,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I understand the issue.",
+        "chinese": "我明白您遇到的问题了。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "understand",
+        "chinese": "本句关键词",
+        "pronunciation": "understand",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I understand the issue."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_064",
@@ -8373,7 +18968,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Let me check with my manager.",
+        "chinese": "我去和经理确认一下。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "check",
+        "chinese": "本句关键词",
+        "pronunciation": "check",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Let me check with my manager."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_065",
@@ -8398,7 +19031,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "The food is too spicy.",
+        "chinese": "这个食物太辣了。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "food",
+        "chinese": "本句关键词",
+        "pronunciation": "food",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The food is too spicy."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_066",
@@ -8423,7 +19094,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "My order is missing fries.",
+        "chinese": "我的订单里少了薯条。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "order",
+        "chinese": "本句关键词",
+        "pronunciation": "order",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "My order is missing fries."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_067",
@@ -8448,7 +19157,45 @@ export const kitchenSurvivalCourse = {
       "front_counter",
       "customer_service"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "This isn't what I ordered.",
+        "chinese": "这不是我点的。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "This",
+        "chinese": "本句关键词",
+        "pronunciation": "This",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "This isn't what I ordered."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_068",
@@ -8475,7 +19222,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Hi! Are you ready to order?",
+        "chinese": "您好！现在可以点餐了吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "ready",
+        "chinese": "本句关键词",
+        "pronunciation": "ready",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Hi! Are you ready to order?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_069",
@@ -8502,7 +19287,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "It comes with fries and a drink.",
+        "chinese": "套餐包括薯条和一杯饮料。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "comes",
+        "chinese": "本句关键词",
+        "pronunciation": "comes",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "It comes with fries and a drink."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_070",
@@ -8529,7 +19352,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I'll take the combo.",
+        "chinese": "好的，我要套餐。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "combo",
+        "chinese": "套餐",
+        "pronunciation": "KOM-bo",
+        "note": "主餐加配菜和饮料。",
+        "example": "Would you like the combo?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_071",
@@ -8556,7 +19417,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Can I get two chicken sandwiches and one order of fries?",
+        "chinese": "我可以要两个鸡肉三明治和一份薯条吗？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "chicken",
+        "chinese": "本句关键词",
+        "pronunciation": "chicken",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can I get two chicken sandwiches and one order of fries?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_072",
@@ -8583,7 +19482,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Two chicken sandwiches and one order of fries.",
+        "chinese": "两个鸡肉三明治和一份薯条。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "chicken",
+        "chinese": "本句关键词",
+        "pronunciation": "chicken",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Two chicken sandwiches and one order of fries."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_073",
@@ -8610,7 +19547,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it. Two chicken sandwiches and one order of fries.",
+        "chinese": "好的，两个鸡肉三明治和一份薯条。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "chicken",
+        "chinese": "本句关键词",
+        "pronunciation": "chicken",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Got it. Two chicken sandwiches and one order of fries."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_074",
@@ -8637,7 +19612,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Sure. Would you like to add anything else?",
+        "chinese": "可以。您还想加别的东西吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Sure",
+        "chinese": "本句关键词",
+        "pronunciation": "Sure",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Sure. Would you like to add anything else?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_075",
@@ -8664,7 +19677,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Can I add extra cheese?",
+        "chinese": "我可以加一份额外芝士吗？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Yes, please.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "extra",
+        "chinese": "本句关键词",
+        "pronunciation": "extra",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can I add extra cheese?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_076",
@@ -8691,7 +19742,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_077",
@@ -8718,7 +19778,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_078",
@@ -8745,7 +19814,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_079",
@@ -8772,7 +19850,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_080",
@@ -8799,7 +19886,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_081",
@@ -8826,7 +19922,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_082",
@@ -8853,7 +19958,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_083",
@@ -8880,7 +19994,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_084",
@@ -8907,7 +20030,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_085",
@@ -8934,7 +20066,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_086",
@@ -8961,7 +20102,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_087",
@@ -8988,7 +20138,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_088",
@@ -9015,7 +20174,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_089",
@@ -9042,7 +20210,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_090",
@@ -9069,7 +20246,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_091",
@@ -9096,7 +20282,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_092",
@@ -9123,7 +20318,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_093",
@@ -9150,7 +20354,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_094",
@@ -9177,7 +20390,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_095",
@@ -9204,7 +20426,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_096",
@@ -9231,7 +20462,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_097",
@@ -9258,7 +20498,16 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_098",
@@ -9286,7 +20535,16 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_099",
@@ -9314,7 +20572,16 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "front_counter_100",
@@ -9342,7 +20609,16 @@ export const kitchenSurvivalCourse = {
       "customer_service",
       "safety"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Staff",
+    "speakerRoleZh": "店员要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_001",
@@ -9369,7 +20645,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "One of my items is missing from the bag.",
+        "chinese": "我的袋子里少了一样东西。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "items",
+        "chinese": "本句关键词",
+        "pronunciation": "items",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "One of my items is missing from the bag."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_002",
@@ -9396,7 +20710,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I'm sorry. Which item is missing?",
+        "chinese": "很抱歉。少的是哪一样？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "sorry",
+        "chinese": "本句关键词",
+        "pronunciation": "sorry",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I'm sorry. Which item is missing?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_003",
@@ -9423,7 +20775,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "The fries are missing.",
+        "chinese": "薯条没有装进去。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "fries",
+        "chinese": "本句关键词",
+        "pronunciation": "fries",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The fries are missing."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_004",
@@ -9450,7 +20840,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "I'd like a refund for this order.",
+        "chinese": "我想退掉这份订单并退款。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "refund",
+        "chinese": "退款",
+        "pronunciation": "REE-fund",
+        "note": "把钱退给顾客。",
+        "example": "I need manager approval for a refund."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_005",
@@ -9477,7 +20905,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Was this order placed in store or through an app?",
+        "chinese": "这个订单是在店里下的，还是通过外卖平台下的？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "this",
+        "chinese": "本句关键词",
+        "pronunciation": "this",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Was this order placed in store or through an app?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_006",
@@ -9504,7 +20970,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "I ordered through a delivery app.",
+        "chinese": "我是通过外卖平台下单的。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "ordered",
+        "chinese": "本句关键词",
+        "pronunciation": "ordered",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I ordered through a delivery app."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_007",
@@ -9531,7 +21035,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Refunds for app orders are usually handled through the platform, but let me check the order first.",
+        "chinese": "外卖平台订单通常由平台处理退款，不过我先帮您核对订单。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "refund",
+        "chinese": "退款",
+        "pronunciation": "REE-fund",
+        "note": "把钱退给顾客。",
+        "example": "I need manager approval for a refund."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_008",
@@ -9558,7 +21100,51 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Driver",
+    "speakerRoleZh": "外卖司机可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "I'm picking up order 742 for Jordan.",
+        "chinese": "我是来取Jordan的742号订单。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "picking",
+        "chinese": "本句关键词",
+        "pronunciation": "picking",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I'm picking up order 742 for Jordan."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_009",
@@ -9585,7 +21171,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Which delivery platform are you with?",
+        "chinese": "您是哪个外卖平台的司机？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Which",
+        "chinese": "本句关键词",
+        "pronunciation": "Which",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Which delivery platform are you with?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_010",
@@ -9612,7 +21236,51 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Driver",
+    "speakerRoleZh": "外卖司机可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "I'm with DoorDash.",
+        "chinese": "我是DoorDash的司机。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "with",
+        "chinese": "本句关键词",
+        "pronunciation": "with",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I'm with DoorDash."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_011",
@@ -9639,7 +21307,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The order is ready. Please confirm the pickup in the app before you leave.",
+        "chinese": "订单好了。离店前请在应用里确认已经取餐。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "pickup",
+        "chinese": "取餐",
+        "pronunciation": "PIK-up",
+        "note": "外卖或已下单的人来拿餐。",
+        "example": "Pickup order for Sarah?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_012",
@@ -9666,7 +21372,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Thank you for calling. Are you placing an order for pickup?",
+        "chinese": "感谢来电。您是要下一个自取订单吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "pickup",
+        "chinese": "取餐",
+        "pronunciation": "PIK-up",
+        "note": "外卖或已下单的人来拿餐。",
+        "example": "Pickup order for Sarah?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_013",
@@ -9693,7 +21437,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Yes, I'd like to place an order for pickup.",
+        "chinese": "是的，我想下一个自取订单。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "pickup",
+        "chinese": "取餐",
+        "pronunciation": "PIK-up",
+        "note": "外卖或已下单的人来拿餐。",
+        "example": "Pickup order for Sarah?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_014",
@@ -9720,7 +21502,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can I get your name and phone number for the order?",
+        "chinese": "请告诉我订单姓名和电话号码。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "your",
+        "chinese": "本句关键词",
+        "pronunciation": "your",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can I get your name and phone number for the order?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_015",
@@ -9747,7 +21567,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "The name is Linda, and I'd like to pick it up at six thirty.",
+        "chinese": "订单姓名是Linda，我想六点半来取。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "name",
+        "chinese": "本句关键词",
+        "pronunciation": "name",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The name is Linda, and I'd like to pick it up at six thirty."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_016",
@@ -9774,7 +21632,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "I need food for about twenty people.",
+        "chinese": "我需要大约二十个人的餐。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need",
+        "chinese": "本句关键词",
+        "pronunciation": "need",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I need food for about twenty people."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_017",
@@ -9801,7 +21697,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "When do you need the order?",
+        "chinese": "您什么时候需要这份订单？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "When",
+        "chinese": "本句关键词",
+        "pronunciation": "When",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "When do you need the order?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_018",
@@ -9828,7 +21762,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Tomorrow at noon.",
+        "chinese": "明天中午十二点。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Tomorrow",
+        "chinese": "本句关键词",
+        "pronunciation": "Tomorrow",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Tomorrow at noon."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_019",
@@ -9855,7 +21827,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Can we sit anywhere?",
+        "chinese": "我们可以随便坐吗？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Yes, please.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "anywhere",
+        "chinese": "本句关键词",
+        "pronunciation": "anywhere",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can we sit anywhere?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_020",
@@ -9882,7 +21892,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "You can choose any open table. Please take this table number with you.",
+        "chinese": "您可以选择任何空桌，请把这个桌号牌带过去。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "choose",
+        "chinese": "本句关键词",
+        "pronunciation": "choose",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "You can choose any open table. Please take this table number with you."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_021",
@@ -9909,7 +21957,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Will you bring the food to the table?",
+        "chinese": "你们会把餐送到桌上吗？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Yes, please.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Will",
+        "chinese": "本句关键词",
+        "pronunciation": "Will",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Will you bring the food to the table?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_022",
@@ -9936,7 +22022,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Yes. Since you have a table number, we'll bring the food to you.",
+        "chinese": "会的。您有桌号牌，我们会把餐送到您的桌上。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Since",
+        "chinese": "本句关键词",
+        "pronunciation": "Since",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Yes. Since you have a table number, we'll bring the food to you."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_023",
@@ -9964,7 +22088,45 @@ export const kitchenSurvivalCourse = {
       "front_and_back",
       "pos_outage"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The delivery tablet is down, and this order didn't print.",
+        "chinese": "外卖平板出故障了，这份订单没有打印出来。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "delivery",
+        "chinese": "本句关键词",
+        "pronunciation": "delivery",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The delivery tablet is down, and this order didn't print."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_024",
@@ -9992,7 +22154,45 @@ export const kitchenSurvivalCourse = {
       "front_and_back",
       "pos_outage"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "后厨员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Read the order to me, and I'll write it down.",
+        "chinese": "把订单念给我听，我把它写下来。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Read",
+        "chinese": "本句关键词",
+        "pronunciation": "Read",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Read the order to me, and I'll write it down."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_025",
@@ -10020,7 +22220,45 @@ export const kitchenSurvivalCourse = {
       "front_and_back",
       "pos_outage"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Order 318 has two chicken sandwiches, one fries, and two drinks.",
+        "chinese": "318号订单有两个鸡肉三明治、一份薯条和两杯饮料。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Order",
+        "chinese": "本句关键词",
+        "pronunciation": "Order",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Order 318 has two chicken sandwiches, one fries, and two drinks."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_026",
@@ -10048,7 +22286,45 @@ export const kitchenSurvivalCourse = {
       "front_and_back",
       "pos_outage"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "后厨员工要说",
+    "variants": [
+      "Sorry, I didn’t catch that.",
+      "Can you repeat that?",
+      "One more time, please."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it. I'll repeat the order back before we start.",
+        "chinese": "知道了。开始制作前，我会把订单复述一遍。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "I'll",
+        "chinese": "本句关键词",
+        "pronunciation": "I'll",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Got it. I'll repeat the order back before we start."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_027",
@@ -10076,7 +22352,51 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Do not skip any steps.",
+        "chinese": "不要跳过任何步骤。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "skip",
+        "chinese": "本句关键词",
+        "pronunciation": "skip",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Do not skip any steps."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_028",
@@ -10105,7 +22425,51 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you for calling. How may I help you today?",
+        "chinese": "感谢您的来电。今天有什么可以帮您？"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Yes, please.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Thank",
+        "chinese": "本句关键词",
+        "pronunciation": "Thank",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Thank you for calling. How may I help you today?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_029",
@@ -10134,7 +22498,45 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "I need help with my order.",
+        "chinese": "我的订单需要帮助。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need",
+        "chinese": "本句关键词",
+        "pronunciation": "need",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I need help with my order."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_030",
@@ -10163,7 +22565,51 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "May I have your order number?",
+        "chinese": "可以告诉我您的订单号码吗？"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "have",
+        "chinese": "本句关键词",
+        "pronunciation": "have",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "May I have your order number?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_031",
@@ -10192,7 +22638,45 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "I can't find my order number.",
+        "chinese": "我找不到订单号码。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "can't",
+        "chinese": "本句关键词",
+        "pronunciation": "can't",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I can't find my order number."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_032",
@@ -10221,7 +22705,51 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Before accessing the account, I need to verify your identity.",
+        "chinese": "查看账户前，我需要核验您的身份。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Before",
+        "chinese": "本句关键词",
+        "pronunciation": "Before",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Before accessing the account, I need to verify your identity."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_033",
@@ -10250,7 +22778,45 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Why do you need to verify my identity?",
+        "chinese": "为什么需要核验我的身份？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Yes, please.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need",
+        "chinese": "本句关键词",
+        "pronunciation": "need",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Why do you need to verify my identity?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_034",
@@ -10279,7 +22845,51 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Please do not give me your full password.",
+        "chinese": "请不要告诉我完整密码。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Please",
+        "chinese": "本句关键词",
+        "pronunciation": "Please",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Please do not give me your full password."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_035",
@@ -10308,7 +22918,45 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "My spouse usually handles this account.",
+        "chinese": "这个账户通常由我的配偶处理。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "spouse",
+        "chinese": "本句关键词",
+        "pronunciation": "spouse",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "My spouse usually handles this account."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_036",
@@ -10337,7 +22985,51 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "I cannot disclose account information without proper authorization.",
+        "chinese": "没有适当授权，我不能透露账户信息。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "cannot",
+        "chinese": "本句关键词",
+        "pronunciation": "cannot",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I cannot disclose account information without proper authorization."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_037",
@@ -10366,7 +23058,51 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Please tell me what happened in your own words.",
+        "chinese": "请用您自己的话告诉我发生了什么。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Please",
+        "chinese": "本句关键词",
+        "pronunciation": "Please",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Please tell me what happened in your own words."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_038",
@@ -10395,7 +23131,51 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Let me make sure I understand correctly.",
+        "chinese": "我确认一下是否理解正确。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "make",
+        "chinese": "本句关键词",
+        "pronunciation": "make",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Let me make sure I understand correctly."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_039",
@@ -10424,7 +23204,45 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Yes, that's correct.",
+        "chinese": "是的，您理解得对。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "that's",
+        "chinese": "本句关键词",
+        "pronunciation": "that's",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Yes, that's correct."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_040",
@@ -10453,7 +23271,51 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "May I place you on a brief hold while I check?",
+        "chinese": "我查询时可以请您稍等一下吗？"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Yes, please.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "place",
+        "chinese": "本句关键词",
+        "pronunciation": "place",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "May I place you on a brief hold while I check?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_041",
@@ -10482,7 +23344,51 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you for holding.",
+        "chinese": "感谢您的等待。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Thank",
+        "chinese": "本句关键词",
+        "pronunciation": "Thank",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Thank you for holding."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_042",
@@ -10511,7 +23417,51 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "I'm sorry about the delay. Let me give you an update.",
+        "chinese": "很抱歉耽误了，我向您说明最新进展。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "sorry",
+        "chinese": "本句关键词",
+        "pronunciation": "sorry",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I'm sorry about the delay. Let me give you an update."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_043",
@@ -10540,7 +23490,51 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Would you prefer a callback rather than staying on hold?",
+        "chinese": "您是否希望我们回电，而不是继续等待？"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Yes, please.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Would",
+        "chinese": "本句关键词",
+        "pronunciation": "Would",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Would you prefer a callback rather than staying on hold?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_044",
@@ -10569,7 +23563,51 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "What is the best number and time for the callback?",
+        "chinese": "回电使用哪个号码、什么时间最合适？"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "What",
+        "chinese": "本句关键词",
+        "pronunciation": "What",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "What is the best number and time for the callback?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_045",
@@ -10598,7 +23636,51 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Let me read the callback number back to you.",
+        "chinese": "我复述一下回电号码，请您确认。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "read",
+        "chinese": "本句关键词",
+        "pronunciation": "read",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Let me read the callback number back to you."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_046",
@@ -10627,7 +23709,16 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_047",
@@ -10656,7 +23747,16 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_048",
@@ -10685,7 +23785,16 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_049",
@@ -10714,7 +23823,16 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_050",
@@ -10743,7 +23861,16 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_051",
@@ -10772,7 +23899,16 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_052",
@@ -10801,7 +23937,16 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_053",
@@ -10830,7 +23975,16 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_054",
@@ -10859,7 +24013,16 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_055",
@@ -10888,7 +24051,16 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_056",
@@ -10917,7 +24089,16 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_057",
@@ -10946,7 +24127,16 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_058",
@@ -10975,7 +24165,16 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_059",
@@ -11004,7 +24203,16 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "delivery_complaints_060",
@@ -11033,7 +24241,16 @@ export const kitchenSurvivalCourse = {
       "privacy",
       "safety"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_001",
@@ -11060,7 +24277,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "I have a peanut allergy. Is this safe for me?",
+        "chinese": "我对花生过敏，这个我可以安全食用吗？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Yes, please.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "allergy",
+        "chinese": "过敏",
+        "pronunciation": "AL-er-jee",
+        "note": "顾客不能吃某种食物。",
+        "example": "A customer has an allergy."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_002",
@@ -11087,7 +24342,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Are you still open?",
+        "chinese": "你们还营业吗？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Yes, please.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "still",
+        "chinese": "本句关键词",
+        "pronunciation": "still",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Are you still open?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_003",
@@ -11114,7 +24407,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Yes, we close in ten minutes, and some items may no longer be available.",
+        "chinese": "是的，我们十分钟后关门，有些餐品可能已经无法供应。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "close",
+        "chinese": "本句关键词",
+        "pronunciation": "close",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Yes, we close in ten minutes, and some items may no longer be available."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_004",
@@ -11141,7 +24472,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Dine in or takeout?",
+      "Is it for here or to go?",
+      "Will that be dine-in or takeout?"
+    ],
+    "recommendedResponses": [
+      "For here, please.",
+      "To go, please.",
+      "It’s for pickup."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "We still have sandwiches and fries, but the order will need to be to go.",
+        "chinese": "三明治和薯条还有，不过订单需要外带。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "For here, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "to go",
+        "chinese": "外带",
+        "pronunciation": "too go",
+        "note": "不是在店里吃，而是带走。",
+        "example": "Is that to go?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_005",
@@ -11168,7 +24537,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "What would you like to order?",
+      "Would you like the combo?",
+      "What sauce would you like?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm the order.",
+      "I’ll check with the kitchen."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "There's a drink spilled near the counter.",
+        "chinese": "柜台附近有饮料洒在地上了。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "There's",
+        "chinese": "本句关键词",
+        "pronunciation": "There's",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "There's a drink spilled near the counter."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_006",
@@ -11195,7 +24602,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Thank you for telling us. Please step around the area.",
+        "chinese": "谢谢您告诉我们，请绕开这一区域。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Thank",
+        "chinese": "本句关键词",
+        "pronunciation": "Thank",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Thank you for telling us. Please step around the area."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_007",
@@ -11222,7 +24667,51 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Coworker",
+    "speakerRoleZh": "同事可能会说",
+    "variants": [
+      "Wipe it down.",
+      "Clean this area.",
+      "Take out the trash."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "How much do you need?",
+      "Can you show me first?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "I'll put up the wet floor sign. Can you bring the mop?",
+        "chinese": "我来放小心地滑警示牌，你可以把拖把拿过来吗？"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "mop",
+        "chinese": "拖地/拖把",
+        "pronunciation": "mop",
+        "note": "可以作动词，也可以作名词。",
+        "example": "Mop the floor."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_008",
@@ -11249,7 +24738,51 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Keep the sign up until the floor is completely dry.",
+        "chinese": "地面完全干燥之前，不要撤掉警示牌。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Keep",
+        "chinese": "本句关键词",
+        "pronunciation": "Keep",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Keep the sign up until the floor is completely dry."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_009",
@@ -11277,7 +24810,45 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "How soon do you need this done?",
+        "chinese": "这项工作需要多快完成？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "soon",
+        "chinese": "本句关键词",
+        "pronunciation": "soon",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "How soon do you need this done?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_010",
@@ -11305,7 +24876,51 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Coworker",
+        "speakerRoleZh": "同事",
+        "english": "Ask for help before the situation becomes unsafe.",
+        "chinese": "在情况变得不安全之前就要请求帮助。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Coworker",
+        "speakerRoleZh": "同事",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "help",
+        "chinese": "本句关键词",
+        "pronunciation": "help",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Ask for help before the situation becomes unsafe."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_011",
@@ -11333,7 +24948,45 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "This tool is damaged.",
+        "chinese": "这个工具损坏了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "This",
+        "chinese": "本句关键词",
+        "pronunciation": "This",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "This tool is damaged."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_012",
@@ -11361,7 +25014,51 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "You need to work faster while maintaining quality.",
+        "chinese": "你需要在保证质量的同时提高速度。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need",
+        "chinese": "本句关键词",
+        "pronunciation": "need",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "You need to work faster while maintaining quality."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_013",
@@ -11389,7 +25086,51 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Safety comes before production speed.",
+        "chinese": "安全比生产速度更重要。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Safety",
+        "chinese": "本句关键词",
+        "pronunciation": "Safety",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Safety comes before production speed."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_014",
@@ -11417,7 +25158,45 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I disagree with this instruction because of a safety concern.",
+        "chinese": "因为安全问题，我对这项指令有疑问。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "disagree",
+        "chinese": "本句关键词",
+        "pronunciation": "disagree",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I disagree with this instruction because of a safety concern."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_015",
@@ -11445,7 +25224,51 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Do not retaliate against anyone for reporting a safety concern.",
+        "chinese": "任何人报告安全问题都不得受到报复。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我来处理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you.",
+        "chinese": "谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "retaliate",
+        "chinese": "本句关键词",
+        "pronunciation": "retaliate",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Do not retaliate against anyone for reporting a safety concern."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_016",
@@ -11473,7 +25296,45 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I need to leave early today.",
+        "chinese": "我今天需要提前离开。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need",
+        "chinese": "本句关键词",
+        "pronunciation": "need",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I need to leave early today."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_017",
@@ -11498,7 +25359,45 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "How much do you need?",
+      "Can you show me first?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Turn off the fryer now.",
+        "chinese": "现在关掉炸炉。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Turn",
+        "chinese": "本句关键词",
+        "pronunciation": "Turn",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Turn off the fryer now."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_018",
@@ -11523,7 +25422,45 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Someone is hurt.",
+      "Call the manager now.",
+      "We need help right away."
+    ],
+    "recommendedResponses": [
+      "I’ll tell the manager now.",
+      "Do we need to call for help?",
+      "Where is the first aid kit?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The emergency exit is blocked.",
+        "chinese": "紧急出口被挡住了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "I’ll tell the manager now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "emergency",
+        "chinese": "本句关键词",
+        "pronunciation": "emergency",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The emergency exit is blocked."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_019",
@@ -11548,7 +25485,45 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Someone is hurt.",
+      "Call the manager now.",
+      "We need help right away."
+    ],
+    "recommendedResponses": [
+      "I’ll tell the manager now.",
+      "Do we need to call for help?",
+      "Where is the first aid kit?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "There is smoke coming from the oven.",
+        "chinese": "烤箱冒烟了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "I’ll tell the manager now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "There",
+        "chinese": "本句关键词",
+        "pronunciation": "There",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "There is smoke coming from the oven."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_020",
@@ -11573,7 +25548,45 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The power went out.",
+        "chinese": "停电了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "power",
+        "chinese": "本句关键词",
+        "pronunciation": "power",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The power went out."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_021",
@@ -11598,7 +25611,45 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The floor drain is backing up.",
+        "chinese": "地漏往上返水了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "floor",
+        "chinese": "本句关键词",
+        "pronunciation": "floor",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The floor drain is backing up."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_022",
@@ -11623,7 +25674,45 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Cut this first.",
+      "Prep this next.",
+      "How much do you need?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "How much do you need?",
+      "Can you show me first?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I cut my finger.",
+        "chinese": "我切到手指了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "finger",
+        "chinese": "本句关键词",
+        "pronunciation": "finger",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I cut my finger."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_023",
@@ -11648,7 +25737,45 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Someone is hurt.",
+      "Call the manager now.",
+      "We need help right away."
+    ],
+    "recommendedResponses": [
+      "I’ll tell the manager now.",
+      "Do we need to call for help?",
+      "Where is the first aid kit?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I burned my hand.",
+        "chinese": "我烫到手了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "I’ll tell the manager now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "burned",
+        "chinese": "本句关键词",
+        "pronunciation": "burned",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I burned my hand."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_024",
@@ -11673,7 +25800,45 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "We need the first aid kit.",
+        "chinese": "我们需要急救包。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need",
+        "chinese": "本句关键词",
+        "pronunciation": "need",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "We need the first aid kit."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_025",
@@ -11698,7 +25863,45 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Call the manager right away.",
+        "chinese": "马上叫经理。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Call",
+        "chinese": "本句关键词",
+        "pronunciation": "Call",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Call the manager right away."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_026",
@@ -11723,7 +25926,45 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Do not touch that wire.",
+        "chinese": "不要碰那根电线。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "touch",
+        "chinese": "本句关键词",
+        "pronunciation": "touch",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Do not touch that wire."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_027",
@@ -11748,7 +25989,45 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Someone is hurt.",
+      "Call the manager now.",
+      "We need help right away."
+    ],
+    "recommendedResponses": [
+      "I’ll tell the manager now.",
+      "Do we need to call for help?",
+      "Where is the first aid kit?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "There is a gas smell.",
+        "chinese": "有煤气味。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "I’ll tell the manager now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "There",
+        "chinese": "本句关键词",
+        "pronunciation": "There",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "There is a gas smell."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_028",
@@ -11773,7 +26052,45 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Do not use the machine until it is checked.",
+        "chinese": "机器检查前不要使用。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "machine",
+        "chinese": "本句关键词",
+        "pronunciation": "machine",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Do not use the machine until it is checked."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_029",
@@ -11798,7 +26115,45 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Cut this first.",
+      "Prep this next.",
+      "How much do you need?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The slicer guard is missing.",
+        "chinese": "切片机防护罩不见了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "slicer",
+        "chinese": "本句关键词",
+        "pronunciation": "slicer",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The slicer guard is missing."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_030",
@@ -11823,7 +26178,45 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The knife is loose.",
+        "chinese": "这把刀松了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "knife",
+        "chinese": "本句关键词",
+        "pronunciation": "knife",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The knife is loose."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_031",
@@ -11848,7 +26241,45 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The shelf is unstable.",
+        "chinese": "这个架子不稳。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "shelf",
+        "chinese": "本句关键词",
+        "pronunciation": "shelf",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The shelf is unstable."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_032",
@@ -11873,7 +26304,45 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The box is too heavy for me.",
+        "chinese": "这个箱子对我来说太重了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "heavy",
+        "chinese": "本句关键词",
+        "pronunciation": "heavy",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The box is too heavy for me."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_033",
@@ -11898,7 +26367,45 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can someone help me lift this?",
+        "chinese": "有人可以帮我一起抬这个吗？"
+      },
+      {
+        "speakerRole": "Coworker",
+        "speakerRoleZh": "同事",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "someone",
+        "chinese": "本句关键词",
+        "pronunciation": "someone",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can someone help me lift this?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_034",
@@ -11923,7 +26430,45 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I slipped but I am okay.",
+        "chinese": "我滑了一下，但我没事。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "slipped",
+        "chinese": "本句关键词",
+        "pronunciation": "slipped",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I slipped but I am okay."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_035",
@@ -11948,7 +26493,45 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Someone is hurt.",
+      "Call the manager now.",
+      "We need help right away."
+    ],
+    "recommendedResponses": [
+      "I’ll tell the manager now.",
+      "Do we need to call for help?",
+      "Where is the first aid kit?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I slipped and hurt my back.",
+        "chinese": "我滑倒伤到背了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "I’ll tell the manager now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "slipped",
+        "chinese": "本句关键词",
+        "pronunciation": "slipped",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I slipped and hurt my back."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_036",
@@ -11973,7 +26556,16 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_037",
@@ -11998,7 +26590,16 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_038",
@@ -12023,7 +26624,16 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_039",
@@ -12048,7 +26658,16 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_040",
@@ -12073,7 +26692,16 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_041",
@@ -12098,7 +26726,16 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_042",
@@ -12123,7 +26760,16 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_043",
@@ -12148,7 +26794,16 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_044",
@@ -12173,7 +26828,16 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_045",
@@ -12198,7 +26862,16 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_046",
@@ -12223,7 +26896,16 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_047",
@@ -12248,7 +26930,16 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_048",
@@ -12273,7 +26964,16 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_049",
@@ -12298,7 +26998,16 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "emergency_safety_050",
@@ -12323,7 +27032,16 @@ export const kitchenSurvivalCourse = {
       "emergency_safety",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_001",
@@ -12350,7 +27068,45 @@ export const kitchenSurvivalCourse = {
       "dialogue",
       "front_and_back"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Cash or card?",
+      "You can pay by card.",
+      "The card did not go through."
+    ],
+    "recommendedResponses": [
+      "Card, please.",
+      "Cash, please.",
+      "Can I try another card?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "It's still not going through. I'll use a different card.",
+        "chinese": "还是没有成功，我换一张卡。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Card, please.",
+        "chinese": "好的，我来处理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "It's",
+        "chinese": "本句关键词",
+        "pronunciation": "It's",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "It's still not going through. I'll use a different card."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_002",
@@ -12378,7 +27134,45 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you help me with this?",
+      "Can you say that slowly?",
+      "Can I make an appointment?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The written instructions are different from what I was told.",
+        "chinese": "书面说明和我听到的指令不一样。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "written",
+        "chinese": "本句关键词",
+        "pronunciation": "written",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The written instructions are different from what I was told."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_003",
@@ -12406,7 +27200,45 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you help me with this?",
+      "Can you say that slowly?",
+      "Can I make an appointment?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "What should I do differently next time?",
+        "chinese": "下次我应该怎样改进？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "What",
+        "chinese": "本句关键词",
+        "pronunciation": "What",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "What should I do differently next time?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_004",
@@ -12434,7 +27266,45 @@ export const kitchenSurvivalCourse = {
       "communication",
       "employee"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you help me with this?",
+      "Can you say that slowly?",
+      "Can I make an appointment?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The current setup feels unsafe.",
+        "chinese": "目前这个工作安排让我觉得不安全。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "current",
+        "chinese": "本句关键词",
+        "pronunciation": "current",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The current setup feels unsafe."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_005",
@@ -12459,7 +27329,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Cash or card?",
+      "You can pay by card.",
+      "The card did not go through."
+    ],
+    "recommendedResponses": [
+      "Card, please.",
+      "Cash, please.",
+      "Can I try another card?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Where can I load my transit card?",
+        "chinese": "我在哪里可以给公交卡充值？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Card, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Where",
+        "chinese": "本句关键词",
+        "pronunciation": "Where",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Where can I load my transit card?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_006",
@@ -12484,7 +27392,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "How much is the monthly pass?",
+        "chinese": "月票多少钱？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "much",
+        "chinese": "本句关键词",
+        "pronunciation": "much",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "How much is the monthly pass?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_007",
@@ -12509,7 +27455,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I get paid by direct deposit.",
+        "chinese": "我的工资是直接存进银行账户。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "direct deposit",
+        "chinese": "工资直接存款",
+        "pronunciation": "di-REKT de-POZ-it",
+        "note": "工资直接进银行账户。",
+        "example": "My direct deposit has not arrived."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_008",
@@ -12534,7 +27518,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I need to deposit this check.",
+        "chinese": "我需要存这张支票。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need",
+        "chinese": "本句关键词",
+        "pronunciation": "need",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I need to deposit this check."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_009",
@@ -12559,7 +27581,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you help me with this?",
+      "Can you say that slowly?",
+      "Can I make an appointment?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "My phone has no service.",
+        "chinese": "我的手机没有信号。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "phone",
+        "chinese": "本句关键词",
+        "pronunciation": "phone",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "My phone has no service."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_010",
@@ -12584,7 +27644,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I need more data on my plan.",
+        "chinese": "我的套餐需要更多流量。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need",
+        "chinese": "本句关键词",
+        "pronunciation": "need",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I need more data on my plan."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_011",
@@ -12609,7 +27707,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you help me with this?",
+      "Can you say that slowly?",
+      "Can I make an appointment?"
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Is heat included in the rent?",
+        "chinese": "暖气费包含在房租里吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "heat",
+        "chinese": "本句关键词",
+        "pronunciation": "heat",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Is heat included in the rent?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_012",
@@ -12634,7 +27770,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I need to pick up a prescription.",
+        "chinese": "我需要取处方药。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "prescription",
+        "chinese": "处方药",
+        "pronunciation": "pre-SKRIP-shun",
+        "note": "医生开的药。",
+        "example": "I need to pick up a prescription."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_013",
@@ -12659,7 +27833,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you help me with this?",
+      "Can you say that slowly?",
+      "Can I make an appointment?"
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can I book an appointment?",
+        "chinese": "我可以预约吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "book",
+        "chinese": "本句关键词",
+        "pronunciation": "book",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can I book an appointment?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_014",
@@ -12684,7 +27896,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you help me with this?",
+      "Can you say that slowly?",
+      "Can I make an appointment?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I need a doctor’s note for work.",
+        "chinese": "我需要给工作的医生证明。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need",
+        "chinese": "本句关键词",
+        "pronunciation": "need",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I need a doctor’s note for work."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_015",
@@ -12709,7 +27959,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Where is the nearest walk-in clinic?",
+        "chinese": "最近的免预约诊所在哪里？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Where",
+        "chinese": "本句关键词",
+        "pronunciation": "Where",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Where is the nearest walk-in clinic?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_016",
@@ -12734,7 +28022,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can you speak more slowly? English is my second language.",
+        "chinese": "你可以说慢一点吗？英语不是我的母语。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "speak",
+        "chinese": "本句关键词",
+        "pronunciation": "speak",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can you speak more slowly? English is my second language."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_017",
@@ -12759,7 +28085,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you help me with this?",
+      "Can you say that slowly?",
+      "Can I make an appointment?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I am looking for a room to rent.",
+        "chinese": "我在找一个房间出租。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "looking",
+        "chinese": "本句关键词",
+        "pronunciation": "looking",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I am looking for a room to rent."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_018",
@@ -12784,7 +28148,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you help me with this?",
+      "Can you say that slowly?",
+      "Can I make an appointment?"
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "When is the rent due?",
+        "chinese": "房租什么时候到期要交？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "When",
+        "chinese": "本句关键词",
+        "pronunciation": "When",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "When is the rent due?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_019",
@@ -12809,7 +28211,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can I pay by e-transfer?",
+        "chinese": "我可以用电子转账付款吗？"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "etransfer",
+        "chinese": "本句关键词",
+        "pronunciation": "etransfer",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can I pay by e-transfer?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_020",
@@ -12834,7 +28274,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I need to change my address.",
+        "chinese": "我需要更改我的地址。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need",
+        "chinese": "本句关键词",
+        "pronunciation": "need",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I need to change my address."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_021",
@@ -12859,7 +28337,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can you print this form for me?",
+        "chinese": "你可以帮我打印这张表吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "print",
+        "chinese": "本句关键词",
+        "pronunciation": "print",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can you print this form for me?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_022",
@@ -12884,7 +28400,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Where can I buy work shoes?",
+        "chinese": "我在哪里可以买工作鞋？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Where",
+        "chinese": "本句关键词",
+        "pronunciation": "Where",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Where can I buy work shoes?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_023",
@@ -12909,7 +28463,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I need non-slip shoes for work.",
+        "chinese": "我工作需要防滑鞋。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need",
+        "chinese": "本句关键词",
+        "pronunciation": "need",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I need non-slip shoes for work."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_024",
@@ -12934,7 +28526,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Do you need a receipt?",
+      "Would you like your receipt?",
+      "Do you want it printed?"
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "No, thank you.",
+      "Can you email it?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can I get a copy of the receipt?",
+        "chinese": "我可以要一份收据副本吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "receipt",
+        "chinese": "收据",
+        "pronunciation": "ri-SEET",
+        "note": "付款后给顾客的凭证。",
+        "example": "Would you like a receipt?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_025",
@@ -12959,7 +28589,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can I get directions to this address?",
+        "chinese": "你可以告诉我去这个地址怎么走吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "directions",
+        "chinese": "本句关键词",
+        "pronunciation": "directions",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can I get directions to this address?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_026",
@@ -12984,7 +28652,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you help me with this?",
+      "Can you say that slowly?",
+      "Can I make an appointment?"
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "How long does it take by bus?",
+        "chinese": "坐公交要多久？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "long",
+        "chinese": "本句关键词",
+        "pronunciation": "long",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "How long does it take by bus?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_027",
@@ -13009,7 +28715,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you help me with this?",
+      "Can you say that slowly?",
+      "Can I make an appointment?"
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Does this bus stop near the restaurant?",
+        "chinese": "这路公交会停在餐厅附近吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Does",
+        "chinese": "本句关键词",
+        "pronunciation": "Does",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Does this bus stop near the restaurant?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_028",
@@ -13034,7 +28778,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you help me with this?",
+      "Can you say that slowly?",
+      "Can I make an appointment?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I missed my bus.",
+        "chinese": "我错过公交了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "missed",
+        "chinese": "本句关键词",
+        "pronunciation": "missed",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I missed my bus."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_029",
@@ -13059,7 +28841,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you help me with this?",
+      "Can you say that slowly?",
+      "Can I make an appointment?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "The bus is running late.",
+        "chinese": "公交晚点了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "running",
+        "chinese": "本句关键词",
+        "pronunciation": "running",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "The bus is running late."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_030",
@@ -13084,7 +28904,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Cash or card?",
+      "You can pay by card.",
+      "The card did not go through."
+    ],
+    "recommendedResponses": [
+      "Card, please.",
+      "Cash, please.",
+      "Can I try another card?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can I cash this check here?",
+        "chinese": "我可以在这里兑现这张支票吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Card, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "cash",
+        "chinese": "本句关键词",
+        "pronunciation": "cash",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can I cash this check here?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_031",
@@ -13109,7 +28967,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "What ID do I need?",
+        "chinese": "我需要什么身份证件？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "What",
+        "chinese": "本句关键词",
+        "pronunciation": "What",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "What ID do I need?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_032",
@@ -13134,7 +29030,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I need to update my direct deposit information.",
+        "chinese": "我需要更新我的工资入账信息。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "direct deposit",
+        "chinese": "工资直接存款",
+        "pronunciation": "di-REKT de-POZ-it",
+        "note": "工资直接进银行账户。",
+        "example": "My direct deposit has not arrived."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_033",
@@ -13159,7 +29093,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Cash or card?",
+      "You can pay by card.",
+      "The card did not go through."
+    ],
+    "recommendedResponses": [
+      "Card, please.",
+      "Cash, please.",
+      "Can I try another card?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "My debit card is not working.",
+        "chinese": "我的借记卡不能用了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Card, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "debit",
+        "chinese": "本句关键词",
+        "pronunciation": "debit",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "My debit card is not working."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_034",
@@ -13184,7 +29156,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you help me with this?",
+      "Can you say that slowly?",
+      "Can I make an appointment?"
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can I set up online banking?",
+        "chinese": "我可以开通网上银行吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "online",
+        "chinese": "本句关键词",
+        "pronunciation": "online",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can I set up online banking?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_035",
@@ -13209,7 +29219,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you help me with this?",
+      "Can you say that slowly?",
+      "Can I make an appointment?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "My phone bill is too high.",
+        "chinese": "我的手机账单太高了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "phone",
+        "chinese": "本句关键词",
+        "pronunciation": "phone",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "My phone bill is too high."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_036",
@@ -13234,7 +29282,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can I change to a cheaper plan?",
+        "chinese": "我可以换成便宜一点的套餐吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "change",
+        "chinese": "本句关键词",
+        "pronunciation": "change",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can I change to a cheaper plan?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_037",
@@ -13259,7 +29345,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Cash or card?",
+      "You can pay by card.",
+      "The card did not go through."
+    ],
+    "recommendedResponses": [
+      "Card, please.",
+      "Cash, please.",
+      "Can I try another card?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I need a SIM card.",
+        "chinese": "我需要一张手机卡。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Card, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need",
+        "chinese": "本句关键词",
+        "pronunciation": "need",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I need a SIM card."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_038",
@@ -13284,7 +29408,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "My internet is not working.",
+        "chinese": "我的网络不能用了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "internet",
+        "chinese": "本句关键词",
+        "pronunciation": "internet",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "My internet is not working."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_039",
@@ -13309,7 +29471,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can you reset my password?",
+        "chinese": "你可以帮我重置密码吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "reset",
+        "chinese": "本句关键词",
+        "pronunciation": "reset",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can you reset my password?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_040",
@@ -13334,7 +29534,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Is laundry included?",
+        "chinese": "洗衣设施包含吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "laundry",
+        "chinese": "本句关键词",
+        "pronunciation": "laundry",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Is laundry included?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_041",
@@ -13359,7 +29597,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Is parking included?",
+        "chinese": "停车位包含吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "parking",
+        "chinese": "本句关键词",
+        "pronunciation": "parking",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Is parking included?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_042",
@@ -13384,7 +29660,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can I see the room today?",
+        "chinese": "我今天可以看房间吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "room",
+        "chinese": "本句关键词",
+        "pronunciation": "room",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can I see the room today?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_043",
@@ -13409,7 +29723,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "How much is the deposit?",
+        "chinese": "押金是多少？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "much",
+        "chinese": "本句关键词",
+        "pronunciation": "much",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "How much is the deposit?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_044",
@@ -13434,7 +29786,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "When can I move in?",
+        "chinese": "我什么时候可以搬进去？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "When",
+        "chinese": "本句关键词",
+        "pronunciation": "When",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "When can I move in?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_045",
@@ -13459,7 +29849,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I need something for a headache.",
+        "chinese": "我需要治头痛的药。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need",
+        "chinese": "本句关键词",
+        "pronunciation": "need",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I need something for a headache."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_046",
@@ -13484,7 +29912,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I need something for a cough.",
+        "chinese": "我需要治咳嗽的药。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need",
+        "chinese": "本句关键词",
+        "pronunciation": "need",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I need something for a cough."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_047",
@@ -13509,7 +29975,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Can I talk to the pharmacist?",
+        "chinese": "我可以和药剂师说一下吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "talk",
+        "chinese": "本句关键词",
+        "pronunciation": "talk",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Can I talk to the pharmacist?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_048",
@@ -13534,7 +30038,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "How often should I take this?",
+        "chinese": "这个多久吃一次？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "often",
+        "chinese": "本句关键词",
+        "pronunciation": "often",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "How often should I take this?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_049",
@@ -13559,7 +30101,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Yes, please.",
+      "Okay.",
+      "Can you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Should I take it with food?",
+        "chinese": "这个要和食物一起吃吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, please.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Should",
+        "chinese": "本句关键词",
+        "pronunciation": "Should",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "Should I take it with food?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_050",
@@ -13584,7 +30164,45 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": true
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me?",
+      "Okay, I’ll do it now.",
+      "Let me make sure I understand."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it, thank you.",
+      "Can you show me?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "I have a fever.",
+        "chinese": "我发烧了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "have",
+        "chinese": "本句关键词",
+        "pronunciation": "have",
+        "note": "在这句话里是工作场景中的重点词。",
+        "example": "I have a fever."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_051",
@@ -13609,7 +30227,16 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_052",
@@ -13634,7 +30261,16 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_053",
@@ -13659,7 +30295,16 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_054",
@@ -13684,7 +30329,16 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_055",
@@ -13709,7 +30363,16 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_056",
@@ -13734,7 +30397,16 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_057",
@@ -13759,7 +30431,16 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_058",
@@ -13784,7 +30465,16 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_059",
@@ -13809,7 +30499,16 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   },
   {
     "id": "daily_life_060",
@@ -13834,7 +30533,16 @@ export const kitchenSurvivalCourse = {
       "daily_life",
       "supplement"
     ],
-    "active": false
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
   }
 ],
 } as const satisfies {
