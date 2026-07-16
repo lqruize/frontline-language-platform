@@ -76,7 +76,7 @@ function renderSentenceWithNotes(sentence: string, notes: VocabNote[], onSelect:
           event.stopPropagation();
           onSelect(part.note);
         }}
-        className="mx-0.5 rounded-md border-b border-dashed border-brand/45 bg-brandSoft/70 px-1 text-left text-ink decoration-0 transition hover:bg-brandSoft"
+        className="mx-0.5 rounded-md bg-brandSoft/80 px-1.5 py-0.5 text-left text-ink no-underline shadow-[inset_0_-1px_0_rgba(37,99,235,0.12)] transition hover:bg-brandSoft focus:outline-none focus:ring-2 focus:ring-brand/30"
       >
         {part.text}
       </button>
