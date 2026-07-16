@@ -154,10 +154,10 @@ export const kitchenSurvivalCourse = {
     level1Count: 156,
     level2Count: 70,
     level3Count: 12,
-    variantsCount: 182,
-    recommendedResponsesCount: 182,
-    dialogueScenarioCount: 34,
-    vocabularyNotesCount: 182
+    variantsCount: 238,
+    recommendedResponsesCount: 238,
+    dialogueScenarioCount: 36,
+    vocabularyNotesCount: 238
   },
   items: [
     {
@@ -2658,10 +2658,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Is this the correct container?",
+        "Should I use this container?"
+      ],
+      recommendedResponses: [
+        "Yes, use that one.",
+        "No, use the clear one.",
+        "Let me check with the supervisor."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "right container",
+          chinese: "正确的容器",
+          pronunciation: "rait kuhn-TAY-ner",
+          note: "right 在这里是“正确的”，不是方向右边。",
+          example: "Use the right container."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -2727,10 +2742,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 2",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Did you say fries?",
+        "I heard fries. Is that right?"
+      ],
+      recommendedResponses: [
+        "Yes, fries.",
+        "No, I said rice.",
+        "Check the ticket again."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "I heard",
+          chinese: "我听到的是",
+          pronunciation: "ai hurd",
+          note: "用于确认自己刚才听到的内容。",
+          example: "I heard chicken."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -2830,10 +2860,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 2",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Should I stop this first?",
+        "Do you want me to stop now?"
+      ],
+      recommendedResponses: [
+        "Yes, stop for now.",
+        "No, finish that first.",
+        "Finish this, then switch."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "stop what I am doing",
+          chinese: "停下手上的事",
+          pronunciation: "stop wuht ai am DOO-ing",
+          note: "用于确认是否要暂停当前任务。",
+          example: "Stop what you are doing."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -2865,10 +2910,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "I can do it, but I need gloves.",
+        "I need gloves before I do that."
+      ],
+      recommendedResponses: [
+        "Get gloves first.",
+        "They are by the sink.",
+        "Good. Put on gloves first."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "gloves first",
+          chinese: "先戴手套",
+          pronunciation: "gluvz furst",
+          note: "first 表示先做这件事。",
+          example: "Wash hands first."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -2900,10 +2960,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Can you repeat the order number?",
+        "What is the order number again?"
+      ],
+      recommendedResponses: [
+        "It is order 24.",
+        "Sure, it is 138.",
+        "Check the screen for the number."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "order number",
+          chinese: "订单号",
+          pronunciation: "OR-der NUM-ber",
+          note: "外卖、前台和厨房常用来核对订单。",
+          example: "What is the order number?"
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -5285,10 +5360,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "I worked someone else’s shift yesterday.",
+        "I picked up a shift yesterday."
+      ],
+      recommendedResponses: [
+        "I will check the schedule.",
+        "Was it approved?",
+        "Please write it down for payroll."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "covered a shift",
+          chinese: "顶班",
+          pronunciation: "KUH-verd uh shift",
+          note: "表示替别人上了一个班。",
+          example: "I covered her shift."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -7576,10 +7666,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Keep cleaners away from food.",
+        "Do not put chemicals near food."
+      ],
+      recommendedResponses: [
+        "Move the chemicals away.",
+        "Store them on the chemical shelf.",
+        "Keep food and chemicals separate."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "chemicals",
+          chinese: "清洁化学品",
+          pronunciation: "KEM-i-kulz",
+          note: "餐厅里指清洁剂、消毒剂等，不要靠近食物。",
+          example: "Store chemicals safely."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -7645,10 +7750,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 2",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Use the red board for raw meat.",
+        "Raw meat goes on the red cutting board."
+      ],
+      recommendedResponses: [
+        "Okay, red board for raw meat.",
+        "I will change boards now.",
+        "Where is the red board?"
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "raw meat",
+          chinese: "生肉",
+          pronunciation: "raw meet",
+          note: "raw 表示没有煮熟的。",
+          example: "Keep raw meat separate."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -7680,10 +7800,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 2",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Use the green board for vegetables.",
+        "Vegetables go on the green cutting board."
+      ],
+      recommendedResponses: [
+        "Okay, green board for vegetables.",
+        "I will use a clean green board.",
+        "Where are the clean boards?"
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "cutting board",
+          chinese: "砧板",
+          pronunciation: "KUH-ting bord",
+          note: "切菜、切肉用的板。不同食物可能用不同颜色。",
+          example: "Use a clean cutting board."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -7715,10 +7850,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 2",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Replace the towel if it touches the floor.",
+        "Get a new towel if it falls."
+      ],
+      recommendedResponses: [
+        "I will get a clean towel.",
+        "This towel touched the floor.",
+        "Where are the clean towels?"
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "touches the floor",
+          chinese: "碰到地上",
+          pronunciation: "TUH-chiz thuh flor",
+          note: "食品卫生场景里，碰到地上的东西通常要更换或清洗。",
+          example: "The towel touched the floor."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -7957,10 +8107,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 2",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Do not eat at the prep table.",
+        "No eating on the prep table."
+      ],
+      recommendedResponses: [
+        "Okay, I will eat in the break area.",
+        "Sorry, I will move.",
+        "Where can I eat?"
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "prep table",
+          chinese: "备餐台",
+          pronunciation: "prep TAY-bul",
+          note: "准备食物的台面，不能在上面吃东西。",
+          example: "Clean the prep table."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -7992,10 +8157,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Keep raw seafood separate.",
+        "Store seafood away from other food."
+      ],
+      recommendedResponses: [
+        "Okay, I will move it.",
+        "Which shelf should I use?",
+        "I will label it."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "raw seafood",
+          chinese: "生海鲜",
+          pronunciation: "raw SEE-food",
+          note: "未煮熟的鱼、虾等，需要分开存放。",
+          example: "Store raw seafood separately."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -8061,10 +8241,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Use clean separate tools for allergy orders.",
+        "Do not use the same utensils for allergen orders."
+      ],
+      recommendedResponses: [
+        "I will get clean utensils.",
+        "Which allergy is it?",
+        "I will tell the manager."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "allergen orders",
+          chinese: "过敏相关订单",
+          pronunciation: "AL-er-jen OR-derz",
+          note: "顾客对某种食物过敏时的订单，需要特别小心。",
+          example: "This is an allergen order."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -13396,10 +13591,50 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
-      dialogue: [],
-      vocabularyNotes: [],
+      variants: [
+        "Use the dish soap.",
+        "Use the soap for dishes."
+      ],
+      recommendedResponses: [
+        "Okay, I will use the dish detergent.",
+        "How much should I add?",
+        "Where is the dish detergent?"
+      ],
+      dialogue: [
+        {
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
+          english: "Rinse the dishes first.",
+          chinese: "先把盘子冲洗一下。"
+        },
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Okay. Then should I wash them here?",
+          chinese: "好的。然后我在这里洗吗？"
+        },
+        {
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
+          english: "Yes, use the dish detergent in the first sink.",
+          chinese: "对，在第一个水槽用洗碗清洁剂。"
+        },
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Got it. I will wash them again if they are greasy.",
+          chinese: "明白。如果还有油，我会再洗一遍。"
+        }
+      ],
+      vocabularyNotes: [
+        {
+          term: "dish detergent",
+          chinese: "洗碗清洁剂",
+          pronunciation: "dish dee-TUR-jent",
+          note: "专门用来洗餐具，不等于桌面清洁剂。",
+          example: "Use dish detergent."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -13510,10 +13745,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Rinse the plates first.",
+        "Give the dishes a quick rinse first."
+      ],
+      recommendedResponses: [
+        "Okay, I will rinse them first.",
+        "Should I scrape them first?",
+        "I will rinse them before washing."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "rinse",
+          chinese: "冲洗",
+          pronunciation: "rins",
+          note: "用水冲一下，不一定是完整清洗。",
+          example: "Rinse the cup."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -13548,10 +13798,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       difficulty: "Level 2",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Wash them in the first sink.",
+        "The first sink is for washing."
+      ],
+      recommendedResponses: [
+        "Okay, first sink for washing.",
+        "Do I add detergent here?",
+        "I will wash them first."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "first sink",
+          chinese: "第一个水槽",
+          pronunciation: "furst sink",
+          note: "三槽水池流程里，第一个通常用于清洗。",
+          example: "Wash in the first sink."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -14042,10 +14307,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Clean them again.",
+        "Run them through again."
+      ],
+      recommendedResponses: [
+        "Okay, I will wash them again.",
+        "They are still greasy.",
+        "Should I use more detergent?"
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "again",
+          chinese: "再一次",
+          pronunciation: "uh-GEN",
+          note: "表示重复做同一个动作。",
+          example: "Try again."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -14080,10 +14360,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "The dish machine is full.",
+        "There is no room in the dishwasher."
+      ],
+      recommendedResponses: [
+        "Start the dishwasher.",
+        "Unload the clean dishes first.",
+        "Wait until this load is done."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "dishwasher is full",
+          chinese: "洗碗机满了",
+          pronunciation: "DISH-wash-er iz ful",
+          note: "表示洗碗机里已经放满，不能再加。",
+          example: "The trash can is full."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -14118,10 +14413,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Turn on the dishwasher.",
+        "Run the dishwasher."
+      ],
+      recommendedResponses: [
+        "Okay, I will start it.",
+        "Is it loaded correctly?",
+        "Which button do I press?"
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "start the dishwasher",
+          chinese: "启动洗碗机",
+          pronunciation: "start thuh DISH-wash-er",
+          note: "start 在这里表示让机器开始运行。",
+          example: "Start the machine."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -14156,10 +14466,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "The dish machine is not draining.",
+        "Water is not draining from the dishwasher."
+      ],
+      recommendedResponses: [
+        "Tell the manager.",
+        "Check the filter first.",
+        "Do not keep running it."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "not draining",
+          chinese: "不排水",
+          pronunciation: "not DRAY-ning",
+          note: "机器里的水排不出去。",
+          example: "The sink is not draining."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -14194,10 +14519,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 2",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "The dishwasher is not hot enough.",
+        "The water is not getting hot enough."
+      ],
+      recommendedResponses: [
+        "Tell the supervisor.",
+        "Do not use those dishes yet.",
+        "Check the temperature."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "hot enough",
+          chinese: "温度够高",
+          pronunciation: "hot ee-NUF",
+          note: "enough 表示达到需要的程度。",
+          example: "Is it hot enough?"
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -14232,10 +14572,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Clean the filter in the dishwasher.",
+        "Take out and clean the dishwasher filter."
+      ],
+      recommendedResponses: [
+        "Okay, I will clean the filter.",
+        "Can you show me how to remove it?",
+        "Should I turn it off first?"
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "filter",
+          chinese: "过滤器",
+          pronunciation: "FIL-ter",
+          note: "用来挡住食物残渣或脏东西的部件。",
+          example: "Clean the filter."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -14270,10 +14625,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Never mix chemicals.",
+        "Do not put chemicals together."
+      ],
+      recommendedResponses: [
+        "I will keep them separate.",
+        "I will ask before using chemicals.",
+        "I will stop and get help."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "mix chemicals",
+          chinese: "混合化学品",
+          pronunciation: "miks KEM-i-kulz",
+          note: "清洁剂混合可能产生危险气体，听到后要停止并询问。",
+          example: "Do not mix chemicals."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -14308,10 +14678,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Wipe down the table.",
+        "Clean off the table."
+      ],
+      recommendedResponses: [
+        "Okay, I will wipe it now.",
+        "Should I use sanitizer after?",
+        "Where is the clean cloth?"
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "wipe",
+          chinese: "擦",
+          pronunciation: "wipe",
+          note: "用抹布把表面擦干净。",
+          example: "Wipe the counter."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -14346,10 +14731,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Clean this table.",
+        "Make sure the table is clean."
+      ],
+      recommendedResponses: [
+        "Okay, I will clean it.",
+        "Should I sanitize it too?",
+        "I will use a clean cloth."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "clean the table",
+          chinese: "清洁桌面",
+          pronunciation: "kleen thuh TAY-bul",
+          note: "可以指擦掉脏东西、食物残渣等。",
+          example: "Clean the table first."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -14384,10 +14784,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       difficulty: "Level 2",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Spray the cloth, not the food area.",
+        "Put cleaner on the cloth first."
+      ],
+      recommendedResponses: [
+        "Okay, I will spray the cloth.",
+        "I will not spray near food.",
+        "Which cleaner should I use?"
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "on the cloth",
+          chinese: "喷在抹布上",
+          pronunciation: "on thuh klawth",
+          note: "不是直接喷到食物或桌面附近。",
+          example: "Spray it on the cloth."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -14460,10 +14875,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Use the cleaner for tables.",
+        "Use the table cleaning spray."
+      ],
+      recommendedResponses: [
+        "Okay, I will use the table cleaner.",
+        "Where is the table cleaner?",
+        "Should I sanitize after cleaning?"
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "table cleaner",
+          chinese: "桌面清洁剂",
+          pronunciation: "TAY-bul KLEE-ner",
+          note: "用于桌面，不要和洗碗剂或食品消毒剂混用。",
+          example: "Use table cleaner."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -14498,10 +14928,50 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
-      dialogue: [],
-      vocabularyNotes: [],
+      variants: [
+        "Clean it first, then sanitize it.",
+        "Sanitize the table after you wipe it."
+      ],
+      recommendedResponses: [
+        "Okay, clean first, then sanitize.",
+        "Which sanitizer should I use?",
+        "I will let it air-dry."
+      ],
+      dialogue: [
+        {
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
+          english: "Clean the table first, then sanitize it.",
+          chinese: "先清洁桌面，然后消毒。"
+        },
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Which sanitizer should I use?",
+          chinese: "我应该用哪一种消毒剂？"
+        },
+        {
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
+          english: "Use the sanitizer bottle by the sink.",
+          chinese: "用水槽旁边那瓶消毒剂。"
+        },
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Okay. I will let it air-dry.",
+          chinese: "好的。我会让它自然风干。"
+        }
+      ],
+      vocabularyNotes: [
+        {
+          term: "sanitize",
+          chinese: "消毒",
+          pronunciation: "SAN-i-tize",
+          note: "餐厅里常用于食品接触表面或餐具消毒。",
+          example: "Sanitize the table."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -19429,10 +19899,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Staff",
       speakerRoleZh: "前台员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Sorry, may I see your receipt?",
+        "Can I check your order confirmation?"
+      ],
+      recommendedResponses: [
+        "Here is my receipt.",
+        "I ordered online.",
+        "I do not have the receipt."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "order confirmation",
+          chinese: "订单确认信息",
+          pronunciation: "OR-der kon-fer-MAY-shun",
+          note: "手机或邮件里的订单证明。",
+          example: "Show the order confirmation."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -19867,10 +20352,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Staff",
       speakerRoleZh: "前台员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "The card did not go through.",
+        "The payment did not work."
+      ],
+      recommendedResponses: [
+        "Can I try again?",
+        "I can use another card.",
+        "I will pay cash."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "go through",
+          chinese: "支付成功/通过",
+          pronunciation: "goh throo",
+          note: "付款场景里 did not go through 表示没有扣款成功。",
+          example: "The payment went through."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -19904,10 +20404,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "顾客可能会说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Can I try again?",
+        "May I run the card again?"
+      ],
+      recommendedResponses: [
+        "Yes, please try again.",
+        "Please wait for the screen.",
+        "You can use another card too."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "try the card again",
+          chinese: "再刷/再试这张卡",
+          pronunciation: "try thuh kard uh-GEN",
+          note: "付款失败后请求再试一次。",
+          example: "Try the card again."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -19941,10 +20456,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Staff",
       speakerRoleZh: "前台员工要说",
       difficulty: "Level 2",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Wait for the screen, then tap again.",
+        "Please tap or insert the card again."
+      ],
+      recommendedResponses: [
+        "Okay, I will wait.",
+        "Should I tap here?",
+        "It went through now."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "tap or insert",
+          chinese: "感应或插卡",
+          pronunciation: "tap or in-SERT",
+          note: "tap 是手机或卡感应；insert 是插入芯片卡。",
+          example: "Tap your card."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -19978,10 +20508,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Staff",
       speakerRoleZh: "前台员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "That will be twelve forty-five.",
+        "Your total comes to twelve forty-five."
+      ],
+      recommendedResponses: [
+        "Here you go.",
+        "Can I pay by card?",
+        "Can I get a receipt?"
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "twelve forty-five",
+          chinese: "12.45美元",
+          pronunciation: "twelv FOR-dee five",
+          note: "收银时金额常这样读。",
+          example: "Your total is ten fifty."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -20015,10 +20560,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "顾客可能会说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Here is twenty.",
+        "I have twenty dollars."
+      ],
+      recommendedResponses: [
+        "Thank you. I will get your change.",
+        "Your change is seven fifty-five.",
+        "Do you need a receipt?"
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "twenty dollars",
+          chinese: "二十美元",
+          pronunciation: "TWEN-tee DOL-erz",
+          note: "现金付款时递给收银员的钱。",
+          example: "Here is ten dollars."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -20089,10 +20649,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "顾客可能会说",
       difficulty: "Level 2",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "May I have a receipt?",
+        "Can you print a receipt?"
+      ],
+      recommendedResponses: [
+        "Sure, here you go.",
+        "Would you like it printed or emailed?",
+        "The receipt is in the bag."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "receipt",
+          chinese: "小票/收据",
+          pronunciation: "ri-SEET",
+          note: "付款后的凭证，p 不发音。",
+          example: "Do you need a receipt?"
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -20127,10 +20702,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 2",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "I made this order wrong.",
+        "I entered the order wrong."
+      ],
+      recommendedResponses: [
+        "Tell the supervisor.",
+        "Can it be fixed?",
+        "Let me help you correct it."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "made a mistake",
+          chinese: "犯了错误/做错了",
+          pronunciation: "mayd uh mis-TAYK",
+          note: "工作中承认错误的自然说法。",
+          example: "I made a mistake."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -20165,10 +20755,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Signing only means you received it.",
+        "Your signature confirms receipt only."
+      ],
+      recommendedResponses: [
+        "Can I get a copy?",
+        "I need time to read it.",
+        "Who can explain this to me?"
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "confirms receipt",
+          chinese: "确认收到",
+          pronunciation: "kun-FURMZ ri-SEET",
+          note: "表示确认你收到文件，不一定表示同意内容。",
+          example: "This confirms receipt."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -20203,10 +20808,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Staff",
       speakerRoleZh: "店员要说",
       difficulty: "Level 2",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Hi, tell me if you need help.",
+        "Let me know if you have questions."
+      ],
+      recommendedResponses: [
+        "Thank you.",
+        "I need a minute.",
+        "Can I ask about this item?"
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "let me know",
+          chinese: "告诉我/让我知道",
+          pronunciation: "let mee noh",
+          note: "服务场景里很常用，语气礼貌。",
+          example: "Let me know if you need help."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -23268,10 +23888,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "客户可能会说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Where is my food?",
+        "Can you check my order?"
+      ],
+      recommendedResponses: [
+        "Let me check the order number.",
+        "It is still being prepared.",
+        "It should be ready soon."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "Where is my order?",
+          chinese: "我的订单在哪里？",
+          pronunciation: "wair iz mai OR-der",
+          note: "顾客询问订单进度。",
+          example: "Where is my order?"
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -23346,10 +23981,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "客户可能会说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "What time will it arrive?",
+        "How long will it take?"
+      ],
+      recommendedResponses: [
+        "It should arrive in about ten minutes.",
+        "Let me check the delivery status.",
+        "The driver is on the way."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "arrive",
+          chinese: "到达",
+          pronunciation: "uh-RIVE",
+          note: "外卖送到或人到达都可以用。",
+          example: "It will arrive soon."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -23619,10 +24269,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Agent",
       speakerRoleZh: "客服人员要说",
       difficulty: "Level 3",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Let me see if we can replace or refund it.",
+        "I will check if this order can be refunded."
+      ],
+      recommendedResponses: [
+        "Thank you.",
+        "I would like a replacement.",
+        "I would like a refund."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "replacement or refund",
+          chinese: "补发或退款",
+          pronunciation: "ri-PLAYS-ment or REE-fund",
+          note: "处理少餐、错餐、损坏时常用。",
+          example: "Do you want a refund?"
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -23736,10 +24401,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "客户可能会说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "The item was damaged when it arrived.",
+        "This came damaged."
+      ],
+      recommendedResponses: [
+        "I am sorry. Let me check that.",
+        "Can you send a photo?",
+        "We can replace it or refund it."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "arrived damaged",
+          chinese: "送到时已破损",
+          pronunciation: "uh-RIVED DAM-ijd",
+          note: "说明不是拿到后才坏，而是送来时就坏了。",
+          example: "The box arrived damaged."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -26153,10 +26833,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "The ladder is not stable.",
+        "This ladder feels unsafe."
+      ],
+      recommendedResponses: [
+        "Do not use it.",
+        "Get another ladder.",
+        "Tell the supervisor."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "not steady",
+          chinese: "不稳",
+          pronunciation: "not STED-ee",
+          note: "梯子、架子或设备摇晃时用。",
+          example: "The chair is not steady."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -26223,10 +26918,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "The fire alarm is ringing.",
+        "The alarm is going off."
+      ],
+      recommendedResponses: [
+        "Leave the building.",
+        "Follow the emergency plan.",
+        "Do not ignore the alarm."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "going off",
+          chinese: "响起来",
+          pronunciation: "GO-ing off",
+          note: "警报器响了，常说 alarm is going off。",
+          example: "The alarm is going off."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -26567,10 +27277,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 2",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "I need to complete an incident report.",
+        "I need to write an incident report."
+      ],
+      recommendedResponses: [
+        "I will get the form.",
+        "Tell the manager what happened.",
+        "Write the time and details."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "incident report",
+          chinese: "事故报告",
+          pronunciation: "IN-si-dent ri-PORT",
+          note: "受伤、事故或安全事件后的书面记录。",
+          example: "Fill out an incident report."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -26602,10 +27327,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Should we call 911?",
+        "Do we need emergency help?"
+      ],
+      recommendedResponses: [
+        "Yes, call now.",
+        "Stay with the person.",
+        "Tell the manager immediately."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "emergency services",
+          chinese: "急救/消防/警方等紧急服务",
+          pronunciation: "ee-MUR-jen-see SUR-vi-siz",
+          note: "严重受伤、火灾、危险情况时使用。",
+          example: "Call emergency services."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -26637,10 +27377,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Do not move them.",
+        "Leave the injured person where they are."
+      ],
+      recommendedResponses: [
+        "Call for help.",
+        "Keep people away.",
+        "Wait for emergency services."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "injured person",
+          chinese: "受伤的人",
+          pronunciation: "IN-jerd PER-sun",
+          note: "不确定伤势时，不要随便移动。",
+          example: "Help the injured person."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -29831,10 +30586,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "My stomach hurts.",
+        "I have pain in my stomach."
+      ],
+      recommendedResponses: [
+        "Do you need a doctor?",
+        "How long has it hurt?",
+        "You may need to rest."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "stomach pain",
+          chinese: "肚子痛",
+          pronunciation: "STUH-muk payn",
+          note: "看医生、药店买药或请病假时常用。",
+          example: "I have stomach pain."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -29866,10 +30636,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "I feel lightheaded.",
+        "I feel like I might fall."
+      ],
+      recommendedResponses: [
+        "Please sit down.",
+        "Do you need water?",
+        "Should we call someone?"
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "dizzy",
+          chinese: "头晕",
+          pronunciation: "DIZ-ee",
+          note: "感觉站不稳或头晕。",
+          example: "I feel dizzy."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -29901,10 +30686,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "I need to change my appointment time.",
+        "Can I reschedule my appointment?"
+      ],
+      recommendedResponses: [
+        "What day works for you?",
+        "The next opening is Monday.",
+        "Please call the office."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "reschedule",
+          chinese: "改时间/重新预约",
+          pronunciation: "ree-SKED-jool",
+          note: "把预约改到另一个时间。",
+          example: "Can I reschedule?"
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -29936,10 +30736,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Can I get a confirmation number?",
+        "May I have the confirmation number?"
+      ],
+      recommendedResponses: [
+        "Yes, it is A123.",
+        "I will text it to you.",
+        "Please write it down."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "confirmation number",
+          chinese: "确认号码",
+          pronunciation: "kon-fer-MAY-shun NUM-ber",
+          note: "预约、订单、服务完成后的查询号码。",
+          example: "Here is your confirmation number."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -29971,10 +30786,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Can you help me with this form?",
+        "I need help with this paperwork."
+      ],
+      recommendedResponses: [
+        "I can help you.",
+        "Please fill in your name first.",
+        "Bring your ID with the form."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "filling out this form",
+          chinese: "填写这张表",
+          pronunciation: "FIL-ing out this form",
+          note: "fill out 表示填写表格。",
+          example: "Fill out the form."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -30006,10 +30836,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Can you send me a copy by email?",
+        "Please email me a copy."
+      ],
+      recommendedResponses: [
+        "Sure, what is your email?",
+        "I will send it now.",
+        "Check your inbox."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "email me a copy",
+          chinese: "发一份副本到我邮箱",
+          pronunciation: "EE-mayl mee uh KOP-ee",
+          note: "需要电子版文件时使用。",
+          example: "Email me a copy."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -30076,10 +30921,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Who do I call about this?",
+        "Who should I talk to about this?"
+      ],
+      recommendedResponses: [
+        "Call customer service.",
+        "Talk to the office.",
+        "Ask the manager first."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "contact",
+          chinese: "联系",
+          pronunciation: "KON-takt",
+          note: "可以指打电话、发邮件或找人。",
+          example: "Contact the office."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -30111,10 +30971,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 2",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Can I pay in installments?",
+        "Can I split the payment over time?"
+      ],
+      recommendedResponses: [
+        "Yes, we have payment plans.",
+        "No, it must be paid today.",
+        "Let me check your options."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "payment plan",
+          chinese: "分期付款计划",
+          pronunciation: "PAY-ment plan",
+          note: "费用较高时分几次付款。",
+          example: "Ask for a payment plan."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
@@ -30146,10 +31021,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       difficulty: "Level 1",
-      variants: [],
-      recommendedResponses: [],
+      variants: [
+        "Do I have to pay a fee?",
+        "How much is the fee?"
+      ],
+      recommendedResponses: [
+        "There is no fee.",
+        "The fee is five dollars.",
+        "Let me check for you."
+      ],
       dialogue: [],
-      vocabularyNotes: [],
+      vocabularyNotes: [
+        {
+          term: "fee",
+          chinese: "费用/手续费",
+          pronunciation: "fee",
+          note: "服务、办理或账户可能产生的费用。",
+          example: "There is a fee."
+        }
+      ],
       listenRepeatCount: 3,
       speakRepeatCount: 5
     }
