@@ -5476,12 +5476,13 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "顾客可能会说",
       variants: [
-        "What exactly comes with the combo?",
-        "What comes with the combo, please?"
+        "What is included in the combo?",
+        "What does the combo include?"
       ],
       recommendedResponses: [
         "It comes with fries and a drink.",
-        "The combo includes one side and one drink."
+        "It includes one side and one drink.",
+        "You can upgrade the drink if you want."
       ],
       dialogue: [
         {
@@ -5495,6 +5496,12 @@ export const kitchenSurvivalCourse = {
           speakerRoleZh: "员工要说",
           english: "It comes with fries and a drink.",
           chinese: "包括薯条和一杯饮料。"
+        },
+        {
+          speakerRole: "Customer",
+          speakerRoleZh: "顾客可能会说",
+          english: "Okay, I’ll take the combo.",
+          chinese: "好的，我要套餐。"
         }
       ],
       vocabularyNotes: [
@@ -5502,8 +5509,8 @@ export const kitchenSurvivalCourse = {
           term: "combo",
           chinese: "套餐",
           pronunciation: "KOM-boh",
-          note: "主食、配菜和饮料组合。",
-          example: "Order a combo."
+          note: "餐厅里指主食、配菜和饮料组合。",
+          example: "I want a combo."
         }
       ],
       listenRepeatCount: 3,
@@ -5604,33 +5611,41 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "顾客可能会说",
       variants: [
-        "Can I get that without onions, please?"
+        "Can you make that without onions?",
+        "No onions on that, please."
       ],
       recommendedResponses: [
-        "I will follow the food safety rule.",
-        "I will ask if I am not sure."
+        "Yes, we can make it without onions.",
+        "Sure, I’ll put no onions on the order.",
+        "Let me check if the sauce has onions."
       ],
       dialogue: [
         {
           speakerRole: "Customer",
-          speakerRoleZh: "顾客",
+          speakerRoleZh: "顾客可能会说",
           english: "Can I get that without onions?",
           chinese: "这个可以不要洋葱吗？"
         },
         {
           speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Let me check your order.",
-          chinese: "我帮你查一下订单。"
+          speakerRoleZh: "员工要说",
+          english: "Yes, I’ll mark it no onions.",
+          chinese: "可以，我会标注不要洋葱。"
+        },
+        {
+          speakerRole: "Customer",
+          speakerRoleZh: "顾客可能会说",
+          english: "Thank you.",
+          chinese: "谢谢。"
         }
       ],
       vocabularyNotes: [
         {
           term: "without onions",
-          chinese: "食品安全表达",
-          pronunciation: "food-SAYF-tee",
-          note: "用于洗手、手套、食物存放和过敏订单。 这里重点看 “without onions” 在句子里的用法。",
-          example: "Follow food safety."
+          chinese: "不要洋葱；不加洋葱",
+          pronunciation: "with-OUT UN-yunz",
+          note: "顾客要求某个食材不要放进订单里。",
+          example: "Can I get it without cheese?"
         }
       ],
       listenRepeatCount: 3,
@@ -5731,12 +5746,13 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "顾客可能会说",
       variants: [
-        "What exactly do you recommend instead?",
-        "What do you recommend instead, please?"
+        "What would you suggest instead?",
+        "What is a good replacement?"
       ],
       recommendedResponses: [
         "I recommend the mild sauce.",
-        "You can try the lemon pepper."
+        "You can try lemon pepper.",
+        "If you want less spicy, try honey garlic."
       ],
       dialogue: [
         {
@@ -5748,17 +5764,17 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Staff",
           speakerRoleZh: "员工要说",
-          english: "The mild sauce is popular.",
-          chinese: "不辣的酱很受欢迎。"
+          english: "I recommend lemon pepper. It is not too spicy.",
+          chinese: "我推荐柠檬胡椒味，不太辣。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "What recommend",
-          chinese: "食品安全表达",
-          pronunciation: "food-SAYF-tee",
-          note: "用于洗手、手套、食物存放和过敏订单。 这里重点看 “What recommend” 在句子里的用法。",
-          example: "Follow food safety."
+          term: "recommend instead",
+          chinese: "建议换成什么",
+          pronunciation: "rek-uh-MEND in-STED",
+          note: "顾客不确定选择时，请员工推荐替代选项。",
+          example: "What do you recommend?"
         }
       ],
       listenRepeatCount: 3,
@@ -5795,12 +5811,13 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "顾客可能会说",
       variants: [
-        "What exactly milder flavors do you have?",
-        "What milder flavors do you have, please?"
+        "Which flavors are less spicy?",
+        "Do you have any mild flavors?"
       ],
       recommendedResponses: [
-        "We have mild, honey garlic, and barbecue.",
-        "Lemon pepper is not very spicy."
+        "Honey garlic is mild.",
+        "Lemon pepper is not very spicy.",
+        "Barbecue is a good mild option."
       ],
       dialogue: [
         {
@@ -5819,10 +5836,10 @@ export const kitchenSurvivalCourse = {
       vocabularyNotes: [
         {
           term: "milder flavors",
-          chinese: "不太辣的口味",
+          chinese: "更温和、不太辣的口味",
           pronunciation: "MYLD-er FLAY-verz",
-          note: "味道更淡、辣度更低的选择。",
-          example: "Choose a mild flavor."
+          note: "顾客想要辣度低一点的口味时使用。",
+          example: "This flavor is milder."
         }
       ],
       listenRepeatCount: 3,
@@ -5859,11 +5876,13 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Staff",
       speakerRoleZh: "前台员工要说",
       variants: [
-        "What's the name on the order, please?"
+        "What name is the order under?",
+        "Can I have the name for the order?"
       ],
       recommendedResponses: [
         "The name is Kevin.",
-        "It is under Maria."
+        "It is under Maria.",
+        "The order name is Chen."
       ],
       dialogue: [
         {
@@ -5881,11 +5900,11 @@ export const kitchenSurvivalCourse = {
       ],
       vocabularyNotes: [
         {
-          term: "order",
-          chinese: "订单",
-          pronunciation: "OR-der",
-          note: "顾客点的餐或外卖单。",
-          example: "Check the order."
+          term: "name on the order",
+          chinese: "订单上的姓名",
+          pronunciation: "name-on-the-OR-der",
+          note: "前台或外卖取餐时用来核对订单。",
+          example: "The name on the order is Lee."
         }
       ],
       listenRepeatCount: 3,
@@ -5922,12 +5941,13 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "I’ll get help and update the wait time.",
-        "I’ll ask someone to help and change the wait time."
+        "I’ll get someone to help and update the wait time.",
+        "I’ll ask for help and change the wait estimate."
       ],
       recommendedResponses: [
-        "I will follow the food safety rule.",
-        "I will ask if I am not sure."
+        "Okay, I’ll keep working on this order.",
+        "Thanks, I’ll tell the customer the new wait time.",
+        "Please let me know when help arrives."
       ],
       dialogue: [
         {
@@ -5939,29 +5959,17 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Okay. I will do that before touching food.",
-          chinese: "好的。我接触食物前会先这样做。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Tell me if you are not sure.",
-          chinese: "如果不确定就告诉我。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "I will ask first.",
-          chinese: "我会先问。"
+          english: "Okay, I’ll keep working on the order.",
+          chinese: "好的，我会继续做这个订单。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "send help",
-          chinese: "食品安全表达",
-          pronunciation: "food-SAYF-tee",
-          note: "用于洗手、手套、食物存放和过敏订单。 这里重点看 “send help” 在句子里的用法。",
-          example: "Follow food safety."
+          term: "wait time",
+          chinese: "等待时间",
+          pronunciation: "wayt-time",
+          note: "顾客还需要等多久才能拿到餐。",
+          example: "The wait time is ten minutes."
         }
       ],
       listenRepeatCount: 3,
@@ -5998,12 +6006,13 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "顾客可能会说",
       variants: [
-        "What exactly is still available?",
-        "What is still available, please?"
+        "What can I still order?",
+        "What do you still have?"
       ],
       recommendedResponses: [
         "We still have chicken and fries.",
-        "The wings are sold out, but tenders are available."
+        "The wings are sold out, but tenders are available.",
+        "We are out of sandwiches, but fries are available."
       ],
       dialogue: [
         {
@@ -6021,11 +6030,11 @@ export const kitchenSurvivalCourse = {
       ],
       vocabularyNotes: [
         {
-          term: "available",
-          chinese: "还有；可提供",
-          pronunciation: "uh-VAY-luh-bul",
-          note: "表示某个食物或服务现在还能提供。",
-          example: "Fries are available."
+          term: "still available",
+          chinese: "现在还有；仍然可以提供",
+          pronunciation: "stil uh-VAY-luh-bul",
+          note: "用来说明某个餐品还没卖完，还能点。",
+          example: "Fries are still available."
         }
       ],
       listenRepeatCount: 3,
@@ -6128,11 +6137,12 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "I want to say back what I heard.",
+        "Let me say back what I heard.",
         "Let me confirm what I understood."
       ],
       recommendedResponses: [
-        "Yes, that is correct.",
+        "Yes, go ahead.",
+        "That is correct.",
         "Almost. The sauce goes on the side."
       ],
       dialogue: [
@@ -6151,11 +6161,11 @@ export const kitchenSurvivalCourse = {
       ],
       vocabularyNotes: [
         {
-          term: "repeat",
-          chinese: "重复；再说一遍",
-          pronunciation: "ri-PEET",
-          note: "没听清时请对方再说一次。",
-          example: "Please repeat that."
+          term: "repeat what I understood",
+          chinese: "复述我理解的内容",
+          pronunciation: "ri-PEET what-I un-der-STOOD",
+          note: "员工用来确认自己没有听错任务或订单。",
+          example: "Let me repeat the order."
         }
       ],
       listenRepeatCount: 3,
@@ -6259,11 +6269,13 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "What needs to be fixed?"
+        "What needs to be fixed?",
+        "Which part should I correct?"
       ],
       recommendedResponses: [
         "The label date is wrong.",
-        "The sauce needs to be on the side."
+        "The sauce needs to be on the side.",
+        "This tray needs a new label."
       ],
       dialogue: [
         {
@@ -6281,11 +6293,11 @@ export const kitchenSurvivalCourse = {
       ],
       vocabularyNotes: [
         {
-          term: "What exactly",
-          chinese: "食品安全表达",
-          pronunciation: "food-SAYF-tee",
-          note: "用于洗手、手套、食物存放和过敏订单。 这里重点看 “What exactly” 在句子里的用法。",
-          example: "Follow food safety."
+          term: "needs to be corrected",
+          chinese: "需要被改正；需要修正",
+          pronunciation: "needs-to-be-kuh-REK-tid",
+          note: "主管指出有错误时，员工用来问具体要改哪里。",
+          example: "This label needs to be corrected."
         }
       ],
       listenRepeatCount: 3,
@@ -6323,11 +6335,12 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "What exactly is the expected production rate?",
-        "What is the expected production rate, please?"
+        "How fast should we work?",
+        "How many should we finish?"
       ],
       recommendedResponses: [
         "About twenty orders per hour.",
+        "Try to finish one tray every ten minutes.",
         "Finish this tray before lunch."
       ],
       dialogue: [
@@ -6347,10 +6360,10 @@ export const kitchenSurvivalCourse = {
       vocabularyNotes: [
         {
           term: "expected production rate",
-          chinese: "规定速度",
+          chinese: "规定的生产速度；预期产量",
           pronunciation: "ek-SPEK-tid pro-DUK-shun rate",
-          note: "主管期望的工作速度或产量。",
-          example: "Check the rate."
+          note: "主管希望员工在一定时间内完成的速度或数量。",
+          example: "The production rate is too slow."
         }
       ],
       listenRepeatCount: 3,
@@ -6455,9 +6468,9 @@ export const kitchenSurvivalCourse = {
         "Store raw chicken under cooked food."
       ],
       recommendedResponses: [
-        "I will keep the raw chicken separate.",
-        "I will label it clearly.",
-        "I will check before using it."
+        "Okay, I’ll move it to the lower shelf.",
+        "That prevents drips onto cooked food.",
+        "I’ll keep raw and cooked food separate."
       ],
       dialogue: [
         {
@@ -6478,8 +6491,8 @@ export const kitchenSurvivalCourse = {
           term: "raw chicken",
           chinese: "生鸡肉",
           pronunciation: "raw CHIK-en",
-          note: "没有煮熟的鸡肉，需要和熟食分开。",
-          example: "Store raw chicken below."
+          note: "没有煮熟的鸡肉，必须放在熟食下面，避免汁水滴到熟食上。",
+          example: "Raw chicken goes on the bottom shelf."
         }
       ],
       listenRepeatCount: 3,
@@ -6514,34 +6527,35 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please don’t use the same cutting board for raw meat and vegetables."
+        "Use different boards for raw meat and vegetables.",
+        "Do not cut raw meat and vegetables on the same board."
       ],
       recommendedResponses: [
-        "I will keep the same cutting separate.",
-        "I will label it clearly.",
-        "I will check before using it."
+        "Okay, I’ll use separate cutting boards.",
+        "I’ll get a clean board for the vegetables.",
+        "Which color board should I use?"
       ],
       dialogue: [
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
+          speakerRoleZh: "员工要说",
           english: "Do not use the same cutting board for raw meat and vegetables.",
           chinese: "不要用同一块砧板切生肉和蔬菜。"
         },
         {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
+          speakerRole: "Coworker",
+          speakerRoleZh: "同事可能会说",
+          english: "Okay, I’ll get a clean board for the vegetables.",
+          chinese: "好的，我拿一块干净砧板切蔬菜。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "same cutting",
-          chinese: "食品安全表达",
-          pronunciation: "food-SAYF-tee",
-          note: "用于洗手、手套、食物存放和过敏订单。 这里重点看 “same cutting” 在句子里的用法。",
-          example: "Follow food safety."
+          term: "cutting board",
+          chinese: "砧板",
+          pronunciation: "KUH-ting bord",
+          note: "切菜、切肉用的板；生肉和蔬菜要分开使用。",
+          example: "Use a clean cutting board."
         }
       ],
       listenRepeatCount: 3,
@@ -6580,31 +6594,31 @@ export const kitchenSurvivalCourse = {
         "Check the date before using it."
       ],
       recommendedResponses: [
-        "I will keep the expiration date separate.",
-        "I will label it clearly.",
-        "I will check before using it."
+        "Okay, I’ll check the date now.",
+        "It expires tomorrow.",
+        "This one is already expired."
       ],
       dialogue: [
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
+          speakerRoleZh: "员工要说",
           english: "Check the expiration date first.",
           chinese: "先检查保质期。"
         },
         {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "I’ll wash my hands now.",
-          chinese: "我现在去洗手。"
+          speakerRole: "Coworker",
+          speakerRoleZh: "同事可能会说",
+          english: "Okay, I’ll check it before using it.",
+          chinese: "好的，我使用前会检查。"
         }
       ],
       vocabularyNotes: [
         {
           term: "expiration date",
-          chinese: "过期日期",
+          chinese: "过期日期；保质期",
           pronunciation: "ek-spuh-RAY-shun date",
-          note: "食品还能安全使用到哪一天。",
-          example: "Check the date."
+          note: "食品包装或标签上显示还能安全使用到哪一天。",
+          example: "The expiration date is today."
         }
       ],
       listenRepeatCount: 3,
@@ -6643,31 +6657,31 @@ export const kitchenSurvivalCourse = {
         "Put a date label on this container."
       ],
       recommendedResponses: [
-        "I will keep the label separate.",
-        "I will label it clearly.",
-        "I will check before using it."
+        "Okay, I’ll label it now.",
+        "What date should I write?",
+        "I’ll write today’s date on it."
       ],
       dialogue: [
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
+          speakerRoleZh: "员工要说",
           english: "This container needs a date label.",
           chinese: "这个容器需要日期标签。"
         },
         {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "I’ll wash my hands now.",
-          chinese: "我现在去洗手。"
+          speakerRole: "Coworker",
+          speakerRoleZh: "同事可能会说",
+          english: "Okay, I’ll label it now.",
+          chinese: "好的，我现在贴标签。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "label",
-          chinese: "贴标签；标签",
-          pronunciation: "LAY-bul",
-          note: "写上名字、日期或订单信息。",
-          example: "Label the box."
+          term: "date label",
+          chinese: "日期标签",
+          pronunciation: "date-LAY-bul",
+          note: "贴在食品容器上的标签，写明日期，方便判断是否还能使用。",
+          example: "Put a date label on the sauce."
         }
       ],
       listenRepeatCount: 3,
@@ -6706,22 +6720,22 @@ export const kitchenSurvivalCourse = {
         "Put the cover on before storage."
       ],
       recommendedResponses: [
-        "I will keep the lid separate.",
-        "I will label it clearly.",
-        "I will check before using it."
+        "Okay, I’ll put the lid on.",
+        "Should I label it too?",
+        "I’ll cover it before putting it away."
       ],
       dialogue: [
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
+          speakerRoleZh: "员工要说",
           english: "Put the lid on before you store it.",
           chinese: "存放前把盖子盖上。"
         },
         {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
+          speakerRole: "Coworker",
+          speakerRoleZh: "同事可能会说",
+          english: "Okay, I’ll cover it first.",
+          chinese: "好的，我会先盖上。"
         }
       ],
       vocabularyNotes: [
@@ -6729,8 +6743,8 @@ export const kitchenSurvivalCourse = {
           term: "lid",
           chinese: "盖子",
           pronunciation: "lid-sound",
-          note: "存放食物前盖上的盖子。",
-          example: "Put on the lid."
+          note: "存放食物前盖在容器上的盖子。",
+          example: "The lid is missing."
         }
       ],
       listenRepeatCount: 3,
@@ -6765,34 +6779,35 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please don’t leave food out too long."
+        "Do not keep food out too long.",
+        "Put food away before it sits out too long."
       ],
       recommendedResponses: [
-        "I will follow the food safety rule.",
-        "I will clean it before continuing.",
-        "I will ask the supervisor first."
+        "Okay, I’ll put it back in the cooler.",
+        "How long has it been out?",
+        "I’ll tell the supervisor if I’m not sure."
       ],
       dialogue: [
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
+          speakerRoleZh: "员工要说",
           english: "Do not leave food out too long.",
           chinese: "不要把食物放在外面太久。"
         },
         {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "I’ll wash my hands now.",
-          chinese: "我现在去洗手。"
+          speakerRole: "Coworker",
+          speakerRoleZh: "同事可能会说",
+          english: "Okay, I’ll put it back now.",
+          chinese: "好的，我现在放回去。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "leave food",
-          chinese: "食品安全表达",
-          pronunciation: "food-SAYF-tee",
-          note: "用于洗手、手套、食物存放和过敏订单。 这里重点看 “leave food” 在句子里的用法。",
-          example: "Follow food safety."
+          term: "out too long",
+          chinese: "在外面放太久",
+          pronunciation: "out-too-long",
+          note: "食物长时间放在室温下，可能不安全。",
+          example: "The chicken was out too long."
         }
       ],
       listenRepeatCount: 3,
@@ -6831,31 +6846,31 @@ export const kitchenSurvivalCourse = {
         "Put this back in the cooler."
       ],
       recommendedResponses: [
-        "For here, please.",
-        "To go, please.",
-        "It’s for takeout."
+        "Okay, I’ll put it back now.",
+        "Should I check the label first?",
+        "I’ll keep it cold."
       ],
       dialogue: [
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
+          speakerRoleZh: "员工要说",
           english: "This needs to go back in the cooler.",
           chinese: "这个需要放回冷藏柜。"
         },
         {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "For here, please.",
-          chinese: "堂食，谢谢。"
+          speakerRole: "Coworker",
+          speakerRoleZh: "同事可能会说",
+          english: "Okay, I’ll put it back now.",
+          chinese: "好的，我现在放回去。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "cool",
-          chinese: "冷却",
-          pronunciation: "kool",
-          note: "热食存放前先降温。",
-          example: "Let it cool."
+          term: "cooler",
+          chinese: "冷藏柜；冷藏室",
+          pronunciation: "KOO-ler",
+          note: "餐厅里用来低温保存食材的设备。",
+          example: "Put the sauce in the cooler."
         }
       ],
       listenRepeatCount: 3,
@@ -6955,30 +6970,31 @@ export const kitchenSurvivalCourse = {
         "Use new gloves for the salad."
       ],
       recommendedResponses: [
-        "I will follow the food safety rule.",
-        "I will ask if I am not sure."
+        "Okay, I’ll change my gloves.",
+        "I’ll wash my hands first, then change gloves.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
+          speakerRoleZh: "员工要说",
           english: "Change the gloves before making the salad.",
           chinese: "做沙拉前换手套。"
         },
         {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "I’ll wash my hands now.",
-          chinese: "我现在去洗手。"
+          speakerRole: "Coworker",
+          speakerRoleZh: "同事可能会说",
+          english: "Okay, I’ll put on a new pair.",
+          chinese: "好的，我换一副新的。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "gloves",
-          chinese: "手套",
-          pronunciation: "gluvz",
-          note: "食品操作时戴的手套。",
-          example: "Put on your gloves."
+          term: "Change the gloves",
+          chinese: "更换手套",
+          pronunciation: "chaynj-the-gluvz",
+          note: "接触不同食物或做即食食品前，换一副干净手套。",
+          example: "Change the gloves first."
         }
       ],
       listenRepeatCount: 3,
@@ -7085,31 +7101,38 @@ export const kitchenSurvivalCourse = {
         "Check how cold the cooler is."
       ],
       recommendedResponses: [
-        "I will follow the food safety rule.",
-        "I will clean it before continuing.",
-        "I will ask the supervisor first."
+        "Okay, I’ll check it now.",
+        "It is 38 degrees.",
+        "The temperature is too high.",
+        "Should I write it on the temperature log?"
       ],
       dialogue: [
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
+          speakerRoleZh: "员工要说",
           english: "Check the cooler temperature.",
           chinese: "检查冷藏柜温度。"
         },
         {
           speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "I’ll wash my hands now.",
-          chinese: "我现在去洗手。"
+          speakerRoleZh: "主管可能会说",
+          english: "Okay, check it and write it on the log.",
+          chinese: "好的，检查后写在记录表上。"
+        },
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "It is 38 degrees.",
+          chinese: "现在是38度。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "cool",
-          chinese: "冷却",
-          pronunciation: "kool",
-          note: "热食存放前先降温。",
-          example: "Let it cool."
+          term: "cooler temperature",
+          chinese: "冷藏柜温度",
+          pronunciation: "KOO-ler TEM-pruh-cher",
+          note: "指冷藏柜里面当前的温度。",
+          example: "The cooler temperature is too high."
         }
       ],
       listenRepeatCount: 3,
@@ -7148,31 +7171,38 @@ export const kitchenSurvivalCourse = {
         "Check how cold the freezer is."
       ],
       recommendedResponses: [
-        "I will follow the food safety rule.",
-        "I will clean it before continuing.",
-        "I will ask the supervisor first."
+        "Okay, I’ll check it now.",
+        "The freezer is at zero degrees.",
+        "The temperature looks normal.",
+        "The freezer is not cold enough."
       ],
       dialogue: [
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
+          speakerRoleZh: "员工要说",
           english: "Check the freezer temperature.",
           chinese: "检查冷冻柜温度。"
         },
         {
           speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "I’ll wash my hands now.",
-          chinese: "我现在去洗手。"
+          speakerRoleZh: "主管可能会说",
+          english: "Okay, tell me if it is not cold enough.",
+          chinese: "好的，如果不够冷就告诉我。"
+        },
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "The freezer is at zero degrees.",
+          chinese: "冷冻柜现在是0度。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "Check freezer",
-          chinese: "食品安全表达",
-          pronunciation: "food-SAYF-tee",
-          note: "用于洗手、手套、食物存放和过敏订单。 这里重点看 “Check freezer” 在句子里的用法。",
-          example: "Follow food safety."
+          term: "freezer temperature",
+          chinese: "冷冻柜温度",
+          pronunciation: "FREE-zer TEM-pruh-cher",
+          note: "指冷冻柜内部当前的温度。",
+          example: "The freezer temperature is normal."
         }
       ],
       listenRepeatCount: 3,
@@ -7207,35 +7237,42 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "This food is past its safe date.",
-        "The use-by date has passed."
+        "The use-by date has passed.",
+        "This food is past its safe date."
       ],
       recommendedResponses: [
-        "I will keep the food past separate.",
-        "I will label it clearly.",
-        "I will check before using it."
+        "Okay, I’ll throw it away.",
+        "Should I discard it now?",
+        "I’ll tell the supervisor.",
+        "Let me check the label again."
       ],
       dialogue: [
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
+          speakerRoleZh: "员工要说",
           english: "This food is past the use-by date.",
           chinese: "这个食物已经过了使用日期。"
         },
         {
           speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "I’ll wash my hands now.",
-          chinese: "我现在去洗手。"
+          speakerRoleZh: "主管可能会说",
+          english: "Do not use it. Throw it away.",
+          chinese: "不要用它，把它丢掉。"
+        },
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Okay, I’ll discard it now.",
+          chinese: "好的，我现在丢掉。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "food past",
-          chinese: "食品安全表达",
-          pronunciation: "food-SAYF-tee",
-          note: "用于洗手、手套、食物存放和过敏订单。 这里重点看 “food past” 在句子里的用法。",
-          example: "Follow food safety."
+          term: "past the use-by date",
+          chinese: "已经超过使用日期；已经过期",
+          pronunciation: "past-the-YOOZ-bye-date",
+          note: "表示食品已经超过标签规定的安全使用日期。",
+          example: "This milk is past the use-by date."
         }
       ],
       listenRepeatCount: 3,
@@ -7397,31 +7434,31 @@ export const kitchenSurvivalCourse = {
         "Wait until it cools, then cover it."
       ],
       recommendedResponses: [
-        "I will follow the food safety rule.",
-        "I will clean it before continuing.",
-        "I will ask the supervisor first."
+        "Okay, I’ll let it cool first.",
+        "How long should it cool?",
+        "I’ll cover it after it cools."
       ],
       dialogue: [
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
+          speakerRoleZh: "员工要说",
           english: "Let it cool before you cover it.",
           chinese: "盖起来之前先让它冷却。"
         },
         {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
+          speakerRole: "Coworker",
+          speakerRoleZh: "同事可能会说",
+          english: "Okay, I’ll wait before covering it.",
+          chinese: "好的，我等它冷却后再盖。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "cool",
-          chinese: "冷却",
-          pronunciation: "kool",
-          note: "热食存放前先降温。",
-          example: "Let it cool."
+          term: "let it cool",
+          chinese: "让它冷却",
+          pronunciation: "let-it-kool",
+          note: "热食在盖起来或存放前，先让温度降下来。",
+          example: "Let the soup cool."
         }
       ],
       listenRepeatCount: 3,
@@ -7517,33 +7554,35 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please don’t touch ready-to-eat food with bare hands."
+        "Do not handle ready-to-eat food with bare hands.",
+        "Use gloves for ready-to-eat food."
       ],
       recommendedResponses: [
-        "I will follow the food safety rule.",
-        "I will ask if I am not sure."
+        "Okay, I’ll put on gloves.",
+        "I’ll use tongs instead.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
+          speakerRoleZh: "员工要说",
           english: "Do not touch ready-to-eat food with bare hands.",
           chinese: "不要徒手接触即食食品。"
         },
         {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "I’ll wash my hands now.",
-          chinese: "我现在去洗手。"
+          speakerRole: "Coworker",
+          speakerRoleZh: "同事可能会说",
+          english: "Okay, I’ll use gloves or tongs.",
+          chinese: "好的，我会用手套或夹子。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "touch ready-to-eat",
-          chinese: "食品安全表达",
-          pronunciation: "food-SAYF-tee",
-          note: "用于洗手、手套、食物存放和过敏订单。 这里重点看 “touch ready-to-eat” 在句子里的用法。",
-          example: "Follow food safety."
+          term: "ready-to-eat food",
+          chinese: "即食食品",
+          pronunciation: "RED-ee-too-eet food",
+          note: "不需要再加热、可以直接吃的食物，不能徒手接触。",
+          example: "Use gloves for ready-to-eat food."
         }
       ],
       listenRepeatCount: 3,
@@ -7706,17 +7745,30 @@ export const kitchenSurvivalCourse = {
         "Do not put chemicals near food."
       ],
       recommendedResponses: [
-        "Move the chemicals away.",
-        "Store them on the chemical shelf.",
-        "Keep food and chemicals separate."
+        "Okay, I’ll move the chemicals away.",
+        "I’ll store them on the chemical shelf.",
+        "Food and chemicals should stay separate."
       ],
-      dialogue: [],
+      dialogue: [
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Keep chemicals away from food.",
+          chinese: "把化学品远离食物。"
+        },
+        {
+          speakerRole: "Coworker",
+          speakerRoleZh: "同事可能会说",
+          english: "Okay, I’ll move them to the chemical shelf.",
+          chinese: "好的，我把它们移到化学品架子上。"
+        }
+      ],
       vocabularyNotes: [
         {
           term: "chemicals",
           chinese: "清洁化学品",
           pronunciation: "KEM-i-kulz",
-          note: "餐厅里指清洁剂、消毒剂等，不要靠近食物。",
+          note: "餐厅里指清洁剂、消毒剂等，不能靠近食物。",
           example: "Store chemicals safely."
         }
       ],
@@ -7791,16 +7843,29 @@ export const kitchenSurvivalCourse = {
       ],
       recommendedResponses: [
         "Okay, red board for raw meat.",
-        "I will change boards now.",
-        "Where is the red board?"
+        "I’ll change boards now.",
+        "Where is the clean red board?"
       ],
-      dialogue: [],
+      dialogue: [
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Use the red cutting board for raw meat.",
+          chinese: "生肉用红色砧板。"
+        },
+        {
+          speakerRole: "Coworker",
+          speakerRoleZh: "同事可能会说",
+          english: "Okay, I’ll get the red board.",
+          chinese: "好的，我去拿红色砧板。"
+        }
+      ],
       vocabularyNotes: [
         {
           term: "raw meat",
           chinese: "生肉",
           pronunciation: "raw meet",
-          note: "raw 表示没有煮熟的。",
+          note: "没有煮熟的肉，需要使用指定砧板，避免污染其他食物。",
           example: "Keep raw meat separate."
         }
       ],
@@ -7841,17 +7906,30 @@ export const kitchenSurvivalCourse = {
       ],
       recommendedResponses: [
         "Okay, green board for vegetables.",
-        "I will use a clean green board.",
+        "I’ll use a clean green board.",
         "Where are the clean boards?"
       ],
-      dialogue: [],
+      dialogue: [
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Use the green cutting board for vegetables.",
+          chinese: "蔬菜用绿色砧板。"
+        },
+        {
+          speakerRole: "Coworker",
+          speakerRoleZh: "同事可能会说",
+          english: "Okay, I’ll use the green board.",
+          chinese: "好的，我用绿色砧板。"
+        }
+      ],
       vocabularyNotes: [
         {
-          term: "cutting board",
-          chinese: "砧板",
-          pronunciation: "KUH-ting bord",
-          note: "切菜、切肉用的板。不同食物可能用不同颜色。",
-          example: "Use a clean cutting board."
+          term: "green cutting board",
+          chinese: "绿色砧板",
+          pronunciation: "green KUH-ting bord",
+          note: "餐厅可能用不同颜色砧板区分蔬菜、生肉等食材。",
+          example: "Use the green board."
         }
       ],
       listenRepeatCount: 3,
@@ -7890,17 +7968,30 @@ export const kitchenSurvivalCourse = {
         "Get a new towel if it falls."
       ],
       recommendedResponses: [
-        "I will get a clean towel.",
-        "This towel touched the floor.",
+        "Okay, I’ll get a clean towel.",
+        "This towel touched the floor, so I’ll replace it.",
         "Where are the clean towels?"
       ],
-      dialogue: [],
+      dialogue: [
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Change the towel if it touches the floor.",
+          chinese: "抹布碰到地上就要换。"
+        },
+        {
+          speakerRole: "Coworker",
+          speakerRoleZh: "同事可能会说",
+          english: "Okay, I’ll get a clean towel.",
+          chinese: "好的，我去拿干净抹布。"
+        }
+      ],
       vocabularyNotes: [
         {
           term: "touches the floor",
           chinese: "碰到地上",
-          pronunciation: "TUH-chiz thuh flor",
-          note: "食品卫生场景里，碰到地上的东西通常要更换或清洗。",
+          pronunciation: "TUH-chiz the flor",
+          note: "抹布或工具碰到地面后不应继续用于食品区域。",
           example: "The towel touched the floor."
         }
       ],
@@ -8147,17 +8238,30 @@ export const kitchenSurvivalCourse = {
         "No eating on the prep table."
       ],
       recommendedResponses: [
-        "Okay, I will eat in the break area.",
-        "Sorry, I will move.",
+        "Okay, I’ll eat in the break area.",
+        "Sorry, I’ll move my food.",
         "Where can I eat?"
       ],
-      dialogue: [],
+      dialogue: [
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Do not eat on the prep table.",
+          chinese: "不要在备餐台上吃东西。"
+        },
+        {
+          speakerRole: "Coworker",
+          speakerRoleZh: "同事可能会说",
+          english: "Sorry, I’ll eat in the break area.",
+          chinese: "不好意思，我去休息区吃。"
+        }
+      ],
       vocabularyNotes: [
         {
           term: "prep table",
           chinese: "备餐台",
           pronunciation: "prep TAY-bul",
-          note: "准备食物的台面，不能在上面吃东西。",
+          note: "准备食物的工作台，不能在上面吃东西。",
           example: "Clean the prep table."
         }
       ],
@@ -8197,18 +8301,31 @@ export const kitchenSurvivalCourse = {
         "Store seafood away from other food."
       ],
       recommendedResponses: [
-        "Okay, I will move it.",
+        "Okay, I’ll store it separately.",
         "Which shelf should I use?",
-        "I will label it."
+        "I’ll label the seafood container."
       ],
-      dialogue: [],
+      dialogue: [
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Store raw seafood separately.",
+          chinese: "把生海鲜分开存放。"
+        },
+        {
+          speakerRole: "Coworker",
+          speakerRoleZh: "同事可能会说",
+          english: "Okay, I’ll put it on a separate shelf.",
+          chinese: "好的，我把它放到单独的架子上。"
+        }
+      ],
       vocabularyNotes: [
         {
-          term: "Store seafood",
-          chinese: "食品安全表达",
-          pronunciation: "food-SAYF-tee",
-          note: "用于洗手、手套、食物存放和过敏订单。 这里重点看 “Store seafood” 在句子里的用法。",
-          example: "Follow food safety."
+          term: "raw seafood",
+          chinese: "生海鲜",
+          pronunciation: "raw SEE-food",
+          note: "未煮熟的鱼、虾等海鲜，需要分开存放，避免污染。",
+          example: "Keep raw seafood separate."
         }
       ],
       listenRepeatCount: 3,
@@ -8281,17 +8398,30 @@ export const kitchenSurvivalCourse = {
         "Do not use the same utensils for allergen orders."
       ],
       recommendedResponses: [
-        "I will get clean utensils.",
+        "I’ll get clean utensils.",
         "Which allergy is it?",
-        "I will tell the manager."
+        "I’ll tell the manager before making it."
       ],
-      dialogue: [],
+      dialogue: [
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Use separate utensils for allergen orders.",
+          chinese: "过敏订单要使用单独的工具。"
+        },
+        {
+          speakerRole: "Coworker",
+          speakerRoleZh: "同事可能会说",
+          english: "Okay, I’ll get clean utensils.",
+          chinese: "好的，我去拿干净工具。"
+        }
+      ],
       vocabularyNotes: [
         {
           term: "allergen orders",
           chinese: "过敏相关订单",
           pronunciation: "AL-er-jen OR-derz",
-          note: "顾客对某种食物过敏时的订单，需要特别小心。",
+          note: "顾客对某种食物过敏时的订单，需要特别小心，避免交叉接触。",
           example: "This is an allergen order."
         }
       ],
