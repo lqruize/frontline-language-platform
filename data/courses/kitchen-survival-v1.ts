@@ -21592,414 +21592,420 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-    {
-      id: "delivery_complaints_001",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_missing_wrong_order",
-      scenarioTitle: "少餐、错餐和顾客投诉",
-      sequence: 3,
-      english: "One of my items is missing from the bag.",
-      chinese: "我的袋子里少了一样东西。",
-      scenario: "处理少餐、错餐、投诉、退款、重做和找经理。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/delivery_complaints_001-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_001-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      variants: [
-        "One item is not in the bag.",
-        "Something is missing from my order."
-      ],
-      recommendedResponses: [
-        "Can I see the item or receipt?",
-        "I will ask the manager about this.",
-        "We can check the refund options."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "One of my items is missing from the bag.",
-          chinese: "我的袋子里少了一样东西。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "I am sorry. Can I check the order number?",
-          chinese: "很抱歉。我可以核对一下订单号吗？"
-        },
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "Yes, it is order 24.",
-          chinese: "可以，是24号订单。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "Thank you. I will check it now.",
-          chinese: "谢谢。我现在核对。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "bag",
-          chinese: "袋子",
-          pronunciation: "bag-word",
-          note: "装餐品的外卖袋。",
-          example: "Check the bag."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "delivery_complaints_002",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_missing_wrong_order",
-      scenarioTitle: "少餐、错餐和顾客投诉",
-      sequence: 2,
-      english: "I'm sorry. Which item is missing?",
-      chinese: "很抱歉。少的是哪一样？",
-      scenario: "处理少餐、错餐、投诉、退款、重做和找经理。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Staff",
-      roleZh: "前台员工要说",
-      audioNormal: "/audio/en-US/delivery_complaints_002-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_002-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Staff",
-      speakerRoleZh: "前台员工要说",
-      variants: [
-        "I'm sorry. Which item is missing, please?"
-      ],
-      recommendedResponses: [
-        "Thank you. I will check the order.",
-        "I will ask the kitchen for an update."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "I'm sorry. Which item is missing?",
-          chinese: "很抱歉。少的是哪一样？"
-        },
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "The fries are missing.",
-          chinese: "少了薯条。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "Which item",
-          chinese: "哪一样东西",
-          pronunciation: "which-EYE-tem",
-          note: "用来确认顾客订单里少了哪一个餐品。",
-          example: "Which item is missing?"
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "delivery_complaints_003",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_missing_wrong_order",
-      scenarioTitle: "少餐、错餐和顾客投诉",
-      sequence: 1,
-      english: "The fries are missing.",
-      chinese: "薯条没有装进去。",
-      scenario: "处理少餐、错餐、投诉、退款、重做和找经理。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/delivery_complaints_003-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_003-slow.mp3",
-      isFree: true,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      variants: [
-        "The fries are not in the bag."
-      ],
-      recommendedResponses: [
-        "Can I see the item or receipt?",
-        "I will ask the manager about this.",
-        "We can check the refund options."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客",
-          english: "The fries are missing.",
-          chinese: "薯条没有装进去。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Sure, I can help.",
-          chinese: "可以，我来帮你。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "fries missing",
-          chinese: "外卖投诉表达",
-          pronunciation: "di-LIV-er-ee kum-PLAYNT",
-          note: "用于电话订单、外卖取餐和顾客问题。 这里重点看 “fries missing” 在句子里的用法。",
-          example: "Check the order."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "delivery_complaints_004",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_missing_wrong_order",
-      scenarioTitle: "少餐、错餐和顾客投诉",
-      sequence: 4,
-      english: "I'd like a refund for this order.",
-      chinese: "我想退掉这份订单并退款。",
-      scenario: "处理少餐、错餐、投诉、退款、重做和找经理。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/delivery_complaints_004-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_004-slow.mp3",
-      isFree: true,
-      safetyLevel: "caution",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 3",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      variants: [
-        "I want a refund for this order."
-      ],
-      recommendedResponses: [
-        "Can I check the refund?",
-        "I will update the customer about refund.",
-        "I will ask the kitchen about refund."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客",
-          english: "I'd like a refund for this order.",
-          chinese: "我想退掉这份订单并退款。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Sure, I can help.",
-          chinese: "可以，我来帮你。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Let me check that for you.",
-          chinese: "我帮你查一下。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "refund",
-          chinese: "退款",
-          pronunciation: "REE-fund",
-          note: "把钱退回给顾客。",
-          example: "I need a refund."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "delivery_complaints_005",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_delivery_pickup",
-      scenarioTitle: "Uber Eats和DoorDash取餐",
-      sequence: 9,
-      english: "Was this order placed in store or through an app?",
-      chinese: "这个订单是在店里下的，还是通过外卖平台下的？",
-      scenario: "外卖司机取餐、确认号码、等待和缺货。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Staff",
-      roleZh: "前台员工要说",
-      audioNormal: "/audio/en-US/delivery_complaints_005-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_005-slow.mp3",
-      isFree: false,
-      safetyLevel: "caution",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Staff",
-      speakerRoleZh: "前台员工要说",
-      variants: [
-        "Was this order placed in store or through an app, please?"
-      ],
-      recommendedResponses: [
-        "Can I check the order placed?",
-        "I will update the customer about order placed.",
-        "I will ask the kitchen about order placed."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "Was this order placed in store or through an app?",
-          chinese: "这个订单是在店里下的，还是通过外卖平台下的？"
-        },
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "I ordered through the app.",
-          chinese: "我是通过 App 下单的。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "order placed",
-          chinese: "订单下单",
-          pronunciation: "OR-der placed",
-          note: "说明订单是在哪里、通过什么方式下的。",
-          example: "The order was placed online."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "delivery_complaints_006",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_delivery_pickup",
-      scenarioTitle: "Uber Eats和DoorDash取餐",
-      sequence: 1,
-      english: "I ordered through a delivery app.",
-      chinese: "我是通过外卖平台下单的。",
-      scenario: "外卖司机取餐、确认号码、等待和缺货。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/delivery_complaints_006-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_006-slow.mp3",
-      isFree: false,
-      safetyLevel: "caution",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      variants: [
-        "I placed the order in a delivery app."
-      ],
-      recommendedResponses: [
-        "Can I check the ordered through?",
-        "I will update the customer about ordered through.",
-        "I will ask the kitchen about ordered through."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客",
-          english: "I ordered through a delivery app.",
-          chinese: "我是通过外卖平台下单的。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Sure, I can help.",
-          chinese: "可以，我来帮你。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Let me check that for you.",
-          chinese: "我帮你查一下。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "order",
-          chinese: "订单",
-          pronunciation: "OR-der",
-          note: "顾客点的餐或外卖单。",
-          example: "Check the order."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "delivery_complaints_001",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_missing_wrong_order",
+        scenarioTitle: "少餐、错餐和顾客投诉",
+        sequence: 3,
+        english: "One item is missing from my order.",
+        chinese: "我的订单少了一样东西。",
+        scenario: "顾客发现少餐、错餐、错口味或漏饮料时，店员需要先道歉、核对订单并解决。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/delivery_complaints_001-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_001-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Something is missing from my order.",
+          "One item is not in the bag."
+        ],
+        recommendedResponses: [
+          "I'm sorry. Let me check your order.",
+          "Which item is missing?",
+          "I'll get the missing item for you."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "One item is missing from my order.",
+            chinese: "我的订单少了一样东西。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "I'm sorry. Let me check your order.",
+            chinese: "很抱歉。我查一下您的订单。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "I'll get the missing item for you now.",
+            chinese: "我现在帮您把少的东西补上。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "missing from my order",
+            chinese: "我的订单里缺少",
+            pronunciation: "MIS-ing from my OR-der",
+            note: "顾客说明订单里少了某样东西。",
+            example: "The drink is missing from my order."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "delivery_complaints_002",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_missing_wrong_order",
+        scenarioTitle: "少餐、错餐和顾客投诉",
+        sequence: 2,
+        english: "I'm sorry. Which item is missing?",
+        chinese: "很抱歉。少的是哪一样？",
+        scenario: "顾客发现少餐、错餐、错口味或漏饮料时，店员需要先道歉、核对订单并解决。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Staff",
+        roleZh: "店员要说",
+        audioNormal: "/audio/en-US/delivery_complaints_002-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_002-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Staff",
+        speakerRoleZh: "店员要说",
+        variants: [
+          "I'm sorry. What item is missing?",
+          "Sorry, which item did you not receive?"
+        ],
+        recommendedResponses: [
+          "The fries are missing.",
+          "We did not get the drink.",
+          "One sauce is missing."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "I'm sorry. Which item is missing?",
+            chinese: "很抱歉。少的是哪一样？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "The fries are missing.",
+            chinese: "薯条少了。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "I'll get them for you now.",
+            chinese: "我现在帮您补上。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "which item",
+            chinese: "哪一样东西",
+            pronunciation: "which-EYE-tem",
+            note: "询问顾客具体少了哪一项。",
+            example: "Which item is wrong?"
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "delivery_complaints_003",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_missing_wrong_order",
+        scenarioTitle: "少餐、错餐和顾客投诉",
+        sequence: 1,
+        english: "The fries are missing.",
+        chinese: "薯条少了。",
+        scenario: "顾客发现少餐、错餐、错口味或漏饮料时，店员需要先道歉、核对订单并解决。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/delivery_complaints_003-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_003-slow.mp3",
+        isFree: true,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "I did not get the fries.",
+          "There are no fries in the bag."
+        ],
+        recommendedResponses: [
+          "I'm sorry. I'll get the fries for you.",
+          "Let me check your order first.",
+          "We'll fix that right away."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "The fries are missing.",
+            chinese: "薯条少了。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "I'm sorry. I'll get the fries for you now.",
+            chinese: "很抱歉。我现在帮您补薯条。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "fries are missing",
+            chinese: "薯条少了",
+            pronunciation: "fries-ar-MIS-ing",
+            note: "顾客说明袋子里没有应有的薯条。",
+            example: "The sauce is missing."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "delivery_complaints_004",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_missing_wrong_order",
+        scenarioTitle: "少餐、错餐和顾客投诉",
+        sequence: 4,
+        english: "I'd like a refund for this order.",
+        chinese: "我想给这份订单退款。",
+        scenario: "顾客发现少餐、错餐、错口味或漏饮料时，店员需要先道歉、核对订单并解决。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/delivery_complaints_004-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_004-slow.mp3",
+        isFree: true,
+        safetyLevel: "caution",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 3",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can I get a refund for this order?",
+          "I want a refund, please."
+        ],
+        recommendedResponses: [
+          "Let me get the manager for you.",
+          "I can check the order first.",
+          "Was this order placed online or in store?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I'd like a refund for this order.",
+            chinese: "我想给这份订单退款。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "I understand. Let me get the manager for you.",
+            chinese: "我明白。我帮您叫经理。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "refund",
+            chinese: "退款",
+            pronunciation: "REE-fund",
+            note: "顾客要求把已付款项退回。",
+            example: "I need a refund."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "delivery_complaints_005",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_delivery_pickup",
+        scenarioTitle: "Uber Eats和DoorDash取餐",
+        sequence: 9,
+        english: "Which delivery app are you picking up for?",
+        chinese: "你是来取哪个外卖平台的订单？",
+        scenario: "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Staff",
+        roleZh: "店员要说",
+        audioNormal: "/audio/en-US/delivery_complaints_005-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_005-slow.mp3",
+        isFree: false,
+        safetyLevel: "caution",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Staff",
+        speakerRoleZh: "店员要说",
+        variants: [
+          "What delivery app is the order from?",
+          "Are you picking up for Uber Eats or DoorDash?"
+        ],
+        recommendedResponses: [
+          "I'm with DoorDash.",
+          "It's an Uber Eats order.",
+          "I'm picking up from Skip."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "Which delivery app are you picking up for?",
+            chinese: "你是来取哪个外卖平台的订单？"
+          },
+          {
+            speakerRole: "Driver",
+            speakerRoleZh: "外卖司机可能会说",
+            english: "I'm picking up an Uber Eats order.",
+            chinese: "我来取 Uber Eats 的订单。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "What is the customer name?",
+            chinese: "顾客姓名是什么？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "delivery app",
+            chinese: "外卖平台",
+            pronunciation: "di-LIV-er-ee app",
+            note: "指 Uber Eats、DoorDash 等外卖软件。",
+            example: "Which delivery app is it?"
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "delivery_complaints_006",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_delivery_pickup",
+        scenarioTitle: "Uber Eats和DoorDash取餐",
+        sequence: 1,
+        english: "I ordered through a delivery app.",
+        chinese: "我是通过外卖平台下单的。",
+        scenario: "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/delivery_complaints_006-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_006-slow.mp3",
+        isFree: false,
+        safetyLevel: "caution",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "I placed the order on an app.",
+          "I ordered it online through the app."
+        ],
+        recommendedResponses: [
+          "Which app did you use?",
+          "May I see the order on your phone?",
+          "Let me check the app order."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I ordered through a delivery app.",
+            chinese: "我是通过外卖平台下单的。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "Which app did you use?",
+            chinese: "您用的是哪个平台？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Uber Eats.",
+            chinese: "Uber Eats。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "through a delivery app",
+            chinese: "通过外卖平台",
+            pronunciation: "throo uh di-LIV-er-ee app",
+            note: "表示订单不是店内点的，而是在外卖软件上下的。",
+            example: "I paid through the app."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "delivery_complaints_007",
       moduleId: "delivery_complaints",
@@ -22065,70 +22071,77 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "delivery_complaints_008",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_delivery_pickup",
-      scenarioTitle: "Uber Eats和DoorDash取餐",
-      sequence: 3,
-      english: "I'm picking up order 742 for Jordan.",
-      chinese: "我是来取Jordan的742号订单。",
-      scenario: "外卖司机取餐、确认号码、等待和缺货。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Driver",
-      roleZh: "外卖司机可能会说",
-      audioNormal: "/audio/en-US/delivery_complaints_008-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_008-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Driver",
-      speakerRoleZh: "外卖司机可能会说",
-      variants: [
-        "I am here for Jordan’s order."
-      ],
-      recommendedResponses: [
-        "Can I check the picking order?",
-        "I will update the customer about picking order.",
-        "I will ask the kitchen about picking order."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Driver",
-          speakerRoleZh: "外卖司机",
-          english: "I'm picking up order 742 for Jordan.",
-          chinese: "我是来取Jordan的742号订单。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check your order.",
-          chinese: "我帮你查一下订单。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "picking up order",
-          chinese: "取订单",
-          pronunciation: "PIK-ing up OR-der",
-          note: "外卖司机或顾客来拿已经做好的订单。",
-          example: "I am picking up order 24."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "delivery_complaints_008",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_delivery_pickup",
+        scenarioTitle: "Uber Eats和DoorDash取餐",
+        sequence: 3,
+        english: "I'm picking up order 742 for Jordan.",
+        chinese: "我是来取 Jordan 的 742 号订单。",
+        scenario: "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Driver",
+        roleZh: "外卖司机可能会说",
+        audioNormal: "/audio/en-US/delivery_complaints_008-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_008-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Driver",
+        speakerRoleZh: "外卖司机可能会说",
+        variants: [
+          "I have order 742 for Jordan.",
+          "I'm here for Jordan's order, number 742."
+        ],
+        recommendedResponses: [
+          "Let me check that order.",
+          "It is almost ready.",
+          "Please confirm pickup when I hand it to you."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Driver",
+            speakerRoleZh: "外卖司机可能会说",
+            english: "I'm picking up order 742 for Jordan.",
+            chinese: "我是来取 Jordan 的 742 号订单。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "Let me check that order.",
+            chinese: "我查一下这个订单。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "It will be ready in five minutes.",
+            chinese: "大概五分钟后好。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "picking up order",
+            chinese: "取订单",
+            pronunciation: "PIK-ing-up OR-der",
+            note: "司机说明自己是来取哪一份外卖订单。",
+            example: "I am picking up order 12."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "delivery_complaints_009",
       moduleId: "delivery_complaints",
@@ -22199,135 +22212,148 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "delivery_complaints_010",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_delivery_pickup",
-      scenarioTitle: "Uber Eats和DoorDash取餐",
-      sequence: 4,
-      english: "I'm with DoorDash.",
-      chinese: "我是DoorDash的司机。",
-      scenario: "外卖司机取餐、确认号码、等待和缺货。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Driver",
-      roleZh: "外卖司机可能会说",
-      audioNormal: "/audio/en-US/delivery_complaints_010-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_010-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Driver",
-      speakerRoleZh: "外卖司机可能会说",
-      variants: [
-        "I am a DoorDash driver."
-      ],
-      recommendedResponses: [
-        "I will check the delivery status.",
-        "Can you confirm the name?",
-        "I will ask the kitchen for an update."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Driver",
-          speakerRoleZh: "外卖司机",
-          english: "I'm with DoorDash.",
-          chinese: "我是DoorDash的司机。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "DoorDash",
-          chinese: "DoorDash外卖平台",
-          pronunciation: "DOR-dash",
-          note: "北美常见外卖平台。",
-          example: "I am with DoorDash."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "delivery_complaints_011",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_delivery_pickup",
-      scenarioTitle: "Uber Eats和DoorDash取餐",
-      sequence: 8,
-      english: "The order is ready. Please confirm pickup in the app.",
-      chinese: "订单好了。请在App里确认取餐。",
-      scenario: "外卖司机取餐、确认号码、等待和缺货。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Staff",
-      roleZh: "前台员工要说",
-      audioNormal: "/audio/en-US/delivery_complaints_011-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_011-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Staff",
-      speakerRoleZh: "前台员工要说",
-      variants: [
-        "Your order is ready. Please confirm pickup.",
-        "Please mark it picked up in the app."
-      ],
-      recommendedResponses: [
-        "Can I check the order ready?",
-        "I will update the customer about order ready.",
-        "I will ask the kitchen about order ready."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "前台员工",
-          english: "The order is ready. Please confirm pickup in the app.",
-          chinese: "订单好了。请在App里确认取餐。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Okay, I’ll confirm it.",
-          chinese: "好的。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "pickup",
-          chinese: "取餐",
-          pronunciation: "PIK-up",
-          note: "顾客或外卖司机来拿订单。",
-          example: "Pickup is ready."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "delivery_complaints_010",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_delivery_pickup",
+        scenarioTitle: "Uber Eats和DoorDash取餐",
+        sequence: 4,
+        english: "I'm with DoorDash.",
+        chinese: "我是 DoorDash 的司机。",
+        scenario: "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Driver",
+        roleZh: "外卖司机可能会说",
+        audioNormal: "/audio/en-US/delivery_complaints_010-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_010-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Driver",
+        speakerRoleZh: "外卖司机可能会说",
+        variants: [
+          "I'm picking up for DoorDash.",
+          "This is a DoorDash pickup."
+        ],
+        recommendedResponses: [
+          "What is the customer name?",
+          "What is the order number?",
+          "Please wait. I will check it."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Driver",
+            speakerRoleZh: "外卖司机可能会说",
+            english: "I'm with DoorDash.",
+            chinese: "我是 DoorDash 的司机。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "What is the customer name?",
+            chinese: "顾客姓名是什么？"
+          },
+          {
+            speakerRole: "Driver",
+            speakerRoleZh: "外卖司机可能会说",
+            english: "It's for Maria.",
+            chinese: "是 Maria 的订单。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "with DoorDash",
+            chinese: "DoorDash 平台的",
+            pronunciation: "with DOOR-dash",
+            note: "司机用来说明自己代表哪个外卖平台取餐。",
+            example: "I'm with Uber Eats."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "delivery_complaints_011",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_delivery_pickup",
+        scenarioTitle: "Uber Eats和DoorDash取餐",
+        sequence: 8,
+        english: "The order is ready. Please confirm the pickup in the app.",
+        chinese: "订单好了。请在 App 里确认取餐。",
+        scenario: "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Staff",
+        roleZh: "店员要说",
+        audioNormal: "/audio/en-US/delivery_complaints_011-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_011-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Staff",
+        speakerRoleZh: "店员要说",
+        variants: [
+          "Your order is ready. Please confirm pickup on your phone.",
+          "Please mark the order as picked up in the app."
+        ],
+        recommendedResponses: [
+          "Okay, I'll confirm it now.",
+          "It is confirmed.",
+          "The app is not letting me confirm it."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "The order is ready. Please confirm the pickup in the app.",
+            chinese: "订单好了。请在 App 里确认取餐。"
+          },
+          {
+            speakerRole: "Driver",
+            speakerRoleZh: "外卖司机可能会说",
+            english: "Okay, I'll confirm it now.",
+            chinese: "好的，我现在确认。"
+          },
+          {
+            speakerRole: "Driver",
+            speakerRoleZh: "外卖司机可能会说",
+            english: "It is confirmed.",
+            chinese: "已经确认了。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "confirm the pickup",
+            chinese: "确认取餐",
+            pronunciation: "kun-FIRM the PIK-up",
+            note: "司机在外卖软件里确认已经拿到餐。",
+            example: "Confirm the pickup now."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "delivery_complaints_012",
       moduleId: "delivery_complaints",
@@ -22392,76 +22418,77 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "delivery_complaints_013",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_delivery_pickup",
-      scenarioTitle: "Uber Eats和DoorDash取餐",
-      sequence: 6,
-      english: "Yes, I'd like to place an order for pickup.",
-      chinese: "是的，我想下一个自取订单。",
-      scenario: "外卖司机取餐、确认号码、等待和缺货。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/delivery_complaints_013-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_013-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      variants: [
-        "I want to place a pickup order."
-      ],
-      recommendedResponses: [
-        "Can I check the like place?",
-        "I will update the customer about like place.",
-        "I will ask the kitchen about like place."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客",
-          english: "Yes, I'd like to place an order for pickup.",
-          chinese: "是的，我想下一个自取订单。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Sure, I can help.",
-          chinese: "可以，我来帮你。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Let me check that for you.",
-          chinese: "我帮你查一下。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "pickup",
-          chinese: "取餐",
-          pronunciation: "PIK-up",
-          note: "顾客或外卖司机来拿订单。",
-          example: "Pickup is ready."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "delivery_complaints_013",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_delivery_pickup",
+        scenarioTitle: "Uber Eats和DoorDash取餐",
+        sequence: 6,
+        english: "I'd like to place an order for pickup.",
+        chinese: "我想下一个自取订单。",
+        scenario: "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/delivery_complaints_013-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_013-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "I want to place a pickup order.",
+          "Can I order for pickup?"
+        ],
+        recommendedResponses: [
+          "Sure. What would you like?",
+          "What time would you like to pick it up?",
+          "May I have your name for the order?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I'd like to place an order for pickup.",
+            chinese: "我想下一个自取订单。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "Sure. What would you like?",
+            chinese: "可以。您想点什么？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Ten wings, please.",
+            chinese: "十个鸡翅。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "order for pickup",
+            chinese: "自取订单",
+            pronunciation: "OR-der for PIK-up",
+            note: "顾客电话或柜台下单，稍后自己来取。",
+            example: "This is for pickup."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "delivery_complaints_014",
       moduleId: "delivery_complaints",
@@ -22662,199 +22689,207 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "delivery_complaints_017",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_delivery_pickup",
-      scenarioTitle: "Uber Eats和DoorDash取餐",
-      sequence: 2,
-      english: "When do you need the order?",
-      chinese: "您什么时候需要这份订单？",
-      scenario: "外卖司机取餐、确认号码、等待和缺货。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Staff",
-      roleZh: "前台员工要说",
-      audioNormal: "/audio/en-US/delivery_complaints_017-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_017-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Staff",
-      speakerRoleZh: "前台员工要说",
-      variants: [
-        "When do you need the order, please?"
-      ],
-      recommendedResponses: [
-        "Can I check the When need?",
-        "I will update the customer about When need.",
-        "I will ask the kitchen about When need."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "前台员工",
-          english: "When do you need the order?",
-          chinese: "您什么时候需要这份订单？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check your order.",
-          chinese: "我帮你查一下订单。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "order",
-          chinese: "订单",
-          pronunciation: "OR-der",
-          note: "顾客点的餐或外卖单。",
-          example: "Check the order."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "delivery_complaints_018",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_delivery_pickup",
-      scenarioTitle: "Uber Eats和DoorDash取餐",
-      sequence: 5,
-      english: "Tomorrow at noon.",
-      chinese: "明天中午十二点。",
-      scenario: "外卖司机取餐、确认号码、等待和缺货。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/delivery_complaints_018-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_018-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      variants: [
-        "Noon tomorrow works.",
-        "Tomorrow at twelve is okay."
-      ],
-      recommendedResponses: [
-        "I will check the delivery status.",
-        "Can you confirm the name?",
-        "I will ask the kitchen for an update."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客",
-          english: "Tomorrow at noon.",
-          chinese: "明天中午十二点。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Sure, I can help.",
-          chinese: "可以，我来帮你。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "Tomorrow noon",
-          chinese: "外卖投诉表达",
-          pronunciation: "di-LIV-er-ee kum-PLAYNT",
-          note: "用于电话订单、外卖取餐和顾客问题。 这里重点看 “Tomorrow noon” 在句子里的用法。",
-          example: "Check the order."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "delivery_complaints_019",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_delivery_pickup",
-      scenarioTitle: "Uber Eats和DoorDash取餐",
-      sequence: 7,
-      english: "Can we sit anywhere?",
-      chinese: "我们可以随便坐吗？",
-      scenario: "外卖司机取餐、确认号码、等待和缺货。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/delivery_complaints_019-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_019-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      variants: [
-        "Can we sit anywhere, please?"
-      ],
-      recommendedResponses: [
-        "I will check the delivery status.",
-        "Can you confirm the name?",
-        "I will ask the kitchen for an update."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客",
-          english: "Can we sit anywhere?",
-          chinese: "我们可以随便坐吗？"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Sure, I can help.",
-          chinese: "可以，我来帮你。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "anywhere",
-          chinese: "外卖投诉表达",
-          pronunciation: "di-LIV-er-ee kum-PLAYNT",
-          note: "用于电话订单、外卖取餐和顾客问题。 这里重点看 “anywhere” 在句子里的用法。",
-          example: "Check the order."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "delivery_complaints_017",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_delivery_pickup",
+        scenarioTitle: "Uber Eats和DoorDash取餐",
+        sequence: 2,
+        english: "What time would you like to pick it up?",
+        chinese: "您想几点来取？",
+        scenario: "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Staff",
+        roleZh: "店员要说",
+        audioNormal: "/audio/en-US/delivery_complaints_017-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_017-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Staff",
+        speakerRoleZh: "店员要说",
+        variants: [
+          "When would you like to pick it up?",
+          "What pickup time do you want?"
+        ],
+        recommendedResponses: [
+          "At noon, please.",
+          "In about twenty minutes.",
+          "As soon as possible, please."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "What time would you like to pick it up?",
+            chinese: "您想几点来取？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "At noon, please.",
+            chinese: "中午十二点。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "Okay. It will be ready at noon.",
+            chinese: "好的。中午会准备好。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "pick it up",
+            chinese: "来取",
+            pronunciation: "pik-it-up",
+            note: "顾客到店把已经下好的订单拿走。",
+            example: "Pick it up at six."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "delivery_complaints_018",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_delivery_pickup",
+        scenarioTitle: "Uber Eats和DoorDash取餐",
+        sequence: 5,
+        english: "Tomorrow at noon.",
+        chinese: "明天中午十二点。",
+        scenario: "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/delivery_complaints_018-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_018-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "At noon tomorrow.",
+          "I will pick it up tomorrow at noon."
+        ],
+        recommendedResponses: [
+          "Okay. We will have it ready then.",
+          "May I have your name for the order?",
+          "Your pickup time is tomorrow at noon."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Tomorrow at noon.",
+            chinese: "明天中午十二点。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "Okay. May I have your name for the order?",
+            chinese: "好的。可以告诉我订单姓名吗？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "at noon",
+            chinese: "中午十二点",
+            pronunciation: "at-noon",
+            note: "表示具体取餐时间是中午 12 点。",
+            example: "Meet me at noon."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "delivery_complaints_019",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_delivery_pickup",
+        scenarioTitle: "Uber Eats和DoorDash取餐",
+        sequence: 7,
+        english: "What is the customer’s name?",
+        chinese: "顾客姓名是什么？",
+        scenario: "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Driver",
+        roleZh: "外卖司机可能会说",
+        audioNormal: "/audio/en-US/delivery_complaints_019-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_019-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Driver",
+        speakerRoleZh: "外卖司机可能会说",
+        variants: [
+          "What name is on the order?",
+          "Who is the order for?"
+        ],
+        recommendedResponses: [
+          "It's for Maria.",
+          "The customer name is Jordan.",
+          "The order is under Alex."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Driver",
+            speakerRoleZh: "外卖司机可能会说",
+            english: "What is the customer’s name?",
+            chinese: "顾客姓名是什么？"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "The name is Maria. Please wait a moment.",
+            chinese: "名字是 Maria。请稍等。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "customer’s name",
+            chinese: "顾客姓名",
+            pronunciation: "KUS-tuh-merz name",
+            note: "用姓名核对外卖订单。",
+            example: "What's the customer name?"
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "delivery_complaints_020",
       moduleId: "delivery_complaints",
@@ -23055,72 +23090,78 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "delivery_complaints_023",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_delivery_pickup",
-      scenarioTitle: "Uber Eats和DoorDash取餐",
-      sequence: 10,
-      english: "The delivery tablet is down, and this order didn't print.",
-      chinese: "外卖平板出故障了，这份订单没有打印出来。",
-      scenario: "外卖司机取餐、确认号码、等待和缺货。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Staff",
-      roleZh: "前台员工要说",
-      audioNormal: "/audio/en-US/delivery_complaints_023-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_023-slow.mp3",
-      isFree: false,
-      safetyLevel: "caution",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "pos_outage",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Staff",
-      speakerRoleZh: "前台员工要说",
-      variants: [
-        "This delivery tablet is down, and this order didn't print.",
-        "There is a problem with this."
-      ],
-      recommendedResponses: [
-        "Can I check the delivery tablet?",
-        "I will update the customer about delivery tablet.",
-        "I will ask the kitchen about delivery tablet."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "前台员工",
-          english: "The delivery tablet is down, and this order didn't print.",
-          chinese: "外卖平板出故障了，这份订单没有打印出来。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check your order.",
-          chinese: "我帮你查一下订单。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "order",
-          chinese: "订单",
-          pronunciation: "OR-der",
-          note: "顾客点的餐或外卖单。",
-          example: "Check the order."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "delivery_complaints_023",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_delivery_pickup",
+        scenarioTitle: "Uber Eats和DoorDash取餐",
+        sequence: 10,
+        english: "The delivery tablet is down, and this order didn't print.",
+        chinese: "外卖平板出故障了，这份订单没有打印出来。",
+        scenario: "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Staff",
+        roleZh: "店员要说",
+        audioNormal: "/audio/en-US/delivery_complaints_023-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_023-slow.mp3",
+        isFree: false,
+        safetyLevel: "caution",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "pos_outage",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Staff",
+        speakerRoleZh: "店员要说",
+        variants: [
+          "The tablet is not working, so the order didn't print.",
+          "The app order did not print from the tablet."
+        ],
+        recommendedResponses: [
+          "Can you check the app order on my phone?",
+          "How long will it take?",
+          "Should I wait here?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "The delivery tablet is down, and this order didn't print.",
+            chinese: "外卖平板出故障了，这份订单没有打印出来。"
+          },
+          {
+            speakerRole: "Driver",
+            speakerRoleZh: "外卖司机可能会说",
+            english: "Can you check the order on my phone?",
+            chinese: "你可以看我手机上的订单吗？"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "Yes. Let me check it now.",
+            chinese: "可以。我现在核对。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "tablet is down",
+            chinese: "平板出故障",
+            pronunciation: "TAB-let iz down",
+            note: "店里的外卖平板不能正常接单或打印。",
+            example: "The system is down."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "delivery_complaints_024",
       moduleId: "delivery_complaints",
@@ -23386,283 +23427,292 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "delivery_complaints_028",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_phone_orders",
-      scenarioTitle: "电话订单",
-      sequence: 8,
-      english: "Thank you for calling. How may I help you today?",
-      chinese: "感谢您的来电。今天有什么可以帮您？",
-      scenario: "接电话、查订单、确认姓名和取餐时间。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Agent",
-      roleZh: "客服人员要说",
-      audioNormal: "/audio/en-US/delivery_complaints_028-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_028-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "customer_service",
-        "call_center",
-        "phone",
-        "privacy",
-        "safety",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Agent",
-      speakerRoleZh: "客服人员要说",
-      variants: [
-        "Thank you for calling. How may I help you today, please?"
-      ],
-      recommendedResponses: [
-        "I will check the delivery status.",
-        "Can you confirm the name?",
-        "I will ask the kitchen for an update."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Agent",
-          speakerRoleZh: "客服可能会说",
-          english: "Thank you for calling. How may I help you today?",
-          chinese: "感谢来电。今天有什么可以帮您？"
-        },
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "I need help with my order.",
-          chinese: "我的订单需要帮助。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "Thank calling",
-          chinese: "外卖投诉表达",
-          pronunciation: "di-LIV-er-ee kum-PLAYNT",
-          note: "用于电话订单、外卖取餐和顾客问题。 这里重点看 “Thank calling” 在句子里的用法。",
-          example: "Check the order."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "delivery_complaints_029",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_phone_orders",
-      scenarioTitle: "电话订单",
-      sequence: 2,
-      english: "I need help with my order.",
-      chinese: "我的订单需要帮助。",
-      scenario: "接电话、查订单、确认姓名和取餐时间。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Customer",
-      roleZh: "客户可能会说",
-      audioNormal: "/audio/en-US/delivery_complaints_029-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_029-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "customer_service",
-        "call_center",
-        "phone",
-        "privacy",
-        "safety",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "客户可能会说",
-      variants: [
-        "I need to get help with my order.",
-        "I have to get help with my order."
-      ],
-      recommendedResponses: [
-        "Can I check the need help?",
-        "I will update the customer about need help.",
-        "I will ask the kitchen about need help."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "客户",
-          english: "I need help with my order.",
-          chinese: "我的订单需要帮助。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Sure, I can help.",
-          chinese: "可以，我来帮你。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Let me check that for you.",
-          chinese: "我帮你查一下。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "need help",
-          chinese: "需要帮助",
-          pronunciation: "need-help",
-          note: "任务不会做或做不过来时求助。",
-          example: "I need help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "delivery_complaints_030",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_phone_orders",
-      scenarioTitle: "电话订单",
-      sequence: 3,
-      english: "May I have your order number?",
-      chinese: "可以告诉我您的订单号码吗？",
-      scenario: "接电话、查订单、确认姓名和取餐时间。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Agent",
-      roleZh: "客服人员要说",
-      audioNormal: "/audio/en-US/delivery_complaints_030-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_030-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "customer_service",
-        "call_center",
-        "phone",
-        "privacy",
-        "safety",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Agent",
-      speakerRoleZh: "客服人员要说",
-      variants: [
-        "May I have your order number, please?"
-      ],
-      recommendedResponses: [
-        "Can I check the order number?",
-        "I will update the customer about order number.",
-        "I will ask the kitchen about order number."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Agent",
-          speakerRoleZh: "客服人员",
-          english: "May I have your order number?",
-          chinese: "可以告诉我您的订单号码吗？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check your order.",
-          chinese: "我帮你查一下订单。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "order number",
-          chinese: "订单号",
-          pronunciation: "OR-der NUM-ber",
-          note: "用来核对订单的号码。",
-          example: "Check the order number."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "delivery_complaints_031",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_phone_orders",
-      scenarioTitle: "电话订单",
-      sequence: 4,
-      english: "I can't find my order number.",
-      chinese: "我找不到订单号码。",
-      scenario: "接电话、查订单、确认姓名和取餐时间。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Customer",
-      roleZh: "客户可能会说",
-      audioNormal: "/audio/en-US/delivery_complaints_031-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_031-slow.mp3",
-      isFree: false,
-      safetyLevel: "caution",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "customer_service",
-        "call_center",
-        "phone",
-        "privacy",
-        "safety",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "客户可能会说",
-      variants: [
-        "I do not see my order number."
-      ],
-      recommendedResponses: [
-        "Can I check the order number?",
-        "I will update the customer about order number.",
-        "I will ask the kitchen about order number."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "客户",
-          english: "I can't find my order number.",
-          chinese: "我找不到订单号码。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Sure, I can help.",
-          chinese: "可以，我来帮你。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Let me check that for you.",
-          chinese: "我帮你查一下。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "order number",
-          chinese: "订单号",
-          pronunciation: "OR-der NUM-ber",
-          note: "用来核对订单的号码。",
-          example: "Check the order number."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "delivery_complaints_028",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_phone_orders",
+        scenarioTitle: "电话订单",
+        sequence: 8,
+        english: "Thank you for calling. How may I help you?",
+        chinese: "感谢来电。有什么可以帮您？",
+        scenario: "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Agent",
+        roleZh: "电话客服要说",
+        audioNormal: "/audio/en-US/delivery_complaints_028-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_028-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "customer_service",
+          "call_center",
+          "phone",
+          "privacy",
+          "safety",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Agent",
+        speakerRoleZh: "电话客服要说",
+        variants: [
+          "Thanks for calling. How can I help?",
+          "Thank you for calling the restaurant."
+        ],
+        recommendedResponses: [
+          "I need help with my order.",
+          "I want to check my pickup order.",
+          "One item is missing from my order."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Agent",
+            speakerRoleZh: "电话客服要说",
+            english: "Thank you for calling. How may I help you?",
+            chinese: "感谢来电。有什么可以帮您？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I need help with my order.",
+            chinese: "我的订单需要帮助。"
+          },
+          {
+            speakerRole: "Agent",
+            speakerRoleZh: "电话客服要说",
+            english: "Sure. May I have your order number?",
+            chinese: "可以。请告诉我订单号码。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "How may I help you",
+            chinese: "有什么可以帮您",
+            pronunciation: "how-may-ai-HELP-yoo",
+            note: "电话客服接电话时的礼貌开场白。",
+            example: "How can I help you?"
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "delivery_complaints_029",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_phone_orders",
+        scenarioTitle: "电话订单",
+        sequence: 2,
+        english: "I need help with my order.",
+        chinese: "我的订单需要帮助。",
+        scenario: "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/delivery_complaints_029-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_029-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "customer_service",
+          "call_center",
+          "phone",
+          "privacy",
+          "safety",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "I have a problem with my order.",
+          "Something is wrong with my order."
+        ],
+        recommendedResponses: [
+          "May I have your order number?",
+          "What seems to be the problem?",
+          "Was it a pickup or delivery order?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I need help with my order.",
+            chinese: "我的订单需要帮助。"
+          },
+          {
+            speakerRole: "Agent",
+            speakerRoleZh: "电话客服要说",
+            english: "Sure. What seems to be the problem?",
+            chinese: "好的。具体是什么问题？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "One item is missing.",
+            chinese: "少了一样东西。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "help with my order",
+            chinese: "帮我处理订单",
+            pronunciation: "help-with-my-OR-der",
+            note: "顾客打电话说明订单有问题。",
+            example: "I need help with this order."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "delivery_complaints_030",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_phone_orders",
+        scenarioTitle: "电话订单",
+        sequence: 3,
+        english: "May I have your order number?",
+        chinese: "可以告诉我您的订单号码吗？",
+        scenario: "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Agent",
+        roleZh: "电话客服要说",
+        audioNormal: "/audio/en-US/delivery_complaints_030-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_030-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "customer_service",
+          "call_center",
+          "phone",
+          "privacy",
+          "safety",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Agent",
+        speakerRoleZh: "电话客服要说",
+        variants: [
+          "What is your order number?",
+          "Can you give me the order number?"
+        ],
+        recommendedResponses: [
+          "It's 742.",
+          "I cannot find it.",
+          "Could you say that again?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Agent",
+            speakerRoleZh: "电话客服要说",
+            english: "May I have your order number?",
+            chinese: "可以告诉我您的订单号码吗？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "It's 742.",
+            chinese: "是 742。"
+          },
+          {
+            speakerRole: "Agent",
+            speakerRoleZh: "电话客服要说",
+            english: "Thank you. Let me check it.",
+            chinese: "谢谢。我查一下。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "order number",
+            chinese: "订单号码",
+            pronunciation: "OR-der NUM-ber",
+            note: "用来查找具体订单的号码。",
+            example: "My order number is 742."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "delivery_complaints_031",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_phone_orders",
+        scenarioTitle: "电话订单",
+        sequence: 4,
+        english: "I can't find my order number.",
+        chinese: "我找不到订单号码。",
+        scenario: "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/delivery_complaints_031-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_031-slow.mp3",
+        isFree: false,
+        safetyLevel: "caution",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "customer_service",
+          "call_center",
+          "phone",
+          "privacy",
+          "safety",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "I don't see the order number.",
+          "I cannot find the number on the receipt."
+        ],
+        recommendedResponses: [
+          "Can you give me your phone number instead?",
+          "What name is on the order?",
+          "Was it placed through an app?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I can't find my order number.",
+            chinese: "我找不到订单号码。"
+          },
+          {
+            speakerRole: "Agent",
+            speakerRoleZh: "电话客服要说",
+            english: "No problem. What name is on the order?",
+            chinese: "没关系。订单姓名是什么？"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "find my order number",
+            chinese: "找到我的订单号码",
+            pronunciation: "find-my-OR-der-NUM-ber",
+            note: "顾客找不到用于查询的订单号码。",
+            example: "I found my order number."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "delivery_complaints_032",
       moduleId: "delivery_complaints",
@@ -24157,73 +24207,73 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "delivery_complaints_039",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_phone_orders",
-      scenarioTitle: "电话订单",
-      sequence: 5,
-      english: "Yes, that's correct.",
-      chinese: "是的，您理解得对。",
-      scenario: "接电话、查订单、确认姓名和取餐时间。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Customer",
-      roleZh: "客户可能会说",
-      audioNormal: "/audio/en-US/delivery_complaints_039-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_039-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "customer_service",
-        "call_center",
-        "phone",
-        "privacy",
-        "safety",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "客户可能会说",
-      variants: [
-        "Yes, that is right.",
-        "That information is correct."
-      ],
-      recommendedResponses: [
-        "I will check the delivery status.",
-        "Can you confirm the name?",
-        "I will ask the kitchen for an update."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "客户",
-          english: "Yes, that's correct.",
-          chinese: "是的，您理解得对。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Sure, I can help.",
-          chinese: "可以，我来帮你。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "that's correct",
-          chinese: "外卖投诉表达",
-          pronunciation: "di-LIV-er-ee kum-PLAYNT",
-          note: "用于电话订单、外卖取餐和顾客问题。 这里重点看 “that's correct” 在句子里的用法。",
-          example: "Check the order."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "delivery_complaints_039",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_phone_orders",
+        scenarioTitle: "电话订单",
+        sequence: 5,
+        english: "Yes, that is correct.",
+        chinese: "是的，您说得对。",
+        scenario: "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/delivery_complaints_039-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_039-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "customer_service",
+          "call_center",
+          "phone",
+          "privacy",
+          "safety",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Yes, that's right.",
+          "Yes, the order is correct."
+        ],
+        recommendedResponses: [
+          "Great. We will start the order now.",
+          "Thank you. It will be ready soon.",
+          "Okay. Your total is on the receipt."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Yes, that is correct.",
+            chinese: "是的，您说得对。"
+          },
+          {
+            speakerRole: "Agent",
+            speakerRoleZh: "电话客服要说",
+            english: "Great. We will start the order now.",
+            chinese: "好的。我们现在开始做。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "that is correct",
+            chinese: "那是正确的",
+            pronunciation: "that-iz-kuh-REKT",
+            note: "确认对方复述的信息没有错。",
+            example: "That's correct."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "delivery_complaints_040",
       moduleId: "delivery_complaints",
@@ -24290,73 +24340,79 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "delivery_complaints_041",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_phone_orders",
-      scenarioTitle: "电话订单",
-      sequence: 6,
-      english: "Thank you for holding.",
-      chinese: "感谢您的等待。",
-      scenario: "接电话、查订单、确认姓名和取餐时间。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Agent",
-      roleZh: "客服人员要说",
-      audioNormal: "/audio/en-US/delivery_complaints_041-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_041-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "customer_service",
-        "call_center",
-        "phone",
-        "privacy",
-        "safety",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Agent",
-      speakerRoleZh: "客服人员要说",
-      variants: [
-        "Thanks for waiting.",
-        "Thank you for staying on the line."
-      ],
-      recommendedResponses: [
-        "I will check the delivery status.",
-        "Can you confirm the name?",
-        "I will ask the kitchen for an update."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Agent",
-          speakerRoleZh: "客服人员",
-          english: "Thank you for holding.",
-          chinese: "感谢您的等待。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "Thank holding",
-          chinese: "外卖投诉表达",
-          pronunciation: "di-LIV-er-ee kum-PLAYNT",
-          note: "用于电话订单、外卖取餐和顾客问题。 这里重点看 “Thank holding” 在句子里的用法。",
-          example: "Check the order."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "delivery_complaints_041",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_phone_orders",
+        scenarioTitle: "电话订单",
+        sequence: 6,
+        english: "Thank you for holding.",
+        chinese: "谢谢您的等待。",
+        scenario: "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Agent",
+        roleZh: "电话客服要说",
+        audioNormal: "/audio/en-US/delivery_complaints_041-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_041-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "customer_service",
+          "call_center",
+          "phone",
+          "privacy",
+          "safety",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Agent",
+        speakerRoleZh: "电话客服要说",
+        variants: [
+          "Thanks for waiting.",
+          "Thank you for staying on the line."
+        ],
+        recommendedResponses: [
+          "No problem.",
+          "Did you find my order?",
+          "What should I do next?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Agent",
+            speakerRoleZh: "电话客服要说",
+            english: "Thank you for holding.",
+            chinese: "谢谢您的等待。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "No problem. Did you find my order?",
+            chinese: "没关系。你找到我的订单了吗？"
+          },
+          {
+            speakerRole: "Agent",
+            speakerRoleZh: "电话客服要说",
+            english: "Yes. It will be ready in five minutes.",
+            chinese: "找到了。五分钟后好。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "holding",
+            chinese: "在线等待",
+            pronunciation: "HOHL-ding",
+            note: "电话中请顾客等待后，再感谢对方没有挂断。",
+            example: "Thanks for holding."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "delivery_complaints_042",
       moduleId: "delivery_complaints",
@@ -24622,60 +24678,79 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "delivery_complaints_046",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_phone_orders",
-      scenarioTitle: "电话订单",
-      sequence: 1,
-      english: "Where is my order?",
-      chinese: "我的订单在哪里？",
-      scenario: "接电话、查订单、确认姓名和取餐时间。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Customer",
-      roleZh: "客户可能会说",
-      audioNormal: "/audio/en-US/delivery_complaints_046-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_046-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "customer_service",
-        "call_center",
-        "phone",
-        "privacy",
-        "safety",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Customer",
-      speakerRoleZh: "客户可能会说",
-      difficulty: "Level 1",
-      variants: [
-        "Where is my food?",
-        "Can you check my order?"
-      ],
-      recommendedResponses: [
-        "Can I check the Where order?",
-        "I will update the customer about Where order.",
-        "I will ask the kitchen about Where order."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "order",
-          chinese: "订单",
-          pronunciation: "OR-der",
-          note: "顾客点的餐或外卖单。",
-          example: "Check the order."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "delivery_complaints_046",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_phone_orders",
+        scenarioTitle: "电话订单",
+        sequence: 1,
+        english: "Where is my order?",
+        chinese: "我的订单到哪里了？",
+        scenario: "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/delivery_complaints_046-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_046-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "customer_service",
+          "call_center",
+          "phone",
+          "privacy",
+          "safety",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "What is the status of my order?",
+          "Is my order ready yet?"
+        ],
+        recommendedResponses: [
+          "Let me check the order status.",
+          "It is still being prepared.",
+          "It will be ready in about five minutes."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Where is my order?",
+            chinese: "我的订单到哪里了？"
+          },
+          {
+            speakerRole: "Agent",
+            speakerRoleZh: "电话客服要说",
+            english: "Let me check the order status.",
+            chinese: "我查一下订单状态。"
+          },
+          {
+            speakerRole: "Agent",
+            speakerRoleZh: "电话客服要说",
+            english: "It will be ready in about five minutes.",
+            chinese: "大概五分钟后好。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "order status",
+            chinese: "订单状态",
+            pronunciation: "OR-der STAY-tus",
+            note: "用来询问订单是否已准备好或送出。",
+            example: "Check the order status."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "delivery_complaints_047",
       moduleId: "delivery_complaints",
@@ -24715,60 +24790,79 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "delivery_complaints_048",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_phone_orders",
-      scenarioTitle: "电话订单",
-      sequence: 9,
-      english: "When will it arrive?",
-      chinese: "什么时候能到？",
-      scenario: "接电话、查订单、确认姓名和取餐时间。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Customer",
-      roleZh: "客户可能会说",
-      audioNormal: "/audio/en-US/delivery_complaints_048-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_048-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "customer_service",
-        "call_center",
-        "phone",
-        "privacy",
-        "safety",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Customer",
-      speakerRoleZh: "客户可能会说",
-      difficulty: "Level 1",
-      variants: [
-        "What time will it arrive?",
-        "How long will it take?"
-      ],
-      recommendedResponses: [
-        "It should arrive in about ten minutes.",
-        "Let me check the delivery status.",
-        "The driver is on the way."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "arrive",
-          chinese: "到达",
-          pronunciation: "uh-RIVE",
-          note: "外卖送到或人到达都可以用。",
-          example: "It will arrive soon."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "delivery_complaints_048",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_phone_orders",
+        scenarioTitle: "电话订单",
+        sequence: 9,
+        english: "When will it arrive?",
+        chinese: "什么时候能送到？",
+        scenario: "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/delivery_complaints_048-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_048-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "customer_service",
+          "call_center",
+          "phone",
+          "privacy",
+          "safety",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "What time will it arrive?",
+          "How long will delivery take?"
+        ],
+        recommendedResponses: [
+          "It should arrive in about twenty minutes.",
+          "The driver is on the way.",
+          "Please check the delivery app for live updates."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "When will it arrive?",
+            chinese: "什么时候能送到？"
+          },
+          {
+            speakerRole: "Agent",
+            speakerRoleZh: "电话客服要说",
+            english: "The driver is on the way.",
+            chinese: "司机已经在路上。"
+          },
+          {
+            speakerRole: "Agent",
+            speakerRoleZh: "电话客服要说",
+            english: "It should arrive in about twenty minutes.",
+            chinese: "大概二十分钟后到。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "arrive",
+            chinese: "到达",
+            pronunciation: "uh-RIVE",
+            note: "询问外卖或包裹什么时候送到。",
+            example: "The driver will arrive soon."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "delivery_complaints_049",
       moduleId: "delivery_complaints",
@@ -25003,60 +25097,79 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "delivery_complaints_055",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_phone_orders",
-      scenarioTitle: "电话订单",
-      sequence: 7,
-      english: "Let me check whether the order qualifies for replacement or refund.",
-      chinese: "我核对一下订单是否符合补发或退款条件。",
-      scenario: "接电话、查订单、确认姓名和取餐时间。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Agent",
-      roleZh: "客服人员要说",
-      audioNormal: "/audio/en-US/delivery_complaints_055-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_055-slow.mp3",
-      isFree: false,
-      safetyLevel: "caution",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "customer_service",
-        "call_center",
-        "phone",
-        "privacy",
-        "safety",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Agent",
-      speakerRoleZh: "客服人员要说",
-      difficulty: "Level 3",
-      variants: [
-        "Let me see if we can replace or refund it.",
-        "I will check if this order can be refunded."
-      ],
-      recommendedResponses: [
-        "Thank you.",
-        "I would like a replacement.",
-        "I would like a refund."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "replacement or refund",
-          chinese: "补发或退款",
-          pronunciation: "ri-PLAYS-ment or REE-fund",
-          note: "处理少餐、错餐、损坏时常用。",
-          example: "Do you want a refund?"
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "delivery_complaints_055",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_phone_orders",
+        scenarioTitle: "电话订单",
+        sequence: 7,
+        english: "The manager will call you back.",
+        chinese: "经理会给您回电话。",
+        scenario: "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Agent",
+        roleZh: "电话客服要说",
+        audioNormal: "/audio/en-US/delivery_complaints_055-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_055-slow.mp3",
+        isFree: false,
+        safetyLevel: "caution",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "customer_service",
+          "call_center",
+          "phone",
+          "privacy",
+          "safety",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Agent",
+        speakerRoleZh: "电话客服要说",
+        difficulty: "Level 3",
+        variants: [
+          "A manager will call you back soon.",
+          "The manager will return your call."
+        ],
+        recommendedResponses: [
+          "Thank you.",
+          "Can I leave my phone number?",
+          "When should I expect the call?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Agent",
+            speakerRoleZh: "电话客服要说",
+            english: "The manager will call you back.",
+            chinese: "经理会给您回电话。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I leave my phone number?",
+            chinese: "我可以留下电话号码吗？"
+          },
+          {
+            speakerRole: "Agent",
+            speakerRoleZh: "电话客服要说",
+            english: "Yes, please.",
+            chinese: "可以，请说。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "call you back",
+            chinese: "给您回电话",
+            pronunciation: "call-yoo-back",
+            note: "表示稍后再打电话联系顾客。",
+            example: "I will call you back."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "delivery_complaints_056",
       moduleId: "delivery_complaints",
@@ -25135,60 +25248,79 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "delivery_complaints_058",
-      moduleId: "delivery_complaints",
-      moduleTitle: "外卖、电话、投诉和顾客问题",
-      scenarioId: "delivery_complaints_phone_orders",
-      scenarioTitle: "电话订单",
-      sequence: 10,
-      english: "The item arrived damaged.",
-      chinese: "商品送到时已经破损。",
-      scenario: "接电话、查订单、确认姓名和取餐时间。",
-      importance: "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
-      role: "Customer",
-      roleZh: "客户可能会说",
-      audioNormal: "/audio/en-US/delivery_complaints_058-normal.mp3",
-      audioSlow: "/audio/en-US/delivery_complaints_058-slow.mp3",
-      isFree: false,
-      safetyLevel: "caution",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "delivery_complaints",
-        "customer_service",
-        "call_center",
-        "phone",
-        "privacy",
-        "safety",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Customer",
-      speakerRoleZh: "客户可能会说",
-      difficulty: "Level 1",
-      variants: [
-        "The item was damaged when it arrived.",
-        "This came damaged."
-      ],
-      recommendedResponses: [
-        "I am sorry. Let me check that.",
-        "Can you send a photo?",
-        "We can replace it or refund it."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "arrived damaged",
-          chinese: "送到时已破损",
-          pronunciation: "uh-RIVED DAM-ijd",
-          note: "说明不是拿到后才坏，而是送来时就坏了。",
-          example: "The box arrived damaged."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "delivery_complaints_058",
+        moduleId: "delivery_complaints",
+        moduleTitle: "外卖、电话、投诉和顾客问题",
+        scenarioId: "delivery_complaints_phone_orders",
+        scenarioTitle: "电话订单",
+        sequence: 10,
+        english: "The item arrived damaged.",
+        chinese: "这个东西送到时已经损坏了。",
+        scenario: "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+        importance: "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/delivery_complaints_058-normal.mp3",
+        audioSlow: "/audio/en-US/delivery_complaints_058-slow.mp3",
+        isFree: false,
+        safetyLevel: "caution",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "delivery_complaints",
+          "customer_service",
+          "call_center",
+          "phone",
+          "privacy",
+          "safety",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "This item is damaged.",
+          "It was damaged when it arrived."
+        ],
+        recommendedResponses: [
+          "I'm sorry about that. Can you send a photo?",
+          "Let me check the order details.",
+          "The manager will review it and call you back."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "The item arrived damaged.",
+            chinese: "这个东西送到时已经损坏了。"
+          },
+          {
+            speakerRole: "Agent",
+            speakerRoleZh: "电话客服要说",
+            english: "I'm sorry about that. Can you send a photo?",
+            chinese: "很抱歉。您可以发一张照片吗？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Yes, I can.",
+            chinese: "可以。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "arrived damaged",
+            chinese: "送到时损坏",
+            pronunciation: "uh-RIVED DAM-ijd",
+            note: "说明东西在送达时已经坏了。",
+            example: "The box arrived damaged."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "delivery_complaints_059",
       moduleId: "delivery_complaints",
@@ -25336,69 +25468,77 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "emergency_safety_002",
-      moduleId: "emergency_safety",
-      moduleTitle: "安全、受伤和紧急情况",
-      scenarioId: "emergency_safety_fire_gas_emergency",
-      scenarioTitle: "火灾和紧急情况",
-      sequence: 4,
-      english: "Are you still open?",
-      chinese: "你们还营业吗？",
-      scenario: "火警、燃气、911和紧急撤离。",
-      importance: "安全句子必须短、清楚、马上说，关系到受伤和事故。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/emergency_safety_002-normal.mp3",
-      audioSlow: "/audio/en-US/emergency_safety_002-slow.mp3",
-      isFree: false,
-      safetyLevel: "caution",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "emergency_safety",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 3",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      variants: [
-        "Are you still open, please?"
-      ],
-      recommendedResponses: [
-        "Yes, but only for takeout.",
-        "Sorry, we are closed now."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "Are you still open?",
-          chinese: "你们还营业吗？"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "Yes, but only for takeout.",
-          chinese: "还营业，但只能外带。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "still open",
-          chinese: "还营业",
-          pronunciation: "stil-OH-pen",
-          note: "顾客问店现在是否还可以点餐。",
-          example: "The store is open."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "emergency_safety_002",
+        moduleId: "emergency_safety",
+        moduleTitle: "安全、受伤和紧急情况",
+        scenarioId: "emergency_safety_fire_gas_emergency",
+        scenarioTitle: "火灾和紧急情况",
+        sequence: 4,
+        english: "Call 911 now.",
+        chinese: "现在打 911。",
+        scenario: "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+        importance: "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+        role: "Staff",
+        roleZh: "店员要说",
+        audioNormal: "/audio/en-US/emergency_safety_002-normal.mp3",
+        audioSlow: "/audio/en-US/emergency_safety_002-slow.mp3",
+        isFree: false,
+        safetyLevel: "emergency",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "emergency_safety",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 3",
+        speakerRole: "Staff",
+        speakerRoleZh: "店员要说",
+        variants: [
+          "Call emergency services now.",
+          "Call for help now."
+        ],
+        recommendedResponses: [
+          "I'm calling now.",
+          "I will call 911 right away.",
+          "Should I stay with the customer?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "Call 911 now.",
+            chinese: "现在打 911。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "I'm calling now.",
+            chinese: "我现在打。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "Stay calm and tell them the address.",
+            chinese: "保持冷静，告诉他们地址。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "Call 911",
+            chinese: "打 911",
+            pronunciation: "call nine-one-one",
+            note: "北美紧急情况时拨打的急救、消防或报警电话。",
+            example: "Call 911 right away."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "emergency_safety_003",
       moduleId: "emergency_safety",
@@ -25464,71 +25604,77 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "emergency_safety_004",
-      moduleId: "emergency_safety",
-      moduleTitle: "安全、受伤和紧急情况",
-      scenarioId: "emergency_safety_fire_gas_emergency",
-      scenarioTitle: "火灾和紧急情况",
-      sequence: 9,
-      english: "We still have sandwiches and fries. It has to be to go.",
-      chinese: "我们还有三明治和薯条。只能外带。",
-      scenario: "火警、燃气、911和紧急撤离。",
-      importance: "安全句子必须短、清楚、马上说，关系到受伤和事故。",
-      role: "Staff",
-      roleZh: "前台员工要说",
-      audioNormal: "/audio/en-US/emergency_safety_004-normal.mp3",
-      audioSlow: "/audio/en-US/emergency_safety_004-slow.mp3",
-      isFree: false,
-      safetyLevel: "caution",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "emergency_safety",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 3",
-      speakerRole: "Staff",
-      speakerRoleZh: "前台员工要说",
-      variants: [
-        "Sandwiches and fries are still available.",
-        "It must be to go."
-      ],
-      recommendedResponses: [
-        "To go is fine.",
-        "I’ll take sandwiches and fries.",
-        "Thank you."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "前台员工",
-          english: "We still have sandwiches and fries. It has to be to go.",
-          chinese: "我们还有三明治和薯条。只能外带。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "To go is fine.",
-          chinese: "好的。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "to go",
-          chinese: "外带",
-          pronunciation: "too-go",
-          note: "顾客带走食物。",
-          example: "Make it to go."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "emergency_safety_004",
+        moduleId: "emergency_safety",
+        moduleTitle: "安全、受伤和紧急情况",
+        scenarioId: "emergency_safety_fire_gas_emergency",
+        scenarioTitle: "火灾和紧急情况",
+        sequence: 9,
+        english: "The customer cannot breathe.",
+        chinese: "顾客无法呼吸。",
+        scenario: "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+        importance: "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+        role: "Worker",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/emergency_safety_004-normal.mp3",
+        audioSlow: "/audio/en-US/emergency_safety_004-slow.mp3",
+        isFree: false,
+        safetyLevel: "emergency",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "emergency_safety",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 3",
+        speakerRole: "Worker",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "The customer is having trouble breathing.",
+          "The customer cannot catch their breath."
+        ],
+        recommendedResponses: [
+          "Call 911 now.",
+          "Bring the first-aid kit.",
+          "Do not leave the customer alone."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "The customer cannot breathe.",
+            chinese: "顾客无法呼吸。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Call 911 now. Bring the first-aid kit.",
+            chinese: "现在打 911。把急救包拿来。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "I'm calling now.",
+            chinese: "我现在打。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "cannot breathe",
+            chinese: "无法呼吸",
+            pronunciation: "KAN-not breeth",
+            note: "严重紧急情况，必须立即求助。",
+            example: "He cannot breathe."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "emergency_safety_005",
       moduleId: "emergency_safety",
@@ -26412,69 +26558,69 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "emergency_safety_018",
-      moduleId: "emergency_safety",
-      moduleTitle: "安全、受伤和紧急情况",
-      scenarioId: "emergency_safety_fire_gas_emergency",
-      scenarioTitle: "火灾和紧急情况",
-      sequence: 7,
-      english: "The emergency exit is blocked.",
-      chinese: "紧急出口被挡住了。",
-      scenario: "火警、燃气、911和紧急撤离。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/emergency_safety_018-normal.mp3",
-      audioSlow: "/audio/en-US/emergency_safety_018-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "emergency_safety",
-        "supplement",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 3",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "This emergency exit is blocked.",
-        "There is a problem with this."
-      ],
-      recommendedResponses: [
-        "Call a manager now.",
-        "Get help right away.",
-        "Do not move the person unless it is unsafe."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "The emergency exit is blocked.",
-          chinese: "紧急出口被挡住了。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Call a manager now.",
-          chinese: "好的。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "emergency exit",
-          chinese: "紧急出口",
-          pronunciation: "ee-MUR-jen-see EG-zit",
-          note: "发生火灾等情况时逃生用的出口。",
-          example: "Keep the exit clear."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "emergency_safety_018",
+        moduleId: "emergency_safety",
+        moduleTitle: "安全、受伤和紧急情况",
+        scenarioId: "emergency_safety_fire_gas_emergency",
+        scenarioTitle: "火灾和紧急情况",
+        sequence: 7,
+        english: "The emergency exit is blocked.",
+        chinese: "紧急出口被挡住了。",
+        scenario: "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+        importance: "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+        role: "Worker",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/emergency_safety_018-normal.mp3",
+        audioSlow: "/audio/en-US/emergency_safety_018-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "emergency_safety",
+          "supplement",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 3",
+        speakerRole: "Worker",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "The exit is blocked.",
+          "Something is blocking the emergency exit."
+        ],
+        recommendedResponses: [
+          "Move the boxes away now.",
+          "Tell the manager immediately.",
+          "Keep the exit clear."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "The emergency exit is blocked.",
+            chinese: "紧急出口被挡住了。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Move the boxes away now and keep it clear.",
+            chinese: "现在把箱子移开，保持出口畅通。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "emergency exit",
+            chinese: "紧急出口",
+            pronunciation: "ee-MER-jen-see EK-sit",
+            note: "火灾或疏散时用来离开的出口。",
+            example: "Keep the emergency exit clear."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "emergency_safety_019",
       moduleId: "emergency_safety",
@@ -26542,67 +26688,75 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "emergency_safety_020",
-      moduleId: "emergency_safety",
-      moduleTitle: "安全、受伤和紧急情况",
-      scenarioId: "emergency_safety_fire_gas_emergency",
-      scenarioTitle: "火灾和紧急情况",
-      sequence: 5,
-      english: "The power went out.",
-      chinese: "停电了。",
-      scenario: "火警、燃气、911和紧急撤离。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/emergency_safety_020-normal.mp3",
-      audioSlow: "/audio/en-US/emergency_safety_020-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "emergency_safety",
-        "supplement",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 3",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "The power is out."
-      ],
-      recommendedResponses: [
-        "I will stop and get help.",
-        "I will tell the manager right away."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "The power went out.",
-          chinese: "停电了。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Okay, I’ll be careful.",
-          chinese: "好的。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "power went out",
-          chinese: "停电了",
-          pronunciation: "POW-er went-out",
-          note: "店里电突然没有了。",
-          example: "The lights went out."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "emergency_safety_020",
+        moduleId: "emergency_safety",
+        moduleTitle: "安全、受伤和紧急情况",
+        scenarioId: "emergency_safety_fire_gas_emergency",
+        scenarioTitle: "火灾和紧急情况",
+        sequence: 5,
+        english: "The power went out.",
+        chinese: "停电了。",
+        scenario: "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+        importance: "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+        role: "Worker",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/emergency_safety_020-normal.mp3",
+        audioSlow: "/audio/en-US/emergency_safety_020-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "emergency_safety",
+          "supplement",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 3",
+        speakerRole: "Worker",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "The power is out.",
+          "We lost power."
+        ],
+        recommendedResponses: [
+          "Stop using the equipment.",
+          "Use the flashlight and wait for instructions.",
+          "Tell the manager right away."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "The power went out.",
+            chinese: "停电了。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Stop using the equipment and wait here.",
+            chinese: "停止使用设备，在这里等。"
+          },
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "Okay. I will stay away from the machines.",
+            chinese: "好的。我会离机器远一点。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "power went out",
+            chinese: "停电了",
+            pronunciation: "POW-er went out",
+            note: "电力突然中断，设备可能不能安全使用。",
+            example: "The power is out."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "emergency_safety_021",
       moduleId: "emergency_safety",
@@ -26670,280 +26824,258 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "emergency_safety_022",
-      moduleId: "emergency_safety",
-      moduleTitle: "安全、受伤和紧急情况",
-      scenarioId: "emergency_safety_hot_sharp",
-      scenarioTitle: "热油和刀具安全",
-      sequence: 1,
-      english: "I cut my finger.",
-      chinese: "我切到手指了。",
-      scenario: "热锅、刀具、身后经过和厨房通道安全。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/emergency_safety_022-normal.mp3",
-      audioSlow: "/audio/en-US/emergency_safety_022-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "emergency_safety",
-        "supplement",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 3",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "My finger is cut."
-      ],
-      recommendedResponses: [
-        "I will stop and get help.",
-        "I will tell the manager right away."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "I cut my finger.",
-          chinese: "我切到手指了。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "What happened?",
-          chinese: "发生什么了？"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Someone could get hurt.",
-          chinese: "可能会有人受伤。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Okay, step back and get help.",
-          chinese: "好的，退后并找人帮忙。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "finger",
-          chinese: "手指",
-          pronunciation: "FING-ger",
-          note: "说明手指受伤。",
-          example: "My finger hurts."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "emergency_safety_023",
-      moduleId: "emergency_safety",
-      moduleTitle: "安全、受伤和紧急情况",
-      scenarioId: "emergency_safety_hot_sharp",
-      scenarioTitle: "热油和刀具安全",
-      sequence: 2,
-      english: "I burned my hand.",
-      chinese: "我烫到手了。",
-      scenario: "热锅、刀具、身后经过和厨房通道安全。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/emergency_safety_023-normal.mp3",
-      audioSlow: "/audio/en-US/emergency_safety_023-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "emergency_safety",
-        "supplement",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 3",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "My hand got burned."
-      ],
-      recommendedResponses: [
-        "I will stop and get help.",
-        "I will tell the manager right away."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "I burned my hand.",
-          chinese: "我烫到手了。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Okay, I’ll be careful.",
-          chinese: "好的。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "burned hand",
-          chinese: "安全急救表达",
-          pronunciation: "SAYF-tee",
-          note: "用于受伤、火灾和紧急情况。 这里重点看 “burned hand” 在句子里的用法。",
-          example: "Get help now."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "emergency_safety_024",
-      moduleId: "emergency_safety",
-      moduleTitle: "安全、受伤和紧急情况",
-      scenarioId: "emergency_safety_injury_first_aid",
-      scenarioTitle: "受伤",
-      sequence: 3,
-      english: "We need the first aid kit.",
-      chinese: "我们需要急救包。",
-      scenario: "割伤、烫伤、摔倒和事故报告。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/emergency_safety_024-normal.mp3",
-      audioSlow: "/audio/en-US/emergency_safety_024-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "emergency_safety",
-        "supplement",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 3",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Please get the first aid kit."
-      ],
-      recommendedResponses: [
-        "I will stop and get help.",
-        "I will tell the manager right away."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "We need the first aid kit.",
-          chinese: "我们需要急救包。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "What happened?",
-          chinese: "发生什么了？"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Someone could get hurt.",
-          chinese: "可能会有人受伤。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Okay, step back and get help.",
-          chinese: "好的，退后并找人帮忙。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "first aid kit",
-          chinese: "急救包",
-          pronunciation: "furst-ayd kit",
-          note: "处理轻伤时用的急救用品。",
-          example: "Get the first aid kit."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "emergency_safety_025",
-      moduleId: "emergency_safety",
-      moduleTitle: "安全、受伤和紧急情况",
-      scenarioId: "emergency_safety_fire_gas_emergency",
-      scenarioTitle: "火灾和紧急情况",
-      sequence: 1,
-      english: "Call the manager right away.",
-      chinese: "马上叫经理。",
-      scenario: "火警、燃气、911和紧急撤离。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/emergency_safety_025-normal.mp3",
-      audioSlow: "/audio/en-US/emergency_safety_025-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "emergency_safety",
-        "supplement",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Please call the manager now."
-      ],
-      recommendedResponses: [
-        "I will call the manager now.",
-        "I will stop the work until they come."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Call the manager right away.",
-          chinese: "马上叫经理。"
-        },
-        {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
-          english: "Call the manager right away.",
-          chinese: "马上叫经理。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Okay, I’ll call now.",
-          chinese: "好的，我现在叫。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "manager",
-          chinese: "经理",
-          pronunciation: "MAN-uh-jer",
-          note: "处理投诉、退款或复杂问题的人。",
-          example: "Call the manager."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "emergency_safety_022",
+        moduleId: "emergency_safety",
+        moduleTitle: "安全、受伤和紧急情况",
+        scenarioId: "emergency_safety_hot_sharp",
+        scenarioTitle: "热油和刀具安全",
+        sequence: 1,
+        english: "I cut my finger.",
+        chinese: "我切到手指了。",
+        scenario: "后厨遇到热油、刀具、炸炉或烫伤割伤风险时，员工要及时提醒和报告。",
+        importance: "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+        role: "Worker",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/emergency_safety_022-normal.mp3",
+        audioSlow: "/audio/en-US/emergency_safety_022-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "emergency_safety",
+          "supplement",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 3",
+        speakerRole: "Worker",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "I cut myself.",
+          "My finger is cut."
+        ],
+        recommendedResponses: [
+          "Put pressure on it.",
+          "Where is the first-aid kit?",
+          "Tell the supervisor right away."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "I cut my finger.",
+            chinese: "我切到手指了。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Put pressure on it. I will get the first-aid kit.",
+            chinese: "按住伤口。我去拿急救包。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "cut my finger",
+            chinese: "切到手指",
+            pronunciation: "kut-my-FING-ger",
+            note: "刀具造成手指割伤。",
+            example: "I cut my hand."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "emergency_safety_023",
+        moduleId: "emergency_safety",
+        moduleTitle: "安全、受伤和紧急情况",
+        scenarioId: "emergency_safety_hot_sharp",
+        scenarioTitle: "热油和刀具安全",
+        sequence: 2,
+        english: "I burned my hand.",
+        chinese: "我烫到手了。",
+        scenario: "后厨遇到热油、刀具、炸炉或烫伤割伤风险时，员工要及时提醒和报告。",
+        importance: "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+        role: "Worker",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/emergency_safety_023-normal.mp3",
+        audioSlow: "/audio/en-US/emergency_safety_023-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "emergency_safety",
+          "supplement",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 3",
+        speakerRole: "Worker",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "My hand got burned.",
+          "I burned myself."
+        ],
+        recommendedResponses: [
+          "Move away from the heat.",
+          "Tell the manager right away.",
+          "Where is the first-aid kit?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "I burned my hand.",
+            chinese: "我烫到手了。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Move away from the fryer. I will get help.",
+            chinese: "离炸炉远一点。我去找人帮忙。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "burned my hand",
+            chinese: "烫到手",
+            pronunciation: "burnd-my-hand",
+            note: "被热油、热锅或热表面烫伤手。",
+            example: "She burned her hand."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "emergency_safety_024",
+        moduleId: "emergency_safety",
+        moduleTitle: "安全、受伤和紧急情况",
+        scenarioId: "emergency_safety_injury_first_aid",
+        scenarioTitle: "受伤",
+        sequence: 3,
+        english: "Where is the first-aid kit?",
+        chinese: "急救包在哪里？",
+        scenario: "员工或顾客受伤、流血、无法呼吸或需要急救时，必须快速联系主管和紧急服务。",
+        importance: "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+        role: "Worker",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/emergency_safety_024-normal.mp3",
+        audioSlow: "/audio/en-US/emergency_safety_024-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "emergency_safety",
+          "supplement",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 3",
+        speakerRole: "Worker",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "Where can I find the first-aid kit?",
+          "Do we have a first-aid kit?"
+        ],
+        recommendedResponses: [
+          "It's in the office.",
+          "It's on the wall by the sink.",
+          "I will get it for you."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "Where is the first-aid kit?",
+            chinese: "急救包在哪里？"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "It's in the office. I will get it.",
+            chinese: "在办公室。我去拿。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "first-aid kit",
+            chinese: "急救包",
+            pronunciation: "first-ayd kit",
+            note: "放创可贴、纱布等简单急救用品的盒子。",
+            example: "Get the first-aid kit."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "emergency_safety_025",
+        moduleId: "emergency_safety",
+        moduleTitle: "安全、受伤和紧急情况",
+        scenarioId: "emergency_safety_fire_gas_emergency",
+        scenarioTitle: "火灾和紧急情况",
+        sequence: 1,
+        english: "Call the manager right away.",
+        chinese: "马上叫经理。",
+        scenario: "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+        importance: "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+        role: "Worker",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/emergency_safety_025-normal.mp3",
+        audioSlow: "/audio/en-US/emergency_safety_025-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "emergency_safety",
+          "supplement",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Worker",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "Get the manager now.",
+          "Tell the manager immediately."
+        ],
+        recommendedResponses: [
+          "I'm calling the manager now.",
+          "The manager is on the way.",
+          "Should I stop the machine?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "Call the manager right away.",
+            chinese: "马上叫经理。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "I'm calling the manager now.",
+            chinese: "我现在叫经理。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "right away",
+            chinese: "马上",
+            pronunciation: "rite-uh-WAY",
+            note: "表示不能等，要立刻行动。",
+            example: "Come here right away."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "emergency_safety_026",
       moduleId: "emergency_safety",
@@ -27005,67 +27137,75 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "emergency_safety_027",
-      moduleId: "emergency_safety",
-      moduleTitle: "安全、受伤和紧急情况",
-      scenarioId: "emergency_safety_fire_gas_emergency",
-      scenarioTitle: "火灾和紧急情况",
-      sequence: 8,
-      english: "There is a gas smell.",
-      chinese: "有煤气味。",
-      scenario: "火警、燃气、911和紧急撤离。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/emergency_safety_027-normal.mp3",
-      audioSlow: "/audio/en-US/emergency_safety_027-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "emergency_safety",
-        "supplement",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "I smell gas."
-      ],
-      recommendedResponses: [
-        "I will stop and get help.",
-        "I will tell the manager right away."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "There is a gas smell.",
-          chinese: "有煤气味。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Okay, I’ll be careful.",
-          chinese: "好的。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "gas smell",
-          chinese: "煤气味",
-          pronunciation: "gas-smel",
-          note: "可能有燃气泄漏，需要马上报告。",
-          example: "I smell gas."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "emergency_safety_027",
+        moduleId: "emergency_safety",
+        moduleTitle: "安全、受伤和紧急情况",
+        scenarioId: "emergency_safety_fire_gas_emergency",
+        scenarioTitle: "火灾和紧急情况",
+        sequence: 8,
+        english: "I smell gas.",
+        chinese: "我闻到煤气味。",
+        scenario: "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+        importance: "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+        role: "Worker",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/emergency_safety_027-normal.mp3",
+        audioSlow: "/audio/en-US/emergency_safety_027-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "emergency_safety",
+          "supplement",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Worker",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "There is a gas smell.",
+          "It smells like gas."
+        ],
+        recommendedResponses: [
+          "Stop using the equipment.",
+          "Do not turn anything on.",
+          "Call the manager now."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "I smell gas.",
+            chinese: "我闻到煤气味。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Stop using the equipment and step away.",
+            chinese: "停止使用设备，离开那里。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "I will call the manager now.",
+            chinese: "我现在叫经理。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "smell gas",
+            chinese: "闻到煤气味",
+            pronunciation: "smel-gas",
+            note: "可能有燃气泄漏，不能继续操作设备。",
+            example: "I smell gas near the stove."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "emergency_safety_028",
       moduleId: "emergency_safety",
@@ -27133,196 +27273,195 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "emergency_safety_029",
-      moduleId: "emergency_safety",
-      moduleTitle: "安全、受伤和紧急情况",
-      scenarioId: "emergency_safety_injury_first_aid",
-      scenarioTitle: "受伤",
-      sequence: 1,
-      english: "The slicer guard is missing.",
-      chinese: "切片机防护罩不见了。",
-      scenario: "割伤、烫伤、摔倒和事故报告。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/emergency_safety_029-normal.mp3",
-      audioSlow: "/audio/en-US/emergency_safety_029-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "emergency_safety",
-        "supplement",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "This slicer guard is missing.",
-        "There is a problem with this."
-      ],
-      recommendedResponses: [
-        "I will stop using the slicer.",
-        "I will tell the manager now."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "The slicer guard is missing.",
-          chinese: "切片机防护罩不见了。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Do not use it.",
-          chinese: "不要使用它。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "I’ll stop and tell the manager.",
-          chinese: "我会停下来并告诉经理。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "slicer guard",
-          chinese: "切片机防护罩",
-          pronunciation: "SLY-ser gard",
-          note: "保护手不碰到刀片的安全部件。",
-          example: "Use the slicer guard."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "emergency_safety_030",
-      moduleId: "emergency_safety",
-      moduleTitle: "安全、受伤和紧急情况",
-      scenarioId: "emergency_safety_hot_sharp",
-      scenarioTitle: "热油和刀具安全",
-      sequence: 3,
-      english: "The knife is loose.",
-      chinese: "这把刀松了。",
-      scenario: "热锅、刀具、身后经过和厨房通道安全。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/emergency_safety_030-normal.mp3",
-      audioSlow: "/audio/en-US/emergency_safety_030-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "emergency_safety",
-        "supplement",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "This knife is loose."
-      ],
-      recommendedResponses: [
-        "I will stop using the knife.",
-        "I will get a safe knife."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "The knife is loose.",
-          chinese: "这把刀松了。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Put it down and use another one.",
-          chinese: "放下它，换另一把。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "knife",
-          chinese: "刀",
-          pronunciation: "nyf",
-          note: "厨房切菜切肉用的工具。",
-          example: "Hold the knife safely."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "emergency_safety_031",
-      moduleId: "emergency_safety",
-      moduleTitle: "安全、受伤和紧急情况",
-      scenarioId: "emergency_safety_fire_gas_emergency",
-      scenarioTitle: "火灾和紧急情况",
-      sequence: 6,
-      english: "The shelf is unstable.",
-      chinese: "这个架子不稳。",
-      scenario: "火警、燃气、911和紧急撤离。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/emergency_safety_031-normal.mp3",
-      audioSlow: "/audio/en-US/emergency_safety_031-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "emergency_safety",
-        "supplement",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "This shelf is unstable."
-      ],
-      recommendedResponses: [
-        "I will move away from the shelf.",
-        "I will ask someone to secure it."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "The shelf is unstable.",
-          chinese: "这个架子不稳。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Do not put anything on it.",
-          chinese: "不要往上面放东西。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "unstable",
-          chinese: "不稳的",
-          pronunciation: "un-STAY-bul",
-          note: "形容架子、梯子或设备摇晃，有安全风险。",
-          example: "The ladder is unstable."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "emergency_safety_029",
+        moduleId: "emergency_safety",
+        moduleTitle: "安全、受伤和紧急情况",
+        scenarioId: "emergency_safety_injury_first_aid",
+        scenarioTitle: "受伤",
+        sequence: 1,
+        english: "The slicer guard is missing.",
+        chinese: "切片机防护罩不见了。",
+        scenario: "员工或顾客受伤、流血、无法呼吸或需要急救时，必须快速联系主管和紧急服务。",
+        importance: "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+        role: "Worker",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/emergency_safety_029-normal.mp3",
+        audioSlow: "/audio/en-US/emergency_safety_029-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "emergency_safety",
+          "supplement",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Worker",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "The guard is not on the slicer.",
+          "The slicer does not have the guard."
+        ],
+        recommendedResponses: [
+          "Do not use the slicer.",
+          "Tell the manager right away.",
+          "Use another task for now."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "The slicer guard is missing.",
+            chinese: "切片机防护罩不见了。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Do not use the slicer. I will check it.",
+            chinese: "不要用切片机。我来检查。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "slicer guard",
+            chinese: "切片机防护罩",
+            pronunciation: "SLY-ser gard",
+            note: "保护手不接触刀片的安全部件。",
+            example: "The slicer guard is loose."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "emergency_safety_030",
+        moduleId: "emergency_safety",
+        moduleTitle: "安全、受伤和紧急情况",
+        scenarioId: "emergency_safety_hot_sharp",
+        scenarioTitle: "热油和刀具安全",
+        sequence: 3,
+        english: "Keep the knife pointed down.",
+        chinese: "让刀尖朝下。",
+        scenario: "后厨遇到热油、刀具、炸炉或烫伤割伤风险时，员工要及时提醒和报告。",
+        importance: "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+        role: "Worker",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/emergency_safety_030-normal.mp3",
+        audioSlow: "/audio/en-US/emergency_safety_030-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "emergency_safety",
+          "supplement",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Worker",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "Point the knife down.",
+          "Keep the knife facing down."
+        ],
+        recommendedResponses: [
+          "Okay, I will keep it pointed down.",
+          "Thanks for reminding me.",
+          "I will put it down safely."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "Keep the knife pointed down.",
+            chinese: "让刀尖朝下。"
+          },
+          {
+            speakerRole: "Coworker",
+            speakerRoleZh: "同事可能会说",
+            english: "Okay, I will carry it safely.",
+            chinese: "好的，我会安全拿着。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "pointed down",
+            chinese: "朝下",
+            pronunciation: "POIN-ted down",
+            note: "拿刀时刀尖朝下，减少误伤别人。",
+            example: "Keep it pointed down."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "emergency_safety_031",
+        moduleId: "emergency_safety",
+        moduleTitle: "安全、受伤和紧急情况",
+        scenarioId: "emergency_safety_fire_gas_emergency",
+        scenarioTitle: "火灾和紧急情况",
+        sequence: 6,
+        english: "The shelf is unstable.",
+        chinese: "这个架子不稳。",
+        scenario: "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+        importance: "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+        role: "Worker",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/emergency_safety_031-normal.mp3",
+        audioSlow: "/audio/en-US/emergency_safety_031-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "emergency_safety",
+          "supplement",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Worker",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "The shelf is not steady.",
+          "This shelf may fall."
+        ],
+        recommendedResponses: [
+          "Do not put more boxes on it.",
+          "Move away from the shelf.",
+          "Tell the manager before using it."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "The shelf is unstable.",
+            chinese: "这个架子不稳。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Do not put anything else on it. I will check it.",
+            chinese: "不要再往上放东西。我来检查。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "unstable",
+            chinese: "不稳",
+            pronunciation: "un-STAY-bul",
+            note: "架子或梯子可能晃动、倒下。",
+            example: "The ladder is unstable."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "emergency_safety_032",
       moduleId: "emergency_safety",
@@ -27391,67 +27530,69 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "emergency_safety_033",
-      moduleId: "emergency_safety",
-      moduleTitle: "安全、受伤和紧急情况",
-      scenarioId: "emergency_safety_fire_gas_emergency",
-      scenarioTitle: "火灾和紧急情况",
-      sequence: 2,
-      english: "Can someone help me lift this?",
-      chinese: "有人可以帮我一起抬这个吗？",
-      scenario: "火警、燃气、911和紧急撤离。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/emergency_safety_033-normal.mp3",
-      audioSlow: "/audio/en-US/emergency_safety_033-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "emergency_safety",
-        "supplement",
-        "restaurant-work-core"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Can someone help me lift this, please?"
-      ],
-      recommendedResponses: [
-        "Yes, I can help you lift it.",
-        "Wait. Let’s lift it together."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Can someone help me lift this?",
-          chinese: "有人可以帮我一起抬这个吗？"
-        },
-        {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
-          english: "Yes, wait for me.",
-          chinese: "可以，等我一下。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "help me lift this",
-          chinese: "帮我抬这个",
-          pronunciation: "help-mee-lift-this",
-          note: "搬重物时请同事一起帮忙，避免受伤。",
-          example: "Help me lift this box."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "emergency_safety_033",
+        moduleId: "emergency_safety",
+        moduleTitle: "安全、受伤和紧急情况",
+        scenarioId: "emergency_safety_fire_gas_emergency",
+        scenarioTitle: "火灾和紧急情况",
+        sequence: 2,
+        english: "Can someone help me lift this?",
+        chinese: "有人可以帮我一起抬这个吗？",
+        scenario: "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+        importance: "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+        role: "Worker",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/emergency_safety_033-normal.mp3",
+        audioSlow: "/audio/en-US/emergency_safety_033-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "emergency_safety",
+          "supplement",
+          "restaurant-work-core"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Worker",
+        speakerRoleZh: "员工要说",
+        variants: [
+          "Can someone help me carry this?",
+          "I need help lifting this."
+        ],
+        recommendedResponses: [
+          "Yes, I can help.",
+          "Wait. Do not lift it alone.",
+          "Use a cart if it is too heavy."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "Can someone help me lift this?",
+            chinese: "有人可以帮我一起抬这个吗？"
+          },
+          {
+            speakerRole: "Coworker",
+            speakerRoleZh: "同事可能会说",
+            english: "Yes. Wait for me. Do not lift it alone.",
+            chinese: "可以。等我一下。不要一个人抬。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "lift this",
+            chinese: "抬这个",
+            pronunciation: "lift-this",
+            note: "搬重物时请求别人一起抬。",
+            example: "Help me lift this box."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "emergency_safety_034",
       moduleId: "emergency_safety",
@@ -27586,56 +27727,69 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "emergency_safety_036",
-      moduleId: "emergency_safety",
-      moduleTitle: "安全、受伤和紧急情况",
-      scenarioId: "emergency_safety_fire_gas_emergency",
-      scenarioTitle: "火灾和紧急情况",
-      sequence: 10,
-      english: "The ladder is not steady.",
-      chinese: "梯子不稳。",
-      scenario: "火警、燃气、911和紧急撤离。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/emergency_safety_036-normal.mp3",
-      audioSlow: "/audio/en-US/emergency_safety_036-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "emergency_safety",
-        "supplement",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      difficulty: "Level 1",
-      variants: [
-        "The ladder is not stable.",
-        "This ladder feels unsafe."
-      ],
-      recommendedResponses: [
-        "Do not use it.",
-        "Get another ladder.",
-        "Tell the supervisor."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "not steady",
-          chinese: "不稳",
-          pronunciation: "not STED-ee",
-          note: "梯子、架子或设备摇晃时用。",
-          example: "The chair is not steady."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "emergency_safety_036",
+        moduleId: "emergency_safety",
+        moduleTitle: "安全、受伤和紧急情况",
+        scenarioId: "emergency_safety_fire_gas_emergency",
+        scenarioTitle: "火灾和紧急情况",
+        sequence: 10,
+        english: "The ladder is not steady.",
+        chinese: "梯子不稳。",
+        scenario: "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+        importance: "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+        role: "Worker",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/emergency_safety_036-normal.mp3",
+        audioSlow: "/audio/en-US/emergency_safety_036-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "emergency_safety",
+          "supplement",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Worker",
+        speakerRoleZh: "员工要说",
+        difficulty: "Level 1",
+        variants: [
+          "The ladder is shaky.",
+          "This ladder does not feel safe."
+        ],
+        recommendedResponses: [
+          "Do not climb it.",
+          "Use another ladder.",
+          "Tell the manager before using it."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "The ladder is not steady.",
+            chinese: "梯子不稳。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Do not climb it. Use another ladder.",
+            chinese: "不要爬。换另一把梯子。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "not steady",
+            chinese: "不稳",
+            pronunciation: "not-STED-ee",
+            note: "形容梯子、架子会晃，不安全。",
+            example: "This chair is not steady."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "emergency_safety_037",
       moduleId: "emergency_safety",
@@ -27671,56 +27825,69 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "emergency_safety_038",
-      moduleId: "emergency_safety",
-      moduleTitle: "安全、受伤和紧急情况",
-      scenarioId: "emergency_safety_fire_gas_emergency",
-      scenarioTitle: "火灾和紧急情况",
-      sequence: 3,
-      english: "The fire alarm is going off.",
-      chinese: "火警警报响了。",
-      scenario: "火警、燃气、911和紧急撤离。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/emergency_safety_038-normal.mp3",
-      audioSlow: "/audio/en-US/emergency_safety_038-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "emergency_safety",
-        "supplement",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      difficulty: "Level 1",
-      variants: [
-        "The fire alarm is ringing.",
-        "The alarm is going off."
-      ],
-      recommendedResponses: [
-        "Leave the building.",
-        "Follow the emergency plan.",
-        "Do not ignore the alarm."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "going off",
-          chinese: "响起来",
-          pronunciation: "GO-ing off",
-          note: "警报器响了，常说 alarm is going off。",
-          example: "The alarm is going off."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "emergency_safety_038",
+        moduleId: "emergency_safety",
+        moduleTitle: "安全、受伤和紧急情况",
+        scenarioId: "emergency_safety_fire_gas_emergency",
+        scenarioTitle: "火灾和紧急情况",
+        sequence: 3,
+        english: "The fire alarm is going off.",
+        chinese: "火警警报响了。",
+        scenario: "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+        importance: "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+        role: "Worker",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/emergency_safety_038-normal.mp3",
+        audioSlow: "/audio/en-US/emergency_safety_038-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "emergency_safety",
+          "supplement",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Worker",
+        speakerRoleZh: "员工要说",
+        difficulty: "Level 1",
+        variants: [
+          "The fire alarm is ringing.",
+          "The alarm is going off."
+        ],
+        recommendedResponses: [
+          "Everyone needs to leave the building.",
+          "Follow the emergency exit signs.",
+          "Do not go back inside."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "The fire alarm is going off.",
+            chinese: "火警警报响了。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Everyone needs to leave the building now.",
+            chinese: "所有人现在都要离开建筑。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "going off",
+            chinese: "响起来",
+            pronunciation: "GO-ing off",
+            note: "警报器开始响，表示有紧急情况。",
+            example: "The alarm is going off."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "emergency_safety_039",
       moduleId: "emergency_safety",
@@ -28030,883 +28197,899 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "emergency_safety_048",
-      moduleId: "emergency_safety",
-      moduleTitle: "安全、受伤和紧急情况",
-      scenarioId: "emergency_safety_injury_first_aid",
-      scenarioTitle: "受伤",
-      sequence: 5,
-      english: "I need to fill out an incident report.",
-      chinese: "我需要填写事故报告。",
-      scenario: "割伤、烫伤、摔倒和事故报告。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/emergency_safety_048-normal.mp3",
-      audioSlow: "/audio/en-US/emergency_safety_048-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "emergency_safety",
-        "supplement",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      difficulty: "Level 2",
-      variants: [
-        "I need to complete an incident report.",
-        "I need to write an incident report."
-      ],
-      recommendedResponses: [
-        "I will get the form.",
-        "Tell the manager what happened.",
-        "Write the time and details."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "incident report",
-          chinese: "事故报告",
-          pronunciation: "IN-si-dent ri-PORT",
-          note: "受伤、事故或安全事件后的书面记录。",
-          example: "Fill out an incident report."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "emergency_safety_049",
-      moduleId: "emergency_safety",
-      moduleTitle: "安全、受伤和紧急情况",
-      scenarioId: "emergency_safety_injury_first_aid",
-      scenarioTitle: "受伤",
-      sequence: 2,
-      english: "Should we call emergency services?",
-      chinese: "我们要叫急救或报警吗？",
-      scenario: "割伤、烫伤、摔倒和事故报告。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/emergency_safety_049-normal.mp3",
-      audioSlow: "/audio/en-US/emergency_safety_049-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "emergency_safety",
-        "supplement",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      difficulty: "Level 1",
-      variants: [
-        "Should we call 911?",
-        "Do we need emergency help?"
-      ],
-      recommendedResponses: [
-        "Yes, call now.",
-        "Stay with the person.",
-        "Tell the manager immediately."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "emergency services",
-          chinese: "急救/消防/警方等紧急服务",
-          pronunciation: "ee-MUR-jen-see SUR-vi-siz",
-          note: "严重受伤、火灾、危险情况时使用。",
-          example: "Call emergency services."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "emergency_safety_050",
-      moduleId: "emergency_safety",
-      moduleTitle: "安全、受伤和紧急情况",
-      scenarioId: "emergency_safety_injury_first_aid",
-      scenarioTitle: "受伤",
-      sequence: 4,
-      english: "Do not move the injured person.",
-      chinese: "不要移动受伤的人。",
-      scenario: "割伤、烫伤、摔倒和事故报告。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/emergency_safety_050-normal.mp3",
-      audioSlow: "/audio/en-US/emergency_safety_050-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "emergency_safety",
-        "supplement",
-        "restaurant-work-core"
-      ],
-      active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      difficulty: "Level 1",
-      variants: [
-        "Do not move them.",
-        "Leave the injured person where they are."
-      ],
-      recommendedResponses: [
-        "Call for help.",
-        "Keep people away.",
-        "Wait for emergency services."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "injured person",
-          chinese: "受伤的人",
-          pronunciation: "IN-jerd PER-sun",
-          note: "不确定伤势时，不要随便移动。",
-          example: "Help the injured person."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_001",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_bank_paycheck",
-      scenarioTitle: "银行和存工资支票",
-      sequence: 6,
-      english: "It's still not going through. I'll use a different card.",
-      chinese: "还是没有成功，我换一张卡。",
-      scenario: "存支票、工资到账、银行卡和银行问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
-      audioNormal: "/audio/en-US/daily_life_001-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_001-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "scenario_practice",
-        "dialogue",
-        "front_and_back",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
-      variants: [
-        "The payment still is not working."
-      ],
-      recommendedResponses: [
-        "Can you explain the It's still?",
-        "Please write the It's still information.",
-        "Who should I ask about It's still?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "It's still not going through. I'll use a different card.",
-          chinese: "还是没有成功，我换一张卡。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "No problem. You can try another card.",
-          chinese: "没问题。您可以试另一张卡。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "different card",
-          chinese: "另一张卡",
-          pronunciation: "DIF-er-ent kard",
-          note: "付款失败时换一张银行卡。",
-          example: "Use a different card."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_002",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_rent_housing",
-      scenarioTitle: "租房和联系房东",
-      sequence: 10,
-      english: "The written instructions are different from what I was told.",
-      chinese: "书面说明和我听到的指令不一样。",
-      scenario: "租房、地址、水电费和维修。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_002-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_002-slow.mp3",
-      isFree: false,
-      safetyLevel: "caution",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "workplace",
-        "supervisor",
-        "communication",
-        "employee",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "This written instructions are different from what I was told.",
-        "There is a problem with this."
-      ],
-      recommendedResponses: [
-        "Can you explain the instructions slowly?",
-        "Please write down the instructions."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "The written instructions are different from what I was told.",
-          chinese: "书面说明和我听到的指令不一样。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "对方可能会说",
-          english: "Sure. What do you need?",
-          chinese: "可以。你需要什么？"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Can you write it down for me?",
-          chinese: "你可以帮我写下来吗？"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "对方可能会说",
-          english: "Yes, no problem.",
-          chinese: "可以，没问题。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "instructions",
-          chinese: "指令；说明",
-          pronunciation: "in-STRUK-shunz",
-          note: "工作中主管给你的具体要求。",
-          example: "Follow the instructions."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_003",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_rent_housing",
-      scenarioTitle: "租房和联系房东",
-      sequence: 7,
-      english: "What should I do differently next time?",
-      chinese: "下次我应该怎样改进？",
-      scenario: "租房、地址、水电费和维修。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_003-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_003-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "workplace",
-        "supervisor",
-        "communication",
-        "employee",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "How can I do better next time?"
-      ],
-      recommendedResponses: [
-        "I can show you the right way.",
-        "Try this step first next time."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "What should I do differently next time?",
-          chinese: "下次我应该怎样改进？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "I’ll show you the correct way.",
-          chinese: "我给你示范正确做法。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "differently next time",
-          chinese: "下次换种做法",
-          pronunciation: "DIF-er-ent-lee next-time",
-          note: "请对方告诉你下次怎么改进。",
-          example: "Do it differently next time."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_004",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_bank_paycheck",
-      scenarioTitle: "银行和存工资支票",
-      sequence: 3,
-      english: "The current setup feels unsafe.",
-      chinese: "目前这个工作安排让我觉得不安全。",
-      scenario: "存支票、工资到账、银行卡和银行问题。",
-      importance: "这是安全相关表达，需要先确认再行动。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_004-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_004-slow.mp3",
-      isFree: false,
-      safetyLevel: "safety",
-      reviewRequired: true,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "workplace",
-        "supervisor",
-        "communication",
-        "employee",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "This current setup feels unsafe.",
-        "There is a problem with this."
-      ],
-      recommendedResponses: [
-        "Can you explain the fee slowly?",
-        "Please write down the fee."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "The current setup feels unsafe.",
-          chinese: "目前这个工作安排让我觉得不安全。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Okay, I’ll be careful.",
-          chinese: "好的。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "fee",
-          chinese: "费用；手续费",
-          pronunciation: "fee-sound",
-          note: "办理服务或账户可能收的钱。",
-          example: "There is no fee."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_005",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_transit",
-      scenarioTitle: "坐公交和问路",
-      sequence: 1,
-      english: "Where can I load my transit card?",
-      chinese: "我在哪里可以给公交卡充值？",
-      scenario: "坐公交、找站牌、问路线和通勤。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_005-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_005-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Where exactly can I load my transit card?",
-        "Where can I load my transit card, please?"
-      ],
-      recommendedResponses: [
-        "Can you explain the transit card slowly?",
-        "Please write down the transit card."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Where can I load my transit card?",
-          chinese: "我在哪里可以给公交卡充值？"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "对方可能会说",
-          english: "Sure. What do you need?",
-          chinese: "可以。你需要什么？"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Can you write it down for me?",
-          chinese: "你可以帮我写下来吗？"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "对方可能会说",
-          english: "Yes, no problem.",
-          chinese: "可以，没问题。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "transit card",
-          chinese: "公交卡",
-          pronunciation: "TRAN-zit kard",
-          note: "坐公交或地铁用的交通卡。",
-          example: "Load the transit card."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_006",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_transit",
-      scenarioTitle: "坐公交和问路",
-      sequence: 5,
-      english: "How much is the monthly pass?",
-      chinese: "月票多少钱？",
-      scenario: "坐公交、找站牌、问路线和通勤。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_006-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_006-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "How much is the monthly pass, please?"
-      ],
-      recommendedResponses: [
-        "Can you explain the much monthly?",
-        "Please write the much monthly information.",
-        "Who should I ask about much monthly?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "How much is the monthly pass?",
-          chinese: "月票多少钱？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "monthly pass",
-          chinese: "月票",
-          pronunciation: "MUNTH-lee pass",
-          note: "一个月内可使用的公交或交通票。",
-          example: "Buy a monthly pass."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_007",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_bank_paycheck",
-      scenarioTitle: "银行和存工资支票",
-      sequence: 7,
-      english: "I get paid by direct deposit.",
-      chinese: "我的工资是直接存进银行账户。",
-      scenario: "存支票、工资到账、银行卡和银行问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_007-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_007-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "My pay goes into my bank account."
-      ],
-      recommendedResponses: [
-        "Can you explain the direct deposit slowly?",
-        "Please write down the direct deposit."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "I get paid by direct deposit.",
-          chinese: "我的工资是直接存进银行账户。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for checking.",
-          chinese: "谢谢你帮我查。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "direct deposit",
-          chinese: "工资直存",
-          pronunciation: "di-REKT dee-PAH-zit",
-          note: "工资直接打进银行账户。",
-          example: "Use direct deposit."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_008",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_bank_paycheck",
-      scenarioTitle: "银行和存工资支票",
-      sequence: 8,
-      english: "I need to deposit this check.",
-      chinese: "我需要存这张支票。",
-      scenario: "存支票、工资到账、银行卡和银行问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_008-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_008-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "I need to get to deposit this check.",
-        "I have to get to deposit this check."
-      ],
-      recommendedResponses: [
-        "Can you explain the need deposit slowly?",
-        "Please write down the need deposit."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "I need to deposit this check.",
-          chinese: "我需要存这张支票。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "need deposit",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “need deposit” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_009",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_phone_internet",
-      scenarioTitle: "手机和网络",
-      sequence: 2,
-      english: "My phone has no service.",
-      chinese: "我的手机没有信号。",
-      scenario: "手机套餐、流量、账单和网络问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_009-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_009-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "My phone has no signal."
-      ],
-      recommendedResponses: [
-        "Can you explain the phone service?",
-        "Please write the phone service information.",
-        "Who should I ask about phone service?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "My phone has no service.",
-          chinese: "我的手机没有信号。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "对方可能会说",
-          english: "Sure. What do you need?",
-          chinese: "可以。你需要什么？"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Can you write it down for me?",
-          chinese: "你可以帮我写下来吗？"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "对方可能会说",
-          english: "Yes, no problem.",
-          chinese: "可以，没问题。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "no service",
-          chinese: "没有信号",
-          pronunciation: "noh SUR-vis",
-          note: "手机没有网络或信号。",
-          example: "My phone has service."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_010",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_phone_internet",
-      scenarioTitle: "手机和网络",
-      sequence: 6,
-      english: "I need more data on my plan.",
-      chinese: "我的套餐需要更多流量。",
-      scenario: "手机套餐、流量、账单和网络问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_010-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_010-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "I need to get more data on my plan.",
-        "I have to get more data on my plan."
-      ],
-      recommendedResponses: [
-        "Can you explain the need more?",
-        "Please write the need more information.",
-        "Who should I ask about need more?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "I need more data on my plan.",
-          chinese: "我的套餐需要更多流量。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "data on my plan",
-          chinese: "套餐流量",
-          pronunciation: "DAY-tuh on my plan",
-          note: "手机套餐里的上网流量。",
-          example: "Add more data."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_011",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_rent_housing",
-      scenarioTitle: "租房和联系房东",
-      sequence: 5,
-      english: "Is heat included in the rent?",
-      chinese: "暖气费包含在房租里吗？",
-      scenario: "租房、地址、水电费和维修。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_011-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_011-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Does rent include heat?"
-      ],
-      recommendedResponses: [
-        "Yes, heat is included.",
-        "No, you pay heat separately."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Is heat included in the rent?",
-          chinese: "暖气费包含在房租里吗？"
-        },
-        {
-          speakerRole: "Landlord",
-          speakerRoleZh: "房东可能会说",
-          english: "Yes, heat is included.",
-          chinese: "是的，暖气费包含在内。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "heat included",
-          chinese: "包含暖气费",
-          pronunciation: "heet-in-KLOO-did",
-          note: "租房时确认暖气费用是否包含在房租里。",
-          example: "Heat is included."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "emergency_safety_048",
+        moduleId: "emergency_safety",
+        moduleTitle: "安全、受伤和紧急情况",
+        scenarioId: "emergency_safety_injury_first_aid",
+        scenarioTitle: "受伤",
+        sequence: 5,
+        english: "I need to fill out an incident report.",
+        chinese: "我需要填写事故报告。",
+        scenario: "员工或顾客受伤、流血、无法呼吸或需要急救时，必须快速联系主管和紧急服务。",
+        importance: "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+        role: "Worker",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/emergency_safety_048-normal.mp3",
+        audioSlow: "/audio/en-US/emergency_safety_048-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "emergency_safety",
+          "supplement",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Worker",
+        speakerRoleZh: "员工要说",
+        difficulty: "Level 2",
+        variants: [
+          "I need to write an incident report.",
+          "Should I fill out an incident report?"
+        ],
+        recommendedResponses: [
+          "Yes, fill it out after you get help.",
+          "Tell the manager what happened.",
+          "Write the time and what happened."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "I need to fill out an incident report.",
+            chinese: "我需要填写事故报告。"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Yes. Get first aid first, then fill it out.",
+            chinese: "是的。先处理伤口，然后填写。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "incident report",
+            chinese: "事故报告",
+            pronunciation: "IN-si-dent ri-PORT",
+            note: "记录受伤、摔倒或安全事故的表格。",
+            example: "Write an incident report."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "emergency_safety_049",
+        moduleId: "emergency_safety",
+        moduleTitle: "安全、受伤和紧急情况",
+        scenarioId: "emergency_safety_injury_first_aid",
+        scenarioTitle: "受伤",
+        sequence: 2,
+        english: "Should we call emergency services?",
+        chinese: "我们要叫急救或报警吗？",
+        scenario: "员工或顾客受伤、流血、无法呼吸或需要急救时，必须快速联系主管和紧急服务。",
+        importance: "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+        role: "Worker",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/emergency_safety_049-normal.mp3",
+        audioSlow: "/audio/en-US/emergency_safety_049-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "emergency_safety",
+          "supplement",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Worker",
+        speakerRoleZh: "员工要说",
+        difficulty: "Level 1",
+        variants: [
+          "Should we call 911?",
+          "Do we need emergency help?"
+        ],
+        recommendedResponses: [
+          "Yes, call 911 now.",
+          "Call the manager and emergency services.",
+          "Stay with the person until help comes."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "Should we call emergency services?",
+            chinese: "我们要叫急救或报警吗？"
+          },
+          {
+            speakerRole: "Supervisor",
+            speakerRoleZh: "主管可能会说",
+            english: "Yes, call 911 now.",
+            chinese: "是的，现在打 911。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "emergency services",
+            chinese: "紧急服务",
+            pronunciation: "ee-MER-jen-see SER-vuh-siz",
+            note: "指急救、消防或警察等紧急帮助。",
+            example: "Call emergency services now."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "emergency_safety_050",
+        moduleId: "emergency_safety",
+        moduleTitle: "安全、受伤和紧急情况",
+        scenarioId: "emergency_safety_injury_first_aid",
+        scenarioTitle: "受伤",
+        sequence: 4,
+        english: "Do not move the injured person.",
+        chinese: "不要移动受伤的人。",
+        scenario: "员工或顾客受伤、流血、无法呼吸或需要急救时，必须快速联系主管和紧急服务。",
+        importance: "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+        role: "Worker",
+        roleZh: "员工要说",
+        audioNormal: "/audio/en-US/emergency_safety_050-normal.mp3",
+        audioSlow: "/audio/en-US/emergency_safety_050-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "emergency_safety",
+          "supplement",
+          "restaurant-work-core"
+        ],
+        active: true,
+        speakerRole: "Worker",
+        speakerRoleZh: "员工要说",
+        difficulty: "Level 1",
+        variants: [
+          "Do not move them.",
+          "Keep the injured person still."
+        ],
+        recommendedResponses: [
+          "Okay, I will keep people away.",
+          "I will wait for emergency help.",
+          "Should I call 911 now?"
+        ],
+        dialogue: [
+          {
+            speakerRole: "Worker",
+            speakerRoleZh: "员工要说",
+            english: "Do not move the injured person.",
+            chinese: "不要移动受伤的人。"
+          },
+          {
+            speakerRole: "Staff",
+            speakerRoleZh: "店员要说",
+            english: "Okay. I will keep people away and call for help.",
+            chinese: "好的。我会让大家远离并求助。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "injured person",
+            chinese: "受伤的人",
+            pronunciation: "IN-jerd PER-sun",
+            note: "指已经受伤、可能需要急救的人。",
+            example: "Help the injured person."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_001",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_bank_paycheck",
+        scenarioTitle: "银行和存工资支票",
+        sequence: 6,
+        english: "I would like to open a bank account.",
+        chinese: "我想开一个银行账户。",
+        scenario: "在银行办理账户、支票、银行卡、费用和工资相关事务时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_001-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_001-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "scenario_practice",
+          "dialogue",
+          "front_and_back",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "Sure. May I see your ID?",
+          "Let me check your account.",
+          "You can do that here."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I would like to open a bank account.",
+            chinese: "我想开一个银行账户。"
+          },
+          {
+            speakerRole: "Bank Teller",
+            speakerRoleZh: "银行柜员可能会说",
+            english: "Sure. May I see your ID?",
+            chinese: "可以。请给我看一下身份证件。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "bank account",
+            chinese: "银行账户",
+            pronunciation: "bank uh-KOWNT",
+            note: "在这个生活场景中，银行账户是完成沟通的关键词。",
+            example: "Bank account is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_002",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_rent_housing",
+        scenarioTitle: "租房和联系房东",
+        sequence: 10,
+        english: "I am calling about the apartment.",
+        chinese: "我是打电话问这套公寓的。",
+        scenario: "租房、看房、询问房租押金、联系房东或报修时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_002-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_002-slow.mp3",
+        isFree: false,
+        safetyLevel: "caution",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "workplace",
+          "supervisor",
+          "communication",
+          "employee",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "Yes, it is available.",
+          "You can come see it today.",
+          "The rent is due on the first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I am calling about the apartment.",
+            chinese: "我是打电话问这套公寓的。"
+          },
+          {
+            speakerRole: "Landlord",
+            speakerRoleZh: "房东可能会说",
+            english: "Yes, it is available.",
+            chinese: "是的，还可以。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "calling about",
+            chinese: "打电话询问",
+            pronunciation: "CALL-ing uh-BOWT",
+            note: "在这个生活场景中，打电话询问是完成沟通的关键词。",
+            example: "Calling about is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_003",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_rent_housing",
+        scenarioTitle: "租房和联系房东",
+        sequence: 7,
+        english: "Is the apartment still available?",
+        chinese: "这套公寓还可以租吗？",
+        scenario: "租房、看房、询问房租押金、联系房东或报修时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_003-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_003-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "workplace",
+          "supervisor",
+          "communication",
+          "employee",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Do you know if the apartment still available?",
+          "Can you tell me if the apartment still available?"
+        ],
+        recommendedResponses: [
+          "Yes, it is available.",
+          "You can come see it today.",
+          "The rent is due on the first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Is the apartment still available?",
+            chinese: "这套公寓还可以租吗？"
+          },
+          {
+            speakerRole: "Landlord",
+            speakerRoleZh: "房东可能会说",
+            english: "Yes, it is available.",
+            chinese: "是的，还可以。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "still available",
+            chinese: "还可以租",
+            pronunciation: "stil uh-VAY-luh-bul",
+            note: "在这个生活场景中，还可以租是完成沟通的关键词。",
+            example: "Still available is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_004",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_bank_paycheck",
+        scenarioTitle: "银行和存工资支票",
+        sequence: 3,
+        english: "Is there a monthly fee?",
+        chinese: "有月费吗？",
+        scenario: "在银行办理账户、支票、银行卡、费用和工资相关事务时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_004-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_004-slow.mp3",
+        isFree: false,
+        safetyLevel: "safety",
+        reviewRequired: true,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "workplace",
+          "supervisor",
+          "communication",
+          "employee",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Do you know if there a monthly fee?",
+          "Can you tell me if there a monthly fee?"
+        ],
+        recommendedResponses: [
+          "Sure. May I see your ID?",
+          "Let me check your account.",
+          "You can do that here."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Is there a monthly fee?",
+            chinese: "有月费吗？"
+          },
+          {
+            speakerRole: "Bank Teller",
+            speakerRoleZh: "银行柜员可能会说",
+            english: "Sure. May I see your ID?",
+            chinese: "可以。请给我看一下身份证件。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "monthly fee",
+            chinese: "月费",
+            pronunciation: "MUNTH-lee fee",
+            note: "在这个生活场景中，月费是完成沟通的关键词。",
+            example: "Monthly fee is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_005",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_transit",
+        scenarioTitle: "坐公交和问路",
+        sequence: 1,
+        english: "Where can I load my transit card?",
+        chinese: "我在哪里可以给公交卡充值？",
+        scenario: "日常坐公交、地铁、问路、换乘或充值交通卡时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_005-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_005-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you tell me where can I load my transit card?",
+          "Do you know where can I load my transit card?"
+        ],
+        recommendedResponses: [
+          "It takes about twenty minutes.",
+          "Get off at Main Street.",
+          "You can pay by card."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Where can I load my transit card?",
+            chinese: "我在哪里可以给公交卡充值？"
+          },
+          {
+            speakerRole: "Transit Staff",
+            speakerRoleZh: "交通工作人员可能会说",
+            english: "It takes about twenty minutes.",
+            chinese: "大概二十分钟。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "load my transit card",
+            chinese: "给公交卡充值",
+            pronunciation: "load-my TRAN-zit card",
+            note: "在这个生活场景中，给公交卡充值是完成沟通的关键词。",
+            example: "Load my transit card is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_006",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_transit",
+        scenarioTitle: "坐公交和问路",
+        sequence: 5,
+        english: "How much is the monthly pass?",
+        chinese: "月票多少钱？",
+        scenario: "日常坐公交、地铁、问路、换乘或充值交通卡时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_006-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_006-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "What is the cost of the monthly pass?",
+          "What is the price of the monthly pass?"
+        ],
+        recommendedResponses: [
+          "It takes about twenty minutes.",
+          "Get off at Main Street.",
+          "You can pay by card."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "How much is the monthly pass?",
+            chinese: "月票多少钱？"
+          },
+          {
+            speakerRole: "Transit Staff",
+            speakerRoleZh: "交通工作人员可能会说",
+            english: "It takes about twenty minutes.",
+            chinese: "大概二十分钟。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "monthly pass",
+            chinese: "月票",
+            pronunciation: "MUNTH-lee pass",
+            note: "在这个生活场景中，月票是完成沟通的关键词。",
+            example: "Monthly pass is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_007",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_bank_paycheck",
+        scenarioTitle: "银行和存工资支票",
+        sequence: 7,
+        english: "I get paid by direct deposit.",
+        chinese: "我的工资是直接存进银行账户。",
+        scenario: "在银行办理账户、支票、银行卡、费用和工资相关事务时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_007-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_007-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "Sure. May I see your ID?",
+          "Let me check your account.",
+          "You can do that here."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I get paid by direct deposit.",
+            chinese: "我的工资是直接存进银行账户。"
+          },
+          {
+            speakerRole: "Bank Teller",
+            speakerRoleZh: "银行柜员可能会说",
+            english: "Sure. May I see your ID?",
+            chinese: "可以。请给我看一下身份证件。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "direct deposit",
+            chinese: "直接存款",
+            pronunciation: "di-REKT di-POZ-it",
+            note: "在这个生活场景中，直接存款是完成沟通的关键词。",
+            example: "Direct deposit is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_008",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_bank_paycheck",
+        scenarioTitle: "银行和存工资支票",
+        sequence: 8,
+        english: "I need to deposit this check.",
+        chinese: "我需要存这张支票。",
+        scenario: "在银行办理账户、支票、银行卡、费用和工资相关事务时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_008-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_008-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "I would like to deposit this check.",
+          "I have to to deposit this check."
+        ],
+        recommendedResponses: [
+          "Sure. May I see your ID?",
+          "Let me check your account.",
+          "You can do that here."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I need to deposit this check.",
+            chinese: "我需要存这张支票。"
+          },
+          {
+            speakerRole: "Bank Teller",
+            speakerRoleZh: "银行柜员可能会说",
+            english: "Sure. May I see your ID?",
+            chinese: "可以。请给我看一下身份证件。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "deposit this check",
+            chinese: "存这张支票",
+            pronunciation: "di-POZ-it this chek",
+            note: "在这个生活场景中，存这张支票是完成沟通的关键词。",
+            example: "Deposit this check is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_009",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_phone_internet",
+        scenarioTitle: "手机和网络",
+        sequence: 2,
+        english: "My phone has no service.",
+        chinese: "我的手机没有信号。",
+        scenario: "办理手机套餐、网络、账单、流量、付款或服务故障时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_009-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_009-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "Let me check your account.",
+          "We can change your plan.",
+          "Try restarting your phone first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "My phone has no service.",
+            chinese: "我的手机没有信号。"
+          },
+          {
+            speakerRole: "Phone Rep",
+            speakerRoleZh: "手机客服可能会说",
+            english: "Let me check your account.",
+            chinese: "我查一下你的账户。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "no service",
+            chinese: "没有信号",
+            pronunciation: "no-SER-vis",
+            note: "在这个生活场景中，没有信号是完成沟通的关键词。",
+            example: "No service is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_010",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_phone_internet",
+        scenarioTitle: "手机和网络",
+        sequence: 6,
+        english: "I need more data on my plan.",
+        chinese: "我的套餐需要更多流量。",
+        scenario: "办理手机套餐、网络、账单、流量、付款或服务故障时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_010-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_010-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "I would like more data on my plan.",
+          "I have to more data on my plan."
+        ],
+        recommendedResponses: [
+          "Let me check your account.",
+          "We can change your plan.",
+          "Try restarting your phone first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I need more data on my plan.",
+            chinese: "我的套餐需要更多流量。"
+          },
+          {
+            speakerRole: "Phone Rep",
+            speakerRoleZh: "手机客服可能会说",
+            english: "Let me check your account.",
+            chinese: "我查一下你的账户。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "more data",
+            chinese: "更多流量",
+            pronunciation: "more DAY-tuh",
+            note: "在这个生活场景中，更多流量是完成沟通的关键词。",
+            example: "More data is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_011",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_rent_housing",
+        scenarioTitle: "租房和联系房东",
+        sequence: 5,
+        english: "Are utilities included?",
+        chinese: "水电等费用包含吗？",
+        scenario: "租房、看房、询问房租押金、联系房东或报修时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_011-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_011-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "Yes, it is available.",
+          "You can come see it today.",
+          "The rent is due on the first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Are utilities included?",
+            chinese: "水电等费用包含吗？"
+          },
+          {
+            speakerRole: "Landlord",
+            speakerRoleZh: "房东可能会说",
+            english: "Yes, it is available.",
+            chinese: "是的，还可以。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "utilities",
+            chinese: "水电等杂费",
+            pronunciation: "yoo-TIL-uh-teez",
+            note: "在这个生活场景中，水电等杂费是完成沟通的关键词。",
+            example: "Utilities is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "daily_life_012",
       moduleId: "daily_life",
@@ -28970,80 +29153,69 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "daily_life_013",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_pharmacy_doctor",
-      scenarioTitle: "药店买药和看医生",
-      sequence: 2,
-      english: "Can I book an appointment?",
-      chinese: "我可以预约吗？",
-      scenario: "药店、诊所、医生和身体不舒服。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_013-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_013-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Can I book an appointment, please?"
-      ],
-      recommendedResponses: [
-        "I can help you make an appointment.",
-        "Please describe your symptoms.",
-        "You may need to speak with a pharmacist."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Can I book an appointment?",
-          chinese: "我可以预约吗？"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "对方可能会说",
-          english: "Sure. What do you need?",
-          chinese: "可以。你需要什么？"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Can you write it down for me?",
-          chinese: "你可以帮我写下来吗？"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "对方可能会说",
-          english: "Yes, no problem.",
-          chinese: "可以，没问题。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "appointment",
-          chinese: "预约",
-          pronunciation: "uh-POINT-ment",
-          note: "看医生、办事或服务前约好的时间。",
-          example: "Book an appointment."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "daily_life_013",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_pharmacy_doctor",
+        scenarioTitle: "药店买药和看医生",
+        sequence: 2,
+        english: "Can I book an appointment?",
+        chinese: "我可以预约吗？",
+        scenario: "去药店、诊所、预约医生或说明简单症状时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_013-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_013-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Is it possible to book an appointment?",
+          "Could I book an appointment?"
+        ],
+        recommendedResponses: [
+          "You can ask the pharmacist.",
+          "Please follow the label directions.",
+          "You may want to see a doctor."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I book an appointment?",
+            chinese: "我可以预约吗？"
+          },
+          {
+            speakerRole: "Receptionist",
+            speakerRoleZh: "前台接待可能会说",
+            english: "You can ask the pharmacist.",
+            chinese: "你可以问药剂师。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "book an appointment",
+            chinese: "预约",
+            pronunciation: "book-an uh-POINT-ment",
+            note: "在这个生活场景中，预约是完成沟通的关键词。",
+            example: "Book an appointment is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "daily_life_014",
       moduleId: "daily_life",
@@ -29107,1095 +29279,1077 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "daily_life_015",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_pharmacy_doctor",
-      scenarioTitle: "药店买药和看医生",
-      sequence: 5,
-      english: "Where is the nearest walk-in clinic?",
-      chinese: "最近的免预约诊所在哪里？",
-      scenario: "药店、诊所、医生和身体不舒服。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_015-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_015-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Where is the closest walk-in clinic?"
-      ],
-      recommendedResponses: [
-        "It is two blocks away.",
-        "I can show you on the map."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Where is the nearest walk-in clinic?",
-          chinese: "最近的免预约诊所在哪里？"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "对方可能会说",
-          english: "There is one on Main Street.",
-          chinese: "Main Street 上有一家。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "walk-in clinic",
-          chinese: "免预约诊所",
-          pronunciation: "wawk-in KLI-nik",
-          note: "不需要提前预约也可以去看的诊所。",
-          example: "Find a walk-in clinic."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_016",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_general",
-      scenarioTitle: "报警、911和紧急求助",
-      sequence: 4,
-      english: "Can you speak more slowly? English is my second language.",
-      chinese: "你可以说慢一点吗？英语不是我的母语。",
-      scenario: "遇到紧急情况时求助和说明问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_016-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_016-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Could you speak more slowly? English is my second language.",
-        "Can you please speak more slowly? English is my second language."
-      ],
-      recommendedResponses: [
-        "Can you explain the speak more?",
-        "Please write the speak more information.",
-        "Who should I ask about speak more?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Can you speak more slowly? English is my second language.",
-          chinese: "你可以说慢一点吗？英语不是我的母语。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "对方可能会说",
-          english: "Sure. What do you need?",
-          chinese: "可以。你需要什么？"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Can you write it down for me?",
-          chinese: "你可以帮我写下来吗？"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "对方可能会说",
-          english: "Yes, no problem.",
-          chinese: "可以，没问题。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "speak more",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “speak more” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_017",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_rent_housing",
-      scenarioTitle: "租房和联系房东",
-      sequence: 9,
-      english: "I am looking for a room to rent.",
-      chinese: "我在找一个房间出租。",
-      scenario: "租房、地址、水电费和维修。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_017-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_017-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "I need a room to rent."
-      ],
-      recommendedResponses: [
-        "What is your budget?",
-        "When do you want to move in?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "I am looking for a room to rent.",
-          chinese: "我在找一个房间出租。"
-        },
-        {
-          speakerRole: "Landlord",
-          speakerRoleZh: "房东可能会说",
-          english: "When do you want to move in?",
-          chinese: "你想什么时候搬进来？"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "room to rent",
-          chinese: "出租房间",
-          pronunciation: "room-to-rent",
-          note: "找房时说明你想租一个房间。",
-          example: "I need a room."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_018",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_rent_housing",
-      scenarioTitle: "租房和联系房东",
-      sequence: 3,
-      english: "When is the rent due?",
-      chinese: "房租什么时候到期要交？",
-      scenario: "租房、地址、水电费和维修。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_018-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_018-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "What day is rent due?"
-      ],
-      recommendedResponses: [
-        "Rent is due on the first.",
-        "Please pay before the fifth."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "When is the rent due?",
-          chinese: "房租什么时候到期要交？"
-        },
-        {
-          speakerRole: "Landlord",
-          speakerRoleZh: "房东可能会说",
-          english: "It is due on the first.",
-          chinese: "每月一号要交。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "rent due",
-          chinese: "房租到期应付",
-          pronunciation: "rent-doo",
-          note: "说明房租必须在哪一天之前交。",
-          example: "Rent is due Friday."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_019",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_general",
-      scenarioTitle: "报警、911和紧急求助",
-      sequence: 1,
-      english: "Can I pay by e-transfer?",
-      chinese: "我可以用电子转账付款吗？",
-      scenario: "遇到紧急情况时求助和说明问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_019-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_019-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Can I pay by e-transfer, please?"
-      ],
-      recommendedResponses: [
-        "Can you explain the e-transfer?",
-        "Please write the e-transfer information.",
-        "Who should I ask about e-transfer?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Can I pay by e-transfer?",
-          chinese: "我可以用电子转账付款吗？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for checking.",
-          chinese: "谢谢你帮我查。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "e-transfer",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “e-transfer” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_020",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_bank_paycheck",
-      scenarioTitle: "银行和存工资支票",
-      sequence: 9,
-      english: "I need to change my address.",
-      chinese: "我需要更改我的地址。",
-      scenario: "存支票、工资到账、银行卡和银行问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_020-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_020-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "I need to get to change my address.",
-        "I have to get to change my address."
-      ],
-      recommendedResponses: [
-        "Can you explain the change?",
-        "Please write the change information.",
-        "Who should I ask about change?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "I need to change my address.",
-          chinese: "我需要更改我的地址。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Card, please.",
-          chinese: "刷卡。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "change",
-          chinese: "找零",
-          pronunciation: "chaynj",
-          note: "现金付款后退给顾客的钱。",
-          example: "Here is your change."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_021",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_forms_receipts",
-      scenarioTitle: "电话预约",
-      sequence: 3,
-      english: "Can you print this form for me?",
-      chinese: "你可以帮我打印这张表吗？",
-      scenario: "打电话预约、确认时间和留下信息。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_021-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_021-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Could you print this form for me?",
-        "Can you please print this form for me?"
-      ],
-      recommendedResponses: [
-        "Can you explain the form?",
-        "Please write the form information.",
-        "Who should I ask about form?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Can you print this form for me?",
-          chinese: "你可以帮我打印这张表吗？"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "对方可能会说",
-          english: "Sure. What do you need?",
-          chinese: "可以。你需要什么？"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Can you write it down for me?",
-          chinese: "你可以帮我写下来吗？"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "对方可能会说",
-          english: "Yes, no problem.",
-          chinese: "可以，没问题。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "form",
-          chinese: "表格",
-          pronunciation: "form-sound",
-          note: "需要填写个人信息的纸或网页。",
-          example: "Fill out the form."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_022",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_work_life_basics",
-      scenarioTitle: "生活用品和基本服务",
-      sequence: 1,
-      english: "Where can I buy work shoes?",
-      chinese: "我在哪里可以买工作鞋？",
-      scenario: "买生活用品、打印、收据和简单服务。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_022-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_022-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Where exactly can I buy work shoes?",
-        "Where can I buy work shoes, please?"
-      ],
-      recommendedResponses: [
-        "Can you explain the Where work slowly?",
-        "Please write down the Where work."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Where can I buy work shoes?",
-          chinese: "我在哪里可以买工作鞋？"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "对方可能会说",
-          english: "Sure. What do you need?",
-          chinese: "可以。你需要什么？"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Can you write it down for me?",
-          chinese: "你可以帮我写下来吗？"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "对方可能会说",
-          english: "Yes, no problem.",
-          chinese: "可以，没问题。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "Where work",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “Where work” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_023",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_work_life_basics",
-      scenarioTitle: "生活用品和基本服务",
-      sequence: 2,
-      english: "I need non-slip shoes for work.",
-      chinese: "我工作需要防滑鞋。",
-      scenario: "买生活用品、打印、收据和简单服务。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_023-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_023-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "I need to get non-slip shoes for work.",
-        "I have to get non-slip shoes for work."
-      ],
-      recommendedResponses: [
-        "Can you explain the need non-slip?",
-        "Please write the need non-slip information.",
-        "Who should I ask about need non-slip?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "I need non-slip shoes for work.",
-          chinese: "我工作需要防滑鞋。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "need non-slip",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “need non-slip” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_024",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_forms_receipts",
-      scenarioTitle: "电话预约",
-      sequence: 4,
-      english: "Can I get a copy of the receipt?",
-      chinese: "我可以要一份收据副本吗？",
-      scenario: "打电话预约、确认时间和留下信息。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_024-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_024-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Can I get a copy of the receipt, please?"
-      ],
-      recommendedResponses: [
-        "Can you explain the receipt?",
-        "Please write the receipt information.",
-        "Who should I ask about receipt?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Can I get a copy of the receipt?",
-          chinese: "我可以要一份收据副本吗？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Card, please.",
-          chinese: "刷卡。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "receipt",
-          chinese: "收据",
-          pronunciation: "re-CEIPT",
-          note: "付款后的小票。",
-          example: "Would you like a receipt?"
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_025",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_rent_housing",
-      scenarioTitle: "租房和联系房东",
-      sequence: 8,
-      english: "Can I get directions to this address?",
-      chinese: "你可以告诉我去这个地址怎么走吗？",
-      scenario: "租房、地址、水电费和维修。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_025-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_025-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Can I get directions to this address, please?"
-      ],
-      recommendedResponses: [
-        "Yes, go straight two blocks.",
-        "I can show you on the map."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Can I get directions to this address?",
-          chinese: "你可以告诉我去这个地址怎么走吗？"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "对方可能会说",
-          english: "Yes, go straight first.",
-          chinese: "可以，先直走。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "directions",
-          chinese: "路线；怎么走",
-          pronunciation: "di-REK-shunz",
-          note: "问别人去某个地址的路线。",
-          example: "I need directions."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_026",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_transit",
-      scenarioTitle: "坐公交和问路",
-      sequence: 6,
-      english: "How long does it take by bus?",
-      chinese: "坐公交要多久？",
-      scenario: "坐公交、找站牌、问路线和通勤。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_026-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_026-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "How long is the bus ride?",
-        "How many minutes by bus?"
-      ],
-      recommendedResponses: [
-        "It takes about twenty minutes.",
-        "It depends on traffic."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "How long does it take by bus?",
-          chinese: "坐公交要多久？"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "对方可能会说",
-          english: "About twenty minutes.",
-          chinese: "大约二十分钟。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "by bus",
-          chinese: "坐公交",
-          pronunciation: "by-bus",
-          note: "说明交通方式是公交车。",
-          example: "Go by bus."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_027",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_transit",
-      scenarioTitle: "坐公交和问路",
-      sequence: 7,
-      english: "Does this bus stop near the restaurant?",
-      chinese: "这路公交会停在餐厅附近吗？",
-      scenario: "坐公交、找站牌、问路线和通勤。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_027-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_027-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Does this bus stop near the restaurant, please?"
-      ],
-      recommendedResponses: [
-        "Step aside.",
-        "I’ll be careful.",
-        "I’ll tell the manager right now."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Does this bus stop near the restaurant?",
-          chinese: "这路公交会停在餐厅附近吗？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Step aside.",
-          chinese: "让到一边。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "bus stop",
-          chinese: "公交站",
-          pronunciation: "bus-stop",
-          note: "等公交车的地方。",
-          example: "Where is the bus stop?"
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_028",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_transit",
-      scenarioTitle: "坐公交和问路",
-      sequence: 2,
-      english: "I missed my bus.",
-      chinese: "我错过公交了。",
-      scenario: "坐公交、找站牌、问路线和通勤。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_028-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_028-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "The bus left without me."
-      ],
-      recommendedResponses: [
-        "The next bus comes soon.",
-        "You can take the next one."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "I missed my bus.",
-          chinese: "我错过公交了。"
-        },
-        {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
-          english: "Take the next one.",
-          chinese: "坐下一班吧。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "missed my bus",
-          chinese: "错过公交",
-          pronunciation: "mist-my-bus",
-          note: "公交已经走了，自己没赶上。",
-          example: "I missed the bus."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_029",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_transit",
-      scenarioTitle: "坐公交和问路",
-      sequence: 3,
-      english: "The bus is running late.",
-      chinese: "公交晚点了。",
-      scenario: "坐公交、找站牌、问路线和通勤。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_029-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_029-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "The bus is late."
-      ],
-      recommendedResponses: [
-        "You may need to wait.",
-        "Check the transit app."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "The bus is running late.",
-          chinese: "公交晚点了。"
-        },
-        {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
-          english: "Text the manager now.",
-          chinese: "现在给经理发消息。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "running late",
-          chinese: "晚点；迟到",
-          pronunciation: "RUN-ing-late",
-          note: "公交或人比预计时间晚。",
-          example: "The bus is late."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_030",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_bank_paycheck",
-      scenarioTitle: "银行和存工资支票",
-      sequence: 1,
-      english: "Can I cash this check here?",
-      chinese: "我可以在这里兑现这张支票吗？",
-      scenario: "存支票、工资到账、银行卡和银行问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_030-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_030-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Can I cash this check here, please?"
-      ],
-      recommendedResponses: [
-        "Can you explain the cash check?",
-        "Please write the cash check information.",
-        "Who should I ask about cash check?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Can I cash this check here?",
-          chinese: "我可以在这里兑现这张支票吗？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Card, please.",
-          chinese: "刷卡。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "cash check",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “cash check” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_031",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_bank_paycheck",
-      scenarioTitle: "银行和存工资支票",
-      sequence: 4,
-      english: "What ID do I need?",
-      chinese: "我需要什么身份证件？",
-      scenario: "存支票、工资到账、银行卡和银行问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_031-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_031-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "What exactly ID do I need?",
-        "What ID do I need, please?"
-      ],
-      recommendedResponses: [
-        "Can you explain the What need?",
-        "Please write the What need information.",
-        "Who should I ask about What need?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "What ID do I need?",
-          chinese: "我需要什么身份证件？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "What need",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “What need” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "daily_life_015",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_pharmacy_doctor",
+        scenarioTitle: "药店买药和看医生",
+        sequence: 5,
+        english: "Where is the nearest walk-in clinic?",
+        chinese: "最近的免预约诊所在哪里？",
+        scenario: "去药店、诊所、预约医生或说明简单症状时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_015-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_015-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you tell me where is the nearest walk-in clinic?",
+          "Do you know where is the nearest walk-in clinic?"
+        ],
+        recommendedResponses: [
+          "You can ask the pharmacist.",
+          "Please follow the label directions.",
+          "You may want to see a doctor."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Where is the nearest walk-in clinic?",
+            chinese: "最近的免预约诊所在哪里？"
+          },
+          {
+            speakerRole: "Receptionist",
+            speakerRoleZh: "前台接待可能会说",
+            english: "You can ask the pharmacist.",
+            chinese: "你可以问药剂师。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "walk-in clinic",
+            chinese: "免预约诊所",
+            pronunciation: "WAWK-in KLIN-ik",
+            note: "在这个生活场景中，免预约诊所是完成沟通的关键词。",
+            example: "Walk-in clinic is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_016",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_general",
+        scenarioTitle: "报警、911和紧急求助",
+        sequence: 4,
+        english: "Can you speak more slowly?",
+        chinese: "你可以说慢一点吗？",
+        scenario: "日常电话和柜台沟通中询问联系人、费用或请对方说慢一点。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_016-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_016-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Could you speak more slowly?",
+          "Are you able to speak more slowly?"
+        ],
+        recommendedResponses: [
+          "Yes, there is a small fee.",
+          "I can give you the right number.",
+          "Of course. I will speak slowly."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can you speak more slowly?",
+            chinese: "你可以说慢一点吗？"
+          },
+          {
+            speakerRole: "Clerk",
+            speakerRoleZh: "店员可能会说",
+            english: "Yes, there is a small fee.",
+            chinese: "是的，有一点费用。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "speak more slowly",
+            chinese: "说慢一点",
+            pronunciation: "speek more SLOH-lee",
+            note: "在这个生活场景中，说慢一点是完成沟通的关键词。",
+            example: "Speak more slowly is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_017",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_rent_housing",
+        scenarioTitle: "租房和联系房东",
+        sequence: 9,
+        english: "I am looking for a room to rent.",
+        chinese: "我在找一个房间租。",
+        scenario: "租房、看房、询问房租押金、联系房东或报修时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_017-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_017-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "Yes, it is available.",
+          "You can come see it today.",
+          "The rent is due on the first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I am looking for a room to rent.",
+            chinese: "我在找一个房间租。"
+          },
+          {
+            speakerRole: "Landlord",
+            speakerRoleZh: "房东可能会说",
+            english: "Yes, it is available.",
+            chinese: "是的，还可以。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "room to rent",
+            chinese: "出租房间",
+            pronunciation: "room-to-rent",
+            note: "在这个生活场景中，出租房间是完成沟通的关键词。",
+            example: "Room to rent is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_018",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_rent_housing",
+        scenarioTitle: "租房和联系房东",
+        sequence: 3,
+        english: "When is the rent due?",
+        chinese: "房租什么时候该交？",
+        scenario: "租房、看房、询问房租押金、联系房东或报修时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_018-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_018-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "Yes, it is available.",
+          "You can come see it today.",
+          "The rent is due on the first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "When is the rent due?",
+            chinese: "房租什么时候该交？"
+          },
+          {
+            speakerRole: "Landlord",
+            speakerRoleZh: "房东可能会说",
+            english: "Yes, it is available.",
+            chinese: "是的，还可以。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "rent due",
+            chinese: "房租到期该交",
+            pronunciation: "rent-doo",
+            note: "在这个生活场景中，房租到期该交是完成沟通的关键词。",
+            example: "Rent due is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_019",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_general",
+        scenarioTitle: "报警、911和紧急求助",
+        sequence: 1,
+        english: "Can I pay by e-transfer?",
+        chinese: "我可以用电子转账付款吗？",
+        scenario: "日常电话和柜台沟通中询问联系人、费用或请对方说慢一点。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_019-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_019-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Is it possible to pay by e-transfer?",
+          "Could I pay by e-transfer?"
+        ],
+        recommendedResponses: [
+          "Yes, there is a small fee.",
+          "I can give you the right number.",
+          "Of course. I will speak slowly."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I pay by e-transfer?",
+            chinese: "我可以用电子转账付款吗？"
+          },
+          {
+            speakerRole: "Clerk",
+            speakerRoleZh: "店员可能会说",
+            english: "Yes, there is a small fee.",
+            chinese: "是的，有一点费用。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "e-transfer",
+            chinese: "电子转账",
+            pronunciation: "ee-TRANS-fer",
+            note: "在这个生活场景中，电子转账是完成沟通的关键词。",
+            example: "E-transfer is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_020",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_bank_paycheck",
+        scenarioTitle: "银行和存工资支票",
+        sequence: 9,
+        english: "I need to change my address.",
+        chinese: "我需要更改我的地址。",
+        scenario: "在银行办理账户、支票、银行卡、费用和工资相关事务时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_020-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_020-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "I would like to change my address.",
+          "I have to to change my address."
+        ],
+        recommendedResponses: [
+          "Sure. May I see your ID?",
+          "Let me check your account.",
+          "You can do that here."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I need to change my address.",
+            chinese: "我需要更改我的地址。"
+          },
+          {
+            speakerRole: "Bank Teller",
+            speakerRoleZh: "银行柜员可能会说",
+            english: "Sure. May I see your ID?",
+            chinese: "可以。请给我看一下身份证件。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "change my address",
+            chinese: "更改我的地址",
+            pronunciation: "chaynj-my-AD-res",
+            note: "在这个生活场景中，更改我的地址是完成沟通的关键词。",
+            example: "Change my address is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_021",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_forms_receipts",
+        scenarioTitle: "电话预约",
+        sequence: 3,
+        english: "Can you print this form for me?",
+        chinese: "你可以帮我打印这张表吗？",
+        scenario: "填写表格、索要收据副本、邮寄包裹或处理文件时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_021-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_021-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Could you print this form for me?",
+          "Are you able to print this form for me?"
+        ],
+        recommendedResponses: [
+          "Yes, I can help with that.",
+          "Please write your name here.",
+          "I can email you a copy."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can you print this form for me?",
+            chinese: "你可以帮我打印这张表吗？"
+          },
+          {
+            speakerRole: "Clerk",
+            speakerRoleZh: "店员可能会说",
+            english: "Yes, I can help with that.",
+            chinese: "可以，我可以帮你。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "print this form",
+            chinese: "打印这张表",
+            pronunciation: "print-this form",
+            note: "在这个生活场景中，打印这张表是完成沟通的关键词。",
+            example: "Print this form is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_022",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_work_life_basics",
+        scenarioTitle: "生活用品和基本服务",
+        sequence: 1,
+        english: "Where can I buy work shoes?",
+        chinese: "我在哪里可以买工作鞋？",
+        scenario: "日常生活中买工作用品、改约、拿确认号码或处理基本事务时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_022-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_022-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you tell me where can I buy work shoes?",
+          "Do you know where can I buy work shoes?"
+        ],
+        recommendedResponses: [
+          "Yes, I can help.",
+          "Please keep the confirmation number.",
+          "The next available time is Monday."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Where can I buy work shoes?",
+            chinese: "我在哪里可以买工作鞋？"
+          },
+          {
+            speakerRole: "Clerk",
+            speakerRoleZh: "店员可能会说",
+            english: "Yes, I can help.",
+            chinese: "可以，我可以帮你。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "work shoes",
+            chinese: "工作鞋",
+            pronunciation: "work-shooz",
+            note: "在这个生活场景中，工作鞋是完成沟通的关键词。",
+            example: "Work shoes is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_023",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_work_life_basics",
+        scenarioTitle: "生活用品和基本服务",
+        sequence: 2,
+        english: "I need non-slip shoes for work.",
+        chinese: "我工作需要防滑鞋。",
+        scenario: "日常生活中买工作用品、改约、拿确认号码或处理基本事务时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_023-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_023-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "I would like non-slip shoes for work.",
+          "I have to non-slip shoes for work."
+        ],
+        recommendedResponses: [
+          "Yes, I can help.",
+          "Please keep the confirmation number.",
+          "The next available time is Monday."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I need non-slip shoes for work.",
+            chinese: "我工作需要防滑鞋。"
+          },
+          {
+            speakerRole: "Clerk",
+            speakerRoleZh: "店员可能会说",
+            english: "Yes, I can help.",
+            chinese: "可以，我可以帮你。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "non-slip shoes",
+            chinese: "防滑鞋",
+            pronunciation: "non-slip shooz",
+            note: "在这个生活场景中，防滑鞋是完成沟通的关键词。",
+            example: "Non-slip shoes is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_024",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_forms_receipts",
+        scenarioTitle: "电话预约",
+        sequence: 4,
+        english: "Can I get a copy of the receipt?",
+        chinese: "我可以要一份收据副本吗？",
+        scenario: "填写表格、索要收据副本、邮寄包裹或处理文件时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_024-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_024-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Is it possible to get a copy of the receipt?",
+          "Could I get a copy of the receipt?"
+        ],
+        recommendedResponses: [
+          "Yes, I can help with that.",
+          "Please write your name here.",
+          "I can email you a copy."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I get a copy of the receipt?",
+            chinese: "我可以要一份收据副本吗？"
+          },
+          {
+            speakerRole: "Clerk",
+            speakerRoleZh: "店员可能会说",
+            english: "Yes, I can help with that.",
+            chinese: "可以，我可以帮你。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "copy of the receipt",
+            chinese: "收据副本",
+            pronunciation: "KOP-ee of the ri-SEET",
+            note: "在这个生活场景中，收据副本是完成沟通的关键词。",
+            example: "Copy of the receipt is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_025",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_rent_housing",
+        scenarioTitle: "租房和联系房东",
+        sequence: 8,
+        english: "Can I get directions to this address?",
+        chinese: "你可以告诉我去这个地址怎么走吗？",
+        scenario: "租房、看房、询问房租押金、联系房东或报修时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_025-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_025-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Is it possible to get directions to this address?",
+          "Could I get directions to this address?"
+        ],
+        recommendedResponses: [
+          "Yes, it is available.",
+          "You can come see it today.",
+          "The rent is due on the first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I get directions to this address?",
+            chinese: "你可以告诉我去这个地址怎么走吗？"
+          },
+          {
+            speakerRole: "Landlord",
+            speakerRoleZh: "房东可能会说",
+            english: "Yes, it is available.",
+            chinese: "是的，还可以。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "directions",
+            chinese: "路线；怎么走",
+            pronunciation: "di-REK-shunz",
+            note: "在这个生活场景中，路线；怎么走是完成沟通的关键词。",
+            example: "Directions is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_026",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_transit",
+        scenarioTitle: "坐公交和问路",
+        sequence: 6,
+        english: "How long does it take by bus?",
+        chinese: "坐公交要多久？",
+        scenario: "日常坐公交、地铁、问路、换乘或充值交通卡时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_026-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_026-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "It takes about twenty minutes.",
+          "Get off at Main Street.",
+          "You can pay by card."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "How long does it take by bus?",
+            chinese: "坐公交要多久？"
+          },
+          {
+            speakerRole: "Transit Staff",
+            speakerRoleZh: "交通工作人员可能会说",
+            english: "It takes about twenty minutes.",
+            chinese: "大概二十分钟。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "by bus",
+            chinese: "坐公交",
+            pronunciation: "by-bus",
+            note: "在这个生活场景中，坐公交是完成沟通的关键词。",
+            example: "By bus is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_027",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_transit",
+        scenarioTitle: "坐公交和问路",
+        sequence: 7,
+        english: "Does this bus stop near the restaurant?",
+        chinese: "这路公交会停在餐厅附近吗？",
+        scenario: "日常坐公交、地铁、问路、换乘或充值交通卡时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_027-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_027-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "It takes about twenty minutes.",
+          "Get off at Main Street.",
+          "You can pay by card."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Does this bus stop near the restaurant?",
+            chinese: "这路公交会停在餐厅附近吗？"
+          },
+          {
+            speakerRole: "Transit Staff",
+            speakerRoleZh: "交通工作人员可能会说",
+            english: "It takes about twenty minutes.",
+            chinese: "大概二十分钟。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "stop near",
+            chinese: "停在附近",
+            pronunciation: "stop-neer",
+            note: "在这个生活场景中，停在附近是完成沟通的关键词。",
+            example: "Stop near is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_028",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_transit",
+        scenarioTitle: "坐公交和问路",
+        sequence: 2,
+        english: "I missed my bus.",
+        chinese: "我错过公交了。",
+        scenario: "日常坐公交、地铁、问路、换乘或充值交通卡时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_028-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_028-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "It takes about twenty minutes.",
+          "Get off at Main Street.",
+          "You can pay by card."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I missed my bus.",
+            chinese: "我错过公交了。"
+          },
+          {
+            speakerRole: "Transit Staff",
+            speakerRoleZh: "交通工作人员可能会说",
+            english: "It takes about twenty minutes.",
+            chinese: "大概二十分钟。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "missed my bus",
+            chinese: "错过公交",
+            pronunciation: "mist-my-bus",
+            note: "在这个生活场景中，错过公交是完成沟通的关键词。",
+            example: "Missed my bus is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_029",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_transit",
+        scenarioTitle: "坐公交和问路",
+        sequence: 3,
+        english: "The bus is running late.",
+        chinese: "公交晚点了。",
+        scenario: "日常坐公交、地铁、问路、换乘或充值交通卡时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_029-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_029-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "It takes about twenty minutes.",
+          "Get off at Main Street.",
+          "You can pay by card."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "The bus is running late.",
+            chinese: "公交晚点了。"
+          },
+          {
+            speakerRole: "Transit Staff",
+            speakerRoleZh: "交通工作人员可能会说",
+            english: "It takes about twenty minutes.",
+            chinese: "大概二十分钟。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "running late",
+            chinese: "晚点；迟到",
+            pronunciation: "RUN-ing layt",
+            note: "在这个生活场景中，晚点；迟到是完成沟通的关键词。",
+            example: "Running late is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_030",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_bank_paycheck",
+        scenarioTitle: "银行和存工资支票",
+        sequence: 1,
+        english: "Can I cash this check here?",
+        chinese: "我可以在这里兑现这张支票吗？",
+        scenario: "在银行办理账户、支票、银行卡、费用和工资相关事务时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_030-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_030-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Is it possible to cash this check here?",
+          "Could I cash this check here?"
+        ],
+        recommendedResponses: [
+          "Sure. May I see your ID?",
+          "Let me check your account.",
+          "You can do that here."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I cash this check here?",
+            chinese: "我可以在这里兑现这张支票吗？"
+          },
+          {
+            speakerRole: "Bank Teller",
+            speakerRoleZh: "银行柜员可能会说",
+            english: "Sure. May I see your ID?",
+            chinese: "可以。请给我看一下身份证件。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "cash this check",
+            chinese: "兑现这张支票",
+            pronunciation: "cash-this-chek",
+            note: "在这个生活场景中，兑现这张支票是完成沟通的关键词。",
+            example: "Cash this check is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_031",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_bank_paycheck",
+        scenarioTitle: "银行和存工资支票",
+        sequence: 4,
+        english: "What ID do I need?",
+        chinese: "我需要什么身份证件？",
+        scenario: "在银行办理账户、支票、银行卡、费用和工资相关事务时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_031-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_031-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "Sure. May I see your ID?",
+          "Let me check your account.",
+          "You can do that here."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "What ID do I need?",
+            chinese: "我需要什么身份证件？"
+          },
+          {
+            speakerRole: "Bank Teller",
+            speakerRoleZh: "银行柜员可能会说",
+            english: "Sure. May I see your ID?",
+            chinese: "可以。请给我看一下身份证件。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "photo ID",
+            chinese: "带照片的身份证件",
+            pronunciation: "FOH-toh eye-DEE",
+            note: "在这个生活场景中，带照片的身份证件是完成沟通的关键词。",
+            example: "Photo ID is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "daily_life_032",
       moduleId: "daily_life",
@@ -30259,1426 +30413,1518 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "daily_life_033",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_bank_paycheck",
-      scenarioTitle: "银行和存工资支票",
-      sequence: 2,
-      english: "My debit card is not working.",
-      chinese: "我的借记卡不能用了。",
-      scenario: "存支票、工资到账、银行卡和银行问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_033-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_033-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "My debit card will not work.",
-        "The bank card is not working."
-      ],
-      recommendedResponses: [
-        "Can you explain the debit card?",
-        "Please write the debit card information.",
-        "Who should I ask about debit card?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "My debit card is not working.",
-          chinese: "我的借记卡不能用了。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Card, please.",
-          chinese: "刷卡。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "debit card",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “debit card” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_034",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_bank_paycheck",
-      scenarioTitle: "银行和存工资支票",
-      sequence: 10,
-      english: "Can I set up online banking?",
-      chinese: "我可以开通网上银行吗？",
-      scenario: "存支票、工资到账、银行卡和银行问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_034-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_034-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Can I set up online banking, please?"
-      ],
-      recommendedResponses: [
-        "Yes, I can help you set it up.",
-        "You need your card and ID."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Can I set up online banking?",
-          chinese: "我可以开通网上银行吗？"
-        },
-        {
-          speakerRole: "Bank Staff",
-          speakerRoleZh: "银行职员可能会说",
-          english: "Yes, do you have your ID?",
-          chinese: "可以，你带身份证件了吗？"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "online banking",
-          chinese: "网上银行",
-          pronunciation: "ON-line BANK-ing",
-          note: "用手机或电脑管理银行账户。",
-          example: "Use online banking."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_035",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_phone_internet",
-      scenarioTitle: "手机和网络",
-      sequence: 4,
-      english: "My phone bill is too high.",
-      chinese: "我的手机账单太高了。",
-      scenario: "手机套餐、流量、账单和网络问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_035-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_035-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "My phone bill is very high.",
-        "The phone bill costs too much."
-      ],
-      recommendedResponses: [
-        "Can you explain the phone bill?",
-        "Please write the phone bill information.",
-        "Who should I ask about phone bill?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "My phone bill is too high.",
-          chinese: "我的手机账单太高了。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check your order.",
-          chinese: "我帮你查一下订单。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "phone bill",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “phone bill” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_036",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_phone_internet",
-      scenarioTitle: "手机和网络",
-      sequence: 7,
-      english: "Can I change to a cheaper plan?",
-      chinese: "我可以换成便宜一点的套餐吗？",
-      scenario: "手机套餐、流量、账单和网络问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_036-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_036-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Can I change to a cheaper plan, please?"
-      ],
-      recommendedResponses: [
-        "Can you explain the change?",
-        "Please write the change information.",
-        "Who should I ask about change?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Can I change to a cheaper plan?",
-          chinese: "我可以换成便宜一点的套餐吗？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Card, please.",
-          chinese: "刷卡。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "change",
-          chinese: "找零",
-          pronunciation: "chaynj",
-          note: "现金付款后退给顾客的钱。",
-          example: "Here is your change."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_037",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_phone_internet",
-      scenarioTitle: "手机和网络",
-      sequence: 1,
-      english: "I need a SIM card.",
-      chinese: "我需要一张手机卡。",
-      scenario: "手机套餐、流量、账单和网络问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_037-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_037-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "I need to get a SIM card.",
-        "I have to get a SIM card."
-      ],
-      recommendedResponses: [
-        "Can you explain the need card?",
-        "Please write the need card information.",
-        "Who should I ask about need card?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "I need a SIM card.",
-          chinese: "我需要一张手机卡。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Card, please.",
-          chinese: "刷卡。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "need card",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “need card” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_038",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_phone_internet",
-      scenarioTitle: "手机和网络",
-      sequence: 3,
-      english: "My internet is not working.",
-      chinese: "我的网络不能用了。",
-      scenario: "手机套餐、流量、账单和网络问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_038-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_038-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "My internet is down.",
-        "The internet is not working right now."
-      ],
-      recommendedResponses: [
-        "Can you explain the internet working?",
-        "Please write the internet working information.",
-        "Who should I ask about internet working?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "My internet is not working.",
-          chinese: "我的网络不能用了。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "internet working",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “internet working” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_039",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_transit",
-      scenarioTitle: "坐公交和问路",
-      sequence: 4,
-      english: "Can you reset my password?",
-      chinese: "你可以帮我重置密码吗？",
-      scenario: "坐公交、找站牌、问路线和通勤。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_039-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_039-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Could you reset my password?",
-        "Can you please reset my password?"
-      ],
-      recommendedResponses: [
-        "Can you explain the reset password?",
-        "Please write the reset password information.",
-        "Who should I ask about reset password?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Can you reset my password?",
-          chinese: "你可以帮我重置密码吗？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "reset password",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “reset password” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_040",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_rent_housing",
-      scenarioTitle: "租房和联系房东",
-      sequence: 1,
-      english: "Is laundry included?",
-      chinese: "洗衣设施包含吗？",
-      scenario: "租房、地址、水电费和维修。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_040-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_040-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Is this laundry included?"
-      ],
-      recommendedResponses: [
-        "Can you explain the laundry included?",
-        "Please write the laundry included information.",
-        "Who should I ask about laundry included?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Is laundry included?",
-          chinese: "洗衣设施包含吗？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "laundry included",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “laundry included” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_041",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_rent_housing",
-      scenarioTitle: "租房和联系房东",
-      sequence: 2,
-      english: "Is parking included?",
-      chinese: "停车位包含吗？",
-      scenario: "租房、地址、水电费和维修。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_041-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_041-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Is this parking included?"
-      ],
-      recommendedResponses: [
-        "Can you explain the parking included?",
-        "Please write the parking included information.",
-        "Who should I ask about parking included?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Is parking included?",
-          chinese: "停车位包含吗？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "parking included",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “parking included” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_042",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_rent_housing",
-      scenarioTitle: "租房和联系房东",
-      sequence: 6,
-      english: "Can I see the room today?",
-      chinese: "我今天可以看房间吗？",
-      scenario: "租房、地址、水电费和维修。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_042-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_042-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Can I see the room today, please?"
-      ],
-      recommendedResponses: [
-        "Can you explain the room today?",
-        "Please write the room today information.",
-        "Who should I ask about room today?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Can I see the room today?",
-          chinese: "我今天可以看房间吗？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "room today",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “room today” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_043",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_bank_paycheck",
-      scenarioTitle: "银行和存工资支票",
-      sequence: 5,
-      english: "How much is the deposit?",
-      chinese: "押金是多少？",
-      scenario: "存支票、工资到账、银行卡和银行问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_043-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_043-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "How much is the deposit, please?"
-      ],
-      recommendedResponses: [
-        "Can you explain the much deposit slowly?",
-        "Please write down the much deposit."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "How much is the deposit?",
-          chinese: "押金是多少？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "much deposit",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “much deposit” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_044",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_rent_housing",
-      scenarioTitle: "租房和联系房东",
-      sequence: 4,
-      english: "When can I move in?",
-      chinese: "我什么时候可以搬进去？",
-      scenario: "租房、地址、水电费和维修。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_044-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_044-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "When can I move in, please?"
-      ],
-      recommendedResponses: [
-        "Can you explain the When move?",
-        "Please write the When move information.",
-        "Who should I ask about When move?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "When can I move in?",
-          chinese: "我什么时候可以搬进去？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "When move",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “When move” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_045",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_pharmacy_doctor",
-      scenarioTitle: "药店买药和看医生",
-      sequence: 6,
-      english: "I need something for a headache.",
-      chinese: "我需要治头痛的药。",
-      scenario: "药店、诊所、医生和身体不舒服。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_045-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_045-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "I need to get something for a headache.",
-        "I have to get something for a headache."
-      ],
-      recommendedResponses: [
-        "Can you explain the need something?",
-        "Please write the need something information.",
-        "Who should I ask about need something?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "I need something for a headache.",
-          chinese: "我需要治头痛的药。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "need something",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “need something” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_046",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_pharmacy_doctor",
-      scenarioTitle: "药店买药和看医生",
-      sequence: 7,
-      english: "I need something for a cough.",
-      chinese: "我需要治咳嗽的药。",
-      scenario: "药店、诊所、医生和身体不舒服。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_046-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_046-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "I need to get something for a cough.",
-        "I have to get something for a cough."
-      ],
-      recommendedResponses: [
-        "Can you explain the need something?",
-        "Please write the need something information.",
-        "Who should I ask about need something?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "I need something for a cough.",
-          chinese: "我需要治咳嗽的药。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "need something",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “need something” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_047",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_pharmacy_doctor",
-      scenarioTitle: "药店买药和看医生",
-      sequence: 8,
-      english: "Can I talk to the pharmacist?",
-      chinese: "我可以和药剂师说一下吗？",
-      scenario: "药店、诊所、医生和身体不舒服。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_047-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_047-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Can I talk to the pharmacist, please?"
-      ],
-      recommendedResponses: [
-        "I can help you make an appointment.",
-        "Please describe your symptoms.",
-        "You may need to speak with a pharmacist."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Can I talk to the pharmacist?",
-          chinese: "我可以和药剂师说一下吗？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "pharmacist",
-          chinese: "药剂师",
-          pronunciation: "FAR-muh-sist",
-          note: "药店里负责用药咨询的人。",
-          example: "Ask the pharmacist."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_048",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_pharmacy_doctor",
-      scenarioTitle: "药店买药和看医生",
-      sequence: 9,
-      english: "How often should I take this?",
-      chinese: "这个多久吃一次？",
-      scenario: "药店、诊所、医生和身体不舒服。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_048-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_048-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "How often should I take this, please?"
-      ],
-      recommendedResponses: [
-        "Can you explain the often take?",
-        "Please write the often take information.",
-        "Who should I ask about often take?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "How often should I take this?",
-          chinese: "这个多久吃一次？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "often take",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “often take” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_049",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_pharmacy_doctor",
-      scenarioTitle: "药店买药和看医生",
-      sequence: 10,
-      english: "Should I take it with food?",
-      chinese: "这个要和食物一起吃吗？",
-      scenario: "药店、诊所、医生和身体不舒服。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_049-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_049-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "Should I take it with food, please?"
-      ],
-      recommendedResponses: [
-        "Can you explain the take food?",
-        "Please write the take food information.",
-        "Who should I ask about take food?"
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Should I take it with food?",
-          chinese: "这个要和食物一起吃吗？"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "I’ll wash my hands now.",
-          chinese: "我现在去洗手。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "take food",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “take food” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_050",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_pharmacy_doctor",
-      scenarioTitle: "药店买药和看医生",
-      sequence: 1,
-      english: "I have a fever.",
-      chinese: "我发烧了。",
-      scenario: "药店、诊所、医生和身体不舒服。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_050-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_050-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      variants: [
-        "I am running a fever."
-      ],
-      recommendedResponses: [
-        "I can help you make an appointment.",
-        "Please describe your symptoms.",
-        "You may need to speak with a pharmacist."
-      ],
-      dialogue: [
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "I have a fever.",
-          chinese: "我发烧了。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
-        }
-      ],
-      vocabularyNotes: [
-        {
-          term: "fever",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “fever” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_051",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_pharmacy_doctor",
-      scenarioTitle: "药店买药和看医生",
-      sequence: 4,
-      english: "I have stomach pain.",
-      chinese: "我肚子痛。",
-      scenario: "药店、诊所、医生和身体不舒服。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_051-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_051-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      difficulty: "Level 1",
-      variants: [
-        "My stomach hurts.",
-        "I have pain in my stomach."
-      ],
-      recommendedResponses: [
-        "Do you need a doctor?",
-        "How long has it hurt?",
-        "You may need to rest."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "stomach pain",
-          chinese: "生活实用表达",
-          pronunciation: "DAY-lee life",
-          note: "用于公交、银行、手机、租房和看医生。 这里重点看 “stomach pain” 在句子里的用法。",
-          example: "Ask for help."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_052",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_pharmacy_doctor",
-      scenarioTitle: "药店买药和看医生",
-      sequence: 3,
-      english: "I feel dizzy.",
-      chinese: "我头晕。",
-      scenario: "药店、诊所、医生和身体不舒服。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_052-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_052-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      difficulty: "Level 1",
-      variants: [
-        "I feel lightheaded.",
-        "I feel like I might fall."
-      ],
-      recommendedResponses: [
-        "Please sit down.",
-        "Do you need water?",
-        "Should we call someone?"
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "fee",
-          chinese: "费用；手续费",
-          pronunciation: "fee-sound",
-          note: "办理服务或账户可能收的钱。",
-          example: "There is no fee."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_053",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_work_life_basics",
-      scenarioTitle: "生活用品和基本服务",
-      sequence: 3,
-      english: "I need to reschedule my appointment.",
-      chinese: "我需要改预约时间。",
-      scenario: "买生活用品、打印、收据和简单服务。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_053-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_053-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      difficulty: "Level 1",
-      variants: [
-        "I need to change my appointment time.",
-        "Can I reschedule my appointment?"
-      ],
-      recommendedResponses: [
-        "What day works for you?",
-        "The next opening is Monday.",
-        "Please call the office."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "reschedule",
-          chinese: "改时间/重新预约",
-          pronunciation: "ree-SKED-jool",
-          note: "把预约改到另一个时间。",
-          example: "Can I reschedule?"
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_054",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_work_life_basics",
-      scenarioTitle: "生活用品和基本服务",
-      sequence: 4,
-      english: "Can you give me a confirmation number?",
-      chinese: "你可以给我一个确认号码吗？",
-      scenario: "买生活用品、打印、收据和简单服务。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_054-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_054-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      difficulty: "Level 1",
-      variants: [
-        "Can I get a confirmation number?",
-        "May I have the confirmation number?"
-      ],
-      recommendedResponses: [
-        "Yes, it is A123.",
-        "I will text it to you.",
-        "Please write it down."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "confirmation number",
-          chinese: "确认号码",
-          pronunciation: "kon-fer-MAY-shun NUM-ber",
-          note: "预约、订单、服务完成后的查询号码。",
-          example: "Here is your confirmation number."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_055",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_forms_receipts",
-      scenarioTitle: "电话预约",
-      sequence: 1,
-      english: "I need help filling out this form.",
-      chinese: "我需要帮忙填写这张表。",
-      scenario: "打电话预约、确认时间和留下信息。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_055-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_055-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      difficulty: "Level 1",
-      variants: [
-        "I have to help filling out this form."
-      ],
-      recommendedResponses: [
-        "I can help you.",
-        "Please fill in your name first.",
-        "Bring your ID with the form."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "filling out this form",
-          chinese: "填写这张表",
-          pronunciation: "FIL-ing out this form",
-          note: "fill out 表示填写表格。",
-          example: "Fill out the form."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_056",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_forms_receipts",
-      scenarioTitle: "电话预约",
-      sequence: 2,
-      english: "Can you email me a copy?",
-      chinese: "你可以发一份副本到我邮箱吗？",
-      scenario: "打电话预约、确认时间和留下信息。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_056-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_056-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      difficulty: "Level 1",
-      variants: [
-        "Can you send me a copy by email?",
-        "Please email me a copy."
-      ],
-      recommendedResponses: [
-        "Sure, what is your email?",
-        "I will send it now.",
-        "Check your inbox."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "email me a copy",
-          chinese: "发一份副本到我邮箱",
-          pronunciation: "EE-mayl mee uh KOP-ee",
-          note: "需要电子版文件时使用。",
-          example: "Email me a copy."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
+          {
+        id: "daily_life_033",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_bank_paycheck",
+        scenarioTitle: "银行和存工资支票",
+        sequence: 2,
+        english: "My debit card is not working.",
+        chinese: "我的借记卡不能用了。",
+        scenario: "在银行办理账户、支票、银行卡、费用和工资相关事务时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_033-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_033-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "Sure. May I see your ID?",
+          "Let me check your account.",
+          "You can do that here."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "My debit card is not working.",
+            chinese: "我的借记卡不能用了。"
+          },
+          {
+            speakerRole: "Bank Teller",
+            speakerRoleZh: "银行柜员可能会说",
+            english: "Sure. May I see your ID?",
+            chinese: "可以。请给我看一下身份证件。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "debit card",
+            chinese: "借记卡",
+            pronunciation: "DEB-it card",
+            note: "在这个生活场景中，借记卡是完成沟通的关键词。",
+            example: "Debit card is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_034",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_bank_paycheck",
+        scenarioTitle: "银行和存工资支票",
+        sequence: 10,
+        english: "Can I set up online banking?",
+        chinese: "我可以开通网上银行吗？",
+        scenario: "在银行办理账户、支票、银行卡、费用和工资相关事务时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_034-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_034-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Is it possible to set up online banking?",
+          "Could I set up online banking?"
+        ],
+        recommendedResponses: [
+          "Sure. May I see your ID?",
+          "Let me check your account.",
+          "You can do that here."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I set up online banking?",
+            chinese: "我可以开通网上银行吗？"
+          },
+          {
+            speakerRole: "Bank Teller",
+            speakerRoleZh: "银行柜员可能会说",
+            english: "Sure. May I see your ID?",
+            chinese: "可以。请给我看一下身份证件。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "online banking",
+            chinese: "网上银行",
+            pronunciation: "ON-line BANK-ing",
+            note: "在这个生活场景中，网上银行是完成沟通的关键词。",
+            example: "Online banking is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_035",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_phone_internet",
+        scenarioTitle: "手机和网络",
+        sequence: 4,
+        english: "My phone bill is too high.",
+        chinese: "我的手机账单太高了。",
+        scenario: "办理手机套餐、网络、账单、流量、付款或服务故障时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_035-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_035-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "Let me check your account.",
+          "We can change your plan.",
+          "Try restarting your phone first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "My phone bill is too high.",
+            chinese: "我的手机账单太高了。"
+          },
+          {
+            speakerRole: "Phone Rep",
+            speakerRoleZh: "手机客服可能会说",
+            english: "Let me check your account.",
+            chinese: "我查一下你的账户。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "phone bill",
+            chinese: "手机账单",
+            pronunciation: "fohn-bil",
+            note: "在这个生活场景中，手机账单是完成沟通的关键词。",
+            example: "Phone bill is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_036",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_phone_internet",
+        scenarioTitle: "手机和网络",
+        sequence: 7,
+        english: "Can I change to a cheaper plan?",
+        chinese: "我可以换成便宜一点的套餐吗？",
+        scenario: "办理手机套餐、网络、账单、流量、付款或服务故障时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_036-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_036-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Is it possible to change to a cheaper plan?",
+          "Could I change to a cheaper plan?"
+        ],
+        recommendedResponses: [
+          "Let me check your account.",
+          "We can change your plan.",
+          "Try restarting your phone first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I change to a cheaper plan?",
+            chinese: "我可以换成便宜一点的套餐吗？"
+          },
+          {
+            speakerRole: "Phone Rep",
+            speakerRoleZh: "手机客服可能会说",
+            english: "Let me check your account.",
+            chinese: "我查一下你的账户。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "cheaper plan",
+            chinese: "更便宜的套餐",
+            pronunciation: "CHEE-per plan",
+            note: "在这个生活场景中，更便宜的套餐是完成沟通的关键词。",
+            example: "Cheaper plan is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_037",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_phone_internet",
+        scenarioTitle: "手机和网络",
+        sequence: 1,
+        english: "I need a SIM card.",
+        chinese: "我需要一张 SIM 卡。",
+        scenario: "办理手机套餐、网络、账单、流量、付款或服务故障时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_037-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_037-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "I would like a SIM card.",
+          "I have to a SIM card."
+        ],
+        recommendedResponses: [
+          "Let me check your account.",
+          "We can change your plan.",
+          "Try restarting your phone first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I need a SIM card.",
+            chinese: "我需要一张 SIM 卡。"
+          },
+          {
+            speakerRole: "Phone Rep",
+            speakerRoleZh: "手机客服可能会说",
+            english: "Let me check your account.",
+            chinese: "我查一下你的账户。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "SIM card",
+            chinese: "手机 SIM 卡",
+            pronunciation: "sim-card",
+            note: "在这个生活场景中，手机 SIM 卡是完成沟通的关键词。",
+            example: "SIM card is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_038",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_phone_internet",
+        scenarioTitle: "手机和网络",
+        sequence: 3,
+        english: "My internet is not working.",
+        chinese: "我的网络不能用了。",
+        scenario: "办理手机套餐、网络、账单、流量、付款或服务故障时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_038-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_038-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "Let me check your account.",
+          "We can change your plan.",
+          "Try restarting your phone first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "My internet is not working.",
+            chinese: "我的网络不能用了。"
+          },
+          {
+            speakerRole: "Phone Rep",
+            speakerRoleZh: "手机客服可能会说",
+            english: "Let me check your account.",
+            chinese: "我查一下你的账户。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "internet is not working",
+            chinese: "网络不能用",
+            pronunciation: "IN-ter-net iz-not WER-king",
+            note: "在这个生活场景中，网络不能用是完成沟通的关键词。",
+            example: "Internet is not working is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_039",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_phone_internet",
+        scenarioTitle: "坐公交和问路",
+        sequence: 4,
+        english: "Can you reset my password?",
+        chinese: "你可以帮我重置密码吗？",
+        scenario: "办理手机套餐、网络、账单、流量、付款或服务故障时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_039-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_039-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Could you reset my password?",
+          "Are you able to reset my password?"
+        ],
+        recommendedResponses: [
+          "Let me check your account.",
+          "We can change your plan.",
+          "Try restarting your phone first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can you reset my password?",
+            chinese: "你可以帮我重置密码吗？"
+          },
+          {
+            speakerRole: "Phone Rep",
+            speakerRoleZh: "手机客服可能会说",
+            english: "Let me check your account.",
+            chinese: "我查一下你的账户。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "reset my password",
+            chinese: "重置我的密码",
+            pronunciation: "ree-SET-my PASS-word",
+            note: "在这个生活场景中，重置我的密码是完成沟通的关键词。",
+            example: "Reset my password is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_040",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_rent_housing",
+        scenarioTitle: "租房和联系房东",
+        sequence: 1,
+        english: "Is laundry included?",
+        chinese: "洗衣设施包含吗？",
+        scenario: "租房、看房、询问房租押金、联系房东或报修时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_040-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_040-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Do you know if laundry included?",
+          "Can you tell me if laundry included?"
+        ],
+        recommendedResponses: [
+          "Yes, it is available.",
+          "You can come see it today.",
+          "The rent is due on the first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Is laundry included?",
+            chinese: "洗衣设施包含吗？"
+          },
+          {
+            speakerRole: "Landlord",
+            speakerRoleZh: "房东可能会说",
+            english: "Yes, it is available.",
+            chinese: "是的，还可以。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "laundry included",
+            chinese: "包含洗衣设施",
+            pronunciation: "LAWN-dree in-KLOO-ded",
+            note: "在这个生活场景中，包含洗衣设施是完成沟通的关键词。",
+            example: "Laundry included is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_041",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_rent_housing",
+        scenarioTitle: "租房和联系房东",
+        sequence: 2,
+        english: "Is parking included?",
+        chinese: "停车位包含吗？",
+        scenario: "租房、看房、询问房租押金、联系房东或报修时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_041-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_041-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Do you know if parking included?",
+          "Can you tell me if parking included?"
+        ],
+        recommendedResponses: [
+          "Yes, it is available.",
+          "You can come see it today.",
+          "The rent is due on the first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Is parking included?",
+            chinese: "停车位包含吗？"
+          },
+          {
+            speakerRole: "Landlord",
+            speakerRoleZh: "房东可能会说",
+            english: "Yes, it is available.",
+            chinese: "是的，还可以。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "parking included",
+            chinese: "包含停车位",
+            pronunciation: "PAR-king in-KLOO-ded",
+            note: "在这个生活场景中，包含停车位是完成沟通的关键词。",
+            example: "Parking included is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_042",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_rent_housing",
+        scenarioTitle: "租房和联系房东",
+        sequence: 6,
+        english: "Can I see the room today?",
+        chinese: "我今天可以看房间吗？",
+        scenario: "租房、看房、询问房租押金、联系房东或报修时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_042-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_042-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Is it possible to see the room today?",
+          "Could I see the room today?"
+        ],
+        recommendedResponses: [
+          "Yes, it is available.",
+          "You can come see it today.",
+          "The rent is due on the first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I see the room today?",
+            chinese: "我今天可以看房间吗？"
+          },
+          {
+            speakerRole: "Landlord",
+            speakerRoleZh: "房东可能会说",
+            english: "Yes, it is available.",
+            chinese: "是的，还可以。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "see the room",
+            chinese: "看房间",
+            pronunciation: "see-the-room",
+            note: "在这个生活场景中，看房间是完成沟通的关键词。",
+            example: "See the room is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_043",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_rent_housing",
+        scenarioTitle: "银行和存工资支票",
+        sequence: 5,
+        english: "How much is the deposit?",
+        chinese: "押金是多少？",
+        scenario: "租房、看房、询问房租押金、联系房东或报修时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_043-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_043-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "What is the cost of the deposit?",
+          "What is the price of the deposit?"
+        ],
+        recommendedResponses: [
+          "Yes, it is available.",
+          "You can come see it today.",
+          "The rent is due on the first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "How much is the deposit?",
+            chinese: "押金是多少？"
+          },
+          {
+            speakerRole: "Landlord",
+            speakerRoleZh: "房东可能会说",
+            english: "Yes, it is available.",
+            chinese: "是的，还可以。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "deposit",
+            chinese: "押金",
+            pronunciation: "di-POZ-it",
+            note: "在这个生活场景中，押金是完成沟通的关键词。",
+            example: "Deposit is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_044",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_rent_housing",
+        scenarioTitle: "租房和联系房东",
+        sequence: 4,
+        english: "When can I move in?",
+        chinese: "我什么时候可以搬进去？",
+        scenario: "租房、看房、询问房租押金、联系房东或报修时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_044-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_044-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "Yes, it is available.",
+          "You can come see it today.",
+          "The rent is due on the first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "When can I move in?",
+            chinese: "我什么时候可以搬进去？"
+          },
+          {
+            speakerRole: "Landlord",
+            speakerRoleZh: "房东可能会说",
+            english: "Yes, it is available.",
+            chinese: "是的，还可以。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "move in",
+            chinese: "搬进去",
+            pronunciation: "moov-in",
+            note: "在这个生活场景中，搬进去是完成沟通的关键词。",
+            example: "Move in is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_045",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_pharmacy_doctor",
+        scenarioTitle: "药店买药和看医生",
+        sequence: 6,
+        english: "I need something for a headache.",
+        chinese: "我需要治头痛的药。",
+        scenario: "去药店、诊所、预约医生或说明简单症状时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_045-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_045-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "I would like something for a headache.",
+          "I have to something for a headache."
+        ],
+        recommendedResponses: [
+          "You can ask the pharmacist.",
+          "Please follow the label directions.",
+          "You may want to see a doctor."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I need something for a headache.",
+            chinese: "我需要治头痛的药。"
+          },
+          {
+            speakerRole: "Pharmacist",
+            speakerRoleZh: "药剂师可能会说",
+            english: "You can ask the pharmacist.",
+            chinese: "你可以问药剂师。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "headache",
+            chinese: "头痛",
+            pronunciation: "HED-ayk",
+            note: "在这个生活场景中，头痛是完成沟通的关键词。",
+            example: "Headache is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_046",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_pharmacy_doctor",
+        scenarioTitle: "药店买药和看医生",
+        sequence: 7,
+        english: "I need something for a cough.",
+        chinese: "我需要治咳嗽的药。",
+        scenario: "去药店、诊所、预约医生或说明简单症状时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_046-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_046-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "I would like something for a cough.",
+          "I have to something for a cough."
+        ],
+        recommendedResponses: [
+          "You can ask the pharmacist.",
+          "Please follow the label directions.",
+          "You may want to see a doctor."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I need something for a cough.",
+            chinese: "我需要治咳嗽的药。"
+          },
+          {
+            speakerRole: "Pharmacist",
+            speakerRoleZh: "药剂师可能会说",
+            english: "You can ask the pharmacist.",
+            chinese: "你可以问药剂师。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "cough",
+            chinese: "咳嗽",
+            pronunciation: "kawf",
+            note: "在这个生活场景中，咳嗽是完成沟通的关键词。",
+            example: "Cough is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_047",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_pharmacy_doctor",
+        scenarioTitle: "药店买药和看医生",
+        sequence: 8,
+        english: "Can I talk to the pharmacist?",
+        chinese: "我可以和药剂师说一下吗？",
+        scenario: "去药店、诊所、预约医生或说明简单症状时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_047-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_047-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Is it possible to talk to the pharmacist?",
+          "Could I talk to the pharmacist?"
+        ],
+        recommendedResponses: [
+          "You can ask the pharmacist.",
+          "Please follow the label directions.",
+          "You may want to see a doctor."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I talk to the pharmacist?",
+            chinese: "我可以和药剂师说一下吗？"
+          },
+          {
+            speakerRole: "Pharmacist",
+            speakerRoleZh: "药剂师可能会说",
+            english: "You can ask the pharmacist.",
+            chinese: "你可以问药剂师。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "pharmacist",
+            chinese: "药剂师",
+            pronunciation: "FAR-muh-sist",
+            note: "在这个生活场景中，药剂师是完成沟通的关键词。",
+            example: "Pharmacist is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_048",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_pharmacy_doctor",
+        scenarioTitle: "药店买药和看医生",
+        sequence: 9,
+        english: "How often should I take this?",
+        chinese: "这个多久吃一次？",
+        scenario: "去药店、诊所、预约医生或说明简单症状时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_048-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_048-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "You can ask the pharmacist.",
+          "Please follow the label directions.",
+          "You may want to see a doctor."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "How often should I take this?",
+            chinese: "这个多久吃一次？"
+          },
+          {
+            speakerRole: "Pharmacist",
+            speakerRoleZh: "药剂师可能会说",
+            english: "You can ask the pharmacist.",
+            chinese: "你可以问药剂师。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "how often",
+            chinese: "多久一次",
+            pronunciation: "how-AW-fen",
+            note: "在这个生活场景中，多久一次是完成沟通的关键词。",
+            example: "How often is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_049",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_pharmacy_doctor",
+        scenarioTitle: "药店买药和看医生",
+        sequence: 10,
+        english: "Should I take it with food?",
+        chinese: "这个要和食物一起吃吗？",
+        scenario: "去药店、诊所、预约医生或说明简单症状时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_049-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_049-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 2",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "You can ask the pharmacist.",
+          "Please follow the label directions.",
+          "You may want to see a doctor."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Should I take it with food?",
+            chinese: "这个要和食物一起吃吗？"
+          },
+          {
+            speakerRole: "Pharmacist",
+            speakerRoleZh: "药剂师可能会说",
+            english: "You can ask the pharmacist.",
+            chinese: "你可以问药剂师。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "with food",
+            chinese: "和食物一起",
+            pronunciation: "with-food",
+            note: "在这个生活场景中，和食物一起是完成沟通的关键词。",
+            example: "With food is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_050",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_pharmacy_doctor",
+        scenarioTitle: "药店买药和看医生",
+        sequence: 1,
+        english: "I have a fever.",
+        chinese: "我发烧了。",
+        scenario: "去药店、诊所、预约医生或说明简单症状时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_050-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_050-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        difficulty: "Level 1",
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        variants: [
+          "I am having a fever.",
+          "I’ve got a fever."
+        ],
+        recommendedResponses: [
+          "You can ask the pharmacist.",
+          "Please follow the label directions.",
+          "You may want to see a doctor."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I have a fever.",
+            chinese: "我发烧了。"
+          },
+          {
+            speakerRole: "Receptionist",
+            speakerRoleZh: "前台接待可能会说",
+            english: "You can ask the pharmacist.",
+            chinese: "你可以问药剂师。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "fever",
+            chinese: "发烧",
+            pronunciation: "FEE-ver",
+            note: "在这个生活场景中，发烧是完成沟通的关键词。",
+            example: "Fever is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_051",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_pharmacy_doctor",
+        scenarioTitle: "药店买药和看医生",
+        sequence: 4,
+        english: "I have stomach pain.",
+        chinese: "我肚子痛。",
+        scenario: "去药店、诊所、预约医生或说明简单症状时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_051-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_051-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "I am having stomach pain.",
+          "I’ve got stomach pain."
+        ],
+        recommendedResponses: [
+          "You can ask the pharmacist.",
+          "Please follow the label directions.",
+          "You may want to see a doctor."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I have stomach pain.",
+            chinese: "我肚子痛。"
+          },
+          {
+            speakerRole: "Receptionist",
+            speakerRoleZh: "前台接待可能会说",
+            english: "You can ask the pharmacist.",
+            chinese: "你可以问药剂师。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "stomach pain",
+            chinese: "肚子痛",
+            pronunciation: "STUH-muk payn",
+            note: "在这个生活场景中，肚子痛是完成沟通的关键词。",
+            example: "Stomach pain is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_052",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_pharmacy_doctor",
+        scenarioTitle: "药店买药和看医生",
+        sequence: 3,
+        english: "I feel dizzy.",
+        chinese: "我头晕。",
+        scenario: "去药店、诊所、预约医生或说明简单症状时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_052-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_052-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "You can ask the pharmacist.",
+          "Please follow the label directions.",
+          "You may want to see a doctor."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I feel dizzy.",
+            chinese: "我头晕。"
+          },
+          {
+            speakerRole: "Receptionist",
+            speakerRoleZh: "前台接待可能会说",
+            english: "You can ask the pharmacist.",
+            chinese: "你可以问药剂师。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "dizzy",
+            chinese: "头晕",
+            pronunciation: "DIZ-ee",
+            note: "在这个生活场景中，头晕是完成沟通的关键词。",
+            example: "Dizzy is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_053",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_work_life_basics",
+        scenarioTitle: "生活用品和基本服务",
+        sequence: 3,
+        english: "I need to reschedule my appointment.",
+        chinese: "我需要改预约时间。",
+        scenario: "日常生活中买工作用品、改约、拿确认号码或处理基本事务时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_053-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_053-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "I would like to reschedule my appointment.",
+          "I have to to reschedule my appointment."
+        ],
+        recommendedResponses: [
+          "Yes, I can help.",
+          "Please keep the confirmation number.",
+          "The next available time is Monday."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I need to reschedule my appointment.",
+            chinese: "我需要改预约时间。"
+          },
+          {
+            speakerRole: "Receptionist",
+            speakerRoleZh: "前台接待可能会说",
+            english: "Yes, I can help.",
+            chinese: "可以，我可以帮你。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "reschedule my appointment",
+            chinese: "改预约时间",
+            pronunciation: "ree-SKED-jool my uh-POINT-ment",
+            note: "在这个生活场景中，改预约时间是完成沟通的关键词。",
+            example: "Reschedule my appointment is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_054",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_work_life_basics",
+        scenarioTitle: "生活用品和基本服务",
+        sequence: 4,
+        english: "Can you give me a confirmation number?",
+        chinese: "你可以给我一个确认号码吗？",
+        scenario: "日常生活中买工作用品、改约、拿确认号码或处理基本事务时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_054-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_054-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "Could you give me a confirmation number?",
+          "Are you able to give me a confirmation number?"
+        ],
+        recommendedResponses: [
+          "Yes, I can help.",
+          "Please keep the confirmation number.",
+          "The next available time is Monday."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can you give me a confirmation number?",
+            chinese: "你可以给我一个确认号码吗？"
+          },
+          {
+            speakerRole: "Receptionist",
+            speakerRoleZh: "前台接待可能会说",
+            english: "Yes, I can help.",
+            chinese: "可以，我可以帮你。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "confirmation number",
+            chinese: "确认号码",
+            pronunciation: "kon-fer-MAY-shun NUM-ber",
+            note: "在这个生活场景中，确认号码是完成沟通的关键词。",
+            example: "Confirmation number is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_055",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_forms_receipts",
+        scenarioTitle: "电话预约",
+        sequence: 1,
+        english: "I need help filling out this form.",
+        chinese: "我需要帮忙填写这张表。",
+        scenario: "填写表格、索要收据副本、邮寄包裹或处理文件时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_055-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_055-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "I would like help filling out this form.",
+          "I have to help filling out this form."
+        ],
+        recommendedResponses: [
+          "Yes, I can help with that.",
+          "Please write your name here.",
+          "I can email you a copy."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I need help filling out this form.",
+            chinese: "我需要帮忙填写这张表。"
+          },
+          {
+            speakerRole: "Clerk",
+            speakerRoleZh: "店员可能会说",
+            english: "Yes, I can help with that.",
+            chinese: "可以，我可以帮你。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "filling out this form",
+            chinese: "填写这张表",
+            pronunciation: "FIL-ing out this form",
+            note: "在这个生活场景中，填写这张表是完成沟通的关键词。",
+            example: "Filling out this form is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_056",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_forms_receipts",
+        scenarioTitle: "电话预约",
+        sequence: 2,
+        english: "Can you email me a copy?",
+        chinese: "你可以发一份副本到我邮箱吗？",
+        scenario: "填写表格、索要收据副本、邮寄包裹或处理文件时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_056-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_056-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "Could you email me a copy?",
+          "Are you able to email me a copy?"
+        ],
+        recommendedResponses: [
+          "Yes, I can help with that.",
+          "Please write your name here.",
+          "I can email you a copy."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can you email me a copy?",
+            chinese: "你可以发一份副本到我邮箱吗？"
+          },
+          {
+            speakerRole: "Clerk",
+            speakerRoleZh: "店员可能会说",
+            english: "Yes, I can help with that.",
+            chinese: "可以，我可以帮你。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "email me a copy",
+            chinese: "发一份副本到我邮箱",
+            pronunciation: "EE-mayl mee uh KOP-ee",
+            note: "在这个生活场景中，发一份副本到我邮箱是完成沟通的关键词。",
+            example: "Email me a copy is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
     {
       id: "daily_life_057",
       moduleId: "daily_life",
@@ -31714,156 +31960,195 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-    {
-      id: "daily_life_058",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_general",
-      scenarioTitle: "报警、911和紧急求助",
-      sequence: 2,
-      english: "Who should I contact about this?",
-      chinese: "这件事我应该联系谁？",
-      scenario: "遇到紧急情况时求助和说明问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_058-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_058-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      difficulty: "Level 1",
-      variants: [
-        "Who do I call about this?",
-        "Who should I talk to about this?"
-      ],
-      recommendedResponses: [
-        "Call customer service.",
-        "Talk to the office.",
-        "Ask the manager first."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "contact",
-          chinese: "联系",
-          pronunciation: "KON-takt",
-          note: "可以指打电话、发邮件或找人。",
-          example: "Contact the office."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_059",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_phone_internet",
-      scenarioTitle: "手机和网络",
-      sequence: 5,
-      english: "Can I make a payment plan?",
-      chinese: "我可以分期付款吗？",
-      scenario: "手机套餐、流量、账单和网络问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_059-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_059-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      difficulty: "Level 2",
-      variants: [
-        "Can I pay in installments?",
-        "Can I split the payment over time?"
-      ],
-      recommendedResponses: [
-        "Yes, we have payment plans.",
-        "No, it must be paid today.",
-        "Let me check your options."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "payment plan",
-          chinese: "分期付款计划",
-          pronunciation: "PAY-ment plan",
-          note: "费用较高时分几次付款。",
-          example: "Ask for a payment plan."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    },
-    {
-      id: "daily_life_060",
-      moduleId: "daily_life",
-      moduleTitle: "北美基本生活英语",
-      scenarioId: "daily_life_general",
-      scenarioTitle: "报警、911和紧急求助",
-      sequence: 3,
-      english: "Is there a fee for this?",
-      chinese: "这个有费用吗？",
-      scenario: "遇到紧急情况时求助和说明问题。",
-      importance: "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
-      role: "Worker",
-      roleZh: "员工要说",
-      audioNormal: "/audio/en-US/daily_life_060-normal.mp3",
-      audioSlow: "/audio/en-US/daily_life_060-slow.mp3",
-      isFree: false,
-      safetyLevel: "normal",
-      reviewRequired: false,
-      tags: [
-        "restaurant",
-        "daily_life",
-        "supplement",
-        "daily-life-pack"
-      ],
-      active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
-      difficulty: "Level 1",
-      variants: [
-        "Do I have to pay a fee?",
-        "How much is the fee?"
-      ],
-      recommendedResponses: [
-        "There is no fee.",
-        "The fee is five dollars.",
-        "Let me check for you."
-      ],
-      dialogue: [],
-      vocabularyNotes: [
-        {
-          term: "fee",
-          chinese: "费用；手续费",
-          pronunciation: "fee-sound",
-          note: "办理服务或账户可能收的钱。",
-          example: "There is no fee."
-        }
-      ],
-      listenRepeatCount: 3,
-      speakRepeatCount: 5
-    }
+          {
+        id: "daily_life_058",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_general",
+        scenarioTitle: "报警、911和紧急求助",
+        sequence: 2,
+        english: "Who should I contact about this?",
+        chinese: "这件事我应该联系谁？",
+        scenario: "日常电话和柜台沟通中询问联系人、费用或请对方说慢一点。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_058-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_058-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "Can you help me with this?",
+          "I need help with this."
+        ],
+        recommendedResponses: [
+          "Yes, there is a small fee.",
+          "I can give you the right number.",
+          "Of course. I will speak slowly."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Who should I contact about this?",
+            chinese: "这件事我应该联系谁？"
+          },
+          {
+            speakerRole: "Clerk",
+            speakerRoleZh: "店员可能会说",
+            english: "Yes, there is a small fee.",
+            chinese: "是的，有一点费用。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "contact about this",
+            chinese: "就这件事联系",
+            pronunciation: "KON-takt uh-BOWT this",
+            note: "在这个生活场景中，就这件事联系是完成沟通的关键词。",
+            example: "Contact about this is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_059",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_phone_internet",
+        scenarioTitle: "手机和网络",
+        sequence: 5,
+        english: "Can I make a payment plan?",
+        chinese: "我可以分期付款吗？",
+        scenario: "办理手机套餐、网络、账单、流量、付款或服务故障时使用。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_059-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_059-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        difficulty: "Level 2",
+        variants: [
+          "Is it possible to make a payment plan?",
+          "Could I make a payment plan?"
+        ],
+        recommendedResponses: [
+          "Let me check your account.",
+          "We can change your plan.",
+          "Try restarting your phone first."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I make a payment plan?",
+            chinese: "我可以分期付款吗？"
+          },
+          {
+            speakerRole: "Phone Rep",
+            speakerRoleZh: "手机客服可能会说",
+            english: "Let me check your account.",
+            chinese: "我查一下你的账户。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "payment plan",
+            chinese: "分期付款计划",
+            pronunciation: "PAY-ment plan",
+            note: "在这个生活场景中，分期付款计划是完成沟通的关键词。",
+            example: "Payment plan is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      },
+          {
+        id: "daily_life_060",
+        moduleId: "daily_life",
+        moduleTitle: "北美基本生活英语",
+        scenarioId: "daily_life_general",
+        scenarioTitle: "报警、911和紧急求助",
+        sequence: 3,
+        english: "Is there a fee for this?",
+        chinese: "这个有费用吗？",
+        scenario: "日常电话和柜台沟通中询问联系人、费用或请对方说慢一点。",
+        importance: "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+        role: "Customer",
+        roleZh: "顾客可能会说",
+        audioNormal: "/audio/en-US/daily_life_060-normal.mp3",
+        audioSlow: "/audio/en-US/daily_life_060-slow.mp3",
+        isFree: false,
+        safetyLevel: "normal",
+        reviewRequired: false,
+        tags: [
+          "restaurant",
+          "daily_life",
+          "supplement",
+          "daily-life-pack"
+        ],
+        active: true,
+        speakerRole: "Customer",
+        speakerRoleZh: "顾客可能会说",
+        difficulty: "Level 1",
+        variants: [
+          "Do you know if there a fee for this?",
+          "Can you tell me if there a fee for this?"
+        ],
+        recommendedResponses: [
+          "Yes, there is a small fee.",
+          "I can give you the right number.",
+          "Of course. I will speak slowly."
+        ],
+        dialogue: [
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Is there a fee for this?",
+            chinese: "这个有费用吗？"
+          },
+          {
+            speakerRole: "Clerk",
+            speakerRoleZh: "店员可能会说",
+            english: "Yes, there is a small fee.",
+            chinese: "是的，有一点费用。"
+          }
+        ],
+        vocabularyNotes: [
+          {
+            term: "fee",
+            chinese: "费用",
+            pronunciation: "fee-sound",
+            note: "在这个生活场景中，费用是完成沟通的关键词。",
+            example: "Fee is important."
+          }
+        ],
+        listenRepeatCount: 3,
+        speakRepeatCount: 5
+      }
   ]
 } as const satisfies {
   id: string; title: string; subtitle: string; priceLabel: string; sourceLanguage: string; targetLanguage: string;
