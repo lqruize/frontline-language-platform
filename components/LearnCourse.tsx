@@ -72,7 +72,7 @@ export function LearnCourse({ items, modules, freeScenarioIds }: LearnCourseProp
     <div className="space-y-5">
       <UnlockPanel />
 
-      <div className="sticky top-0 z-10 -mx-4 border-b border-line bg-warm/95 px-4 py-3 backdrop-blur sm:mx-0 sm:rounded-3xl sm:border sm:bg-white/85">
+      <div id="learn-modules" className="sticky top-0 z-10 -mx-4 border-b border-line bg-warm/95 px-4 py-3 backdrop-blur sm:mx-0 sm:rounded-3xl sm:border sm:bg-white/85">
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
           <button
             type="button"

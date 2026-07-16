@@ -84,6 +84,18 @@ function renderSentenceWithNotes(sentence: string, notes: VocabNote[], onSelect:
   });
 }
 
+function DetailList({ title, items, defaultOpen = false }: { title: string; items: string[]; defaultOpen?: boolean }) {
+  if (!items.length) return null;
+  return (
+    <details className="rounded-2xl border border-line bg-white p-3 md:hidden" open={defaultOpen}>
+      <summary className="cursor-pointer list-none text-base font-black text-ink">{title}</summary>
+      <ul className="mt-3 grid gap-2 text-base font-semibold text-muted">
+        {items.map((item) => <li key={item}>• {item}</li>)}
+      </ul>
+    </details>
+  );
+}
+
 export function CourseItemCard({ item, locked = false }: CourseItemCardProps) {
   const [listenCount, setListenCount] = useState(0);
   const [speakCount, setSpeakCount] = useState(0);
@@ -201,9 +213,11 @@ export function CourseItemCard({ item, locked = false }: CourseItemCardProps) {
 
         <div className="mt-3 grid grid-cols-3 gap-2 text-center text-xs font-black text-muted">
           <div className={listenCount >= item.listenRepeatCount ? "rounded-xl bg-brandSoft p-2 text-brand" : "rounded-xl bg-warm p-2"}>听 {Math.min(listenCount, item.listenRepeatCount)}/{item.listenRepeatCount}</div>
-          <div className={speakCount >= item.speakRepeatCount ? "rounded-xl bg-brandSoft p-2 text-brand" : "rounded-xl bg-warm p-2"}>跟读 {Math.min(speakCount, item.speakRepeatCount)}/{item.speakRepeatCount}</div>
+          <div className={speakCount >= item.speakRepeatCount ? "rounded-xl bg-brandSoft p-2 text-brand" : "rounded-xl bg-warm p-2"}>已跟读 {Math.min(speakCount, item.speakRepeatCount)}/{item.speakRepeatCount}</div>
           <div className={completed ? "rounded-xl bg-green-50 p-2 text-success" : "rounded-xl bg-warm p-2"}>会说</div>
         </div>
+
+        <p className="mt-3 text-sm font-semibold text-muted">每读完一次，点击按钮记录。</p>
 
         <div className="mt-4 grid gap-3">
           <button
@@ -221,7 +235,7 @@ export function CourseItemCard({ item, locked = false }: CourseItemCardProps) {
             disabled={!canStartSpeaking || speakCount >= item.speakRepeatCount}
             className={canStartSpeaking && speakCount < item.speakRepeatCount ? "rounded-2xl bg-brand px-5 py-4 text-lg font-black text-white shadow-soft" : "rounded-2xl bg-warm px-5 py-4 text-base font-bold text-muted"}
           >
-            {speakCount >= item.speakRepeatCount ? "第二步已完成" : `第二步：跟读一次 ${Math.min(speakCount, item.speakRepeatCount)}/${item.speakRepeatCount}`}
+            {speakCount >= item.speakRepeatCount ? "第二步已完成" : `第二步：跟读完成一次 ${Math.min(speakCount, item.speakRepeatCount)}/${item.speakRepeatCount}`}
           </button>
 
           <button
@@ -240,7 +254,40 @@ export function CourseItemCard({ item, locked = false }: CourseItemCardProps) {
         </div>
       </div>
 
-      <div className="mt-4 grid gap-3 md:grid-cols-2">
+      <div className="mt-4 grid gap-3 md:hidden">
+        <DetailList title="可以这样回答" items={item.recommendedResponses} defaultOpen />
+        <DetailList title="相近表达" items={item.variants} />
+        {item.dialogue.length ? (
+          <details className="rounded-2xl border border-line bg-white p-3">
+            <summary className="cursor-pointer list-none text-base font-black text-ink">小对话</summary>
+            <div className="mt-3 grid gap-2">
+              {item.dialogue.map((line, index) => (
+                <div key={`${line.english}-${index}`} className="rounded-xl bg-warm p-3">
+                  <p className="text-sm font-bold text-brand">{line.speakerRoleZh}</p>
+                  <p className="mt-1 text-base font-black text-ink">{line.english}</p>
+                  <p className="mt-1 text-sm font-semibold text-muted">{line.chinese}</p>
+                </div>
+              ))}
+            </div>
+          </details>
+        ) : null}
+        {visibleNotes.length ? (
+          <details className="rounded-2xl border border-line bg-white p-3">
+            <summary className="cursor-pointer list-none text-base font-black text-ink">单词和短语解释</summary>
+            <div className="mt-3 grid gap-3">
+              {visibleNotes.map((note) => (
+                <div key={note.term} className="rounded-xl bg-warm p-3">
+                  <p className="text-base font-black text-ink">{note.term}</p>
+                  <p className="mt-1 text-sm font-bold text-brand">{note.chinese}</p>
+                  <p className="mt-1 text-sm font-semibold text-muted">{note.note}</p>
+                </div>
+              ))}
+            </div>
+          </details>
+        ) : null}
+      </div>
+
+      <div className="mt-4 hidden gap-3 md:grid md:grid-cols-2">
         {item.variants.length ? (
           <section className="rounded-2xl bg-warm p-4">
             <h4 className="text-base font-black text-ink">相近表达</h4>
@@ -260,7 +307,7 @@ export function CourseItemCard({ item, locked = false }: CourseItemCardProps) {
       </div>
 
       {item.dialogue.length ? (
-        <section className="mt-4 rounded-2xl border border-line bg-white p-4">
+        <section className="mt-4 hidden rounded-2xl border border-line bg-white p-4 md:block">
           <h4 className="text-base font-black text-ink">小对话</h4>
           <div className="mt-3 grid gap-2">
             {item.dialogue.map((line, index) => (

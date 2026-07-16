@@ -195,12 +195,14 @@ export const kitchenSurvivalCourse = {
       speakerRoleZh: "主管可能会说",
       variants: [
         "Please do this first.",
-        "Start with this one first."
+        "Start with this task.",
+        "Do this one first."
       ],
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?",
+        "Which part should I do first?"
       ],
       dialogue: [
         {
@@ -263,9 +265,9 @@ export const kitchenSurvivalCourse = {
         "Where should I start?"
       ],
       recommendedResponses: [
-        "Yes, I’ll show you.",
-        "Sure. Watch me first.",
-        "Ask me again if it’s not clear."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -277,8 +279,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Yes, I’ll show you.",
-          chinese: "可以，我示范给你看。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -327,9 +329,9 @@ export const kitchenSurvivalCourse = {
         "Please have this ready by noon."
       ],
       recommendedResponses: [
-        "Okay, I’ll do it now.",
-        "Got it. I’ll finish it before noon.",
-        "Which task should I do first?"
+        "Got it.",
+        "I’ll finish it before noon.",
+        "Should I stop my current task first?"
       ],
       dialogue: [
         {
@@ -341,14 +343,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it. I’ll finish it before noon.",
-          chinese: "明白，我会在中午前完成。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -403,9 +399,9 @@ export const kitchenSurvivalCourse = {
         "Please i understand the task."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -417,8 +413,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -467,9 +463,9 @@ export const kitchenSurvivalCourse = {
         "Could you please repeat the instructions back to me?"
       ],
       recommendedResponses: [
-        "Okay, I’ll do it now.",
-        "Got it.",
-        "Can you show me first?"
+        "Can you say that again?",
+        "Can you write it down?",
+        "Let me confirm first."
       ],
       dialogue: [
         {
@@ -481,14 +477,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "Can you say that again?",
+          chinese: "你可以再说一遍吗？"
         }
       ],
       vocabularyNotes: [
@@ -537,9 +527,9 @@ export const kitchenSurvivalCourse = {
         "Can you please show me an example?"
       ],
       recommendedResponses: [
-        "Yes, I’ll show you.",
-        "Sure. Watch me first.",
-        "Ask me again if it’s not clear."
+        "Yes, I’ll watch first.",
+        "Can you show me one more time?",
+        "Okay, I’ll try after you show me."
       ],
       dialogue: [
         {
@@ -551,14 +541,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Yes, I’ll show you.",
-          chinese: "可以，我示范给你看。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Sure. Watch me first.",
-          chinese: "可以，先看我做。"
+          english: "Yes, I’ll watch first.",
+          chinese: "好的。"
         }
       ],
       vocabularyNotes: [
@@ -606,9 +590,9 @@ export const kitchenSurvivalCourse = {
         "Watch me first, then you can try."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Yes, I’ll watch first.",
+        "Can you show me one more time?",
+        "Okay, I’ll try after you show me."
       ],
       dialogue: [
         {
@@ -618,16 +602,10 @@ export const kitchenSurvivalCourse = {
           chinese: "先看我操作，然后你再试。"
         },
         {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Okay.",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工",
+          english: "Yes, I’ll watch first.",
           chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check.",
-          chinese: "我查一下。"
         }
       ],
       vocabularyNotes: [
@@ -675,9 +653,9 @@ export const kitchenSurvivalCourse = {
         "Stop and ask if anything is unclear."
       ],
       recommendedResponses: [
-        "Okay, I’ll do it now.",
-        "Got it.",
-        "Can you show me first?"
+        "Can you say that again?",
+        "Can you write it down?",
+        "Let me confirm first."
       ],
       dialogue: [
         {
@@ -689,14 +667,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "Can you say that again?",
+          chinese: "你可以再说一遍吗？"
         }
       ],
       vocabularyNotes: [
@@ -744,9 +716,9 @@ export const kitchenSurvivalCourse = {
         "I have not been trained for this task."
       ],
       recommendedResponses: [
-        "Okay, I’ll be careful.",
         "Got it.",
-        "I’ll do that safely."
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -754,12 +726,6 @@ export const kitchenSurvivalCourse = {
           speakerRoleZh: "员工",
           english: "I have not been trained for this task.",
           chinese: "我没有接受过这项工作的培训。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Okay, I’ll be careful.",
-          chinese: "好的。"
         },
         {
           speakerRole: "Supervisor",
@@ -814,9 +780,9 @@ export const kitchenSurvivalCourse = {
         "Ask before doing that task."
       ],
       recommendedResponses: [
-        "Okay, I won’t do it.",
-        "Can you show me the right person?",
-        "I’ll ask the supervisor first."
+        "Okay, I’ll do it now.",
+        "Got it.",
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -828,8 +794,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工",
-          english: "Okay, I won’t do it.",
-          chinese: "好的。"
+          english: "Okay, I’ll do it now.",
+          chinese: "好的，我现在就做。"
         }
       ],
       vocabularyNotes: [
@@ -878,9 +844,9 @@ export const kitchenSurvivalCourse = {
         "I have to get help with this task."
       ],
       recommendedResponses: [
-        "Okay, thanks for telling me.",
-        "Please tell the manager.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -892,14 +858,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, thanks for telling me.",
-          chinese: "好的，谢谢你告诉我。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Please tell the manager.",
-          chinese: "请告诉经理。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -949,7 +909,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -963,12 +923,6 @@ export const kitchenSurvivalCourse = {
           speakerRoleZh: "员工",
           english: "Okay, I’ll do it now.",
           chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -1016,9 +970,9 @@ export const kitchenSurvivalCourse = {
         "The equipment problem is slowing us down."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -1030,14 +984,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -1085,9 +1033,9 @@ export const kitchenSurvivalCourse = {
         "Please don’t keep using damaged equipment."
       ],
       recommendedResponses: [
-        "Okay, I’ll be careful.",
+        "Okay, I’ll do it now.",
         "Got it.",
-        "I’ll do that safely."
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -1099,14 +1047,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工",
-          english: "Okay, I’ll be careful.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "Okay, I’ll do it now.",
+          chinese: "好的，我现在就做。"
         }
       ],
       vocabularyNotes: [
@@ -1154,9 +1096,9 @@ export const kitchenSurvivalCourse = {
         "Use only the approved tools for this job."
       ],
       recommendedResponses: [
-        "Okay, I’ll do it now.",
-        "Got it.",
-        "Can you show me first?"
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -1168,14 +1110,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -1223,9 +1159,9 @@ export const kitchenSurvivalCourse = {
         "The approved tool is not available."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -1237,14 +1173,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -1295,7 +1225,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -1309,12 +1239,6 @@ export const kitchenSurvivalCourse = {
           speakerRoleZh: "员工",
           english: "Okay, I’ll do it now.",
           chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -1365,7 +1289,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -1429,7 +1353,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -1443,12 +1367,6 @@ export const kitchenSurvivalCourse = {
           speakerRoleZh: "员工",
           english: "Okay, I’ll do it now.",
           chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -1496,9 +1414,9 @@ export const kitchenSurvivalCourse = {
         "Stop work if there is an immediate danger."
       ],
       recommendedResponses: [
-        "Okay, I’ll be careful.",
-        "Got it.",
-        "I’ll do that safely."
+        "Step aside.",
+        "I’ll be careful.",
+        "I’ll tell the manager right now."
       ],
       dialogue: [
         {
@@ -1510,14 +1428,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工",
-          english: "Okay, I’ll be careful.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "Step aside.",
+          chinese: "让到一边。"
         }
       ],
       vocabularyNotes: [
@@ -1567,7 +1479,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -1581,12 +1493,6 @@ export const kitchenSurvivalCourse = {
           speakerRoleZh: "员工",
           english: "Okay, I’ll do it now.",
           chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -1636,7 +1542,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -1650,12 +1556,6 @@ export const kitchenSurvivalCourse = {
           speakerRoleZh: "员工",
           english: "Okay, I’ll do it now.",
           chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -1705,7 +1605,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -1719,12 +1619,6 @@ export const kitchenSurvivalCourse = {
           speakerRoleZh: "员工",
           english: "Okay, I’ll do it now.",
           chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -1773,9 +1667,9 @@ export const kitchenSurvivalCourse = {
         "Could you please review the attendance policy?"
       ],
       recommendedResponses: [
-        "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -1787,8 +1681,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -1839,7 +1733,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -1853,12 +1747,6 @@ export const kitchenSurvivalCourse = {
           speakerRoleZh: "员工",
           english: "Okay, I’ll do it now.",
           chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -1909,7 +1797,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -1923,12 +1811,6 @@ export const kitchenSurvivalCourse = {
           speakerRoleZh: "员工",
           english: "Okay, I’ll do it now.",
           chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -1978,7 +1860,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -1992,12 +1874,6 @@ export const kitchenSurvivalCourse = {
           speakerRoleZh: "员工",
           english: "Okay, I’ll do it now.",
           chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -2045,9 +1921,9 @@ export const kitchenSurvivalCourse = {
         "Can I have a copy of the written expectations, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -2059,14 +1935,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -2114,9 +1984,9 @@ export const kitchenSurvivalCourse = {
         "I would like time to review this document."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -2128,14 +1998,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -2183,9 +2047,9 @@ export const kitchenSurvivalCourse = {
         "The next worker has not arrived yet."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -2197,14 +2061,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -2253,9 +2111,9 @@ export const kitchenSurvivalCourse = {
         "Can you please check my work before I leave?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -2267,14 +2125,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -2324,7 +2176,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -2338,12 +2190,6 @@ export const kitchenSurvivalCourse = {
           speakerRoleZh: "员工",
           english: "Okay, I’ll do it now.",
           chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -2393,7 +2239,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -2454,9 +2300,9 @@ export const kitchenSurvivalCourse = {
         "Is this there anything I can improve?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -2468,14 +2314,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -2522,9 +2362,9 @@ export const kitchenSurvivalCourse = {
         "Can you please repeat the last part?"
       ],
       recommendedResponses: [
-        "Yes, I’ll show you.",
-        "Sure. Watch me first.",
-        "Ask me again if it’s not clear."
+        "Can you say that again?",
+        "Can you write it down?",
+        "Let me confirm first."
       ],
       dialogue: [
         {
@@ -2536,14 +2376,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Yes, I’ll show you.",
-          chinese: "可以，我示范给你看。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Sure. Watch me first.",
-          chinese: "可以，先看我做。"
+          english: "Can you say that again?",
+          chinese: "你可以再说一遍吗？"
         }
       ],
       vocabularyNotes: [
@@ -3101,9 +2935,9 @@ export const kitchenSurvivalCourse = {
         "Let me confirm the quantity, pickup time, and payment requirements with you."
       ],
       recommendedResponses: [
-        "Okay, I’ll do it now.",
-        "Got it.",
-        "Can you show me first?"
+        "Thanks for checking.",
+        "Can you help me fix it?",
+        "Who should I talk to?"
       ],
       dialogue: [
         {
@@ -3115,14 +2949,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "Thanks for checking.",
+          chinese: "谢谢你帮我查。"
         }
       ],
       vocabularyNotes: [
@@ -3173,7 +3001,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -3187,12 +3015,6 @@ export const kitchenSurvivalCourse = {
           speakerRoleZh: "员工",
           english: "Okay, I’ll do it now.",
           chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -3244,7 +3066,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -3258,12 +3080,6 @@ export const kitchenSurvivalCourse = {
           speakerRoleZh: "员工",
           english: "Okay, I’ll do it now.",
           chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -3312,9 +3128,9 @@ export const kitchenSurvivalCourse = {
         "I am going to be late for my shift."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Thanks for checking.",
+        "Can you help me fix it?",
+        "Who should I talk to?"
       ],
       dialogue: [
         {
@@ -3326,14 +3142,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Thanks for checking.",
+          chinese: "谢谢你帮我查。"
         }
       ],
       vocabularyNotes: [
@@ -3382,9 +3192,9 @@ export const kitchenSurvivalCourse = {
         "I am sick and cannot come to work today."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -3396,14 +3206,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -3452,9 +3256,9 @@ export const kitchenSurvivalCourse = {
         "My schedule shows the wrong shift."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Thanks for checking.",
+        "Can you help me fix it?",
+        "Who should I talk to?"
       ],
       dialogue: [
         {
@@ -3466,14 +3270,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Thanks for checking.",
+          chinese: "谢谢你帮我查。"
         }
       ],
       vocabularyNotes: [
@@ -3522,9 +3320,9 @@ export const kitchenSurvivalCourse = {
         "Please don’t swap shifts without approval."
       ],
       recommendedResponses: [
-        "Okay, I’ll be careful.",
-        "Got it.",
-        "I’ll do that safely."
+        "Thanks for checking.",
+        "Can you help me fix it?",
+        "Who should I talk to?"
       ],
       dialogue: [
         {
@@ -3536,14 +3334,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工",
-          english: "Okay, I’ll be careful.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "Thanks for checking.",
+          chinese: "谢谢你帮我查。"
         }
       ],
       vocabularyNotes: [
@@ -3592,9 +3384,9 @@ export const kitchenSurvivalCourse = {
         "Can I switch shifts with my coworker, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Thanks for checking.",
+        "Can you help me fix it?",
+        "Who should I talk to?"
       ],
       dialogue: [
         {
@@ -3606,14 +3398,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Thanks for checking.",
+          chinese: "谢谢你帮我查。"
         }
       ],
       vocabularyNotes: [
@@ -3665,7 +3451,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -3679,12 +3465,6 @@ export const kitchenSurvivalCourse = {
           speakerRoleZh: "员工",
           english: "Okay, I’ll do it now.",
           chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -3734,9 +3514,9 @@ export const kitchenSurvivalCourse = {
         "This item task is not finished yet."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -3748,14 +3528,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -3804,9 +3578,9 @@ export const kitchenSurvivalCourse = {
         "Record the issue in the shift log."
       ],
       recommendedResponses: [
-        "Okay, I’ll do it now.",
-        "Got it.",
-        "Can you show me first?"
+        "Thanks for checking.",
+        "Can you help me fix it?",
+        "Who should I talk to?"
       ],
       dialogue: [
         {
@@ -3818,14 +3592,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "Thanks for checking.",
+          chinese: "谢谢你帮我查。"
         }
       ],
       vocabularyNotes: [
@@ -3871,9 +3639,9 @@ export const kitchenSurvivalCourse = {
         "Who is closing tonight, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -3885,8 +3653,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -3932,9 +3700,9 @@ export const kitchenSurvivalCourse = {
         "Who is opening tomorrow, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -3946,8 +3714,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -3993,9 +3761,9 @@ export const kitchenSurvivalCourse = {
         "Can I switch shifts with Kevin, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Thanks for checking.",
+        "Can you help me fix it?",
+        "Who should I talk to?"
       ],
       dialogue: [
         {
@@ -4007,14 +3775,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Thanks for checking.",
+          chinese: "谢谢你帮我查。"
         }
       ],
       vocabularyNotes: [
@@ -4060,9 +3822,9 @@ export const kitchenSurvivalCourse = {
         "I can stay thirty minutes longer."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -4074,14 +3836,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -4128,9 +3884,9 @@ export const kitchenSurvivalCourse = {
         "I have to get to leave on time today."
       ],
       recommendedResponses: [
-        "Okay, thanks for telling me.",
-        "Please tell the manager.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -4142,14 +3898,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, thanks for telling me.",
-          chinese: "好的，谢谢你告诉我。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Please tell the manager.",
-          chinese: "请告诉经理。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -4195,9 +3945,9 @@ export const kitchenSurvivalCourse = {
         "Was my break recorded, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -4209,8 +3959,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -4256,9 +4006,9 @@ export const kitchenSurvivalCourse = {
         "I worked from ten to four."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -4270,14 +4020,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -4323,9 +4067,9 @@ export const kitchenSurvivalCourse = {
         "My direct deposit has not arrived yet."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Thanks for checking.",
+        "Can you help me fix it?",
+        "Who should I talk to?"
       ],
       dialogue: [
         {
@@ -4337,14 +4081,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Thanks for checking.",
+          chinese: "谢谢你帮我查。"
         }
       ],
       vocabularyNotes: [
@@ -4391,9 +4129,9 @@ export const kitchenSurvivalCourse = {
         "Can you please check my time sheet?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -4405,14 +4143,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -4459,9 +4191,9 @@ export const kitchenSurvivalCourse = {
         "I have to get to call in sick today."
       ],
       recommendedResponses: [
-        "Okay, thanks for telling me.",
-        "Please tell the manager.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -4473,14 +4205,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, thanks for telling me.",
-          chinese: "好的，谢谢你告诉我。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Please tell the manager.",
-          chinese: "请告诉经理。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -4526,9 +4252,9 @@ export const kitchenSurvivalCourse = {
         "Can I take my break now, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -4540,14 +4266,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -4594,9 +4314,9 @@ export const kitchenSurvivalCourse = {
         "What time should I come in tomorrow, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -4608,14 +4328,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -4662,9 +4376,9 @@ export const kitchenSurvivalCourse = {
         "Can you please send me the new schedule?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Thanks for checking.",
+        "Can you help me fix it?",
+        "Who should I talk to?"
       ],
       dialogue: [
         {
@@ -4676,14 +4390,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Thanks for checking.",
+          chinese: "谢谢你帮我查。"
         }
       ],
       vocabularyNotes: [
@@ -4729,9 +4437,9 @@ export const kitchenSurvivalCourse = {
         "I think my overtime is missing."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Thanks for checking.",
+        "Can you help me fix it?",
+        "Who should I talk to?"
       ],
       dialogue: [
         {
@@ -4743,14 +4451,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Thanks for checking.",
+          chinese: "谢谢你帮我查。"
         }
       ],
       vocabularyNotes: [
@@ -4796,9 +4498,9 @@ export const kitchenSurvivalCourse = {
         "Who should I give the handoff note to, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -4810,14 +4512,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -4863,9 +4559,9 @@ export const kitchenSurvivalCourse = {
         "The next shift is not here yet."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Thanks for checking.",
+        "Can you help me fix it?",
+        "Who should I talk to?"
       ],
       dialogue: [
         {
@@ -4877,14 +4573,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Thanks for checking.",
+          chinese: "谢谢你帮我查。"
         }
       ],
       vocabularyNotes: [
@@ -4930,9 +4620,9 @@ export const kitchenSurvivalCourse = {
         "I can cover the first hour."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -4944,14 +4634,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -4997,9 +4681,9 @@ export const kitchenSurvivalCourse = {
         "I cannot work that day."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -5011,8 +4695,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -5058,9 +4742,9 @@ export const kitchenSurvivalCourse = {
         "Can I update my availability, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "I’ll wash my hands now.",
+        "I’ll put on new gloves.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
@@ -5072,8 +4756,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "I’ll wash my hands now.",
+          chinese: "我现在去洗手。"
         }
       ],
       vocabularyNotes: [
@@ -5120,9 +4804,9 @@ export const kitchenSurvivalCourse = {
         "I have to get this day off for an appointment."
       ],
       recommendedResponses: [
-        "Okay, thanks for telling me.",
-        "Please tell the manager.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -5134,14 +4818,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, thanks for telling me.",
-          chinese: "好的，谢谢你告诉我。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Please tell the manager.",
-          chinese: "请告诉经理。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -5187,9 +4865,9 @@ export const kitchenSurvivalCourse = {
         "Can I come in earlier tomorrow, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -5201,14 +4879,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -5254,9 +4926,9 @@ export const kitchenSurvivalCourse = {
         "Can I leave early if it is slow, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -5268,14 +4940,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -5321,9 +4987,9 @@ export const kitchenSurvivalCourse = {
         "Who approves time-off requests, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -5335,8 +5001,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -5382,9 +5048,9 @@ export const kitchenSurvivalCourse = {
         "I submitted my availability last week."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -5396,14 +5062,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -5622,9 +5282,9 @@ export const kitchenSurvivalCourse = {
         "What comes with the combo, please?"
       ],
       recommendedResponses: [
-        "Sure, I can help.",
-        "Let me check that for you.",
-        "I’m sorry about that."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "I can fix that for you."
       ],
       dialogue: [
         {
@@ -5636,8 +5296,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Staff",
           speakerRoleZh: "员工",
-          english: "Sure, I can help.",
-          chinese: "可以，我来帮你。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -5685,9 +5345,9 @@ export const kitchenSurvivalCourse = {
         "Sorry, could you repeat that a little more slowly, please?"
       ],
       recommendedResponses: [
-        "Yes, I’ll show you.",
-        "Sure. Watch me first.",
-        "Ask me again if it’s not clear."
+        "Can you say that again?",
+        "Can you write it down?",
+        "Let me confirm first."
       ],
       dialogue: [
         {
@@ -5699,14 +5359,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Yes, I’ll show you.",
-          chinese: "可以，我示范给你看。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Sure. Watch me first.",
-          chinese: "可以，先看我做。"
+          english: "Can you say that again?",
+          chinese: "你可以再说一遍吗？"
         }
       ],
       vocabularyNotes: [
@@ -5754,9 +5408,9 @@ export const kitchenSurvivalCourse = {
         "Can I get that without onions, please?"
       ],
       recommendedResponses: [
-        "Sure, I can help.",
-        "Let me check that for you.",
-        "I’m sorry about that."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "I can fix that for you."
       ],
       dialogue: [
         {
@@ -5768,14 +5422,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Staff",
           speakerRoleZh: "员工",
-          english: "Sure, I can help.",
-          chinese: "可以，我来帮你。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Let me check that for you.",
-          chinese: "我帮你查一下。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -5823,9 +5471,9 @@ export const kitchenSurvivalCourse = {
         "I'm sorry, we're sold out of that today."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -5837,14 +5485,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -5893,9 +5535,9 @@ export const kitchenSurvivalCourse = {
         "What do you recommend instead, please?"
       ],
       recommendedResponses: [
-        "Sure, I can help.",
-        "Let me check that for you.",
-        "I’m sorry about that."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "I can fix that for you."
       ],
       dialogue: [
         {
@@ -5907,8 +5549,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Staff",
           speakerRoleZh: "员工",
-          english: "Sure, I can help.",
-          chinese: "可以，我来帮你。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -5957,9 +5599,9 @@ export const kitchenSurvivalCourse = {
         "What milder flavors do you have, please?"
       ],
       recommendedResponses: [
-        "Sure, I can help.",
-        "Let me check that for you.",
-        "I’m sorry about that."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "I can fix that for you."
       ],
       dialogue: [
         {
@@ -5971,14 +5613,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Staff",
           speakerRoleZh: "员工",
-          english: "Sure, I can help.",
-          chinese: "可以，我来帮你。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Let me check that for you.",
-          chinese: "我帮你查一下。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -6026,9 +5662,9 @@ export const kitchenSurvivalCourse = {
         "What's the name on the order, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -6040,14 +5676,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -6096,9 +5726,9 @@ export const kitchenSurvivalCourse = {
         "I’ll ask someone to help and change the wait time."
       ],
       recommendedResponses: [
-        "Thank you.",
-        "Please tell the customer.",
-        "I’ll keep working on the order."
+        "I’ll wash my hands now.",
+        "I’ll put on new gloves.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
@@ -6110,8 +5740,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工",
-          english: "Thank you.",
-          chinese: "好的。"
+          english: "I’ll wash my hands now.",
+          chinese: "我现在去洗手。"
         }
       ],
       vocabularyNotes: [
@@ -6160,9 +5790,9 @@ export const kitchenSurvivalCourse = {
         "What is still available, please?"
       ],
       recommendedResponses: [
-        "Sure, I can help.",
-        "Let me check that for you.",
-        "I’m sorry about that."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "I can fix that for you."
       ],
       dialogue: [
         {
@@ -6174,14 +5804,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Staff",
           speakerRoleZh: "员工",
-          english: "Sure, I can help.",
-          chinese: "可以，我来帮你。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Let me check that for you.",
-          chinese: "我帮你查一下。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -6230,9 +5854,9 @@ export const kitchenSurvivalCourse = {
         "Yes. Put a label on the cup and check the bag."
       ],
       recommendedResponses: [
-        "Okay, I’ll check it.",
-        "Got it.",
-        "I’ll label it now."
+        "I’ll wash my hands now.",
+        "I’ll put on new gloves.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
@@ -6242,10 +5866,10 @@ export const kitchenSurvivalCourse = {
           chinese: "对。给杯子贴标签，并检查袋子。"
         },
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Okay, I’ll check it.",
-          chinese: "好的。"
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管",
+          english: "I’ll wash my hands now.",
+          chinese: "我现在去洗手。"
         }
       ],
       vocabularyNotes: [
@@ -6294,9 +5918,9 @@ export const kitchenSurvivalCourse = {
         "Let me repeat what I understood."
       ],
       recommendedResponses: [
-        "Yes, I’ll show you.",
-        "Sure. Watch me first.",
-        "Ask me again if it’s not clear."
+        "Can you say that again?",
+        "Can you write it down?",
+        "Let me confirm first."
       ],
       dialogue: [
         {
@@ -6308,14 +5932,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Yes, I’ll show you.",
-          chinese: "可以，我示范给你看。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Sure. Watch me first.",
-          chinese: "可以，先看我做。"
+          english: "Can you say that again?",
+          chinese: "你可以再说一遍吗？"
         }
       ],
       vocabularyNotes: [
@@ -6365,9 +5983,9 @@ export const kitchenSurvivalCourse = {
         "Could you please explain that again more slowly?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -6379,14 +5997,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -6436,9 +6048,9 @@ export const kitchenSurvivalCourse = {
         "What exactly needs to be corrected, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -6450,14 +6062,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -6507,9 +6113,9 @@ export const kitchenSurvivalCourse = {
         "What is the expected production rate, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -6521,14 +6127,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -6578,9 +6178,9 @@ export const kitchenSurvivalCourse = {
         "Can you please explain what improvement is expected?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -6592,14 +6192,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -6645,9 +6239,9 @@ export const kitchenSurvivalCourse = {
         "Keep raw chicken below cooked food."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "I’ll wash my hands now.",
+        "I’ll put on new gloves.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
@@ -6659,14 +6253,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "I’ll wash my hands now.",
+          chinese: "我现在去洗手。"
         }
       ],
       vocabularyNotes: [
@@ -6712,9 +6300,9 @@ export const kitchenSurvivalCourse = {
         "Please don’t use the same cutting board for raw meat and vegetables."
       ],
       recommendedResponses: [
-        "Okay, I’ll be careful.",
         "Got it.",
-        "I’ll do that safely."
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -6722,12 +6310,6 @@ export const kitchenSurvivalCourse = {
           speakerRoleZh: "员工",
           english: "Do not use the same cutting board for raw meat and vegetables.",
           chinese: "不要用同一块砧板切生肉和蔬菜。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Okay, I’ll be careful.",
-          chinese: "好的。"
         },
         {
           speakerRole: "Supervisor",
@@ -6779,9 +6361,9 @@ export const kitchenSurvivalCourse = {
         "Check the expiration date first."
       ],
       recommendedResponses: [
-        "Okay, I’ll do it now.",
-        "Got it.",
-        "Can you show me first?"
+        "I’ll wash my hands now.",
+        "I’ll put on new gloves.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
@@ -6793,8 +6375,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
+          english: "I’ll wash my hands now.",
+          chinese: "我现在去洗手。"
         }
       ],
       vocabularyNotes: [
@@ -6841,9 +6423,9 @@ export const kitchenSurvivalCourse = {
         "This item container needs a date label."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "I’ll wash my hands now.",
+        "I’ll put on new gloves.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
@@ -6855,14 +6437,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "I’ll wash my hands now.",
+          chinese: "我现在去洗手。"
         }
       ],
       vocabularyNotes: [
@@ -6908,9 +6484,9 @@ export const kitchenSurvivalCourse = {
         "Put the lid on before you store it."
       ],
       recommendedResponses: [
-        "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -6918,12 +6494,6 @@ export const kitchenSurvivalCourse = {
           speakerRoleZh: "员工",
           english: "Put the lid on before you store it.",
           chinese: "存放前把盖子盖上。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
         },
         {
           speakerRole: "Supervisor",
@@ -6975,9 +6545,9 @@ export const kitchenSurvivalCourse = {
         "Please don’t leave food out too long."
       ],
       recommendedResponses: [
-        "Okay, I’ll be careful.",
-        "Got it.",
-        "I’ll do that safely."
+        "I’ll wash my hands now.",
+        "I’ll put on new gloves.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
@@ -6989,14 +6559,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, I’ll be careful.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "I’ll wash my hands now.",
+          chinese: "我现在去洗手。"
         }
       ],
       vocabularyNotes: [
@@ -7043,9 +6607,9 @@ export const kitchenSurvivalCourse = {
         "This item needs to go back in the cooler."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "For here, please.",
+        "To go, please.",
+        "It’s for takeout."
       ],
       dialogue: [
         {
@@ -7057,14 +6621,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "For here, please.",
+          chinese: "堂食，谢谢。"
         }
       ],
       vocabularyNotes: [
@@ -7110,9 +6668,9 @@ export const kitchenSurvivalCourse = {
         "Use clean tongs for ready-to-eat food."
       ],
       recommendedResponses: [
-        "Okay, I’ll do it now.",
-        "Got it.",
-        "Can you show me first?"
+        "I’ll wash my hands now.",
+        "I’ll put on new gloves.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
@@ -7124,14 +6682,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "I’ll wash my hands now.",
+          chinese: "我现在去洗手。"
         }
       ],
       vocabularyNotes: [
@@ -7177,9 +6729,9 @@ export const kitchenSurvivalCourse = {
         "Change the gloves before making the salad."
       ],
       recommendedResponses: [
-        "Okay, I’ll do it now.",
-        "Got it.",
-        "Can you show me first?"
+        "I’ll wash my hands now.",
+        "I’ll put on new gloves.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
@@ -7191,14 +6743,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "I’ll wash my hands now.",
+          chinese: "我现在去洗手。"
         }
       ],
       vocabularyNotes: [
@@ -7244,9 +6790,9 @@ export const kitchenSurvivalCourse = {
         "The sanitizer bucket needs to be changed."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "I’ll clean it again.",
+        "Should I use sanitizer?",
+        "Where is the test strip?"
       ],
       dialogue: [
         {
@@ -7258,14 +6804,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "I’ll clean it again.",
+          chinese: "我会再清洁一遍。"
         }
       ],
       vocabularyNotes: [
@@ -7318,9 +6858,9 @@ export const kitchenSurvivalCourse = {
         "Please check the cooler temperature."
       ],
       recommendedResponses: [
-        "Okay, I’ll do it now.",
-        "Got it.",
-        "Can you show me first?"
+        "I’ll wash my hands now.",
+        "I’ll put on new gloves.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
@@ -7332,8 +6872,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
+          english: "I’ll wash my hands now.",
+          chinese: "我现在去洗手。"
         }
       ],
       vocabularyNotes: [
@@ -7379,9 +6919,9 @@ export const kitchenSurvivalCourse = {
         "Please check the freezer temperature."
       ],
       recommendedResponses: [
-        "Okay, I’ll do it now.",
-        "Got it.",
-        "Can you show me first?"
+        "I’ll wash my hands now.",
+        "I’ll put on new gloves.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
@@ -7393,8 +6933,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
+          english: "I’ll wash my hands now.",
+          chinese: "我现在去洗手。"
         }
       ],
       vocabularyNotes: [
@@ -7441,9 +6981,9 @@ export const kitchenSurvivalCourse = {
         "This item food is past the use-by date."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "I’ll wash my hands now.",
+        "I’ll put on new gloves.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
@@ -7455,14 +6995,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "I’ll wash my hands now.",
+          chinese: "我现在去洗手。"
         }
       ],
       vocabularyNotes: [
@@ -7508,9 +7042,9 @@ export const kitchenSurvivalCourse = {
         "Throw this away if it is expired."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -7522,14 +7056,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -7575,9 +7103,9 @@ export const kitchenSurvivalCourse = {
         "Please don’t put hot food straight into the cooler."
       ],
       recommendedResponses: [
-        "Step aside.",
-        "Give them space.",
-        "Say “hot heard.”"
+        "I’ll wash my hands now.",
+        "I’ll put on new gloves.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
@@ -7589,14 +7117,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Step aside.",
-          chinese: "让到一边。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Give them space.",
-          chinese: "给对方留空间。"
+          english: "I’ll wash my hands now.",
+          chinese: "我现在去洗手。"
         }
       ],
       vocabularyNotes: [
@@ -7642,9 +7164,9 @@ export const kitchenSurvivalCourse = {
         "Let it cool before you cover it."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -7656,14 +7178,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -7709,9 +7225,9 @@ export const kitchenSurvivalCourse = {
         "Use the first-in, first-out rule."
       ],
       recommendedResponses: [
-        "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -7723,8 +7239,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -7770,9 +7286,9 @@ export const kitchenSurvivalCourse = {
         "Please don’t touch ready-to-eat food with bare hands."
       ],
       recommendedResponses: [
-        "Okay, I’ll be careful.",
-        "Got it.",
-        "I’ll do that safely."
+        "I’ll wash my hands now.",
+        "I’ll put on new gloves.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
@@ -7784,14 +7300,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, I’ll be careful.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "I’ll wash my hands now.",
+          chinese: "我现在去洗手。"
         }
       ],
       vocabularyNotes: [
@@ -7837,9 +7347,9 @@ export const kitchenSurvivalCourse = {
         "Use a clean spoon every time."
       ],
       recommendedResponses: [
-        "Okay, I’ll do it now.",
-        "Got it.",
-        "Can you show me first?"
+        "I’ll clean it again.",
+        "Should I use sanitizer?",
+        "Where is the test strip?"
       ],
       dialogue: [
         {
@@ -7851,14 +7361,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "I’ll clean it again.",
+          chinese: "我会再清洁一遍。"
         }
       ],
       vocabularyNotes: [
@@ -7905,9 +7409,9 @@ export const kitchenSurvivalCourse = {
         "This item needs to be covered in the fridge."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -7919,14 +7423,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -8484,9 +7982,9 @@ export const kitchenSurvivalCourse = {
         "We need one more combo for table two."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -8498,14 +7996,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check.",
-          chinese: "我查一下。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -8553,9 +8045,9 @@ export const kitchenSurvivalCourse = {
         "No sauce on this order."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -8567,8 +8059,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -8616,9 +8108,9 @@ export const kitchenSurvivalCourse = {
         "Make this one with light sauce."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -8630,14 +8122,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check.",
-          chinese: "我查一下。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -8685,9 +8171,9 @@ export const kitchenSurvivalCourse = {
         "The customer wants the sauce on the side."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -8699,14 +8185,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check.",
-          chinese: "我查一下。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -8754,9 +8234,9 @@ export const kitchenSurvivalCourse = {
         "How long on the tenders, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -8768,8 +8248,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -8817,9 +8297,9 @@ export const kitchenSurvivalCourse = {
         "Two more minutes on the fries."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -8831,14 +8311,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -8889,7 +8363,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -8951,9 +8425,9 @@ export const kitchenSurvivalCourse = {
         "This item order is for dine-in."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -8965,8 +8439,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -9015,9 +8489,9 @@ export const kitchenSurvivalCourse = {
         "This item order is to go."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "For here, please.",
+        "To go, please.",
+        "It’s for takeout."
       ],
       dialogue: [
         {
@@ -9029,8 +8503,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "For here, please.",
+          chinese: "堂食，谢谢。"
         }
       ],
       vocabularyNotes: [
@@ -9078,9 +8552,9 @@ export const kitchenSurvivalCourse = {
         "We're waiting on the wings."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -9092,8 +8566,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -9143,7 +8617,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -9157,12 +8631,6 @@ export const kitchenSurvivalCourse = {
           speakerRoleZh: "员工",
           english: "Okay, I’ll do it now.",
           chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -9212,7 +8680,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -9226,12 +8694,6 @@ export const kitchenSurvivalCourse = {
           speakerRoleZh: "员工",
           english: "Okay, I’ll do it now.",
           chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -9279,9 +8741,9 @@ export const kitchenSurvivalCourse = {
         "Label the bag with the customer's name."
       ],
       recommendedResponses: [
-        "Okay, I’ll do it now.",
-        "Got it.",
-        "Can you show me first?"
+        "I’ll wash my hands now.",
+        "I’ll put on new gloves.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
@@ -9293,14 +8755,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "I’ll wash my hands now.",
+          chinese: "我现在去洗手。"
         }
       ],
       vocabularyNotes: [
@@ -9348,9 +8804,9 @@ export const kitchenSurvivalCourse = {
         "Make sure the drink goes with the order."
       ],
       recommendedResponses: [
-        "Okay, I’ll do it now.",
-        "Got it.",
-        "Can you show me first?"
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -9362,14 +8818,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Got it.",
-          chinese: "明白了。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -9419,7 +8869,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -9481,9 +8931,9 @@ export const kitchenSurvivalCourse = {
         "This item bag is for pickup."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -9495,8 +8945,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -9545,9 +8995,9 @@ export const kitchenSurvivalCourse = {
         "This item bag is for delivery."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -9559,8 +9009,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -9679,7 +9129,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -9748,7 +9198,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -9817,7 +9267,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -9880,7 +9330,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -9943,7 +9393,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -10012,7 +9462,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -10075,7 +9525,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -10138,7 +9588,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -10270,7 +9720,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -10471,7 +9921,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -10540,7 +9990,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -10609,7 +10059,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -10678,7 +10128,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -10741,7 +10191,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -10810,7 +10260,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -10879,7 +10329,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -11017,7 +10467,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -11080,7 +10530,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -11141,9 +10591,9 @@ export const kitchenSurvivalCourse = {
         "We're running low on chicken."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -11155,8 +10605,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -11206,7 +10656,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -11275,7 +10725,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -11407,7 +10857,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -11474,9 +10924,9 @@ export const kitchenSurvivalCourse = {
         "We're out of large cups."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -11488,8 +10938,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -11539,7 +10989,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -11608,7 +11058,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -11747,7 +11197,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -12494,9 +11944,9 @@ export const kitchenSurvivalCourse = {
         "We're out of chicken breasts. Please mark the item as sold out."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -12508,14 +11958,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check.",
-          chinese: "我查一下。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -12563,9 +12007,9 @@ export const kitchenSurvivalCourse = {
         "We're backed up in the kitchen. We need help with the orders."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -12577,14 +12021,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -12767,7 +12205,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -12972,9 +12410,9 @@ export const kitchenSurvivalCourse = {
         "The order is missing fries. Can you make them right away, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -12986,14 +12424,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check.",
-          chinese: "我查一下。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -13180,9 +12612,9 @@ export const kitchenSurvivalCourse = {
         "There may be cross-contact."
       ],
       recommendedResponses: [
-        "Thanks for letting me know.",
-        "I have an allergy.",
-        "I’ll choose something else."
+        "I’ll wash my hands now.",
+        "I’ll put on new gloves.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
@@ -13192,10 +12624,10 @@ export const kitchenSurvivalCourse = {
           chinese: "我们不能保证完全没有交叉接触。"
         },
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管",
+          english: "I’ll wash my hands now.",
+          chinese: "我现在去洗手。"
         }
       ],
       vocabularyNotes: [
@@ -13312,9 +12744,9 @@ export const kitchenSurvivalCourse = {
         "Thank you. The kitchen says it needs about five more minutes."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -13326,14 +12758,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -13381,9 +12807,9 @@ export const kitchenSurvivalCourse = {
         "We're backed up. We need help on the fry station."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -13395,14 +12821,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -13576,9 +12996,9 @@ export const kitchenSurvivalCourse = {
         "Order 84 needs light sauce, with one extra sauce on the side."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -13590,14 +13010,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -13645,9 +13059,9 @@ export const kitchenSurvivalCourse = {
         "Got it. Light sauce and one extra cup on the side."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -13659,14 +13073,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -13714,9 +13122,9 @@ export const kitchenSurvivalCourse = {
         "Okay. I'll check the receipt before sealing the bag."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Card, please.",
+        "Yes, please.",
+        "No, thank you."
       ],
       dialogue: [
         {
@@ -13728,14 +13136,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Card, please.",
+          chinese: "刷卡。"
         }
       ],
       vocabularyNotes: [
@@ -13786,7 +13188,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -14962,9 +14364,9 @@ export const kitchenSurvivalCourse = {
         "What can I get for you, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -14976,14 +14378,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -15413,9 +14809,9 @@ export const kitchenSurvivalCourse = {
         "Is this that correct?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -15427,8 +14823,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -15474,9 +14870,9 @@ export const kitchenSurvivalCourse = {
         "Your total is sixteen ninety-nine."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Card, please.",
+        "Yes, please.",
+        "No, thank you."
       ],
       dialogue: [
         {
@@ -15488,8 +14884,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Card, please.",
+          chinese: "刷卡。"
         }
       ],
       vocabularyNotes: [
@@ -15535,9 +14931,9 @@ export const kitchenSurvivalCourse = {
         "It'll be ready in about ten minutes."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -15549,14 +14945,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -16739,9 +16129,9 @@ export const kitchenSurvivalCourse = {
         "Fruit tea or milk tea, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -16753,8 +16143,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -16800,9 +16190,9 @@ export const kitchenSurvivalCourse = {
         "Regular ice or less ice, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -16814,8 +16204,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -16983,9 +16373,9 @@ export const kitchenSurvivalCourse = {
         "You can tap your card here."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Card, please.",
+        "Yes, please.",
+        "No, thank you."
       ],
       dialogue: [
         {
@@ -16997,14 +16387,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Card, please.",
+          chinese: "刷卡。"
         }
       ],
       vocabularyNotes: [
@@ -17053,7 +16437,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -17174,9 +16558,9 @@ export const kitchenSurvivalCourse = {
         "Please your order is ready."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -17188,8 +16572,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -17235,9 +16619,9 @@ export const kitchenSurvivalCourse = {
         "Thank you for calling. How can I help you, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -17249,14 +16633,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -17302,9 +16680,9 @@ export const kitchenSurvivalCourse = {
         "Are you placing an order for pickup, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -17316,14 +16694,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -17369,9 +16741,9 @@ export const kitchenSurvivalCourse = {
         "Can I get your name for the order, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -17383,14 +16755,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -17505,9 +16871,9 @@ export const kitchenSurvivalCourse = {
         "What time would you like to pick it up, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -17519,14 +16885,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -17572,9 +16932,9 @@ export const kitchenSurvivalCourse = {
         "Your pickup time is about twenty minutes from now."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -17586,14 +16946,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -17639,9 +16993,9 @@ export const kitchenSurvivalCourse = {
         "Let me read the order back to you."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -17653,14 +17007,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -17706,9 +17054,9 @@ export const kitchenSurvivalCourse = {
         "The total before tax is twenty-four ninety-nine."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Card, please.",
+        "Yes, please.",
+        "No, thank you."
       ],
       dialogue: [
         {
@@ -17720,14 +17068,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Card, please.",
+          chinese: "刷卡。"
         }
       ],
       vocabularyNotes: [
@@ -17773,9 +17115,9 @@ export const kitchenSurvivalCourse = {
         "We'll have it ready at the front counter."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -17787,14 +17129,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -17908,9 +17244,9 @@ export const kitchenSurvivalCourse = {
         "Can you please confirm the pickup number?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -17922,14 +17258,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -17975,9 +17305,9 @@ export const kitchenSurvivalCourse = {
         "The order is still being prepared."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -17989,14 +17319,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -18042,9 +17366,9 @@ export const kitchenSurvivalCourse = {
         "It should be ready in five more minutes."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -18056,14 +17380,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -18112,7 +17430,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -18177,9 +17495,9 @@ export const kitchenSurvivalCourse = {
         "The driver hasn't arrived yet."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -18191,8 +17509,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -18241,7 +17559,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -18373,9 +17691,9 @@ export const kitchenSurvivalCourse = {
         "Let me check the receipt and packing record."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Card, please.",
+        "Yes, please.",
+        "No, thank you."
       ],
       dialogue: [
         {
@@ -18387,14 +17705,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Card, please.",
+          chinese: "刷卡。"
         }
       ],
       vocabularyNotes: [
@@ -18440,9 +17752,9 @@ export const kitchenSurvivalCourse = {
         "If the platform approves it, we can remake the missing item."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -18454,14 +17766,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -18507,9 +17813,9 @@ export const kitchenSurvivalCourse = {
         "It looks like there may be an issue with the delivery platform."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -18521,14 +17827,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -18574,9 +17874,9 @@ export const kitchenSurvivalCourse = {
         "I'm sorry about that. Let me fix it for you."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -18588,14 +17888,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -18709,9 +18003,9 @@ export const kitchenSurvivalCourse = {
         "Was this order placed in store or online, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -18723,14 +18017,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -18776,9 +18064,9 @@ export const kitchenSurvivalCourse = {
         "We can remake it right away."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -18790,14 +18078,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -18843,9 +18125,9 @@ export const kitchenSurvivalCourse = {
         "Let me check whether we can issue a refund."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Card, please.",
+        "Yes, please.",
+        "No, thank you."
       ],
       dialogue: [
         {
@@ -18857,14 +18139,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Card, please.",
+          chinese: "刷卡。"
         }
       ],
       vocabularyNotes: [
@@ -18910,9 +18186,9 @@ export const kitchenSurvivalCourse = {
         "If approved, the refund may take a few business days."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Card, please.",
+        "Yes, please.",
+        "No, thank you."
       ],
       dialogue: [
         {
@@ -18924,14 +18200,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Card, please.",
+          chinese: "刷卡。"
         }
       ],
       vocabularyNotes: [
@@ -18977,9 +18247,9 @@ export const kitchenSurvivalCourse = {
         "Please i understand the issue."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -18991,8 +18261,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -19038,9 +18308,9 @@ export const kitchenSurvivalCourse = {
         "Let me check with my manager."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -19052,14 +18322,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -19291,9 +18555,9 @@ export const kitchenSurvivalCourse = {
         "Hi! Are you ready to order, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -19305,14 +18569,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -19630,9 +18888,9 @@ export const kitchenSurvivalCourse = {
         "Got it. Two chicken sandwiches and one order of fries."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -19644,14 +18902,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -21004,9 +20256,9 @@ export const kitchenSurvivalCourse = {
         "Was this order placed in store or through an app, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -21018,14 +20270,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -21206,9 +20452,9 @@ export const kitchenSurvivalCourse = {
         "I'm picking up order 742 for Jordan."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -21220,14 +20466,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check.",
-          chinese: "我查一下。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -21344,9 +20584,9 @@ export const kitchenSurvivalCourse = {
         "Please i'm with DoorDash."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -21358,8 +20598,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -21471,9 +20711,9 @@ export const kitchenSurvivalCourse = {
         "Thank you for calling. Are you placing an order for pickup, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -21485,14 +20725,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -21609,9 +20843,9 @@ export const kitchenSurvivalCourse = {
         "Can I get your name and phone number for the order, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -21623,14 +20857,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -21812,9 +21040,9 @@ export const kitchenSurvivalCourse = {
         "When do you need the order, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -21826,14 +21054,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -22205,9 +21427,9 @@ export const kitchenSurvivalCourse = {
         "The delivery tablet is down, and this order didn't print."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -22219,14 +21441,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -22275,9 +21491,9 @@ export const kitchenSurvivalCourse = {
         "Read the order to me, and I'll write it down."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -22289,14 +21505,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -22345,9 +21555,9 @@ export const kitchenSurvivalCourse = {
         "Order 318 has two chicken sandwiches, one fries, and two drinks."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -22359,14 +21569,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -22550,9 +21754,9 @@ export const kitchenSurvivalCourse = {
         "Thank you for calling. How may I help you today, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -22564,14 +21768,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check.",
-          chinese: "我查一下。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -22693,9 +21891,9 @@ export const kitchenSurvivalCourse = {
         "May I have your order number, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -22707,14 +21905,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check.",
-          chinese: "我查一下。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -22835,9 +22027,9 @@ export const kitchenSurvivalCourse = {
         "Before accessing the account, I need to verify your identity."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -22849,14 +22041,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check.",
-          chinese: "我查一下。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -23194,7 +22380,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -23263,9 +22449,9 @@ export const kitchenSurvivalCourse = {
         "Let me make sure I understand correctly."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -23277,14 +22463,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check.",
-          chinese: "我查一下。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -23399,9 +22579,9 @@ export const kitchenSurvivalCourse = {
         "May I place you on a brief hold while I check, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -23413,14 +22593,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check.",
-          chinese: "我查一下。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -23470,9 +22644,9 @@ export const kitchenSurvivalCourse = {
         "Please thank you for holding."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -23484,8 +22658,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -23535,9 +22709,9 @@ export const kitchenSurvivalCourse = {
         "I'm sorry about the delay. Let me give you an update."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "I’ll wash my hands now.",
+        "I’ll put on new gloves.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
@@ -23549,14 +22723,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check.",
-          chinese: "我查一下。"
+          english: "I’ll wash my hands now.",
+          chinese: "我现在去洗手。"
         }
       ],
       vocabularyNotes: [
@@ -23606,9 +22774,9 @@ export const kitchenSurvivalCourse = {
         "Would you prefer a callback rather than staying on hold, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -23620,14 +22788,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check.",
-          chinese: "我查一下。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -23678,9 +22840,9 @@ export const kitchenSurvivalCourse = {
         "What is the best number and time for the callback, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -23692,14 +22854,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check.",
-          chinese: "我查一下。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -23749,9 +22905,9 @@ export const kitchenSurvivalCourse = {
         "Let me read the callback number back to you."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Let me check.",
-        "Thank you."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -23763,14 +22919,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check.",
-          chinese: "我查一下。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -24925,9 +24075,9 @@ export const kitchenSurvivalCourse = {
         "How soon do you need this done, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -24939,14 +24089,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -25132,7 +24276,7 @@ export const kitchenSurvivalCourse = {
       recommendedResponses: [
         "Okay, I’ll do it now.",
         "Got it.",
-        "Can you show me first?"
+        "Can you show me how?"
       ],
       dialogue: [
         {
@@ -25411,9 +24555,9 @@ export const kitchenSurvivalCourse = {
         "I have to get to leave early today."
       ],
       recommendedResponses: [
-        "Okay, thanks for telling me.",
-        "Please tell the manager.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -25425,14 +24569,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, thanks for telling me.",
-          chinese: "好的，谢谢你告诉我。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Please tell the manager.",
-          chinese: "请告诉经理。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -27267,8 +26405,8 @@ export const kitchenSurvivalCourse = {
         "The written instructions are different from what I was told."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
+        "Please wait one moment.",
+        "Can you write it down?",
         "Let me check."
       ],
       dialogue: [
@@ -27281,14 +26419,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Please wait one moment.",
+          chinese: "请稍等一下。"
         }
       ],
       vocabularyNotes: [
@@ -27537,9 +26669,9 @@ export const kitchenSurvivalCourse = {
         "How much is the monthly pass, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -27551,14 +26683,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -27604,9 +26730,9 @@ export const kitchenSurvivalCourse = {
         "I get paid by direct deposit."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Thanks for checking.",
+        "Can you help me fix it?",
+        "Who should I talk to?"
       ],
       dialogue: [
         {
@@ -27618,14 +26744,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Thanks for checking.",
+          chinese: "谢谢你帮我查。"
         }
       ],
       vocabularyNotes: [
@@ -27672,9 +26792,9 @@ export const kitchenSurvivalCourse = {
         "I have to get to deposit this check."
       ],
       recommendedResponses: [
-        "Okay, thanks for telling me.",
-        "Please tell the manager.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -27686,14 +26806,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, thanks for telling me.",
-          chinese: "好的，谢谢你告诉我。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Please tell the manager.",
-          chinese: "请告诉经理。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -27739,9 +26853,9 @@ export const kitchenSurvivalCourse = {
         "My phone has no service."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -27753,8 +26867,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -27801,9 +26915,9 @@ export const kitchenSurvivalCourse = {
         "I have to get more data on my plan."
       ],
       recommendedResponses: [
-        "Okay, thanks for telling me.",
-        "Please tell the manager.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -27815,14 +26929,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, thanks for telling me.",
-          chinese: "好的，谢谢你告诉我。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Please tell the manager.",
-          chinese: "请告诉经理。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -27868,8 +26976,8 @@ export const kitchenSurvivalCourse = {
         "Is this heat included in the rent?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
+        "Please wait one moment.",
+        "Can you write it down?",
         "Let me check."
       ],
       dialogue: [
@@ -27882,14 +26990,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Please wait one moment.",
+          chinese: "请稍等一下。"
         }
       ],
       vocabularyNotes: [
@@ -27936,9 +27038,9 @@ export const kitchenSurvivalCourse = {
         "I have to get to pick up a prescription."
       ],
       recommendedResponses: [
-        "Okay, thanks for telling me.",
-        "Please tell the manager.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -27950,14 +27052,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, thanks for telling me.",
-          chinese: "好的，谢谢你告诉我。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Please tell the manager.",
-          chinese: "请告诉经理。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -28003,9 +27099,9 @@ export const kitchenSurvivalCourse = {
         "Can I book an appointment, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -28017,8 +27113,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -28065,8 +27161,8 @@ export const kitchenSurvivalCourse = {
         "I have to get a doctor’s note for work."
       ],
       recommendedResponses: [
-        "Okay, thanks for telling me.",
-        "Please tell the manager.",
+        "Please wait one moment.",
+        "Can you write it down?",
         "Let me check."
       ],
       dialogue: [
@@ -28079,14 +27175,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, thanks for telling me.",
-          chinese: "好的，谢谢你告诉我。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Please tell the manager.",
-          chinese: "请告诉经理。"
+          english: "Please wait one moment.",
+          chinese: "请稍等一下。"
         }
       ],
       vocabularyNotes: [
@@ -28201,9 +27291,9 @@ export const kitchenSurvivalCourse = {
         "Can you please speak more slowly? English is my second language."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -28215,14 +27305,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -28268,8 +27352,8 @@ export const kitchenSurvivalCourse = {
         "I am looking for a room to rent."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
+        "Please wait one moment.",
+        "Can you write it down?",
         "Let me check."
       ],
       dialogue: [
@@ -28282,14 +27366,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Please wait one moment.",
+          chinese: "请稍等一下。"
         }
       ],
       vocabularyNotes: [
@@ -28335,8 +27413,8 @@ export const kitchenSurvivalCourse = {
         "When is the rent due, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
+        "Please wait one moment.",
+        "Can you write it down?",
         "Let me check."
       ],
       dialogue: [
@@ -28349,8 +27427,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Please wait one moment.",
+          chinese: "请稍等一下。"
         }
       ],
       vocabularyNotes: [
@@ -28396,9 +27474,9 @@ export const kitchenSurvivalCourse = {
         "Can I pay by e-transfer, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Thanks for checking.",
+        "Can you help me fix it?",
+        "Who should I talk to?"
       ],
       dialogue: [
         {
@@ -28410,8 +27488,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Thanks for checking.",
+          chinese: "谢谢你帮我查。"
         }
       ],
       vocabularyNotes: [
@@ -28458,9 +27536,9 @@ export const kitchenSurvivalCourse = {
         "I have to get to change my address."
       ],
       recommendedResponses: [
-        "Okay, thanks for telling me.",
-        "Please tell the manager.",
-        "Let me check."
+        "Card, please.",
+        "Yes, please.",
+        "No, thank you."
       ],
       dialogue: [
         {
@@ -28472,14 +27550,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, thanks for telling me.",
-          chinese: "好的，谢谢你告诉我。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Please tell the manager.",
-          chinese: "请告诉经理。"
+          english: "Card, please.",
+          chinese: "刷卡。"
         }
       ],
       vocabularyNotes: [
@@ -28526,9 +27598,9 @@ export const kitchenSurvivalCourse = {
         "Can you please print this form for me?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -28540,14 +27612,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -28662,9 +27728,9 @@ export const kitchenSurvivalCourse = {
         "I have to get non-slip shoes for work."
       ],
       recommendedResponses: [
-        "Okay, thanks for telling me.",
-        "Please tell the manager.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -28676,14 +27742,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, thanks for telling me.",
-          chinese: "好的，谢谢你告诉我。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Please tell the manager.",
-          chinese: "请告诉经理。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -28729,9 +27789,9 @@ export const kitchenSurvivalCourse = {
         "Can I get a copy of the receipt, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Card, please.",
+        "Yes, please.",
+        "No, thank you."
       ],
       dialogue: [
         {
@@ -28743,14 +27803,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Card, please.",
+          chinese: "刷卡。"
         }
       ],
       vocabularyNotes: [
@@ -28796,8 +27850,8 @@ export const kitchenSurvivalCourse = {
         "Can I get directions to this address, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
+        "Please wait one moment.",
+        "Can you write it down?",
         "Let me check."
       ],
       dialogue: [
@@ -28810,14 +27864,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Please wait one moment.",
+          chinese: "请稍等一下。"
         }
       ],
       vocabularyNotes: [
@@ -28863,8 +27911,8 @@ export const kitchenSurvivalCourse = {
         "How long does it take by bus, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
+        "Please wait one moment.",
+        "Can you write it down?",
         "Let me check."
       ],
       dialogue: [
@@ -28877,14 +27925,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Please wait one moment.",
+          chinese: "请稍等一下。"
         }
       ],
       vocabularyNotes: [
@@ -28930,9 +27972,9 @@ export const kitchenSurvivalCourse = {
         "Does this bus stop near the restaurant, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Step aside.",
+        "I’ll be careful.",
+        "I’ll tell the manager right now."
       ],
       dialogue: [
         {
@@ -28944,14 +27986,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Step aside.",
+          chinese: "让到一边。"
         }
       ],
       vocabularyNotes: [
@@ -28997,8 +28033,8 @@ export const kitchenSurvivalCourse = {
         "Please i missed my bus."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
+        "Please wait one moment.",
+        "Can you write it down?",
         "Let me check."
       ],
       dialogue: [
@@ -29011,8 +28047,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Please wait one moment.",
+          chinese: "请稍等一下。"
         }
       ],
       vocabularyNotes: [
@@ -29058,8 +28094,8 @@ export const kitchenSurvivalCourse = {
         "The bus is running late."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
+        "Please wait one moment.",
+        "Can you write it down?",
         "Let me check."
       ],
       dialogue: [
@@ -29072,8 +28108,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Please wait one moment.",
+          chinese: "请稍等一下。"
         }
       ],
       vocabularyNotes: [
@@ -29119,9 +28155,9 @@ export const kitchenSurvivalCourse = {
         "Can I cash this check here, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Card, please.",
+        "Yes, please.",
+        "No, thank you."
       ],
       dialogue: [
         {
@@ -29133,14 +28169,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Card, please.",
+          chinese: "刷卡。"
         }
       ],
       vocabularyNotes: [
@@ -29187,9 +28217,9 @@ export const kitchenSurvivalCourse = {
         "What ID do I need, please?"
       ],
       recommendedResponses: [
-        "Okay, thanks for telling me.",
-        "Please tell the manager.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -29201,8 +28231,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, thanks for telling me.",
-          chinese: "好的，谢谢你告诉我。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -29249,9 +28279,9 @@ export const kitchenSurvivalCourse = {
         "I have to get to update my direct deposit information."
       ],
       recommendedResponses: [
-        "Okay, thanks for telling me.",
-        "Please tell the manager.",
-        "Let me check."
+        "Thanks for checking.",
+        "Can you help me fix it?",
+        "Who should I talk to?"
       ],
       dialogue: [
         {
@@ -29263,14 +28293,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, thanks for telling me.",
-          chinese: "好的，谢谢你告诉我。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Please tell the manager.",
-          chinese: "请告诉经理。"
+          english: "Thanks for checking.",
+          chinese: "谢谢你帮我查。"
         }
       ],
       vocabularyNotes: [
@@ -29316,9 +28340,9 @@ export const kitchenSurvivalCourse = {
         "My debit card is not working."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Card, please.",
+        "Yes, please.",
+        "No, thank you."
       ],
       dialogue: [
         {
@@ -29330,14 +28354,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Card, please.",
+          chinese: "刷卡。"
         }
       ],
       vocabularyNotes: [
@@ -29383,8 +28401,8 @@ export const kitchenSurvivalCourse = {
         "Can I set up online banking, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
+        "Please wait one moment.",
+        "Can you write it down?",
         "Let me check."
       ],
       dialogue: [
@@ -29397,14 +28415,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Please wait one moment.",
+          chinese: "请稍等一下。"
         }
       ],
       vocabularyNotes: [
@@ -29450,9 +28462,9 @@ export const kitchenSurvivalCourse = {
         "My phone bill is too high."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Let me check your order.",
+        "I’m sorry about that.",
+        "Let me get my manager."
       ],
       dialogue: [
         {
@@ -29464,14 +28476,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Let me check your order.",
+          chinese: "我帮你查一下订单。"
         }
       ],
       vocabularyNotes: [
@@ -29517,9 +28523,9 @@ export const kitchenSurvivalCourse = {
         "Can I change to a cheaper plan, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Card, please.",
+        "Yes, please.",
+        "No, thank you."
       ],
       dialogue: [
         {
@@ -29531,14 +28537,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Card, please.",
+          chinese: "刷卡。"
         }
       ],
       vocabularyNotes: [
@@ -29585,9 +28585,9 @@ export const kitchenSurvivalCourse = {
         "I have to get a SIM card."
       ],
       recommendedResponses: [
-        "Okay, thanks for telling me.",
-        "Please tell the manager.",
-        "Let me check."
+        "Card, please.",
+        "Yes, please.",
+        "No, thank you."
       ],
       dialogue: [
         {
@@ -29599,8 +28599,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, thanks for telling me.",
-          chinese: "好的，谢谢你告诉我。"
+          english: "Card, please.",
+          chinese: "刷卡。"
         }
       ],
       vocabularyNotes: [
@@ -29646,9 +28646,9 @@ export const kitchenSurvivalCourse = {
         "My internet is not working."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -29660,8 +28660,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -29708,9 +28708,9 @@ export const kitchenSurvivalCourse = {
         "Can you please reset my password?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -29722,8 +28722,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -29769,9 +28769,9 @@ export const kitchenSurvivalCourse = {
         "Is this laundry included?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -29783,8 +28783,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -29830,9 +28830,9 @@ export const kitchenSurvivalCourse = {
         "Is this parking included?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -29844,8 +28844,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -29891,9 +28891,9 @@ export const kitchenSurvivalCourse = {
         "Can I see the room today, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -29905,14 +28905,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -29958,9 +28952,9 @@ export const kitchenSurvivalCourse = {
         "How much is the deposit, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -29972,8 +28966,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -30019,9 +29013,9 @@ export const kitchenSurvivalCourse = {
         "When can I move in, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -30033,8 +29027,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -30081,9 +29075,9 @@ export const kitchenSurvivalCourse = {
         "I have to get something for a headache."
       ],
       recommendedResponses: [
-        "Okay, thanks for telling me.",
-        "Please tell the manager.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -30095,14 +29089,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, thanks for telling me.",
-          chinese: "好的，谢谢你告诉我。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Please tell the manager.",
-          chinese: "请告诉经理。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -30149,9 +29137,9 @@ export const kitchenSurvivalCourse = {
         "I have to get something for a cough."
       ],
       recommendedResponses: [
-        "Okay, thanks for telling me.",
-        "Please tell the manager.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -30163,14 +29151,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay, thanks for telling me.",
-          chinese: "好的，谢谢你告诉我。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Please tell the manager.",
-          chinese: "请告诉经理。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -30216,9 +29198,9 @@ export const kitchenSurvivalCourse = {
         "Can I talk to the pharmacist, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -30230,14 +29212,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -30283,9 +29259,9 @@ export const kitchenSurvivalCourse = {
         "How often should I take this, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -30297,14 +29273,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
@@ -30350,9 +29320,9 @@ export const kitchenSurvivalCourse = {
         "Should I take it with food, please?"
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "I’ll wash my hands now.",
+        "I’ll put on new gloves.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
@@ -30364,14 +29334,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Thanks for letting me know.",
-          chinese: "好的。"
+          english: "I’ll wash my hands now.",
+          chinese: "我现在去洗手。"
         }
       ],
       vocabularyNotes: [
@@ -30417,9 +29381,9 @@ export const kitchenSurvivalCourse = {
         "Please i have a fever."
       ],
       recommendedResponses: [
-        "Okay.",
-        "Thanks for letting me know.",
-        "Let me check."
+        "Got it.",
+        "Let me confirm first.",
+        "Thanks for checking."
       ],
       dialogue: [
         {
@@ -30431,8 +29395,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管",
-          english: "Okay.",
-          chinese: "好的。"
+          english: "Got it.",
+          chinese: "明白了。"
         }
       ],
       vocabularyNotes: [
