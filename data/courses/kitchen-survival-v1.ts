@@ -5452,12 +5452,12 @@ export const kitchenSurvivalCourse = {
       scenarioId: "food_safety_handwashing_gloves",
       scenarioTitle: "洗手和换手套",
       sequence: 3,
-      english: "What comes with the combo?",
-      chinese: "套餐里包括什么？",
-      scenario: "洗手、戴手套、换手套和保持卫生。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
+      english: "Wash your hands before touching food.",
+      chinese: "接触食物前先洗手。",
+      scenario: "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_001-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_001-slow.mp3",
       isFree: true,
@@ -5473,44 +5473,38 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       variants: [
-        "What is included in the combo?",
-        "What does the combo include?"
+        "Wash your hands first.",
+        "Clean your hands before you touch food."
       ],
       recommendedResponses: [
-        "It comes with fries and a drink.",
-        "It includes one side and one drink.",
-        "You can upgrade the drink if you want."
+        "Okay, I’ll wash my hands now.",
+        "Where is the hand sink?",
+        "Should I put on gloves after washing?"
       ],
       dialogue: [
         {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "What comes with the combo?",
-          chinese: "套餐里包括什么？"
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
+          english: "Wash your hands before touching food.",
+          chinese: "接触食物前先洗手。"
         },
         {
-          speakerRole: "Staff",
+          speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "It comes with fries and a drink.",
-          chinese: "包括薯条和一杯饮料。"
-        },
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "Okay, I’ll take the combo.",
-          chinese: "好的，我要套餐。"
+          english: "Okay, I’ll wash my hands now.",
+          chinese: "好的，我现在去洗手。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "combo",
-          chinese: "套餐",
-          pronunciation: "KOM-boh",
-          note: "餐厅里指主食、配菜和饮料组合。",
-          example: "I want a combo."
+          term: "before touching food",
+          chinese: "接触食物之前",
+          pronunciation: "bee-FOR TUH-ching food",
+          note: "表示在碰食物前必须先完成某个动作。",
+          example: "Wash before touching food."
         }
       ],
       listenRepeatCount: 3,
@@ -5587,12 +5581,12 @@ export const kitchenSurvivalCourse = {
       scenarioId: "food_safety_handwashing_gloves",
       scenarioTitle: "洗手和换手套",
       sequence: 6,
-      english: "Can I get that without onions?",
-      chinese: "这个可以不要洋葱吗？",
-      scenario: "洗手、戴手套、换手套和保持卫生。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
+      english: "Use the hand sink, not the prep sink.",
+      chinese: "用洗手池，不要用备餐水槽。",
+      scenario: "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_003-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_003-slow.mp3",
       isFree: true,
@@ -5608,44 +5602,38 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 2",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       variants: [
-        "Can you make that without onions?",
-        "No onions on that, please."
+        "Wash your hands at the hand sink.",
+        "Do not wash hands in the prep sink."
       ],
       recommendedResponses: [
-        "Yes, we can make it without onions.",
-        "Sure, I’ll put no onions on the order.",
-        "Let me check if the sauce has onions."
+        "Okay, I’ll use the hand sink.",
+        "Where is the hand sink?",
+        "I won’t use the prep sink for hands."
       ],
       dialogue: [
         {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "Can I get that without onions?",
-          chinese: "这个可以不要洋葱吗？"
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
+          english: "Use the hand sink, not the prep sink.",
+          chinese: "用洗手池，不要用备餐水槽。"
         },
         {
-          speakerRole: "Staff",
+          speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Yes, I’ll mark it no onions.",
-          chinese: "可以，我会标注不要洋葱。"
-        },
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "Thank you.",
-          chinese: "谢谢。"
+          english: "Okay, where is the hand sink?",
+          chinese: "好的，洗手池在哪里？"
         }
       ],
       vocabularyNotes: [
         {
-          term: "without onions",
-          chinese: "不要洋葱；不加洋葱",
-          pronunciation: "with-OUT UN-yunz",
-          note: "顾客要求某个食材不要放进订单里。",
-          example: "Can I get it without cheese?"
+          term: "hand sink",
+          chinese: "洗手池",
+          pronunciation: "hand-sink",
+          note: "专门用来洗手的水槽，不是洗菜或备餐用的水槽。",
+          example: "Use the hand sink."
         }
       ],
       listenRepeatCount: 3,
@@ -5722,12 +5710,12 @@ export const kitchenSurvivalCourse = {
       scenarioId: "food_safety_handwashing_gloves",
       scenarioTitle: "洗手和换手套",
       sequence: 4,
-      english: "What do you recommend instead?",
-      chinese: "那您建议我换成什么？",
-      scenario: "洗手、戴手套、换手套和保持卫生。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
+      english: "Put on gloves before handling ready-to-eat food.",
+      chinese: "处理即食食品前戴上手套。",
+      scenario: "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_005-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_005-slow.mp3",
       isFree: true,
@@ -5743,38 +5731,38 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       variants: [
-        "What would you suggest instead?",
-        "What is a good replacement?"
+        "Wear gloves for ready-to-eat food.",
+        "Use gloves before touching ready-to-eat food."
       ],
       recommendedResponses: [
-        "I recommend the mild sauce.",
-        "You can try lemon pepper.",
-        "If you want less spicy, try honey garlic."
+        "Okay, I’ll put on gloves.",
+        "Where are the clean gloves?",
+        "I’ll wash my hands first."
       ],
       dialogue: [
         {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "What do you recommend instead?",
-          chinese: "那您建议我换成什么？"
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
+          english: "Put on gloves before handling ready-to-eat food.",
+          chinese: "处理即食食品前戴上手套。"
         },
         {
-          speakerRole: "Staff",
+          speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "I recommend lemon pepper. It is not too spicy.",
-          chinese: "我推荐柠檬胡椒味，不太辣。"
+          english: "Okay, I’ll wash my hands and put on gloves.",
+          chinese: "好的，我先洗手再戴手套。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "recommend instead",
-          chinese: "建议换成什么",
-          pronunciation: "rek-uh-MEND in-STED",
-          note: "顾客不确定选择时，请员工推荐替代选项。",
-          example: "What do you recommend?"
+          term: "ready-to-eat food",
+          chinese: "即食食品",
+          pronunciation: "RED-ee-too-eet food",
+          note: "不需要再加热、可以直接吃的食物。",
+          example: "Use gloves for ready-to-eat food."
         }
       ],
       listenRepeatCount: 3,
@@ -5787,12 +5775,12 @@ export const kitchenSurvivalCourse = {
       scenarioId: "food_safety_handwashing_gloves",
       scenarioTitle: "洗手和换手套",
       sequence: 7,
-      english: "What milder flavors do you have?",
-      chinese: "你们有什么不太辣的口味？",
-      scenario: "洗手、戴手套、换手套和保持卫生。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
+      english: "Change your gloves after touching raw chicken.",
+      chinese: "碰过生鸡肉后要换手套。",
+      scenario: "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Coworker",
+      roleZh: "同事可能会说",
       audioNormal: "/audio/en-US/food_safety_006-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_006-slow.mp3",
       isFree: true,
@@ -5808,38 +5796,38 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 2",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
+      speakerRole: "Coworker",
+      speakerRoleZh: "同事可能会说",
       variants: [
-        "Which flavors are less spicy?",
-        "Do you have any mild flavors?"
+        "Put on new gloves after raw chicken.",
+        "Do not keep the same gloves after touching raw chicken."
       ],
       recommendedResponses: [
-        "Honey garlic is mild.",
-        "Lemon pepper is not very spicy.",
-        "Barbecue is a good mild option."
+        "Thanks, I’ll change them now.",
+        "I’ll wash my hands first.",
+        "Where are the clean gloves?"
       ],
       dialogue: [
         {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "What milder flavors do you have?",
-          chinese: "你们有什么不太辣的口味？"
+          speakerRole: "Coworker",
+          speakerRoleZh: "同事可能会说",
+          english: "Change your gloves after touching raw chicken.",
+          chinese: "碰过生鸡肉后要换手套。"
         },
         {
-          speakerRole: "Staff",
+          speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Honey garlic and lemon pepper are milder.",
-          chinese: "蜂蜜蒜味和柠檬胡椒味比较不辣。"
+          english: "Thanks, I’ll change them now.",
+          chinese: "谢谢，我现在换。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "milder flavors",
-          chinese: "更温和、不太辣的口味",
-          pronunciation: "MYLD-er FLAY-verz",
-          note: "顾客想要辣度低一点的口味时使用。",
-          example: "This flavor is milder."
+          term: "after touching raw chicken",
+          chinese: "碰过生鸡肉以后",
+          pronunciation: "AF-ter TUH-ching raw CHIK-en",
+          note: "接触生鸡肉后要换手套并洗手，避免污染其他食物。",
+          example: "Change gloves after raw chicken."
         }
       ],
       listenRepeatCount: 3,
@@ -5852,12 +5840,12 @@ export const kitchenSurvivalCourse = {
       scenarioId: "food_safety_handwashing_gloves",
       scenarioTitle: "洗手和换手套",
       sequence: 1,
-      english: "What's the name on the order?",
-      chinese: "订单上的姓名是什么？",
-      scenario: "洗手、戴手套、换手套和保持卫生。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Staff",
-      roleZh: "前台员工要说",
+      english: "Wear a hairnet while you are on the line.",
+      chinese: "在操作线上工作时要戴发网。",
+      scenario: "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_007-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_007-slow.mp3",
       isFree: true,
@@ -5873,38 +5861,38 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 1",
-      speakerRole: "Staff",
-      speakerRoleZh: "前台员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       variants: [
-        "What name is the order under?",
-        "Can I have the name for the order?"
+        "Put on your hairnet on the line.",
+        "You need a hairnet while working with food."
       ],
       recommendedResponses: [
-        "The name is Kevin.",
-        "It is under Maria.",
-        "The order name is Chen."
+        "Okay, I’ll put it on.",
+        "Where are the hairnets?",
+        "Do I need a hat too?"
       ],
       dialogue: [
         {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "What's the name on the order?",
-          chinese: "订单上的姓名是什么？"
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
+          english: "Wear a hairnet while you are on the line.",
+          chinese: "在操作线上工作时要戴发网。"
         },
         {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "It is under Kevin.",
-          chinese: "订单名是 Kevin。"
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Okay, I’ll put one on now.",
+          chinese: "好的，我现在戴上。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "name on the order",
-          chinese: "订单上的姓名",
-          pronunciation: "name-on-the-OR-der",
-          note: "前台或外卖取餐时用来核对订单。",
-          example: "The name on the order is Lee."
+          term: "hairnet",
+          chinese: "发网",
+          pronunciation: "HAIR-net",
+          note: "防止头发掉进食物里的网。",
+          example: "Wear a hairnet."
         }
       ],
       listenRepeatCount: 3,
@@ -5917,10 +5905,10 @@ export const kitchenSurvivalCourse = {
       scenarioId: "food_safety_storage_label",
       scenarioTitle: "食品日期和存放",
       sequence: 1,
-      english: "I’ll send help. I’ll update the wait time.",
-      chinese: "我会叫人帮忙。我会更新等待时间。",
-      scenario: "贴日期标签、先进先出、检查食材是否还能用。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+      english: "Keep your hat on in the kitchen.",
+      chinese: "在厨房里要一直戴着帽子。",
+      scenario: "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
       role: "Supervisor",
       roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_008-normal.mp3",
@@ -5941,35 +5929,35 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "I’ll get someone to help and update the wait time.",
-        "I’ll ask for help and change the wait estimate."
+        "Do not take your hat off in the kitchen.",
+        "Your hat needs to stay on in the kitchen."
       ],
       recommendedResponses: [
-        "Okay, I’ll keep working on this order.",
-        "Thanks, I’ll tell the customer the new wait time.",
-        "Please let me know when help arrives."
+        "Okay, I’ll keep it on.",
+        "Do I need a hairnet under it?",
+        "I’ll fix it now."
       ],
       dialogue: [
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管可能会说",
-          english: "I’ll send help. I’ll update the wait time.",
-          chinese: "我会叫人帮忙。我会更新等待时间。"
+          english: "Keep your hat on in the kitchen.",
+          chinese: "在厨房里要一直戴着帽子。"
         },
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Okay, I’ll keep working on the order.",
-          chinese: "好的，我会继续做这个订单。"
+          english: "Okay, I’ll keep it on.",
+          chinese: "好的，我会一直戴着。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "wait time",
-          chinese: "等待时间",
-          pronunciation: "wayt-time",
-          note: "顾客还需要等多久才能拿到餐。",
-          example: "The wait time is ten minutes."
+          term: "hat on",
+          chinese: "戴着帽子",
+          pronunciation: "hat-on",
+          note: "餐厅厨房中表示帽子不能摘下。",
+          example: "Keep your hat on."
         }
       ],
       listenRepeatCount: 3,
@@ -5982,12 +5970,12 @@ export const kitchenSurvivalCourse = {
       scenarioId: "food_safety_handwashing_gloves",
       scenarioTitle: "洗手和换手套",
       sequence: 5,
-      english: "What is still available?",
-      chinese: "现在还有什么可以点？",
-      scenario: "洗手、戴手套、换手套和保持卫生。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Customer",
-      roleZh: "顾客可能会说",
+      english: "Clean and sanitize the prep table first.",
+      chinese: "先清洁并消毒备餐台。",
+      scenario: "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_009-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_009-slow.mp3",
       isFree: true,
@@ -6003,38 +5991,38 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 1",
-      speakerRole: "Customer",
-      speakerRoleZh: "顾客可能会说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       variants: [
-        "What can I still order?",
-        "What do you still have?"
+        "Wash and sanitize the prep table first.",
+        "Clean the prep table, then sanitize it."
       ],
       recommendedResponses: [
-        "We still have chicken and fries.",
-        "The wings are sold out, but tenders are available.",
-        "We are out of sandwiches, but fries are available."
+        "Okay, I’ll clean and sanitize it.",
+        "Which sanitizer should I use?",
+        "Should I let it air-dry?"
       ],
       dialogue: [
         {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "What is still available?",
-          chinese: "现在还有什么可以点？"
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
+          english: "Clean and sanitize the prep table first.",
+          chinese: "先清洁并消毒备餐台。"
         },
         {
-          speakerRole: "Staff",
+          speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "We still have chicken tenders and fries.",
-          chinese: "我们还有鸡柳和薯条。"
+          english: "Okay, which sanitizer should I use?",
+          chinese: "好的，我应该用哪种消毒剂？"
         }
       ],
       vocabularyNotes: [
         {
-          term: "still available",
-          chinese: "现在还有；仍然可以提供",
-          pronunciation: "stil uh-VAY-luh-bul",
-          note: "用来说明某个餐品还没卖完，还能点。",
-          example: "Fries are still available."
+          term: "clean and sanitize",
+          chinese: "清洁并消毒",
+          pronunciation: "kleen-and-SAN-i-tize",
+          note: "先去掉污渍，再用食品接触表面消毒剂处理。",
+          example: "Clean and sanitize the counter."
         }
       ],
       listenRepeatCount: 3,
@@ -6112,10 +6100,10 @@ export const kitchenSurvivalCourse = {
       scenarioId: "food_safety_handwashing_gloves",
       scenarioTitle: "洗手和换手套",
       sequence: 8,
-      english: "Let me repeat what I understood.",
-      chinese: "我把我理解的内容复述一遍。",
-      scenario: "洗手、戴手套、换手套和保持卫生。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+      english: "Should I change my gloves?",
+      chinese: "我需要换手套吗？",
+      scenario: "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
       role: "Worker",
       roleZh: "员工要说",
       audioNormal: "/audio/en-US/food_safety_011-normal.mp3",
@@ -6137,35 +6125,35 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Let me say back what I heard.",
-        "Let me confirm what I understood."
+        "Do I need new gloves?",
+        "Should I put on a fresh pair?"
       ],
       recommendedResponses: [
-        "Yes, go ahead.",
-        "That is correct.",
-        "Almost. The sauce goes on the side."
+        "Yes, change them now.",
+        "Yes, after touching raw food.",
+        "No, those gloves are still clean."
       ],
       dialogue: [
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Let me repeat what I understood.",
-          chinese: "我把我理解的内容复述一遍。"
+          english: "Should I change my gloves?",
+          chinese: "我需要换手套吗？"
         },
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管可能会说",
-          english: "Okay, go ahead.",
-          chinese: "好的，你说。"
+          english: "Yes, change them before making the salad.",
+          chinese: "是的，做沙拉前换一副。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "repeat what I understood",
-          chinese: "复述我理解的内容",
-          pronunciation: "ri-PEET what-I un-der-STOOD",
-          note: "员工用来确认自己没有听错任务或订单。",
-          example: "Let me repeat the order."
+          term: "change my gloves",
+          chinese: "换我的手套",
+          pronunciation: "chaynj-my-gluvz",
+          note: "员工不确定是否需要换手套时这样问。",
+          example: "I need to change my gloves."
         }
       ],
       listenRepeatCount: 3,
@@ -6244,10 +6232,10 @@ export const kitchenSurvivalCourse = {
       scenarioId: "food_safety_handwashing_gloves",
       scenarioTitle: "洗手和换手套",
       sequence: 9,
-      english: "What exactly needs to be corrected?",
-      chinese: "具体需要改正什么？",
-      scenario: "洗手、戴手套、换手套和保持卫生。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+      english: "Where is the sanitizer bucket?",
+      chinese: "消毒桶在哪里？",
+      scenario: "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
       role: "Worker",
       roleZh: "员工要说",
       audioNormal: "/audio/en-US/food_safety_013-normal.mp3",
@@ -6269,35 +6257,35 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "What needs to be fixed?",
-        "Which part should I correct?"
+        "Where can I find the sanitizer bucket?",
+        "Where do we keep the sanitizer bucket?"
       ],
       recommendedResponses: [
-        "The label date is wrong.",
-        "The sauce needs to be on the side.",
-        "This tray needs a new label."
+        "It is under the prep table.",
+        "Use the red bucket by the sink.",
+        "Make sure the towel stays in the bucket."
       ],
       dialogue: [
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "What exactly needs to be corrected?",
-          chinese: "具体需要改正什么？"
+          english: "Where is the sanitizer bucket?",
+          chinese: "消毒桶在哪里？"
         },
         {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管可能会说",
-          english: "The label date needs to be fixed.",
-          chinese: "标签日期需要改。"
+          english: "It is under the prep table.",
+          chinese: "在备餐台下面。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "needs to be corrected",
-          chinese: "需要被改正；需要修正",
-          pronunciation: "needs-to-be-kuh-REK-tid",
-          note: "主管指出有错误时，员工用来问具体要改哪里。",
-          example: "This label needs to be corrected."
+          term: "sanitizer bucket",
+          chinese: "消毒桶",
+          pronunciation: "SAN-i-tie-zer BUH-kit",
+          note: "装有消毒液的桶，通常用来浸泡或存放擦拭用抹布。",
+          example: "Put the towel in the sanitizer bucket."
         }
       ],
       listenRepeatCount: 3,
@@ -6310,12 +6298,12 @@ export const kitchenSurvivalCourse = {
       scenarioId: "food_safety_handwashing_gloves",
       scenarioTitle: "洗手和换手套",
       sequence: 10,
-      english: "What is the expected production rate?",
-      chinese: "规定的生产速度是多少？",
-      scenario: "洗手、戴手套、换手套和保持卫生。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      english: "Keep the wiping cloth in the sanitizer bucket.",
+      chinese: "把擦拭抹布放在消毒桶里。",
+      scenario: "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_014-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_014-slow.mp3",
       isFree: true,
@@ -6332,38 +6320,38 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       variants: [
-        "How fast should we work?",
-        "How many should we finish?"
+        "Store the wiping cloth in sanitizer.",
+        "Do not leave the wiping cloth on the counter."
       ],
       recommendedResponses: [
-        "About twenty orders per hour.",
-        "Try to finish one tray every ten minutes.",
-        "Finish this tray before lunch."
+        "Okay, I’ll put it in the bucket.",
+        "Should I change the sanitizer water?",
+        "Where is the clean wiping cloth?"
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "What is the expected production rate?",
-          chinese: "规定的生产速度是多少？"
-        },
-        {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管可能会说",
-          english: "Try to finish one tray every ten minutes.",
-          chinese: "尽量每十分钟完成一盘。"
+          english: "Keep the wiping cloth in the sanitizer bucket.",
+          chinese: "把擦拭抹布放在消毒桶里。"
+        },
+        {
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Okay, I’ll put it back in the bucket.",
+          chinese: "好的，我把它放回桶里。"
         }
       ],
       vocabularyNotes: [
         {
-          term: "expected production rate",
-          chinese: "规定的生产速度；预期产量",
-          pronunciation: "ek-SPEK-tid pro-DUK-shun rate",
-          note: "主管希望员工在一定时间内完成的速度或数量。",
-          example: "The production rate is too slow."
+          term: "wiping cloth",
+          chinese: "擦拭抹布",
+          pronunciation: "WHY-ping klawth",
+          note: "用来擦食品接触表面的抹布，使用间隔应放在消毒桶里。",
+          example: "Use a clean wiping cloth."
         }
       ],
       listenRepeatCount: 3,
@@ -6444,10 +6432,10 @@ export const kitchenSurvivalCourse = {
       sequence: 3,
       english: "Keep raw chicken below cooked food.",
       chinese: "把生鸡肉放在熟食下面。",
-      scenario: "避免生熟混放、交叉污染和过敏风险。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_016-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_016-slow.mp3",
       isFree: false,
@@ -6461,8 +6449,8 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       variants: [
         "Raw chicken goes below cooked food.",
         "Store raw chicken under cooked food."
@@ -6474,16 +6462,16 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "Keep raw chicken below cooked food.",
           chinese: "把生鸡肉放在熟食下面。"
         },
         {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Yes, that prevents cross-contamination.",
-          chinese: "对，这样可以防止交叉污染。"
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Okay, I’ll move it to the lower shelf.",
+          chinese: "好的，我把它移到下面一层。"
         }
       ],
       vocabularyNotes: [
@@ -6507,10 +6495,10 @@ export const kitchenSurvivalCourse = {
       sequence: 10,
       english: "Do not use the same cutting board for raw meat and vegetables.",
       chinese: "不要用同一块砧板切生肉和蔬菜。",
-      scenario: "避免生熟混放、交叉污染和过敏风险。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_017-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_017-slow.mp3",
       isFree: false,
@@ -6524,8 +6512,8 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       variants: [
         "Use different boards for raw meat and vegetables.",
         "Do not cut raw meat and vegetables on the same board."
@@ -6537,16 +6525,16 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "Do not use the same cutting board for raw meat and vegetables.",
           chinese: "不要用同一块砧板切生肉和蔬菜。"
         },
         {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
-          english: "Okay, I’ll get a clean board for the vegetables.",
-          chinese: "好的，我拿一块干净砧板切蔬菜。"
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Okay, I’ll get a separate board.",
+          chinese: "好的，我拿一块单独的砧板。"
         }
       ],
       vocabularyNotes: [
@@ -6570,10 +6558,10 @@ export const kitchenSurvivalCourse = {
       sequence: 5,
       english: "Check the expiration date first.",
       chinese: "先检查保质期。",
-      scenario: "贴日期标签、先进先出、检查食材是否还能用。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_018-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_018-slow.mp3",
       isFree: false,
@@ -6587,8 +6575,8 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       variants: [
         "Look at the expiration date first.",
         "Check the date before using it."
@@ -6600,14 +6588,14 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "Check the expiration date first.",
           chinese: "先检查保质期。"
         },
         {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
           english: "Okay, I’ll check it before using it.",
           chinese: "好的，我使用前会检查。"
         }
@@ -6633,10 +6621,10 @@ export const kitchenSurvivalCourse = {
       sequence: 7,
       english: "This container needs a date label.",
       chinese: "这个容器需要日期标签。",
-      scenario: "贴日期标签、先进先出、检查食材是否还能用。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_019-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_019-slow.mp3",
       isFree: false,
@@ -6650,8 +6638,8 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       variants: [
         "This container needs a date sticker.",
         "Put a date label on this container."
@@ -6663,14 +6651,14 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "This container needs a date label.",
           chinese: "这个容器需要日期标签。"
         },
         {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
           english: "Okay, I’ll label it now.",
           chinese: "好的，我现在贴标签。"
         }
@@ -6696,10 +6684,10 @@ export const kitchenSurvivalCourse = {
       sequence: 10,
       english: "Put the lid on before you store it.",
       chinese: "存放前把盖子盖上。",
-      scenario: "贴日期标签、先进先出、检查食材是否还能用。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_020-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_020-slow.mp3",
       isFree: false,
@@ -6713,8 +6701,8 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       variants: [
         "Cover it before storing it.",
         "Put the cover on before storage."
@@ -6726,14 +6714,14 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "Put the lid on before you store it.",
           chinese: "存放前把盖子盖上。"
         },
         {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
           english: "Okay, I’ll cover it first.",
           chinese: "好的，我会先盖上。"
         }
@@ -6759,10 +6747,10 @@ export const kitchenSurvivalCourse = {
       sequence: 8,
       english: "Do not leave food out too long.",
       chinese: "不要把食物放在外面太久。",
-      scenario: "贴日期标签、先进先出、检查食材是否还能用。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_021-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_021-slow.mp3",
       isFree: false,
@@ -6776,8 +6764,8 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       variants: [
         "Do not keep food out too long.",
         "Put food away before it sits out too long."
@@ -6789,16 +6777,16 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "Do not leave food out too long.",
           chinese: "不要把食物放在外面太久。"
         },
         {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
-          english: "Okay, I’ll put it back now.",
-          chinese: "好的，我现在放回去。"
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Okay, I’ll put it back in the cooler.",
+          chinese: "好的，我把它放回冷藏柜。"
         }
       ],
       vocabularyNotes: [
@@ -6822,10 +6810,10 @@ export const kitchenSurvivalCourse = {
       sequence: 2,
       english: "This needs to go back in the cooler.",
       chinese: "这个需要放回冷藏柜。",
-      scenario: "贴日期标签、先进先出、检查食材是否还能用。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_022-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_022-slow.mp3",
       isFree: false,
@@ -6839,8 +6827,8 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       variants: [
         "This needs to return to the cooler.",
         "Put this back in the cooler."
@@ -6852,14 +6840,14 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "This needs to go back in the cooler.",
           chinese: "这个需要放回冷藏柜。"
         },
         {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
           english: "Okay, I’ll put it back now.",
           chinese: "好的，我现在放回去。"
         }
@@ -6946,10 +6934,10 @@ export const kitchenSurvivalCourse = {
       sequence: 2,
       english: "Change the gloves before making the salad.",
       chinese: "做沙拉前换手套。",
-      scenario: "洗手、戴手套、换手套和保持卫生。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_024-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_024-slow.mp3",
       isFree: true,
@@ -6963,8 +6951,8 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       variants: [
         "Put on fresh gloves before making the salad.",
         "Use new gloves for the salad."
@@ -6976,14 +6964,14 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "Change the gloves before making the salad.",
           chinese: "做沙拉前换手套。"
         },
         {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
           english: "Okay, I’ll put on a new pair.",
           chinese: "好的，我换一副新的。"
         }
@@ -7077,10 +7065,10 @@ export const kitchenSurvivalCourse = {
       sequence: 3,
       english: "Check the cooler temperature.",
       chinese: "检查冷藏柜温度。",
-      scenario: "贴日期标签、先进先出、检查食材是否还能用。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_026-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_026-slow.mp3",
       isFree: false,
@@ -7094,8 +7082,8 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       variants: [
         "Look at the cooler temperature.",
         "Check how cold the cooler is."
@@ -7108,16 +7096,16 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "Check the cooler temperature.",
           chinese: "检查冷藏柜温度。"
         },
         {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Okay, check it and write it on the log.",
-          chinese: "好的，检查后写在记录表上。"
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Okay, I’ll check it now.",
+          chinese: "好的，我现在检查。"
         },
         {
           speakerRole: "Worker",
@@ -7147,10 +7135,10 @@ export const kitchenSurvivalCourse = {
       sequence: 4,
       english: "Check the freezer temperature.",
       chinese: "检查冷冻柜温度。",
-      scenario: "贴日期标签、先进先出、检查食材是否还能用。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_027-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_027-slow.mp3",
       isFree: false,
@@ -7164,8 +7152,8 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       variants: [
         "Look at the freezer temperature.",
         "Check how cold the freezer is."
@@ -7178,16 +7166,16 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "Check the freezer temperature.",
           chinese: "检查冷冻柜温度。"
         },
         {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Okay, tell me if it is not cold enough.",
-          chinese: "好的，如果不够冷就告诉我。"
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
+          english: "Okay, I’ll check it now.",
+          chinese: "好的，我现在检查。"
         },
         {
           speakerRole: "Worker",
@@ -7217,10 +7205,10 @@ export const kitchenSurvivalCourse = {
       sequence: 9,
       english: "This food is past the use-by date.",
       chinese: "这个食物已经过了使用日期。",
-      scenario: "贴日期标签、先进先出、检查食材是否还能用。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_028-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_028-slow.mp3",
       isFree: false,
@@ -7234,8 +7222,8 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       variants: [
         "The use-by date has passed.",
         "This food is past its safe date."
@@ -7248,22 +7236,16 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "This food is past the use-by date.",
           chinese: "这个食物已经过了使用日期。"
         },
         {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Do not use it. Throw it away.",
-          chinese: "不要用它，把它丢掉。"
-        },
-        {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Okay, I’ll discard it now.",
-          chinese: "好的，我现在丢掉。"
+          english: "Okay, I’ll throw it away.",
+          chinese: "好的，我把它丢掉。"
         }
       ],
       vocabularyNotes: [
@@ -7410,10 +7392,10 @@ export const kitchenSurvivalCourse = {
       sequence: 4,
       english: "Let it cool before you cover it.",
       chinese: "盖起来之前先让它冷却。",
-      scenario: "避免生熟混放、交叉污染和过敏风险。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_031-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_031-slow.mp3",
       isFree: false,
@@ -7427,8 +7409,8 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 1",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       variants: [
         "Cool it before covering it.",
         "Wait until it cools, then cover it."
@@ -7440,14 +7422,14 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "Let it cool before you cover it.",
           chinese: "盖起来之前先让它冷却。"
         },
         {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
           english: "Okay, I’ll wait before covering it.",
           chinese: "好的，我等它冷却后再盖。"
         }
@@ -7534,10 +7516,10 @@ export const kitchenSurvivalCourse = {
       sequence: 7,
       english: "Do not touch ready-to-eat food with bare hands.",
       chinese: "不要徒手接触即食食品。",
-      scenario: "避免生熟混放、交叉污染和过敏风险。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_033-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_033-slow.mp3",
       isFree: false,
@@ -7551,8 +7533,8 @@ export const kitchenSurvivalCourse = {
       ],
       active: true,
       difficulty: "Level 2",
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       variants: [
         "Do not handle ready-to-eat food with bare hands.",
         "Use gloves for ready-to-eat food."
@@ -7564,14 +7546,14 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "Do not touch ready-to-eat food with bare hands.",
           chinese: "不要徒手接触即食食品。"
         },
         {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
           english: "Okay, I’ll use gloves or tongs.",
           chinese: "好的，我会用手套或夹子。"
         }
@@ -7721,10 +7703,10 @@ export const kitchenSurvivalCourse = {
       sequence: 6,
       english: "Keep chemicals away from food.",
       chinese: "把化学品远离食物。",
-      scenario: "贴日期标签、先进先出、检查食材是否还能用。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_036-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_036-slow.mp3",
       isFree: false,
@@ -7737,8 +7719,8 @@ export const kitchenSurvivalCourse = {
         "restaurant-work-core"
       ],
       active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       difficulty: "Level 1",
       variants: [
         "Keep cleaners away from food.",
@@ -7751,14 +7733,14 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "Keep chemicals away from food.",
           chinese: "把化学品远离食物。"
         },
         {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
           english: "Okay, I’ll move them to the chemical shelf.",
           chinese: "好的，我把它们移到化学品架子上。"
         }
@@ -7818,10 +7800,10 @@ export const kitchenSurvivalCourse = {
       sequence: 8,
       english: "Use the red cutting board for raw meat.",
       chinese: "生肉用红色砧板。",
-      scenario: "避免生熟混放、交叉污染和过敏风险。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_038-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_038-slow.mp3",
       isFree: false,
@@ -7834,8 +7816,8 @@ export const kitchenSurvivalCourse = {
         "restaurant-work-core"
       ],
       active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       difficulty: "Level 2",
       variants: [
         "Use the red board for raw meat.",
@@ -7848,14 +7830,14 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "Use the red cutting board for raw meat.",
           chinese: "生肉用红色砧板。"
         },
         {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
           english: "Okay, I’ll get the red board.",
           chinese: "好的，我去拿红色砧板。"
         }
@@ -7881,10 +7863,10 @@ export const kitchenSurvivalCourse = {
       sequence: 5,
       english: "Use the green cutting board for vegetables.",
       chinese: "蔬菜用绿色砧板。",
-      scenario: "避免生熟混放、交叉污染和过敏风险。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_039-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_039-slow.mp3",
       isFree: false,
@@ -7897,8 +7879,8 @@ export const kitchenSurvivalCourse = {
         "restaurant-work-core"
       ],
       active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       difficulty: "Level 2",
       variants: [
         "Use the green board for vegetables.",
@@ -7911,14 +7893,14 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "Use the green cutting board for vegetables.",
           chinese: "蔬菜用绿色砧板。"
         },
         {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
           english: "Okay, I’ll use the green board.",
           chinese: "好的，我用绿色砧板。"
         }
@@ -7944,10 +7926,10 @@ export const kitchenSurvivalCourse = {
       sequence: 9,
       english: "Change the towel if it touches the floor.",
       chinese: "抹布碰到地上就要换。",
-      scenario: "避免生熟混放、交叉污染和过敏风险。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_040-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_040-slow.mp3",
       isFree: false,
@@ -7960,8 +7942,8 @@ export const kitchenSurvivalCourse = {
         "restaurant-work-core"
       ],
       active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       difficulty: "Level 2",
       variants: [
         "Replace the towel if it touches the floor.",
@@ -7974,14 +7956,14 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "Change the towel if it touches the floor.",
           chinese: "抹布碰到地上就要换。"
         },
         {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
           english: "Okay, I’ll get a clean towel.",
           chinese: "好的，我去拿干净抹布。"
         }
@@ -8214,10 +8196,10 @@ export const kitchenSurvivalCourse = {
       sequence: 6,
       english: "Do not eat on the prep table.",
       chinese: "不要在备餐台上吃东西。",
-      scenario: "避免生熟混放、交叉污染和过敏风险。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_047-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_047-slow.mp3",
       isFree: false,
@@ -8230,8 +8212,8 @@ export const kitchenSurvivalCourse = {
         "restaurant-work-core"
       ],
       active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       difficulty: "Level 2",
       variants: [
         "Do not eat at the prep table.",
@@ -8244,14 +8226,14 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "Do not eat on the prep table.",
           chinese: "不要在备餐台上吃东西。"
         },
         {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
           english: "Sorry, I’ll eat in the break area.",
           chinese: "不好意思，我去休息区吃。"
         }
@@ -8277,10 +8259,10 @@ export const kitchenSurvivalCourse = {
       sequence: 2,
       english: "Store raw seafood separately.",
       chinese: "把生海鲜分开存放。",
-      scenario: "避免生熟混放、交叉污染和过敏风险。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_048-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_048-slow.mp3",
       isFree: false,
@@ -8293,8 +8275,8 @@ export const kitchenSurvivalCourse = {
         "restaurant-work-core"
       ],
       active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       difficulty: "Level 1",
       variants: [
         "Keep raw seafood separate.",
@@ -8307,14 +8289,14 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "Store raw seafood separately.",
           chinese: "把生海鲜分开存放。"
         },
         {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
           english: "Okay, I’ll put it on a separate shelf.",
           chinese: "好的，我把它放到单独的架子上。"
         }
@@ -8374,10 +8356,10 @@ export const kitchenSurvivalCourse = {
       sequence: 1,
       english: "Use separate utensils for allergen orders.",
       chinese: "过敏订单要使用单独的工具。",
-      scenario: "避免生熟混放、交叉污染和过敏风险。",
-      importance: "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
-      role: "Worker",
-      roleZh: "员工要说",
+      scenario: "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+      importance: "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+      role: "Supervisor",
+      roleZh: "主管可能会说",
       audioNormal: "/audio/en-US/food_safety_050-normal.mp3",
       audioSlow: "/audio/en-US/food_safety_050-slow.mp3",
       isFree: false,
@@ -8390,8 +8372,8 @@ export const kitchenSurvivalCourse = {
         "restaurant-work-core"
       ],
       active: true,
-      speakerRole: "Worker",
-      speakerRoleZh: "员工要说",
+      speakerRole: "Supervisor",
+      speakerRoleZh: "主管可能会说",
       difficulty: "Level 1",
       variants: [
         "Use clean separate tools for allergy orders.",
@@ -8404,14 +8386,14 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
           english: "Use separate utensils for allergen orders.",
           chinese: "过敏订单要使用单独的工具。"
         },
         {
-          speakerRole: "Coworker",
-          speakerRoleZh: "同事可能会说",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
           english: "Okay, I’ll get clean utensils.",
           chinese: "好的，我去拿干净工具。"
         }
