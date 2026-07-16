@@ -24,7 +24,7 @@ export function UnlockPanel() {
         <div>
           <p className="text-xl font-black leading-tight text-ink sm:text-2xl">北美餐厅生活与工作生存英语</p>
           <p className="mt-2 text-sm font-bold leading-relaxed text-muted sm:text-base">
-            {unlocked ? "完整课程已解锁 · 继续学习" : "390+实用句子 · 50个真实场景"}
+            {unlocked ? "完整课程已解锁 · 继续学习" : "36个真实场景 · 220+核心句"}
           </p>
           <p className="mt-1 text-sm font-semibold text-muted">
             {unlocked ? "你的学习记录会保存在当前浏览器。" : "正常语速＋慢速 · $4.99一次购买"}

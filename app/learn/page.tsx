@@ -17,7 +17,7 @@ export default function LearnPage() {
             </Link>
             <h1 className="mt-2 text-3xl font-black leading-tight text-ink sm:text-5xl">{course.title}</h1>
             <p className="mt-2 text-base font-semibold text-muted">
-              {course.modules.length} 大模块 · {scenarioCount} 个真实场景 · {publishedItems.length}+ 实用句子 · {course.priceLabel}
+              {scenarioCount} 个真实场景 · {publishedItems.length}+ 核心句 · 听3遍＋跟读5遍 · {course.priceLabel}
             </p>
           </div>
         </header>
