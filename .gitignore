@@ -1,0 +1,12 @@
+.DS_Store
+node_modules
+.next
+out
+.env*.local
+.vercel
+*.tsbuildinfo
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
