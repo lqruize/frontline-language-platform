@@ -1,0 +1,2967 @@
+[
+  {
+    "id": "food_safety_001",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_handwashing_gloves",
+    "scenarioTitle": "洗手和换手套",
+    "sequence": 3,
+    "english": "Wash your hands before touching food.",
+    "chinese": "接触食物前先洗手。",
+    "scenario": "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_001-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_001-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Wash your hands first.",
+      "Clean your hands before you touch food."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll wash my hands now.",
+      "Where is the hand sink?",
+      "Should I put on gloves after washing?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Wash your hands before touching food.",
+        "chinese": "接触食物前先洗手。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll wash my hands now.",
+        "chinese": "好的，我现在去洗手。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "before touching food",
+        "chinese": "接触食物之前",
+        "pronunciation": "bee-FOR TUH-ching food",
+        "note": "表示在碰食物前必须先完成某个动作。",
+        "example": "Wash before touching food."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_002",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_handwashing_gloves",
+    "scenarioTitle": "洗手和换手套",
+    "sequence": 2,
+    "english": "Sorry, could you repeat that a little more slowly?",
+    "chinese": "不好意思，您可以说慢一点再重复一遍吗？",
+    "scenario": "洗手、戴手套、换手套和保持卫生。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Staff",
+    "roleZh": "前台员工要说",
+    "audioNormal": "/audio/en-US/food_safety_002-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_002-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Sorry, could you repeat that a little more slowly, please?"
+    ],
+    "recommendedResponses": [
+      "Can you say that again?",
+      "Can you write it down?",
+      "Let me confirm first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "前台员工",
+        "english": "Sorry, could you repeat that a little more slowly?",
+        "chinese": "不好意思，您可以说慢一点再重复一遍吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Can you say that again?",
+        "chinese": "你可以再说一遍吗？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Sorry, repeat",
+        "chinese": "重点词组",
+        "pronunciation": "Sorry, repeat",
+        "note": "这句话里的工作关键词。",
+        "example": "Sorry, could you repeat that a little more slowly?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_003",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_handwashing_gloves",
+    "scenarioTitle": "洗手和换手套",
+    "sequence": 6,
+    "english": "Use the hand sink, not the prep sink.",
+    "chinese": "用洗手池，不要用备餐水槽。",
+    "scenario": "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_003-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_003-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Wash your hands at the hand sink.",
+      "Do not wash hands in the prep sink."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll use the hand sink.",
+      "Where is the hand sink?",
+      "I won’t use the prep sink for hands."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Use the hand sink, not the prep sink.",
+        "chinese": "用洗手池，不要用备餐水槽。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, where is the hand sink?",
+        "chinese": "好的，洗手池在哪里？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "hand sink",
+        "chinese": "洗手池",
+        "pronunciation": "hand-sink",
+        "note": "专门用来洗手的水槽，不是洗菜或备餐用的水槽。",
+        "example": "Use the hand sink."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_004",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_handwashing_gloves",
+    "scenarioTitle": "洗手和换手套",
+    "sequence": 4,
+    "english": "I'm sorry, we're sold out of that today.",
+    "chinese": "很抱歉，这款今天已经卖完了。",
+    "scenario": "洗手、戴手套、换手套和保持卫生。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Staff",
+    "roleZh": "前台员工要说",
+    "audioNormal": "/audio/en-US/food_safety_004-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_004-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "I'm sorry, we're sold out of that today."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "前台员工",
+        "english": "I'm sorry, we're sold out of that today.",
+        "chinese": "很抱歉，这款今天已经卖完了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "I'm sorry,",
+        "chinese": "重点词组",
+        "pronunciation": "I'm sorry,",
+        "note": "这句话里的工作关键词。",
+        "example": "I'm sorry, we're sold out of that today."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_005",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_handwashing_gloves",
+    "scenarioTitle": "洗手和换手套",
+    "sequence": 4,
+    "english": "Put on gloves before handling ready-to-eat food.",
+    "chinese": "处理即食食品前戴上手套。",
+    "scenario": "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_005-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_005-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Wear gloves for ready-to-eat food.",
+      "Use gloves before touching ready-to-eat food."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll put on gloves.",
+      "Where are the clean gloves?",
+      "I’ll wash my hands first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Put on gloves before handling ready-to-eat food.",
+        "chinese": "处理即食食品前戴上手套。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll wash my hands and put on gloves.",
+        "chinese": "好的，我先洗手再戴手套。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "ready-to-eat food",
+        "chinese": "即食食品",
+        "pronunciation": "RED-ee-too-eet food",
+        "note": "不需要再加热、可以直接吃的食物。",
+        "example": "Use gloves for ready-to-eat food."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_006",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_handwashing_gloves",
+    "scenarioTitle": "洗手和换手套",
+    "sequence": 7,
+    "english": "Change your gloves after touching raw chicken.",
+    "chinese": "碰过生鸡肉后要换手套。",
+    "scenario": "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Coworker",
+    "roleZh": "同事可能会说",
+    "audioNormal": "/audio/en-US/food_safety_006-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_006-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Coworker",
+    "speakerRoleZh": "同事可能会说",
+    "variants": [
+      "Put on new gloves after raw chicken.",
+      "Do not keep the same gloves after touching raw chicken."
+    ],
+    "recommendedResponses": [
+      "Thanks, I’ll change them now.",
+      "I’ll wash my hands first.",
+      "Where are the clean gloves?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Coworker",
+        "speakerRoleZh": "同事可能会说",
+        "english": "Change your gloves after touching raw chicken.",
+        "chinese": "碰过生鸡肉后要换手套。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Thanks, I’ll change them now.",
+        "chinese": "谢谢，我现在换。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "after touching raw chicken",
+        "chinese": "碰过生鸡肉以后",
+        "pronunciation": "AF-ter TUH-ching raw CHIK-en",
+        "note": "接触生鸡肉后要换手套并洗手，避免污染其他食物。",
+        "example": "Change gloves after raw chicken."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_007",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_handwashing_gloves",
+    "scenarioTitle": "洗手和换手套",
+    "sequence": 1,
+    "english": "Wear a hairnet while you are on the line.",
+    "chinese": "在操作线上工作时要戴发网。",
+    "scenario": "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_007-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_007-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Put on your hairnet on the line.",
+      "You need a hairnet while working with food."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll put it on.",
+      "Where are the hairnets?",
+      "Do I need a hat too?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Wear a hairnet while you are on the line.",
+        "chinese": "在操作线上工作时要戴发网。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll put one on now.",
+        "chinese": "好的，我现在戴上。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "hairnet",
+        "chinese": "发网",
+        "pronunciation": "HAIR-net",
+        "note": "防止头发掉进食物里的网。",
+        "example": "Wear a hairnet."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_008",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_storage_label",
+    "scenarioTitle": "食品日期和存放",
+    "sequence": 1,
+    "english": "Keep your hat on in the kitchen.",
+    "chinese": "在厨房里要一直戴着帽子。",
+    "scenario": "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_008-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_008-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Do not take your hat off in the kitchen.",
+      "Your hat needs to stay on in the kitchen."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll keep it on.",
+      "Do I need a hairnet under it?",
+      "I’ll fix it now."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Keep your hat on in the kitchen.",
+        "chinese": "在厨房里要一直戴着帽子。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll keep it on.",
+        "chinese": "好的，我会一直戴着。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "hat on",
+        "chinese": "戴着帽子",
+        "pronunciation": "hat-on",
+        "note": "餐厅厨房中表示帽子不能摘下。",
+        "example": "Keep your hat on."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_009",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_handwashing_gloves",
+    "scenarioTitle": "洗手和换手套",
+    "sequence": 5,
+    "english": "Clean and sanitize the prep table first.",
+    "chinese": "先清洁并消毒备餐台。",
+    "scenario": "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_009-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_009-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Wash and sanitize the prep table first.",
+      "Clean the prep table, then sanitize it."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll clean and sanitize it.",
+      "Which sanitizer should I use?",
+      "Should I let it air-dry?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Clean and sanitize the prep table first.",
+        "chinese": "先清洁并消毒备餐台。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, which sanitizer should I use?",
+        "chinese": "好的，我应该用哪种消毒剂？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "clean and sanitize",
+        "chinese": "清洁并消毒",
+        "pronunciation": "kleen-and-SAN-i-tize",
+        "note": "先去掉污渍，再用食品接触表面消毒剂处理。",
+        "example": "Clean and sanitize the counter."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_010",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_handwashing_gloves",
+    "scenarioTitle": "洗手和换手套",
+    "sequence": 10,
+    "english": "That’s correct. Label the cup and check the bag.",
+    "chinese": "对。给杯子贴标签，并检查袋子。",
+    "scenario": "洗手、戴手套、换手套和保持卫生。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Staff",
+    "roleZh": "前台员工要说",
+    "audioNormal": "/audio/en-US/food_safety_010-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_010-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Correct. Label the cup and check the bag.",
+      "Yes. Put a label on the cup and check the bag."
+    ],
+    "recommendedResponses": [
+      "I’ll wash my hands now.",
+      "I’ll put on new gloves.",
+      "Where are the clean gloves?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "前台员工",
+        "english": "That’s correct. Label the cup and check the bag.",
+        "chinese": "对。给杯子贴标签，并检查袋子。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "I’ll wash my hands now.",
+        "chinese": "我现在去洗手。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "label the cup",
+        "chinese": "给杯子贴标签",
+        "pronunciation": "label the cup",
+        "note": "在杯子上标明订单或内容。",
+        "example": "Label the cup first."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_011",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_handwashing_gloves",
+    "scenarioTitle": "洗手和换手套",
+    "sequence": 8,
+    "english": "Should I change my gloves?",
+    "chinese": "我需要换手套吗？",
+    "scenario": "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/food_safety_011-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_011-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Do I need new gloves?",
+      "Should I put on a fresh pair?"
+    ],
+    "recommendedResponses": [
+      "Yes, change them now.",
+      "Yes, after touching raw food.",
+      "No, those gloves are still clean."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Should I change my gloves?",
+        "chinese": "我需要换手套吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Yes, change them before making the salad.",
+        "chinese": "是的，做沙拉前换一副。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "change my gloves",
+        "chinese": "换我的手套",
+        "pronunciation": "chaynj-my-gluvz",
+        "note": "员工不确定是否需要换手套时这样问。",
+        "example": "I need to change my gloves."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_012",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_handwashing_gloves",
+    "scenarioTitle": "洗手和换手套",
+    "sequence": 12,
+    "english": "Could you explain that again more slowly?",
+    "chinese": "可以再慢一点解释一遍吗？",
+    "scenario": "洗手、戴手套、换手套和保持卫生。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/food_safety_012-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_012-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you explain that again more slowly?",
+      "Could you please explain that again more slowly?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Could you explain that again more slowly?",
+        "chinese": "可以再慢一点解释一遍吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "explain again",
+        "chinese": "重点词组",
+        "pronunciation": "explain again",
+        "note": "这句话里的工作关键词。",
+        "example": "Could you explain that again more slowly?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_013",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_handwashing_gloves",
+    "scenarioTitle": "洗手和换手套",
+    "sequence": 9,
+    "english": "Where is the sanitizer bucket?",
+    "chinese": "消毒桶在哪里？",
+    "scenario": "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/food_safety_013-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_013-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Where can I find the sanitizer bucket?",
+      "Where do we keep the sanitizer bucket?"
+    ],
+    "recommendedResponses": [
+      "It is under the prep table.",
+      "Use the red bucket by the sink.",
+      "Make sure the towel stays in the bucket."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Where is the sanitizer bucket?",
+        "chinese": "消毒桶在哪里？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "It is under the prep table.",
+        "chinese": "在备餐台下面。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "sanitizer bucket",
+        "chinese": "消毒桶",
+        "pronunciation": "SAN-i-tie-zer BUH-kit",
+        "note": "装有消毒液的桶，通常用来浸泡或存放擦拭用抹布。",
+        "example": "Put the towel in the sanitizer bucket."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_014",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_handwashing_gloves",
+    "scenarioTitle": "洗手和换手套",
+    "sequence": 10,
+    "english": "Keep the wiping cloth in the sanitizer bucket.",
+    "chinese": "把擦拭抹布放在消毒桶里。",
+    "scenario": "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_014-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_014-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Store the wiping cloth in sanitizer.",
+      "Do not leave the wiping cloth on the counter."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll put it in the bucket.",
+      "Should I change the sanitizer water?",
+      "Where is the clean wiping cloth?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Keep the wiping cloth in the sanitizer bucket.",
+        "chinese": "把擦拭抹布放在消毒桶里。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll put it back in the bucket.",
+        "chinese": "好的，我把它放回桶里。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "wiping cloth",
+        "chinese": "擦拭抹布",
+        "pronunciation": "WHY-ping klawth",
+        "note": "用来擦食品接触表面的抹布，使用间隔应放在消毒桶里。",
+        "example": "Use a clean wiping cloth."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_015",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_handwashing_gloves",
+    "scenarioTitle": "洗手和换手套",
+    "sequence": 15,
+    "english": "Can you explain what improvement is expected?",
+    "chinese": "可以说明具体需要改进什么吗？",
+    "scenario": "洗手、戴手套、换手套和保持卫生。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/food_safety_015-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_015-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Could you explain what improvement is expected?",
+      "Can you please explain what improvement is expected?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Can you explain what improvement is expected?",
+        "chinese": "可以说明具体需要改进什么吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "explain what",
+        "chinese": "重点词组",
+        "pronunciation": "explain what",
+        "note": "这句话里的工作关键词。",
+        "example": "Can you explain what improvement is expected?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_016",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_raw_cooked",
+    "scenarioTitle": "食品安全",
+    "sequence": 3,
+    "english": "Keep raw chicken below cooked food.",
+    "chinese": "把生鸡肉放在熟食下面。",
+    "scenario": "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_016-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_016-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Raw chicken goes below cooked food.",
+      "Store raw chicken under cooked food."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll move it to the lower shelf.",
+      "That prevents drips onto cooked food.",
+      "I’ll keep raw and cooked food separate."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Keep raw chicken below cooked food.",
+        "chinese": "把生鸡肉放在熟食下面。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll move it to the lower shelf.",
+        "chinese": "好的，我把它移到下面一层。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "raw chicken",
+        "chinese": "生鸡肉",
+        "pronunciation": "raw CHIK-en",
+        "note": "没有煮熟的鸡肉，必须放在熟食下面，避免汁水滴到熟食上。",
+        "example": "Raw chicken goes on the bottom shelf."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_017",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_raw_cooked",
+    "scenarioTitle": "食品安全",
+    "sequence": 10,
+    "english": "Do not use the same cutting board for raw meat and vegetables.",
+    "chinese": "不要用同一块砧板切生肉和蔬菜。",
+    "scenario": "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_017-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_017-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Use different boards for raw meat and vegetables.",
+      "Do not cut raw meat and vegetables on the same board."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll use separate cutting boards.",
+      "I’ll get a clean board for the vegetables.",
+      "Which color board should I use?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Do not use the same cutting board for raw meat and vegetables.",
+        "chinese": "不要用同一块砧板切生肉和蔬菜。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll get a separate board.",
+        "chinese": "好的，我拿一块单独的砧板。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "cutting board",
+        "chinese": "砧板",
+        "pronunciation": "KUH-ting bord",
+        "note": "切菜、切肉用的板；生肉和蔬菜要分开使用。",
+        "example": "Use a clean cutting board."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_018",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_storage_label",
+    "scenarioTitle": "食品日期和存放",
+    "sequence": 5,
+    "english": "Check the expiration date first.",
+    "chinese": "先检查保质期。",
+    "scenario": "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_018-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_018-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Look at the expiration date first.",
+      "Check the date before using it."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll check the date now.",
+      "It expires tomorrow.",
+      "This one is already expired."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Check the expiration date first.",
+        "chinese": "先检查保质期。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll check it before using it.",
+        "chinese": "好的，我使用前会检查。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "expiration date",
+        "chinese": "过期日期；保质期",
+        "pronunciation": "ek-spuh-RAY-shun date",
+        "note": "食品包装或标签上显示还能安全使用到哪一天。",
+        "example": "The expiration date is today."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_019",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_storage_label",
+    "scenarioTitle": "食品日期和存放",
+    "sequence": 7,
+    "english": "This container needs a date label.",
+    "chinese": "这个容器需要日期标签。",
+    "scenario": "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_019-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_019-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "This container needs a date sticker.",
+      "Put a date label on this container."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll label it now.",
+      "What date should I write?",
+      "I’ll write today’s date on it."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "This container needs a date label.",
+        "chinese": "这个容器需要日期标签。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll label it now.",
+        "chinese": "好的，我现在贴标签。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "date label",
+        "chinese": "日期标签",
+        "pronunciation": "date-LAY-bul",
+        "note": "贴在食品容器上的标签，写明日期，方便判断是否还能使用。",
+        "example": "Put a date label on the sauce."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_020",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_storage_label",
+    "scenarioTitle": "食品日期和存放",
+    "sequence": 10,
+    "english": "Put the lid on before you store it.",
+    "chinese": "存放前把盖子盖上。",
+    "scenario": "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_020-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_020-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Cover it before storing it.",
+      "Put the cover on before storage."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll put the lid on.",
+      "Should I label it too?",
+      "I’ll cover it before putting it away."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Put the lid on before you store it.",
+        "chinese": "存放前把盖子盖上。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll cover it first.",
+        "chinese": "好的，我会先盖上。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "lid",
+        "chinese": "盖子",
+        "pronunciation": "lid-sound",
+        "note": "存放食物前盖在容器上的盖子。",
+        "example": "The lid is missing."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_021",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_storage_label",
+    "scenarioTitle": "食品日期和存放",
+    "sequence": 8,
+    "english": "Do not leave food out too long.",
+    "chinese": "不要把食物放在外面太久。",
+    "scenario": "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_021-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_021-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Do not keep food out too long.",
+      "Put food away before it sits out too long."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll put it back in the cooler.",
+      "How long has it been out?",
+      "I’ll tell the supervisor if I’m not sure."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Do not leave food out too long.",
+        "chinese": "不要把食物放在外面太久。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll put it back in the cooler.",
+        "chinese": "好的，我把它放回冷藏柜。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "out too long",
+        "chinese": "在外面放太久",
+        "pronunciation": "out-too-long",
+        "note": "食物长时间放在室温下，可能不安全。",
+        "example": "The chicken was out too long."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_022",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_storage_label",
+    "scenarioTitle": "食品日期和存放",
+    "sequence": 2,
+    "english": "This needs to go back in the cooler.",
+    "chinese": "这个需要放回冷藏柜。",
+    "scenario": "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_022-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_022-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "This needs to return to the cooler.",
+      "Put this back in the cooler."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll put it back now.",
+      "Should I check the label first?",
+      "I’ll keep it cold."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "This needs to go back in the cooler.",
+        "chinese": "这个需要放回冷藏柜。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll put it back now.",
+        "chinese": "好的，我现在放回去。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "cooler",
+        "chinese": "冷藏柜；冷藏室",
+        "pronunciation": "KOO-ler",
+        "note": "餐厅里用来低温保存食材的设备。",
+        "example": "Put the sauce in the cooler."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_023",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_general",
+    "scenarioTitle": "洗手、手套、发网、日期标签、食品存放。",
+    "sequence": 23,
+    "english": "Use clean tongs for ready-to-eat food.",
+    "chinese": "给即食食品使用干净夹子。",
+    "scenario": "避免手或脏工具接触食品。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/food_safety_023-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_023-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Use clean tongs for ready-to-eat food."
+    ],
+    "recommendedResponses": [
+      "I’ll wash my hands now.",
+      "I’ll put on new gloves.",
+      "Where are the clean gloves?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Use clean tongs for ready-to-eat food.",
+        "chinese": "给即食食品使用干净夹子。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "I’ll wash my hands now.",
+        "chinese": "我现在去洗手。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Use clean",
+        "chinese": "重点词组",
+        "pronunciation": "Use clean",
+        "note": "这句话里的工作关键词。",
+        "example": "Use clean tongs for ready-to-eat food."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_024",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_handwashing_gloves",
+    "scenarioTitle": "洗手和换手套",
+    "sequence": 2,
+    "english": "Change the gloves before making the salad.",
+    "chinese": "做沙拉前换手套。",
+    "scenario": "洗手、戴手套、换手套、发网和食品接触表面卫生。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_024-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_024-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Put on fresh gloves before making the salad.",
+      "Use new gloves for the salad."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll change my gloves.",
+      "I’ll wash my hands first, then change gloves.",
+      "Where are the clean gloves?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Change the gloves before making the salad.",
+        "chinese": "做沙拉前换手套。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll put on a new pair.",
+        "chinese": "好的，我换一副新的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Change the gloves",
+        "chinese": "更换手套",
+        "pronunciation": "chaynj-the-gluvz",
+        "note": "接触不同食物或做即食食品前，换一副干净手套。",
+        "example": "Change the gloves first."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_025",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_sanitizer_bucket",
+    "scenarioTitle": "消毒桶和食品接触表面",
+    "sequence": 25,
+    "english": "The sanitizer bucket needs to be changed.",
+    "chinese": "消毒桶需要更换。",
+    "scenario": "抹布消毒液脏了或浓度不对。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/food_safety_025-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_025-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "The sanitizer bucket needs to be changed."
+    ],
+    "recommendedResponses": [
+      "I’ll clean it again.",
+      "Should I use sanitizer?",
+      "Where is the test strip?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "The sanitizer bucket needs to be changed.",
+        "chinese": "消毒桶需要更换。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "I’ll clean it again.",
+        "chinese": "我会再清洁一遍。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "sanitize",
+        "chinese": "消毒",
+        "pronunciation": "SAN-i-tize",
+        "note": "用于餐具或食品接触表面。",
+        "example": "Sanitize the table."
+      },
+      {
+        "term": "sanitizer",
+        "chinese": "消毒剂",
+        "pronunciation": "SAN-i-tizer",
+        "note": "食品接触表面或餐具用消毒剂。",
+        "example": "Check the sanitizer."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_026",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_storage_label",
+    "scenarioTitle": "食品日期和存放",
+    "sequence": 3,
+    "english": "Check the cooler temperature.",
+    "chinese": "检查冷藏柜温度。",
+    "scenario": "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_026-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_026-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Look at the cooler temperature.",
+      "Check how cold the cooler is."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll check it now.",
+      "It is 38 degrees.",
+      "The temperature is too high.",
+      "Should I write it on the temperature log?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Check the cooler temperature.",
+        "chinese": "检查冷藏柜温度。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll check it now.",
+        "chinese": "好的，我现在检查。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "It is 38 degrees.",
+        "chinese": "现在是38度。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "cooler temperature",
+        "chinese": "冷藏柜温度",
+        "pronunciation": "KOO-ler TEM-pruh-cher",
+        "note": "指冷藏柜里面当前的温度。",
+        "example": "The cooler temperature is too high."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_027",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_storage_label",
+    "scenarioTitle": "食品日期和存放",
+    "sequence": 4,
+    "english": "Check the freezer temperature.",
+    "chinese": "检查冷冻柜温度。",
+    "scenario": "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_027-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_027-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Look at the freezer temperature.",
+      "Check how cold the freezer is."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll check it now.",
+      "The freezer is at zero degrees.",
+      "The temperature looks normal.",
+      "The freezer is not cold enough."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Check the freezer temperature.",
+        "chinese": "检查冷冻柜温度。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll check it now.",
+        "chinese": "好的，我现在检查。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "The freezer is at zero degrees.",
+        "chinese": "冷冻柜现在是0度。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "freezer temperature",
+        "chinese": "冷冻柜温度",
+        "pronunciation": "FREE-zer TEM-pruh-cher",
+        "note": "指冷冻柜内部当前的温度。",
+        "example": "The freezer temperature is normal."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_028",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_storage_label",
+    "scenarioTitle": "食品日期和存放",
+    "sequence": 9,
+    "english": "This food is past the use-by date.",
+    "chinese": "这个食物已经过了使用日期。",
+    "scenario": "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_028-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_028-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "The use-by date has passed.",
+      "This food is past its safe date."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll throw it away.",
+      "Should I discard it now?",
+      "I’ll tell the supervisor.",
+      "Let me check the label again."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "This food is past the use-by date.",
+        "chinese": "这个食物已经过了使用日期。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll throw it away.",
+        "chinese": "好的，我把它丢掉。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "past the use-by date",
+        "chinese": "已经超过使用日期；已经过期",
+        "pronunciation": "past-the-YOOZ-bye-date",
+        "note": "表示食品已经超过标签规定的安全使用日期。",
+        "example": "This milk is past the use-by date."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_029",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_general",
+    "scenarioTitle": "洗手、手套、发网、日期标签、食品存放。",
+    "sequence": 29,
+    "english": "Throw this away if it is expired.",
+    "chinese": "如果过期了就扔掉。",
+    "scenario": "处理过期食品。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/food_safety_029-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_029-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Throw this away if it is expired."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Throw this away if it is expired.",
+        "chinese": "如果过期了就扔掉。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Throw away",
+        "chinese": "重点词组",
+        "pronunciation": "Throw away",
+        "note": "这句话里的工作关键词。",
+        "example": "Throw this away if it is expired."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_030",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_storage_label",
+    "scenarioTitle": "食品日期和存放",
+    "sequence": 30,
+    "english": "Do not put hot food straight into the cooler.",
+    "chinese": "不要把热食物直接放进冷藏柜。",
+    "scenario": "贴日期标签、先进先出、检查食材是否还能用。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/food_safety_030-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_030-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Please don’t put hot food straight into the cooler."
+    ],
+    "recommendedResponses": [
+      "I’ll wash my hands now.",
+      "I’ll put on new gloves.",
+      "Where are the clean gloves?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Do not put hot food straight into the cooler.",
+        "chinese": "不要把热食物直接放进冷藏柜。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "I’ll wash my hands now.",
+        "chinese": "我现在去洗手。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "not put",
+        "chinese": "重点词组",
+        "pronunciation": "not put",
+        "note": "这句话里的工作关键词。",
+        "example": "Do not put hot food straight into the cooler."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_031",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_raw_cooked",
+    "scenarioTitle": "食品安全",
+    "sequence": 4,
+    "english": "Let it cool before you cover it.",
+    "chinese": "盖起来之前先让它冷却。",
+    "scenario": "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_031-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_031-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Cool it before covering it.",
+      "Wait until it cools, then cover it."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll let it cool first.",
+      "How long should it cool?",
+      "I’ll cover it after it cools."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Let it cool before you cover it.",
+        "chinese": "盖起来之前先让它冷却。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll wait before covering it.",
+        "chinese": "好的，我等它冷却后再盖。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "let it cool",
+        "chinese": "让它冷却",
+        "pronunciation": "let-it-kool",
+        "note": "热食在盖起来或存放前，先让温度降下来。",
+        "example": "Let the soup cool."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_032",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_temperature_expiration",
+    "scenarioTitle": "温度、保质期和先进先出",
+    "sequence": 32,
+    "english": "Use the first-in, first-out rule.",
+    "chinese": "使用先进先出的规则。",
+    "scenario": "食材轮换和库存管理。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/food_safety_032-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_032-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement"
+    ],
+    "active": false,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Use the first-in, first-out rule."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Use the first-in, first-out rule.",
+        "chinese": "使用先进先出的规则。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Use first-in,",
+        "chinese": "重点词组",
+        "pronunciation": "Use first-in,",
+        "note": "这句话里的工作关键词。",
+        "example": "Use the first-in, first-out rule."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_033",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_raw_cooked",
+    "scenarioTitle": "食品安全",
+    "sequence": 7,
+    "english": "Do not touch ready-to-eat food with bare hands.",
+    "chinese": "不要徒手接触即食食品。",
+    "scenario": "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_033-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_033-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Do not handle ready-to-eat food with bare hands.",
+      "Use gloves for ready-to-eat food."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll put on gloves.",
+      "I’ll use tongs instead.",
+      "Where are the clean gloves?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Do not touch ready-to-eat food with bare hands.",
+        "chinese": "不要徒手接触即食食品。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll use gloves or tongs.",
+        "chinese": "好的，我会用手套或夹子。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "ready-to-eat food",
+        "chinese": "即食食品",
+        "pronunciation": "RED-ee-too-eet food",
+        "note": "不需要再加热、可以直接吃的食物，不能徒手接触。",
+        "example": "Use gloves for ready-to-eat food."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_034",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_general",
+    "scenarioTitle": "洗手、手套、发网、日期标签、食品存放。",
+    "sequence": 34,
+    "english": "Use a clean spoon every time.",
+    "chinese": "每次都用干净勺子。",
+    "scenario": "试味、分装或取料。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/food_safety_034-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_034-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Use a clean spoon every time."
+    ],
+    "recommendedResponses": [
+      "I’ll clean it again.",
+      "Should I use sanitizer?",
+      "Where is the test strip?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Use a clean spoon every time.",
+        "chinese": "每次都用干净勺子。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "I’ll clean it again.",
+        "chinese": "我会再清洁一遍。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Use clean",
+        "chinese": "重点词组",
+        "pronunciation": "Use clean",
+        "note": "这句话里的工作关键词。",
+        "example": "Use a clean spoon every time."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_035",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_storage_label",
+    "scenarioTitle": "食品日期和存放",
+    "sequence": 35,
+    "english": "This needs to be covered in the fridge.",
+    "chinese": "这个放冰箱里需要盖好。",
+    "scenario": "贴日期标签、先进先出、检查食材是否还能用。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/food_safety_035-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_035-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "This one needs to be covered in the fridge.",
+      "This item needs to be covered in the fridge."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "This needs to be covered in the fridge.",
+        "chinese": "这个放冰箱里需要盖好。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "needs be",
+        "chinese": "重点词组",
+        "pronunciation": "needs be",
+        "note": "这句话里的工作关键词。",
+        "example": "This needs to be covered in the fridge."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_036",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_storage_label",
+    "scenarioTitle": "食品日期和存放",
+    "sequence": 6,
+    "english": "Keep chemicals away from food.",
+    "chinese": "把化学品远离食物。",
+    "scenario": "食品日期、日期标签、温度记录、冷藏冷冻和热食冷却。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_036-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_036-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 1",
+    "variants": [
+      "Keep cleaners away from food.",
+      "Do not put chemicals near food."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll move the chemicals away.",
+      "I’ll store them on the chemical shelf.",
+      "Food and chemicals should stay separate."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Keep chemicals away from food.",
+        "chinese": "把化学品远离食物。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll move them to the chemical shelf.",
+        "chinese": "好的，我把它们移到化学品架子上。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "chemicals",
+        "chinese": "清洁化学品",
+        "pronunciation": "KEM-i-kulz",
+        "note": "餐厅里指清洁剂、消毒剂等，不能靠近食物。",
+        "example": "Store chemicals safely."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_037",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_general",
+    "scenarioTitle": "洗手、手套、发网、日期标签、食品存放。",
+    "sequence": 37,
+    "english": "Wash the produce before cutting it.",
+    "chinese": "切之前先清洗农产品。",
+    "scenario": "处理蔬菜水果。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/food_safety_037-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_037-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_038",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_raw_cooked",
+    "scenarioTitle": "食品安全",
+    "sequence": 8,
+    "english": "Use the red cutting board for raw meat.",
+    "chinese": "生肉用红色砧板。",
+    "scenario": "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_038-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_038-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [
+      "Use the red board for raw meat.",
+      "Raw meat goes on the red cutting board."
+    ],
+    "recommendedResponses": [
+      "Okay, red board for raw meat.",
+      "I’ll change boards now.",
+      "Where is the clean red board?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Use the red cutting board for raw meat.",
+        "chinese": "生肉用红色砧板。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll get the red board.",
+        "chinese": "好的，我去拿红色砧板。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "raw meat",
+        "chinese": "生肉",
+        "pronunciation": "raw meet",
+        "note": "没有煮熟的肉，需要使用指定砧板，避免污染其他食物。",
+        "example": "Keep raw meat separate."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_039",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_raw_cooked",
+    "scenarioTitle": "食品安全",
+    "sequence": 5,
+    "english": "Use the green cutting board for vegetables.",
+    "chinese": "蔬菜用绿色砧板。",
+    "scenario": "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_039-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_039-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [
+      "Use the green board for vegetables.",
+      "Vegetables go on the green cutting board."
+    ],
+    "recommendedResponses": [
+      "Okay, green board for vegetables.",
+      "I’ll use a clean green board.",
+      "Where are the clean boards?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Use the green cutting board for vegetables.",
+        "chinese": "蔬菜用绿色砧板。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll use the green board.",
+        "chinese": "好的，我用绿色砧板。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "green cutting board",
+        "chinese": "绿色砧板",
+        "pronunciation": "green KUH-ting bord",
+        "note": "餐厅可能用不同颜色砧板区分蔬菜、生肉等食材。",
+        "example": "Use the green board."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_040",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_raw_cooked",
+    "scenarioTitle": "食品安全",
+    "sequence": 9,
+    "english": "Change the towel if it touches the floor.",
+    "chinese": "抹布碰到地上就要换。",
+    "scenario": "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_040-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_040-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [
+      "Replace the towel if it touches the floor.",
+      "Get a new towel if it falls."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll get a clean towel.",
+      "This towel touched the floor, so I’ll replace it.",
+      "Where are the clean towels?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Change the towel if it touches the floor.",
+        "chinese": "抹布碰到地上就要换。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll get a clean towel.",
+        "chinese": "好的，我去拿干净抹布。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "touches the floor",
+        "chinese": "碰到地上",
+        "pronunciation": "TUH-chiz the flor",
+        "note": "抹布或工具碰到地面后不应继续用于食品区域。",
+        "example": "The towel touched the floor."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_041",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_storage_label",
+    "scenarioTitle": "食品日期和存放",
+    "sequence": 41,
+    "english": "Do not put clean utensils on a dirty surface.",
+    "chinese": "不要把干净餐具放在脏表面上。",
+    "scenario": "贴日期标签、先进先出、检查食材是否还能用。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/food_safety_041-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_041-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_042",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_sanitizer_bucket",
+    "scenarioTitle": "消毒桶和食品接触表面",
+    "sequence": 42,
+    "english": "This bucket is for sanitizer only.",
+    "chinese": "这个桶只用于消毒液。",
+    "scenario": "区分消毒桶和普通水桶。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/food_safety_042-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_042-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_043",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_sanitizer_bucket",
+    "scenarioTitle": "消毒桶和食品接触表面",
+    "sequence": 43,
+    "english": "The sanitizer strip shows the right level.",
+    "chinese": "测试纸显示消毒液浓度合格。",
+    "scenario": "检查消毒液浓度。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/food_safety_043-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_043-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_044",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_sanitizer_bucket",
+    "scenarioTitle": "消毒桶和食品接触表面",
+    "sequence": 44,
+    "english": "The sanitizer strip is expired.",
+    "chinese": "消毒液测试纸过期了。",
+    "scenario": "检查测试纸有效期。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/food_safety_044-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_044-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_045",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_handwashing_gloves",
+    "scenarioTitle": "洗手和换手套",
+    "sequence": 45,
+    "english": "Wash your hands after taking out trash.",
+    "chinese": "倒完垃圾后要洗手。",
+    "scenario": "洗手、戴手套、换手套和保持卫生。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/food_safety_045-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_045-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_046",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_handwashing_gloves",
+    "scenarioTitle": "洗手和换手套",
+    "sequence": 46,
+    "english": "Wash your hands after using your phone.",
+    "chinese": "用完手机后要洗手。",
+    "scenario": "洗手、戴手套、换手套和保持卫生。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/food_safety_046-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_046-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_047",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_raw_cooked",
+    "scenarioTitle": "食品安全",
+    "sequence": 6,
+    "english": "Do not eat on the prep table.",
+    "chinese": "不要在备餐台上吃东西。",
+    "scenario": "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_047-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_047-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 2",
+    "variants": [
+      "Do not eat at the prep table.",
+      "No eating on the prep table."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll eat in the break area.",
+      "Sorry, I’ll move my food.",
+      "Where can I eat?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Do not eat on the prep table.",
+        "chinese": "不要在备餐台上吃东西。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Sorry, I’ll eat in the break area.",
+        "chinese": "不好意思，我去休息区吃。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "prep table",
+        "chinese": "备餐台",
+        "pronunciation": "prep TAY-bul",
+        "note": "准备食物的工作台，不能在上面吃东西。",
+        "example": "Clean the prep table."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_048",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_raw_cooked",
+    "scenarioTitle": "食品安全",
+    "sequence": 2,
+    "english": "Store raw seafood separately.",
+    "chinese": "把生海鲜分开存放。",
+    "scenario": "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_048-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_048-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 1",
+    "variants": [
+      "Keep raw seafood separate.",
+      "Store seafood away from other food."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll store it separately.",
+      "Which shelf should I use?",
+      "I’ll label the seafood container."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Store raw seafood separately.",
+        "chinese": "把生海鲜分开存放。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll put it on a separate shelf.",
+        "chinese": "好的，我把它放到单独的架子上。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "raw seafood",
+        "chinese": "生海鲜",
+        "pronunciation": "raw SEE-food",
+        "note": "未煮熟的鱼、虾等海鲜，需要分开存放，避免污染。",
+        "example": "Keep raw seafood separate."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_049",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_allergens",
+    "scenarioTitle": "过敏订单",
+    "sequence": 49,
+    "english": "Mark the allergen order clearly.",
+    "chinese": "把过敏订单标清楚。",
+    "scenario": "处理顾客过敏要求。",
+    "importance": "食品卫生要求经常被检查，听懂能避免违规和污染风险。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/food_safety_049-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_049-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "food_safety_050",
+    "moduleId": "food_safety",
+    "moduleTitle": "食品卫生、手套、发网和食品存放",
+    "scenarioId": "food_safety_raw_cooked",
+    "scenarioTitle": "食品安全",
+    "sequence": 1,
+    "english": "Use separate utensils for allergen orders.",
+    "chinese": "过敏订单要使用单独的工具。",
+    "scenario": "生熟分开、切菜板、过敏订单、消毒桶和交叉污染。",
+    "importance": "这些是北美餐厅最常见的食品安全要求，听懂并照做可以避免污染、违规和顾客过敏风险。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/food_safety_050-normal.mp3",
+    "audioSlow": "/audio/en-US/food_safety_050-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "food_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "difficulty": "Level 1",
+    "variants": [
+      "Use clean separate tools for allergy orders.",
+      "Do not use the same utensils for allergen orders."
+    ],
+    "recommendedResponses": [
+      "I’ll get clean utensils.",
+      "Which allergy is it?",
+      "I’ll tell the manager before making it."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Use separate utensils for allergen orders.",
+        "chinese": "过敏订单要使用单独的工具。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll get clean utensils.",
+        "chinese": "好的，我去拿干净工具。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "allergen orders",
+        "chinese": "过敏相关订单",
+        "pronunciation": "AL-er-jen OR-derz",
+        "note": "顾客对某种食物过敏时的订单，需要特别小心，避免交叉接触。",
+        "example": "This is an allergen order."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  }
+]

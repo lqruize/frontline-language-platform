@@ -1,16 +1,6 @@
-import fs from "node:fs";
+import { loadKitchenCourse } from "./load-kitchen-course-data.mjs";
 
-const file = "data/courses/kitchen-survival-v1.ts";
-const text = fs.readFileSync(file, "utf8");
-const marker = "export const kitchenSurvivalCourse = ";
-const start = text.indexOf(marker);
-const end = text.indexOf("\n} as const satisfies", start);
-
-if (start < 0 || end < 0) {
-  throw new Error("Could not find kitchenSurvivalCourse export.");
-}
-
-const course = Function("return (" + text.slice(start + marker.length, end + 2) + ")")();
+const course = loadKitchenCourse();
 const active = course.items.filter((item) => item.active);
 const errors = [];
 

@@ -1,0 +1,3114 @@
+[
+  {
+    "id": "communication_001",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 3,
+    "english": "Please start with this task.",
+    "chinese": "请先做这项工作。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/communication_001-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_001-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Please do this first.",
+      "Start with this one."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll start now.",
+      "Sure. What should I do after this?",
+      "Can you show me how to do it?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Please start with this task.",
+        "chinese": "请先做这项工作。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll start now.",
+        "chinese": "好的，我现在开始。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Can you show me the first step?",
+        "chinese": "你可以给我示范第一步吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Yes. Watch me do it once.",
+        "chinese": "可以。看我做一遍。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "start with",
+        "chinese": "从……开始；先做……",
+        "pronunciation": "start-with",
+        "note": "主管用它告诉员工先做哪一项工作。",
+        "example": "Start with the onions."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_002",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 5,
+    "english": "Which task should I do first?",
+    "chinese": "我应该先做哪项工作？",
+    "scenario": "员工第一天上班时，不确定任务顺序，向主管确认先做哪一项。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_002-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_002-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What should I do first?",
+      "Where should I start?"
+    ],
+    "recommendedResponses": [
+      "Start with the onions.",
+      "Please clean the table first.",
+      "Do the delivery order first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Which task should I do first?",
+        "chinese": "我应该先做哪项工作？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Start with the onions.",
+        "chinese": "先从洋葱开始。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll start there.",
+        "chinese": "好的，我先做那个。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "first task",
+        "chinese": "第一项任务；先做的工作",
+        "pronunciation": "furst-task",
+        "note": "员工不知道先做什么时，用来确认工作顺序。",
+        "example": "Start with the first task."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_003",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 3,
+    "english": "This needs to be done by noon.",
+    "chinese": "这项工作需要在中午之前完成。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_003-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_003-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Finish this before noon.",
+      "Please have this ready by noon."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "I’ll finish it before noon.",
+      "Should I stop my current task first?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "This needs to be done by noon.",
+        "chinese": "这项工作需要在中午之前完成。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "needs to be done",
+        "chinese": "需要完成",
+        "pronunciation": "needs to be done",
+        "note": "表示这件事必须完成。",
+        "example": "This needs to be done today."
+      },
+      {
+        "term": "by noon",
+        "chinese": "中午前",
+        "pronunciation": "by noon",
+        "note": "by 表示截止时间。",
+        "example": "Finish it by noon."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_004",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_repeat_confirm",
+    "scenarioTitle": "听不懂和请对方重复",
+    "sequence": 3,
+    "english": "Let me make sure I understand.",
+    "chinese": "我确认一下我有没有理解对。",
+    "scenario": "员工听完指令后，先复述确认，避免做错。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_004-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_004-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Let me confirm what you mean.",
+      "I want to make sure I got it."
+    ],
+    "recommendedResponses": [
+      "Sure. Tell me what you heard.",
+      "Yes, say it back to me.",
+      "Go ahead. I’ll correct you if needed."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Let me make sure I understand.",
+        "chinese": "我确认一下我有没有理解对。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Sure. Tell me what you heard.",
+        "chinese": "可以。说一下你听到的内容。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "You want me to clean this table first.",
+        "chinese": "你是要我先清洁这张桌子。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "make sure",
+        "chinese": "确认；确保",
+        "pronunciation": "mayk-shur",
+        "note": "不确定自己是否听懂时，用它来先确认。",
+        "example": "Make sure the lid is on."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_005",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_repeat_confirm",
+    "scenarioTitle": "听不懂和请对方重复",
+    "sequence": 9,
+    "english": "Can you repeat the instructions?",
+    "chinese": "你可以把指令再说一遍吗？",
+    "scenario": "没听清时请对方再说一遍、写下来或示范。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_005-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_005-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Could you say the instructions again?",
+      "I did not understand the instructions."
+    ],
+    "recommendedResponses": [
+      "Sure. First, wash the container.",
+      "Of course. I will say it more slowly.",
+      "Yes. Clean it first, then label it."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Can you repeat the instructions?",
+        "chinese": "你可以把指令再说一遍吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Sure. Clean the container first, then label it.",
+        "chinese": "可以。先清洁容器，然后贴标签。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, thank you.",
+        "chinese": "好的，谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "repeat the instructions",
+        "chinese": "把指令再说一遍",
+        "pronunciation": "ri-PEET-the-in-STRUK-shuns",
+        "note": "员工没有听清工作要求时，请主管重新说明。",
+        "example": "Please repeat the instructions."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_006",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_repeat_confirm",
+    "scenarioTitle": "听不懂和请对方重复",
+    "sequence": 1,
+    "english": "Can you show me an example?",
+    "chinese": "可以给我看一个示例吗？",
+    "scenario": "没听清时请对方再说一遍、写下来或示范。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_006-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_006-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you show me once?",
+      "Can you show me how to do it?"
+    ],
+    "recommendedResponses": [
+      "Yes, watch me do it once.",
+      "Sure. I’ll show you the first one.",
+      "Of course. Then you can try."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Can you show me an example?",
+        "chinese": "可以给我看一个示例吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, watch me do it once.",
+        "chinese": "可以，看我做一遍。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll try after you show me.",
+        "chinese": "好的，你示范后我来试。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "show me",
+        "chinese": "给我看；示范给我",
+        "pronunciation": "show-mee",
+        "note": "不会做时请对方演示。",
+        "example": "Can you show me?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_007",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 7,
+    "english": "Watch me first, then you can try.",
+    "chinese": "先看我操作，然后你再试。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Trainer",
+    "roleZh": "培训人员可能会说",
+    "audioNormal": "/audio/en-US/communication_007-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_007-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Trainer",
+    "speakerRoleZh": "培训人员可能会说",
+    "variants": [
+      "Watch me first, then you can try."
+    ],
+    "recommendedResponses": [
+      "Yes, I’ll watch first.",
+      "Can you show me one more time?",
+      "Okay, I’ll try after you show me."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Trainer",
+        "speakerRoleZh": "培训人员",
+        "english": "Watch me first, then you can try.",
+        "chinese": "先看我操作，然后你再试。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Yes, I’ll watch first.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Watch me",
+        "chinese": "重点词组",
+        "pronunciation": "Watch me",
+        "note": "这句话里的工作关键词。",
+        "example": "Watch me first, then you can try."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_008",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 8,
+    "english": "Stop and ask if anything is unclear.",
+    "chinese": "有任何不清楚的地方就停下来问。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/communication_008-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_008-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Stop and ask if anything is unclear."
+    ],
+    "recommendedResponses": [
+      "Can you say that again?",
+      "Can you write it down?",
+      "Let me confirm first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Stop and ask if anything is unclear.",
+        "chinese": "有任何不清楚的地方就停下来问。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Can you say that again?",
+        "chinese": "你可以再说一遍吗？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Stop and",
+        "chinese": "重点词组",
+        "pronunciation": "Stop and",
+        "note": "这句话里的工作关键词。",
+        "example": "Stop and ask if anything is unclear."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_009",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 9,
+    "english": "I have not been trained for this task.",
+    "chinese": "我没有接受过这项工作的培训。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_009-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_009-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I have not been trained for this task."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I have not been trained for this task.",
+        "chinese": "我没有接受过这项工作的培训。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "have not",
+        "chinese": "重点词组",
+        "pronunciation": "have not",
+        "note": "这句话里的工作关键词。",
+        "example": "I have not been trained for this task."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_010",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 10,
+    "english": "Do not do that task. You are not trained for it.",
+    "chinese": "不要做那项工作。你还没有受过培训。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/communication_010-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_010-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Do not do work you are not trained for.",
+      "Ask before doing that task."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it.",
+      "Can you show me how?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Do not do that task. You are not trained for it.",
+        "chinese": "不要做那项工作。你还没有受过培训。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我现在就做。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "trained for",
+        "chinese": "接受过培训",
+        "pronunciation": "trained for",
+        "note": "表示已经被教过并允许做某项工作。",
+        "example": "I am not trained for this machine."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_011",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 1,
+    "english": "I need help with this task.",
+    "chinese": "这项工作我需要帮助。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_011-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_011-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can you help me with this task?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "Yes, I can help you.",
+      "Sure. What part is hard?",
+      "Ask Kevin to help you first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I need help with this task.",
+        "chinese": "这项工作我需要帮助。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Sure. What part do you need help with?",
+        "chinese": "可以。你哪一部分需要帮忙？"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I am not sure which container to use.",
+        "chinese": "我不确定该用哪个容器。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need help",
+        "chinese": "需要帮助",
+        "pronunciation": "need-help",
+        "note": "任务不会做或做不过来时求助。",
+        "example": "I need help."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_012",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 12,
+    "english": "Tell me as soon as you know there will be a delay.",
+    "chinese": "一发现可能延误就马上告诉我。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/communication_012-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_012-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 3",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Tell me as soon as you know there will be a delay."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it.",
+      "Can you show me how?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Tell me as soon as you know there will be a delay.",
+        "chinese": "一发现可能延误就马上告诉我。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我现在就做。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Tell me",
+        "chinese": "重点词组",
+        "pronunciation": "Tell me",
+        "note": "这句话里的工作关键词。",
+        "example": "Tell me as soon as you know there will be a delay."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_013",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 13,
+    "english": "The equipment problem is slowing us down.",
+    "chinese": "设备问题正在影响工作进度。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_013-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_013-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "The equipment problem is slowing us down."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "The equipment problem is slowing us down.",
+        "chinese": "设备问题正在影响工作进度。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "equipment problem",
+        "chinese": "重点词组",
+        "pronunciation": "equipment problem",
+        "note": "这句话里的工作关键词。",
+        "example": "The equipment problem is slowing us down."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_014",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 6,
+    "english": "Do not keep using damaged equipment.",
+    "chinese": "不要继续使用损坏的设备。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/communication_014-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_014-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Stop using damaged equipment.",
+      "Do not use broken equipment."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll stop using it.",
+      "I’ll report it to you.",
+      "Should I use the backup machine?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Do not keep using damaged equipment.",
+        "chinese": "不要继续使用损坏的设备。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll stop and tell you.",
+        "chinese": "好的，我会停下来并告诉你。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "damaged equipment",
+        "chinese": "损坏的设备",
+        "pronunciation": "DAM-ijd ee-KWIP-ment",
+        "note": "指坏掉或不安全的机器、工具。",
+        "example": "Report damaged equipment."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_015",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 15,
+    "english": "Use only the approved tools for this job.",
+    "chinese": "这项工作只能使用批准的工具。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/communication_015-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_015-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Use only the approved tools for this job."
+    ],
+    "recommendedResponses": [
+      "Let me check your order.",
+      "I’m sorry about that.",
+      "Let me get my manager."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Use only the approved tools for this job.",
+        "chinese": "这项工作只能使用批准的工具。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Let me check your order.",
+        "chinese": "我帮你查一下订单。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Use only",
+        "chinese": "重点词组",
+        "pronunciation": "Use only",
+        "note": "这句话里的工作关键词。",
+        "example": "Use only the approved tools for this job."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_016",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 7,
+    "english": "The approved tool is not available.",
+    "chinese": "批准使用的工具现在没有。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_016-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_016-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "The correct tool is not here.",
+      "I cannot find the approved tool."
+    ],
+    "recommendedResponses": [
+      "Use the backup tool for now.",
+      "Let me show you where it is.",
+      "Do not continue until we find the right tool."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "The approved tool is not available.",
+        "chinese": "批准使用的工具现在没有。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Use the backup tool for now.",
+        "chinese": "先用备用工具。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay. Is this the backup tool?",
+        "chinese": "好的。这是备用工具吗？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "approved tool",
+        "chinese": "批准使用的工具",
+        "pronunciation": "uh-PROOVD tool",
+        "note": "指店里允许使用的正确工具。",
+        "example": "Use the approved tool."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_017",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 5,
+    "english": "Please correct this before continuing.",
+    "chinese": "继续之前请先把这个问题改正。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/communication_017-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_017-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Fix this before you continue.",
+      "Make this right first."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll fix it now.",
+      "Can you show me which part is wrong?",
+      "I’ll correct it before I continue."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Please correct this before continuing.",
+        "chinese": "继续之前请先把这个问题改正。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay. Which part should I fix?",
+        "chinese": "好的。我应该改哪一部分？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "This label needs today’s date.",
+        "chinese": "这个标签需要今天的日期。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "correct this",
+        "chinese": "把这个改正确",
+        "pronunciation": "kuh-REKT this",
+        "note": "主管要求你先修正错误再继续。",
+        "example": "Correct this first."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_018",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 2,
+    "english": "Please redo this part.",
+    "chinese": "请把这一部分重做。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/communication_018-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_018-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Do this part again.",
+      "Redo this section."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll redo that part.",
+      "Can you show me the correct way?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Please redo this part.",
+        "chinese": "请把这一部分重做。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll redo it now.",
+        "chinese": "好的，我现在重做。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Can you show me the correct way?",
+        "chinese": "你可以给我看正确做法吗？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "redo",
+        "chinese": "重做",
+        "pronunciation": "ree-DOO",
+        "note": "某部分不合格，需要再做一次。",
+        "example": "Redo the label."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_019",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 19,
+    "english": "Please slow down and focus on accuracy.",
+    "chinese": "请放慢速度，注意准确性。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/communication_019-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_019-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Can you slow down and focus on accuracy?",
+      "Could you please slow down and focus on accuracy?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it.",
+      "Can you show me how?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Please slow down and focus on accuracy.",
+        "chinese": "请放慢速度，注意准确性。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我现在就做。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "slow down",
+        "chinese": "重点词组",
+        "pronunciation": "slow down",
+        "note": "这句话里的工作关键词。",
+        "example": "Please slow down and focus on accuracy."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_020",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 20,
+    "english": "Stop work if there is an immediate danger.",
+    "chinese": "如果存在即时危险，立即停止工作。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/communication_020-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_020-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Stop work if there is an immediate danger."
+    ],
+    "recommendedResponses": [
+      "Step aside.",
+      "I’ll be careful.",
+      "I’ll tell the manager right now."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Stop work if there is an immediate danger.",
+        "chinese": "如果存在即时危险，立即停止工作。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Step aside.",
+        "chinese": "让到一边。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Stop work",
+        "chinese": "重点词组",
+        "pronunciation": "Stop work",
+        "note": "这句话里的工作关键词。",
+        "example": "Stop work if there is an immediate danger."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_021",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 21,
+    "english": "Report mistakes immediately so we can correct them.",
+    "chinese": "发现错误要立即报告，以便及时纠正。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/communication_021-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_021-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Report mistakes immediately so we can correct them."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it.",
+      "Can you show me how?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Report mistakes immediately so we can correct them.",
+        "chinese": "发现错误要立即报告，以便及时纠正。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我现在就做。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Report mistakes",
+        "chinese": "重点词组",
+        "pronunciation": "Report mistakes",
+        "note": "这句话里的工作关键词。",
+        "example": "Report mistakes immediately so we can correct them."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_022",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 22,
+    "english": "Follow the attendance policy when reporting an absence.",
+    "chinese": "请按照公司的出勤政策报告缺勤。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/communication_022-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_022-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Follow the attendance policy when reporting an absence."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it.",
+      "Can you show me how?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Follow the attendance policy when reporting an absence.",
+        "chinese": "请按照公司的出勤政策报告缺勤。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我现在就做。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Follow attendance",
+        "chinese": "重点词组",
+        "pronunciation": "Follow attendance",
+        "note": "这句话里的工作关键词。",
+        "example": "Follow the attendance policy when reporting an absence."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_023",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 8,
+    "english": "Who is the manager today?",
+    "chinese": "今天谁是经理？",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_023-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_023-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Who is in charge today?",
+      "Who should I report to today?"
+    ],
+    "recommendedResponses": [
+      "Maria is the manager today.",
+      "Kevin is in charge today.",
+      "The manager is in the office."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Who is the manager today?",
+        "chinese": "今天谁是经理？"
+      },
+      {
+        "speakerRole": "Coworker",
+        "speakerRoleZh": "同事可能会说",
+        "english": "Maria is the manager today.",
+        "chinese": "Maria 今天是经理。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Thank you. I need to check in with her.",
+        "chinese": "谢谢。我需要去找她报到。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "manager today",
+        "chinese": "今天的经理；今天负责的人",
+        "pronunciation": "MAN-uh-jer tuh-DAY",
+        "note": "第一天上班或换班时，用来确认今天该找谁。",
+        "example": "The manager today is Maria."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_024",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 4,
+    "english": "I am new here.",
+    "chinese": "我是新来的。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_024-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_024-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "This is my first day.",
+      "I just started here."
+    ],
+    "recommendedResponses": [
+      "Welcome. I’ll show you around.",
+      "Okay. Let me introduce you to the team.",
+      "No problem. Ask me if you have questions."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "I am new here.",
+        "chinese": "我是新来的。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Welcome. I’ll show you where to start.",
+        "chinese": "欢迎。我带你看从哪里开始。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "new here",
+        "chinese": "新来的；刚来这里工作",
+        "pronunciation": "noo-heer",
+        "note": "第一天上班时告诉别人自己还不熟悉环境。",
+        "example": "She is new here."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_025",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 25,
+    "english": "I need to speak with you privately.",
+    "chinese": "我需要单独和你谈一下。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/communication_025-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_025-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "I need to get to speak with you privately.",
+      "I have to get to speak with you privately."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it.",
+      "Can you show me how?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "I need to speak with you privately.",
+        "chinese": "我需要单独和你谈一下。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我现在就做。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need speak",
+        "chinese": "重点词组",
+        "pronunciation": "need speak",
+        "note": "这句话里的工作关键词。",
+        "example": "I need to speak with you privately."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_026",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 9,
+    "english": "Is there anything I can improve?",
+    "chinese": "我还有什么可以改进的吗？",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_026-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_026-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What can I do better?",
+      "Is there anything I should change?"
+    ],
+    "recommendedResponses": [
+      "Your work is good. Just check the labels carefully.",
+      "Yes. Please keep your station cleaner.",
+      "Try to work a little faster after you understand the steps."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Is there anything I can improve?",
+        "chinese": "我还有什么可以改进的吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Your work is good. Just check the labels carefully.",
+        "chinese": "你做得不错。只是要仔细检查标签。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "improve",
+        "chinese": "改进；做得更好",
+        "pronunciation": "im-PROOV",
+        "note": "员工想知道自己哪里可以做得更好时使用。",
+        "example": "I want to improve."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_027",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 27,
+    "english": "These are the expectations for the next two weeks.",
+    "chinese": "这是未来两周的工作要求。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/communication_027-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_027-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "These are the expectations for the next two weeks."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it.",
+      "Can you show me how?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "These are the expectations for the next two weeks.",
+        "chinese": "这是未来两周的工作要求。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我现在就做。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "These expectations",
+        "chinese": "重点词组",
+        "pronunciation": "These expectations",
+        "note": "这句话里的工作关键词。",
+        "example": "These are the expectations for the next two weeks."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_028",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 28,
+    "english": "Can I have a copy of the written expectations?",
+    "chinese": "我可以拿一份书面要求吗？",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_028-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_028-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can I have a copy of the written expectations, please?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Can I have a copy of the written expectations?",
+        "chinese": "我可以拿一份书面要求吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "have copy",
+        "chinese": "重点词组",
+        "pronunciation": "have copy",
+        "note": "这句话里的工作关键词。",
+        "example": "Can I have a copy of the written expectations?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_029",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 29,
+    "english": "I would like time to review this document.",
+    "chinese": "我想花一点时间看一下这份文件。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_029-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_029-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I would like time to review this document."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I would like time to review this document.",
+        "chinese": "我想花一点时间看一下这份文件。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "like time",
+        "chinese": "重点词组",
+        "pronunciation": "like time",
+        "note": "这句话里的工作关键词。",
+        "example": "I would like time to review this document."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_030",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 30,
+    "english": "The next worker has not arrived yet.",
+    "chinese": "接班员工还没有到。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_030-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_030-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "The next worker has not arrived yet."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "The next worker has not arrived yet.",
+        "chinese": "接班员工还没有到。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "next worker",
+        "chinese": "重点词组",
+        "pronunciation": "next worker",
+        "note": "这句话里的工作关键词。",
+        "example": "The next worker has not arrived yet."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_031",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_repeat_confirm",
+    "scenarioTitle": "听不懂和请对方重复",
+    "sequence": 31,
+    "english": "Can you check my work before I leave?",
+    "chinese": "我离开前可以帮我检查一下工作吗？",
+    "scenario": "没听清时请对方再说一遍、写下来或示范。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_031-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_031-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Could you check my work before I leave?",
+      "Can you please check my work before I leave?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Can you check my work before I leave?",
+        "chinese": "我离开前可以帮我检查一下工作吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "check my",
+        "chinese": "重点词组",
+        "pronunciation": "check my",
+        "note": "这句话里的工作关键词。",
+        "example": "Can you check my work before I leave?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_032",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 32,
+    "english": "Thank you for reporting the problem early.",
+    "chinese": "谢谢你及时报告这个问题。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/communication_032-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_032-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Thank you for reporting the problem early."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it.",
+      "Can you show me how?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thank you for reporting the problem early.",
+        "chinese": "谢谢你及时报告这个问题。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我现在就做。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Thank for",
+        "chinese": "重点词组",
+        "pronunciation": "Thank for",
+        "note": "这句话里的工作关键词。",
+        "example": "Thank you for reporting the problem early."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_033",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 10,
+    "english": "Good job following the procedure.",
+    "chinese": "你按照流程完成得很好。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/communication_033-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_033-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "You followed the steps well.",
+      "Nice work using the correct procedure."
+    ],
+    "recommendedResponses": [
+      "Thank you. I’ll keep doing it that way.",
+      "Thanks. I’ll follow the same steps next time."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Good job following the procedure.",
+        "chinese": "你按流程做得很好。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Thank you. I’ll keep doing it that way.",
+        "chinese": "谢谢。我会继续这样做。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "procedure",
+        "chinese": "流程；规定步骤",
+        "pronunciation": "proh-SEE-jer",
+        "note": "餐厅工作中必须按步骤做的流程。",
+        "example": "Follow the procedure."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_034",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 34,
+    "english": "Is there anything I can improve?",
+    "chinese": "我还有什么可以改进的吗？",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_034-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_034-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "workplace",
+      "supervisor",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Is this there anything I can improve?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Is there anything I can improve?",
+        "chinese": "我还有什么可以改进的吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "there anything",
+        "chinese": "重点词组",
+        "pronunciation": "there anything",
+        "note": "这句话里的工作关键词。",
+        "example": "Is there anything I can improve?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_035",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_repeat_confirm",
+    "scenarioTitle": "听不懂和请对方重复",
+    "sequence": 7,
+    "english": "Can you repeat the last part?",
+    "chinese": "你可以重复最后一部分吗？",
+    "scenario": "没听清时请对方再说一遍、写下来或示范。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_035-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_035-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Could you say the last part again?",
+      "I did not hear the last part."
+    ],
+    "recommendedResponses": [
+      "Sure. The last part was about cleaning the table.",
+      "Yes. I said to label it first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Can you repeat the last part?",
+        "chinese": "你可以重复最后一部分吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Sure. Label it before you store it.",
+        "chinese": "可以。存放前先贴标签。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "repeat",
+        "chinese": "重复；再说一遍",
+        "pronunciation": "ri-PEET",
+        "note": "没听清时请对方再说一次。",
+        "example": "Please repeat that."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_036",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_repeat_confirm",
+    "scenarioTitle": "听不懂和请对方重复",
+    "sequence": 36,
+    "english": "Do you mean this tray or that tray?",
+    "chinese": "你是说这个托盘还是那个托盘？",
+    "scenario": "没听清时请对方再说一遍、写下来或示范。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_036-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_036-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Is this the right container?",
+        "chinese": "这是正确的容器吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Yes, use that one.",
+        "chinese": "是的，用那个。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll use this container.",
+        "chinese": "好的，我用这个容器。"
+      }
+    ],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_037",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 37,
+    "english": "Should I ask the manager first?",
+    "chinese": "我应该先问经理吗？",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_037-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_037-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "I heard “fries.” Is that correct?",
+        "chinese": "我听到的是“薯条”，对吗？"
+      },
+      {
+        "speakerRole": "Coworker",
+        "speakerRoleZh": "同事可能会说",
+        "english": "No, I said rice.",
+        "chinese": "不是，我说的是米饭。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, rice. Thank you.",
+        "chinese": "好的，米饭。谢谢。"
+      }
+    ],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_038",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_coworker_help",
+    "scenarioTitle": "同事协作和求助",
+    "sequence": 38,
+    "english": "I can help after I finish this order.",
+    "chinese": "我做完这个订单后可以帮忙。",
+    "scenario": "同事请你帮忙，但你手上还有任务。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_038-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_038-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "supplement"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Should I stop what I am doing?",
+        "chinese": "我要先停下手上的事吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Yes, stop for now and help with this order.",
+        "chinese": "是的，先停一下，帮忙处理这个订单。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll switch now.",
+        "chinese": "好的，我现在切换过去。"
+      }
+    ],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_039",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_first_day",
+    "scenarioTitle": "第一天报到和找主管",
+    "sequence": 39,
+    "english": "I am new here, so I may need you to show me once.",
+    "chinese": "我是新来的，可能需要你示范一次。",
+    "scenario": "第一天到餐厅上班，知道去哪里、找谁、先做什么。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_039-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_039-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "I can do that, but I need gloves first.",
+        "chinese": "我可以做，但我需要先戴手套。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Good. Gloves are by the sink.",
+        "chinese": "很好。手套在水槽旁边。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll put them on first.",
+        "chinese": "好的，我先戴上。"
+      }
+    ],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_040",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_general",
+    "scenarioTitle": "听不清、没理解、找主管、和同事配合。",
+    "sequence": 40,
+    "english": "Can you write it on the ticket?",
+    "chinese": "你可以写在订单票上吗？",
+    "scenario": "口头要求容易忘，需要写下来。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_040-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_040-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "supplement"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Can you say the order number again?",
+        "chinese": "你可以再说一次订单号吗？"
+      },
+      {
+        "speakerRole": "Coworker",
+        "speakerRoleZh": "同事可能会说",
+        "english": "Sure, it is 138.",
+        "chinese": "可以，是 138。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Got it. Order 138.",
+        "chinese": "明白了。138 号订单。"
+      }
+    ],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_041",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_general",
+    "scenarioTitle": "听不清、没理解、找主管、和同事配合。",
+    "sequence": 41,
+    "english": "Which one should I use?",
+    "chinese": "我应该用哪一个？",
+    "scenario": "工具、容器或清洁剂有多个选择。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_041-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_041-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "supplement"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_042",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_repeat_confirm",
+    "scenarioTitle": "听不懂和请对方重复",
+    "sequence": 6,
+    "english": "Is this the right container?",
+    "chinese": "这是正确的容器吗？",
+    "scenario": "没听清时请对方再说一遍、写下来或示范。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_042-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_042-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 1",
+    "variants": [
+      "Is this the correct container?",
+      "Should I use this container?"
+    ],
+    "recommendedResponses": [
+      "Yes, use that one.",
+      "No, use the clear one.",
+      "Let me check with the supervisor."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Is this the right container?",
+        "chinese": "这是正确的容器吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Yes, use that one.",
+        "chinese": "是的，用那个。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll use this container.",
+        "chinese": "好的，我用这个容器。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "right container",
+        "chinese": "正确的容器",
+        "pronunciation": "rait kuhn-TAY-ner",
+        "note": "right 在这里是“正确的”，不是方向右边。",
+        "example": "Use the right container."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_043",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_general",
+    "scenarioTitle": "听不清、没理解、找主管、和同事配合。",
+    "sequence": 43,
+    "english": "Do you want me in the front or in the back?",
+    "chinese": "你要我在前面还是后面？",
+    "scenario": "不知道被安排去前台还是后厨。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_043-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_043-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "supplement"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_044",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_repeat_confirm",
+    "scenarioTitle": "听不懂和请对方重复",
+    "sequence": 8,
+    "english": "I heard “fries.” Is that correct?",
+    "chinese": "我听到的是“薯条”，对吗？",
+    "scenario": "没听清时请对方再说一遍、写下来或示范。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_044-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_044-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [
+      "Did you say fries?",
+      "I heard fries. Is that right?"
+    ],
+    "recommendedResponses": [
+      "Yes, fries.",
+      "No, I said rice.",
+      "Check the ticket again."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "I heard “fries.” Is that correct?",
+        "chinese": "我听到的是“薯条”，对吗？"
+      },
+      {
+        "speakerRole": "Coworker",
+        "speakerRoleZh": "同事可能会说",
+        "english": "No, I said rice.",
+        "chinese": "不是，我说的是米饭。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, rice. Thank you.",
+        "chinese": "好的，米饭。谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "I heard",
+        "chinese": "我听到的是",
+        "pronunciation": "ai hurd",
+        "note": "用于确认自己刚才听到的内容。",
+        "example": "I heard chicken."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_045",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_general",
+    "scenarioTitle": "听不清、没理解、找主管、和同事配合。",
+    "sequence": 45,
+    "english": "Can you point to it?",
+    "chinese": "你可以指给我看吗？",
+    "scenario": "不知道对方说的是哪个物品或位置。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_045-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_045-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "supplement"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_046",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_task_priority",
+    "scenarioTitle": "任务顺序和优先级",
+    "sequence": 46,
+    "english": "Is this urgent?",
+    "chinese": "这个急吗？",
+    "scenario": "同时有多个任务，需要判断优先级。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_046-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_046-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "supplement"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_047",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_repeat_confirm",
+    "scenarioTitle": "听不懂和请对方重复",
+    "sequence": 10,
+    "english": "Should I stop what I am doing?",
+    "chinese": "我要先停下手上的事吗？",
+    "scenario": "没听清时请对方再说一遍、写下来或示范。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_047-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_047-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [
+      "Should I stop this first?",
+      "Do you want me to stop now?"
+    ],
+    "recommendedResponses": [
+      "Yes, stop for now.",
+      "No, finish that first.",
+      "Finish this, then switch."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Should I stop what I am doing?",
+        "chinese": "我要先停下手上的事吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Yes, stop for now and help with this order.",
+        "chinese": "是的，先停一下，帮忙处理这个订单。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll switch now.",
+        "chinese": "好的，我现在切换过去。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "stop what I am doing",
+        "chinese": "停下手上的事",
+        "pronunciation": "stop wuht ai am DOO-ing",
+        "note": "用于确认是否要暂停当前任务。",
+        "example": "Stop what you are doing."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_048",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_repeat_confirm",
+    "scenarioTitle": "听不懂和请对方重复",
+    "sequence": 4,
+    "english": "I can do that, but I need gloves first.",
+    "chinese": "我可以做，但我需要先戴手套。",
+    "scenario": "没听清时请对方再说一遍、写下来或示范。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_048-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_048-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 1",
+    "variants": [
+      "I can do it, but I need gloves.",
+      "I need gloves before I do that."
+    ],
+    "recommendedResponses": [
+      "Get gloves first.",
+      "They are by the sink.",
+      "Good. Put on gloves first."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "I can do that, but I need gloves first.",
+        "chinese": "我可以做，但我需要先戴手套。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Good. Gloves are by the sink.",
+        "chinese": "很好。手套在水槽旁边。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I’ll put them on first.",
+        "chinese": "好的，我先戴上。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "gloves first",
+        "chinese": "先戴手套",
+        "pronunciation": "gluvz furst",
+        "note": "first 表示先做这件事。",
+        "example": "Wash hands first."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_049",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_repeat_confirm",
+    "scenarioTitle": "听不懂和请对方重复",
+    "sequence": 2,
+    "english": "Can you say the order number again?",
+    "chinese": "你可以再说一次订单号吗？",
+    "scenario": "没听清时请对方再说一遍、写下来或示范。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_049-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_049-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 1",
+    "variants": [
+      "Can you repeat the order number?",
+      "What is the order number again?"
+    ],
+    "recommendedResponses": [
+      "It is order 24.",
+      "Sure, it is 138.",
+      "Check the screen for the number."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Can you say the order number again?",
+        "chinese": "你可以再说一次订单号吗？"
+      },
+      {
+        "speakerRole": "Coworker",
+        "speakerRoleZh": "同事可能会说",
+        "english": "Sure, it is 138.",
+        "chinese": "可以，是 138。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Got it. Order 138.",
+        "chinese": "明白了。138 号订单。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "order number",
+        "chinese": "订单号",
+        "pronunciation": "OR-der NUM-ber",
+        "note": "外卖、前台和厨房常用来核对订单。",
+        "example": "What is the order number?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "communication_050",
+    "moduleId": "communication",
+    "moduleTitle": "听不懂、确认和同事沟通",
+    "scenarioId": "communication_repeat_confirm",
+    "scenarioTitle": "听不懂和请对方重复",
+    "sequence": 50,
+    "english": "Do you want this now or later?",
+    "chinese": "你要我现在做还是晚点做？",
+    "scenario": "没听清时请对方再说一遍、写下来或示范。",
+    "importance": "避免装懂和误做任务，是上班第一天最重要的工作表达。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/communication_050-normal.mp3",
+    "audioSlow": "/audio/en-US/communication_050-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "communication",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  }
+]

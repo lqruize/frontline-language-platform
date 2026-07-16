@@ -1,0 +1,2989 @@
+[
+  {
+    "id": "emergency_safety_001",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_general",
+    "scenarioTitle": "热油、刀具、滑倒、受伤、机器故障和紧急报告。",
+    "sequence": 1,
+    "english": "I have a peanut allergy. Is this safe for me?",
+    "chinese": "我对花生过敏，这个我可以安全食用吗？",
+    "scenario": "顾客说明花生过敏，员工不凭记忆作保证，而是核对配料和交叉接触风险。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/emergency_safety_001-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_001-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back"
+    ],
+    "active": false,
+    "difficulty": "Level 3",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "I have a peanut allergy. Is this safe for me, please?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll be careful.",
+      "Got it.",
+      "I’ll do that safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "I have a peanut allergy. Is this safe for me?",
+        "chinese": "我对花生过敏，这个我可以安全食用吗？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll be careful.",
+        "chinese": "好的。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "have peanut",
+        "chinese": "重点词组",
+        "pronunciation": "have peanut",
+        "note": "这句话里的工作关键词。",
+        "example": "I have a peanut allergy. Is this safe for me?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_002",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_fire_gas_emergency",
+    "scenarioTitle": "火灾和紧急情况",
+    "sequence": 4,
+    "english": "Call 911 now.",
+    "chinese": "现在打 911。",
+    "scenario": "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+    "importance": "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+    "role": "Staff",
+    "roleZh": "店员要说",
+    "audioNormal": "/audio/en-US/emergency_safety_002-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_002-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "emergency",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "店员要说",
+    "variants": [
+      "Call emergency services now.",
+      "Call for help now."
+    ],
+    "recommendedResponses": [
+      "I'm calling now.",
+      "I will call 911 right away.",
+      "Should I stay with the customer?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "Call 911 now.",
+        "chinese": "现在打 911。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "I'm calling now.",
+        "chinese": "我现在打。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "Stay calm and tell them the address.",
+        "chinese": "保持冷静，告诉他们地址。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Call 911",
+        "chinese": "打 911",
+        "pronunciation": "call nine-one-one",
+        "note": "北美紧急情况时拨打的急救、消防或报警电话。",
+        "example": "Call 911 right away."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_003",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_fire_gas_emergency",
+    "scenarioTitle": "火灾和紧急情况",
+    "sequence": 3,
+    "english": "Yes, we close in ten minutes. Some items are sold out.",
+    "chinese": "是的，我们十分钟后关门。有些东西卖完了。",
+    "scenario": "火警、燃气、911和紧急撤离。",
+    "importance": "安全句子必须短、清楚、马上说，关系到受伤和事故。",
+    "role": "Staff",
+    "roleZh": "前台员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_003-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_003-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "We close in ten minutes.",
+      "Some items are no longer available."
+    ],
+    "recommendedResponses": [
+      "What is still available?",
+      "That’s okay.",
+      "I’ll order quickly."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "前台员工",
+        "english": "Yes, we close in ten minutes. Some items are sold out.",
+        "chinese": "是的，我们十分钟后关门。有些东西卖完了。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "What is still available?",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "sold out",
+        "chinese": "卖完了",
+        "pronunciation": "sold out",
+        "note": "某样东西已经没有了。",
+        "example": "The fries are sold out."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_004",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_fire_gas_emergency",
+    "scenarioTitle": "火灾和紧急情况",
+    "sequence": 9,
+    "english": "The customer cannot breathe.",
+    "chinese": "顾客无法呼吸。",
+    "scenario": "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+    "importance": "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_004-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_004-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "emergency",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "The customer is having trouble breathing.",
+      "The customer cannot catch their breath."
+    ],
+    "recommendedResponses": [
+      "Call 911 now.",
+      "Bring the first-aid kit.",
+      "Do not leave the customer alone."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "The customer cannot breathe.",
+        "chinese": "顾客无法呼吸。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Call 911 now. Bring the first-aid kit.",
+        "chinese": "现在打 911。把急救包拿来。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "I'm calling now.",
+        "chinese": "我现在打。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "cannot breathe",
+        "chinese": "无法呼吸",
+        "pronunciation": "KAN-not breeth",
+        "note": "严重紧急情况，必须立即求助。",
+        "example": "He cannot breathe."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_005",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_wet_slip",
+    "scenarioTitle": "湿滑地面和跌倒",
+    "sequence": 5,
+    "english": "There's a drink spilled near the counter.",
+    "chinese": "柜台附近有饮料洒在地上了。",
+    "scenario": "员工发现顾客区域有液体洒出，立即设置警示、限制通行并清理。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/emergency_safety_005-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_005-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "There's a drink spilled near the counter."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll be careful.",
+      "Got it.",
+      "I’ll do that safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "There's a drink spilled near the counter.",
+        "chinese": "柜台附近有饮料洒在地上了。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll be careful.",
+        "chinese": "好的。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "There's drink",
+        "chinese": "重点词组",
+        "pronunciation": "There's drink",
+        "note": "这句话里的工作关键词。",
+        "example": "There's a drink spilled near the counter."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_006",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_wet_slip",
+    "scenarioTitle": "湿滑地面和跌倒",
+    "sequence": 6,
+    "english": "Thank you for telling us. Please step around the area.",
+    "chinese": "谢谢您告诉我们，请绕开这一区域。",
+    "scenario": "员工发现顾客区域有液体洒出，立即设置警示、限制通行并清理。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Staff",
+    "roleZh": "前台员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_006-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_006-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back"
+    ],
+    "active": false,
+    "difficulty": "Level 3",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Thank you for telling us. Please step around the area."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll be careful.",
+      "Got it.",
+      "I’ll do that safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "前台员工",
+        "english": "Thank you for telling us. Please step around the area.",
+        "chinese": "谢谢您告诉我们，请绕开这一区域。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll be careful.",
+        "chinese": "好的。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Thank for",
+        "chinese": "重点词组",
+        "pronunciation": "Thank for",
+        "note": "这句话里的工作关键词。",
+        "example": "Thank you for telling us. Please step around the area."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_007",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_wet_slip",
+    "scenarioTitle": "湿滑地面和跌倒",
+    "sequence": 7,
+    "english": "I'll put up the wet floor sign. Can you bring the mop?",
+    "chinese": "我来放小心地滑警示牌，你可以把拖把拿过来吗？",
+    "scenario": "员工发现顾客区域有液体洒出，立即设置警示、限制通行并清理。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Coworker",
+    "roleZh": "同事可能会说",
+    "audioNormal": "/audio/en-US/emergency_safety_007-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_007-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back"
+    ],
+    "active": false,
+    "difficulty": "Level 3",
+    "speakerRole": "Coworker",
+    "speakerRoleZh": "同事可能会说",
+    "variants": [
+      "I'll put up the wet floor sign. Can you bring the mop, please?"
+    ],
+    "recommendedResponses": [
+      "Walk carefully.",
+      "Put out the wet floor sign.",
+      "Tell a supervisor."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Coworker",
+        "speakerRoleZh": "同事",
+        "english": "I'll put up the wet floor sign. Can you bring the mop?",
+        "chinese": "我来放小心地滑警示牌，你可以把拖把拿过来吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Walk carefully.",
+        "chinese": "小心走。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Put out the wet floor sign.",
+        "chinese": "放出“小心地滑”标志。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "wet floor sign",
+        "chinese": "小心地滑标志",
+        "pronunciation": "wet floor sign",
+        "note": "地面湿时提醒别人小心。",
+        "example": "Put out the wet floor sign."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_008",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_wet_slip",
+    "scenarioTitle": "湿滑地面和跌倒",
+    "sequence": 8,
+    "english": "Keep the sign up until the floor is completely dry.",
+    "chinese": "地面完全干燥之前，不要撤掉警示牌。",
+    "scenario": "员工发现顾客区域有液体洒出，立即设置警示、限制通行并清理。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/emergency_safety_008-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_008-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back"
+    ],
+    "active": false,
+    "difficulty": "Level 3",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Keep the sign up until the floor is completely dry."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll be careful.",
+      "Got it.",
+      "I’ll do that safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Keep the sign up until the floor is completely dry.",
+        "chinese": "地面完全干燥之前，不要撤掉警示牌。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll be careful.",
+        "chinese": "好的。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Keep sign",
+        "chinese": "重点词组",
+        "pronunciation": "Keep sign",
+        "note": "这句话里的工作关键词。",
+        "example": "Keep the sign up until the floor is completely dry."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_009",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_fire_gas_emergency",
+    "scenarioTitle": "火灾和紧急情况",
+    "sequence": 9,
+    "english": "How soon do you need this done?",
+    "chinese": "这项工作需要多快完成？",
+    "scenario": "火警、燃气、911和紧急撤离。",
+    "importance": "安全句子必须短、清楚、马上说，关系到受伤和事故。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_009-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_009-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "How soon do you need this done, please?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "How soon do you need this done?",
+        "chinese": "这项工作需要多快完成？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "How soon",
+        "chinese": "重点词组",
+        "pronunciation": "How soon",
+        "note": "这句话里的工作关键词。",
+        "example": "How soon do you need this done?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_010",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_general",
+    "scenarioTitle": "热油、刀具、滑倒、受伤、机器故障和紧急报告。",
+    "sequence": 10,
+    "english": "Ask for help before the situation becomes unsafe.",
+    "chinese": "在情况变得不安全之前就要请求帮助。",
+    "scenario": "强调员工应在风险扩大前请求支援。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/emergency_safety_010-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_010-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Ask for help before the situation becomes unsafe."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll be careful.",
+      "Got it.",
+      "I’ll do that safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Ask for help before the situation becomes unsafe.",
+        "chinese": "在情况变得不安全之前就要请求帮助。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll be careful.",
+        "chinese": "好的。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Ask for",
+        "chinese": "重点词组",
+        "pronunciation": "Ask for",
+        "note": "这句话里的工作关键词。",
+        "example": "Ask for help before the situation becomes unsafe."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_011",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_general",
+    "scenarioTitle": "热油、刀具、滑倒、受伤、机器故障和紧急报告。",
+    "sequence": 11,
+    "english": "This tool is damaged.",
+    "chinese": "这个工具损坏了。",
+    "scenario": "员工发现工具损坏或不安全。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_011-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_011-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee"
+    ],
+    "active": false,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "This one tool is damaged.",
+      "This item tool is damaged."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll be careful.",
+      "Got it.",
+      "I’ll do that safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "This tool is damaged.",
+        "chinese": "这个工具损坏了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll be careful.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "tool damaged",
+        "chinese": "重点词组",
+        "pronunciation": "tool damaged",
+        "note": "这句话里的工作关键词。",
+        "example": "This tool is damaged."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_012",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_general",
+    "scenarioTitle": "热油、刀具、滑倒、受伤、机器故障和紧急报告。",
+    "sequence": 12,
+    "english": "You need to work faster while maintaining quality.",
+    "chinese": "你需要在保证质量的同时提高速度。",
+    "scenario": "主管要求员工在不牺牲质量和安全的情况下提高效率。",
+    "importance": "安全句子必须短、清楚、马上说，关系到受伤和事故。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/emergency_safety_012-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_012-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "You need to work faster while maintaining quality."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it.",
+      "Can you show me how?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "You need to work faster while maintaining quality.",
+        "chinese": "你需要在保证质量的同时提高速度。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我现在就做。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need work",
+        "chinese": "重点词组",
+        "pronunciation": "need work",
+        "note": "这句话里的工作关键词。",
+        "example": "You need to work faster while maintaining quality."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_013",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_heavy_lifting",
+    "scenarioTitle": "搬重物和梯子安全",
+    "sequence": 13,
+    "english": "Safety comes before production speed.",
+    "chinese": "安全比生产速度更重要。",
+    "scenario": "明确员工不能为了追赶产量忽略安全。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/emergency_safety_013-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_013-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Safety comes before production speed."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll be careful.",
+      "Got it.",
+      "I’ll do that safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Safety comes before production speed.",
+        "chinese": "安全比生产速度更重要。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll be careful.",
+        "chinese": "好的。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Safety comes",
+        "chinese": "重点词组",
+        "pronunciation": "Safety comes",
+        "note": "这句话里的工作关键词。",
+        "example": "Safety comes before production speed."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_014",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_general",
+    "scenarioTitle": "热油、刀具、滑倒、受伤、机器故障和紧急报告。",
+    "sequence": 14,
+    "english": "I disagree with this instruction because of a safety concern.",
+    "chinese": "因为安全问题，我对这项指令有疑问。",
+    "scenario": "员工因安全原因对主管指令提出疑问。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_014-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_014-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee"
+    ],
+    "active": false,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I disagree with this instruction because of a safety concern."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll be careful.",
+      "Got it.",
+      "I’ll do that safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I disagree with this instruction because of a safety concern.",
+        "chinese": "因为安全问题，我对这项指令有疑问。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll be careful.",
+        "chinese": "好的。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "disagree with",
+        "chinese": "重点词组",
+        "pronunciation": "disagree with",
+        "note": "这句话里的工作关键词。",
+        "example": "I disagree with this instruction because of a safety concern."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_015",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_general",
+    "scenarioTitle": "热油、刀具、滑倒、受伤、机器故障和紧急报告。",
+    "sequence": 15,
+    "english": "Do not retaliate against anyone for reporting a safety concern.",
+    "chinese": "任何人报告安全问题都不得受到报复。",
+    "scenario": "强调提出安全问题的员工不应受到打击报复。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/emergency_safety_015-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_015-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee"
+    ],
+    "active": false,
+    "difficulty": "Level 3",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Please don’t retaliate against anyone for reporting a safety concern."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll be careful.",
+      "Got it.",
+      "I’ll do that safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Do not retaliate against anyone for reporting a safety concern.",
+        "chinese": "任何人报告安全问题都不得受到报复。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll be careful.",
+        "chinese": "好的。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "not retaliate",
+        "chinese": "重点词组",
+        "pronunciation": "not retaliate",
+        "note": "这句话里的工作关键词。",
+        "example": "Do not retaliate against anyone for reporting a safety concern."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_016",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_fire_gas_emergency",
+    "scenarioTitle": "火灾和紧急情况",
+    "sequence": 16,
+    "english": "I need to leave early today.",
+    "chinese": "我今天需要提前离开。",
+    "scenario": "火警、燃气、911和紧急撤离。",
+    "importance": "安全句子必须短、清楚、马上说，关系到受伤和事故。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_016-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_016-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I need to get to leave early today.",
+      "I have to get to leave early today."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I need to leave early today.",
+        "chinese": "我今天需要提前离开。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need leave",
+        "chinese": "重点词组",
+        "pronunciation": "need leave",
+        "note": "这句话里的工作关键词。",
+        "example": "I need to leave early today."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_017",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_wet_slip",
+    "scenarioTitle": "湿滑地面和跌倒",
+    "sequence": 17,
+    "english": "Turn off the fryer now.",
+    "chinese": "现在关掉炸炉。",
+    "scenario": "炸炉出现异常或油温问题。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_017-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_017-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement"
+    ],
+    "active": false,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Turn off the fryer now."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll be careful.",
+      "Got it.",
+      "I’ll do that safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Turn off the fryer now.",
+        "chinese": "现在关掉炸炉。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll be careful.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Turn off",
+        "chinese": "重点词组",
+        "pronunciation": "Turn off",
+        "note": "这句话里的工作关键词。",
+        "example": "Turn off the fryer now."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_018",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_fire_gas_emergency",
+    "scenarioTitle": "火灾和紧急情况",
+    "sequence": 7,
+    "english": "The emergency exit is blocked.",
+    "chinese": "紧急出口被挡住了。",
+    "scenario": "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+    "importance": "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_018-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_018-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "The exit is blocked.",
+      "Something is blocking the emergency exit."
+    ],
+    "recommendedResponses": [
+      "Move the boxes away now.",
+      "Tell the manager immediately.",
+      "Keep the exit clear."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "The emergency exit is blocked.",
+        "chinese": "紧急出口被挡住了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Move the boxes away now and keep it clear.",
+        "chinese": "现在把箱子移开，保持出口畅通。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "emergency exit",
+        "chinese": "紧急出口",
+        "pronunciation": "ee-MER-jen-see EK-sit",
+        "note": "火灾或疏散时用来离开的出口。",
+        "example": "Keep the emergency exit clear."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_019",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_equipment_fault",
+    "scenarioTitle": "机器、电线和设备故障",
+    "sequence": 19,
+    "english": "There is smoke coming from the oven.",
+    "chinese": "烤箱冒烟了。",
+    "scenario": "设备异常需要报告。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_019-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_019-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "There is smoke coming from the oven."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll be careful.",
+      "Got it.",
+      "I’ll do that safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "There is smoke coming from the oven.",
+        "chinese": "烤箱冒烟了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll be careful.",
+        "chinese": "好的。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "There smoke",
+        "chinese": "重点词组",
+        "pronunciation": "There smoke",
+        "note": "这句话里的工作关键词。",
+        "example": "There is smoke coming from the oven."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_020",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_fire_gas_emergency",
+    "scenarioTitle": "火灾和紧急情况",
+    "sequence": 5,
+    "english": "The power went out.",
+    "chinese": "停电了。",
+    "scenario": "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+    "importance": "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_020-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_020-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "The power is out.",
+      "We lost power."
+    ],
+    "recommendedResponses": [
+      "Stop using the equipment.",
+      "Use the flashlight and wait for instructions.",
+      "Tell the manager right away."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "The power went out.",
+        "chinese": "停电了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Stop using the equipment and wait here.",
+        "chinese": "停止使用设备，在这里等。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay. I will stay away from the machines.",
+        "chinese": "好的。我会离机器远一点。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "power went out",
+        "chinese": "停电了",
+        "pronunciation": "POW-er went out",
+        "note": "电力突然中断，设备可能不能安全使用。",
+        "example": "The power is out."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_021",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_wet_slip",
+    "scenarioTitle": "湿滑地面和跌倒",
+    "sequence": 21,
+    "english": "The floor drain is backing up.",
+    "chinese": "地漏往上返水了。",
+    "scenario": "地面排水异常。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_021-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_021-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "The floor drain is backing up."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll be careful.",
+      "Got it.",
+      "I’ll do that safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "The floor drain is backing up.",
+        "chinese": "地漏往上返水了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll be careful.",
+        "chinese": "好的。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "floor drain",
+        "chinese": "重点词组",
+        "pronunciation": "floor drain",
+        "note": "这句话里的工作关键词。",
+        "example": "The floor drain is backing up."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_022",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_hot_sharp",
+    "scenarioTitle": "热油和刀具安全",
+    "sequence": 1,
+    "english": "I cut my finger.",
+    "chinese": "我切到手指了。",
+    "scenario": "后厨遇到热油、刀具、炸炉或烫伤割伤风险时，员工要及时提醒和报告。",
+    "importance": "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_022-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_022-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I cut myself.",
+      "My finger is cut."
+    ],
+    "recommendedResponses": [
+      "Put pressure on it.",
+      "Where is the first-aid kit?",
+      "Tell the supervisor right away."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "I cut my finger.",
+        "chinese": "我切到手指了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Put pressure on it. I will get the first-aid kit.",
+        "chinese": "按住伤口。我去拿急救包。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "cut my finger",
+        "chinese": "切到手指",
+        "pronunciation": "kut-my-FING-ger",
+        "note": "刀具造成手指割伤。",
+        "example": "I cut my hand."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_023",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_hot_sharp",
+    "scenarioTitle": "热油和刀具安全",
+    "sequence": 2,
+    "english": "I burned my hand.",
+    "chinese": "我烫到手了。",
+    "scenario": "后厨遇到热油、刀具、炸炉或烫伤割伤风险时，员工要及时提醒和报告。",
+    "importance": "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_023-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_023-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "My hand got burned.",
+      "I burned myself."
+    ],
+    "recommendedResponses": [
+      "Move away from the heat.",
+      "Tell the manager right away.",
+      "Where is the first-aid kit?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "I burned my hand.",
+        "chinese": "我烫到手了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Move away from the fryer. I will get help.",
+        "chinese": "离炸炉远一点。我去找人帮忙。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "burned my hand",
+        "chinese": "烫到手",
+        "pronunciation": "burnd-my-hand",
+        "note": "被热油、热锅或热表面烫伤手。",
+        "example": "She burned her hand."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_024",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_injury_first_aid",
+    "scenarioTitle": "受伤",
+    "sequence": 3,
+    "english": "Where is the first-aid kit?",
+    "chinese": "急救包在哪里？",
+    "scenario": "员工或顾客受伤、流血、无法呼吸或需要急救时，必须快速联系主管和紧急服务。",
+    "importance": "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_024-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_024-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Where can I find the first-aid kit?",
+      "Do we have a first-aid kit?"
+    ],
+    "recommendedResponses": [
+      "It's in the office.",
+      "It's on the wall by the sink.",
+      "I will get it for you."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Where is the first-aid kit?",
+        "chinese": "急救包在哪里？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "It's in the office. I will get it.",
+        "chinese": "在办公室。我去拿。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "first-aid kit",
+        "chinese": "急救包",
+        "pronunciation": "first-ayd kit",
+        "note": "放创可贴、纱布等简单急救用品的盒子。",
+        "example": "Get the first-aid kit."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_025",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_fire_gas_emergency",
+    "scenarioTitle": "火灾和紧急情况",
+    "sequence": 1,
+    "english": "Call the manager right away.",
+    "chinese": "马上叫经理。",
+    "scenario": "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+    "importance": "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_025-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_025-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Get the manager now.",
+      "Tell the manager immediately."
+    ],
+    "recommendedResponses": [
+      "I'm calling the manager now.",
+      "The manager is on the way.",
+      "Should I stop the machine?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Call the manager right away.",
+        "chinese": "马上叫经理。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "I'm calling the manager now.",
+        "chinese": "我现在叫经理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "right away",
+        "chinese": "马上",
+        "pronunciation": "rite-uh-WAY",
+        "note": "表示不能等，要立刻行动。",
+        "example": "Come here right away."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_026",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_equipment_fault",
+    "scenarioTitle": "机器、电线和设备故障",
+    "sequence": 26,
+    "english": "Do not touch that wire.",
+    "chinese": "不要碰那根电线。",
+    "scenario": "发现电线或设备异常。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_026-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_026-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement"
+    ],
+    "active": false,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Please don’t touch that wire."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll be careful.",
+      "Got it.",
+      "I’ll do that safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Do not touch that wire.",
+        "chinese": "不要碰那根电线。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll be careful.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "not touch",
+        "chinese": "重点词组",
+        "pronunciation": "not touch",
+        "note": "这句话里的工作关键词。",
+        "example": "Do not touch that wire."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_027",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_fire_gas_emergency",
+    "scenarioTitle": "火灾和紧急情况",
+    "sequence": 8,
+    "english": "I smell gas.",
+    "chinese": "我闻到煤气味。",
+    "scenario": "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+    "importance": "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_027-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_027-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "There is a gas smell.",
+      "It smells like gas."
+    ],
+    "recommendedResponses": [
+      "Stop using the equipment.",
+      "Do not turn anything on.",
+      "Call the manager now."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "I smell gas.",
+        "chinese": "我闻到煤气味。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Stop using the equipment and step away.",
+        "chinese": "停止使用设备，离开那里。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "I will call the manager now.",
+        "chinese": "我现在叫经理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "smell gas",
+        "chinese": "闻到煤气味",
+        "pronunciation": "smel-gas",
+        "note": "可能有燃气泄漏，不能继续操作设备。",
+        "example": "I smell gas near the stove."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_028",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_equipment_fault",
+    "scenarioTitle": "机器、电线和设备故障",
+    "sequence": 28,
+    "english": "Do not use the machine until it is checked.",
+    "chinese": "机器检查前不要使用。",
+    "scenario": "设备异常后暂停使用。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_028-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_028-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Please don’t use the machine until it is checked."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll be careful.",
+      "Got it.",
+      "I’ll do that safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Do not use the machine until it is checked.",
+        "chinese": "机器检查前不要使用。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll be careful.",
+        "chinese": "好的。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "not use",
+        "chinese": "重点词组",
+        "pronunciation": "not use",
+        "note": "这句话里的工作关键词。",
+        "example": "Do not use the machine until it is checked."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_029",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_injury_first_aid",
+    "scenarioTitle": "受伤",
+    "sequence": 1,
+    "english": "The slicer guard is missing.",
+    "chinese": "切片机防护罩不见了。",
+    "scenario": "员工或顾客受伤、流血、无法呼吸或需要急救时，必须快速联系主管和紧急服务。",
+    "importance": "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_029-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_029-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "The guard is not on the slicer.",
+      "The slicer does not have the guard."
+    ],
+    "recommendedResponses": [
+      "Do not use the slicer.",
+      "Tell the manager right away.",
+      "Use another task for now."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "The slicer guard is missing.",
+        "chinese": "切片机防护罩不见了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Do not use the slicer. I will check it.",
+        "chinese": "不要用切片机。我来检查。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "slicer guard",
+        "chinese": "切片机防护罩",
+        "pronunciation": "SLY-ser gard",
+        "note": "保护手不接触刀片的安全部件。",
+        "example": "The slicer guard is loose."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_030",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_hot_sharp",
+    "scenarioTitle": "热油和刀具安全",
+    "sequence": 3,
+    "english": "Keep the knife pointed down.",
+    "chinese": "让刀尖朝下。",
+    "scenario": "后厨遇到热油、刀具、炸炉或烫伤割伤风险时，员工要及时提醒和报告。",
+    "importance": "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_030-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_030-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Point the knife down.",
+      "Keep the knife facing down."
+    ],
+    "recommendedResponses": [
+      "Okay, I will keep it pointed down.",
+      "Thanks for reminding me.",
+      "I will put it down safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Keep the knife pointed down.",
+        "chinese": "让刀尖朝下。"
+      },
+      {
+        "speakerRole": "Coworker",
+        "speakerRoleZh": "同事可能会说",
+        "english": "Okay, I will carry it safely.",
+        "chinese": "好的，我会安全拿着。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "pointed down",
+        "chinese": "朝下",
+        "pronunciation": "POIN-ted down",
+        "note": "拿刀时刀尖朝下，减少误伤别人。",
+        "example": "Keep it pointed down."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_031",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_fire_gas_emergency",
+    "scenarioTitle": "火灾和紧急情况",
+    "sequence": 6,
+    "english": "The shelf is unstable.",
+    "chinese": "这个架子不稳。",
+    "scenario": "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+    "importance": "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_031-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_031-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "The shelf is not steady.",
+      "This shelf may fall."
+    ],
+    "recommendedResponses": [
+      "Do not put more boxes on it.",
+      "Move away from the shelf.",
+      "Tell the manager before using it."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "The shelf is unstable.",
+        "chinese": "这个架子不稳。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Do not put anything else on it. I will check it.",
+        "chinese": "不要再往上放东西。我来检查。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "unstable",
+        "chinese": "不稳",
+        "pronunciation": "un-STAY-bul",
+        "note": "架子或梯子可能晃动、倒下。",
+        "example": "The ladder is unstable."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_032",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_fire_gas_emergency",
+    "scenarioTitle": "火灾和紧急情况",
+    "sequence": 32,
+    "english": "The box is too heavy for me.",
+    "chinese": "这个箱子对我来说太重了。",
+    "scenario": "火警、燃气、911和紧急撤离。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_032-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_032-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "The box is too heavy for me."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll be careful.",
+      "Got it.",
+      "I’ll do that safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "The box is too heavy for me.",
+        "chinese": "这个箱子对我来说太重了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll be careful.",
+        "chinese": "好的。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "box too",
+        "chinese": "重点词组",
+        "pronunciation": "box too",
+        "note": "这句话里的工作关键词。",
+        "example": "The box is too heavy for me."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_033",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_fire_gas_emergency",
+    "scenarioTitle": "火灾和紧急情况",
+    "sequence": 2,
+    "english": "Can someone help me lift this?",
+    "chinese": "有人可以帮我一起抬这个吗？",
+    "scenario": "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+    "importance": "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_033-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_033-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can someone help me carry this?",
+      "I need help lifting this."
+    ],
+    "recommendedResponses": [
+      "Yes, I can help.",
+      "Wait. Do not lift it alone.",
+      "Use a cart if it is too heavy."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Can someone help me lift this?",
+        "chinese": "有人可以帮我一起抬这个吗？"
+      },
+      {
+        "speakerRole": "Coworker",
+        "speakerRoleZh": "同事可能会说",
+        "english": "Yes. Wait for me. Do not lift it alone.",
+        "chinese": "可以。等我一下。不要一个人抬。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "lift this",
+        "chinese": "抬这个",
+        "pronunciation": "lift-this",
+        "note": "搬重物时请求别人一起抬。",
+        "example": "Help me lift this box."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_034",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_wet_slip",
+    "scenarioTitle": "湿滑地面和跌倒",
+    "sequence": 34,
+    "english": "I slipped but I am okay.",
+    "chinese": "我滑了一下，但我没事。",
+    "scenario": "轻微滑倒后报告。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_034-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_034-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I slipped but I am okay."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll be careful.",
+      "Got it.",
+      "I’ll do that safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I slipped but I am okay.",
+        "chinese": "我滑了一下，但我没事。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll be careful.",
+        "chinese": "好的。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "slipped but",
+        "chinese": "重点词组",
+        "pronunciation": "slipped but",
+        "note": "这句话里的工作关键词。",
+        "example": "I slipped but I am okay."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_035",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_wet_slip",
+    "scenarioTitle": "湿滑地面和跌倒",
+    "sequence": 35,
+    "english": "I slipped and hurt my back.",
+    "chinese": "我滑倒伤到背了。",
+    "scenario": "滑倒造成背部受伤。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_035-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_035-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I slipped and hurt my back."
+    ],
+    "recommendedResponses": [
+      "Call a manager now.",
+      "Get help right away.",
+      "Do not move the person unless it is unsafe."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I slipped and hurt my back.",
+        "chinese": "我滑倒伤到背了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Call a manager now.",
+        "chinese": "好的。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Get help right away.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "slipped and",
+        "chinese": "重点词组",
+        "pronunciation": "slipped and",
+        "note": "这句话里的工作关键词。",
+        "example": "I slipped and hurt my back."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_036",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_fire_gas_emergency",
+    "scenarioTitle": "火灾和紧急情况",
+    "sequence": 10,
+    "english": "The ladder is not steady.",
+    "chinese": "梯子不稳。",
+    "scenario": "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+    "importance": "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_036-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_036-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 1",
+    "variants": [
+      "The ladder is shaky.",
+      "This ladder does not feel safe."
+    ],
+    "recommendedResponses": [
+      "Do not climb it.",
+      "Use another ladder.",
+      "Tell the manager before using it."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "The ladder is not steady.",
+        "chinese": "梯子不稳。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Do not climb it. Use another ladder.",
+        "chinese": "不要爬。换另一把梯子。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "not steady",
+        "chinese": "不稳",
+        "pronunciation": "not-STED-ee",
+        "note": "形容梯子、架子会晃，不安全。",
+        "example": "This chair is not steady."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_037",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_fire_gas_emergency",
+    "scenarioTitle": "火灾和紧急情况",
+    "sequence": 37,
+    "english": "Do not stand on the bucket.",
+    "chinese": "不要站在桶上。",
+    "scenario": "火警、燃气、911和紧急撤离。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_037-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_037-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_038",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_fire_gas_emergency",
+    "scenarioTitle": "火灾和紧急情况",
+    "sequence": 3,
+    "english": "The fire alarm is going off.",
+    "chinese": "火警警报响了。",
+    "scenario": "餐厅出现火灾、燃气、停电、冒烟或疏散风险时，员工必须短句报告并按安全步骤处理。",
+    "importance": "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_038-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_038-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 1",
+    "variants": [
+      "The fire alarm is ringing.",
+      "The alarm is going off."
+    ],
+    "recommendedResponses": [
+      "Everyone needs to leave the building.",
+      "Follow the emergency exit signs.",
+      "Do not go back inside."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "The fire alarm is going off.",
+        "chinese": "火警警报响了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Everyone needs to leave the building now.",
+        "chinese": "所有人现在都要离开建筑。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "going off",
+        "chinese": "响起来",
+        "pronunciation": "GO-ing off",
+        "note": "警报器开始响，表示有紧急情况。",
+        "example": "The alarm is going off."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_039",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_equipment_fault",
+    "scenarioTitle": "机器、电线和设备故障",
+    "sequence": 39,
+    "english": "Where is the fire extinguisher?",
+    "chinese": "灭火器在哪里？",
+    "scenario": "需要知道消防设备位置。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_039-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_039-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_040",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_equipment_fault",
+    "scenarioTitle": "机器、电线和设备故障",
+    "sequence": 40,
+    "english": "The hood fan is not working.",
+    "chinese": "排烟罩风扇不工作。",
+    "scenario": "厨房排烟设备故障。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_040-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_040-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_041",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_wet_slip",
+    "scenarioTitle": "湿滑地面和跌倒",
+    "sequence": 41,
+    "english": "The fryer oil is smoking.",
+    "chinese": "炸油冒烟了。",
+    "scenario": "油温过高或炸炉异常。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_041-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_041-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_042",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_wet_slip",
+    "scenarioTitle": "湿滑地面和跌倒",
+    "sequence": 42,
+    "english": "The dishwasher is leaking.",
+    "chinese": "洗碗机漏水。",
+    "scenario": "设备漏水造成滑倒风险。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_042-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_042-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_043",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_equipment_fault",
+    "scenarioTitle": "机器、电线和设备故障",
+    "sequence": 43,
+    "english": "The cooler door will not close.",
+    "chinese": "冷藏柜门关不上。",
+    "scenario": "食品温度和设备问题。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_043-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_043-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_044",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_fire_gas_emergency",
+    "scenarioTitle": "火灾和紧急情况",
+    "sequence": 44,
+    "english": "This food may be contaminated.",
+    "chinese": "这个食物可能被污染了。",
+    "scenario": "火警、燃气、911和紧急撤离。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_044-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_044-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_045",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_fire_gas_emergency",
+    "scenarioTitle": "火灾和紧急情况",
+    "sequence": 45,
+    "english": "A customer says they have an allergy.",
+    "chinese": "顾客说他们有过敏。",
+    "scenario": "火警、燃气、911和紧急撤离。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_045-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_045-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_046",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_fire_gas_emergency",
+    "scenarioTitle": "火灾和紧急情况",
+    "sequence": 46,
+    "english": "Stop serving that item for now.",
+    "chinese": "先暂停供应那个产品。",
+    "scenario": "火警、燃气、911和紧急撤离。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_046-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_046-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_047",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_wet_slip",
+    "scenarioTitle": "湿滑地面和跌倒",
+    "sequence": 47,
+    "english": "We need to document the incident.",
+    "chinese": "我们需要记录这次事故。",
+    "scenario": "受伤、滑倒或设备事故后。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_047-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_047-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_048",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_injury_first_aid",
+    "scenarioTitle": "受伤",
+    "sequence": 5,
+    "english": "I need to fill out an incident report.",
+    "chinese": "我需要填写事故报告。",
+    "scenario": "员工或顾客受伤、流血、无法呼吸或需要急救时，必须快速联系主管和紧急服务。",
+    "importance": "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_048-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_048-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [
+      "I need to write an incident report.",
+      "Should I fill out an incident report?"
+    ],
+    "recommendedResponses": [
+      "Yes, fill it out after you get help.",
+      "Tell the manager what happened.",
+      "Write the time and what happened."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "I need to fill out an incident report.",
+        "chinese": "我需要填写事故报告。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Yes. Get first aid first, then fill it out.",
+        "chinese": "是的。先处理伤口，然后填写。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "incident report",
+        "chinese": "事故报告",
+        "pronunciation": "IN-si-dent ri-PORT",
+        "note": "记录受伤、摔倒或安全事故的表格。",
+        "example": "Write an incident report."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_049",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_injury_first_aid",
+    "scenarioTitle": "受伤",
+    "sequence": 2,
+    "english": "Should we call emergency services?",
+    "chinese": "我们要叫急救或报警吗？",
+    "scenario": "员工或顾客受伤、流血、无法呼吸或需要急救时，必须快速联系主管和紧急服务。",
+    "importance": "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_049-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_049-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 1",
+    "variants": [
+      "Should we call 911?",
+      "Do we need emergency help?"
+    ],
+    "recommendedResponses": [
+      "Yes, call 911 now.",
+      "Call the manager and emergency services.",
+      "Stay with the person until help comes."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Should we call emergency services?",
+        "chinese": "我们要叫急救或报警吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Yes, call 911 now.",
+        "chinese": "是的，现在打 911。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "emergency services",
+        "chinese": "紧急服务",
+        "pronunciation": "ee-MER-jen-see SER-vuh-siz",
+        "note": "指急救、消防或警察等紧急帮助。",
+        "example": "Call emergency services now."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "emergency_safety_050",
+    "moduleId": "emergency_safety",
+    "moduleTitle": "安全、受伤和紧急情况",
+    "scenarioId": "emergency_safety_injury_first_aid",
+    "scenarioTitle": "受伤",
+    "sequence": 4,
+    "english": "Do not move the injured person.",
+    "chinese": "不要移动受伤的人。",
+    "scenario": "员工或顾客受伤、流血、无法呼吸或需要急救时，必须快速联系主管和紧急服务。",
+    "importance": "安全句必须短、清楚、能立刻行动，避免员工或顾客继续受伤。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/emergency_safety_050-normal.mp3",
+    "audioSlow": "/audio/en-US/emergency_safety_050-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "emergency_safety",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 1",
+    "variants": [
+      "Do not move them.",
+      "Keep the injured person still."
+    ],
+    "recommendedResponses": [
+      "Okay, I will keep people away.",
+      "I will wait for emergency help.",
+      "Should I call 911 now?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Do not move the injured person.",
+        "chinese": "不要移动受伤的人。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "Okay. I will keep people away and call for help.",
+        "chinese": "好的。我会让大家远离并求助。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "injured person",
+        "chinese": "受伤的人",
+        "pronunciation": "IN-jerd PER-sun",
+        "note": "指已经受伤、可能需要急救的人。",
+        "example": "Help the injured person."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  }
+]

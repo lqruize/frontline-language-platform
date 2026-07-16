@@ -1,0 +1,4101 @@
+[
+  {
+    "id": "daily_life_001",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_bank_paycheck",
+    "scenarioTitle": "银行和存工资支票",
+    "sequence": 6,
+    "english": "I would like to open a bank account.",
+    "chinese": "我想开一个银行账户。",
+    "scenario": "在银行办理账户、支票、银行卡、费用和工资相关事务时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_001-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_001-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "Sure. May I see your ID?",
+      "What type of account would you like?",
+      "Would you like checking or savings?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I would like to open a bank account.",
+        "chinese": "我想开一个银行账户。"
+      },
+      {
+        "speakerRole": "Bank Teller",
+        "speakerRoleZh": "银行柜员可能会说",
+        "english": "Sure. May I see your ID?",
+        "chinese": "可以。请给我看一下身份证件。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "A checking account, please.",
+        "chinese": "请开一个支票账户。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "bank account",
+        "chinese": "银行账户",
+        "pronunciation": "bank uh-KOWNT",
+        "note": "在这个生活场景中，银行账户是完成沟通的关键词。",
+        "example": "Bank account is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_002",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_rent_housing",
+    "scenarioTitle": "租房和联系房东",
+    "sequence": 10,
+    "english": "I am calling about the apartment.",
+    "chinese": "我是打电话问这套公寓的。",
+    "scenario": "租房、看房、询问房租押金、联系房东或报修时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_002-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_002-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "Yes, the apartment is still available.",
+      "What questions do you have about it?",
+      "Would you like to schedule a viewing?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I am calling about the apartment.",
+        "chinese": "我是打电话问这套公寓的。"
+      },
+      {
+        "speakerRole": "Landlord",
+        "speakerRoleZh": "房东可能会说",
+        "english": "Yes, the apartment is still available.",
+        "chinese": "是的，这套公寓还可以租。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can I see it today?",
+        "chinese": "我今天可以看房吗？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "calling about",
+        "chinese": "打电话询问",
+        "pronunciation": "CALL-ing uh-BOWT",
+        "note": "在这个生活场景中，打电话询问是完成沟通的关键词。",
+        "example": "Calling about is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_003",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_rent_housing",
+    "scenarioTitle": "租房和联系房东",
+    "sequence": 7,
+    "english": "Is the apartment still available?",
+    "chinese": "这套公寓还可以租吗？",
+    "scenario": "租房、看房、询问房租押金、联系房东或报修时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_003-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_003-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Do you know if the apartment still available?",
+      "Can you tell me if the apartment still available?"
+    ],
+    "recommendedResponses": [
+      "Yes, it is still available.",
+      "Sorry, it has already been rented.",
+      "You can come see it this afternoon."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Is the apartment still available?",
+        "chinese": "这套公寓还可以租吗？"
+      },
+      {
+        "speakerRole": "Landlord",
+        "speakerRoleZh": "房东可能会说",
+        "english": "Yes, it is still available.",
+        "chinese": "是的，还可以租。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "What time can I come?",
+        "chinese": "我几点可以来？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "still available",
+        "chinese": "还可以租",
+        "pronunciation": "stil uh-VAY-luh-bul",
+        "note": "在这个生活场景中，还可以租是完成沟通的关键词。",
+        "example": "Still available is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_004",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_bank_paycheck",
+    "scenarioTitle": "银行和存工资支票",
+    "sequence": 3,
+    "english": "Is there a monthly fee?",
+    "chinese": "有月费吗？",
+    "scenario": "在银行办理账户、支票、银行卡、费用和工资相关事务时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_004-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_004-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Do you know if there a monthly fee?",
+      "Can you tell me if there a monthly fee?"
+    ],
+    "recommendedResponses": [
+      "There is no monthly fee with direct deposit.",
+      "The monthly fee is twelve dollars.",
+      "We can waive the fee if you keep the minimum balance."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Is there a monthly fee?",
+        "chinese": "有月费吗？"
+      },
+      {
+        "speakerRole": "Bank Teller",
+        "speakerRoleZh": "银行柜员可能会说",
+        "english": "There is no monthly fee with direct deposit.",
+        "chinese": "如果有工资直接存款，就没有月费。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Okay, thank you.",
+        "chinese": "好的，谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "monthly fee",
+        "chinese": "月费",
+        "pronunciation": "MUNTH-lee fee",
+        "note": "在这个生活场景中，月费是完成沟通的关键词。",
+        "example": "Monthly fee is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_005",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_transit",
+    "scenarioTitle": "坐公交和问路",
+    "sequence": 1,
+    "english": "Where can I load my transit card?",
+    "chinese": "我在哪里可以给公交卡充值？",
+    "scenario": "日常坐公交、地铁、问路、换乘或充值交通卡时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_005-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_005-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you tell me where can I load my transit card?",
+      "Do you know where can I load my transit card?"
+    ],
+    "recommendedResponses": [
+      "You can load it at the machine.",
+      "Use the ticket machine by the entrance.",
+      "You can also add money online."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Where can I load my transit card?",
+        "chinese": "我在哪里可以给公交卡充值？"
+      },
+      {
+        "speakerRole": "Transit Staff",
+        "speakerRoleZh": "交通工作人员可能会说",
+        "english": "You can load it at the machine.",
+        "chinese": "你可以在机器上充值。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Thank you. I will use the machine.",
+        "chinese": "谢谢。我去用机器。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "load my transit card",
+        "chinese": "给公交卡充值",
+        "pronunciation": "load-my TRAN-zit card",
+        "note": "在这个生活场景中，给公交卡充值是完成沟通的关键词。",
+        "example": "Load my transit card is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_006",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_transit",
+    "scenarioTitle": "坐公交和问路",
+    "sequence": 5,
+    "english": "How much is the monthly pass?",
+    "chinese": "月票多少钱？",
+    "scenario": "日常坐公交、地铁、问路、换乘或充值交通卡时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_006-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_006-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "What is the cost of the monthly pass?",
+      "What is the price of the monthly pass?"
+    ],
+    "recommendedResponses": [
+      "The monthly pass is ninety dollars.",
+      "The price depends on your zone.",
+      "You can buy it at the station."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "How much is the monthly pass?",
+        "chinese": "月票多少钱？"
+      },
+      {
+        "speakerRole": "Transit Staff",
+        "speakerRoleZh": "交通工作人员可能会说",
+        "english": "The monthly pass is ninety dollars.",
+        "chinese": "月票是九十美元。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can I pay by card?",
+        "chinese": "我可以刷卡吗？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "monthly pass",
+        "chinese": "月票",
+        "pronunciation": "MUNTH-lee pass",
+        "note": "在这个生活场景中，月票是完成沟通的关键词。",
+        "example": "Monthly pass is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_007",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_bank_paycheck",
+    "scenarioTitle": "银行和存工资支票",
+    "sequence": 7,
+    "english": "I get paid by direct deposit.",
+    "chinese": "我的工资是直接存进银行账户。",
+    "scenario": "在银行办理账户、支票、银行卡、费用和工资相关事务时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_007-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_007-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "Okay. Do you need a direct deposit form?",
+      "You’ll need your routing and account numbers.",
+      "You can give this form to your employer."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I get paid by direct deposit.",
+        "chinese": "我的工资是直接存进银行账户。"
+      },
+      {
+        "speakerRole": "Bank Teller",
+        "speakerRoleZh": "银行柜员可能会说",
+        "english": "Okay. Do you need a direct deposit form?",
+        "chinese": "好的。你需要直接存款表吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Yes, I need the form.",
+        "chinese": "是的，我需要这张表。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "direct deposit",
+        "chinese": "直接存款",
+        "pronunciation": "di-REKT di-POZ-it",
+        "note": "在这个生活场景中，直接存款是完成沟通的关键词。",
+        "example": "Direct deposit is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_008",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_bank_paycheck",
+    "scenarioTitle": "银行和存工资支票",
+    "sequence": 8,
+    "english": "I need to deposit this check.",
+    "chinese": "我需要存这张支票。",
+    "scenario": "在银行办理账户、支票、银行卡、费用和工资相关事务时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_008-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_008-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "I would like to deposit this check.",
+      "I have to to deposit this check."
+    ],
+    "recommendedResponses": [
+      "Sure. Please endorse the back of the check.",
+      "May I see your ID?",
+      "You can deposit it at the counter."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I need to deposit this check.",
+        "chinese": "我需要存这张支票。"
+      },
+      {
+        "speakerRole": "Bank Teller",
+        "speakerRoleZh": "银行柜员可能会说",
+        "english": "Sure. Please endorse the back of the check.",
+        "chinese": "可以。请在支票背面签名。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Okay, I will sign it.",
+        "chinese": "好的，我来签名。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "deposit this check",
+        "chinese": "存这张支票",
+        "pronunciation": "di-POZ-it this chek",
+        "note": "在这个生活场景中，存这张支票是完成沟通的关键词。",
+        "example": "Deposit this check is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_009",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_phone_internet",
+    "scenarioTitle": "手机和网络",
+    "sequence": 2,
+    "english": "My phone has no service.",
+    "chinese": "我的手机没有信号。",
+    "scenario": "办理手机套餐、网络、账单、流量、付款或服务故障时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_009-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_009-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "Try restarting your phone first.",
+      "Let me check if there is an outage.",
+      "Your SIM card may need to be reset."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "My phone has no service.",
+        "chinese": "我的手机没有信号。"
+      },
+      {
+        "speakerRole": "Phone Rep",
+        "speakerRoleZh": "手机客服可能会说",
+        "english": "Try restarting your phone first.",
+        "chinese": "先试着重启一下手机。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I already restarted it.",
+        "chinese": "我已经重启过了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "no service",
+        "chinese": "没有信号",
+        "pronunciation": "no-SER-vis",
+        "note": "在这个生活场景中，没有信号是完成沟通的关键词。",
+        "example": "No service is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_010",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_phone_internet",
+    "scenarioTitle": "手机和网络",
+    "sequence": 6,
+    "english": "I need more data on my plan.",
+    "chinese": "我的套餐需要更多流量。",
+    "scenario": "办理手机套餐、网络、账单、流量、付款或服务故障时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_010-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_010-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "I would like more data on my plan.",
+      "I have to more data on my plan."
+    ],
+    "recommendedResponses": [
+      "We can add more data to your plan.",
+      "How much data do you need?",
+      "There may be an extra monthly charge."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I need more data on my plan.",
+        "chinese": "我的套餐需要更多流量。"
+      },
+      {
+        "speakerRole": "Phone Rep",
+        "speakerRoleZh": "手机客服可能会说",
+        "english": "We can add more data to your plan.",
+        "chinese": "我们可以给你的套餐增加流量。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "How much will it cost?",
+        "chinese": "要多少钱？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "more data",
+        "chinese": "更多流量",
+        "pronunciation": "more DAY-tuh",
+        "note": "在这个生活场景中，更多流量是完成沟通的关键词。",
+        "example": "More data is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_011",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_rent_housing",
+    "scenarioTitle": "租房和联系房东",
+    "sequence": 5,
+    "english": "Are utilities included?",
+    "chinese": "水电等费用包含吗？",
+    "scenario": "租房、看房、询问房租押金、联系房东或报修时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_011-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_011-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "Water is included, but electricity is separate.",
+      "Heat and water are included.",
+      "Utilities are not included in the rent."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Are utilities included?",
+        "chinese": "水电等费用包含吗？"
+      },
+      {
+        "speakerRole": "Landlord",
+        "speakerRoleZh": "房东可能会说",
+        "english": "Water is included, but electricity is separate.",
+        "chinese": "水费包含，但电费另付。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "How much is electricity usually?",
+        "chinese": "电费通常多少钱？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "utilities",
+        "chinese": "水电等杂费",
+        "pronunciation": "yoo-TIL-uh-teez",
+        "note": "在这个生活场景中，水电等杂费是完成沟通的关键词。",
+        "example": "Utilities is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_012",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_pharmacy_doctor",
+    "scenarioTitle": "药店买药和看医生",
+    "sequence": 12,
+    "english": "I need to pick up a prescription.",
+    "chinese": "我需要取处方药。",
+    "scenario": "药店、诊所、医生和身体不舒服。",
+    "importance": "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/daily_life_012-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_012-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I need to get to pick up a prescription.",
+      "I have to get to pick up a prescription."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I need to pick up a prescription.",
+        "chinese": "我需要取处方药。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need pick",
+        "chinese": "重点词组",
+        "pronunciation": "need pick",
+        "note": "这句话里的工作关键词。",
+        "example": "I need to pick up a prescription."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_013",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_pharmacy_doctor",
+    "scenarioTitle": "药店买药和看医生",
+    "sequence": 2,
+    "english": "Can I book an appointment?",
+    "chinese": "我可以预约吗？",
+    "scenario": "去药店、诊所、预约医生或说明简单症状时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_013-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_013-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Is it possible to book an appointment?",
+      "Could I book an appointment?"
+    ],
+    "recommendedResponses": [
+      "Yes. What day works for you?",
+      "The next available appointment is Friday.",
+      "Is this for a new patient visit?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can I book an appointment?",
+        "chinese": "我可以预约吗？"
+      },
+      {
+        "speakerRole": "Receptionist",
+        "speakerRoleZh": "前台接待可能会说",
+        "english": "Yes. What day works for you?",
+        "chinese": "可以。哪天适合你？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Friday works for me.",
+        "chinese": "星期五可以。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "book an appointment",
+        "chinese": "预约",
+        "pronunciation": "book-an uh-POINT-ment",
+        "note": "在这个生活场景中，预约是完成沟通的关键词。",
+        "example": "Book an appointment is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_014",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_pharmacy_doctor",
+    "scenarioTitle": "药店买药和看医生",
+    "sequence": 14,
+    "english": "I need a doctor’s note for work.",
+    "chinese": "我需要给工作的医生证明。",
+    "scenario": "药店、诊所、医生和身体不舒服。",
+    "importance": "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/daily_life_014-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_014-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I need to get a doctor’s note for work.",
+      "I have to get a doctor’s note for work."
+    ],
+    "recommendedResponses": [
+      "Please wait one moment.",
+      "Can you write it down?",
+      "Let me check."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I need a doctor’s note for work.",
+        "chinese": "我需要给工作的医生证明。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Please wait one moment.",
+        "chinese": "请稍等一下。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need doctor’s",
+        "chinese": "重点词组",
+        "pronunciation": "need doctor’s",
+        "note": "这句话里的工作关键词。",
+        "example": "I need a doctor’s note for work."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_015",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_pharmacy_doctor",
+    "scenarioTitle": "药店买药和看医生",
+    "sequence": 5,
+    "english": "Where is the nearest walk-in clinic?",
+    "chinese": "最近的免预约诊所在哪里？",
+    "scenario": "去药店、诊所、预约医生或说明简单症状时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_015-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_015-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you tell me where is the nearest walk-in clinic?",
+      "Do you know where is the nearest walk-in clinic?"
+    ],
+    "recommendedResponses": [
+      "There is one two blocks away.",
+      "The nearest clinic is on Main Street.",
+      "It opens at nine in the morning."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Where is the nearest walk-in clinic?",
+        "chinese": "最近的免预约诊所在哪里？"
+      },
+      {
+        "speakerRole": "Pharmacist",
+        "speakerRoleZh": "药剂师可能会说",
+        "english": "There is one two blocks away.",
+        "chinese": "离这里两个街区有一家。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Thank you. I will go there.",
+        "chinese": "谢谢。我会去那里。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "walk-in clinic",
+        "chinese": "免预约诊所",
+        "pronunciation": "WAWK-in KLIN-ik",
+        "note": "在这个生活场景中，免预约诊所是完成沟通的关键词。",
+        "example": "Walk-in clinic is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_016",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_general",
+    "scenarioTitle": "报警、911和紧急求助",
+    "sequence": 4,
+    "english": "Can you speak more slowly?",
+    "chinese": "你可以说慢一点吗？",
+    "scenario": "日常电话和柜台沟通中询问联系人、费用或请对方说慢一点。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_016-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_016-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Could you speak more slowly?",
+      "Are you able to speak more slowly?"
+    ],
+    "recommendedResponses": [
+      "Of course. I will speak slowly.",
+      "Sure. I can repeat that.",
+      "No problem. I will slow down."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can you speak more slowly?",
+        "chinese": "你可以说慢一点吗？"
+      },
+      {
+        "speakerRole": "Clerk",
+        "speakerRoleZh": "店员可能会说",
+        "english": "Of course. I will speak slowly.",
+        "chinese": "当然。我会说慢一点。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Thank you. That helps.",
+        "chinese": "谢谢。这样有帮助。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "speak more slowly",
+        "chinese": "说慢一点",
+        "pronunciation": "speek more SLOH-lee",
+        "note": "在这个生活场景中，说慢一点是完成沟通的关键词。",
+        "example": "Speak more slowly is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_017",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_rent_housing",
+    "scenarioTitle": "租房和联系房东",
+    "sequence": 9,
+    "english": "I am looking for a room to rent.",
+    "chinese": "我在找一个房间租。",
+    "scenario": "租房、看房、询问房租押金、联系房东或报修时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_017-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_017-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "What area are you looking in?",
+      "What is your budget?",
+      "I have one room available now."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I am looking for a room to rent.",
+        "chinese": "我在找一个房间租。"
+      },
+      {
+        "speakerRole": "Landlord",
+        "speakerRoleZh": "房东可能会说",
+        "english": "What area are you looking in?",
+        "chinese": "你想找哪个区域？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Near the bus line, please.",
+        "chinese": "最好靠近公交线。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "room to rent",
+        "chinese": "出租房间",
+        "pronunciation": "room-to-rent",
+        "note": "在这个生活场景中，出租房间是完成沟通的关键词。",
+        "example": "Room to rent is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_018",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_rent_housing",
+    "scenarioTitle": "租房和联系房东",
+    "sequence": 3,
+    "english": "When is the rent due?",
+    "chinese": "房租什么时候该交？",
+    "scenario": "租房、看房、询问房租押金、联系房东或报修时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_018-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_018-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "Rent is due on the first of each month.",
+      "Please pay before the fifth.",
+      "You can pay by e-transfer."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "When is the rent due?",
+        "chinese": "房租什么时候该交？"
+      },
+      {
+        "speakerRole": "Landlord",
+        "speakerRoleZh": "房东可能会说",
+        "english": "Rent is due on the first of each month.",
+        "chinese": "房租每月一号该交。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can I pay by e-transfer?",
+        "chinese": "我可以电子转账吗？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "rent due",
+        "chinese": "房租到期该交",
+        "pronunciation": "rent-doo",
+        "note": "在这个生活场景中，房租到期该交是完成沟通的关键词。",
+        "example": "Rent due is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_019",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_general",
+    "scenarioTitle": "报警、911和紧急求助",
+    "sequence": 1,
+    "english": "Can I pay by e-transfer?",
+    "chinese": "我可以用电子转账付款吗？",
+    "scenario": "日常电话和柜台沟通中询问联系人、费用或请对方说慢一点。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_019-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_019-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Is it possible to pay by e-transfer?",
+      "Could I pay by e-transfer?"
+    ],
+    "recommendedResponses": [
+      "Yes, I can send you the email address.",
+      "Please include your name in the note.",
+      "No, we only take cash for this."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can I pay by e-transfer?",
+        "chinese": "我可以用电子转账付款吗？"
+      },
+      {
+        "speakerRole": "Clerk",
+        "speakerRoleZh": "店员可能会说",
+        "english": "Yes, I can send you the email address.",
+        "chinese": "可以，我把邮箱地址发给你。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Okay, I will send it now.",
+        "chinese": "好的，我现在转。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "e-transfer",
+        "chinese": "电子转账",
+        "pronunciation": "ee-TRANS-fer",
+        "note": "在这个生活场景中，电子转账是完成沟通的关键词。",
+        "example": "E-transfer is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_020",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_bank_paycheck",
+    "scenarioTitle": "银行和存工资支票",
+    "sequence": 9,
+    "english": "I need to change my address.",
+    "chinese": "我需要更改我的地址。",
+    "scenario": "在银行办理账户、支票、银行卡、费用和工资相关事务时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_020-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_020-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "I would like to change my address.",
+      "I have to to change my address."
+    ],
+    "recommendedResponses": [
+      "Sure. Please show me your ID.",
+      "You can update it online.",
+      "Please write your new address here."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I need to change my address.",
+        "chinese": "我需要更改我的地址。"
+      },
+      {
+        "speakerRole": "Bank Teller",
+        "speakerRoleZh": "银行柜员可能会说",
+        "english": "Sure. Please show me your ID.",
+        "chinese": "可以。请给我看一下身份证件。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Here is my new address.",
+        "chinese": "这是我的新地址。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "change my address",
+        "chinese": "更改我的地址",
+        "pronunciation": "chaynj-my-AD-res",
+        "note": "在这个生活场景中，更改我的地址是完成沟通的关键词。",
+        "example": "Change my address is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_021",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_forms_receipts",
+    "scenarioTitle": "电话预约",
+    "sequence": 3,
+    "english": "Can you print this form for me?",
+    "chinese": "你可以帮我打印这张表吗？",
+    "scenario": "填写表格、索要收据副本、邮寄包裹或处理文件时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_021-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_021-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Could you print this form for me?",
+      "Are you able to print this form for me?"
+    ],
+    "recommendedResponses": [
+      "Yes, please email it to us.",
+      "There is a small printing fee.",
+      "We can print it in black and white."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can you print this form for me?",
+        "chinese": "你可以帮我打印这张表吗？"
+      },
+      {
+        "speakerRole": "Clerk",
+        "speakerRoleZh": "店员可能会说",
+        "english": "Yes, please email it to us.",
+        "chinese": "可以，请发到我们的邮箱。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "What email should I use?",
+        "chinese": "我应该发到哪个邮箱？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "print this form",
+        "chinese": "打印这张表",
+        "pronunciation": "print-this form",
+        "note": "在这个生活场景中，打印这张表是完成沟通的关键词。",
+        "example": "Print this form is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_022",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_work_life_basics",
+    "scenarioTitle": "生活用品和基本服务",
+    "sequence": 1,
+    "english": "Where can I buy work shoes?",
+    "chinese": "我在哪里可以买工作鞋？",
+    "scenario": "日常生活中买工作用品、改约、拿确认号码或处理基本事务时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_022-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_022-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you tell me where can I buy work shoes?",
+      "Do you know where can I buy work shoes?"
+    ],
+    "recommendedResponses": [
+      "You can find work shoes in aisle five.",
+      "Try the uniform store near the mall.",
+      "We have non-slip shoes over here."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Where can I buy work shoes?",
+        "chinese": "我在哪里可以买工作鞋？"
+      },
+      {
+        "speakerRole": "Clerk",
+        "speakerRoleZh": "店员可能会说",
+        "english": "You can find work shoes in aisle five.",
+        "chinese": "你可以在第五走道找到工作鞋。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Thank you. I need non-slip shoes.",
+        "chinese": "谢谢。我需要防滑鞋。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "work shoes",
+        "chinese": "工作鞋",
+        "pronunciation": "work-shooz",
+        "note": "在这个生活场景中，工作鞋是完成沟通的关键词。",
+        "example": "Work shoes is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_023",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_work_life_basics",
+    "scenarioTitle": "生活用品和基本服务",
+    "sequence": 2,
+    "english": "I need non-slip shoes for work.",
+    "chinese": "我工作需要防滑鞋。",
+    "scenario": "日常生活中买工作用品、改约、拿确认号码或处理基本事务时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_023-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_023-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "I would like non-slip shoes for work.",
+      "I have to non-slip shoes for work."
+    ],
+    "recommendedResponses": [
+      "What size do you need?",
+      "These shoes are good for restaurant work.",
+      "The non-slip shoes are on this shelf."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I need non-slip shoes for work.",
+        "chinese": "我工作需要防滑鞋。"
+      },
+      {
+        "speakerRole": "Clerk",
+        "speakerRoleZh": "店员可能会说",
+        "english": "What size do you need?",
+        "chinese": "你需要什么尺码？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Size eight, please.",
+        "chinese": "八号。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "non-slip shoes",
+        "chinese": "防滑鞋",
+        "pronunciation": "non-slip shooz",
+        "note": "在这个生活场景中，防滑鞋是完成沟通的关键词。",
+        "example": "Non-slip shoes is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_024",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_forms_receipts",
+    "scenarioTitle": "电话预约",
+    "sequence": 4,
+    "english": "Can I get a copy of the receipt?",
+    "chinese": "我可以要一份收据副本吗？",
+    "scenario": "填写表格、索要收据副本、邮寄包裹或处理文件时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_024-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_024-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Is it possible to get a copy of the receipt?",
+      "Could I get a copy of the receipt?"
+    ],
+    "recommendedResponses": [
+      "Yes, I can print it for you.",
+      "Do you want it emailed?",
+      "I need the card you paid with."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can I get a copy of the receipt?",
+        "chinese": "我可以要一份收据副本吗？"
+      },
+      {
+        "speakerRole": "Clerk",
+        "speakerRoleZh": "店员可能会说",
+        "english": "Yes, I can print it for you.",
+        "chinese": "可以，我可以帮你打印。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "A printed copy is fine.",
+        "chinese": "打印一份就可以。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "copy of the receipt",
+        "chinese": "收据副本",
+        "pronunciation": "KOP-ee of the ri-SEET",
+        "note": "在这个生活场景中，收据副本是完成沟通的关键词。",
+        "example": "Copy of the receipt is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_025",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_rent_housing",
+    "scenarioTitle": "租房和联系房东",
+    "sequence": 8,
+    "english": "Can I get directions to this address?",
+    "chinese": "你可以告诉我去这个地址怎么走吗？",
+    "scenario": "租房、看房、询问房租押金、联系房东或报修时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_025-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_025-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Is it possible to get directions to this address?",
+      "Could I get directions to this address?"
+    ],
+    "recommendedResponses": [
+      "Take the bus to Main Street.",
+      "It is two blocks from here.",
+      "I can send you the directions."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can I get directions to this address?",
+        "chinese": "你可以告诉我去这个地址怎么走吗？"
+      },
+      {
+        "speakerRole": "Clerk",
+        "speakerRoleZh": "店员可能会说",
+        "english": "Take the bus to Main Street.",
+        "chinese": "坐公交到 Main Street。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Which bus should I take?",
+        "chinese": "我应该坐哪路公交？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "directions",
+        "chinese": "路线；怎么走",
+        "pronunciation": "di-REK-shunz",
+        "note": "在这个生活场景中，路线；怎么走是完成沟通的关键词。",
+        "example": "Directions is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_026",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_transit",
+    "scenarioTitle": "坐公交和问路",
+    "sequence": 6,
+    "english": "How long does it take by bus?",
+    "chinese": "坐公交要多久？",
+    "scenario": "日常坐公交、地铁、问路、换乘或充值交通卡时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_026-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_026-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "It takes about twenty minutes.",
+      "It may take longer during rush hour.",
+      "The subway is faster from here."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "How long does it take by bus?",
+        "chinese": "坐公交要多久？"
+      },
+      {
+        "speakerRole": "Transit Staff",
+        "speakerRoleZh": "交通工作人员可能会说",
+        "english": "It takes about twenty minutes.",
+        "chinese": "大概二十分钟。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Okay, thank you.",
+        "chinese": "好的，谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "by bus",
+        "chinese": "坐公交",
+        "pronunciation": "by-bus",
+        "note": "在这个生活场景中，坐公交是完成沟通的关键词。",
+        "example": "By bus is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_027",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_transit",
+    "scenarioTitle": "坐公交和问路",
+    "sequence": 7,
+    "english": "Does this bus stop near the restaurant?",
+    "chinese": "这路公交会停在餐厅附近吗？",
+    "scenario": "日常坐公交、地铁、问路、换乘或充值交通卡时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_027-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_027-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "Yes, get off at Main Street.",
+      "It stops one block from the restaurant.",
+      "No, take bus 12 instead."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Does this bus stop near the restaurant?",
+        "chinese": "这路公交会停在餐厅附近吗？"
+      },
+      {
+        "speakerRole": "Transit Staff",
+        "speakerRoleZh": "交通工作人员可能会说",
+        "english": "Yes, get off at Main Street.",
+        "chinese": "会，在 Main Street 下车。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Great. Thank you.",
+        "chinese": "太好了，谢谢。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "stop near",
+        "chinese": "停在附近",
+        "pronunciation": "stop-neer",
+        "note": "在这个生活场景中，停在附近是完成沟通的关键词。",
+        "example": "Stop near is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_028",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_transit",
+    "scenarioTitle": "坐公交和问路",
+    "sequence": 2,
+    "english": "I missed my bus.",
+    "chinese": "我错过公交了。",
+    "scenario": "日常坐公交、地铁、问路、换乘或充值交通卡时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_028-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_028-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "The next bus comes in fifteen minutes.",
+      "You can take bus 7 instead.",
+      "Check the screen for the next bus."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I missed my bus.",
+        "chinese": "我错过公交了。"
+      },
+      {
+        "speakerRole": "Transit Staff",
+        "speakerRoleZh": "交通工作人员可能会说",
+        "english": "The next bus comes in fifteen minutes.",
+        "chinese": "下一班公交十五分钟后到。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I will wait here.",
+        "chinese": "我在这里等。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "missed my bus",
+        "chinese": "错过公交",
+        "pronunciation": "mist-my-bus",
+        "note": "在这个生活场景中，错过公交是完成沟通的关键词。",
+        "example": "Missed my bus is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_029",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_transit",
+    "scenarioTitle": "坐公交和问路",
+    "sequence": 3,
+    "english": "The bus is running late.",
+    "chinese": "公交晚点了。",
+    "scenario": "日常坐公交、地铁、问路、换乘或充值交通卡时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_029-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_029-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "Yes, it is delayed ten minutes.",
+      "There is heavy traffic today.",
+      "You can check the app for updates."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "The bus is running late.",
+        "chinese": "公交晚点了。"
+      },
+      {
+        "speakerRole": "Transit Staff",
+        "speakerRoleZh": "交通工作人员可能会说",
+        "english": "Yes, it is delayed ten minutes.",
+        "chinese": "是的，晚点十分钟。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Thanks for letting me know.",
+        "chinese": "谢谢你告诉我。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "running late",
+        "chinese": "晚点；迟到",
+        "pronunciation": "RUN-ing layt",
+        "note": "在这个生活场景中，晚点；迟到是完成沟通的关键词。",
+        "example": "Running late is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_030",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_bank_paycheck",
+    "scenarioTitle": "银行和存工资支票",
+    "sequence": 1,
+    "english": "Can I cash this check here?",
+    "chinese": "我可以在这里兑现这张支票吗？",
+    "scenario": "在银行办理账户、支票、银行卡、费用和工资相关事务时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_030-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_030-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Is it possible to cash this check here?",
+      "Could I cash this check here?"
+    ],
+    "recommendedResponses": [
+      "Yes, if you have photo ID.",
+      "You need an account here to cash it.",
+      "We can deposit it into your account instead."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can I cash this check here?",
+        "chinese": "我可以在这里兑现这张支票吗？"
+      },
+      {
+        "speakerRole": "Bank Teller",
+        "speakerRoleZh": "银行柜员可能会说",
+        "english": "Yes, if you have photo ID.",
+        "chinese": "可以，如果你有带照片的身份证件。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I have my passport.",
+        "chinese": "我有护照。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "cash this check",
+        "chinese": "兑现这张支票",
+        "pronunciation": "cash-this-chek",
+        "note": "在这个生活场景中，兑现这张支票是完成沟通的关键词。",
+        "example": "Cash this check is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_031",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_bank_paycheck",
+    "scenarioTitle": "银行和存工资支票",
+    "sequence": 4,
+    "english": "What ID do I need?",
+    "chinese": "我需要什么身份证件？",
+    "scenario": "在银行办理账户、支票、银行卡、费用和工资相关事务时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_031-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_031-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "A photo ID is required.",
+      "Bring your passport or driver’s license.",
+      "You also need proof of address."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "What ID do I need?",
+        "chinese": "我需要什么身份证件？"
+      },
+      {
+        "speakerRole": "Bank Teller",
+        "speakerRoleZh": "银行柜员可能会说",
+        "english": "A photo ID is required.",
+        "chinese": "需要带照片的身份证件。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can I use my passport?",
+        "chinese": "我可以用护照吗？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "photo ID",
+        "chinese": "带照片的身份证件",
+        "pronunciation": "FOH-toh eye-DEE",
+        "note": "在这个生活场景中，带照片的身份证件是完成沟通的关键词。",
+        "example": "Photo ID is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_032",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_bank_paycheck",
+    "scenarioTitle": "银行和存工资支票",
+    "sequence": 32,
+    "english": "I need to update my direct deposit information.",
+    "chinese": "我需要更新我的工资入账信息。",
+    "scenario": "存支票、工资到账、银行卡和银行问题。",
+    "importance": "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/daily_life_032-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_032-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I need to get to update my direct deposit information.",
+      "I have to get to update my direct deposit information."
+    ],
+    "recommendedResponses": [
+      "Thanks for checking.",
+      "Can you help me fix it?",
+      "Who should I talk to?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I need to update my direct deposit information.",
+        "chinese": "我需要更新我的工资入账信息。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thanks for checking.",
+        "chinese": "谢谢你帮我查。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need update",
+        "chinese": "重点词组",
+        "pronunciation": "need update",
+        "note": "这句话里的工作关键词。",
+        "example": "I need to update my direct deposit information."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_033",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_bank_paycheck",
+    "scenarioTitle": "银行和存工资支票",
+    "sequence": 2,
+    "english": "My debit card is not working.",
+    "chinese": "我的借记卡不能用了。",
+    "scenario": "在银行办理账户、支票、银行卡、费用和工资相关事务时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_033-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_033-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "Let me check the card.",
+      "Was the card declined?",
+      "We may need to issue a replacement."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "My debit card is not working.",
+        "chinese": "我的借记卡不能用了。"
+      },
+      {
+        "speakerRole": "Bank Teller",
+        "speakerRoleZh": "银行柜员可能会说",
+        "english": "Let me check the card.",
+        "chinese": "我来查一下这张卡。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "It was declined at the store.",
+        "chinese": "它在店里被拒了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "debit card",
+        "chinese": "借记卡",
+        "pronunciation": "DEB-it card",
+        "note": "在这个生活场景中，借记卡是完成沟通的关键词。",
+        "example": "Debit card is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_034",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_bank_paycheck",
+    "scenarioTitle": "银行和存工资支票",
+    "sequence": 10,
+    "english": "Can I set up online banking?",
+    "chinese": "我可以开通网上银行吗？",
+    "scenario": "在银行办理账户、支票、银行卡、费用和工资相关事务时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_034-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_034-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Is it possible to set up online banking?",
+      "Could I set up online banking?"
+    ],
+    "recommendedResponses": [
+      "Yes, we can help you register.",
+      "You will need your card number.",
+      "We can send a security code to your phone."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can I set up online banking?",
+        "chinese": "我可以开通网上银行吗？"
+      },
+      {
+        "speakerRole": "Bank Teller",
+        "speakerRoleZh": "银行柜员可能会说",
+        "english": "Yes, we can help you register.",
+        "chinese": "可以，我们可以帮你注册。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I have my bank card with me.",
+        "chinese": "我带了银行卡。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "online banking",
+        "chinese": "网上银行",
+        "pronunciation": "ON-line BANK-ing",
+        "note": "在这个生活场景中，网上银行是完成沟通的关键词。",
+        "example": "Online banking is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_035",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_phone_internet",
+    "scenarioTitle": "手机和网络",
+    "sequence": 4,
+    "english": "My phone bill is too high.",
+    "chinese": "我的手机账单太高了。",
+    "scenario": "办理手机套餐、网络、账单、流量、付款或服务故障时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_035-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_035-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "Let me review the charges with you.",
+      "You used extra data this month.",
+      "We can look for a cheaper plan."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "My phone bill is too high.",
+        "chinese": "我的手机账单太高了。"
+      },
+      {
+        "speakerRole": "Phone Rep",
+        "speakerRoleZh": "手机客服可能会说",
+        "english": "Let me review the charges with you.",
+        "chinese": "我帮你看一下费用。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can you explain the extra charge?",
+        "chinese": "你可以解释一下额外费用吗？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "phone bill",
+        "chinese": "手机账单",
+        "pronunciation": "fohn-bil",
+        "note": "在这个生活场景中，手机账单是完成沟通的关键词。",
+        "example": "Phone bill is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_036",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_phone_internet",
+    "scenarioTitle": "手机和网络",
+    "sequence": 7,
+    "english": "Can I change to a cheaper plan?",
+    "chinese": "我可以换成便宜一点的套餐吗？",
+    "scenario": "办理手机套餐、网络、账单、流量、付款或服务故障时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_036-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_036-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Is it possible to change to a cheaper plan?",
+      "Could I change to a cheaper plan?"
+    ],
+    "recommendedResponses": [
+      "Yes, but it may include less data.",
+      "This cheaper plan starts next month.",
+      "There may be a plan-change fee."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can I change to a cheaper plan?",
+        "chinese": "我可以换成便宜一点的套餐吗？"
+      },
+      {
+        "speakerRole": "Phone Rep",
+        "speakerRoleZh": "手机客服可能会说",
+        "english": "Yes, but it may include less data.",
+        "chinese": "可以，但流量可能会少一些。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "How much data is included?",
+        "chinese": "包含多少流量？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "cheaper plan",
+        "chinese": "更便宜的套餐",
+        "pronunciation": "CHEE-per plan",
+        "note": "在这个生活场景中，更便宜的套餐是完成沟通的关键词。",
+        "example": "Cheaper plan is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_037",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_phone_internet",
+    "scenarioTitle": "手机和网络",
+    "sequence": 1,
+    "english": "I need a SIM card.",
+    "chinese": "我需要一张 SIM 卡。",
+    "scenario": "办理手机套餐、网络、账单、流量、付款或服务故障时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_037-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_037-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "I would like a SIM card.",
+      "I have to a SIM card."
+    ],
+    "recommendedResponses": [
+      "Do you need a new phone number?",
+      "Is your phone unlocked?",
+      "We have prepaid SIM cards."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I need a SIM card.",
+        "chinese": "我需要一张 SIM 卡。"
+      },
+      {
+        "speakerRole": "Phone Rep",
+        "speakerRoleZh": "手机客服可能会说",
+        "english": "Do you need a new phone number?",
+        "chinese": "你需要一个新号码吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Yes, I need a new number.",
+        "chinese": "是的，我需要新号码。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "SIM card",
+        "chinese": "手机 SIM 卡",
+        "pronunciation": "sim-card",
+        "note": "在这个生活场景中，手机 SIM 卡是完成沟通的关键词。",
+        "example": "SIM card is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_038",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_phone_internet",
+    "scenarioTitle": "手机和网络",
+    "sequence": 3,
+    "english": "My internet is not working.",
+    "chinese": "我的网络不能用了。",
+    "scenario": "办理手机套餐、网络、账单、流量、付款或服务故障时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_038-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_038-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "Try restarting the modem first.",
+      "There may be an outage in your area.",
+      "We can send a technician tomorrow."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "My internet is not working.",
+        "chinese": "我的网络不能用了。"
+      },
+      {
+        "speakerRole": "Phone Rep",
+        "speakerRoleZh": "手机客服可能会说",
+        "english": "Try restarting the modem first.",
+        "chinese": "先试着重启调制解调器。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I restarted it already.",
+        "chinese": "我已经重启过了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "internet is not working",
+        "chinese": "网络不能用",
+        "pronunciation": "IN-ter-net iz-not WER-king",
+        "note": "在这个生活场景中，网络不能用是完成沟通的关键词。",
+        "example": "Internet is not working is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_039",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_phone_internet",
+    "scenarioTitle": "坐公交和问路",
+    "sequence": 4,
+    "english": "Can you reset my password?",
+    "chinese": "你可以帮我重置密码吗？",
+    "scenario": "办理手机套餐、网络、账单、流量、付款或服务故障时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_039-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_039-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Could you reset my password?",
+      "Are you able to reset my password?"
+    ],
+    "recommendedResponses": [
+      "Yes, I can send a reset link.",
+      "Please verify your email address.",
+      "Check your text messages for a code."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can you reset my password?",
+        "chinese": "你可以帮我重置密码吗？"
+      },
+      {
+        "speakerRole": "Phone Rep",
+        "speakerRoleZh": "手机客服可能会说",
+        "english": "Yes, I can send a reset link.",
+        "chinese": "可以，我可以发送重置链接。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Please send it by text.",
+        "chinese": "请用短信发给我。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "reset my password",
+        "chinese": "重置我的密码",
+        "pronunciation": "ree-SET-my PASS-word",
+        "note": "在这个生活场景中，重置我的密码是完成沟通的关键词。",
+        "example": "Reset my password is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_040",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_rent_housing",
+    "scenarioTitle": "租房和联系房东",
+    "sequence": 1,
+    "english": "Is laundry included?",
+    "chinese": "洗衣设施包含吗？",
+    "scenario": "租房、看房、询问房租押金、联系房东或报修时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_040-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_040-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Do you know if laundry included?",
+      "Can you tell me if laundry included?"
+    ],
+    "recommendedResponses": [
+      "Yes, laundry is in the basement.",
+      "Laundry is coin-operated.",
+      "No, laundry is not included."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Is laundry included?",
+        "chinese": "洗衣设施包含吗？"
+      },
+      {
+        "speakerRole": "Landlord",
+        "speakerRoleZh": "房东可能会说",
+        "english": "Yes, laundry is in the basement.",
+        "chinese": "包含，洗衣房在地下室。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Is it open every day?",
+        "chinese": "每天都开放吗？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "laundry included",
+        "chinese": "包含洗衣设施",
+        "pronunciation": "LAWN-dree in-KLOO-ded",
+        "note": "在这个生活场景中，包含洗衣设施是完成沟通的关键词。",
+        "example": "Laundry included is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_041",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_rent_housing",
+    "scenarioTitle": "租房和联系房东",
+    "sequence": 2,
+    "english": "Is parking included?",
+    "chinese": "停车位包含吗？",
+    "scenario": "租房、看房、询问房租押金、联系房东或报修时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_041-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_041-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Do you know if parking included?",
+      "Can you tell me if parking included?"
+    ],
+    "recommendedResponses": [
+      "Yes, one parking spot is included.",
+      "Parking costs extra.",
+      "There is street parking only."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Is parking included?",
+        "chinese": "停车位包含吗？"
+      },
+      {
+        "speakerRole": "Landlord",
+        "speakerRoleZh": "房东可能会说",
+        "english": "Yes, one parking spot is included.",
+        "chinese": "是的，包含一个停车位。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Is it outdoor parking?",
+        "chinese": "是室外停车位吗？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "parking included",
+        "chinese": "包含停车位",
+        "pronunciation": "PAR-king in-KLOO-ded",
+        "note": "在这个生活场景中，包含停车位是完成沟通的关键词。",
+        "example": "Parking included is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_042",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_rent_housing",
+    "scenarioTitle": "租房和联系房东",
+    "sequence": 6,
+    "english": "Can I see the room today?",
+    "chinese": "我今天可以看房间吗？",
+    "scenario": "租房、看房、询问房租押金、联系房东或报修时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_042-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_042-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Is it possible to see the room today?",
+      "Could I see the room today?"
+    ],
+    "recommendedResponses": [
+      "Yes, you can come at five.",
+      "Today is not available. How about tomorrow?",
+      "Please text me when you arrive."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can I see the room today?",
+        "chinese": "我今天可以看房间吗？"
+      },
+      {
+        "speakerRole": "Landlord",
+        "speakerRoleZh": "房东可能会说",
+        "english": "Yes, you can come at five.",
+        "chinese": "可以，你可以五点来。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Five o’clock works for me.",
+        "chinese": "五点可以。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "see the room",
+        "chinese": "看房间",
+        "pronunciation": "see-the-room",
+        "note": "在这个生活场景中，看房间是完成沟通的关键词。",
+        "example": "See the room is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_043",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_rent_housing",
+    "scenarioTitle": "银行和存工资支票",
+    "sequence": 5,
+    "english": "How much is the deposit?",
+    "chinese": "押金是多少？",
+    "scenario": "租房、看房、询问房租押金、联系房东或报修时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_043-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_043-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "What is the cost of the deposit?",
+      "What is the price of the deposit?"
+    ],
+    "recommendedResponses": [
+      "The deposit is one month’s rent.",
+      "It is five hundred dollars.",
+      "You pay the deposit when you sign."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "How much is the deposit?",
+        "chinese": "押金是多少？"
+      },
+      {
+        "speakerRole": "Landlord",
+        "speakerRoleZh": "房东可能会说",
+        "english": "The deposit is one month’s rent.",
+        "chinese": "押金是一个月房租。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can I pay it by e-transfer?",
+        "chinese": "我可以电子转账付吗？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "deposit",
+        "chinese": "押金",
+        "pronunciation": "di-POZ-it",
+        "note": "在这个生活场景中，押金是完成沟通的关键词。",
+        "example": "Deposit is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_044",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_rent_housing",
+    "scenarioTitle": "租房和联系房东",
+    "sequence": 4,
+    "english": "When can I move in?",
+    "chinese": "我什么时候可以搬进去？",
+    "scenario": "租房、看房、询问房租押金、联系房东或报修时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_044-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_044-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "You can move in on the first.",
+      "The room is available next week.",
+      "You can move in after you sign the lease."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "When can I move in?",
+        "chinese": "我什么时候可以搬进去？"
+      },
+      {
+        "speakerRole": "Landlord",
+        "speakerRoleZh": "房东可能会说",
+        "english": "You can move in on the first.",
+        "chinese": "你可以一号搬进去。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can I get the keys that day?",
+        "chinese": "那天可以拿钥匙吗？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "move in",
+        "chinese": "搬进去",
+        "pronunciation": "moov-in",
+        "note": "在这个生活场景中，搬进去是完成沟通的关键词。",
+        "example": "Move in is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_045",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_pharmacy_doctor",
+    "scenarioTitle": "药店买药和看医生",
+    "sequence": 6,
+    "english": "I need something for a headache.",
+    "chinese": "我需要治头痛的药。",
+    "scenario": "去药店、诊所、预约医生或说明简单症状时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_045-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_045-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "I would like something for a headache.",
+      "I have to something for a headache."
+    ],
+    "recommendedResponses": [
+      "I can show you some options.",
+      "Do you have any allergies?",
+      "Please read the label before taking it."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I need something for a headache.",
+        "chinese": "我需要治头痛的药。"
+      },
+      {
+        "speakerRole": "Pharmacist",
+        "speakerRoleZh": "药剂师可能会说",
+        "english": "I can show you some options.",
+        "chinese": "我可以给你看几个选择。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I do not have allergies.",
+        "chinese": "我没有过敏。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "headache",
+        "chinese": "头痛",
+        "pronunciation": "HED-ayk",
+        "note": "在这个生活场景中，头痛是完成沟通的关键词。",
+        "example": "Headache is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_046",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_pharmacy_doctor",
+    "scenarioTitle": "药店买药和看医生",
+    "sequence": 7,
+    "english": "I need something for a cough.",
+    "chinese": "我需要治咳嗽的药。",
+    "scenario": "去药店、诊所、预约医生或说明简单症状时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_046-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_046-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "I would like something for a cough.",
+      "I have to something for a cough."
+    ],
+    "recommendedResponses": [
+      "Is it a dry cough or a wet cough?",
+      "How long have you had the cough?",
+      "This cough medicine may make you sleepy."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I need something for a cough.",
+        "chinese": "我需要治咳嗽的药。"
+      },
+      {
+        "speakerRole": "Pharmacist",
+        "speakerRoleZh": "药剂师可能会说",
+        "english": "Is it a dry cough or a wet cough?",
+        "chinese": "是干咳还是有痰的咳嗽？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "It is a dry cough.",
+        "chinese": "是干咳。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "cough",
+        "chinese": "咳嗽",
+        "pronunciation": "kawf",
+        "note": "在这个生活场景中，咳嗽是完成沟通的关键词。",
+        "example": "Cough is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_047",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_pharmacy_doctor",
+    "scenarioTitle": "药店买药和看医生",
+    "sequence": 8,
+    "english": "Can I talk to the pharmacist?",
+    "chinese": "我可以和药剂师说一下吗？",
+    "scenario": "去药店、诊所、预约医生或说明简单症状时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_047-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_047-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Is it possible to talk to the pharmacist?",
+      "Could I talk to the pharmacist?"
+    ],
+    "recommendedResponses": [
+      "Yes, please wait here.",
+      "The pharmacist will be with you shortly.",
+      "What question do you have for the pharmacist?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can I talk to the pharmacist?",
+        "chinese": "我可以和药剂师说一下吗？"
+      },
+      {
+        "speakerRole": "Clerk",
+        "speakerRoleZh": "店员可能会说",
+        "english": "Yes, please wait here.",
+        "chinese": "可以，请在这里等。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I have a question about this medicine.",
+        "chinese": "我有一个关于这个药的问题。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "pharmacist",
+        "chinese": "药剂师",
+        "pronunciation": "FAR-muh-sist",
+        "note": "在这个生活场景中，药剂师是完成沟通的关键词。",
+        "example": "Pharmacist is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_048",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_pharmacy_doctor",
+    "scenarioTitle": "药店买药和看医生",
+    "sequence": 9,
+    "english": "How often should I take this?",
+    "chinese": "这个多久吃一次？",
+    "scenario": "去药店、诊所、预约医生或说明简单症状时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_048-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_048-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "Follow the directions on the label.",
+      "Take it every six hours if needed.",
+      "Do not take more than the daily limit."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "How often should I take this?",
+        "chinese": "这个多久吃一次？"
+      },
+      {
+        "speakerRole": "Pharmacist",
+        "speakerRoleZh": "药剂师可能会说",
+        "english": "Follow the directions on the label.",
+        "chinese": "请按照标签上的说明服用。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Okay, I will read the label.",
+        "chinese": "好的，我会看标签。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "how often",
+        "chinese": "多久一次",
+        "pronunciation": "how-AW-fen",
+        "note": "在这个生活场景中，多久一次是完成沟通的关键词。",
+        "example": "How often is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_049",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_pharmacy_doctor",
+    "scenarioTitle": "药店买药和看医生",
+    "sequence": 10,
+    "english": "Should I take it with food?",
+    "chinese": "这个要和食物一起吃吗？",
+    "scenario": "去药店、诊所、预约医生或说明简单症状时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_049-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_049-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "Yes, take it with food.",
+      "No, you can take it without food.",
+      "Take it with food if it upsets your stomach."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Should I take it with food?",
+        "chinese": "这个要和食物一起吃吗？"
+      },
+      {
+        "speakerRole": "Pharmacist",
+        "speakerRoleZh": "药剂师可能会说",
+        "english": "Yes, take it with food.",
+        "chinese": "是的，和食物一起吃。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Thank you. I understand.",
+        "chinese": "谢谢，我明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "with food",
+        "chinese": "和食物一起",
+        "pronunciation": "with-food",
+        "note": "在这个生活场景中，和食物一起是完成沟通的关键词。",
+        "example": "With food is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_050",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_pharmacy_doctor",
+    "scenarioTitle": "药店买药和看医生",
+    "sequence": 1,
+    "english": "I have a fever.",
+    "chinese": "我发烧了。",
+    "scenario": "去药店、诊所、预约医生或说明简单症状时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_050-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_050-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "I am having a fever.",
+      "I’ve got a fever."
+    ],
+    "recommendedResponses": [
+      "How long have you had a fever?",
+      "Do you have any other symptoms?",
+      "You may want to see a doctor today."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I have a fever.",
+        "chinese": "我发烧了。"
+      },
+      {
+        "speakerRole": "Receptionist",
+        "speakerRoleZh": "前台接待可能会说",
+        "english": "How long have you had a fever?",
+        "chinese": "你发烧多久了？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Since last night.",
+        "chinese": "从昨晚开始。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "fever",
+        "chinese": "发烧",
+        "pronunciation": "FEE-ver",
+        "note": "在这个生活场景中，发烧是完成沟通的关键词。",
+        "example": "Fever is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_051",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_pharmacy_doctor",
+    "scenarioTitle": "药店买药和看医生",
+    "sequence": 4,
+    "english": "I have stomach pain.",
+    "chinese": "我肚子痛。",
+    "scenario": "去药店、诊所、预约医生或说明简单症状时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_051-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_051-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 1",
+    "variants": [
+      "I am having stomach pain.",
+      "I’ve got stomach pain."
+    ],
+    "recommendedResponses": [
+      "How long has it been hurting?",
+      "Is the pain severe?",
+      "If it is severe, go to urgent care."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I have stomach pain.",
+        "chinese": "我肚子痛。"
+      },
+      {
+        "speakerRole": "Receptionist",
+        "speakerRoleZh": "前台接待可能会说",
+        "english": "How long has it been hurting?",
+        "chinese": "痛了多久？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Since this morning.",
+        "chinese": "从今天早上开始。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "stomach pain",
+        "chinese": "肚子痛",
+        "pronunciation": "STUH-muk payn",
+        "note": "在这个生活场景中，肚子痛是完成沟通的关键词。",
+        "example": "Stomach pain is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_052",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_pharmacy_doctor",
+    "scenarioTitle": "药店买药和看医生",
+    "sequence": 3,
+    "english": "I feel dizzy.",
+    "chinese": "我头晕。",
+    "scenario": "去药店、诊所、预约医生或说明简单症状时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_052-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_052-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 1",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "Please sit down for a moment.",
+      "How long have you felt dizzy?",
+      "Do you need medical help now?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I feel dizzy.",
+        "chinese": "我头晕。"
+      },
+      {
+        "speakerRole": "Receptionist",
+        "speakerRoleZh": "前台接待可能会说",
+        "english": "Please sit down for a moment.",
+        "chinese": "请先坐一会儿。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I feel better sitting down.",
+        "chinese": "坐下后好一点。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "dizzy",
+        "chinese": "头晕",
+        "pronunciation": "DIZ-ee",
+        "note": "在这个生活场景中，头晕是完成沟通的关键词。",
+        "example": "Dizzy is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_053",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_work_life_basics",
+    "scenarioTitle": "生活用品和基本服务",
+    "sequence": 3,
+    "english": "I need to reschedule my appointment.",
+    "chinese": "我需要改预约时间。",
+    "scenario": "日常生活中买工作用品、改约、拿确认号码或处理基本事务时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_053-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_053-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 1",
+    "variants": [
+      "I would like to reschedule my appointment.",
+      "I have to to reschedule my appointment."
+    ],
+    "recommendedResponses": [
+      "Sure. What day works for you?",
+      "The next opening is Monday.",
+      "Do you want to cancel or reschedule?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I need to reschedule my appointment.",
+        "chinese": "我需要改预约时间。"
+      },
+      {
+        "speakerRole": "Receptionist",
+        "speakerRoleZh": "前台接待可能会说",
+        "english": "Sure. What day works for you?",
+        "chinese": "可以。哪天适合你？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Monday works for me.",
+        "chinese": "星期一可以。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "reschedule my appointment",
+        "chinese": "改预约时间",
+        "pronunciation": "ree-SKED-jool my uh-POINT-ment",
+        "note": "在这个生活场景中，改预约时间是完成沟通的关键词。",
+        "example": "Reschedule my appointment is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_054",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_work_life_basics",
+    "scenarioTitle": "生活用品和基本服务",
+    "sequence": 4,
+    "english": "Can you give me a confirmation number?",
+    "chinese": "你可以给我一个确认号码吗？",
+    "scenario": "日常生活中买工作用品、改约、拿确认号码或处理基本事务时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_054-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_054-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 1",
+    "variants": [
+      "Could you give me a confirmation number?",
+      "Are you able to give me a confirmation number?"
+    ],
+    "recommendedResponses": [
+      "Yes, your confirmation number is 3582.",
+      "I will text it to you.",
+      "Please keep this number for your records."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can you give me a confirmation number?",
+        "chinese": "你可以给我一个确认号码吗？"
+      },
+      {
+        "speakerRole": "Receptionist",
+        "speakerRoleZh": "前台接待可能会说",
+        "english": "Yes, your confirmation number is 3582.",
+        "chinese": "可以，你的确认号码是 3582。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Thank you. I will write it down.",
+        "chinese": "谢谢。我会写下来。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "confirmation number",
+        "chinese": "确认号码",
+        "pronunciation": "kon-fer-MAY-shun NUM-ber",
+        "note": "在这个生活场景中，确认号码是完成沟通的关键词。",
+        "example": "Confirmation number is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_055",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_forms_receipts",
+    "scenarioTitle": "电话预约",
+    "sequence": 1,
+    "english": "I need help filling out this form.",
+    "chinese": "我需要帮忙填写这张表。",
+    "scenario": "填写表格、索要收据副本、邮寄包裹或处理文件时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_055-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_055-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 1",
+    "variants": [
+      "I would like help filling out this form.",
+      "I have to help filling out this form."
+    ],
+    "recommendedResponses": [
+      "Sure. Which part is confusing?",
+      "Please start with your name and address.",
+      "I can explain the form, but you need to write your information."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I need help filling out this form.",
+        "chinese": "我需要帮忙填写这张表。"
+      },
+      {
+        "speakerRole": "Clerk",
+        "speakerRoleZh": "店员可能会说",
+        "english": "Sure. Which part is confusing?",
+        "chinese": "可以。哪一部分你不明白？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I do not understand this section.",
+        "chinese": "我不明白这一部分。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "filling out this form",
+        "chinese": "填写这张表",
+        "pronunciation": "FIL-ing out this form",
+        "note": "在这个生活场景中，填写这张表是完成沟通的关键词。",
+        "example": "Filling out this form is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_056",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_forms_receipts",
+    "scenarioTitle": "电话预约",
+    "sequence": 2,
+    "english": "Can you email me a copy?",
+    "chinese": "你可以发一份副本到我邮箱吗？",
+    "scenario": "填写表格、索要收据副本、邮寄包裹或处理文件时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_056-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_056-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 1",
+    "variants": [
+      "Could you email me a copy?",
+      "Are you able to email me a copy?"
+    ],
+    "recommendedResponses": [
+      "Yes. What is your email address?",
+      "I can send it today.",
+      "Please check your inbox in a few minutes."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can you email me a copy?",
+        "chinese": "你可以发一份副本到我邮箱吗？"
+      },
+      {
+        "speakerRole": "Clerk",
+        "speakerRoleZh": "店员可能会说",
+        "english": "Yes. What is your email address?",
+        "chinese": "可以。你的邮箱地址是什么？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I will write it down for you.",
+        "chinese": "我写给你。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "email me a copy",
+        "chinese": "发一份副本到我邮箱",
+        "pronunciation": "EE-mayl mee uh KOP-ee",
+        "note": "在这个生活场景中，发一份副本到我邮箱是完成沟通的关键词。",
+        "example": "Email me a copy is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_057",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_bank_paycheck",
+    "scenarioTitle": "银行和存工资支票",
+    "sequence": 57,
+    "english": "I do not understand this letter.",
+    "chinese": "我看不懂这封信。",
+    "scenario": "存支票、工资到账、银行卡和银行问题。",
+    "importance": "这些生活表达帮助学习者解决通勤、工资、租房和看病等基本问题。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/daily_life_057-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_057-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_058",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_general",
+    "scenarioTitle": "报警、911和紧急求助",
+    "sequence": 2,
+    "english": "Who should I contact about this?",
+    "chinese": "这件事我应该联系谁？",
+    "scenario": "日常电话和柜台沟通中询问联系人、费用或请对方说慢一点。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_058-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_058-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 1",
+    "variants": [
+      "Can you help me with this?",
+      "I need help with this."
+    ],
+    "recommendedResponses": [
+      "You should contact customer service.",
+      "Call this number tomorrow morning.",
+      "I can give you the right phone number."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Who should I contact about this?",
+        "chinese": "这件事我应该联系谁？"
+      },
+      {
+        "speakerRole": "Clerk",
+        "speakerRoleZh": "店员可能会说",
+        "english": "You should contact customer service.",
+        "chinese": "你应该联系客服。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can you write the number down?",
+        "chinese": "你可以把号码写下来吗？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "contact about this",
+        "chinese": "就这件事联系",
+        "pronunciation": "KON-takt uh-BOWT this",
+        "note": "在这个生活场景中，就这件事联系是完成沟通的关键词。",
+        "example": "Contact about this is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_059",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_phone_internet",
+    "scenarioTitle": "手机和网络",
+    "sequence": 5,
+    "english": "Can I make a payment plan?",
+    "chinese": "我可以分期付款吗？",
+    "scenario": "办理手机套餐、网络、账单、流量、付款或服务故障时使用。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_059-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_059-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 2",
+    "variants": [
+      "Is it possible to make a payment plan?",
+      "Could I make a payment plan?"
+    ],
+    "recommendedResponses": [
+      "Let me check if you qualify.",
+      "You can pay part now and part later.",
+      "There may be a late fee."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can I make a payment plan?",
+        "chinese": "我可以分期付款吗？"
+      },
+      {
+        "speakerRole": "Phone Rep",
+        "speakerRoleZh": "手机客服可能会说",
+        "english": "Let me check if you qualify.",
+        "chinese": "我查一下你是否符合条件。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "How much do I need to pay today?",
+        "chinese": "我今天需要付多少？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "payment plan",
+        "chinese": "分期付款计划",
+        "pronunciation": "PAY-ment plan",
+        "note": "在这个生活场景中，分期付款计划是完成沟通的关键词。",
+        "example": "Payment plan is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "daily_life_060",
+    "moduleId": "daily_life",
+    "moduleTitle": "北美基本生活英语",
+    "scenarioId": "daily_life_general",
+    "scenarioTitle": "报警、911和紧急求助",
+    "sequence": 3,
+    "english": "Is there a fee for this?",
+    "chinese": "这个有费用吗？",
+    "scenario": "日常电话和柜台沟通中询问联系人、费用或请对方说慢一点。",
+    "importance": "这些句子帮助新移民在交通、银行、手机、租房和看病等日常场景中完成基本沟通。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/daily_life_060-normal.mp3",
+    "audioSlow": "/audio/en-US/daily_life_060-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "daily_life",
+      "supplement",
+      "daily-life-pack"
+    ],
+    "active": true,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 1",
+    "variants": [
+      "Do you know if there a fee for this?",
+      "Can you tell me if there a fee for this?"
+    ],
+    "recommendedResponses": [
+      "Yes, there is a small fee.",
+      "No, there is no fee.",
+      "The fee is ten dollars."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Is there a fee for this?",
+        "chinese": "这个有费用吗？"
+      },
+      {
+        "speakerRole": "Clerk",
+        "speakerRoleZh": "店员可能会说",
+        "english": "Yes, there is a small fee.",
+        "chinese": "是的，有一点费用。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "How much is the fee?",
+        "chinese": "费用是多少？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "fee",
+        "chinese": "费用",
+        "pronunciation": "fee-sound",
+        "note": "在这个生活场景中，费用是完成沟通的关键词。",
+        "example": "Fee is important."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  }
+]

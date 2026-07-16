@@ -1,0 +1,2504 @@
+[
+  {
+    "id": "shift_pay_001",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_pay_overtime",
+    "scenarioTitle": "打卡、工资和加班",
+    "sequence": 1,
+    "english": "Let me confirm your hours for this week.",
+    "chinese": "我确认一下你这周的工时。",
+    "scenario": "确认打卡、工时、加班和工资到账。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/shift_pay_001-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_001-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Let me check your hours for this week.",
+      "I want to confirm your weekly hours."
+    ],
+    "recommendedResponses": [
+      "Okay, thank you.",
+      "I worked thirty-two hours this week.",
+      "I think two hours are missing."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Let me confirm your hours for this week.",
+        "chinese": "我确认一下你这周的工时。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay. I worked thirty-two hours.",
+        "chinese": "好的。我工作了三十二个小时。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Thanks. I will check the time sheet.",
+        "chinese": "谢谢。我会查看工时表。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "hours",
+        "chinese": "工时；工作小时数",
+        "pronunciation": "OW-erz",
+        "note": "这里指员工这一周实际工作的小时数。",
+        "example": "My hours are wrong."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_002",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_general",
+    "scenarioTitle": "班次、打卡、工资、请假、交接班。",
+    "sequence": 2,
+    "english": "Finish this before your break.",
+    "chinese": "休息前把这项工作完成。",
+    "scenario": "主管根据工作进度安排员工完成一项短任务后休息。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/shift_pay_002-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_002-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Finish this before your break."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it.",
+      "Can you show me how?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Finish this before your break.",
+        "chinese": "休息前把这项工作完成。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我现在就做。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Finish before",
+        "chinese": "重点词组",
+        "pronunciation": "Finish before",
+        "note": "这句话里的工作关键词。",
+        "example": "Finish this before your break."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_003",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_handoff",
+    "scenarioTitle": "交接班",
+    "sequence": 3,
+    "english": "Please notify me before leaving your work area.",
+    "chinese": "离开工作区域前请先通知我。",
+    "scenario": "把没做完的工作交代给下一班。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/shift_pay_003-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_003-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Tell me before you leave your station.",
+      "Let me know before you step away."
+    ],
+    "recommendedResponses": [
+      "Okay, I will tell you before I leave.",
+      "Got it. I will ask first.",
+      "I will notify you before I step away."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Please notify me before leaving your work area.",
+        "chinese": "离开工作区域前请先通知我。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Okay, I will tell you before I leave.",
+        "chinese": "好的，我离开前会先告诉你。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管可能会说",
+        "english": "Thank you. I need to know where you are.",
+        "chinese": "谢谢。我需要知道你在哪里。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "notify",
+        "chinese": "通知",
+        "pronunciation": "NOH-ti-fy",
+        "note": "迟到、请假或离岗前告诉主管。",
+        "example": "Notify the manager."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_004",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 4,
+    "english": "I am going to be late for my shift.",
+    "chinese": "我上班会迟到。",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_004-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_004-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I am going to be late for my shift."
+    ],
+    "recommendedResponses": [
+      "Thanks for checking.",
+      "Can you help me fix it?",
+      "Who should I talk to?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I am going to be late for my shift.",
+        "chinese": "我上班会迟到。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thanks for checking.",
+        "chinese": "谢谢你帮我查。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "am going",
+        "chinese": "重点词组",
+        "pronunciation": "am going",
+        "note": "这句话里的工作关键词。",
+        "example": "I am going to be late for my shift."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_005",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_time_off",
+    "scenarioTitle": "请假和病假",
+    "sequence": 1,
+    "english": "I am sick and cannot come to work today.",
+    "chinese": "我生病了，今天不能来上班。",
+    "scenario": "身体不舒服或有事时，用简单英文请假。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_005-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_005-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I am sick and cannot work today.",
+      "I am sick and cannot come in today."
+    ],
+    "recommendedResponses": [
+      "Thanks for letting me know.",
+      "Please rest and keep me updated.",
+      "Do you think you can work tomorrow?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "I am sick and cannot come to work today.",
+        "chinese": "我生病了，今天不能来上班。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理可能会说",
+        "english": "Thanks for letting me know. Please rest today.",
+        "chinese": "谢谢你告诉我。今天好好休息。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "Thank you. I will update you tomorrow.",
+        "chinese": "谢谢。我明天再跟你更新。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "come to work",
+        "chinese": "来上班",
+        "pronunciation": "kum-toh-work",
+        "note": "员工说明自己今天不能到店上班时使用。",
+        "example": "I can come to work tomorrow."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_006",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 8,
+    "english": "My schedule shows the wrong shift.",
+    "chinese": "我的排班显示错了。",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_006-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_006-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "My shift looks wrong on the schedule.",
+      "The schedule has the wrong shift for me."
+    ],
+    "recommendedResponses": [
+      "Let me check the schedule.",
+      "Which shift looks wrong?",
+      "Please show me the schedule."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "My schedule shows the wrong shift.",
+        "chinese": "我的排班显示错了。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理可能会说",
+        "english": "Which shift looks wrong?",
+        "chinese": "哪个班次看起来不对？"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工要说",
+        "english": "It says I work Friday, but I asked for Friday off.",
+        "chinese": "上面写我周五上班，但我申请了周五休息。"
+      },
+      {
+        "speakerRole": "Manager",
+        "speakerRoleZh": "经理可能会说",
+        "english": "Let me check it now.",
+        "chinese": "我现在查一下。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "schedule",
+        "chinese": "排班表；时间表",
+        "pronunciation": "SKE-jool",
+        "note": "餐厅安排你上班的日期和时间。",
+        "example": "Check your schedule."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_007",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 9,
+    "english": "Do not swap shifts without approval.",
+    "chinese": "未经批准不要私自换班。",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/shift_pay_007-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_007-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "You need approval before swapping shifts.",
+      "Do not switch shifts unless a manager approves it."
+    ],
+    "recommendedResponses": [
+      "Okay, I will ask first.",
+      "Got it. I will not switch without approval.",
+      "Who should approve the switch?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Do not swap shifts without approval.",
+        "chinese": "未经批准不要私自换班。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I will ask for approval first.",
+        "chinese": "好的，我会先申请批准。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "swap shifts",
+        "chinese": "换班",
+        "pronunciation": "swop-shifts",
+        "note": "和同事交换上班时间。",
+        "example": "Can we swap shifts?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_008",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 8,
+    "english": "Can I switch shifts with my coworker?",
+    "chinese": "我可以和同事换班吗？",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_008-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_008-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can I switch shifts with my coworker, please?"
+    ],
+    "recommendedResponses": [
+      "Thanks for checking.",
+      "Can you help me fix it?",
+      "Who should I talk to?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Can I switch shifts with my coworker?",
+        "chinese": "我可以和同事换班吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thanks for checking.",
+        "chinese": "谢谢你帮我查。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "switch shifts",
+        "chinese": "重点词组",
+        "pronunciation": "switch shifts",
+        "note": "这句话里的工作关键词。",
+        "example": "Can I switch shifts with my coworker?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_009",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_handoff",
+    "scenarioTitle": "交接班",
+    "sequence": 2,
+    "english": "Please complete the handoff before you leave.",
+    "chinese": "离开前请完成交接。",
+    "scenario": "把没做完的工作交代给下一班。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/shift_pay_009-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_009-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Finish the handoff before leaving.",
+      "Complete the shift handoff first."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll finish the handoff now.",
+      "Who should I give the handoff note to?",
+      "I’ll tell the next person what is left."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Please complete the handoff before you leave.",
+        "chinese": "离开前请完成交接。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll tell the next person what is left.",
+        "chinese": "好的，我会告诉下一班还剩什么没做。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "handoff",
+        "chinese": "交接班；交接说明",
+        "pronunciation": "HAND-off",
+        "note": "下班前把未完成的工作告诉下一班或主管。",
+        "example": "Write a handoff note."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_010",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_handoff",
+    "scenarioTitle": "交接班",
+    "sequence": 1,
+    "english": "This task is not finished yet.",
+    "chinese": "这项工作还没有完成。",
+    "scenario": "把没做完的工作交代给下一班。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_010-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_010-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "This job is not done yet.",
+      "This task still needs work."
+    ],
+    "recommendedResponses": [
+      "Thanks for telling me.",
+      "Please tell the next shift.",
+      "Write it in the handoff note."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "This task is not finished yet.",
+        "chinese": "这项工作还没有完成。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thanks. Please write it in the handoff note.",
+        "chinese": "谢谢。请把它写在交接说明里。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "not finished yet",
+        "chinese": "还没有完成",
+        "pronunciation": "not-FIN-isht-yet",
+        "note": "交接班时说明某项工作还没有做完。",
+        "example": "The prep is not finished yet."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_011",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 11,
+    "english": "Record the issue in the shift log.",
+    "chinese": "把这个问题记录在班次日志里。",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/shift_pay_011-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_011-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Record the issue in the shift log."
+    ],
+    "recommendedResponses": [
+      "Thanks for checking.",
+      "Can you help me fix it?",
+      "Who should I talk to?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Record the issue in the shift log.",
+        "chinese": "把这个问题记录在班次日志里。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Thanks for checking.",
+        "chinese": "谢谢你帮我查。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Record issue",
+        "chinese": "重点词组",
+        "pronunciation": "Record issue",
+        "note": "这句话里的工作关键词。",
+        "example": "Record the issue in the shift log."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_012",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 1,
+    "english": "Who is closing tonight?",
+    "chinese": "今晚谁关店？",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_012-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_012-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Who closes tonight?",
+      "Who is on closing tonight?"
+    ],
+    "recommendedResponses": [
+      "Maria is closing tonight.",
+      "You are closing with Kevin.",
+      "Let me check the schedule."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Who is closing tonight?",
+        "chinese": "今晚谁关店？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "You are closing with Kevin tonight.",
+        "chinese": "今晚你和 Kevin 一起关店。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay. What time do we finish?",
+        "chinese": "好的。我们几点结束？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "closing",
+        "chinese": "关店",
+        "pronunciation": "KLOH-zing",
+        "note": "营业结束后的清洁和检查流程。",
+        "example": "Finish closing."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_013",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 2,
+    "english": "Who is opening tomorrow?",
+    "chinese": "明天谁开店？",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_013-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_013-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Who opens tomorrow?",
+      "Who is on opening tomorrow?"
+    ],
+    "recommendedResponses": [
+      "You open tomorrow at nine.",
+      "Kevin is opening tomorrow.",
+      "Let me check the schedule."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Who is opening tomorrow?",
+        "chinese": "明天谁开店？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "You open tomorrow at nine.",
+        "chinese": "你明天九点开店。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I will be here at nine.",
+        "chinese": "好的，我九点到。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "opening",
+        "chinese": "开店班；开店工作",
+        "pronunciation": "OH-pen-ing",
+        "note": "餐厅早上开始营业前的班次或准备工作。",
+        "example": "I am opening tomorrow."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_014",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 10,
+    "english": "Can I switch shifts with Kevin?",
+    "chinese": "我可以和 Kevin 换班吗？",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_014-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_014-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can Kevin and I switch shifts?",
+      "Can I trade shifts with Kevin?"
+    ],
+    "recommendedResponses": [
+      "Let me check with the manager.",
+      "Does Kevin agree to switch?",
+      "Please write the request down."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Can I switch shifts with Kevin?",
+        "chinese": "我可以和 Kevin 换班吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Does Kevin agree to switch?",
+        "chinese": "Kevin 同意换班吗？"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Yes, he said it is okay.",
+        "chinese": "是的，他说可以。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "switch shifts",
+        "chinese": "换班",
+        "pronunciation": "switch-shifts",
+        "note": "两个员工互相交换上班时间，通常需要主管批准。",
+        "example": "Can we switch shifts?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_015",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 15,
+    "english": "I can stay thirty minutes longer.",
+    "chinese": "我可以多留三十分钟。",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_015-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_015-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I can stay thirty minutes longer."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I can stay thirty minutes longer.",
+        "chinese": "我可以多留三十分钟。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "stay thirty",
+        "chinese": "重点词组",
+        "pronunciation": "stay thirty",
+        "note": "这句话里的工作关键词。",
+        "example": "I can stay thirty minutes longer."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_016",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 16,
+    "english": "I need to leave on time today.",
+    "chinese": "我今天需要准时下班。",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_016-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_016-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I need to get to leave on time today.",
+      "I have to get to leave on time today."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I need to leave on time today.",
+        "chinese": "我今天需要准时下班。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need leave",
+        "chinese": "重点词组",
+        "pronunciation": "need leave",
+        "note": "这句话里的工作关键词。",
+        "example": "I need to leave on time today."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_017",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 3,
+    "english": "Was my break recorded?",
+    "chinese": "我的休息时间记录了吗？",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_017-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_017-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Did my break get recorded?",
+      "Is my break on the time sheet?"
+    ],
+    "recommendedResponses": [
+      "Let me check your time sheet.",
+      "Yes, your break is recorded.",
+      "No, I will fix it."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Was my break recorded?",
+        "chinese": "我的休息时间记录了吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Let me check your time sheet.",
+        "chinese": "我来查一下你的工时表。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Thank you. I took my break at two.",
+        "chinese": "谢谢。我两点休息的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "break recorded",
+        "chinese": "休息时间被记录",
+        "pronunciation": "brayk-ri-KOR-did",
+        "note": "询问系统或工时表里是否记录了你的休息时间。",
+        "example": "My break was recorded."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_018",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 18,
+    "english": "I worked from ten to four.",
+    "chinese": "我是从十点工作到四点。",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_018-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_018-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I worked from ten to four."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I worked from ten to four.",
+        "chinese": "我是从十点工作到四点。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "worked from",
+        "chinese": "重点词组",
+        "pronunciation": "worked from",
+        "note": "这句话里的工作关键词。",
+        "example": "I worked from ten to four."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_019",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 19,
+    "english": "My direct deposit has not arrived yet.",
+    "chinese": "我的工资直接存款还没到账。",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_019-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_019-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "My direct deposit has not arrived yet."
+    ],
+    "recommendedResponses": [
+      "Thanks for checking.",
+      "Can you help me fix it?",
+      "Who should I talk to?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "My direct deposit has not arrived yet.",
+        "chinese": "我的工资直接存款还没到账。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thanks for checking.",
+        "chinese": "谢谢你帮我查。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "My direct",
+        "chinese": "重点词组",
+        "pronunciation": "My direct",
+        "note": "这句话里的工作关键词。",
+        "example": "My direct deposit has not arrived yet."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_020",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 20,
+    "english": "Can you check my time sheet?",
+    "chinese": "你可以帮我查一下工时表吗？",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_020-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_020-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Could you check my time sheet?",
+      "Can you please check my time sheet?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Can you check my time sheet?",
+        "chinese": "你可以帮我查一下工时表吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "check my",
+        "chinese": "重点词组",
+        "pronunciation": "check my",
+        "note": "这句话里的工作关键词。",
+        "example": "Can you check my time sheet?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_021",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 21,
+    "english": "I need to call in sick today.",
+    "chinese": "我今天需要请病假。",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_021-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_021-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I need to get to call in sick today.",
+      "I have to get to call in sick today."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I need to call in sick today.",
+        "chinese": "我今天需要请病假。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need call",
+        "chinese": "重点词组",
+        "pronunciation": "need call",
+        "note": "这句话里的工作关键词。",
+        "example": "I need to call in sick today."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_022",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 22,
+    "english": "Can I take my break now?",
+    "chinese": "我现在可以休息吗？",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_022-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_022-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can I take my break now, please?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Can I take my break now?",
+        "chinese": "我现在可以休息吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "take my",
+        "chinese": "重点词组",
+        "pronunciation": "take my",
+        "note": "这句话里的工作关键词。",
+        "example": "Can I take my break now?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_023",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 23,
+    "english": "What time should I come in tomorrow?",
+    "chinese": "我明天几点来上班？",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_023-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_023-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "What exactly time should I come in tomorrow?",
+      "What time should I come in tomorrow, please?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "What time should I come in tomorrow?",
+        "chinese": "我明天几点来上班？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "What time",
+        "chinese": "重点词组",
+        "pronunciation": "What time",
+        "note": "这句话里的工作关键词。",
+        "example": "What time should I come in tomorrow?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_024",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 24,
+    "english": "Can you send me the new schedule?",
+    "chinese": "你可以把新排班发给我吗？",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_024-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_024-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Could you send me the new schedule?",
+      "Can you please send me the new schedule?"
+    ],
+    "recommendedResponses": [
+      "Thanks for checking.",
+      "Can you help me fix it?",
+      "Who should I talk to?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Can you send me the new schedule?",
+        "chinese": "你可以把新排班发给我吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thanks for checking.",
+        "chinese": "谢谢你帮我查。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "send me",
+        "chinese": "重点词组",
+        "pronunciation": "send me",
+        "note": "这句话里的工作关键词。",
+        "example": "Can you send me the new schedule?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_025",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 25,
+    "english": "I think my overtime is missing.",
+    "chinese": "我觉得我的加班时间少算了。",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_025-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_025-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I think my overtime is missing."
+    ],
+    "recommendedResponses": [
+      "Thanks for checking.",
+      "Can you help me fix it?",
+      "Who should I talk to?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I think my overtime is missing.",
+        "chinese": "我觉得我的加班时间少算了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thanks for checking.",
+        "chinese": "谢谢你帮我查。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "think my",
+        "chinese": "重点词组",
+        "pronunciation": "think my",
+        "note": "这句话里的工作关键词。",
+        "example": "I think my overtime is missing."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_026",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 26,
+    "english": "Who should I give the handoff note to?",
+    "chinese": "我应该把交接说明给谁？",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_026-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_026-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Who should I give the handoff note to, please?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Who should I give the handoff note to?",
+        "chinese": "我应该把交接说明给谁？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Who should",
+        "chinese": "重点词组",
+        "pronunciation": "Who should",
+        "note": "这句话里的工作关键词。",
+        "example": "Who should I give the handoff note to?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_027",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 27,
+    "english": "The next shift is not here yet.",
+    "chinese": "下一班的人还没来。",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_027-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_027-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "The next shift is not here yet."
+    ],
+    "recommendedResponses": [
+      "Thanks for checking.",
+      "Can you help me fix it?",
+      "Who should I talk to?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "The next shift is not here yet.",
+        "chinese": "下一班的人还没来。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thanks for checking.",
+        "chinese": "谢谢你帮我查。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "next shift",
+        "chinese": "重点词组",
+        "pronunciation": "next shift",
+        "note": "这句话里的工作关键词。",
+        "example": "The next shift is not here yet."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_028",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 28,
+    "english": "I can cover the first hour.",
+    "chinese": "我可以先顶第一个小时。",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_028-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_028-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I can cover the first hour."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I can cover the first hour.",
+        "chinese": "我可以先顶第一个小时。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "cover first",
+        "chinese": "重点词组",
+        "pronunciation": "cover first",
+        "note": "这句话里的工作关键词。",
+        "example": "I can cover the first hour."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_029",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 5,
+    "english": "I cannot work that day.",
+    "chinese": "那天我不能上班。",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_029-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_029-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I am not available that day.",
+      "I cannot take that shift."
+    ],
+    "recommendedResponses": [
+      "Thanks for telling me early.",
+      "Please request that day off.",
+      "Can you work a different day?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I cannot work that day.",
+        "chinese": "那天我不能上班。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Thanks for telling me early. Please request that day off.",
+        "chinese": "谢谢你提前告诉我。请申请那天休假。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I will put in the request today.",
+        "chinese": "好的，我今天提交申请。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "not available",
+        "chinese": "没有空；不能上班",
+        "pronunciation": "not-uh-VAY-luh-bul",
+        "note": "告诉主管某一天不能被安排上班。",
+        "example": "I am not available Sunday."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_030",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 6,
+    "english": "Can I update my availability?",
+    "chinese": "我可以更新我的可上班时间吗？",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_030-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_030-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can I change my availability?",
+      "Can I update the days I can work?"
+    ],
+    "recommendedResponses": [
+      "Yes, send me your new availability.",
+      "Please update it before Friday.",
+      "Which days can you work?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Can I update my availability?",
+        "chinese": "我可以更新我的可上班时间吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, send me your new availability by Friday.",
+        "chinese": "可以，周五前把新的可上班时间发给我。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I will send it today.",
+        "chinese": "好的，我今天发给你。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "update availability",
+        "chinese": "更新可上班时间",
+        "pronunciation": "up-DAYT uh-vay-luh-BIL-i-tee",
+        "note": "告诉主管你哪些天、哪些时间可以上班。",
+        "example": "Update your availability online."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_031",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 31,
+    "english": "I need this day off for an appointment.",
+    "chinese": "我这天需要请假去预约。",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_031-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_031-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I need to get this day off for an appointment.",
+      "I have to get this day off for an appointment."
+    ],
+    "recommendedResponses": [
+      "Let me check your order.",
+      "I’m sorry about that.",
+      "Let me get my manager."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I need this day off for an appointment.",
+        "chinese": "我这天需要请假去预约。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Let me check your order.",
+        "chinese": "我帮你查一下订单。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need day",
+        "chinese": "重点词组",
+        "pronunciation": "need day",
+        "note": "这句话里的工作关键词。",
+        "example": "I need this day off for an appointment."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_032",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 32,
+    "english": "Can I come in earlier tomorrow?",
+    "chinese": "我明天可以早点来上班吗？",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_032-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_032-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can I come in earlier tomorrow, please?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Can I come in earlier tomorrow?",
+        "chinese": "我明天可以早点来上班吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "come in",
+        "chinese": "重点词组",
+        "pronunciation": "come in",
+        "note": "这句话里的工作关键词。",
+        "example": "Can I come in earlier tomorrow?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_033",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 33,
+    "english": "Can I leave early if it is slow?",
+    "chinese": "如果不忙，我可以早点走吗？",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_033-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_033-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Can I leave early if it is slow, please?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Can I leave early if it is slow?",
+        "chinese": "如果不忙，我可以早点走吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "leave early",
+        "chinese": "重点词组",
+        "pronunciation": "leave early",
+        "note": "这句话里的工作关键词。",
+        "example": "Can I leave early if it is slow?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_034",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 4,
+    "english": "Who approves time-off requests?",
+    "chinese": "谁批准请假申请？",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_034-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_034-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "Who approves requests for time off?",
+      "Who should I ask for time off?"
+    ],
+    "recommendedResponses": [
+      "The manager approves time-off requests.",
+      "Please ask Maria.",
+      "Submit the request in the schedule app."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Who approves time-off requests?",
+        "chinese": "谁批准请假申请？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "The manager approves time-off requests.",
+        "chinese": "经理批准请假申请。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I will ask the manager.",
+        "chinese": "好的，我会问经理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "time-off requests",
+        "chinese": "请假申请",
+        "pronunciation": "time-off ri-KWESTS",
+        "note": "员工想请假时提交给主管或经理的申请。",
+        "example": "Submit a time-off request."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_035",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 35,
+    "english": "I submitted my availability last week.",
+    "chinese": "我上周已经提交了可上班时间。",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_035-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_035-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "variants": [
+      "I submitted my availability last week."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I submitted my availability last week.",
+        "chinese": "我上周已经提交了可上班时间。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "submitted my",
+        "chinese": "重点词组",
+        "pronunciation": "submitted my",
+        "note": "这句话里的工作关键词。",
+        "example": "I submitted my availability last week."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_036",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 36,
+    "english": "I am scheduled for the wrong day.",
+    "chinese": "我被排到了错误的日期。",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_036-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_036-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_037",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 37,
+    "english": "Can you fix my clock-in time?",
+    "chinese": "你可以帮我修正上班打卡时间吗？",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_037-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_037-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_038",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 38,
+    "english": "Can you fix my clock-out time?",
+    "chinese": "你可以帮我修正下班打卡时间吗？",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_038-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_038-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_039",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 7,
+    "english": "I covered a shift yesterday.",
+    "chinese": "我昨天帮别人顶班了。",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_039-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_039-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 1",
+    "variants": [
+      "I worked someone else’s shift yesterday.",
+      "I picked up a shift yesterday."
+    ],
+    "recommendedResponses": [
+      "Thanks. I will check the time sheet.",
+      "Who did you cover for?",
+      "Please make sure the hours are recorded."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I covered a shift yesterday.",
+        "chinese": "我昨天帮别人顶班了。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Who did you cover for?",
+        "chinese": "你帮谁顶班了？"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "I covered Kevin’s evening shift.",
+        "chinese": "我帮 Kevin 顶了晚班。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "covered a shift",
+        "chinese": "顶班",
+        "pronunciation": "KUH-verd uh shift",
+        "note": "表示替别人上了一个班。",
+        "example": "I covered her shift."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "shift_pay_040",
+    "moduleId": "shift_pay",
+    "moduleTitle": "排班、工资、请假和交接班",
+    "scenarioId": "shift_pay_schedule",
+    "scenarioTitle": "排班、迟到和换班",
+    "sequence": 40,
+    "english": "Should I write this in the handoff book?",
+    "chinese": "我要把这个写在交接本里吗？",
+    "scenario": "查看排班、说明迟到、确认换班和下一次上班时间。",
+    "importance": "排班和工资说不清，会直接影响收入和工作安排。",
+    "role": "Worker",
+    "roleZh": "员工要说",
+    "audioNormal": "/audio/en-US/shift_pay_040-normal.mp3",
+    "audioSlow": "/audio/en-US/shift_pay_040-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "shift_pay",
+      "supplement",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Worker",
+    "speakerRoleZh": "员工要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  }
+]

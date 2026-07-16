@@ -1,0 +1,3809 @@
+[
+  {
+    "id": "delivery_complaints_001",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_missing_wrong_order",
+    "scenarioTitle": "少餐、错餐和顾客投诉",
+    "sequence": 3,
+    "english": "One item is missing from my order.",
+    "chinese": "我的订单少了一样东西。",
+    "scenario": "顾客发现少餐、错餐、错口味或漏饮料时，店员需要先道歉、核对订单并解决。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_001-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_001-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Something is missing from my order.",
+      "One item is not in the bag."
+    ],
+    "recommendedResponses": [
+      "I'm sorry. Let me check your order.",
+      "Which item is missing?",
+      "I'll get the missing item for you."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "One item is missing from my order.",
+        "chinese": "我的订单少了一样东西。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "I'm sorry. Let me check your order.",
+        "chinese": "很抱歉。我查一下您的订单。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "I'll get the missing item for you now.",
+        "chinese": "我现在帮您把少的东西补上。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "missing from my order",
+        "chinese": "我的订单里缺少",
+        "pronunciation": "MIS-ing from my OR-der",
+        "note": "顾客说明订单里少了某样东西。",
+        "example": "The drink is missing from my order."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_002",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_missing_wrong_order",
+    "scenarioTitle": "少餐、错餐和顾客投诉",
+    "sequence": 2,
+    "english": "I'm sorry. Which item is missing?",
+    "chinese": "很抱歉。少的是哪一样？",
+    "scenario": "顾客发现少餐、错餐、错口味或漏饮料时，店员需要先道歉、核对订单并解决。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Staff",
+    "roleZh": "店员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_002-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_002-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "店员要说",
+    "variants": [
+      "I'm sorry. What item is missing?",
+      "Sorry, which item did you not receive?"
+    ],
+    "recommendedResponses": [
+      "The fries are missing.",
+      "We did not get the drink.",
+      "One sauce is missing."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "I'm sorry. Which item is missing?",
+        "chinese": "很抱歉。少的是哪一样？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "The fries are missing.",
+        "chinese": "薯条少了。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "I'll get them for you now.",
+        "chinese": "我现在帮您补上。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "which item",
+        "chinese": "哪一样东西",
+        "pronunciation": "which-EYE-tem",
+        "note": "询问顾客具体少了哪一项。",
+        "example": "Which item is wrong?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_003",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_missing_wrong_order",
+    "scenarioTitle": "少餐、错餐和顾客投诉",
+    "sequence": 1,
+    "english": "The fries are missing.",
+    "chinese": "薯条少了。",
+    "scenario": "顾客发现少餐、错餐、错口味或漏饮料时，店员需要先道歉、核对订单并解决。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_003-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_003-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "I did not get the fries.",
+      "There are no fries in the bag."
+    ],
+    "recommendedResponses": [
+      "I'm sorry. I'll get the fries for you.",
+      "Let me check your order first.",
+      "We'll fix that right away."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "The fries are missing.",
+        "chinese": "薯条少了。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "I'm sorry. I'll get the fries for you now.",
+        "chinese": "很抱歉。我现在帮您补薯条。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "fries are missing",
+        "chinese": "薯条少了",
+        "pronunciation": "fries-ar-MIS-ing",
+        "note": "顾客说明袋子里没有应有的薯条。",
+        "example": "The sauce is missing."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_004",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_missing_wrong_order",
+    "scenarioTitle": "少餐、错餐和顾客投诉",
+    "sequence": 4,
+    "english": "I'd like a refund for this order.",
+    "chinese": "我想给这份订单退款。",
+    "scenario": "顾客发现少餐、错餐、错口味或漏饮料时，店员需要先道歉、核对订单并解决。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_004-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_004-slow.mp3",
+    "isFree": true,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 3",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Can I get a refund for this order?",
+      "I want a refund, please."
+    ],
+    "recommendedResponses": [
+      "Let me get the manager for you.",
+      "I can check the order first.",
+      "Was this order placed online or in store?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I'd like a refund for this order.",
+        "chinese": "我想给这份订单退款。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "I understand. Let me get the manager for you.",
+        "chinese": "我明白。我帮您叫经理。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "refund",
+        "chinese": "退款",
+        "pronunciation": "REE-fund",
+        "note": "顾客要求把已付款项退回。",
+        "example": "I need a refund."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_005",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 9,
+    "english": "Which delivery app are you picking up for?",
+    "chinese": "你是来取哪个外卖平台的订单？",
+    "scenario": "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Staff",
+    "roleZh": "店员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_005-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_005-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "店员要说",
+    "variants": [
+      "What delivery app is the order from?",
+      "Are you picking up for Uber Eats or DoorDash?"
+    ],
+    "recommendedResponses": [
+      "I'm with DoorDash.",
+      "It's an Uber Eats order.",
+      "I'm picking up from Skip."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "Which delivery app are you picking up for?",
+        "chinese": "你是来取哪个外卖平台的订单？"
+      },
+      {
+        "speakerRole": "Driver",
+        "speakerRoleZh": "外卖司机可能会说",
+        "english": "I'm picking up an Uber Eats order.",
+        "chinese": "我来取 Uber Eats 的订单。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "What is the customer name?",
+        "chinese": "顾客姓名是什么？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "delivery app",
+        "chinese": "外卖平台",
+        "pronunciation": "di-LIV-er-ee app",
+        "note": "指 Uber Eats、DoorDash 等外卖软件。",
+        "example": "Which delivery app is it?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_006",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 1,
+    "english": "I ordered through a delivery app.",
+    "chinese": "我是通过外卖平台下单的。",
+    "scenario": "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_006-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_006-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "I placed the order on an app.",
+      "I ordered it online through the app."
+    ],
+    "recommendedResponses": [
+      "Which app did you use?",
+      "May I see the order on your phone?",
+      "Let me check the app order."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I ordered through a delivery app.",
+        "chinese": "我是通过外卖平台下单的。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "Which app did you use?",
+        "chinese": "您用的是哪个平台？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Uber Eats.",
+        "chinese": "Uber Eats。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "through a delivery app",
+        "chinese": "通过外卖平台",
+        "pronunciation": "throo uh di-LIV-er-ee app",
+        "note": "表示订单不是店内点的，而是在外卖软件上下的。",
+        "example": "I paid through the app."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_007",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 7,
+    "english": "App refunds go through the platform. Let me check first.",
+    "chinese": "App订单退款要通过平台。我先查一下。",
+    "scenario": "外卖司机取餐、确认号码、等待和缺货。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Staff",
+    "roleZh": "前台员工要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_007-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_007-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Refunds go through the app. Let me check first.",
+      "The platform handles app refunds. I’ll check the order."
+    ],
+    "recommendedResponses": [
+      "Okay, thank you.",
+      "Can you check the order?",
+      "I’ll contact the app if needed."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "前台员工",
+        "english": "App refunds go through the platform. Let me check first.",
+        "chinese": "App订单退款要通过平台。我先查一下。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, thank you.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "go through the platform",
+        "chinese": "通过平台处理",
+        "pronunciation": "go through the platform",
+        "note": "不是店里直接处理，而是在App平台处理。",
+        "example": "Refunds go through the platform."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_008",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 3,
+    "english": "I'm picking up order 742 for Jordan.",
+    "chinese": "我是来取 Jordan 的 742 号订单。",
+    "scenario": "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Driver",
+    "roleZh": "外卖司机可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_008-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_008-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Driver",
+    "speakerRoleZh": "外卖司机可能会说",
+    "variants": [
+      "I have order 742 for Jordan.",
+      "I'm here for Jordan's order, number 742."
+    ],
+    "recommendedResponses": [
+      "Let me check that order.",
+      "It is almost ready.",
+      "Please confirm pickup when I hand it to you."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Driver",
+        "speakerRoleZh": "外卖司机可能会说",
+        "english": "I'm picking up order 742 for Jordan.",
+        "chinese": "我是来取 Jordan 的 742 号订单。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "Let me check that order.",
+        "chinese": "我查一下这个订单。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "It will be ready in five minutes.",
+        "chinese": "大概五分钟后好。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "picking up order",
+        "chinese": "取订单",
+        "pronunciation": "PIK-ing-up OR-der",
+        "note": "司机说明自己是来取哪一份外卖订单。",
+        "example": "I am picking up order 12."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_009",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 9,
+    "english": "Which delivery platform are you with?",
+    "chinese": "您是哪个外卖平台的司机？",
+    "scenario": "外卖司机取餐、确认号码、等待和缺货。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Staff",
+    "roleZh": "前台员工要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_009-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_009-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Which delivery platform are you with, please?"
+    ],
+    "recommendedResponses": [
+      "Yes, I’ll show you.",
+      "Sure. Watch me first.",
+      "Ask me again if it’s not clear."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "前台员工",
+        "english": "Which delivery platform are you with?",
+        "chinese": "您是哪个外卖平台的司机？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, I’ll show you.",
+        "chinese": "可以，我示范给你看。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Sure. Watch me first.",
+        "chinese": "可以，先看我做。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Which delivery",
+        "chinese": "重点词组",
+        "pronunciation": "Which delivery",
+        "note": "这句话里的工作关键词。",
+        "example": "Which delivery platform are you with?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_010",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 4,
+    "english": "I'm with DoorDash.",
+    "chinese": "我是 DoorDash 的司机。",
+    "scenario": "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Driver",
+    "roleZh": "外卖司机可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_010-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_010-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Driver",
+    "speakerRoleZh": "外卖司机可能会说",
+    "variants": [
+      "I'm picking up for DoorDash.",
+      "This is a DoorDash pickup."
+    ],
+    "recommendedResponses": [
+      "What is the customer name?",
+      "What is the order number?",
+      "Please wait. I will check it."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Driver",
+        "speakerRoleZh": "外卖司机可能会说",
+        "english": "I'm with DoorDash.",
+        "chinese": "我是 DoorDash 的司机。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "What is the customer name?",
+        "chinese": "顾客姓名是什么？"
+      },
+      {
+        "speakerRole": "Driver",
+        "speakerRoleZh": "外卖司机可能会说",
+        "english": "It's for Maria.",
+        "chinese": "是 Maria 的订单。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "with DoorDash",
+        "chinese": "DoorDash 平台的",
+        "pronunciation": "with DOOR-dash",
+        "note": "司机用来说明自己代表哪个外卖平台取餐。",
+        "example": "I'm with Uber Eats."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_011",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 8,
+    "english": "The order is ready. Please confirm the pickup in the app.",
+    "chinese": "订单好了。请在 App 里确认取餐。",
+    "scenario": "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Staff",
+    "roleZh": "店员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_011-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_011-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "店员要说",
+    "variants": [
+      "Your order is ready. Please confirm pickup on your phone.",
+      "Please mark the order as picked up in the app."
+    ],
+    "recommendedResponses": [
+      "Okay, I'll confirm it now.",
+      "It is confirmed.",
+      "The app is not letting me confirm it."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "The order is ready. Please confirm the pickup in the app.",
+        "chinese": "订单好了。请在 App 里确认取餐。"
+      },
+      {
+        "speakerRole": "Driver",
+        "speakerRoleZh": "外卖司机可能会说",
+        "english": "Okay, I'll confirm it now.",
+        "chinese": "好的，我现在确认。"
+      },
+      {
+        "speakerRole": "Driver",
+        "speakerRoleZh": "外卖司机可能会说",
+        "english": "It is confirmed.",
+        "chinese": "已经确认了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "confirm the pickup",
+        "chinese": "确认取餐",
+        "pronunciation": "kun-FIRM the PIK-up",
+        "note": "司机在外卖软件里确认已经拿到餐。",
+        "example": "Confirm the pickup now."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_012",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 12,
+    "english": "Thank you for calling. Are you placing an order for pickup?",
+    "chinese": "感谢来电。您是要下一个自取订单吗？",
+    "scenario": "外卖司机取餐、确认号码、等待和缺货。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Staff",
+    "roleZh": "前台员工要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_012-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_012-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 3",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Thank you for calling. Are you placing an order for pickup, please?"
+    ],
+    "recommendedResponses": [
+      "Let me check your order.",
+      "I’m sorry about that.",
+      "Let me get my manager."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "前台员工",
+        "english": "Thank you for calling. Are you placing an order for pickup?",
+        "chinese": "感谢来电。您是要下一个自取订单吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Let me check your order.",
+        "chinese": "我帮你查一下订单。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Thank for",
+        "chinese": "重点词组",
+        "pronunciation": "Thank for",
+        "note": "这句话里的工作关键词。",
+        "example": "Thank you for calling. Are you placing an order for pickup?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_013",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 6,
+    "english": "I'd like to place an order for pickup.",
+    "chinese": "我想下一个自取订单。",
+    "scenario": "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_013-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_013-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "I want to place a pickup order.",
+      "Can I order for pickup?"
+    ],
+    "recommendedResponses": [
+      "Sure. What would you like?",
+      "What time would you like to pick it up?",
+      "May I have your name for the order?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I'd like to place an order for pickup.",
+        "chinese": "我想下一个自取订单。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "Sure. What would you like?",
+        "chinese": "可以。您想点什么？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Ten wings, please.",
+        "chinese": "十个鸡翅。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "order for pickup",
+        "chinese": "自取订单",
+        "pronunciation": "OR-der for PIK-up",
+        "note": "顾客电话或柜台下单，稍后自己来取。",
+        "example": "This is for pickup."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_014",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 14,
+    "english": "Can I get your name and phone number for the order?",
+    "chinese": "请告诉我订单姓名和电话号码。",
+    "scenario": "外卖司机取餐、确认号码、等待和缺货。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Staff",
+    "roleZh": "前台员工要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_014-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_014-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 3",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Can I get your name and phone number for the order, please?"
+    ],
+    "recommendedResponses": [
+      "Let me check your order.",
+      "I’m sorry about that.",
+      "Let me get my manager."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "前台员工",
+        "english": "Can I get your name and phone number for the order?",
+        "chinese": "请告诉我订单姓名和电话号码。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Let me check your order.",
+        "chinese": "我帮你查一下订单。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "get your",
+        "chinese": "重点词组",
+        "pronunciation": "get your",
+        "note": "这句话里的工作关键词。",
+        "example": "Can I get your name and phone number for the order?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_015",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 15,
+    "english": "The name is Linda. I’ll pick it up at six thirty.",
+    "chinese": "名字是Linda。我六点半来取。",
+    "scenario": "外卖司机取餐、确认号码、等待和缺货。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_015-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_015-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "It’s under Linda. I’ll pick it up at six thirty.",
+      "The pickup name is Linda. I’ll come at six thirty."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "We’ll have it ready.",
+      "See you then."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "The name is Linda. I’ll pick it up at six thirty.",
+        "chinese": "名字是Linda。我六点半来取。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Got it.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "pick it up",
+        "chinese": "来取",
+        "pronunciation": "pick it up",
+        "note": "到店里把订单取走。",
+        "example": "I’ll pick it up at six thirty."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_016",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 16,
+    "english": "I need food for about twenty people.",
+    "chinese": "我需要大约二十个人的餐。",
+    "scenario": "外卖司机取餐、确认号码、等待和缺货。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_016-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_016-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "I need to get food for about twenty people.",
+      "I have to get food for about twenty people."
+    ],
+    "recommendedResponses": [
+      "Sure, I can help.",
+      "Let me check that for you.",
+      "I’m sorry about that."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "I need food for about twenty people.",
+        "chinese": "我需要大约二十个人的餐。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Sure, I can help.",
+        "chinese": "可以，我来帮你。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Let me check that for you.",
+        "chinese": "我帮你查一下。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "need food",
+        "chinese": "重点词组",
+        "pronunciation": "need food",
+        "note": "这句话里的工作关键词。",
+        "example": "I need food for about twenty people."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_017",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 2,
+    "english": "What time would you like to pick it up?",
+    "chinese": "您想几点来取？",
+    "scenario": "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Staff",
+    "roleZh": "店员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_017-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_017-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "店员要说",
+    "variants": [
+      "When would you like to pick it up?",
+      "What pickup time do you want?"
+    ],
+    "recommendedResponses": [
+      "At noon, please.",
+      "In about twenty minutes.",
+      "As soon as possible, please."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "What time would you like to pick it up?",
+        "chinese": "您想几点来取？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "At noon, please.",
+        "chinese": "中午十二点。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "Okay. It will be ready at noon.",
+        "chinese": "好的。中午会准备好。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "pick it up",
+        "chinese": "来取",
+        "pronunciation": "pik-it-up",
+        "note": "顾客到店把已经下好的订单拿走。",
+        "example": "Pick it up at six."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_018",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 5,
+    "english": "Tomorrow at noon.",
+    "chinese": "明天中午十二点。",
+    "scenario": "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_018-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_018-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "At noon tomorrow.",
+      "I will pick it up tomorrow at noon."
+    ],
+    "recommendedResponses": [
+      "Okay. We will have it ready then.",
+      "May I have your name for the order?",
+      "Your pickup time is tomorrow at noon."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Tomorrow at noon.",
+        "chinese": "明天中午十二点。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "Okay. May I have your name for the order?",
+        "chinese": "好的。可以告诉我订单姓名吗？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "at noon",
+        "chinese": "中午十二点",
+        "pronunciation": "at-noon",
+        "note": "表示具体取餐时间是中午 12 点。",
+        "example": "Meet me at noon."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_019",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 7,
+    "english": "What is the customer’s name?",
+    "chinese": "顾客姓名是什么？",
+    "scenario": "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Driver",
+    "roleZh": "外卖司机可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_019-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_019-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Driver",
+    "speakerRoleZh": "外卖司机可能会说",
+    "variants": [
+      "What name is on the order?",
+      "Who is the order for?"
+    ],
+    "recommendedResponses": [
+      "It's for Maria.",
+      "The customer name is Jordan.",
+      "The order is under Alex."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Driver",
+        "speakerRoleZh": "外卖司机可能会说",
+        "english": "What is the customer’s name?",
+        "chinese": "顾客姓名是什么？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "The name is Maria. Please wait a moment.",
+        "chinese": "名字是 Maria。请稍等。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "customer’s name",
+        "chinese": "顾客姓名",
+        "pronunciation": "KUS-tuh-merz name",
+        "note": "用姓名核对外卖订单。",
+        "example": "What's the customer name?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_020",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 20,
+    "english": "Choose any open table. Please take this table number.",
+    "chinese": "可以选任何空桌。请拿这个桌号牌。",
+    "scenario": "外卖司机取餐、确认号码、等待和缺货。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Staff",
+    "roleZh": "前台员工要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_020-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_020-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "You can sit at any open table.",
+      "Please take this table number with you."
+    ],
+    "recommendedResponses": [
+      "Okay, thank you.",
+      "Where should I sit?",
+      "I’ll take it with me."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "前台员工",
+        "english": "Choose any open table. Please take this table number.",
+        "chinese": "可以选任何空桌。请拿这个桌号牌。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, thank you.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "open table",
+        "chinese": "空桌",
+        "pronunciation": "open table",
+        "note": "没人坐、可以使用的桌子。",
+        "example": "Choose any open table."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_021",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 21,
+    "english": "Will you bring the food to the table?",
+    "chinese": "你们会把餐送到桌上吗？",
+    "scenario": "外卖司机取餐、确认号码、等待和缺货。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_021-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_021-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Will you bring the food to the table, please?"
+    ],
+    "recommendedResponses": [
+      "Sure, I can help.",
+      "Let me check that for you.",
+      "I’m sorry about that."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客",
+        "english": "Will you bring the food to the table?",
+        "chinese": "你们会把餐送到桌上吗？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Sure, I can help.",
+        "chinese": "可以，我来帮你。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Let me check that for you.",
+        "chinese": "我帮你查一下。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Will bring",
+        "chinese": "重点词组",
+        "pronunciation": "Will bring",
+        "note": "这句话里的工作关键词。",
+        "example": "Will you bring the food to the table?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_022",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 22,
+    "english": "Yes. We’ll bring the food to your table.",
+    "chinese": "可以。我们会把餐送到你的桌子。",
+    "scenario": "外卖司机取餐、确认号码、等待和缺货。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Staff",
+    "roleZh": "前台员工要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_022-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_022-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Yes, we’ll bring it to you.",
+      "We’ll bring the order to your table."
+    ],
+    "recommendedResponses": [
+      "Thank you.",
+      "Here is my table number.",
+      "I’ll wait at the table."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "前台员工",
+        "english": "Yes. We’ll bring the food to your table.",
+        "chinese": "可以。我们会把餐送到你的桌子。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Thank you.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "bring the food",
+        "chinese": "把餐送来",
+        "pronunciation": "bring the food",
+        "note": "员工把食物送到顾客那里。",
+        "example": "We’ll bring the food to your table."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_023",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 10,
+    "english": "The delivery tablet is down, and this order didn't print.",
+    "chinese": "外卖平板出故障了，这份订单没有打印出来。",
+    "scenario": "外卖司机到店取餐时，店员核对平台、姓名、订单号和手机确认取餐。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Staff",
+    "roleZh": "店员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_023-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_023-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "pos_outage",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "店员要说",
+    "variants": [
+      "The tablet is not working, so the order didn't print.",
+      "The app order did not print from the tablet."
+    ],
+    "recommendedResponses": [
+      "Can you check the app order on my phone?",
+      "How long will it take?",
+      "Should I wait here?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "The delivery tablet is down, and this order didn't print.",
+        "chinese": "外卖平板出故障了，这份订单没有打印出来。"
+      },
+      {
+        "speakerRole": "Driver",
+        "speakerRoleZh": "外卖司机可能会说",
+        "english": "Can you check the order on my phone?",
+        "chinese": "你可以看我手机上的订单吗？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "店员要说",
+        "english": "Yes. Let me check it now.",
+        "chinese": "可以。我现在核对。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "tablet is down",
+        "chinese": "平板出故障",
+        "pronunciation": "TAB-let iz down",
+        "note": "店里的外卖平板不能正常接单或打印。",
+        "example": "The system is down."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_024",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 24,
+    "english": "Read the order to me, and I'll write it down.",
+    "chinese": "把订单念给我听，我把它写下来。",
+    "scenario": "外卖司机取餐、确认号码、等待和缺货。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Worker",
+    "roleZh": "后厨员工要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_024-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_024-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "pos_outage",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "后厨员工要说",
+    "variants": [
+      "Read the order to me, and I'll write it down."
+    ],
+    "recommendedResponses": [
+      "Let me check your order.",
+      "I’m sorry about that.",
+      "Let me get my manager."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "后厨员工",
+        "english": "Read the order to me, and I'll write it down.",
+        "chinese": "把订单念给我听，我把它写下来。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Let me check your order.",
+        "chinese": "我帮你查一下订单。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Read order",
+        "chinese": "重点词组",
+        "pronunciation": "Read order",
+        "note": "这句话里的工作关键词。",
+        "example": "Read the order to me, and I'll write it down."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_025",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 25,
+    "english": "Order 318 has two chicken sandwiches, one fries, and two drinks.",
+    "chinese": "318号订单有两个鸡肉三明治、一份薯条和两杯饮料。",
+    "scenario": "外卖司机取餐、确认号码、等待和缺货。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Staff",
+    "roleZh": "前台员工要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_025-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_025-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "pos_outage",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 3",
+    "speakerRole": "Staff",
+    "speakerRoleZh": "前台员工要说",
+    "variants": [
+      "Order 318 has two chicken sandwiches, one fries, and two drinks."
+    ],
+    "recommendedResponses": [
+      "Let me check your order.",
+      "I’m sorry about that.",
+      "Let me get my manager."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "前台员工",
+        "english": "Order 318 has two chicken sandwiches, one fries, and two drinks.",
+        "chinese": "318号订单有两个鸡肉三明治、一份薯条和两杯饮料。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Let me check your order.",
+        "chinese": "我帮你查一下订单。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Order 318",
+        "chinese": "重点词组",
+        "pronunciation": "Order 318",
+        "note": "这句话里的工作关键词。",
+        "example": "Order 318 has two chicken sandwiches, one fries, and two drinks."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_026",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_delivery_pickup",
+    "scenarioTitle": "Uber Eats和DoorDash取餐",
+    "sequence": 26,
+    "english": "Got it. I'll repeat the order back before we start.",
+    "chinese": "知道了。开始制作前，我会把订单复述一遍。",
+    "scenario": "外卖司机取餐、确认号码、等待和缺货。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Worker",
+    "roleZh": "后厨员工要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_026-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_026-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "scenario_practice",
+      "dialogue",
+      "front_and_back",
+      "pos_outage",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 3",
+    "speakerRole": "Worker",
+    "speakerRoleZh": "后厨员工要说",
+    "variants": [
+      "Got it. I'll repeat the order back before we start."
+    ],
+    "recommendedResponses": [
+      "Yes, I’ll show you.",
+      "Sure. Watch me first.",
+      "Ask me again if it’s not clear."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "后厨员工",
+        "english": "Got it. I'll repeat the order back before we start.",
+        "chinese": "知道了。开始制作前，我会把订单复述一遍。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Yes, I’ll show you.",
+        "chinese": "可以，我示范给你看。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Sure. Watch me first.",
+        "chinese": "可以，先看我做。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Got I'll",
+        "chinese": "重点词组",
+        "pronunciation": "Got I'll",
+        "note": "这句话里的工作关键词。",
+        "example": "Got it. I'll repeat the order back before we start."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_027",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_general",
+    "scenarioTitle": "外卖取餐、电话订单、少餐错餐、退款和顾客投诉。",
+    "sequence": 27,
+    "english": "Do not skip any steps.",
+    "chinese": "不要跳过任何步骤。",
+    "scenario": "主管要求员工按标准流程操作。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Supervisor",
+    "roleZh": "主管可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_027-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_027-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "workplace",
+      "supervisor",
+      "communication",
+      "employee"
+    ],
+    "active": false,
+    "difficulty": "Level 1",
+    "speakerRole": "Supervisor",
+    "speakerRoleZh": "主管可能会说",
+    "variants": [
+      "Please don’t skip any steps."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll be careful.",
+      "Got it.",
+      "I’ll do that safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Do not skip any steps.",
+        "chinese": "不要跳过任何步骤。"
+      },
+      {
+        "speakerRole": "Worker",
+        "speakerRoleZh": "员工",
+        "english": "Okay, I’ll be careful.",
+        "chinese": "好的。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "not skip",
+        "chinese": "重点词组",
+        "pronunciation": "not skip",
+        "note": "这句话里的工作关键词。",
+        "example": "Do not skip any steps."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_028",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 8,
+    "english": "Thank you for calling. How may I help you?",
+    "chinese": "感谢来电。有什么可以帮您？",
+    "scenario": "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Agent",
+    "roleZh": "电话客服要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_028-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_028-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 2",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "电话客服要说",
+    "variants": [
+      "Thanks for calling. How can I help?",
+      "Thank you for calling the restaurant."
+    ],
+    "recommendedResponses": [
+      "I need help with my order.",
+      "I want to check my pickup order.",
+      "One item is missing from my order."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "电话客服要说",
+        "english": "Thank you for calling. How may I help you?",
+        "chinese": "感谢来电。有什么可以帮您？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I need help with my order.",
+        "chinese": "我的订单需要帮助。"
+      },
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "电话客服要说",
+        "english": "Sure. May I have your order number?",
+        "chinese": "可以。请告诉我订单号码。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "How may I help you",
+        "chinese": "有什么可以帮您",
+        "pronunciation": "how-may-ai-HELP-yoo",
+        "note": "电话客服接电话时的礼貌开场白。",
+        "example": "How can I help you?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_029",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 2,
+    "english": "I need help with my order.",
+    "chinese": "我的订单需要帮助。",
+    "scenario": "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_029-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_029-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "I have a problem with my order.",
+      "Something is wrong with my order."
+    ],
+    "recommendedResponses": [
+      "May I have your order number?",
+      "What seems to be the problem?",
+      "Was it a pickup or delivery order?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I need help with my order.",
+        "chinese": "我的订单需要帮助。"
+      },
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "电话客服要说",
+        "english": "Sure. What seems to be the problem?",
+        "chinese": "好的。具体是什么问题？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "One item is missing.",
+        "chinese": "少了一样东西。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "help with my order",
+        "chinese": "帮我处理订单",
+        "pronunciation": "help-with-my-OR-der",
+        "note": "顾客打电话说明订单有问题。",
+        "example": "I need help with this order."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_030",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 3,
+    "english": "May I have your order number?",
+    "chinese": "可以告诉我您的订单号码吗？",
+    "scenario": "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Agent",
+    "roleZh": "电话客服要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_030-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_030-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "电话客服要说",
+    "variants": [
+      "What is your order number?",
+      "Can you give me the order number?"
+    ],
+    "recommendedResponses": [
+      "It's 742.",
+      "I cannot find it.",
+      "Could you say that again?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "电话客服要说",
+        "english": "May I have your order number?",
+        "chinese": "可以告诉我您的订单号码吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "It's 742.",
+        "chinese": "是 742。"
+      },
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "电话客服要说",
+        "english": "Thank you. Let me check it.",
+        "chinese": "谢谢。我查一下。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "order number",
+        "chinese": "订单号码",
+        "pronunciation": "OR-der NUM-ber",
+        "note": "用来查找具体订单的号码。",
+        "example": "My order number is 742."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_031",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 4,
+    "english": "I can't find my order number.",
+    "chinese": "我找不到订单号码。",
+    "scenario": "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_031-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_031-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "I don't see the order number.",
+      "I cannot find the number on the receipt."
+    ],
+    "recommendedResponses": [
+      "Can you give me your phone number instead?",
+      "What name is on the order?",
+      "Was it placed through an app?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "I can't find my order number.",
+        "chinese": "我找不到订单号码。"
+      },
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "电话客服要说",
+        "english": "No problem. What name is on the order?",
+        "chinese": "没关系。订单姓名是什么？"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "find my order number",
+        "chinese": "找到我的订单号码",
+        "pronunciation": "find-my-OR-der-NUM-ber",
+        "note": "顾客找不到用于查询的订单号码。",
+        "example": "I found my order number."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_032",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 32,
+    "english": "Before accessing the account, I need to verify your identity.",
+    "chinese": "查看账户前，我需要核验您的身份。",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Agent",
+    "roleZh": "客服人员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_032-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_032-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 3",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "Before accessing the account, I need to verify your identity."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "客服人员",
+        "english": "Before accessing the account, I need to verify your identity.",
+        "chinese": "查看账户前，我需要核验您的身份。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Before accessing",
+        "chinese": "重点词组",
+        "pronunciation": "Before accessing",
+        "note": "这句话里的工作关键词。",
+        "example": "Before accessing the account, I need to verify your identity."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_033",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 33,
+    "english": "Why do you need to verify my identity?",
+    "chinese": "为什么需要核验我的身份？",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Customer",
+    "roleZh": "客户可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_033-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_033-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "variants": [
+      "Why do you need to verify my identity, please?"
+    ],
+    "recommendedResponses": [
+      "Sure, I can help.",
+      "Let me check that for you.",
+      "I’m sorry about that."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "客户",
+        "english": "Why do you need to verify my identity?",
+        "chinese": "为什么需要核验我的身份？"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Sure, I can help.",
+        "chinese": "可以，我来帮你。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Let me check that for you.",
+        "chinese": "我帮你查一下。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Why need",
+        "chinese": "重点词组",
+        "pronunciation": "Why need",
+        "note": "这句话里的工作关键词。",
+        "example": "Why do you need to verify my identity?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_034",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 34,
+    "english": "Please do not give me your full password.",
+    "chinese": "请不要告诉我完整密码。",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Agent",
+    "roleZh": "客服人员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_034-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_034-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "Can you do not give me your full password?",
+      "Could you please do not give me your full password?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll be careful.",
+      "Got it.",
+      "I’ll do that safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "客服人员",
+        "english": "Please do not give me your full password.",
+        "chinese": "请不要告诉我完整密码。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll be careful.",
+        "chinese": "好的。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "not give",
+        "chinese": "重点词组",
+        "pronunciation": "not give",
+        "note": "这句话里的工作关键词。",
+        "example": "Please do not give me your full password."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_035",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 35,
+    "english": "My spouse usually handles this account.",
+    "chinese": "这个账户通常由我的配偶处理。",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Customer",
+    "roleZh": "客户可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_035-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_035-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "variants": [
+      "My spouse usually handles this account."
+    ],
+    "recommendedResponses": [
+      "Sure, I can help.",
+      "Let me check that for you.",
+      "I’m sorry about that."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "客户",
+        "english": "My spouse usually handles this account.",
+        "chinese": "这个账户通常由我的配偶处理。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Sure, I can help.",
+        "chinese": "可以，我来帮你。"
+      },
+      {
+        "speakerRole": "Staff",
+        "speakerRoleZh": "员工",
+        "english": "Let me check that for you.",
+        "chinese": "我帮你查一下。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "My spouse",
+        "chinese": "重点词组",
+        "pronunciation": "My spouse",
+        "note": "这句话里的工作关键词。",
+        "example": "My spouse usually handles this account."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_036",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 36,
+    "english": "I cannot disclose account information without proper authorization.",
+    "chinese": "没有适当授权，我不能透露账户信息。",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Agent",
+    "roleZh": "客服人员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_036-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_036-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "I cannot disclose account information without proper authorization."
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll be careful.",
+      "Got it.",
+      "I’ll do that safely."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "客服人员",
+        "english": "I cannot disclose account information without proper authorization.",
+        "chinese": "没有适当授权，我不能透露账户信息。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll be careful.",
+        "chinese": "好的。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "cannot disclose",
+        "chinese": "重点词组",
+        "pronunciation": "cannot disclose",
+        "note": "这句话里的工作关键词。",
+        "example": "I cannot disclose account information without proper authorization."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_037",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 37,
+    "english": "Please tell me what happened in your own words.",
+    "chinese": "请用您自己的话告诉我发生了什么。",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Agent",
+    "roleZh": "客服人员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_037-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_037-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "Can you tell me what happened in your own words?",
+      "Could you please tell me what happened in your own words?"
+    ],
+    "recommendedResponses": [
+      "Okay, I’ll do it now.",
+      "Got it.",
+      "Can you show me how?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "客服人员",
+        "english": "Please tell me what happened in your own words.",
+        "chinese": "请用您自己的话告诉我发生了什么。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Okay, I’ll do it now.",
+        "chinese": "好的，我现在就做。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "tell me",
+        "chinese": "重点词组",
+        "pronunciation": "tell me",
+        "note": "这句话里的工作关键词。",
+        "example": "Please tell me what happened in your own words."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_038",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 38,
+    "english": "Let me make sure I understand correctly.",
+    "chinese": "我确认一下是否理解正确。",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Agent",
+    "roleZh": "客服人员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_038-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_038-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "Let me make sure I understand correctly."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "客服人员",
+        "english": "Let me make sure I understand correctly.",
+        "chinese": "我确认一下是否理解正确。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "make sure",
+        "chinese": "确保",
+        "pronunciation": "make sure",
+        "note": "表示确认事情真的做好。",
+        "example": "Make sure it is clean."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_039",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 5,
+    "english": "Yes, that is correct.",
+    "chinese": "是的，您说得对。",
+    "scenario": "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_039-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_039-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "variants": [
+      "Yes, that's right.",
+      "Yes, the order is correct."
+    ],
+    "recommendedResponses": [
+      "Great. We will start the order now.",
+      "Thank you. It will be ready soon.",
+      "Okay. Your total is on the receipt."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Yes, that is correct.",
+        "chinese": "是的，您说得对。"
+      },
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "电话客服要说",
+        "english": "Great. We will start the order now.",
+        "chinese": "好的。我们现在开始做。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "that is correct",
+        "chinese": "那是正确的",
+        "pronunciation": "that-iz-kuh-REKT",
+        "note": "确认对方复述的信息没有错。",
+        "example": "That's correct."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_040",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 40,
+    "english": "May I place you on a brief hold while I check?",
+    "chinese": "我查询时可以请您稍等一下吗？",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Agent",
+    "roleZh": "客服人员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_040-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_040-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 3",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "May I place you on a brief hold while I check, please?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "客服人员",
+        "english": "May I place you on a brief hold while I check?",
+        "chinese": "我查询时可以请您稍等一下吗？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "May place",
+        "chinese": "重点词组",
+        "pronunciation": "May place",
+        "note": "这句话里的工作关键词。",
+        "example": "May I place you on a brief hold while I check?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_041",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 6,
+    "english": "Thank you for holding.",
+    "chinese": "谢谢您的等待。",
+    "scenario": "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Agent",
+    "roleZh": "电话客服要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_041-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_041-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "difficulty": "Level 1",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "电话客服要说",
+    "variants": [
+      "Thanks for waiting.",
+      "Thank you for staying on the line."
+    ],
+    "recommendedResponses": [
+      "No problem.",
+      "Did you find my order?",
+      "What should I do next?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "电话客服要说",
+        "english": "Thank you for holding.",
+        "chinese": "谢谢您的等待。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "No problem. Did you find my order?",
+        "chinese": "没关系。你找到我的订单了吗？"
+      },
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "电话客服要说",
+        "english": "Yes. It will be ready in five minutes.",
+        "chinese": "找到了。五分钟后好。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "holding",
+        "chinese": "在线等待",
+        "pronunciation": "HOHL-ding",
+        "note": "电话中请顾客等待后，再感谢对方没有挂断。",
+        "example": "Thanks for holding."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_042",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 42,
+    "english": "I'm sorry about the delay. Let me give you an update.",
+    "chinese": "很抱歉耽误了，我向您说明最新进展。",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Agent",
+    "roleZh": "客服人员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_042-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_042-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 3",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "I'm sorry about the delay. Let me give you an update."
+    ],
+    "recommendedResponses": [
+      "I’ll wash my hands now.",
+      "I’ll put on new gloves.",
+      "Where are the clean gloves?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "客服人员",
+        "english": "I'm sorry about the delay. Let me give you an update.",
+        "chinese": "很抱歉耽误了，我向您说明最新进展。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "I’ll wash my hands now.",
+        "chinese": "我现在去洗手。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "I'm sorry",
+        "chinese": "重点词组",
+        "pronunciation": "I'm sorry",
+        "note": "这句话里的工作关键词。",
+        "example": "I'm sorry about the delay. Let me give you an update."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_043",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 43,
+    "english": "Would you prefer a callback rather than staying on hold?",
+    "chinese": "您是否希望我们回电，而不是继续等待？",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Agent",
+    "roleZh": "客服人员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_043-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_043-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 3",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "Would you prefer a callback rather than staying on hold, please?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "客服人员",
+        "english": "Would you prefer a callback rather than staying on hold?",
+        "chinese": "您是否希望我们回电，而不是继续等待？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "prefer callback",
+        "chinese": "重点词组",
+        "pronunciation": "prefer callback",
+        "note": "这句话里的工作关键词。",
+        "example": "Would you prefer a callback rather than staying on hold?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_044",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 44,
+    "english": "What is the best number and time for the callback?",
+    "chinese": "回电使用哪个号码、什么时间最合适？",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Agent",
+    "roleZh": "客服人员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_044-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_044-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 3",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "What exactly is the best number and time for the callback?",
+      "What is the best number and time for the callback, please?"
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "客服人员",
+        "english": "What is the best number and time for the callback?",
+        "chinese": "回电使用哪个号码、什么时间最合适？"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "What best",
+        "chinese": "重点词组",
+        "pronunciation": "What best",
+        "note": "这句话里的工作关键词。",
+        "example": "What is the best number and time for the callback?"
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_045",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 45,
+    "english": "Let me read the callback number back to you.",
+    "chinese": "我复述一下回电号码，请您确认。",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Agent",
+    "roleZh": "客服人员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_045-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_045-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "difficulty": "Level 2",
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "variants": [
+      "Let me read the callback number back to you."
+    ],
+    "recommendedResponses": [
+      "Got it.",
+      "Let me confirm first.",
+      "Thanks for checking."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "客服人员",
+        "english": "Let me read the callback number back to you.",
+        "chinese": "我复述一下回电号码，请您确认。"
+      },
+      {
+        "speakerRole": "Supervisor",
+        "speakerRoleZh": "主管",
+        "english": "Got it.",
+        "chinese": "明白了。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "Let me",
+        "chinese": "重点词组",
+        "pronunciation": "Let me",
+        "note": "这句话里的工作关键词。",
+        "example": "Let me read the callback number back to you."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_046",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 1,
+    "english": "Where is my order?",
+    "chinese": "我的订单到哪里了？",
+    "scenario": "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_046-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_046-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 1",
+    "variants": [
+      "What is the status of my order?",
+      "Is my order ready yet?"
+    ],
+    "recommendedResponses": [
+      "Let me check the order status.",
+      "It is still being prepared.",
+      "It will be ready in about five minutes."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Where is my order?",
+        "chinese": "我的订单到哪里了？"
+      },
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "电话客服要说",
+        "english": "Let me check the order status.",
+        "chinese": "我查一下订单状态。"
+      },
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "电话客服要说",
+        "english": "It will be ready in about five minutes.",
+        "chinese": "大概五分钟后好。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "order status",
+        "chinese": "订单状态",
+        "pronunciation": "OR-der STAY-tus",
+        "note": "用来询问订单是否已准备好或送出。",
+        "example": "Check the order status."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_047",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 47,
+    "english": "The latest tracking update shows a carrier delay.",
+    "chinese": "最新物流信息显示承运商发生延误。",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Agent",
+    "roleZh": "客服人员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_047-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_047-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_048",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 9,
+    "english": "When will it arrive?",
+    "chinese": "什么时候能送到？",
+    "scenario": "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_048-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_048-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 1",
+    "variants": [
+      "What time will it arrive?",
+      "How long will delivery take?"
+    ],
+    "recommendedResponses": [
+      "It should arrive in about twenty minutes.",
+      "The driver is on the way.",
+      "Please check the delivery app for live updates."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "When will it arrive?",
+        "chinese": "什么时候能送到？"
+      },
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "电话客服要说",
+        "english": "The driver is on the way.",
+        "chinese": "司机已经在路上。"
+      },
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "电话客服要说",
+        "english": "It should arrive in about twenty minutes.",
+        "chinese": "大概二十分钟后到。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "arrive",
+        "chinese": "到达",
+        "pronunciation": "uh-RIVE",
+        "note": "询问外卖或包裹什么时候送到。",
+        "example": "The driver will arrive soon."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_049",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 49,
+    "english": "The current estimate is Friday, but I cannot guarantee it.",
+    "chinese": "目前预计星期五送达，但我不能保证。",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Agent",
+    "roleZh": "客服人员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_049-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_049-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_050",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 50,
+    "english": "The tracking says delivered, but I did not receive it.",
+    "chinese": "物流显示已送达，但我没有收到。",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Customer",
+    "roleZh": "客户可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_050-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_050-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_051",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 51,
+    "english": "Please check the delivery photo and any safe locations first.",
+    "chinese": "请先查看配送照片，并检查可能的安全放置位置。",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Agent",
+    "roleZh": "客服人员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_051-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_051-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_052",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 52,
+    "english": "The delivery photo is not my house.",
+    "chinese": "配送照片不是我家。",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Customer",
+    "roleZh": "客户可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_052-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_052-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_053",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 53,
+    "english": "I will document this as a possible wrong delivery.",
+    "chinese": "我会把这记录为可能的错误投递。",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Agent",
+    "roleZh": "客服人员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_053-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_053-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_054",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 54,
+    "english": "Can you send a replacement now?",
+    "chinese": "可以现在补发吗？",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Customer",
+    "roleZh": "客户可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_054-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_054-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "normal",
+    "reviewRequired": false,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_055",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 7,
+    "english": "The manager will call you back.",
+    "chinese": "经理会给您回电话。",
+    "scenario": "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Agent",
+    "roleZh": "电话客服要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_055-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_055-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Agent",
+    "speakerRoleZh": "电话客服要说",
+    "difficulty": "Level 3",
+    "variants": [
+      "A manager will call you back soon.",
+      "The manager will return your call."
+    ],
+    "recommendedResponses": [
+      "Thank you.",
+      "Can I leave my phone number?",
+      "When should I expect the call?"
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "电话客服要说",
+        "english": "The manager will call you back.",
+        "chinese": "经理会给您回电话。"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Can I leave my phone number?",
+        "chinese": "我可以留下电话号码吗？"
+      },
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "电话客服要说",
+        "english": "Yes, please.",
+        "chinese": "可以，请说。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "call you back",
+        "chinese": "给您回电话",
+        "pronunciation": "call-yoo-back",
+        "note": "表示稍后再打电话联系顾客。",
+        "example": "I will call you back."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_056",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 56,
+    "english": "I received the wrong item.",
+    "chinese": "我收到了错误的商品。",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "外卖和投诉要先确认事实，再找经理或补救，不能乱承诺。",
+    "role": "Customer",
+    "roleZh": "客户可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_056-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_056-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_057",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 57,
+    "english": "Please do not share another customer's full label information.",
+    "chinese": "请不要提供另一位客户标签上的完整信息。",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Agent",
+    "roleZh": "客服人员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_057-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_057-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_058",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 10,
+    "english": "The item arrived damaged.",
+    "chinese": "这个东西送到时已经损坏了。",
+    "scenario": "顾客打电话查询订单、投诉、要求补做或留下联系方式等待回电。",
+    "importance": "外卖和投诉场景要快速核对信息、礼貌道歉并给出下一步，避免订单继续出错。",
+    "role": "Customer",
+    "roleZh": "顾客可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_058-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_058-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "caution",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": true,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "顾客可能会说",
+    "difficulty": "Level 1",
+    "variants": [
+      "This item is damaged.",
+      "It was damaged when it arrived."
+    ],
+    "recommendedResponses": [
+      "I'm sorry about that. Can you send a photo?",
+      "Let me check the order details.",
+      "The manager will review it and call you back."
+    ],
+    "dialogue": [
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "The item arrived damaged.",
+        "chinese": "这个东西送到时已经损坏了。"
+      },
+      {
+        "speakerRole": "Agent",
+        "speakerRoleZh": "电话客服要说",
+        "english": "I'm sorry about that. Can you send a photo?",
+        "chinese": "很抱歉。您可以发一张照片吗？"
+      },
+      {
+        "speakerRole": "Customer",
+        "speakerRoleZh": "顾客可能会说",
+        "english": "Yes, I can.",
+        "chinese": "可以。"
+      }
+    ],
+    "vocabularyNotes": [
+      {
+        "term": "arrived damaged",
+        "chinese": "送到时损坏",
+        "pronunciation": "uh-RIVED DAM-ijd",
+        "note": "说明东西在送达时已经坏了。",
+        "example": "The box arrived damaged."
+      }
+    ],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_059",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 59,
+    "english": "Do not use the item if it is leaking, overheating, or otherwise unsafe.",
+    "chinese": "如果商品漏液、过热或存在其他危险，请不要使用。",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Agent",
+    "roleZh": "客服人员要说",
+    "audioNormal": "/audio/en-US/delivery_complaints_059-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_059-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Agent",
+    "speakerRoleZh": "客服人员要说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  },
+  {
+    "id": "delivery_complaints_060",
+    "moduleId": "delivery_complaints",
+    "moduleTitle": "外卖、电话、投诉和顾客问题",
+    "scenarioId": "delivery_complaints_phone_orders",
+    "scenarioTitle": "电话订单",
+    "sequence": 60,
+    "english": "The battery is getting hot.",
+    "chinese": "电池正在变热。",
+    "scenario": "接电话、查订单、确认姓名和取餐时间。",
+    "importance": "这是安全相关表达，需要先确认再行动。",
+    "role": "Customer",
+    "roleZh": "客户可能会说",
+    "audioNormal": "/audio/en-US/delivery_complaints_060-normal.mp3",
+    "audioSlow": "/audio/en-US/delivery_complaints_060-slow.mp3",
+    "isFree": false,
+    "safetyLevel": "safety",
+    "reviewRequired": true,
+    "tags": [
+      "restaurant",
+      "delivery_complaints",
+      "customer_service",
+      "call_center",
+      "phone",
+      "privacy",
+      "safety",
+      "restaurant-work-core"
+    ],
+    "active": false,
+    "speakerRole": "Customer",
+    "speakerRoleZh": "客户可能会说",
+    "difficulty": "Level 2",
+    "variants": [],
+    "recommendedResponses": [],
+    "dialogue": [],
+    "vocabularyNotes": [],
+    "listenRepeatCount": 3,
+    "speakRepeatCount": 5
+  }
+]
