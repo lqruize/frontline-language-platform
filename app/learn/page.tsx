@@ -1,0 +1,24 @@
+import Link from "next/link";
+import { LearnCourse } from "@/components/LearnCourse";
+import { getKitchenCourse } from "@/lib/course";
+
+export default function LearnPage() {
+  const course = getKitchenCourse();
+
+  return (
+    <main className="min-h-screen bg-warm px-4 py-5 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-4xl">
+        <header className="mb-5 flex items-start justify-between gap-4">
+          <div>
+            <Link href="/" className="text-sm font-bold text-brand">
+              返回首页
+            </Link>
+            <h1 className="mt-2 text-3xl font-black leading-tight text-ink sm:text-5xl">{course.title}</h1>
+            <p className="mt-2 text-base font-semibold text-muted">{course.subtitle} · {course.items.length} 条课程内容</p>
+          </div>
+        </header>
+        <LearnCourse items={course.items} categories={course.categories} />
+      </div>
+    </main>
+  );
+}
