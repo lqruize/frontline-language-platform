@@ -62,6 +62,52 @@ for (const item of active) {
   if (!Array.isArray(item.recommendedResponses) || item.recommendedResponses.length === 0) {
     errors.push({ id: item.id, type: "missing recommendedResponses" });
   }
+
+  const mechanicalText = JSON.stringify({ variants: item.variants, recommendedResponses: item.recommendedResponses, vocabularyNotes: item.vocabularyNotes, dialogue: (item.dialogue || []).slice(1) });
+  const mechanicalPatterns = [
+    /the which/i,
+    /handling [a-z]+( [a-z]+)?/i,
+    /ask about the/i,
+    /Should I finish the/i,
+    /I will ask before handling/i,
+    /I will report the/i,
+    /Please i/i,
+    /Please the/i,
+    /What exactly exactly/i,
+    /comes fries/i,
+    /sorry Which/i,
+    /Where nearest/i,
+    /When rent/i,
+    /long does/i,
+    /directions address/i,
+    /looking room/i
+  ];
+  for (const pattern of mechanicalPatterns) {
+    if (pattern.test(mechanicalText)) errors.push({ id: item.id, type: "mechanical generated phrase", pattern: String(pattern) });
+  }
+
+  if (Array.isArray(item.dialogue) && item.dialogue.length > 0) {
+    const first = item.dialogue[0];
+    if (first.speakerRole !== item.speakerRole && first.speakerRole !== item.role) {
+      errors.push({ id: item.id, type: "dialogue first speaker mismatch", expected: item.speakerRole || item.role, actual: first.speakerRole });
+    }
+    if (normalize(first.english) !== normalize(item.english)) {
+      errors.push({ id: item.id, type: "dialogue first line does not match core sentence" });
+    }
+    const second = item.dialogue[1];
+    if (second && second.speakerRole === first.speakerRole) {
+      errors.push({ id: item.id, type: "dialogue second line uses same role", role: first.speakerRole });
+    }
+  }
+
+  for (const variant of item.variants || []) {
+    const withoutCan = normalize(variant).replace(/^can you /, "").replace(/^could you /, "").replace(/^please /, "");
+    const coreWithoutPlease = normalize(item.english).replace(/^please /, "");
+    if (withoutCan === coreWithoutPlease) {
+      errors.push({ id: item.id, type: "variant only adds polite prefix", variant });
+    }
+  }
+
   for (const response of item.recommendedResponses || []) {
     responseCounts.set(response, (responseCounts.get(response) || 0) + 1);
     if (weakResponses.has(response)) weakResponseCounts.set(response, (weakResponseCounts.get(response) || 0) + 1);

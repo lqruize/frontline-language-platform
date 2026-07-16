@@ -191,12 +191,13 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Can you please start with this task?"
+        "Please do this first.",
+        "Start with this one."
       ],
       recommendedResponses: [
-        "I will start with this task.",
-        "Should I finish the start with first?",
-        "I will ask before handling start with."
+        "Okay, I’ll start now.",
+        "Sure. What should I do after this?",
+        "Can you show me how to do it?"
       ],
       dialogue: [
         {
@@ -208,20 +209,14 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "I want to make sure I understand.",
-          chinese: "我想确认我理解对了。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Ask me if you are not sure.",
-          chinese: "不确定就问我。"
+          english: "Okay, I’ll start now.",
+          chinese: "好的，我现在开始。"
         },
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Okay, I will ask first.",
-          chinese: "好的，我会先问。"
+          english: "What should I do after this?",
+          chinese: "这项做完以后我做什么？"
         }
       ],
       vocabularyNotes: [
@@ -272,34 +267,28 @@ export const kitchenSurvivalCourse = {
         "Where should I start?"
       ],
       recommendedResponses: [
-        "Thanks, I will check that.",
-        "I will ask about the which task.",
-        "I will confirm before moving on."
+        "Start with the onions.",
+        "Please clean the table first.",
+        "Do the delivery order first."
       ],
       dialogue: [
         {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
           english: "Which task should I do first?",
           chinese: "我应该先做哪项工作？"
         },
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "I want to make sure I understand.",
-          chinese: "我想确认我理解对了。"
-        },
-        {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管可能会说",
-          english: "Ask me if you are not sure.",
-          chinese: "不确定就问我。"
+          english: "Start with the onions.",
+          chinese: "先从洋葱开始。"
         },
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Okay, I will ask first.",
-          chinese: "好的，我会先问。"
+          english: "Okay, I’ll start there.",
+          chinese: "好的，我先做那个。"
         }
       ],
       vocabularyNotes: [
@@ -420,22 +409,21 @@ export const kitchenSurvivalCourse = {
         "I understand what to do."
       ],
       recommendedResponses: [
-        "Thanks, I will check that.",
-        "I will ask about the understand.",
-        "I will confirm before moving on."
+        "Good. Please start now.",
+        "Great. Ask me if you get stuck."
       ],
       dialogue: [
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
+          speakerRoleZh: "员工要说",
           english: "I understand the task.",
           chinese: "我明白这项工作。"
         },
         {
           speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
+          speakerRoleZh: "主管可能会说",
+          english: "Good. Please start now.",
+          chinese: "好，请现在开始。"
         }
       ],
       vocabularyNotes: [
@@ -481,26 +469,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Can you repeat the instructions back to me?",
-        "Could you please repeat the instructions back to me?"
+        "Say the instructions back to me.",
+        "Tell me the steps again."
       ],
       recommendedResponses: [
-        "I will repeat the instructions back to me.",
-        "Should I finish the repeat first?",
-        "I will ask before handling repeat."
+        "Sure. I’ll say it back.",
+        "I want to make sure I understand."
       ],
       dialogue: [
         {
           speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
+          speakerRoleZh: "主管可能会说",
           english: "Please repeat the instructions back to me.",
           chinese: "请把指令复述一遍。"
         },
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Can you say that again?",
-          chinese: "你可以再说一遍吗？"
+          speakerRoleZh: "员工要说",
+          english: "Sure. First I wash, then I label it.",
+          chinese: "好的。先清洗，然后贴标签。"
         }
       ],
       vocabularyNotes: [
@@ -1063,22 +1050,21 @@ export const kitchenSurvivalCourse = {
         "Please don’t keep using damaged equipment."
       ],
       recommendedResponses: [
-        "I will don't keep using damaged equipment.",
-        "Should I finish the damaged equipment first?",
-        "I will ask before handling damaged equipment."
+        "Okay, I’ll stop using it.",
+        "I’ll tell you if I see a problem."
       ],
       dialogue: [
         {
           speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
+          speakerRoleZh: "主管可能会说",
           english: "Do not keep using damaged equipment.",
           chinese: "不要继续使用损坏的设备。"
         },
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
+          speakerRoleZh: "员工要说",
+          english: "Okay, I’ll stop and tell you.",
+          chinese: "好的，我会停下来并告诉你。"
         }
       ],
       vocabularyNotes: [
@@ -1192,22 +1178,21 @@ export const kitchenSurvivalCourse = {
         "There is a problem with this."
       ],
       recommendedResponses: [
-        "Thanks, I will check that.",
-        "I will ask about the approved tool.",
-        "I will confirm before moving on."
+        "Use the backup tool for now.",
+        "Tell me before you continue."
       ],
       dialogue: [
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
+          speakerRoleZh: "员工要说",
           english: "The approved tool is not available.",
           chinese: "批准使用的工具现在没有。"
         },
         {
           speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check your order.",
-          chinese: "我帮你查一下订单。"
+          speakerRoleZh: "主管可能会说",
+          english: "Use the backup tool for now.",
+          chinese: "先用备用工具。"
         }
       ],
       vocabularyNotes: [
@@ -1253,26 +1238,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Can you correct this before continuing?",
-        "Could you please correct this before continuing?"
+        "Fix this before you continue.",
+        "Make this right first."
       ],
       recommendedResponses: [
-        "I will correct this before continuing.",
-        "Should I finish the correct this first?",
-        "I will ask before handling correct this."
+        "Okay, I’ll fix it now.",
+        "Can you show me which part is wrong?"
       ],
       dialogue: [
         {
           speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
+          speakerRoleZh: "主管可能会说",
           english: "Please correct this before continuing.",
           chinese: "继续之前请先把这个问题改正。"
         },
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
+          speakerRoleZh: "员工要说",
+          english: "Okay. Which part should I fix?",
+          chinese: "好的。我应该改哪一部分？"
         }
       ],
       vocabularyNotes: [
@@ -1318,26 +1302,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Can you redo this part?",
-        "Could you please redo this part?"
+        "Do this part again.",
+        "Redo this section."
       ],
       recommendedResponses: [
-        "I will redo this part.",
-        "Should I finish the redo first?",
-        "I will ask before handling redo."
+        "Okay, I’ll redo that part.",
+        "Can you show me the correct way?"
       ],
       dialogue: [
         {
           speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
+          speakerRoleZh: "主管可能会说",
           english: "Please redo this part.",
           chinese: "请把这一部分重做。"
         },
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
+          speakerRoleZh: "员工要说",
+          english: "Okay, I’ll redo it now.",
+          chinese: "好的，我现在重做。"
         }
       ],
       vocabularyNotes: [
@@ -1640,25 +1623,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Please you were absent without notifying anyone."
+        "You missed your shift and did not call.",
+        "No one was notified about your absence."
       ],
       recommendedResponses: [
-        "I will you were absent without notifying anyone.",
-        "Should I finish the absent first?",
-        "I will ask before handling absent."
+        "I understand. Who should I notify next time?",
+        "Can I explain what happened?"
       ],
       dialogue: [
         {
           speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
+          speakerRoleZh: "主管可能会说",
           english: "You were absent without notifying anyone.",
-          chinese: "你缺勤但没有通知任何人。"
+          chinese: "你缺勤了，而且没有通知任何人。"
         },
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
+          speakerRoleZh: "员工要说",
+          english: "I’m sorry. Who should I call next time?",
+          chinese: "对不起。下次我应该打给谁？"
         }
       ],
       vocabularyNotes: [
@@ -1704,8 +1687,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "HR",
       speakerRoleZh: "人事人员可能会说",
       variants: [
-        "Can you review the attendance policy?",
-        "Could you please review the attendance policy?"
+        "Read the attendance rules again.",
+        "Go over the attendance policy."
       ],
       recommendedResponses: [
         "I can help with that.",
@@ -1834,25 +1817,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Please this is a documented coaching conversation."
+        "This conversation will be written down.",
+        "We are making a record of this coaching talk."
       ],
       recommendedResponses: [
-        "I will this is a documented coaching conversation.",
-        "Should I finish the documented coaching first?",
-        "I will ask before handling documented coaching."
+        "I understand. Can I ask a question?",
+        "Can I get a copy of this note?"
       ],
       dialogue: [
         {
           speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
+          speakerRoleZh: "主管可能会说",
           english: "This is a documented coaching conversation.",
           chinese: "这是一次有记录的辅导谈话。"
         },
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
+          speakerRoleZh: "员工要说",
+          english: "I understand. Can I get a copy?",
+          chinese: "我明白。我可以拿一份副本吗？"
         }
       ],
       vocabularyNotes: [
@@ -2283,25 +2266,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Please good job following the procedure."
+        "You followed the steps well.",
+        "Nice work using the correct procedure."
       ],
       recommendedResponses: [
-        "I will good job following the procedure.",
-        "Should I finish the procedure first?",
-        "I will ask before handling procedure."
+        "Thank you. I’ll keep doing it that way.",
+        "Thanks. I’ll follow the same steps next time."
       ],
       dialogue: [
         {
           speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
+          speakerRoleZh: "主管可能会说",
           english: "Good job following the procedure.",
-          chinese: "你按照流程完成得很好。"
+          chinese: "你按流程做得很好。"
         },
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
-          english: "Okay, I’ll do it now.",
-          chinese: "好的，我现在就做。"
+          speakerRoleZh: "员工要说",
+          english: "Thank you. I’ll keep doing it that way.",
+          chinese: "谢谢。我会继续这样做。"
         }
       ],
       vocabularyNotes: [
@@ -2413,22 +2396,21 @@ export const kitchenSurvivalCourse = {
         "Can you please repeat the last part?"
       ],
       recommendedResponses: [
-        "Thanks, I will check that.",
-        "I will ask about the repeat.",
-        "I will confirm before moving on."
+        "Sure. The last part was about cleaning the table.",
+        "Yes. I said to label it first."
       ],
       dialogue: [
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
+          speakerRoleZh: "员工要说",
           english: "Can you repeat the last part?",
           chinese: "你可以重复最后一部分吗？"
         },
         {
           speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Can you say that again?",
-          chinese: "你可以再说一遍吗？"
+          speakerRoleZh: "主管可能会说",
+          english: "Sure. Label it before you store it.",
+          chinese: "可以。存放前先贴标签。"
         }
       ],
       vocabularyNotes: [
@@ -3077,28 +3059,16 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Can I ask about my schedule?",
-          chinese: "我可以问一下我的排班吗？"
-        },
-        {
-          speakerRole: "Manager",
-          speakerRoleZh: "经理可能会说",
-          english: "Sure. What is the problem?",
-          chinese: "可以。有什么问题？"
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
+          english: "Let me confirm the quantity, pickup time, and payment requirements with you.",
+          chinese: "我和您确认一下数量、取餐时间和付款要求。"
         },
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "This shift looks wrong.",
-          chinese: "这个班次看起来不对。"
-        },
-        {
-          speakerRole: "Manager",
-          speakerRoleZh: "经理可能会说",
-          english: "Let me check it now.",
-          chinese: "我现在查一下。"
+          english: "Sure. The pickup time is six o’clock.",
+          chinese: "好的。取餐时间是六点。"
         }
       ],
       vocabularyNotes: [
@@ -3209,8 +3179,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Can you notify me before leaving your work area?",
-        "Could you please notify me before leaving your work area?"
+        "Tell me before you leave your station.",
+        "Let me know before you step away."
       ],
       recommendedResponses: [
         "I will confirm my shift.",
@@ -3219,28 +3189,22 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Can I ask about my schedule?",
-          chinese: "我可以问一下我的排班吗？"
-        },
-        {
-          speakerRole: "Manager",
-          speakerRoleZh: "经理可能会说",
-          english: "Sure. What is the problem?",
-          chinese: "可以。有什么问题？"
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
+          english: "Please notify me before leaving your work area.",
+          chinese: "离开工作区域前请先通知我。"
         },
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "This shift looks wrong.",
-          chinese: "这个班次看起来不对。"
+          english: "Okay, I will tell you before I leave.",
+          chinese: "好的，我离开前会先告诉你。"
         },
         {
-          speakerRole: "Manager",
-          speakerRoleZh: "经理可能会说",
-          english: "Let me check it now.",
-          chinese: "我现在查一下。"
+          speakerRole: "Supervisor",
+          speakerRoleZh: "主管可能会说",
+          english: "Thank you. I need to know where you are.",
+          chinese: "谢谢。我需要知道你在哪里。"
         }
       ],
       vocabularyNotes: [
@@ -3362,8 +3326,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Can I ask about my schedule?",
-          chinese: "我可以问一下我的排班吗？"
+          english: "I am sick and cannot come to work today.",
+          chinese: "我生病了，今天不能来上班。"
         },
         {
           speakerRole: "Manager",
@@ -3439,8 +3403,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Can I ask about my schedule?",
-          chinese: "我可以问一下我的排班吗？"
+          english: "My schedule shows the wrong shift.",
+          chinese: "我的排班显示错了。"
         },
         {
           speakerRole: "Manager",
@@ -3635,8 +3599,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Can you complete the handoff before you leave?",
-        "Could you please complete the handoff before you leave?"
+        "Finish the handoff before leaving.",
+        "Complete the shift handoff first."
       ],
       recommendedResponses: [
         "I will confirm my shift.",
@@ -3701,7 +3665,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please this task is not finished yet."
+        "This job is not done yet.",
+        "This task still needs work."
       ],
       recommendedResponses: [
         "I will check with the manager.",
@@ -5515,33 +5480,21 @@ export const kitchenSurvivalCourse = {
         "What comes with the combo, please?"
       ],
       recommendedResponses: [
-        "Let me check the order.",
-        "I will ask before handling combo."
+        "It comes with fries and a drink.",
+        "The combo includes one side and one drink."
       ],
       dialogue: [
         {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
+          speakerRole: "Customer",
+          speakerRoleZh: "顾客可能会说",
           english: "What comes with the combo?",
           chinese: "套餐里包括什么？"
         },
         {
-          speakerRole: "Worker",
+          speakerRole: "Staff",
           speakerRoleZh: "员工要说",
-          english: "Okay. I will do that before touching food.",
-          chinese: "好的。我接触食物前会先这样做。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Tell me if you are not sure.",
-          chinese: "如果不确定就告诉我。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "I will ask first.",
-          chinese: "我会先问。"
+          english: "It comes with fries and a drink.",
+          chinese: "包括薯条和一杯饮料。"
         }
       ],
       vocabularyNotes: [
@@ -5782,21 +5735,21 @@ export const kitchenSurvivalCourse = {
         "What do you recommend instead, please?"
       ],
       recommendedResponses: [
-        "Let me check the order.",
-        "I will ask before handling What recommend."
+        "I recommend the mild sauce.",
+        "You can try the lemon pepper."
       ],
       dialogue: [
         {
           speakerRole: "Customer",
-          speakerRoleZh: "顾客",
+          speakerRoleZh: "顾客可能会说",
           english: "What do you recommend instead?",
           chinese: "那您建议我换成什么？"
         },
         {
           speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Let me check your order.",
-          chinese: "我帮你查一下订单。"
+          speakerRoleZh: "员工要说",
+          english: "The mild sauce is popular.",
+          chinese: "不辣的酱很受欢迎。"
         }
       ],
       vocabularyNotes: [
@@ -5846,21 +5799,21 @@ export const kitchenSurvivalCourse = {
         "What milder flavors do you have, please?"
       ],
       recommendedResponses: [
-        "Let me check the order.",
-        "I will ask before handling milder flavors."
+        "We have mild, honey garlic, and barbecue.",
+        "Lemon pepper is not very spicy."
       ],
       dialogue: [
         {
           speakerRole: "Customer",
-          speakerRoleZh: "顾客",
+          speakerRoleZh: "顾客可能会说",
           english: "What milder flavors do you have?",
           chinese: "你们有什么不太辣的口味？"
         },
         {
           speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Let me check your order.",
-          chinese: "我帮你查一下订单。"
+          speakerRoleZh: "员工要说",
+          english: "Honey garlic and lemon pepper are milder.",
+          chinese: "蜂蜜蒜味和柠檬胡椒味比较不辣。"
         }
       ],
       vocabularyNotes: [
@@ -5909,21 +5862,21 @@ export const kitchenSurvivalCourse = {
         "What's the name on the order, please?"
       ],
       recommendedResponses: [
-        "Let me check the order.",
-        "I will ask before handling order."
+        "The name is Kevin.",
+        "It is under Maria."
       ],
       dialogue: [
         {
           speakerRole: "Staff",
-          speakerRoleZh: "前台员工",
+          speakerRoleZh: "员工要说",
           english: "What's the name on the order?",
           chinese: "订单上的姓名是什么？"
         },
         {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Let me check your order.",
-          chinese: "我帮你查一下订单。"
+          speakerRole: "Customer",
+          speakerRoleZh: "顾客可能会说",
+          english: "It is under Kevin.",
+          chinese: "订单名是 Kevin。"
         }
       ],
       vocabularyNotes: [
@@ -6049,21 +6002,21 @@ export const kitchenSurvivalCourse = {
         "What is still available, please?"
       ],
       recommendedResponses: [
-        "Let me check the order.",
-        "I will ask before handling available."
+        "We still have chicken and fries.",
+        "The wings are sold out, but tenders are available."
       ],
       dialogue: [
         {
           speakerRole: "Customer",
-          speakerRoleZh: "顾客",
+          speakerRoleZh: "顾客可能会说",
           english: "What is still available?",
           chinese: "现在还有什么可以点？"
         },
         {
           speakerRole: "Staff",
-          speakerRoleZh: "员工",
-          english: "Let me check your order.",
-          chinese: "我帮你查一下订单。"
+          speakerRoleZh: "员工要说",
+          english: "We still have chicken tenders and fries.",
+          chinese: "我们还有鸡柳和薯条。"
         }
       ],
       vocabularyNotes: [
@@ -6175,24 +6128,25 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please let me repeat what I understood."
+        "I want to say back what I heard.",
+        "Let me confirm what I understood."
       ],
       recommendedResponses: [
-        "Let me check the order.",
-        "I will ask before handling repeat."
+        "Yes, that is correct.",
+        "Almost. The sauce goes on the side."
       ],
       dialogue: [
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
+          speakerRoleZh: "员工要说",
           english: "Let me repeat what I understood.",
           chinese: "我把我理解的内容复述一遍。"
         },
         {
           speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Can you say that again?",
-          chinese: "你可以再说一遍吗？"
+          speakerRoleZh: "主管可能会说",
+          english: "Okay, go ahead.",
+          chinese: "好的，你说。"
         }
       ],
       vocabularyNotes: [
@@ -6308,21 +6262,21 @@ export const kitchenSurvivalCourse = {
         "What needs to be fixed?"
       ],
       recommendedResponses: [
-        "Let me check the order.",
-        "I will ask before handling What exactly."
+        "The label date is wrong.",
+        "The sauce needs to be on the side."
       ],
       dialogue: [
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
+          speakerRoleZh: "员工要说",
           english: "What exactly needs to be corrected?",
           chinese: "具体需要改正什么？"
         },
         {
           speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
+          speakerRoleZh: "主管可能会说",
+          english: "The label date needs to be fixed.",
+          chinese: "标签日期需要改。"
         }
       ],
       vocabularyNotes: [
@@ -6373,21 +6327,21 @@ export const kitchenSurvivalCourse = {
         "What is the expected production rate, please?"
       ],
       recommendedResponses: [
-        "Let me check the order.",
-        "I will ask before handling expected production rate."
+        "About twenty orders per hour.",
+        "Finish this tray before lunch."
       ],
       dialogue: [
         {
           speakerRole: "Worker",
-          speakerRoleZh: "员工",
+          speakerRoleZh: "员工要说",
           english: "What is the expected production rate?",
           chinese: "规定的生产速度是多少？"
         },
         {
           speakerRole: "Supervisor",
-          speakerRoleZh: "主管",
-          english: "Got it.",
-          chinese: "明白了。"
+          speakerRoleZh: "主管可能会说",
+          english: "Try to finish one tray every ten minutes.",
+          chinese: "尽量每十分钟完成一盘。"
         }
       ],
       vocabularyNotes: [
@@ -6497,7 +6451,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please keep raw chicken below cooked food."
+        "Raw chicken goes below cooked food.",
+        "Store raw chicken under cooked food."
       ],
       recommendedResponses: [
         "I will keep the raw chicken separate.",
@@ -6506,28 +6461,16 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
           english: "Keep raw chicken below cooked food.",
           chinese: "把生鸡肉放在熟食下面。"
         },
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Okay. I will do that before touching food.",
-          chinese: "好的。我接触食物前会先这样做。"
-        },
-        {
           speakerRole: "Supervisor",
           speakerRoleZh: "主管可能会说",
-          english: "Tell me if you are not sure.",
-          chinese: "如果不确定就告诉我。"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "I will ask first.",
-          chinese: "我会先问。"
+          english: "Yes, that prevents cross-contamination.",
+          chinese: "对，这样可以防止交叉污染。"
         }
       ],
       vocabularyNotes: [
@@ -6633,7 +6576,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please check the expiration date first."
+        "Look at the expiration date first.",
+        "Check the date before using it."
       ],
       recommendedResponses: [
         "I will keep the expiration date separate.",
@@ -6695,7 +6639,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please this container needs a date label."
+        "This container needs a date sticker.",
+        "Put a date label on this container."
       ],
       recommendedResponses: [
         "I will keep the label separate.",
@@ -6757,7 +6702,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please put the lid on before you store it."
+        "Cover it before storing it.",
+        "Put the cover on before storage."
       ],
       recommendedResponses: [
         "I will keep the lid separate.",
@@ -6881,7 +6827,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please this needs to go back in the cooler."
+        "This needs to return to the cooler.",
+        "Put this back in the cooler."
       ],
       recommendedResponses: [
         "For here, please.",
@@ -7004,7 +6951,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please change the gloves before making the salad."
+        "Put on fresh gloves before making the salad.",
+        "Use new gloves for the salad."
       ],
       recommendedResponses: [
         "I will follow the food safety rule.",
@@ -7133,7 +7081,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please check the cooler temperature."
+        "Look at the cooler temperature.",
+        "Check how cold the cooler is."
       ],
       recommendedResponses: [
         "I will follow the food safety rule.",
@@ -7195,7 +7144,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please check the freezer temperature."
+        "Look at the freezer temperature.",
+        "Check how cold the freezer is."
       ],
       recommendedResponses: [
         "I will follow the food safety rule.",
@@ -7257,7 +7207,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please this food is past the use-by date."
+        "This food is past its safe date.",
+        "The use-by date has passed."
       ],
       recommendedResponses: [
         "I will keep the food past separate.",
@@ -7442,7 +7393,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please let it cool before you cover it."
+        "Cool it before covering it.",
+        "Wait until it cools, then cover it."
       ],
       recommendedResponses: [
         "I will follow the food safety rule.",
@@ -9149,7 +9101,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Please label the bag with the customer's name."
+        "Write the customer name on the bag.",
+        "Put the customer name on the bag."
       ],
       recommendedResponses: [
         "I will check the label first.",
@@ -9749,7 +9702,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Please sweep the dining area."
+        "Sweep the customer seating area.",
+        "Clean the dining room floor."
       ],
       recommendedResponses: [
         "Okay. Which supplies should I use?",
@@ -9812,7 +9766,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Please take out the trash before closing."
+        "Empty the trash before we close.",
+        "Take the garbage out before closing."
       ],
       recommendedResponses: [
         "I will clean the trash now.",
@@ -9945,7 +9900,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Please clean the drink station."
+        "Wipe down the drink station.",
+        "Clean the soda area."
       ],
       recommendedResponses: [
         "Okay. Which supplies should I use?",
@@ -10020,7 +9976,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Please turn off the open sign."
+        "Switch off the open sign.",
+        "Turn the open light off."
       ],
       recommendedResponses: [
         "I will check the open sign first.",
@@ -10084,7 +10041,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Please follow the closing procedure for the front door."
+        "Use the closing steps for the front door.",
+        "Follow the front-door closing steps."
       ],
       recommendedResponses: [
         "I will check the procedure first.",
@@ -10293,7 +10251,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Please put up the wet floor sign."
+        "Set out the wet floor sign.",
+        "Place the wet floor sign out."
       ],
       recommendedResponses: [
         "Walk carefully.",
@@ -11167,7 +11126,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Please prep more sauce cups."
+        "Get more sauce cups ready.",
+        "Prepare extra sauce cups."
       ],
       recommendedResponses: [
         "I will check the sauce first.",
@@ -11432,7 +11392,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Please add gloves to the supply list."
+        "Put gloves on the supply list.",
+        "Add gloves to the order list."
       ],
       recommendedResponses: [
         "I will check the gloves first.",
@@ -11508,7 +11469,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Please count the inventory before we close."
+        "Count inventory before closing.",
+        "Check the stock before we close."
       ],
       recommendedResponses: [
         "I will check the Count inventory first.",
@@ -11578,7 +11540,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Please this box needs to stay refrigerated."
+        "This box must stay cold.",
+        "Keep this box in the refrigerator."
       ],
       recommendedResponses: [
         "Okay. Which supplies should I use?",
@@ -11919,7 +11882,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Staff",
       speakerRoleZh: "前台员工要说",
       variants: [
-        "Please we cannot guarantee that there will be no cross-contact."
+        "We cannot promise zero cross-contact.",
+        "There may still be cross-contact."
       ],
       recommendedResponses: [
         "I will check the cannot guarantee first.",
@@ -12530,7 +12494,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Please keep cleaning chemicals away from food and prep areas."
+        "Keep cleaning chemicals away from prep areas.",
+        "Store chemicals away from food."
       ],
       recommendedResponses: [
         "I will clean the Keep cleaning now.",
@@ -12665,7 +12630,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Please label and date the prep container before putting it away."
+        "Date and label the prep container first.",
+        "Put the label and date on the container."
       ],
       recommendedResponses: [
         "I will check the label first.",
@@ -12735,7 +12701,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Supervisor",
       speakerRoleZh: "主管可能会说",
       variants: [
-        "Please check and record the holding temperature."
+        "Write down the holding temperature.",
+        "Check and record the food temperature."
       ],
       recommendedResponses: [
         "I will check the Check record first.",
@@ -12938,7 +12905,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Staff",
       speakerRoleZh: "前台员工要说",
       variants: [
-        "Please let me check the ingredient information and ask the kitchen."
+        "I will ask the kitchen about the ingredients.",
+        "Let me check the ingredient information."
       ],
       recommendedResponses: [
         "I will check the form first.",
@@ -15145,28 +15113,16 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "Hi, I would like to order.",
-          chinese: "你好，我想点餐。"
-        },
-        {
           speakerRole: "Staff",
           speakerRoleZh: "员工要说",
-          english: "Sure. Is it for here or to go?",
-          chinese: "好的。堂食还是外带？"
+          english: "What can I get for you?",
+          chinese: "您想点些什么？"
         },
         {
           speakerRole: "Customer",
           speakerRoleZh: "顾客可能会说",
-          english: "To go, please.",
-          chinese: "请外带。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "No problem. I will get that started.",
-          chinese: "没问题。我现在帮您下单。"
+          english: "Can I get a chicken combo?",
+          chinese: "我可以要一个鸡肉套餐吗？"
         }
       ],
       vocabularyNotes: [
@@ -15351,28 +15307,16 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "Hi, I would like to order.",
-          chinese: "你好，我想点餐。"
-        },
-        {
           speakerRole: "Staff",
           speakerRoleZh: "员工要说",
-          english: "Sure. Is it for here or to go?",
-          chinese: "好的。堂食还是外带？"
+          english: "Tossed or on the side?",
+          chinese: "您想拌酱，还是把酱放在旁边？"
         },
         {
           speakerRole: "Customer",
           speakerRoleZh: "顾客可能会说",
-          english: "To go, please.",
-          chinese: "请外带。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "No problem. I will get that started.",
-          chinese: "没问题。我现在帮您下单。"
+          english: "On the side, please.",
+          chinese: "请放旁边。"
         }
       ],
       vocabularyNotes: [
@@ -15556,28 +15500,16 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "Hi, I would like to order.",
-          chinese: "你好，我想点餐。"
-        },
-        {
           speakerRole: "Staff",
           speakerRoleZh: "员工要说",
-          english: "Sure. Is it for here or to go?",
-          chinese: "好的。堂食还是外带？"
+          english: "Anything else?",
+          chinese: "还需要别的吗？"
         },
         {
           speakerRole: "Customer",
           speakerRoleZh: "顾客可能会说",
-          english: "To go, please.",
-          chinese: "请外带。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "No problem. I will get that started.",
-          chinese: "没问题。我现在帮您下单。"
+          english: "No, that’s all.",
+          chinese: "不用，就这些。"
         }
       ],
       vocabularyNotes: [
@@ -16130,7 +16062,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "顾客可能会说",
       variants: [
-        "Please chicken only."
+        "Just chicken, please.",
+        "Only the chicken."
       ],
       recommendedResponses: [
         "Sure, I can help with that.",
@@ -16192,7 +16125,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "顾客可能会说",
       variants: [
-        "Please wings only."
+        "Just wings, please.",
+        "Only wings."
       ],
       recommendedResponses: [
         "Sure, I can help with that.",
@@ -16254,7 +16188,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "顾客可能会说",
       variants: [
-        "Please no combo."
+        "No meal combo, please.",
+        "I do not want the combo."
       ],
       recommendedResponses: [
         "Sure, I can help with that.",
@@ -16571,7 +16506,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "顾客可能会说",
       variants: [
-        "Please tossed, please."
+        "Mix it with the sauce, please.",
+        "Toss it in the sauce."
       ],
       recommendedResponses: [
         "Sure, I can help with that.",
@@ -16695,7 +16631,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "顾客可能会说",
       variants: [
-        "Please keep them plain."
+        "No sauce, please.",
+        "Leave them plain."
       ],
       recommendedResponses: [
         "Sure, I can help with that.",
@@ -17210,7 +17147,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Staff",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please you can tap your card here."
+        "Tap your card on this reader.",
+        "Use your card here."
       ],
       recommendedResponses: [
         "I will confirm the card here.",
@@ -17219,28 +17157,16 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "Hi, I would like to order.",
-          chinese: "你好，我想点餐。"
-        },
-        {
           speakerRole: "Staff",
           speakerRoleZh: "员工要说",
-          english: "Sure. Is it for here or to go?",
-          chinese: "好的。堂食还是外带？"
+          english: "You can tap your card here.",
+          chinese: "您可以在这里感应银行卡。"
         },
         {
           speakerRole: "Customer",
           speakerRoleZh: "顾客可能会说",
-          english: "To go, please.",
-          chinese: "请外带。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "No problem. I will get that started.",
-          chinese: "没问题。我现在帮您下单。"
+          english: "Okay, I’ll tap it now.",
+          chinese: "好的，我现在感应。"
         }
       ],
       vocabularyNotes: [
@@ -17284,8 +17210,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Staff",
       speakerRoleZh: "员工要说",
       variants: [
-        "Can you follow the screen?",
-        "Could you please follow the screen?"
+        "Look at the screen and follow the steps.",
+        "Use the prompts on the screen."
       ],
       recommendedResponses: [
         "I will confirm the follow screen.",
@@ -17848,7 +17774,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Staff",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please let me read the order back to you."
+        "I will repeat your order back.",
+        "Let me confirm the order out loud."
       ],
       recommendedResponses: [
         "I will confirm the read order.",
@@ -18553,7 +18480,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Staff",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please let me check the receipt and packing record."
+        "I will check the receipt and packing record.",
+        "Let me compare the receipt with the packing record."
       ],
       recommendedResponses: [
         "I will confirm the receipt.",
@@ -18562,28 +18490,16 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "Hi, I would like to order.",
-          chinese: "你好，我想点餐。"
-        },
-        {
           speakerRole: "Staff",
           speakerRoleZh: "员工要说",
-          english: "Sure. Is it for here or to go?",
-          chinese: "好的。堂食还是外带？"
+          english: "Let me check the receipt and packing record.",
+          chinese: "我核对一下小票和打包记录。"
         },
         {
           speakerRole: "Customer",
           speakerRoleZh: "顾客可能会说",
-          english: "To go, please.",
-          chinese: "请外带。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "No problem. I will get that started.",
-          chinese: "没问题。我现在帮您下单。"
+          english: "Okay, thank you.",
+          chinese: "好的，谢谢。"
         }
       ],
       vocabularyNotes: [
@@ -18822,22 +18738,16 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "Can you show me the receipt?",
-          chinese: "可以给我看一下小票吗？"
-        },
-        {
           speakerRole: "Staff",
           speakerRoleZh: "员工要说",
-          english: "Sure. Here is your receipt.",
-          chinese: "当然。这是您的小票。"
+          english: "Can you show me the receipt?",
+          chinese: "可以让我看一下小票吗？"
         },
         {
           speakerRole: "Customer",
           speakerRoleZh: "顾客可能会说",
-          english: "Thank you.",
-          chinese: "谢谢。"
+          english: "Sure, here it is.",
+          chinese: "可以，在这里。"
         }
       ],
       vocabularyNotes: [
@@ -19191,7 +19101,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Staff",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please let me check with my manager."
+        "I need to ask my manager.",
+        "Let me get my manager to check."
       ],
       recommendedResponses: [
         "I will confirm the manager.",
@@ -19315,7 +19226,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "顾客可能会说",
       variants: [
-        "Please my order is missing fries."
+        "My order does not have fries.",
+        "The fries are missing from my order."
       ],
       recommendedResponses: [
         "Sure, I can help with that.",
@@ -19377,7 +19289,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "顾客可能会说",
       variants: [
-        "Please this isn't what I ordered."
+        "This is not the item I ordered.",
+        "This order is different from what I asked for."
       ],
       recommendedResponses: [
         "Sure, I can help with that.",
@@ -21042,7 +20955,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "顾客可能会说",
       variants: [
-        "Please one of my items is missing from the bag."
+        "One item is not in the bag.",
+        "Something is missing from my order."
       ],
       recommendedResponses: [
         "Can I see the item or receipt?",
@@ -21053,8 +20967,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Customer",
           speakerRoleZh: "顾客可能会说",
-          english: "There is a problem with my order.",
-          chinese: "我的订单有问题。"
+          english: "One of my items is missing from the bag.",
+          chinese: "我的袋子里少了一样东西。"
         },
         {
           speakerRole: "Staff",
@@ -21125,12 +21039,6 @@ export const kitchenSurvivalCourse = {
         "I will ask the kitchen for an update."
       ],
       dialogue: [
-        {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "One item is missing.",
-          chinese: "少了一样东西。"
-        },
         {
           speakerRole: "Staff",
           speakerRoleZh: "员工要说",
@@ -21330,28 +21238,16 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "There is a problem with my order.",
-          chinese: "我的订单有问题。"
-        },
-        {
           speakerRole: "Staff",
           speakerRoleZh: "员工要说",
-          english: "I am sorry. Can I check the order number?",
-          chinese: "很抱歉。我可以核对一下订单号吗？"
+          english: "Was this order placed in store or through an app?",
+          chinese: "这个订单是在店里下的，还是通过外卖平台下的？"
         },
         {
           speakerRole: "Customer",
           speakerRoleZh: "顾客可能会说",
-          english: "Yes, it is order 24.",
-          chinese: "可以，是24号订单。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "Thank you. I will check it now.",
-          chinese: "谢谢。我现在核对。"
+          english: "I ordered through the app.",
+          chinese: "我是通过 App 下单的。"
         }
       ],
       vocabularyNotes: [
@@ -22193,7 +22089,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "顾客可能会说",
       variants: [
-        "Please tomorrow at noon."
+        "Noon tomorrow works.",
+        "Tomorrow at twelve is okay."
       ],
       recommendedResponses: [
         "I will check the delivery status.",
@@ -22863,28 +22760,16 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Customer",
-          speakerRoleZh: "顾客可能会说",
-          english: "There is a problem with my order.",
-          chinese: "我的订单有问题。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "I am sorry. Can I check the order number?",
-          chinese: "很抱歉。我可以核对一下订单号吗？"
+          speakerRole: "Agent",
+          speakerRoleZh: "客服可能会说",
+          english: "Thank you for calling. How may I help you today?",
+          chinese: "感谢来电。今天有什么可以帮您？"
         },
         {
           speakerRole: "Customer",
           speakerRoleZh: "顾客可能会说",
-          english: "Yes, it is order 24.",
-          chinese: "可以，是24号订单。"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "员工要说",
-          english: "Thank you. I will check it now.",
-          chinese: "谢谢。我现在核对。"
+          english: "I need help with my order.",
+          chinese: "我的订单需要帮助。"
         }
       ],
       vocabularyNotes: [
@@ -23637,7 +23522,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Customer",
       speakerRoleZh: "客户可能会说",
       variants: [
-        "Please yes, that's correct."
+        "Yes, that is right.",
+        "That information is correct."
       ],
       recommendedResponses: [
         "I will check the delivery status.",
@@ -23769,7 +23655,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Agent",
       speakerRoleZh: "客服人员要说",
       variants: [
-        "Please thank you for holding."
+        "Thanks for waiting.",
+        "Thank you for staying on the line."
       ],
       recommendedResponses: [
         "I will check the delivery status.",
@@ -24815,33 +24702,21 @@ export const kitchenSurvivalCourse = {
         "Are you still open, please?"
       ],
       recommendedResponses: [
-        "To go is fine.",
-        "I will order quickly."
+        "Yes, but only for takeout.",
+        "Sorry, we are closed now."
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
+          speakerRole: "Customer",
+          speakerRoleZh: "顾客可能会说",
+          english: "Are you still open?",
+          chinese: "你们还营业吗？"
+        },
+        {
+          speakerRole: "Staff",
           speakerRoleZh: "员工要说",
-          english: "Stop. This is not safe.",
-          chinese: "停一下。这样不安全。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "What happened?",
-          chinese: "发生什么了？"
-        },
-        {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Someone could get hurt.",
-          chinese: "可能会有人受伤。"
-        },
-        {
-          speakerRole: "Supervisor",
-          speakerRoleZh: "主管可能会说",
-          english: "Okay, step back and get help.",
-          chinese: "好的，退后并找人帮忙。"
+          english: "Yes, but only for takeout.",
+          chinese: "还营业，但只能外带。"
         }
       ],
       vocabularyNotes: [
@@ -24849,8 +24724,8 @@ export const kitchenSurvivalCourse = {
           term: "still open",
           chinese: "还营业",
           pronunciation: "stil-OH-pen",
-          note: "顾客询问店是否还在营业。",
-          example: "The store is still open."
+          note: "顾客问店现在是否还可以点餐。",
+          example: "The store is open."
         }
       ],
       listenRepeatCount: 3,
@@ -26166,8 +26041,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Stop. This is not safe.",
-          chinese: "停一下。这样不安全。"
+          english: "I cut my finger.",
+          chinese: "我切到手指了。"
         },
         {
           speakerRole: "Supervisor",
@@ -26300,8 +26175,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Stop. This is not safe.",
-          chinese: "停一下。这样不安全。"
+          english: "We need the first aid kit.",
+          chinese: "我们需要急救包。"
         },
         {
           speakerRole: "Supervisor",
@@ -26373,8 +26248,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "This is not safe.",
-          chinese: "这样不安全。"
+          english: "Call the manager right away.",
+          chinese: "马上叫经理。"
         },
         {
           speakerRole: "Coworker",
@@ -27677,28 +27552,16 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Worker",
-          speakerRoleZh: "员工要说",
-          english: "Hi, I need help with this.",
-          chinese: "你好，我需要帮忙处理这个。"
+          speakerRole: "Customer",
+          speakerRoleZh: "顾客可能会说",
+          english: "It's still not going through. I'll use a different card.",
+          chinese: "还是没有成功，我换一张卡。"
         },
         {
           speakerRole: "Staff",
-          speakerRoleZh: "对方可能会说",
-          english: "Sure. What do you need?",
-          chinese: "可以。你需要什么？"
-        },
-        {
-          speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Can you write it down for me?",
-          chinese: "你可以帮我写下来吗？"
-        },
-        {
-          speakerRole: "Staff",
-          speakerRoleZh: "对方可能会说",
-          english: "Yes, no problem.",
-          chinese: "可以，没问题。"
+          english: "No problem. You can try another card.",
+          chinese: "没问题。您可以试另一张卡。"
         }
       ],
       vocabularyNotes: [
@@ -27756,8 +27619,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Hi, I need help with this.",
-          chinese: "你好，我需要帮忙处理这个。"
+          english: "The written instructions are different from what I was told.",
+          chinese: "书面说明和我听到的指令不一样。"
         },
         {
           speakerRole: "Staff",
@@ -27959,8 +27822,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Hi, I need help with this.",
-          chinese: "你好，我需要帮忙处理这个。"
+          english: "Where can I load my transit card?",
+          chinese: "我在哪里可以给公交卡充值？"
         },
         {
           speakerRole: "Staff",
@@ -28218,8 +28081,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Hi, I need help with this.",
-          chinese: "你好，我需要帮忙处理这个。"
+          english: "My phone has no service.",
+          chinese: "我的手机没有信号。"
         },
         {
           speakerRole: "Staff",
@@ -28352,8 +28215,8 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Renter",
-          speakerRoleZh: "租客要说",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
           english: "Is heat included in the rent?",
           chinese: "暖气费包含在房租里吗？"
         },
@@ -28479,8 +28342,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Hi, I need help with this.",
-          chinese: "你好，我需要帮忙处理这个。"
+          english: "Can I book an appointment?",
+          chinese: "我可以预约吗？"
         },
         {
           speakerRole: "Staff",
@@ -28678,8 +28541,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Hi, I need help with this.",
-          chinese: "你好，我需要帮忙处理这个。"
+          english: "Can you speak more slowly? English is my second language.",
+          chinese: "你可以说慢一点吗？英语不是我的母语。"
         },
         {
           speakerRole: "Staff",
@@ -28749,8 +28612,8 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Renter",
-          speakerRoleZh: "租客要说",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
           english: "I am looking for a room to rent.",
           chinese: "我在找一个房间出租。"
         },
@@ -28810,8 +28673,8 @@ export const kitchenSurvivalCourse = {
       ],
       dialogue: [
         {
-          speakerRole: "Renter",
-          speakerRoleZh: "租客要说",
+          speakerRole: "Worker",
+          speakerRoleZh: "员工要说",
           english: "When is the rent due?",
           chinese: "房租什么时候到期要交？"
         },
@@ -29000,8 +28863,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Hi, I need help with this.",
-          chinese: "你好，我需要帮忙处理这个。"
+          english: "Can you print this form for me?",
+          chinese: "你可以帮我打印这张表吗？"
         },
         {
           speakerRole: "Staff",
@@ -29074,8 +28937,8 @@ export const kitchenSurvivalCourse = {
         {
           speakerRole: "Worker",
           speakerRoleZh: "员工要说",
-          english: "Hi, I need help with this.",
-          chinese: "你好，我需要帮忙处理这个。"
+          english: "Where can I buy work shoes?",
+          chinese: "我在哪里可以买工作鞋？"
         },
         {
           speakerRole: "Staff",
@@ -29323,7 +29186,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "How long is the bus ride?"
+        "How long is the bus ride?",
+        "How many minutes by bus?"
       ],
       recommendedResponses: [
         "It takes about twenty minutes.",
@@ -29756,7 +29620,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please my debit card is not working."
+        "My debit card will not work.",
+        "The bank card is not working."
       ],
       recommendedResponses: [
         "Can you explain the debit card?",
@@ -29879,7 +29744,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please my phone bill is too high."
+        "My phone bill is very high.",
+        "The phone bill costs too much."
       ],
       recommendedResponses: [
         "Can you explain the phone bill?",
@@ -30066,7 +29932,8 @@ export const kitchenSurvivalCourse = {
       speakerRole: "Worker",
       speakerRoleZh: "员工要说",
       variants: [
-        "Please my internet is not working."
+        "My internet is down.",
+        "The internet is not working right now."
       ],
       recommendedResponses: [
         "Can you explain the internet working?",
