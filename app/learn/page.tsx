@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { LearnCourse } from "@/components/LearnCourse";
-import { getKitchenCourse } from "@/lib/course";
+import { getKitchenCourse, getPublishedItems, getScenarioCount } from "@/lib/course";
 
 export default function LearnPage() {
   const course = getKitchenCourse();
+  const publishedItems = getPublishedItems();
+  const scenarioCount = getScenarioCount();
 
   return (
     <main className="min-h-screen bg-warm px-4 py-5 sm:px-6 lg:px-8">
@@ -14,10 +16,12 @@ export default function LearnPage() {
               返回首页
             </Link>
             <h1 className="mt-2 text-3xl font-black leading-tight text-ink sm:text-5xl">{course.title}</h1>
-            <p className="mt-2 text-base font-semibold text-muted">{course.subtitle} · {course.items.length} 条课程内容</p>
+            <p className="mt-2 text-base font-semibold text-muted">
+              {course.modules.length} 大模块 · {scenarioCount} 个真实场景 · {publishedItems.length}+ 实用句子 · {course.priceLabel}
+            </p>
           </div>
         </header>
-        <LearnCourse items={course.items} categories={course.categories} />
+        <LearnCourse items={course.items} modules={course.modules} freeScenarioIds={course.freeScenarioIds} />
       </div>
     </main>
   );
