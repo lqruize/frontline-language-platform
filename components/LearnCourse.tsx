@@ -18,6 +18,17 @@ type ScenarioGroup = {
   isFree: boolean;
 };
 
+const moduleShortTitles: Record<KitchenModuleId, string> = {
+  communication: "基础沟通",
+  shift_pay: "排班工资",
+  food_safety: "食品卫生",
+  kitchen_cleaning: "后厨工作",
+  front_counter: "前台收银",
+  delivery_complaints: "外卖投诉",
+  emergency_safety: "安全急救",
+  daily_life: "生活英语",
+};
+
 function groupByScenario(items: KitchenCourseItem[]): ScenarioGroup[] {
   const groups = new Map<string, ScenarioGroup>();
   for (const item of items) {
@@ -61,12 +72,12 @@ export function LearnCourse({ items, modules, freeScenarioIds }: LearnCourseProp
     <div className="space-y-5">
       <UnlockPanel />
 
-      <div className="sticky top-0 z-10 -mx-4 border-b border-line bg-warm/90 px-4 py-3 backdrop-blur sm:mx-0 sm:rounded-3xl sm:border sm:bg-white/80">
-        <div className="flex gap-2 overflow-x-auto pb-1">
+      <div className="sticky top-0 z-10 -mx-4 border-b border-line bg-warm/95 px-4 py-3 backdrop-blur sm:mx-0 sm:rounded-3xl sm:border sm:bg-white/85">
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
           <button
             type="button"
             onClick={() => setSelectedModule("全部")}
-            className={selectedModule === "全部" ? "shrink-0 rounded-full bg-brand px-4 py-2 text-sm font-bold text-white" : "shrink-0 rounded-full border border-line bg-white px-4 py-2 text-sm font-bold text-ink"}
+            className={selectedModule === "全部" ? "rounded-2xl bg-brand px-3 py-3 text-sm font-black text-white" : "rounded-2xl border border-line bg-white px-3 py-3 text-sm font-black text-ink"}
           >
             全部
           </button>
@@ -77,11 +88,11 @@ export function LearnCourse({ items, modules, freeScenarioIds }: LearnCourseProp
               onClick={() => setSelectedModule(module.id)}
               className={
                 selectedModule === module.id
-                  ? "shrink-0 rounded-full bg-brand px-4 py-2 text-sm font-bold text-white"
-                  : "shrink-0 rounded-full border border-line bg-white px-4 py-2 text-sm font-bold text-ink"
+                  ? "rounded-2xl bg-brand px-3 py-3 text-sm font-black text-white"
+                  : "rounded-2xl border border-line bg-white px-3 py-3 text-sm font-black text-ink"
               }
             >
-              {module.title}
+              {moduleShortTitles[module.id]}
             </button>
           ))}
         </div>
@@ -100,7 +111,7 @@ export function LearnCourse({ items, modules, freeScenarioIds }: LearnCourseProp
             <summary className="cursor-pointer list-none p-5">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <p className="text-sm font-bold text-brand">模块</p>
+                  <p className="text-sm font-bold text-brand">{moduleShortTitles[module.id]}</p>
                   <h2 className="mt-1 text-2xl font-black text-ink">{module.title}</h2>
                   <p className="mt-2 text-base leading-relaxed text-muted">{module.description}</p>
                 </div>
