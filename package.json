@@ -7,7 +7,8 @@
     "build": "next build",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "validate:course": "node scripts/validate-course-content.mjs"
+    "validate:course": "node scripts/validate-course-content.mjs",
+    "validate:responses": "node scripts/validate-response-semantics.mjs"
   },
   "dependencies": {
     "next": "^14.2.23",

@@ -28386,7 +28386,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_001",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -28422,8 +28422,8 @@ export const kitchenSurvivalCourse = {
         ],
         recommendedResponses: [
           "Sure. May I see your ID?",
-          "Let me check your account.",
-          "You can do that here."
+          "What type of account would you like?",
+          "Would you like checking or savings?"
         ],
         dialogue: [
           {
@@ -28437,6 +28437,12 @@ export const kitchenSurvivalCourse = {
             speakerRoleZh: "银行柜员可能会说",
             english: "Sure. May I see your ID?",
             chinese: "可以。请给我看一下身份证件。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "A checking account, please.",
+            chinese: "请开一个支票账户。"
           }
         ],
         vocabularyNotes: [
@@ -28451,7 +28457,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_002",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -28487,9 +28493,9 @@ export const kitchenSurvivalCourse = {
           "I need help with this."
         ],
         recommendedResponses: [
-          "Yes, it is available.",
-          "You can come see it today.",
-          "The rent is due on the first."
+          "Yes, the apartment is still available.",
+          "What questions do you have about it?",
+          "Would you like to schedule a viewing?"
         ],
         dialogue: [
           {
@@ -28501,8 +28507,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Landlord",
             speakerRoleZh: "房东可能会说",
-            english: "Yes, it is available.",
-            chinese: "是的，还可以。"
+            english: "Yes, the apartment is still available.",
+            chinese: "是的，这套公寓还可以租。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I see it today?",
+            chinese: "我今天可以看房吗？"
           }
         ],
         vocabularyNotes: [
@@ -28517,7 +28529,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_003",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -28553,9 +28565,9 @@ export const kitchenSurvivalCourse = {
           "Can you tell me if the apartment still available?"
         ],
         recommendedResponses: [
-          "Yes, it is available.",
-          "You can come see it today.",
-          "The rent is due on the first."
+          "Yes, it is still available.",
+          "Sorry, it has already been rented.",
+          "You can come see it this afternoon."
         ],
         dialogue: [
           {
@@ -28567,8 +28579,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Landlord",
             speakerRoleZh: "房东可能会说",
-            english: "Yes, it is available.",
-            chinese: "是的，还可以。"
+            english: "Yes, it is still available.",
+            chinese: "是的，还可以租。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "What time can I come?",
+            chinese: "我几点可以来？"
           }
         ],
         vocabularyNotes: [
@@ -28583,7 +28601,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_004",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -28619,9 +28637,9 @@ export const kitchenSurvivalCourse = {
           "Can you tell me if there a monthly fee?"
         ],
         recommendedResponses: [
-          "Sure. May I see your ID?",
-          "Let me check your account.",
-          "You can do that here."
+          "There is no monthly fee with direct deposit.",
+          "The monthly fee is twelve dollars.",
+          "We can waive the fee if you keep the minimum balance."
         ],
         dialogue: [
           {
@@ -28633,8 +28651,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Bank Teller",
             speakerRoleZh: "银行柜员可能会说",
-            english: "Sure. May I see your ID?",
-            chinese: "可以。请给我看一下身份证件。"
+            english: "There is no monthly fee with direct deposit.",
+            chinese: "如果有工资直接存款，就没有月费。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Okay, thank you.",
+            chinese: "好的，谢谢。"
           }
         ],
         vocabularyNotes: [
@@ -28649,7 +28673,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_005",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -28682,9 +28706,9 @@ export const kitchenSurvivalCourse = {
           "Do you know where can I load my transit card?"
         ],
         recommendedResponses: [
-          "It takes about twenty minutes.",
-          "Get off at Main Street.",
-          "You can pay by card."
+          "You can load it at the machine.",
+          "Use the ticket machine by the entrance.",
+          "You can also add money online."
         ],
         dialogue: [
           {
@@ -28696,8 +28720,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Transit Staff",
             speakerRoleZh: "交通工作人员可能会说",
-            english: "It takes about twenty minutes.",
-            chinese: "大概二十分钟。"
+            english: "You can load it at the machine.",
+            chinese: "你可以在机器上充值。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Thank you. I will use the machine.",
+            chinese: "谢谢。我去用机器。"
           }
         ],
         vocabularyNotes: [
@@ -28712,7 +28742,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_006",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -28745,9 +28775,9 @@ export const kitchenSurvivalCourse = {
           "What is the price of the monthly pass?"
         ],
         recommendedResponses: [
-          "It takes about twenty minutes.",
-          "Get off at Main Street.",
-          "You can pay by card."
+          "The monthly pass is ninety dollars.",
+          "The price depends on your zone.",
+          "You can buy it at the station."
         ],
         dialogue: [
           {
@@ -28759,8 +28789,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Transit Staff",
             speakerRoleZh: "交通工作人员可能会说",
-            english: "It takes about twenty minutes.",
-            chinese: "大概二十分钟。"
+            english: "The monthly pass is ninety dollars.",
+            chinese: "月票是九十美元。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I pay by card?",
+            chinese: "我可以刷卡吗？"
           }
         ],
         vocabularyNotes: [
@@ -28775,7 +28811,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_007",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -28808,9 +28844,9 @@ export const kitchenSurvivalCourse = {
           "I need help with this."
         ],
         recommendedResponses: [
-          "Sure. May I see your ID?",
-          "Let me check your account.",
-          "You can do that here."
+          "Okay. Do you need a direct deposit form?",
+          "You’ll need your routing and account numbers.",
+          "You can give this form to your employer."
         ],
         dialogue: [
           {
@@ -28822,8 +28858,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Bank Teller",
             speakerRoleZh: "银行柜员可能会说",
-            english: "Sure. May I see your ID?",
-            chinese: "可以。请给我看一下身份证件。"
+            english: "Okay. Do you need a direct deposit form?",
+            chinese: "好的。你需要直接存款表吗？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Yes, I need the form.",
+            chinese: "是的，我需要这张表。"
           }
         ],
         vocabularyNotes: [
@@ -28838,7 +28880,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_008",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -28871,9 +28913,9 @@ export const kitchenSurvivalCourse = {
           "I have to to deposit this check."
         ],
         recommendedResponses: [
-          "Sure. May I see your ID?",
-          "Let me check your account.",
-          "You can do that here."
+          "Sure. Please endorse the back of the check.",
+          "May I see your ID?",
+          "You can deposit it at the counter."
         ],
         dialogue: [
           {
@@ -28885,8 +28927,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Bank Teller",
             speakerRoleZh: "银行柜员可能会说",
-            english: "Sure. May I see your ID?",
-            chinese: "可以。请给我看一下身份证件。"
+            english: "Sure. Please endorse the back of the check.",
+            chinese: "可以。请在支票背面签名。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Okay, I will sign it.",
+            chinese: "好的，我来签名。"
           }
         ],
         vocabularyNotes: [
@@ -28901,7 +28949,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_009",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -28934,9 +28982,9 @@ export const kitchenSurvivalCourse = {
           "I need help with this."
         ],
         recommendedResponses: [
-          "Let me check your account.",
-          "We can change your plan.",
-          "Try restarting your phone first."
+          "Try restarting your phone first.",
+          "Let me check if there is an outage.",
+          "Your SIM card may need to be reset."
         ],
         dialogue: [
           {
@@ -28948,8 +28996,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Phone Rep",
             speakerRoleZh: "手机客服可能会说",
-            english: "Let me check your account.",
-            chinese: "我查一下你的账户。"
+            english: "Try restarting your phone first.",
+            chinese: "先试着重启一下手机。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I already restarted it.",
+            chinese: "我已经重启过了。"
           }
         ],
         vocabularyNotes: [
@@ -28964,7 +29018,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_010",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -28997,9 +29051,9 @@ export const kitchenSurvivalCourse = {
           "I have to more data on my plan."
         ],
         recommendedResponses: [
-          "Let me check your account.",
-          "We can change your plan.",
-          "Try restarting your phone first."
+          "We can add more data to your plan.",
+          "How much data do you need?",
+          "There may be an extra monthly charge."
         ],
         dialogue: [
           {
@@ -29011,8 +29065,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Phone Rep",
             speakerRoleZh: "手机客服可能会说",
-            english: "Let me check your account.",
-            chinese: "我查一下你的账户。"
+            english: "We can add more data to your plan.",
+            chinese: "我们可以给你的套餐增加流量。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "How much will it cost?",
+            chinese: "要多少钱？"
           }
         ],
         vocabularyNotes: [
@@ -29027,7 +29087,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_011",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -29060,9 +29120,9 @@ export const kitchenSurvivalCourse = {
           "I need help with this."
         ],
         recommendedResponses: [
-          "Yes, it is available.",
-          "You can come see it today.",
-          "The rent is due on the first."
+          "Water is included, but electricity is separate.",
+          "Heat and water are included.",
+          "Utilities are not included in the rent."
         ],
         dialogue: [
           {
@@ -29074,8 +29134,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Landlord",
             speakerRoleZh: "房东可能会说",
-            english: "Yes, it is available.",
-            chinese: "是的，还可以。"
+            english: "Water is included, but electricity is separate.",
+            chinese: "水费包含，但电费另付。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "How much is electricity usually?",
+            chinese: "电费通常多少钱？"
           }
         ],
         vocabularyNotes: [
@@ -29153,7 +29219,7 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-          {
+                {
         id: "daily_life_013",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -29186,9 +29252,9 @@ export const kitchenSurvivalCourse = {
           "Could I book an appointment?"
         ],
         recommendedResponses: [
-          "You can ask the pharmacist.",
-          "Please follow the label directions.",
-          "You may want to see a doctor."
+          "Yes. What day works for you?",
+          "The next available appointment is Friday.",
+          "Is this for a new patient visit?"
         ],
         dialogue: [
           {
@@ -29200,8 +29266,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Receptionist",
             speakerRoleZh: "前台接待可能会说",
-            english: "You can ask the pharmacist.",
-            chinese: "你可以问药剂师。"
+            english: "Yes. What day works for you?",
+            chinese: "可以。哪天适合你？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Friday works for me.",
+            chinese: "星期五可以。"
           }
         ],
         vocabularyNotes: [
@@ -29279,7 +29351,7 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-          {
+                {
         id: "daily_life_015",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -29312,9 +29384,9 @@ export const kitchenSurvivalCourse = {
           "Do you know where is the nearest walk-in clinic?"
         ],
         recommendedResponses: [
-          "You can ask the pharmacist.",
-          "Please follow the label directions.",
-          "You may want to see a doctor."
+          "There is one two blocks away.",
+          "The nearest clinic is on Main Street.",
+          "It opens at nine in the morning."
         ],
         dialogue: [
           {
@@ -29324,10 +29396,16 @@ export const kitchenSurvivalCourse = {
             chinese: "最近的免预约诊所在哪里？"
           },
           {
-            speakerRole: "Receptionist",
-            speakerRoleZh: "前台接待可能会说",
-            english: "You can ask the pharmacist.",
-            chinese: "你可以问药剂师。"
+            speakerRole: "Pharmacist",
+            speakerRoleZh: "药剂师可能会说",
+            english: "There is one two blocks away.",
+            chinese: "离这里两个街区有一家。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Thank you. I will go there.",
+            chinese: "谢谢。我会去那里。"
           }
         ],
         vocabularyNotes: [
@@ -29342,7 +29420,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_016",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -29375,9 +29453,9 @@ export const kitchenSurvivalCourse = {
           "Are you able to speak more slowly?"
         ],
         recommendedResponses: [
-          "Yes, there is a small fee.",
-          "I can give you the right number.",
-          "Of course. I will speak slowly."
+          "Of course. I will speak slowly.",
+          "Sure. I can repeat that.",
+          "No problem. I will slow down."
         ],
         dialogue: [
           {
@@ -29389,8 +29467,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Clerk",
             speakerRoleZh: "店员可能会说",
-            english: "Yes, there is a small fee.",
-            chinese: "是的，有一点费用。"
+            english: "Of course. I will speak slowly.",
+            chinese: "当然。我会说慢一点。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Thank you. That helps.",
+            chinese: "谢谢。这样有帮助。"
           }
         ],
         vocabularyNotes: [
@@ -29405,7 +29489,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_017",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -29438,9 +29522,9 @@ export const kitchenSurvivalCourse = {
           "I need help with this."
         ],
         recommendedResponses: [
-          "Yes, it is available.",
-          "You can come see it today.",
-          "The rent is due on the first."
+          "What area are you looking in?",
+          "What is your budget?",
+          "I have one room available now."
         ],
         dialogue: [
           {
@@ -29452,8 +29536,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Landlord",
             speakerRoleZh: "房东可能会说",
-            english: "Yes, it is available.",
-            chinese: "是的，还可以。"
+            english: "What area are you looking in?",
+            chinese: "你想找哪个区域？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Near the bus line, please.",
+            chinese: "最好靠近公交线。"
           }
         ],
         vocabularyNotes: [
@@ -29468,7 +29558,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_018",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -29501,9 +29591,9 @@ export const kitchenSurvivalCourse = {
           "I need help with this."
         ],
         recommendedResponses: [
-          "Yes, it is available.",
-          "You can come see it today.",
-          "The rent is due on the first."
+          "Rent is due on the first of each month.",
+          "Please pay before the fifth.",
+          "You can pay by e-transfer."
         ],
         dialogue: [
           {
@@ -29515,8 +29605,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Landlord",
             speakerRoleZh: "房东可能会说",
-            english: "Yes, it is available.",
-            chinese: "是的，还可以。"
+            english: "Rent is due on the first of each month.",
+            chinese: "房租每月一号该交。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I pay by e-transfer?",
+            chinese: "我可以电子转账吗？"
           }
         ],
         vocabularyNotes: [
@@ -29531,7 +29627,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_019",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -29564,9 +29660,9 @@ export const kitchenSurvivalCourse = {
           "Could I pay by e-transfer?"
         ],
         recommendedResponses: [
-          "Yes, there is a small fee.",
-          "I can give you the right number.",
-          "Of course. I will speak slowly."
+          "Yes, I can send you the email address.",
+          "Please include your name in the note.",
+          "No, we only take cash for this."
         ],
         dialogue: [
           {
@@ -29578,8 +29674,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Clerk",
             speakerRoleZh: "店员可能会说",
-            english: "Yes, there is a small fee.",
-            chinese: "是的，有一点费用。"
+            english: "Yes, I can send you the email address.",
+            chinese: "可以，我把邮箱地址发给你。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Okay, I will send it now.",
+            chinese: "好的，我现在转。"
           }
         ],
         vocabularyNotes: [
@@ -29594,7 +29696,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_020",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -29627,9 +29729,9 @@ export const kitchenSurvivalCourse = {
           "I have to to change my address."
         ],
         recommendedResponses: [
-          "Sure. May I see your ID?",
-          "Let me check your account.",
-          "You can do that here."
+          "Sure. Please show me your ID.",
+          "You can update it online.",
+          "Please write your new address here."
         ],
         dialogue: [
           {
@@ -29641,8 +29743,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Bank Teller",
             speakerRoleZh: "银行柜员可能会说",
-            english: "Sure. May I see your ID?",
+            english: "Sure. Please show me your ID.",
             chinese: "可以。请给我看一下身份证件。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Here is my new address.",
+            chinese: "这是我的新地址。"
           }
         ],
         vocabularyNotes: [
@@ -29657,7 +29765,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_021",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -29690,9 +29798,9 @@ export const kitchenSurvivalCourse = {
           "Are you able to print this form for me?"
         ],
         recommendedResponses: [
-          "Yes, I can help with that.",
-          "Please write your name here.",
-          "I can email you a copy."
+          "Yes, please email it to us.",
+          "There is a small printing fee.",
+          "We can print it in black and white."
         ],
         dialogue: [
           {
@@ -29704,8 +29812,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Clerk",
             speakerRoleZh: "店员可能会说",
-            english: "Yes, I can help with that.",
-            chinese: "可以，我可以帮你。"
+            english: "Yes, please email it to us.",
+            chinese: "可以，请发到我们的邮箱。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "What email should I use?",
+            chinese: "我应该发到哪个邮箱？"
           }
         ],
         vocabularyNotes: [
@@ -29720,7 +29834,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_022",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -29753,9 +29867,9 @@ export const kitchenSurvivalCourse = {
           "Do you know where can I buy work shoes?"
         ],
         recommendedResponses: [
-          "Yes, I can help.",
-          "Please keep the confirmation number.",
-          "The next available time is Monday."
+          "You can find work shoes in aisle five.",
+          "Try the uniform store near the mall.",
+          "We have non-slip shoes over here."
         ],
         dialogue: [
           {
@@ -29767,8 +29881,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Clerk",
             speakerRoleZh: "店员可能会说",
-            english: "Yes, I can help.",
-            chinese: "可以，我可以帮你。"
+            english: "You can find work shoes in aisle five.",
+            chinese: "你可以在第五走道找到工作鞋。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Thank you. I need non-slip shoes.",
+            chinese: "谢谢。我需要防滑鞋。"
           }
         ],
         vocabularyNotes: [
@@ -29783,7 +29903,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_023",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -29816,9 +29936,9 @@ export const kitchenSurvivalCourse = {
           "I have to non-slip shoes for work."
         ],
         recommendedResponses: [
-          "Yes, I can help.",
-          "Please keep the confirmation number.",
-          "The next available time is Monday."
+          "What size do you need?",
+          "These shoes are good for restaurant work.",
+          "The non-slip shoes are on this shelf."
         ],
         dialogue: [
           {
@@ -29830,8 +29950,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Clerk",
             speakerRoleZh: "店员可能会说",
-            english: "Yes, I can help.",
-            chinese: "可以，我可以帮你。"
+            english: "What size do you need?",
+            chinese: "你需要什么尺码？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Size eight, please.",
+            chinese: "八号。"
           }
         ],
         vocabularyNotes: [
@@ -29846,7 +29972,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_024",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -29879,9 +30005,9 @@ export const kitchenSurvivalCourse = {
           "Could I get a copy of the receipt?"
         ],
         recommendedResponses: [
-          "Yes, I can help with that.",
-          "Please write your name here.",
-          "I can email you a copy."
+          "Yes, I can print it for you.",
+          "Do you want it emailed?",
+          "I need the card you paid with."
         ],
         dialogue: [
           {
@@ -29893,8 +30019,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Clerk",
             speakerRoleZh: "店员可能会说",
-            english: "Yes, I can help with that.",
-            chinese: "可以，我可以帮你。"
+            english: "Yes, I can print it for you.",
+            chinese: "可以，我可以帮你打印。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "A printed copy is fine.",
+            chinese: "打印一份就可以。"
           }
         ],
         vocabularyNotes: [
@@ -29909,7 +30041,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_025",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -29942,9 +30074,9 @@ export const kitchenSurvivalCourse = {
           "Could I get directions to this address?"
         ],
         recommendedResponses: [
-          "Yes, it is available.",
-          "You can come see it today.",
-          "The rent is due on the first."
+          "Take the bus to Main Street.",
+          "It is two blocks from here.",
+          "I can send you the directions."
         ],
         dialogue: [
           {
@@ -29954,10 +30086,16 @@ export const kitchenSurvivalCourse = {
             chinese: "你可以告诉我去这个地址怎么走吗？"
           },
           {
-            speakerRole: "Landlord",
-            speakerRoleZh: "房东可能会说",
-            english: "Yes, it is available.",
-            chinese: "是的，还可以。"
+            speakerRole: "Clerk",
+            speakerRoleZh: "店员可能会说",
+            english: "Take the bus to Main Street.",
+            chinese: "坐公交到 Main Street。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Which bus should I take?",
+            chinese: "我应该坐哪路公交？"
           }
         ],
         vocabularyNotes: [
@@ -29972,7 +30110,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_026",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -30006,8 +30144,8 @@ export const kitchenSurvivalCourse = {
         ],
         recommendedResponses: [
           "It takes about twenty minutes.",
-          "Get off at Main Street.",
-          "You can pay by card."
+          "It may take longer during rush hour.",
+          "The subway is faster from here."
         ],
         dialogue: [
           {
@@ -30021,6 +30159,12 @@ export const kitchenSurvivalCourse = {
             speakerRoleZh: "交通工作人员可能会说",
             english: "It takes about twenty minutes.",
             chinese: "大概二十分钟。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Okay, thank you.",
+            chinese: "好的，谢谢。"
           }
         ],
         vocabularyNotes: [
@@ -30035,7 +30179,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_027",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -30068,9 +30212,9 @@ export const kitchenSurvivalCourse = {
           "I need help with this."
         ],
         recommendedResponses: [
-          "It takes about twenty minutes.",
-          "Get off at Main Street.",
-          "You can pay by card."
+          "Yes, get off at Main Street.",
+          "It stops one block from the restaurant.",
+          "No, take bus 12 instead."
         ],
         dialogue: [
           {
@@ -30082,8 +30226,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Transit Staff",
             speakerRoleZh: "交通工作人员可能会说",
-            english: "It takes about twenty minutes.",
-            chinese: "大概二十分钟。"
+            english: "Yes, get off at Main Street.",
+            chinese: "会，在 Main Street 下车。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Great. Thank you.",
+            chinese: "太好了，谢谢。"
           }
         ],
         vocabularyNotes: [
@@ -30098,7 +30248,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_028",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -30131,9 +30281,9 @@ export const kitchenSurvivalCourse = {
           "I need help with this."
         ],
         recommendedResponses: [
-          "It takes about twenty minutes.",
-          "Get off at Main Street.",
-          "You can pay by card."
+          "The next bus comes in fifteen minutes.",
+          "You can take bus 7 instead.",
+          "Check the screen for the next bus."
         ],
         dialogue: [
           {
@@ -30145,8 +30295,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Transit Staff",
             speakerRoleZh: "交通工作人员可能会说",
-            english: "It takes about twenty minutes.",
-            chinese: "大概二十分钟。"
+            english: "The next bus comes in fifteen minutes.",
+            chinese: "下一班公交十五分钟后到。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I will wait here.",
+            chinese: "我在这里等。"
           }
         ],
         vocabularyNotes: [
@@ -30161,7 +30317,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_029",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -30194,9 +30350,9 @@ export const kitchenSurvivalCourse = {
           "I need help with this."
         ],
         recommendedResponses: [
-          "It takes about twenty minutes.",
-          "Get off at Main Street.",
-          "You can pay by card."
+          "Yes, it is delayed ten minutes.",
+          "There is heavy traffic today.",
+          "You can check the app for updates."
         ],
         dialogue: [
           {
@@ -30208,8 +30364,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Transit Staff",
             speakerRoleZh: "交通工作人员可能会说",
-            english: "It takes about twenty minutes.",
-            chinese: "大概二十分钟。"
+            english: "Yes, it is delayed ten minutes.",
+            chinese: "是的，晚点十分钟。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Thanks for letting me know.",
+            chinese: "谢谢你告诉我。"
           }
         ],
         vocabularyNotes: [
@@ -30224,7 +30386,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_030",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -30257,9 +30419,9 @@ export const kitchenSurvivalCourse = {
           "Could I cash this check here?"
         ],
         recommendedResponses: [
-          "Sure. May I see your ID?",
-          "Let me check your account.",
-          "You can do that here."
+          "Yes, if you have photo ID.",
+          "You need an account here to cash it.",
+          "We can deposit it into your account instead."
         ],
         dialogue: [
           {
@@ -30271,8 +30433,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Bank Teller",
             speakerRoleZh: "银行柜员可能会说",
-            english: "Sure. May I see your ID?",
-            chinese: "可以。请给我看一下身份证件。"
+            english: "Yes, if you have photo ID.",
+            chinese: "可以，如果你有带照片的身份证件。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I have my passport.",
+            chinese: "我有护照。"
           }
         ],
         vocabularyNotes: [
@@ -30287,7 +30455,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_031",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -30320,9 +30488,9 @@ export const kitchenSurvivalCourse = {
           "I need help with this."
         ],
         recommendedResponses: [
-          "Sure. May I see your ID?",
-          "Let me check your account.",
-          "You can do that here."
+          "A photo ID is required.",
+          "Bring your passport or driver’s license.",
+          "You also need proof of address."
         ],
         dialogue: [
           {
@@ -30334,8 +30502,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Bank Teller",
             speakerRoleZh: "银行柜员可能会说",
-            english: "Sure. May I see your ID?",
-            chinese: "可以。请给我看一下身份证件。"
+            english: "A photo ID is required.",
+            chinese: "需要带照片的身份证件。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I use my passport?",
+            chinese: "我可以用护照吗？"
           }
         ],
         vocabularyNotes: [
@@ -30413,7 +30587,7 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-          {
+                {
         id: "daily_life_033",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -30446,9 +30620,9 @@ export const kitchenSurvivalCourse = {
           "I need help with this."
         ],
         recommendedResponses: [
-          "Sure. May I see your ID?",
-          "Let me check your account.",
-          "You can do that here."
+          "Let me check the card.",
+          "Was the card declined?",
+          "We may need to issue a replacement."
         ],
         dialogue: [
           {
@@ -30460,8 +30634,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Bank Teller",
             speakerRoleZh: "银行柜员可能会说",
-            english: "Sure. May I see your ID?",
-            chinese: "可以。请给我看一下身份证件。"
+            english: "Let me check the card.",
+            chinese: "我来查一下这张卡。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "It was declined at the store.",
+            chinese: "它在店里被拒了。"
           }
         ],
         vocabularyNotes: [
@@ -30476,7 +30656,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_034",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -30509,9 +30689,9 @@ export const kitchenSurvivalCourse = {
           "Could I set up online banking?"
         ],
         recommendedResponses: [
-          "Sure. May I see your ID?",
-          "Let me check your account.",
-          "You can do that here."
+          "Yes, we can help you register.",
+          "You will need your card number.",
+          "We can send a security code to your phone."
         ],
         dialogue: [
           {
@@ -30523,8 +30703,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Bank Teller",
             speakerRoleZh: "银行柜员可能会说",
-            english: "Sure. May I see your ID?",
-            chinese: "可以。请给我看一下身份证件。"
+            english: "Yes, we can help you register.",
+            chinese: "可以，我们可以帮你注册。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I have my bank card with me.",
+            chinese: "我带了银行卡。"
           }
         ],
         vocabularyNotes: [
@@ -30539,7 +30725,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_035",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -30572,9 +30758,9 @@ export const kitchenSurvivalCourse = {
           "I need help with this."
         ],
         recommendedResponses: [
-          "Let me check your account.",
-          "We can change your plan.",
-          "Try restarting your phone first."
+          "Let me review the charges with you.",
+          "You used extra data this month.",
+          "We can look for a cheaper plan."
         ],
         dialogue: [
           {
@@ -30586,8 +30772,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Phone Rep",
             speakerRoleZh: "手机客服可能会说",
-            english: "Let me check your account.",
-            chinese: "我查一下你的账户。"
+            english: "Let me review the charges with you.",
+            chinese: "我帮你看一下费用。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can you explain the extra charge?",
+            chinese: "你可以解释一下额外费用吗？"
           }
         ],
         vocabularyNotes: [
@@ -30602,7 +30794,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_036",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -30635,9 +30827,9 @@ export const kitchenSurvivalCourse = {
           "Could I change to a cheaper plan?"
         ],
         recommendedResponses: [
-          "Let me check your account.",
-          "We can change your plan.",
-          "Try restarting your phone first."
+          "Yes, but it may include less data.",
+          "This cheaper plan starts next month.",
+          "There may be a plan-change fee."
         ],
         dialogue: [
           {
@@ -30649,8 +30841,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Phone Rep",
             speakerRoleZh: "手机客服可能会说",
-            english: "Let me check your account.",
-            chinese: "我查一下你的账户。"
+            english: "Yes, but it may include less data.",
+            chinese: "可以，但流量可能会少一些。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "How much data is included?",
+            chinese: "包含多少流量？"
           }
         ],
         vocabularyNotes: [
@@ -30665,7 +30863,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_037",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -30698,9 +30896,9 @@ export const kitchenSurvivalCourse = {
           "I have to a SIM card."
         ],
         recommendedResponses: [
-          "Let me check your account.",
-          "We can change your plan.",
-          "Try restarting your phone first."
+          "Do you need a new phone number?",
+          "Is your phone unlocked?",
+          "We have prepaid SIM cards."
         ],
         dialogue: [
           {
@@ -30712,8 +30910,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Phone Rep",
             speakerRoleZh: "手机客服可能会说",
-            english: "Let me check your account.",
-            chinese: "我查一下你的账户。"
+            english: "Do you need a new phone number?",
+            chinese: "你需要一个新号码吗？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Yes, I need a new number.",
+            chinese: "是的，我需要新号码。"
           }
         ],
         vocabularyNotes: [
@@ -30728,7 +30932,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_038",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -30761,9 +30965,9 @@ export const kitchenSurvivalCourse = {
           "I need help with this."
         ],
         recommendedResponses: [
-          "Let me check your account.",
-          "We can change your plan.",
-          "Try restarting your phone first."
+          "Try restarting the modem first.",
+          "There may be an outage in your area.",
+          "We can send a technician tomorrow."
         ],
         dialogue: [
           {
@@ -30775,8 +30979,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Phone Rep",
             speakerRoleZh: "手机客服可能会说",
-            english: "Let me check your account.",
-            chinese: "我查一下你的账户。"
+            english: "Try restarting the modem first.",
+            chinese: "先试着重启调制解调器。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I restarted it already.",
+            chinese: "我已经重启过了。"
           }
         ],
         vocabularyNotes: [
@@ -30791,7 +31001,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_039",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -30824,9 +31034,9 @@ export const kitchenSurvivalCourse = {
           "Are you able to reset my password?"
         ],
         recommendedResponses: [
-          "Let me check your account.",
-          "We can change your plan.",
-          "Try restarting your phone first."
+          "Yes, I can send a reset link.",
+          "Please verify your email address.",
+          "Check your text messages for a code."
         ],
         dialogue: [
           {
@@ -30838,8 +31048,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Phone Rep",
             speakerRoleZh: "手机客服可能会说",
-            english: "Let me check your account.",
-            chinese: "我查一下你的账户。"
+            english: "Yes, I can send a reset link.",
+            chinese: "可以，我可以发送重置链接。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Please send it by text.",
+            chinese: "请用短信发给我。"
           }
         ],
         vocabularyNotes: [
@@ -30854,7 +31070,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_040",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -30887,9 +31103,9 @@ export const kitchenSurvivalCourse = {
           "Can you tell me if laundry included?"
         ],
         recommendedResponses: [
-          "Yes, it is available.",
-          "You can come see it today.",
-          "The rent is due on the first."
+          "Yes, laundry is in the basement.",
+          "Laundry is coin-operated.",
+          "No, laundry is not included."
         ],
         dialogue: [
           {
@@ -30901,8 +31117,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Landlord",
             speakerRoleZh: "房东可能会说",
-            english: "Yes, it is available.",
-            chinese: "是的，还可以。"
+            english: "Yes, laundry is in the basement.",
+            chinese: "包含，洗衣房在地下室。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Is it open every day?",
+            chinese: "每天都开放吗？"
           }
         ],
         vocabularyNotes: [
@@ -30917,7 +31139,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_041",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -30950,9 +31172,9 @@ export const kitchenSurvivalCourse = {
           "Can you tell me if parking included?"
         ],
         recommendedResponses: [
-          "Yes, it is available.",
-          "You can come see it today.",
-          "The rent is due on the first."
+          "Yes, one parking spot is included.",
+          "Parking costs extra.",
+          "There is street parking only."
         ],
         dialogue: [
           {
@@ -30964,8 +31186,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Landlord",
             speakerRoleZh: "房东可能会说",
-            english: "Yes, it is available.",
-            chinese: "是的，还可以。"
+            english: "Yes, one parking spot is included.",
+            chinese: "是的，包含一个停车位。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Is it outdoor parking?",
+            chinese: "是室外停车位吗？"
           }
         ],
         vocabularyNotes: [
@@ -30980,7 +31208,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_042",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -31013,9 +31241,9 @@ export const kitchenSurvivalCourse = {
           "Could I see the room today?"
         ],
         recommendedResponses: [
-          "Yes, it is available.",
-          "You can come see it today.",
-          "The rent is due on the first."
+          "Yes, you can come at five.",
+          "Today is not available. How about tomorrow?",
+          "Please text me when you arrive."
         ],
         dialogue: [
           {
@@ -31027,8 +31255,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Landlord",
             speakerRoleZh: "房东可能会说",
-            english: "Yes, it is available.",
-            chinese: "是的，还可以。"
+            english: "Yes, you can come at five.",
+            chinese: "可以，你可以五点来。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Five o’clock works for me.",
+            chinese: "五点可以。"
           }
         ],
         vocabularyNotes: [
@@ -31043,7 +31277,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_043",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -31076,9 +31310,9 @@ export const kitchenSurvivalCourse = {
           "What is the price of the deposit?"
         ],
         recommendedResponses: [
-          "Yes, it is available.",
-          "You can come see it today.",
-          "The rent is due on the first."
+          "The deposit is one month’s rent.",
+          "It is five hundred dollars.",
+          "You pay the deposit when you sign."
         ],
         dialogue: [
           {
@@ -31090,8 +31324,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Landlord",
             speakerRoleZh: "房东可能会说",
-            english: "Yes, it is available.",
-            chinese: "是的，还可以。"
+            english: "The deposit is one month’s rent.",
+            chinese: "押金是一个月房租。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I pay it by e-transfer?",
+            chinese: "我可以电子转账付吗？"
           }
         ],
         vocabularyNotes: [
@@ -31106,7 +31346,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_044",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -31139,9 +31379,9 @@ export const kitchenSurvivalCourse = {
           "I need help with this."
         ],
         recommendedResponses: [
-          "Yes, it is available.",
-          "You can come see it today.",
-          "The rent is due on the first."
+          "You can move in on the first.",
+          "The room is available next week.",
+          "You can move in after you sign the lease."
         ],
         dialogue: [
           {
@@ -31153,8 +31393,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Landlord",
             speakerRoleZh: "房东可能会说",
-            english: "Yes, it is available.",
-            chinese: "是的，还可以。"
+            english: "You can move in on the first.",
+            chinese: "你可以一号搬进去。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can I get the keys that day?",
+            chinese: "那天可以拿钥匙吗？"
           }
         ],
         vocabularyNotes: [
@@ -31169,7 +31415,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_045",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -31202,9 +31448,9 @@ export const kitchenSurvivalCourse = {
           "I have to something for a headache."
         ],
         recommendedResponses: [
-          "You can ask the pharmacist.",
-          "Please follow the label directions.",
-          "You may want to see a doctor."
+          "I can show you some options.",
+          "Do you have any allergies?",
+          "Please read the label before taking it."
         ],
         dialogue: [
           {
@@ -31216,8 +31462,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Pharmacist",
             speakerRoleZh: "药剂师可能会说",
-            english: "You can ask the pharmacist.",
-            chinese: "你可以问药剂师。"
+            english: "I can show you some options.",
+            chinese: "我可以给你看几个选择。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I do not have allergies.",
+            chinese: "我没有过敏。"
           }
         ],
         vocabularyNotes: [
@@ -31232,7 +31484,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_046",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -31265,9 +31517,9 @@ export const kitchenSurvivalCourse = {
           "I have to something for a cough."
         ],
         recommendedResponses: [
-          "You can ask the pharmacist.",
-          "Please follow the label directions.",
-          "You may want to see a doctor."
+          "Is it a dry cough or a wet cough?",
+          "How long have you had the cough?",
+          "This cough medicine may make you sleepy."
         ],
         dialogue: [
           {
@@ -31279,8 +31531,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Pharmacist",
             speakerRoleZh: "药剂师可能会说",
-            english: "You can ask the pharmacist.",
-            chinese: "你可以问药剂师。"
+            english: "Is it a dry cough or a wet cough?",
+            chinese: "是干咳还是有痰的咳嗽？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "It is a dry cough.",
+            chinese: "是干咳。"
           }
         ],
         vocabularyNotes: [
@@ -31295,7 +31553,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_047",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -31328,9 +31586,9 @@ export const kitchenSurvivalCourse = {
           "Could I talk to the pharmacist?"
         ],
         recommendedResponses: [
-          "You can ask the pharmacist.",
-          "Please follow the label directions.",
-          "You may want to see a doctor."
+          "Yes, please wait here.",
+          "The pharmacist will be with you shortly.",
+          "What question do you have for the pharmacist?"
         ],
         dialogue: [
           {
@@ -31340,10 +31598,16 @@ export const kitchenSurvivalCourse = {
             chinese: "我可以和药剂师说一下吗？"
           },
           {
-            speakerRole: "Pharmacist",
-            speakerRoleZh: "药剂师可能会说",
-            english: "You can ask the pharmacist.",
-            chinese: "你可以问药剂师。"
+            speakerRole: "Clerk",
+            speakerRoleZh: "店员可能会说",
+            english: "Yes, please wait here.",
+            chinese: "可以，请在这里等。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I have a question about this medicine.",
+            chinese: "我有一个关于这个药的问题。"
           }
         ],
         vocabularyNotes: [
@@ -31358,7 +31622,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_048",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -31391,9 +31655,9 @@ export const kitchenSurvivalCourse = {
           "I need help with this."
         ],
         recommendedResponses: [
-          "You can ask the pharmacist.",
-          "Please follow the label directions.",
-          "You may want to see a doctor."
+          "Follow the directions on the label.",
+          "Take it every six hours if needed.",
+          "Do not take more than the daily limit."
         ],
         dialogue: [
           {
@@ -31405,8 +31669,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Pharmacist",
             speakerRoleZh: "药剂师可能会说",
-            english: "You can ask the pharmacist.",
-            chinese: "你可以问药剂师。"
+            english: "Follow the directions on the label.",
+            chinese: "请按照标签上的说明服用。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Okay, I will read the label.",
+            chinese: "好的，我会看标签。"
           }
         ],
         vocabularyNotes: [
@@ -31421,7 +31691,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_049",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -31454,9 +31724,9 @@ export const kitchenSurvivalCourse = {
           "I need help with this."
         ],
         recommendedResponses: [
-          "You can ask the pharmacist.",
-          "Please follow the label directions.",
-          "You may want to see a doctor."
+          "Yes, take it with food.",
+          "No, you can take it without food.",
+          "Take it with food if it upsets your stomach."
         ],
         dialogue: [
           {
@@ -31468,8 +31738,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Pharmacist",
             speakerRoleZh: "药剂师可能会说",
-            english: "You can ask the pharmacist.",
-            chinese: "你可以问药剂师。"
+            english: "Yes, take it with food.",
+            chinese: "是的，和食物一起吃。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Thank you. I understand.",
+            chinese: "谢谢，我明白了。"
           }
         ],
         vocabularyNotes: [
@@ -31484,7 +31760,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_050",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -31517,9 +31793,9 @@ export const kitchenSurvivalCourse = {
           "I’ve got a fever."
         ],
         recommendedResponses: [
-          "You can ask the pharmacist.",
-          "Please follow the label directions.",
-          "You may want to see a doctor."
+          "How long have you had a fever?",
+          "Do you have any other symptoms?",
+          "You may want to see a doctor today."
         ],
         dialogue: [
           {
@@ -31531,8 +31807,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Receptionist",
             speakerRoleZh: "前台接待可能会说",
-            english: "You can ask the pharmacist.",
-            chinese: "你可以问药剂师。"
+            english: "How long have you had a fever?",
+            chinese: "你发烧多久了？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Since last night.",
+            chinese: "从昨晚开始。"
           }
         ],
         vocabularyNotes: [
@@ -31547,7 +31829,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_051",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -31580,9 +31862,9 @@ export const kitchenSurvivalCourse = {
           "I’ve got stomach pain."
         ],
         recommendedResponses: [
-          "You can ask the pharmacist.",
-          "Please follow the label directions.",
-          "You may want to see a doctor."
+          "How long has it been hurting?",
+          "Is the pain severe?",
+          "If it is severe, go to urgent care."
         ],
         dialogue: [
           {
@@ -31594,8 +31876,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Receptionist",
             speakerRoleZh: "前台接待可能会说",
-            english: "You can ask the pharmacist.",
-            chinese: "你可以问药剂师。"
+            english: "How long has it been hurting?",
+            chinese: "痛了多久？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Since this morning.",
+            chinese: "从今天早上开始。"
           }
         ],
         vocabularyNotes: [
@@ -31610,7 +31898,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_052",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -31643,9 +31931,9 @@ export const kitchenSurvivalCourse = {
           "I need help with this."
         ],
         recommendedResponses: [
-          "You can ask the pharmacist.",
-          "Please follow the label directions.",
-          "You may want to see a doctor."
+          "Please sit down for a moment.",
+          "How long have you felt dizzy?",
+          "Do you need medical help now?"
         ],
         dialogue: [
           {
@@ -31657,8 +31945,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Receptionist",
             speakerRoleZh: "前台接待可能会说",
-            english: "You can ask the pharmacist.",
-            chinese: "你可以问药剂师。"
+            english: "Please sit down for a moment.",
+            chinese: "请先坐一会儿。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I feel better sitting down.",
+            chinese: "坐下后好一点。"
           }
         ],
         vocabularyNotes: [
@@ -31673,7 +31967,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_053",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -31706,9 +32000,9 @@ export const kitchenSurvivalCourse = {
           "I have to to reschedule my appointment."
         ],
         recommendedResponses: [
-          "Yes, I can help.",
-          "Please keep the confirmation number.",
-          "The next available time is Monday."
+          "Sure. What day works for you?",
+          "The next opening is Monday.",
+          "Do you want to cancel or reschedule?"
         ],
         dialogue: [
           {
@@ -31720,8 +32014,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Receptionist",
             speakerRoleZh: "前台接待可能会说",
-            english: "Yes, I can help.",
-            chinese: "可以，我可以帮你。"
+            english: "Sure. What day works for you?",
+            chinese: "可以。哪天适合你？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Monday works for me.",
+            chinese: "星期一可以。"
           }
         ],
         vocabularyNotes: [
@@ -31736,7 +32036,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_054",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -31769,9 +32069,9 @@ export const kitchenSurvivalCourse = {
           "Are you able to give me a confirmation number?"
         ],
         recommendedResponses: [
-          "Yes, I can help.",
-          "Please keep the confirmation number.",
-          "The next available time is Monday."
+          "Yes, your confirmation number is 3582.",
+          "I will text it to you.",
+          "Please keep this number for your records."
         ],
         dialogue: [
           {
@@ -31783,8 +32083,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Receptionist",
             speakerRoleZh: "前台接待可能会说",
-            english: "Yes, I can help.",
-            chinese: "可以，我可以帮你。"
+            english: "Yes, your confirmation number is 3582.",
+            chinese: "可以，你的确认号码是 3582。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Thank you. I will write it down.",
+            chinese: "谢谢。我会写下来。"
           }
         ],
         vocabularyNotes: [
@@ -31799,7 +32105,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_055",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -31832,9 +32138,9 @@ export const kitchenSurvivalCourse = {
           "I have to help filling out this form."
         ],
         recommendedResponses: [
-          "Yes, I can help with that.",
-          "Please write your name here.",
-          "I can email you a copy."
+          "Sure. Which part is confusing?",
+          "Please start with your name and address.",
+          "I can explain the form, but you need to write your information."
         ],
         dialogue: [
           {
@@ -31846,8 +32152,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Clerk",
             speakerRoleZh: "店员可能会说",
-            english: "Yes, I can help with that.",
-            chinese: "可以，我可以帮你。"
+            english: "Sure. Which part is confusing?",
+            chinese: "可以。哪一部分你不明白？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I do not understand this section.",
+            chinese: "我不明白这一部分。"
           }
         ],
         vocabularyNotes: [
@@ -31862,7 +32174,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_056",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -31895,9 +32207,9 @@ export const kitchenSurvivalCourse = {
           "Are you able to email me a copy?"
         ],
         recommendedResponses: [
-          "Yes, I can help with that.",
-          "Please write your name here.",
-          "I can email you a copy."
+          "Yes. What is your email address?",
+          "I can send it today.",
+          "Please check your inbox in a few minutes."
         ],
         dialogue: [
           {
@@ -31909,8 +32221,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Clerk",
             speakerRoleZh: "店员可能会说",
-            english: "Yes, I can help with that.",
-            chinese: "可以，我可以帮你。"
+            english: "Yes. What is your email address?",
+            chinese: "可以。你的邮箱地址是什么？"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "I will write it down for you.",
+            chinese: "我写给你。"
           }
         ],
         vocabularyNotes: [
@@ -31960,7 +32278,7 @@ export const kitchenSurvivalCourse = {
       listenRepeatCount: 3,
       speakRepeatCount: 5
     },
-          {
+                {
         id: "daily_life_058",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -31993,9 +32311,9 @@ export const kitchenSurvivalCourse = {
           "I need help with this."
         ],
         recommendedResponses: [
-          "Yes, there is a small fee.",
-          "I can give you the right number.",
-          "Of course. I will speak slowly."
+          "You should contact customer service.",
+          "Call this number tomorrow morning.",
+          "I can give you the right phone number."
         ],
         dialogue: [
           {
@@ -32007,8 +32325,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Clerk",
             speakerRoleZh: "店员可能会说",
-            english: "Yes, there is a small fee.",
-            chinese: "是的，有一点费用。"
+            english: "You should contact customer service.",
+            chinese: "你应该联系客服。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "Can you write the number down?",
+            chinese: "你可以把号码写下来吗？"
           }
         ],
         vocabularyNotes: [
@@ -32023,7 +32347,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_059",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -32056,9 +32380,9 @@ export const kitchenSurvivalCourse = {
           "Could I make a payment plan?"
         ],
         recommendedResponses: [
-          "Let me check your account.",
-          "We can change your plan.",
-          "Try restarting your phone first."
+          "Let me check if you qualify.",
+          "You can pay part now and part later.",
+          "There may be a late fee."
         ],
         dialogue: [
           {
@@ -32070,8 +32394,14 @@ export const kitchenSurvivalCourse = {
           {
             speakerRole: "Phone Rep",
             speakerRoleZh: "手机客服可能会说",
-            english: "Let me check your account.",
-            chinese: "我查一下你的账户。"
+            english: "Let me check if you qualify.",
+            chinese: "我查一下你是否符合条件。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "How much do I need to pay today?",
+            chinese: "我今天需要付多少？"
           }
         ],
         vocabularyNotes: [
@@ -32086,7 +32416,7 @@ export const kitchenSurvivalCourse = {
         listenRepeatCount: 3,
         speakRepeatCount: 5
       },
-          {
+                {
         id: "daily_life_060",
         moduleId: "daily_life",
         moduleTitle: "北美基本生活英语",
@@ -32120,8 +32450,8 @@ export const kitchenSurvivalCourse = {
         ],
         recommendedResponses: [
           "Yes, there is a small fee.",
-          "I can give you the right number.",
-          "Of course. I will speak slowly."
+          "No, there is no fee.",
+          "The fee is ten dollars."
         ],
         dialogue: [
           {
@@ -32135,6 +32465,12 @@ export const kitchenSurvivalCourse = {
             speakerRoleZh: "店员可能会说",
             english: "Yes, there is a small fee.",
             chinese: "是的，有一点费用。"
+          },
+          {
+            speakerRole: "Customer",
+            speakerRoleZh: "顾客可能会说",
+            english: "How much is the fee?",
+            chinese: "费用是多少？"
           }
         ],
         vocabularyNotes: [

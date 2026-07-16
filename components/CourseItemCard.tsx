@@ -99,7 +99,7 @@ function DetailList({ title, items, defaultOpen = false }: { title: string; item
 export function CourseItemCard({ item, locked = false }: CourseItemCardProps) {
   const [listenCount, setListenCount] = useState(0);
   const [speakCount, setSpeakCount] = useState(0);
-  const [runningMode, setRunningMode] = useState<"listen" | "manual" | null>(null);
+  const [runningMode, setRunningMode] = useState<"listen" | "normal" | "slow" | null>(null);
   const [mastered, setMastered] = useState(false);
   const [selectedNote, setSelectedNote] = useState<VocabNote | null>(null);
 
@@ -107,7 +107,13 @@ export function CourseItemCard({ item, locked = false }: CourseItemCardProps) {
     setMastered(window.localStorage.getItem(`mastered:${item.id}`) === "true");
     setListenCount(Number(window.localStorage.getItem(`listen:${item.id}`) || 0));
     setSpeakCount(Number(window.localStorage.getItem(`speak:${item.id}`) || 0));
+    window.speechSynthesis?.cancel();
+    setRunningMode(null);
   }, [item.id]);
+
+  useEffect(() => () => {
+    window.speechSynthesis?.cancel();
+  }, []);
 
   useEffect(() => {
     if (!selectedNote) return undefined;
@@ -127,12 +133,14 @@ export function CourseItemCard({ item, locked = false }: CourseItemCardProps) {
   const canMaster = canStartSpeaking && speakCount >= item.speakRepeatCount;
 
   async function playOnce(speed: "normal" | "slow") {
-    setRunningMode("manual");
+    if (runningMode) return;
+    setRunningMode(speed);
     await speak(item.english, speed);
     setRunningMode(null);
   }
 
   async function listenThreeTimes() {
+    if (runningMode) return;
     setRunningMode("listen");
     for (let i = listenCount; i < item.listenRepeatCount; i += 1) {
       await speak(item.english, "normal");
@@ -186,6 +194,28 @@ export function CourseItemCard({ item, locked = false }: CourseItemCardProps) {
       </div>
       <p className="mt-2 text-lg font-semibold leading-relaxed text-muted">{item.chinese}</p>
 
+      <div className="mt-4 rounded-2xl border border-brand/15 bg-brandSoft/45 p-3">
+        <div className="grid gap-3 sm:grid-cols-2">
+          <button
+            type="button"
+            onClick={() => playOnce("normal")}
+            disabled={Boolean(runningMode)}
+            className="min-h-12 rounded-2xl bg-brand px-5 py-3 text-lg font-black text-white shadow-soft transition disabled:bg-brand/60"
+          >
+            {runningMode === "normal" ? "正在播放……" : "▶ 正常播放"}
+          </button>
+          <button
+            type="button"
+            onClick={() => playOnce("slow")}
+            disabled={Boolean(runningMode)}
+            className="min-h-12 rounded-2xl border border-brand/35 bg-white px-5 py-3 text-lg font-black text-brand shadow-soft transition disabled:text-brand/45"
+          >
+            {runningMode === "slow" ? "正在慢速播放……" : "🐢 慢速播放"}
+          </button>
+        </div>
+        <p className="mt-2 text-sm font-semibold text-muted">先听单句，也可以连续听3遍练习。</p>
+      </div>
+
       {selectedNote ? (
         <div className="mt-3 rounded-2xl border border-brand/20 bg-white p-4 shadow-soft" onClick={(event) => event.stopPropagation()}>
           <div className="flex items-start justify-between gap-3">
@@ -214,19 +244,19 @@ export function CourseItemCard({ item, locked = false }: CourseItemCardProps) {
         <div className="mt-3 grid grid-cols-3 gap-2 text-center text-xs font-black text-muted">
           <div className={listenCount >= item.listenRepeatCount ? "rounded-xl bg-brandSoft p-2 text-brand" : "rounded-xl bg-warm p-2"}>听 {Math.min(listenCount, item.listenRepeatCount)}/{item.listenRepeatCount}</div>
           <div className={speakCount >= item.speakRepeatCount ? "rounded-xl bg-brandSoft p-2 text-brand" : "rounded-xl bg-warm p-2"}>已跟读 {Math.min(speakCount, item.speakRepeatCount)}/{item.speakRepeatCount}</div>
-          <div className={completed ? "rounded-xl bg-green-50 p-2 text-success" : "rounded-xl bg-warm p-2"}>会说</div>
+          <div className={completed ? "rounded-xl bg-green-50 p-2 text-success" : "rounded-xl bg-warm p-2"}>已掌握</div>
         </div>
 
-        <p className="mt-3 text-sm font-semibold text-muted">每读完一次，点击按钮记录。</p>
+        <p className="mt-3 text-sm font-semibold text-muted">自己跟读一次后，点击记录；共5次。</p>
 
         <div className="mt-4 grid gap-3">
           <button
             type="button"
             onClick={listenThreeTimes}
-            disabled={runningMode === "listen" || listenCount >= item.listenRepeatCount}
+            disabled={Boolean(runningMode) || listenCount >= item.listenRepeatCount}
             className={!canStartSpeaking ? "rounded-2xl bg-brand px-5 py-4 text-lg font-black text-white shadow-soft disabled:bg-brand/65" : "rounded-2xl bg-warm px-5 py-4 text-base font-bold text-muted"}
           >
-            {runningMode === "listen" ? `正在听 ${Math.max(1, listenCount)}/${item.listenRepeatCount}` : listenCount >= item.listenRepeatCount ? "第一步已完成" : "第一步：开始听3遍"}
+            {runningMode === "listen" ? `正在连续听 ${Math.max(1, listenCount)}/${item.listenRepeatCount}` : listenCount >= item.listenRepeatCount ? "第一步已完成" : "第一步：连续听3遍"}
           </button>
 
           <button
@@ -244,13 +274,8 @@ export function CourseItemCard({ item, locked = false }: CourseItemCardProps) {
             disabled={!canMaster || mastered}
             className={canMaster && !mastered ? "rounded-2xl bg-success px-5 py-4 text-lg font-black text-white shadow-soft" : "rounded-2xl bg-warm px-5 py-4 text-base font-bold text-muted"}
           >
-            {mastered ? "本句已完成" : "第三步：我会说了"}
+            {mastered ? "本句已完成" : "第三步：确认自己已经会说"}
           </button>
-        </div>
-
-        <div className="mt-3 flex gap-2">
-          <button type="button" onClick={() => playOnce("normal")} className="rounded-xl border border-line bg-white px-3 py-2 text-sm font-bold text-ink">正常播放</button>
-          <button type="button" onClick={() => playOnce("slow")} className="rounded-xl border border-line bg-white px-3 py-2 text-sm font-bold text-brand">慢速播放</button>
         </div>
       </div>
 
