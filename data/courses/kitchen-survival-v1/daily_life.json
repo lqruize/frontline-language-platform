@@ -246,8 +246,8 @@
     "speakerRole": "Customer",
     "speakerRoleZh": "顾客可能会说",
     "variants": [
-      "Do you know if there a monthly fee?",
-      "Can you tell me if there a monthly fee?"
+      "Do you know if there is a monthly fee?",
+      "Can you tell me if there is a monthly fee?"
     ],
     "recommendedResponses": [
       "There is no monthly fee with direct deposit.",

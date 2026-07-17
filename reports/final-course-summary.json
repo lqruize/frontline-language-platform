@@ -1,0 +1,55 @@
+{
+  "totalReviewed": 238,
+  "totalPassedWithoutChange": 237,
+  "totalFixed": 1,
+  "englishFixed": 0,
+  "chineseFixed": 0,
+  "responsesFixed": 0,
+  "dialoguesFixed": 0,
+  "variantsFixed": 2,
+  "vocabularyFixed": 0,
+  "roleFixed": 0,
+  "scenarioFixed": 0,
+  "moduleStats": {
+    "daily_life": {
+      "reviewed": 56,
+      "passedWithoutChange": 55,
+      "fixed": 1
+    },
+    "emergency_safety": {
+      "reviewed": 18,
+      "passedWithoutChange": 18,
+      "fixed": 0
+    },
+    "delivery_complaints": {
+      "reviewed": 24,
+      "passedWithoutChange": 24,
+      "fixed": 0
+    },
+    "front_counter": {
+      "reviewed": 38,
+      "passedWithoutChange": 38,
+      "fixed": 0
+    },
+    "communication": {
+      "reviewed": 20,
+      "passedWithoutChange": 20,
+      "fixed": 0
+    },
+    "shift_pay": {
+      "reviewed": 15,
+      "passedWithoutChange": 15,
+      "fixed": 0
+    },
+    "food_safety": {
+      "reviewed": 30,
+      "passedWithoutChange": 30,
+      "fixed": 0
+    },
+    "kitchen_cleaning": {
+      "reviewed": 37,
+      "passedWithoutChange": 37,
+      "fixed": 0
+    }
+  }
+}

@@ -1,0 +1,960 @@
+{
+  "totalSampled": 63,
+  "moduleSampleCounts": {
+    "daily_life": 15,
+    "emergency_safety": 18,
+    "delivery_complaints": 5,
+    "front_counter": 5,
+    "communication": 5,
+    "shift_pay": 5,
+    "food_safety": 5,
+    "kitchen_cleaning": 5
+  },
+  "samples": [
+    {
+      "itemId": "daily_life_001",
+      "moduleId": "daily_life",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "daily_life_002",
+      "moduleId": "daily_life",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "daily_life_003",
+      "moduleId": "daily_life",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "daily_life_004",
+      "moduleId": "daily_life",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "daily_life_005",
+      "moduleId": "daily_life",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "daily_life_006",
+      "moduleId": "daily_life",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "daily_life_007",
+      "moduleId": "daily_life",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "daily_life_008",
+      "moduleId": "daily_life",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "daily_life_009",
+      "moduleId": "daily_life",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "daily_life_010",
+      "moduleId": "daily_life",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "daily_life_011",
+      "moduleId": "daily_life",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "daily_life_013",
+      "moduleId": "daily_life",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "daily_life_015",
+      "moduleId": "daily_life",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "daily_life_016",
+      "moduleId": "daily_life",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "daily_life_017",
+      "moduleId": "daily_life",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "emergency_safety_002",
+      "moduleId": "emergency_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "emergency_safety_004",
+      "moduleId": "emergency_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "emergency_safety_018",
+      "moduleId": "emergency_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "emergency_safety_020",
+      "moduleId": "emergency_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "emergency_safety_022",
+      "moduleId": "emergency_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "emergency_safety_023",
+      "moduleId": "emergency_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "emergency_safety_024",
+      "moduleId": "emergency_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "emergency_safety_025",
+      "moduleId": "emergency_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "emergency_safety_027",
+      "moduleId": "emergency_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "emergency_safety_029",
+      "moduleId": "emergency_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "emergency_safety_030",
+      "moduleId": "emergency_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "emergency_safety_031",
+      "moduleId": "emergency_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "emergency_safety_033",
+      "moduleId": "emergency_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "emergency_safety_036",
+      "moduleId": "emergency_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "emergency_safety_038",
+      "moduleId": "emergency_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "emergency_safety_048",
+      "moduleId": "emergency_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "emergency_safety_049",
+      "moduleId": "emergency_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "emergency_safety_050",
+      "moduleId": "emergency_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "delivery_complaints_001",
+      "moduleId": "delivery_complaints",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "delivery_complaints_002",
+      "moduleId": "delivery_complaints",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "delivery_complaints_003",
+      "moduleId": "delivery_complaints",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "delivery_complaints_004",
+      "moduleId": "delivery_complaints",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "delivery_complaints_005",
+      "moduleId": "delivery_complaints",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "front_counter_001",
+      "moduleId": "front_counter",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "front_counter_004",
+      "moduleId": "front_counter",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "front_counter_005",
+      "moduleId": "front_counter",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "front_counter_007",
+      "moduleId": "front_counter",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "front_counter_008",
+      "moduleId": "front_counter",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "communication_001",
+      "moduleId": "communication",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "communication_002",
+      "moduleId": "communication",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "communication_004",
+      "moduleId": "communication",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "communication_005",
+      "moduleId": "communication",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "communication_006",
+      "moduleId": "communication",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "shift_pay_001",
+      "moduleId": "shift_pay",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "shift_pay_003",
+      "moduleId": "shift_pay",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "shift_pay_005",
+      "moduleId": "shift_pay",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "shift_pay_006",
+      "moduleId": "shift_pay",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "shift_pay_007",
+      "moduleId": "shift_pay",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "food_safety_001",
+      "moduleId": "food_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "food_safety_003",
+      "moduleId": "food_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "food_safety_005",
+      "moduleId": "food_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "food_safety_006",
+      "moduleId": "food_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "food_safety_007",
+      "moduleId": "food_safety",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "kitchen_cleaning_011",
+      "moduleId": "kitchen_cleaning",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "kitchen_cleaning_013",
+      "moduleId": "kitchen_cleaning",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "kitchen_cleaning_022",
+      "moduleId": "kitchen_cleaning",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "kitchen_cleaning_023",
+      "moduleId": "kitchen_cleaning",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    },
+    {
+      "itemId": "kitchen_cleaning_025",
+      "moduleId": "kitchen_cleaning",
+      "result": "PASS",
+      "checked": [
+        "english",
+        "chinese",
+        "speakerRole",
+        "variants",
+        "recommendedResponses",
+        "dialogue",
+        "vocabularyNotes",
+        "scenario"
+      ]
+    }
+  ]
+}
